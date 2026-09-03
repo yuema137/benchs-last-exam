@@ -2,6 +2,8 @@
 
 Status: draft, 2026-09-03
 
+> Scope clarification: this document describes a lightweight static benchmark knowledge base. Earlier platform-oriented ideas such as backend APIs, databases, scheduled ingestion, and scalable infrastructure are deferred and are not MVP requirements.
+
 ## A. Research and product synthesis
 
 ### Product thesis
@@ -18,6 +20,8 @@ The product should expose several interpretable dimensions rather than one opaqu
 - explainable lifecycle state.
 
 The benchmark card is the core UI unit. It should answer “is this instrument still useful?” before showing which model currently leads it.
+
+The first product is simply a local **Leaderboard of Benchmarks**: curated source data, small Python metric scripts, generated JSON, and a static frontend. It should be easy to run locally and later deploy unchanged to GitHub Pages.
 
 ### Model-representative coverage
 
@@ -47,7 +51,7 @@ Raw observations are immutable. Frontiers, metrics, and lifecycle evidence are d
 
 Start with 12 curated benchmarks across general knowledge, math, coding, science/reasoning, multimodal, and agents. Support accuracy, pass@1, and success-rate-like bounded metrics first. Keep unbounded, lower-is-better, relative-scale, and continuously refreshed benchmarks in the registry, but return explicit `N/A` for normalized thresholds until semantics are defensible.
 
-The first release should provide a deterministic Python metric core and static JSON/Parquet snapshots. A frontend should consume derived data; it should not contain scientific rules.
+The first release should provide deterministic Python scripts and a generated JSON snapshot. A frontend should consume the snapshot; it should not contain scientific rules. Parquet, APIs, databases, scheduled refreshes, and scalable infrastructure are deferred.
 
 ### Hard methodological problems
 
@@ -272,6 +276,12 @@ This is a candidate set, not a claim that every row is immediately ingestible. A
 
 ## E. Implementation plan
 
+The immediate implementation is a vertical slice, not a horizontal framework build:
+
+```text
+real observations → small metric script → JSON snapshot → static cards → sorting and chart toggles
+```
+
 ### Milestone 1: repository and contracts
 
 Files: `README.md`, `docs/design-synthesis.md`, `src/schema/`, `pyproject.toml`.
@@ -302,9 +312,9 @@ Files: registry and fixtures for the full pilot, `docs/methodology.md`.
 
 Acceptance: 10–20 benchmarks are included only where their metadata and protocol are defensible; manually inspect every frontier curve and publish a limitations report.
 
-### Milestone 6: benchmark cards and comparison table
+### Milestone 6: static benchmark cards and comparison table
 
-Files: `apps/web/`, API/read model modules.
+Files: `site/`, static JSON loader, and browser UI modules.
 
 Acceptance: benchmark-centric cards show current frontier, headroom, thresholds, velocity, discrimination distribution, activity, lifecycle evidence, and clickable provenance. No frontend-local metric logic.
 
@@ -314,11 +324,13 @@ Files: `src/analysis/`, `apps/web/` global views, tests.
 
 Acceptance: release date vs T90 plot distinguishes crossed and right-censored benchmarks; filters by domain and metric applicability; no fabricated values.
 
-### Milestone 8: source adapters and refresh
+### Milestone 8: source adapters and refresh (deferred)
 
 Files: `src/ingestion/`, adapter-specific tests, refresh CLI/workflow.
 
 Acceptance: fetch → parse → normalize → validate → conflict report → snapshot is reproducible for at least one structured source. Adapter quirks do not leak into metric code.
+
+This milestone is not required for the first local demo. Manual curation and a checked-in source export are preferred until the vertical slice proves useful.
 
 ## Initial decisions and open decisions
 

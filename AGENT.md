@@ -4,6 +4,18 @@
 
 Benchmark Observatory tracks the lifecycle and measurement usefulness of benchmarks. It is not a model leaderboard and it must not make model ranking the primary product abstraction.
 
+## Scope clarification
+
+This is a lightweight personal benchmark knowledge base and **Leaderboard of Benchmarks**, not an evaluation platform or product infrastructure project.
+
+Preferred architecture:
+
+```text
+curated source data → small Python scripts → generated JSON → static frontend → GitHub Pages
+```
+
+Optimize for simplicity, readability, maintainability, static deployment, and easy manual curation. Do not introduce a backend server, database, public API, user accounts, cloud services, telemetry system, or complex ingestion framework unless a later explicit decision requires one. If a local script and generated JSON solve the problem, they are the default choice.
+
 The repository should remain a credible, inspectable research infrastructure project. Scientific correctness, provenance, reproducibility, and explicit uncertainty take priority over coverage or visual polish.
 
 ## Model coverage principle
@@ -64,9 +76,11 @@ The style applies to conversational explanations and explicitly selected explana
 
 ## Engineering boundaries
 
-- Keep ingestion, schema, validation, normalization, frontier computation, metrics, lifecycle rules, API, and UI modular.
+- Keep source data, schema, validation, normalization, frontier computation, metrics, generated JSON, and UI modular.
+- Prefer a small scripts/data/frontend structure over service boundaries. API and database layers are deferred and are not part of the current architecture.
 - Keep scientific rules out of frontend components.
 - Add tests with every metric implementation.
 - Do not add a composite health score to the MVP.
 - Do not assign lifecycle thresholds before inspecting empirical distributions.
 - Preserve right-censored benchmarks for later survival analysis.
+- Do not expand to 10–20 benchmarks or GitHub Pages deployment until the first 3–5 benchmark local slice has been used and validated.
