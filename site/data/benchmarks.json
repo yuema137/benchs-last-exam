@@ -1808,13 +1808,21 @@
           "source": "http://arxiv.org/abs/2412.08905"
         }
       ],
+      "observed_frontier": 0.881,
       "current_frontier": 0.881,
       "normalized_progress": 0.8413333333333334,
       "normalized_headroom": 0.15866666666666662,
       "threshold_days": {
-        "T50": 554,
-        "T90": null
+        "T50": {
+          "status": "reached",
+          "days": 554
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 1571
+        }
       },
+      "velocity_180d": 0.000838703403565641,
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
@@ -3196,13 +3204,21 @@
           "source": "http://arxiv.org/abs/2409.12186"
         }
       ],
+      "observed_frontier": 0.945,
       "current_frontier": 0.945,
       "normalized_progress": 0.945,
       "normalized_headroom": 0.05500000000000005,
       "threshold_days": {
-        "T50": 139,
-        "T90": 503
+        "T50": {
+          "status": "reached",
+          "days": 139
+        },
+        "T90": {
+          "status": "reached",
+          "days": 503
+        }
       },
+      "velocity_180d": 0.0016507592190889314,
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
@@ -4560,13 +4576,21 @@
           "source": "https://epoch-benchmarks-production-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/4wN6FKe2db9CLQ3NUFfYge.eval"
         }
       ],
+      "observed_frontier": 0.9813066465256798,
       "current_frontier": 0.9813066465256798,
       "normalized_progress": 0.9813066465256798,
       "normalized_headroom": 0.018693353474320218,
       "threshold_days": {
-        "T50": 1424,
-        "T90": 1424
+        "T50": {
+          "status": "reached",
+          "days": 1424
+        },
+        "T90": {
+          "status": "reached",
+          "days": 1424
+        }
       },
+      "velocity_180d": 0.0004692027868549194,
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
@@ -7621,13 +7645,21 @@
           "source": "https://arxiv.org/abs/2311.12022"
         }
       ],
+      "observed_frontier": 0.9577020202020202,
       "current_frontier": 0.9577020202020202,
       "normalized_progress": 0.9436026936026937,
       "normalized_headroom": 0.056397306397306335,
       "threshold_days": {
-        "T50": 434,
-        "T90": 730
+        "T50": {
+          "status": "reached",
+          "days": 434
+        },
+        "T90": {
+          "status": "reached",
+          "days": 730
+        }
       },
+      "velocity_180d": 0.0026618298164895137,
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
@@ -7987,13 +8019,21 @@
           "source": "https://epoch-benchmarks-staging-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/nCmGWWMBip2s9AVEZNYXDX.eval"
         }
       ],
+      "observed_frontier": 0.8347107438016529,
       "current_frontier": 0.8347107438016529,
       "normalized_progress": 0.8347107438016529,
       "normalized_headroom": 0.1652892561983471,
       "threshold_days": {
-        "T50": 537,
-        "T90": null
+        "T50": {
+          "status": "reached",
+          "days": 537
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 681
+        }
       },
+      "velocity_180d": null,
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [

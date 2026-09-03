@@ -64,7 +64,15 @@ def build_benchmark(spec):
     threshold_days = {}
     for label, target in (("T50", 0.5), ("T90", 0.9)):
         crossing = next((p for p in frontier if (p["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"]) >= target), None)
-        threshold_days[label] = None if crossing is None else (date.fromisoformat(crossing["date"]) - release).days
+        threshold_days[label] = {"status": "reached", "days": (date.fromisoformat(crossing["date"]) - release).days} if crossing else {"status": "right_censored", "days": (date.fromisoformat(rows[-1]["date"]) - release).days}
+    latest_frontier = frontier[-1] if frontier else None
+    velocity_180d = None
+    if latest_frontier:
+        latest_date = date.fromisoformat(latest_frontier["date"])
+        prior = next((p for p in reversed(frontier[:-1]) if (latest_date - date.fromisoformat(p["date"])).days >= 180), None)
+        if prior:
+            elapsed = (latest_date - date.fromisoformat(prior["date"])).days
+            velocity_180d = (latest_frontier["score"] - prior["score"]) / elapsed * 30.44
     organizations = {row["organization"] for row in rows}
     coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
@@ -74,10 +82,12 @@ def build_benchmark(spec):
         "observation_count": len(rows),
         "observations": rows,
         "frontier": frontier,
+        "observed_frontier": current["score"] if current else None,
         "current_frontier": current["score"] if current else None,
         "normalized_progress": progress,
         "normalized_headroom": None if progress is None else 1 - progress,
         "threshold_days": threshold_days,
+        "velocity_180d": velocity_180d,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATIONS), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
         "date_policy": "Use evaluation start when available; otherwise model release date. This is a provisional historical ordering policy.",
