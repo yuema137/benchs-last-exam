@@ -16,3 +16,4 @@ data/raw/*
 !data/raw/gsm8k_external.csv
 !data/raw/gpqa_diamond.csv
 !data/raw/swe_bench_verified.csv
+!data/raw/math_level_5.csv
