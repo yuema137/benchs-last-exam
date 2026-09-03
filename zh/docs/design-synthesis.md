@@ -17,7 +17,7 @@ Benchmark Observatory 是一个以 benchmark 为中心、持续记录、带版�
 - 把 reporting activity / adoption 作为独立维度；
 - 展示带有解释依据的 lifecycle state。
 
-benchmark card 是核心 UI 单元。它首先要回答“这个测量工具现在还有没有用”，然后才展示当前最高分模型。
+首页是紧凑的 benchmark leaderboard table：每个 benchmark 占一行，方便快速比较生命周期字段。点击后进入 detail page；detail 才承载完整 frontier curve、provenance、coverage breakdown、caveats 和次级 metrics。
 
 ### 以 model-representative 为目标的 coverage
 

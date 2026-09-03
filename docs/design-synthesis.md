@@ -19,7 +19,7 @@ The product should expose several interpretable dimensions rather than one opaqu
 - reporting activity and adoption as a separate dimension;
 - explainable lifecycle state.
 
-The benchmark card is the core UI unit. It should answer “is this instrument still useful?” before showing which model currently leads it.
+The homepage is a compact benchmark leaderboard table: one benchmark occupies one row so users can compare lifecycle fields quickly. A benchmark detail page is the card-like research view; it contains the complete frontier curve, provenance, coverage breakdown, caveats, and secondary metrics.
 
 The first product is simply a local **Leaderboard of Benchmarks**: curated source data, small Python metric scripts, generated JSON, and a static frontend. It should be easy to run locally and later deploy unchanged to GitHub Pages.
 
