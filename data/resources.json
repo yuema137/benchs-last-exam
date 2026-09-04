@@ -516,6 +516,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2406-01574",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MMLU-Pro primary source",
+    "url": "https://arxiv.org/abs/2406.01574",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2410-23218",
     "resource_scope": [
       "benchmark",
@@ -11431,6 +11447,23 @@
     "url": "https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MMLU-Pro source",
+    "url": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+    "publisher": null,
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

@@ -9,7 +9,7 @@ source-backed.
 
 | Candidate | Reason to include | Current hesitation | Recommendation |
 |---|---|---|---|
-| MMLU-Pro | Important harder successor to MMLU with broad model-report usage | No checked-in longitudinal score series yet; must not merge with MMLU | Human review after source import |
+| MMLU-Pro | Important harder successor to MMLU with broad model-report usage | Initial six-point mini-leaderboard series is now included; expand only with matching prompt/protocol evidence | Review trajectory and protocol scope |
 | IFEval | Canonical verifiable instruction-following evaluation | Need a stable version and comparable model-generation results | Human review |
 | SimpleQA | Important frontier factuality benchmark | The available local export is SimpleQA Verified, a distinct 1,000-question object | Added as SimpleQA Verified; keep original SimpleQA separate |
 | HealthBench | High-value physician-rubric health evaluation | Model scores use a model-based grader and variants need explicit separation | Human review |

@@ -20,6 +20,7 @@ be confused with independent domain diversity.
 | Benchmark | Type | Domain | Canonical object | Metric | Lifecycle value | Source |
 |---|---|---|---|---|---|---|
 | SimpleQA Verified | Model | General knowledge & reasoning | 1,000-question verified variant | Graded factuality accuracy; 0–1 | Gives the leaderboard a factuality trajectory distinct from broad knowledge or reasoning scores | [paper](https://arxiv.org/abs/2509.07968), [evaluation resource](https://epoch.ai/benchmarks/simple-qa-verified) |
+| MMLU-Pro | Model | General knowledge & reasoning | Official MMLU-Pro object; separate from MMLU | Overall accuracy; 0.1 random-choice floor to 1.0 | Adds a harder, reasoning-focused general benchmark with an initial six-point cross-generation trajectory | [official repository](https://github.com/TIGER-AI-Lab/MMLU-Pro), [paper](https://arxiv.org/abs/2406.01574) |
 
 The original SimpleQA (4,326 questions) is not silently merged with SimpleQA
 Verified. The benchmark page and protocol text preserve that distinction.

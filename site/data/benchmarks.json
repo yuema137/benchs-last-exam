@@ -519,6 +519,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-arxiv-org-abs-2406-01574",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "MMLU-Pro primary source",
+      "url": "https://arxiv.org/abs/2406.01574",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-arxiv-org-abs-2410-23218",
       "resource_scope": [
         "benchmark",
@@ -11440,6 +11456,23 @@
       "notes": null
     },
     {
+      "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "MMLU-Pro source",
+      "url": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+      "publisher": null,
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-github-com-zapier-automationbench",
       "resource_scope": [
         "benchmark"
@@ -12583,6 +12616,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-claude-3-5-sonnet",
+      "canonical_name": "Claude 3.5 Sonnet",
+      "family_id": "anthropic-claude-3-5-sonnet",
+      "release_date": "2024-06-20",
+      "organization": "Anthropic",
+      "resource_ids": [
+        "resource-https-github-com-tiger-ai-lab-mmlu-pro"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-claude-3-5-sonnet-20240620",
       "canonical_name": "Claude 3.5 Sonnet (20240620)",
       "family_id": "anthropic-claude-3-5-sonnet-20240620",
@@ -12800,6 +12854,27 @@
       "organization": "Anthropic",
       "resource_ids": [
         "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-claude-3-opus",
+      "canonical_name": "Claude 3 Opus",
+      "family_id": "anthropic-claude-3-opus",
+      "release_date": "2024-02-29",
+      "organization": "Anthropic",
+      "resource_ids": [
+        "resource-https-github-com-tiger-ai-lab-mmlu-pro"
       ],
       "roles": [
         "contemporary_frontier"
@@ -16607,17 +16682,17 @@
     {
       "id": "model-gemini-1-5-pro",
       "canonical_name": "Gemini 1.5 Pro",
-      "family_id": "google-deepmind-gemini-1-5-pro",
-      "release_date": "2024-09-24",
-      "organization": "Google DeepMind",
+      "family_id": "google-gemini-1-5-pro",
+      "release_date": "2024-02-15",
+      "organization": "Google",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-github-com-tiger-ai-lab-mmlu-pro"
       ],
       "roles": [
         "contemporary_frontier"
       ],
       "domains": [
-        "Abstract reasoning"
+        "General knowledge & reasoning"
       ],
       "evaluation_types": [
         "Model"
@@ -19280,6 +19355,27 @@
       "organization": "OpenAI",
       "resource_ids": [
         "resource-https-arxiv-org-pdf-2303-08774"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-gpt-4-turbo",
+      "canonical_name": "GPT-4 Turbo",
+      "family_id": "openai-gpt-4-turbo",
+      "release_date": "2023-11-06",
+      "organization": "OpenAI",
+      "resource_ids": [
+        "resource-https-github-com-tiger-ai-lab-mmlu-pro"
       ],
       "roles": [
         "contemporary_frontier"
@@ -92118,6 +92214,895 @@
       ],
       "resource_ids": [
         "resource-https-openai-com-index-introducing-swe-bench-verified"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "mmlu-pro",
+      "name": "MMLU-Pro",
+      "domain": "General knowledge & reasoning",
+      "release": "2024-06-03",
+      "floor": 0.1,
+      "ceiling": 1.0,
+      "source": "https://arxiv.org/abs/2406.01574",
+      "evaluation_type": "Model",
+      "tags": [
+        "multiple-choice",
+        "reasoning",
+        "ten-choice"
+      ],
+      "metric": "Average Accuracy",
+      "score_format": "ratio",
+      "metric_id": "mmlu-pro-metric-v1",
+      "protocol_id": "mmlu-pro-source-export-v1",
+      "benchmark_version_id": "mmlu-pro-canonical",
+      "summary": {
+        "en": "MMLU-Pro is a harder, reasoning-focused successor to MMLU across academic and professional subjects.",
+        "zh": "MMLU-Pro \u662f MMLU \u7684 harder successor\uff0c\u8986\u76d6\u591a\u4e2a\u5b66\u672f\u548c\u4e13\u4e1a\u9886\u57df\uff0c\u66f4\u5f3a\u8c03 reasoning\u3002"
+      },
+      "task_format": {
+        "en": "Each item is a ten-choice multiple-choice question. The model selects one answer, usually after producing a reasoning trace under the chosen prompt.",
+        "zh": "\u6bcf\u4e2a task \u90fd\u662f\u5341\u9009\u4e00\u95ee\u9898\u3002\u6a21\u578b\u9700\u8981\u9009\u51fa\u4e00\u4e2a\u7b54\u6848\uff0c\u901a\u5e38\u4f1a\u6309\u7167\u6307\u5b9a prompt \u5148\u8fdb\u884c reasoning\u3002"
+      },
+      "scoring": {
+        "metric_name": "Overall accuracy",
+        "explanation": {
+          "en": "The score is the fraction of questions for which the selected answer is correct. The benchmark has ten choices per question, so 10% is the random-choice reference point.",
+          "zh": "\u5206\u6570\u5c31\u662f\u9009\u9879\u6b63\u786e\u7684\u9898\u76ee\u5360\u5168\u90e8\u9898\u76ee\u7684\u6bd4\u4f8b\u3002\u6bcf\u9898\u6709\u5341\u4e2a\u9009\u9879\uff0c\u6240\u4ee5 10% \u662f\u968f\u673a\u9009\u62e9\u7684\u53c2\u8003 floor\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 6,
+      "observations": [
+        {
+          "observation_id": "obs-mmlu-pro-claude-3-5-sonnet",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.7612,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4o",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.7255,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gemini-1-5-pro",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro",
+          "organization": "Google",
+          "score": 0.6903,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "unknown",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmlu-pro-claude-3-opus",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-claude-3-opus",
+          "model_family_id": "anthropic-claude-3-opus",
+          "model": "Claude 3 Opus",
+          "organization": "Anthropic",
+          "score": 0.6845,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-02-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-29",
+          "date_kind": "unknown",
+          "capability_date": "2024-02-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4-turbo",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4-turbo",
+          "model_family_id": "openai-gpt-4-turbo",
+          "model": "GPT-4 Turbo",
+          "organization": "OpenAI",
+          "score": 0.6371,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "unknown",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gemini-1-5-flash",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gemini-1-5-flash",
+          "model_family_id": "google-gemini-1-5-flash",
+          "model": "Gemini 1.5 Flash",
+          "organization": "Google",
+          "score": 0.5912,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-05-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-14",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4-turbo",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4-turbo",
+          "model_family_id": "openai-gpt-4-turbo",
+          "model": "GPT-4 Turbo",
+          "organization": "OpenAI",
+          "score": 0.6371,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4-turbo"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gemini-1-5-pro",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro",
+          "organization": "Google",
+          "score": 0.6903,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gemini-1-5-pro"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4o",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.7255,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-claude-3-5-sonnet",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.7612,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-claude-3-5-sonnet"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4-turbo",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4-turbo",
+          "model_family_id": "openai-gpt-4-turbo",
+          "model": "GPT-4 Turbo",
+          "organization": "OpenAI",
+          "score": 0.6371,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4-turbo"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gemini-1-5-pro",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro",
+          "organization": "Google",
+          "score": 0.6903,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gemini-1-5-pro"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4o",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.7255,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-claude-3-5-sonnet",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.7612,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-claude-3-5-sonnet"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4-turbo",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4-turbo",
+          "model_family_id": "openai-gpt-4-turbo",
+          "model": "GPT-4 Turbo",
+          "organization": "OpenAI",
+          "score": 0.6371,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4-turbo"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gemini-1-5-pro",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro",
+          "organization": "Google",
+          "score": 0.6903,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gemini-1-5-pro"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-gpt-4o",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.7255,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-mmlu-pro-claude-3-5-sonnet",
+          "benchmark_id": "mmlu-pro",
+          "benchmark_version_id": "mmlu-pro-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.7612,
+          "reported_cost_per_task": null,
+          "metric_id": "mmlu-pro-metric-v1",
+          "protocol_id": "mmlu-pro-source-export-v1",
+          "metric": "Average Accuracy",
+          "evaluation_protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-tiger-ai-lab-mmlu-pro",
+            "resource-https-arxiv-org-abs-2406-01574"
+          ],
+          "source": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-mmlu-pro-claude-3-5-sonnet"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.7612,
+      "capability_frontier_value": 0.7612,
+      "reported_frontier_value": null,
+      "current_frontier": 0.7612,
+      "normalized_progress": 0.7346666666666667,
+      "normalized_headroom": 0.2653333333333333,
+      "threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2023-11-06"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 822
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 822
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2023-11-06"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 822
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 822
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.01664142731277533,
+      "capability_velocity_180d": 0.01664142731277533,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.42857142857142855,
+        "represented_organizations": [
+          "Anthropic",
+          "Google",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "medium"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2406-01574"
       ],
       "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
       "historical_frontier_status": "unknown_public_dates",
