@@ -58,6 +58,14 @@ class LifecycleViewRuleTests(unittest.TestCase):
         source = Path("site/app.js").read_text(encoding="utf-8")
         self.assertIn('localStorage.getItem("bo-theme") || "dark"', source)
 
+    def test_story_cards_open_a_standalone_routable_detail_view(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        styles = Path("site/styles.css").read_text(encoding="utf-8")
+        self.assertIn("routeToDetail(card.dataset.id,event)", app)
+        self.assertIn('url.searchParams.set("benchmark",benchmarkId)', app)
+        self.assertIn("storyDescription.hidden=true", app)
+        self.assertIn("[hidden] { display:none !important; }", styles)
+
 
 if __name__ == "__main__":
     unittest.main()
