@@ -10,7 +10,23 @@
       "floor": 0.25,
       "ceiling": 1.0,
       "source": "https://arxiv.org/abs/2009.03300",
-      "metric": "accuracy-like score",
+      "metric": "EM",
+      "summary": {
+        "en": "MMLU tests broad knowledge across academic and professional subjects.",
+        "zh": "MMLU \u6d4b\u8bd5\u6a21\u578b\u5728\u591a\u4e2a\u5b66\u672f\u548c\u4e13\u4e1a\u9886\u57df\u91cc\u7684\u7efc\u5408\u77e5\u8bc6\u3002"
+      },
+      "task_format": {
+        "en": "Each item is a four-choice multiple-choice question. The model selects one answer.",
+        "zh": "\u6bcf\u4e2a task \u90fd\u662f\u56db\u9009\u4e00\u95ee\u9898\uff0c\u6a21\u578b\u9700\u8981\u9009\u51fa\u4e00\u4e2a\u7b54\u6848\u3002"
+      },
+      "scoring": {
+        "metric_name": "Exact-match accuracy",
+        "explanation": {
+          "en": "A response is correct only when the selected answer matches the answer key. The score is the fraction of questions answered correctly.",
+          "zh": "\u53ea\u6709\u6a21\u578b\u9009\u4e2d\u7684\u7b54\u6848\u548c\u6807\u51c6\u7b54\u6848\u4e00\u81f4\uff0c\u8fd9\u9053\u9898\u624d\u7b97\u7b54\u5bf9\u3002\u5206\u6570\u5c31\u662f\u7b54\u5bf9\u9898\u76ee\u5360\u5168\u90e8\u9898\u76ee\u7684\u6bd4\u4f8b\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
       "observation_count": 215,
       "observations": [
         {
@@ -1846,7 +1862,23 @@
       "floor": 0.0,
       "ceiling": 1.0,
       "source": "https://arxiv.org/abs/2110.14168",
-      "metric": "accuracy-like score",
+      "metric": "EM",
+      "summary": {
+        "en": "GSM8K tests whether a model can solve multi-step grade-school math word problems.",
+        "zh": "GSM8K \u6d4b\u8bd5\u6a21\u578b\u80fd\u4e0d\u80fd\u89e3\u51b3\u9700\u8981\u591a\u6b65\u63a8\u7406\u7684\u5c0f\u5b66\u6570\u5b66\u5e94\u7528\u9898\u3002"
+      },
+      "task_format": {
+        "en": "The model receives a natural-language math word problem and produces a solution with a final numerical answer.",
+        "zh": "\u6a21\u578b\u4f1a\u6536\u5230\u4e00\u9053\u81ea\u7136\u8bed\u8a00\u6570\u5b66\u5e94\u7528\u9898\uff0c\u9700\u8981\u7ed9\u51fa\u89e3\u9898\u8fc7\u7a0b\u548c\u6700\u540e\u7684\u6570\u5b57\u7b54\u6848\u3002"
+      },
+      "scoring": {
+        "metric_name": "Exact-match accuracy",
+        "explanation": {
+          "en": "The final numerical answer must match the reference answer. The score is the percentage of problems answered correctly.",
+          "zh": "\u6700\u540e\u7684\u6570\u5b57\u7b54\u6848\u5fc5\u987b\u548c\u6807\u51c6\u7b54\u6848\u4e00\u81f4\u3002\u5206\u6570\u5c31\u662f\u7b54\u5bf9\u9898\u76ee\u5360\u5168\u90e8\u9898\u76ee\u7684\u6bd4\u4f8b\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
       "observation_count": 162,
       "observations": [
         {
@@ -3242,7 +3274,23 @@
       "floor": 0.0,
       "ceiling": 1.0,
       "source": "https://arxiv.org/abs/2103.03874",
-      "metric": "accuracy-like score",
+      "metric": "Best score (across scorers)",
+      "summary": {
+        "en": "MATH Level 5 is the hardest level of a competition-math dataset, intended to test difficult mathematical problem solving.",
+        "zh": "MATH Level 5 \u662f\u7ade\u8d5b\u6570\u5b66\u6570\u636e\u96c6\u91cc\u6700\u96be\u7684\u4e00\u6863\uff0c\u7528\u6765\u6d4b\u8bd5\u6a21\u578b\u89e3\u51b3\u9ad8\u96be\u5ea6\u6570\u5b66\u9898\u7684\u80fd\u529b\u3002"
+      },
+      "task_format": {
+        "en": "The model receives a competition-style math problem and must produce a solution and final answer.",
+        "zh": "\u6a21\u578b\u4f1a\u6536\u5230\u4e00\u9053\u7ade\u8d5b\u6570\u5b66\u9898\uff0c\u9700\u8981\u7ed9\u51fa\u89e3\u7b54\u548c\u6700\u540e\u7b54\u6848\u3002"
+      },
+      "scoring": {
+        "metric_name": "Answer accuracy",
+        "explanation": {
+          "en": "A problem counts as correct when the reported answer matches the reference answer under the benchmark scorer. The score is the fraction of correct problems.",
+          "zh": "\u6309\u7167 benchmark scorer \u7684\u89c4\u5219\uff0c\u6a21\u578b\u7b54\u6848\u548c\u6807\u51c6\u7b54\u6848\u4e00\u81f4\u65f6\uff0c\u8fd9\u9053\u9898\u624d\u7b97\u7b54\u5bf9\u3002\u5206\u6570\u5c31\u662f\u7b54\u5bf9\u9898\u76ee\u5360\u5168\u90e8\u9898\u76ee\u7684\u6bd4\u4f8b\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
       "observation_count": 108,
       "observations": [
         {
@@ -4615,7 +4663,23 @@
       "floor": 0.25,
       "ceiling": 1.0,
       "source": "https://arxiv.org/abs/2311.12022",
-      "metric": "accuracy-like score",
+      "metric": "Best score (across scorers)",
+      "summary": {
+        "en": "GPQA Diamond tests difficult science reasoning questions written and checked by domain experts.",
+        "zh": "GPQA Diamond \u6d4b\u8bd5\u7531\u9886\u57df\u4e13\u5bb6\u7f16\u5199\u548c\u6838\u9a8c\u7684\u9ad8\u96be\u5ea6\u79d1\u5b66\u63a8\u7406\u9898\u3002"
+      },
+      "task_format": {
+        "en": "Each item is a four-choice science question. The model selects one answer, usually without access to external tools in the reported score.",
+        "zh": "\u6bcf\u4e2a task \u90fd\u662f\u56db\u9009\u4e00\u79d1\u5b66\u95ee\u9898\uff0c\u6a21\u578b\u9700\u8981\u9009\u4e00\u4e2a\u7b54\u6848\uff1b\u516c\u5f00\u5206\u6570\u901a\u5e38\u4e0d\u5305\u542b\u5916\u90e8\u5de5\u5177\u4f7f\u7528\u3002"
+      },
+      "scoring": {
+        "metric_name": "Accuracy",
+        "explanation": {
+          "en": "The score is the percentage of questions for which the selected option is correct. Four choices make 25% the random-choice reference point.",
+          "zh": "\u5206\u6570\u5c31\u662f\u9009\u9879\u6b63\u786e\u7684\u9898\u76ee\u5360\u5168\u90e8\u9898\u76ee\u7684\u6bd4\u4f8b\u3002\u56e0\u4e3a\u6bcf\u9898\u6709\u56db\u4e2a\u9009\u9879\uff0c25% \u662f\u968f\u673a\u9009\u62e9\u7684\u53c2\u8003 floor\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
       "observation_count": 311,
       "observations": [
         {
@@ -7684,8 +7748,24 @@
       "release": "2024-08-13",
       "floor": 0.0,
       "ceiling": 1.0,
-      "source": "https://www.swebench.com/",
-      "metric": "accuracy-like score",
+      "source": "https://openai.com/index/introducing-swe-bench-verified/",
+      "metric": "Best score (across scorers)",
+      "summary": {
+        "en": "SWE-bench Verified tests whether a coding agent can resolve real GitHub issues in a repository.",
+        "zh": "SWE-bench Verified \u6d4b\u8bd5 coding agent \u80fd\u4e0d\u80fd\u5728\u771f\u5b9e\u4ee3\u7801\u4ed3\u5e93\u91cc\u4fee\u590d GitHub issue\u3002"
+      },
+      "task_format": {
+        "en": "The agent receives a repository and issue description, edits files in an environment, and submits a patch. This is not a one-shot answer task.",
+        "zh": "agent \u4f1a\u6536\u5230\u4e00\u4e2a\u4ee3\u7801\u4ed3\u5e93\u548c issue \u63cf\u8ff0\uff0c\u5728\u73af\u5883\u91cc\u4fee\u6539\u6587\u4ef6\u5e76\u63d0\u4ea4 patch\u3002\u8fd9\u4e0d\u662f\u53ea\u56de\u7b54\u4e00\u6b21\u6587\u672c\u7684\u95ee\u9898\u3002"
+      },
+      "scoring": {
+        "metric_name": "Issue resolution rate",
+        "explanation": {
+          "en": "A task counts as solved when the submitted patch passes the task's required tests. The score is the percentage of issues resolved.",
+          "zh": "\u5982\u679c\u63d0\u4ea4\u7684 patch \u901a\u8fc7\u8fd9\u4e2a task \u8981\u6c42\u7684\u6d4b\u8bd5\uff0c\u8fd9\u4e2a task \u624d\u7b97\u89e3\u51b3\u3002\u5206\u6570\u5c31\u662f\u89e3\u51b3 issue \u5360\u5168\u90e8 issue \u7684\u6bd4\u4f8b\u3002"
+        }
+      },
+      "evaluation_target": "environment_outcome",
       "observation_count": 35,
       "observations": [
         {
@@ -7926,7 +8006,7 @@
           "score": 0.7417,
           "date": "2026-05-15",
           "date_kind": "evaluation_start",
-          "source": "https://www.swebench.com/"
+          "source": "https://openai.com/index/introducing-swe-bench-verified/"
         },
         {
           "model": "qwen3.6-max-preview",
