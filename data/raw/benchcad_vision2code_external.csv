@@ -1,0 +1,9 @@
+Model version,IoU-score,Release date,Organization,Name,Source,Notes
+GPT-4o,0.1823,2024-05-13,OpenAI,GPT-4o,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+OpenAI o3,0.1218,2025-04-16,OpenAI,OpenAI o3,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Claude Sonnet 4.6,0.2220,2026-02-17,Anthropic,Claude Sonnet 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Gemini 3.1 Pro,0.2890,2026-02-19,Google,Gemini 3.1 Pro,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Claude Opus 4.7,0.2692,2026-04-16,Anthropic,Claude Opus 4.7,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+GPT-5.5,0.4440,2026-04-23,OpenAI,GPT-5.5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Claude Opus 5,0.3660,2026-07-24,Anthropic,Claude Opus 5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Grok 4.6,0.3638,2026-08-12,xAI,Grok 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.

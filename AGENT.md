@@ -84,3 +84,4 @@ The style applies to conversational explanations and explicitly selected explana
 - Do not assign lifecycle thresholds before inspecting empirical distributions.
 - Preserve right-censored benchmarks for later survival analysis.
 - Every benchmark addition must satisfy the Benchmark Integration Contract in `docs/BENCHMARK_INTEGRATION.md` and pass `python3 scripts/validate_benchmark_integration.py` before it is considered complete. This applies to partial-core benchmarks with truthful `Unknown`, `N/A`, or `—` values as well as fully measured benchmarks.
+- Every benchmark or observation update must regenerate and validate all four lifecycle story views together: `Test of Time`, `Still Frontier`, `Fastest Solved`, and `Recently Saturated`. Their membership is generated from canonical lifecycle metrics in one build; never maintain or update one tab independently.

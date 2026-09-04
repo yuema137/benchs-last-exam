@@ -1,0 +1,10 @@
+Model version,Accuracy,Release date,Organization,Name,Source,Notes
+deepseek-r1,0.2353,2025-01-20,DeepSeek,DeepSeek R1,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from DeepSeek public release.
+claude-3-7-sonnet,0.3039,2025-02-24,Anthropic,Claude 3.7 Sonnet,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; single-run accuracy.
+gemini-2-0-flash,0.1275,2024-12-11,Google,Gemini 2.0 Flash,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from Google public release.
+gpt-4-1,0.2451,2025-04-14,OpenAI,GPT-4.1,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from OpenAI public release.
+o3-medium,0.3333,2025-04-16,OpenAI,o3 Medium,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from OpenAI public release.
+o4-mini-high,0.2745,2025-04-16,OpenAI,o4-mini High,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from OpenAI public release.
+gpt-5-medium,0.3039,2025-08-07,OpenAI,GPT-5 Medium,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from OpenAI public release.
+claude-opus-4-1,0.2745,2025-08-05,Anthropic,Claude Opus 4.1,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from Anthropic public release.
+claude-sonnet-4-5,0.3039,2025-09-29,Anthropic,Claude Sonnet 4.5,https://hal.cs.princeton.edu/scienceagentbench,Verified SAB Self-Debug leaderboard result; model release date from Anthropic public release.

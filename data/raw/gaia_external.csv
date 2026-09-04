@@ -1,0 +1,7 @@
+Model version,Average score,Release date,Organization,Name,Source,Notes
+Multi-Agent Experiment v0.1,0.3223,2024-03-01,MSR AI Frontiers,Multi-Agent Experiment v0.1,https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; GPT-4-turbo powered AutoGen system.
+Hugging Face Agents + GPT-4o,0.3322,2024-06-27,Hugging Face,Hugging Face Agents + GPT-4o,https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; tool-using agent system.
+Magentic-1 (o1),0.3787,2024-10-19,MSR AI Frontiers,Magentic-1 (o1),https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; agent configuration and submission date are preserved in the source.
+Trase Agent v0.3,0.6678,2025-02-19,Trase Systems,Trase Agent v0.3,https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; multi-model agent system.
+TapeAgents & BrowserGym,0.4718,2025-03-05,ServiceNow Research,TapeAgents & BrowserGym,https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; agent framework and model configuration are described by the source.
+h2oGPTe Agent v1.6.27,0.7475,2025-03-20,h2o.ai,h2oGPTe Agent v1.6.27,https://huggingface.co/spaces/gaia-benchmark/leaderboard,Official GAIA leaderboard test result; public system date used for the released agent.

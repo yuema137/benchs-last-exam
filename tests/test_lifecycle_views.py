@@ -8,8 +8,8 @@ MONTH = 30.44
 
 
 def test_of_time(t50_status, t50, t90_status, t90, age_days):
-    return ((t50_status == "right_censored" and t50 is not None and t50 >= 12 * MONTH)
-            or (t90_status == "right_censored" and t90 is not None and t90 >= 24 * MONTH))
+    return ((t50 is not None and t50 >= 12 * MONTH)
+            or (t90 is not None and t90 >= 24 * MONTH))
 
 
 def still_frontier(t50_status, progress, coverage):
@@ -29,7 +29,8 @@ class LifecycleViewRuleTests(unittest.TestCase):
     def test_test_of_time_boundaries_and_censoring(self):
         self.assertFalse(test_of_time("right_censored", 11.9 * MONTH, "unknown", None, 24 * MONTH))
         self.assertTrue(test_of_time("right_censored", 12.0 * MONTH, "unknown", None, 12 * MONTH))
-        self.assertFalse(test_of_time("reached", 12.0 * MONTH, "unknown", None, 24 * MONTH))
+        self.assertTrue(test_of_time("reached", 12.0 * MONTH, "unknown", None, 24 * MONTH))
+        self.assertTrue(test_of_time("reached", 24.0 * MONTH, "unknown", None, 24 * MONTH))
         self.assertFalse(test_of_time("unknown", None, "right_censored", 23.9 * MONTH, 24 * MONTH))
         self.assertTrue(test_of_time("unknown", None, "right_censored", 24.0 * MONTH, 24 * MONTH))
         self.assertFalse(test_of_time("at_release", 0, "unknown", None, 24 * MONTH))

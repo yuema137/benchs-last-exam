@@ -1,0 +1,301 @@
+Model version,Accuracy,CRI-rescaled score,CRI-rescaled score 95% CI (±),EDT answer preference,Release date,Organization,Country,Training compute (FLOP),Training compute notes,Name,Source,Notes
+grok-4-1-fast-reasoning,0.8773000000000001,79.5556,5.5339,0.7733,2025-11-19,xAI,United States of America,,,Grok 4.1 Fast,https://conceptualreasoning.ai/dtbench,
+claude-opus-5_max,0.976,96.0,2.5806,0.8684,2026-07-24,Anthropic,United States of America,,,Claude Opus 5,https://conceptualreasoning.ai/dtbench,
+claude-fable-5_max,0.9840000000000001,97.3333,2.1233,0.8738,2026-06-09,Anthropic,United States of America,,,Claude Fable 5,https://conceptualreasoning.ai/dtbench,
+grok-4-fast,0.8267,71.1111,6.3854,0.7467,2025-09-19,xAI,United States of America,,,Grok 4 Fast,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_promax,0.96,93.3333,3.2993,0.7632,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol Pro,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-sol_max,0.9547,92.45,3.5279,0.75,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Sol,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-8_max,0.9493,91.55,3.6913,0.8482,2026-05-28,Anthropic,United States of America,,,Claude Opus 4.8,https://conceptualreasoning.ai/dtbench,
+gpt-5.5_xhigh,0.96,93.3333,3.2993,0.75,2026-04-23,OpenAI,United States of America,,,GPT-5.5,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-6_max,0.912,85.3333,4.7692,0.8428,2026-02-05,Anthropic,United States of America,,,Claude Opus 4.6,https://conceptualreasoning.ai/dtbench,
+gpt-5.5-pro_xhigh,0.96,93.3333,3.2993,0.8158,2026-04-23,OpenAI,United States of America,,,GPT-5.5 Pro,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-7_max,0.9465000000000001,91.0833,3.7893,0.8709,2026-04-16,Anthropic,United States of America,,,Claude Opus 4.7,https://conceptualreasoning.ai/dtbench,
+gpt-5.4-2026-03-05_xhigh,0.9440000000000001,90.6667,3.8873,0.6316,2026-03-05,OpenAI,United States of America,,,GPT-5.4,https://conceptualreasoning.ai/dtbench,
+gemini-3.7-flash_high,0.968,94.6667,2.9726,0.7467,2026-08-13,Google DeepMind,United States of America,,,Gemini 3.7 Flash,https://conceptualreasoning.ai/dtbench,
+gemini-3.1-pro-preview_high,0.9547,92.45,3.5279,0.8133,2026-02-19,Google DeepMind,United States of America,,,Gemini 3.1 Pro,https://conceptualreasoning.ai/dtbench,
+muse-spark-1.1_high,0.9440000000000001,90.6667,3.8873,0.6,2026-07-09,Meta AI,United States of America,,,Muse Spark 1.1,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-terra_max,0.9253,87.55,4.4426,0.6842,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Terra,https://conceptualreasoning.ai/dtbench,
+kimi-k3_max,0.912,85.3333,4.7692,0.6842,2026-07-16,Moonshot,China,2.0001e+25,"Based on peer models such as Kimi K2.6 and DeepSeek V4 Pro, plausibly was trained on roughly 30T tokens (likely between 15T and 60T). Using the heuristic that C = 6ND, 30T pretraining tokens would imply ~1.9e25 FLOP. This is a somewhat uncertain estimate (more uncertain than estimates based on disclosed active params and token counts, but comparable to estimates based on disclosed GPU-hours).
+
+K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large size compared to other Chinese models may have reduced the training token budget vs smaller models.",Kimi K3,https://conceptualreasoning.ai/dtbench,
+muse-spark-1.2_xhigh,0.9467,91.1167,3.7893,0.5658,2026-08-05,Meta AI,United States of America,,,Muse Spark 1.2,https://conceptualreasoning.ai/dtbench,
+grok-4.6_xhigh,0.9733,95.55,2.7113,0.8267,2026-08-12,xAI,United States of America,,,Grok 4.6,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-5_max,0.9248000000000001,87.4667,4.5405,0.7973,2026-06-30,Anthropic,United States of America,,,Claude Sonnet 5,https://conceptualreasoning.ai/dtbench,
+grok-4.5_high,0.9653,94.2167,3.1033,0.84,2026-07-08,xAI,United States of America,,,Grok 4.5,https://conceptualreasoning.ai/dtbench,
+gemini-3.5-flash_high,0.9467,91.1167,3.7893,0.777,2026-05-19,Google DeepMind,United States of America,,,Gemini 3.5 Flash,https://conceptualreasoning.ai/dtbench,
+gemini-3.6-flash_high,0.9547,92.45,3.5279,0.75,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.6 Flash,https://conceptualreasoning.ai/dtbench,
+qwen3.8-max_xhigh,0.92,86.6667,4.5733,0.6933,2026-08-02,Alibaba,China,,,Qwen3.8-Max,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-4-6_max,0.8987,83.1167,5.0959,0.7625,2026-02-17,Anthropic,United States of America,,,Claude Sonnet 4.6,https://conceptualreasoning.ai/dtbench,
+gpt-5.2-2025-12-11_xhigh,0.9093000000000001,84.8833,4.8346,0.8108,2025-12-11,OpenAI,United States of America,,,GPT-5.2,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-5-20251101_high,0.8987,83.1167,5.0959,0.8206,2025-11-24,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4.5,https://conceptualreasoning.ai/dtbench,
+gpt-5.6-luna_max,0.8906999999999999,81.7833,5.2592,0.68,2026-07-09,OpenAI,United States of America,,,GPT-5.6 Luna,https://conceptualreasoning.ai/dtbench,
+glm-5.2_max,0.9359999999999999,89.3333,4.1486,0.7763,2026-06-16,Z.ai (Zhipu AI),China,,,GLM-5.2,https://conceptualreasoning.ai/dtbench,
+gpt-5.1-2025-11-13_high,0.9013,83.55,5.0306,0.7763,2025-11-13,OpenAI,United States of America,,"Almost certainly > 1e25
+",GPT-5.1,https://conceptualreasoning.ai/dtbench,
+qwen3.7-max,0.9227,87.1167,4.508,0.7703,2026-05-19,Alibaba,China,,,Qwen3.7-Max,https://conceptualreasoning.ai/dtbench,
+gemini-3-flash-preview_high,0.8906999999999999,81.7833,5.2592,0.7652,2025-12-17,Google DeepMind,United States of America,,,Gemini 3 Flash,https://conceptualreasoning.ai/dtbench,
+deepseek-v4-pro_max,0.9067000000000001,84.45,4.8999,0.6974,2026-04-24,DeepSeek,China,9.702e+24,6 * 49e9 active parameters * 33e12 tokens = 9.702E24 for pre-training,DeepSeek V4 Pro,https://conceptualreasoning.ai/dtbench,
+gpt-5-2025-08-07_high,0.9067000000000001,84.45,4.8999,0.8533,2025-08-07,OpenAI,United States of America,6.6e+25,"Fairly speculative, possibly around 6e25 [CI: 2e25 to 2e26] FLOP. See document below for details
+
+https://docs.google.com/document/d/1V2jIk365LnhH4WDoCw5dYJjZr1Htw8IHaK1noMf5Y48/edit?tab=t.z871imftkus",GPT-5,https://conceptualreasoning.ai/dtbench,
+qwen3.6-max-preview,0.872,78.6667,5.6512,0.7763,2026-04-20,Alibaba,China,,,Qwen3.6-Max (preview),https://conceptualreasoning.ai/dtbench,
+deepseek-v4-flash-0731_max,0.9093000000000001,84.8833,4.8346,0.6267,2026-07-31,DeepSeek,China,2.496e+24,"From https://api-docs.deepseek.com/updates/: ""DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-Preview, and was only re-post-trained.""
+
+6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training",DeepSeek V4 Flash (0731),https://conceptualreasoning.ai/dtbench,
+grok-4-20,0.9013,83.55,5.0306,0.8267,2026-02-17,xAI,United States of America,,,Grok 4.20,https://conceptualreasoning.ai/dtbench,
+kimi-k2.6,0.9093000000000001,84.8833,4.8346,0.7333,2026-04-20,Moonshot,China,,,Kimi K2.6,https://conceptualreasoning.ai/dtbench,
+o3-pro-2025-06-10_high,0.8693000000000001,78.2167,5.6839,0.8133,2025-06-10,OpenAI,United States of America,,,o3-pro,https://conceptualreasoning.ai/dtbench,
+o3-2025-04-16_high,0.848,74.6667,6.0759,0.84,2025-04-16,OpenAI,United States of America,,,o3,https://conceptualreasoning.ai/dtbench,
+grok-4.3_high,0.9067000000000001,84.45,4.8999,0.7733,2026-04-17,xAI,United States of America,,,Grok 4.3,https://conceptualreasoning.ai/dtbench,
+Inkling_xhigh,0.8747,79.1167,5.5859,0.5789,2026-07-15,Thinking Machines,United States of America,1.845e+24,6ND = 41e9 active parameters * 45e12 tokens = 1.845e+24 FLOP,Inkling,https://conceptualreasoning.ai/dtbench,
+gpt-5.4-mini-2026-03-17_xhigh,0.8,66.6667,6.7618,0.4533,2026-03-17,OpenAI,United States of America,,,GPT-5.4 mini,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-4-5-20250929_unknown,0.8320000000000001,72.0,6.3046,0.7946,2025-09-29,Anthropic,United States of America,,,Claude Sonnet 4.5,https://conceptualreasoning.ai/dtbench,
+nemotron-3-ultra,0.9013,83.55,5.0306,0.7333,2026-06-04,NVIDIA,United States of America,6.6e+24,"55 billion active parameters, ~20T tokens",Nemotron 3 Ultra,https://conceptualreasoning.ai/dtbench,
+gemini-3.5-flash-lite_high,0.8347,72.45,6.2719,0.6974,2026-07-21,Google DeepMind,United States of America,,,Gemini 3.5 Flash-Lite,https://conceptualreasoning.ai/dtbench,
+gemma-4-31b-it,0.8267,71.1167,6.4025,0.7467,2026-04-02,Google DeepMind,United States of America,,,Gemma 4 31B,https://conceptualreasoning.ai/dtbench,
+qwen3.5-397b-a17b,0.8747,79.1167,5.5859,0.7867,2026-02-13,Alibaba,China,,,Qwen3.5 397B-A17B,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-20250514_unknown,0.816,69.3333,6.5332,0.7954,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Opus 4,https://conceptualreasoning.ai/dtbench,
+qwen3.7-plus,0.84,73.3333,6.2066,0.75,2026-06-02,Alibaba,China,,,Qwen3.7-Plus,https://conceptualreasoning.ai/dtbench,
+gpt-5.4-nano-2026-03-17_xhigh,0.8027,67.1167,6.7292,0.4795,2026-03-17,OpenAI,United States of America,,,GPT-5.4 nano,https://conceptualreasoning.ai/dtbench,
+deepseek-v4-flash_max,0.8640000000000001,77.3333,5.7819,0.7632,2026-04-24,DeepSeek,China,2.496e+24,6 * 13e9 active parameters * 32e12 tokens = 2.496E24 for pre-training,DeepSeek V4 Flash,https://conceptualreasoning.ai/dtbench,
+gpt-5-mini-2025-08-07_high,0.8053,67.55,6.6965,0.7241,2025-08-07,OpenAI,United States of America,,,GPT-5 mini,https://conceptualreasoning.ai/dtbench,
+claude-opus-4-1-20250805_unknown,0.8,66.6667,6.7618,0.7928,2025-08-05,Anthropic,United States of America,,,Claude Opus 4.1,https://conceptualreasoning.ai/dtbench,
+gemini-2.5-pro,0.8240000000000001,70.6667,6.4352,0.8108,2025-06-17,Google DeepMind,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Gemini 2.5 Pro,https://conceptualreasoning.ai/dtbench,
+qwen3.5-27B,0.8240000000000001,70.6667,6.4352,0.7867,2026-02-24,Alibaba,China,,,Qwen3.5 27B,https://conceptualreasoning.ai/dtbench,
+qwen3.5-plus,0.8053,67.55,6.6965,0.7973,2026-02-16,Alibaba,China,,,Qwen3.5-Plus,https://conceptualreasoning.ai/dtbench,
+claude-3-5-sonnet-20241022,0.6784,46.4,7.8792,0.6902,2024-10-22,Anthropic,United States of America,,,Claude 3.5 Sonnet (Oct '24),https://conceptualreasoning.ai/dtbench,
+MiniMax-M3,0.7893000000000001,64.8833,6.8925,0.5921,2026-06-01,MiniMax,China,,,MiniMax M3,https://conceptualreasoning.ai/dtbench,
+claude-3-5-sonnet-20240620,0.6777,46.285,7.8836,0.6322,2024-06-20,Anthropic,United States of America,2.700000000000001e+25,"Blog post by Dario Amodei includes some info on 3.5 Sonnet compute: https://darioamodei.com/on-deepseek-and-export-controls
+""Claude 3.5 Sonnet is a mid-sized model that cost a few $10M's to train (I won't give an exact number). Also, 3.5 Sonnet was not trained in any way that involved a larger or more expensive model (contrary to some rumors).""
+
+Using assumptions about GPU pricing, this lets us estimate compute. https://docs.google.com/spreadsheets/d/1-p-ab6t6dkUM6T7GwnFp85ePTMpZMW7LFY7fW2t8POs/",Claude 3.5 Sonnet (Jun '24),https://conceptualreasoning.ai/dtbench,
+gemini-3.1-flash-lite_high,0.768,61.3333,7.1212,0.7027,2026-03-03,Google,United States of America,,,Gemini 3.1 Flash-Lite,https://conceptualreasoning.ai/dtbench,
+DeepSeek-V3.2-Exp_thinking,0.8773000000000001,79.55,5.5532,0.7067,2025-09-29,DeepSeek,China,4.18e+24,"3.594058e+24 FLOP [base model] + 2.095014e+23 FLOP = 3.8035594e+24 FLOP for pre-training plus continued pre-training
+
+Then, ""this framework allocates a
+post-training computational budget exceeding 10% of the pre-training cost"", so 4.18e24",DeepSeek V3.2 Exp,https://conceptualreasoning.ai/dtbench,
+qwen3.5-122b-a10b_none,0.8427,73.7833,6.1412,0.8082,2026-02-24,Alibaba,China,,,Qwen3.5 122B-A10B,https://conceptualreasoning.ai/dtbench,
+qwen3.6-plus,0.8187000000000001,69.7833,6.5006,0.7867,2026-03-31,Alibaba,China,,,Qwen3.6-Plus,https://conceptualreasoning.ai/dtbench,
+deepseek/deepseek-v3.2,0.856,76.0,5.9452,0.5915,2025-12-01,DeepSeek,China,4.2e+24,"Pre-trained base was DeepSeek-V3.1-Terminus
+3.594058e+24 FLOP [base model] + 2.095014e+23 FLOP = 3.8035594e+24 FLOP for pre-training plus continued pre-training
+
+Then, ""this framework allocates a
+post-training computational budget exceeding 10% of the pre-training cost"", so 4.18e24",DeepSeek V3.2,https://conceptualreasoning.ai/dtbench,
+qwen3.6-27b,0.7813,63.55,6.9905,0.8243,2026-04-22,Alibaba,China,,,Qwen3.6 27B,https://conceptualreasoning.ai/dtbench,
+mimo-v2.5-pro,0.8453,74.2167,6.1086,0.6842,,Xiaomi Corp,China,6.804e+24,6 FLOPS/token/active parameter * 27e12 tokens * 42e9 active parameters = 6.804E24 FLOP,MiMo v2.5 Pro,https://conceptualreasoning.ai/dtbench,
+qwen3.6-flash,0.7706999999999999,61.7833,7.0885,0.76,2026-04-27,Alibaba,China,,,Qwen3.6-Flash,https://conceptualreasoning.ai/dtbench,
+qwen3-max-2025-09-23,0.8212999999999999,70.2167,6.4678,0.7733,2025-09-24,Alibaba,China,1.512e+25,"6ND with:
+36T tokens is taken from the qwen3 technical report
+70B active params is based on it having >1T params, and the architectures of Qwen3-235B-A22B and Qwen3-Coder-480B-A35B",Qwen3-Max,https://conceptualreasoning.ai/dtbench,
+claude-haiku-4-5-20251001_unknown,0.736,56.0,7.4479,0.7043,2025-10-15,Anthropic,United States of America,,,Claude Haiku 4.5,https://conceptualreasoning.ai/dtbench,
+Qwen3-235B-A22B-Thinking-2507,0.8027,67.1167,6.7292,0.8133,2025-07-25,Alibaba,China,4.752e+24,6 FLOP / parameter / token * 22*10^9 active parameters * 36000000000000 tokens = 4.752e+24 FLOP,Qwen3 235B-A22B Thinking (2507),https://conceptualreasoning.ai/dtbench,
+qwen3.5-flash,0.8293,71.55,6.3699,0.7455,2026-02-25,Alibaba,China,,,Qwen3.5-Flash,https://conceptualreasoning.ai/dtbench,
+qwen3.5-35b-a3b,0.8,66.6667,6.7618,0.7746,2026-02-24,Alibaba,China,,,Qwen3.5 35B-A3B,https://conceptualreasoning.ai/dtbench,
+grok-2-1212,0.6520999999999999,42.0148,8.0347,0.5615,2024-12-12,xAI,United States of America,2.96e+25,Estimate based on xAI statements comparing Grok-2 compute to GPT-4 and Grok-3. Full estimate here: https://docs.google.com/document/d/1C_dABuZrAqYE_ui4_GZ4bRLtq3TBjIGoBSktaPElhEU/edit?usp=sharing,Grok 2,https://conceptualreasoning.ai/dtbench,
+DeepSeek-V3.1-Terminus,0.8133,68.8833,6.5659,0.7432,2025-09-22,DeepSeek,China,3.594058e+24,"This was based on V3 which was trained on 14.8T tokens for a total of 14.8T + 840B = 15.64T pretraining tokens. Adding the FLOPs from continued pretraining onto our estimate for V3, which is 3.4e24 FLOPs, we get 3.4e24 + 1.9e23 = 3.59e24",DeepSeek V3.1 Terminus,https://conceptualreasoning.ai/dtbench,
+qwen-plus-2025-04-28,0.8107,68.45,6.6312,0.75,2025-04-28,Alibaba,China,,,Qwen Plus,https://conceptualreasoning.ai/dtbench,
+o4-mini-2025-04-16_high,0.7759999999999999,62.6667,7.0558,0.7105,2025-04-16,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o4-mini,https://conceptualreasoning.ai/dtbench,
+claude-sonnet-4-20250514_unknown,0.7706999999999999,61.7833,7.0885,0.7492,2025-05-22,Anthropic,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,Claude Sonnet 4,https://conceptualreasoning.ai/dtbench,
+gemma-4-26b-a4b,0.7493000000000001,58.2167,7.3172,0.6892,2026-04-02,Google DeepMind,United States of America,,,Gemma 4 26B-A4B,https://conceptualreasoning.ai/dtbench,
+DeepSeek-V3.1_thinking,0.8267,71.1167,6.4025,0.7286,2025-08-21,DeepSeek,China,3.594058e+24,"This was based on V3 which was trained on 14.8T tokens for a total of 14.8T + 840B = 15.64T pretraining tokens. Adding the FLOPs from continued pretraining onto our estimate for V3, which is 3.4e24 FLOPs, we get 3.4e24 + 1.9e23 = 3.59e24",DeepSeek Chat V3.1,https://conceptualreasoning.ai/dtbench,
+qwen3.6-35b-a3b,0.7387,56.45,7.4152,0.7333,2026-04-14,Alibaba,China,,,Qwen3.6 35B-A3B,https://conceptualreasoning.ai/dtbench,
+gpt-oss-120b_high,0.7626999999999999,60.45,7.1865,0.6053,2025-08-05,OpenAI,United States of America,4.94e+24,"""The training run for gpt-oss-120b required 2.1 million H100-hours to complete""
+(2.1e6 hours)*(1,979 H100 FLOP/s)*(30% utilization)*(60*60) = 4.49e24
+They also do post training similar to o3, which we assume adds at least 10% as much compute, so we multiply this estimate by 1.1 to get 4.94e24
+
+",gpt-oss-120b,https://conceptualreasoning.ai/dtbench,
+gemini-2.0-flash-001,0.632,38.6667,8.1351,0.4757,2025-02-05,"Google DeepMind,Google",United States of America,,"""We used Trillium TPUs to train the new Gemini 2.0, Google’s most capable AI model yet"" according to https://cloud.google.com/blog/products/compute/trillium-tpu-is-ga",Gemini 2.0 Flash,https://conceptualreasoning.ai/dtbench,
+Qwen3-235B-A22B-Instruct-2507,0.784,64.0,6.9579,0.7867,2025-07-25,Alibaba,China,4.752e+24,6 FLOP / parameter / token * 22*10^9 active parameters * 36000000000000 tokens = 4.752e+24 FLOP,Qwen3 235B-A22B (2507),https://conceptualreasoning.ai/dtbench,
+o1-2024-12-17_high,0.7467,57.7833,7.3498,0.6444,2024-12-17,OpenAI,United States of America,,,o1,https://conceptualreasoning.ai/dtbench,
+gemini-2.5-flash,0.7653,60.8833,7.1538,0.6842,2025-06-17,Google DeepMind,United States of America,,,Gemini 2.5 Flash,https://conceptualreasoning.ai/dtbench,
+mistral-medium-2505,0.6227,37.1111,8.1766,0.6491,2025-05-07,Mistral AI,France,,"Benchmarks match with models like GPT-4o, Mistral's previous largest runs were ~1e25 FLOP scale, so plausibly they might have trained Medium with this much compute.",Mistral Medium 3 (May '25),https://conceptualreasoning.ai/dtbench,
+mistral-medium-2604,0.7547,59.1167,7.2518,0.6267,2026-04-28,Mistral AI,France,,"Commentary from Mistral researcher - https://x.com/mertunsal2020/status/2049551864556143094?s=20 - says ""nowhere close to those flops"" in response to someone suggesting 2.3e25FLOPS was used",Mistral Medium 3.5,https://conceptualreasoning.ai/dtbench,
+Qwen3-235B-A22B,0.7573000000000001,59.55,7.2519,0.7867,2025-04-29,Alibaba,China,4.752e+24,6 FLOP / parameter / token * 22*10^9 active parameters * 36000000000000 tokens = 4.752e+24 FLOP,Qwen3 235B-A22B,https://conceptualreasoning.ai/dtbench,
+gpt-4.1-2025-04-14,0.6827,47.1167,7.8725,0.7164,2025-04-14,OpenAI,United States of America,,Flagship model from a leading developer in mid-2025; very likely it used >1e25 FLOP.,GPT-4.1,https://conceptualreasoning.ai/dtbench,
+Llama-3.1-405B-Instruct,0.6138,35.637,8.2129,0.5847,2024-07-23,Meta AI,United States of America,3.8e+25,"Stated in paper.
+
+Also, 6 * 405B * 15.6T training tokens = 3.8e25",Llama 3.1 405B,https://conceptualreasoning.ai/dtbench,
+magistral-small-2509,0.6131000000000001,35.5249,8.2156,0.6114,2025-09-18,Mistral AI,France,,,Magistral Small (Sep '25),https://conceptualreasoning.ai/dtbench,
+mistral-large-2407,0.6121,35.3556,8.2195,0.6009,2024-07-24,Mistral AI,France,,"[Editor's note: this record previously contained a training compute estimate of ~1e25 FLOP. This is better described as an upper bound instead. See note below for details]
+
+Details are sparse, but we can hazard a guess based on evidence about the training cluster they may have used, the scale up in compute they likely would have used relative to Mistral Large 1, and from the model's MMLU score. Extended reasoning given here: https://docs.google.com/document/d/1I2ZWBLFMpRZYcdMMUfKAGZFJrOJpduNDS9ZeVFIHnd8/edit?usp=sharing",Mistral Large 2 (Jul '24),https://conceptualreasoning.ai/dtbench,
+qwen3.5-9B,0.7120000000000001,52.0,7.6439,0.7237,2026-02-24,Alibaba,China,,,Qwen3.5 9B,https://conceptualreasoning.ai/dtbench,
+mistral-large-2411,0.6082,34.7037,8.2344,0.5821,2024-11-18,Mistral AI,France,,"[Editor's note: this record previously contained a training compute estimate of ~1e25 FLOP. This is better described as an upper bound instead. See note below for details]
+
+Details are sparse, but we can hazard a guess based on evidence about the training cluster they may have used, the scale up in compute they likely would have used relative to Mistral Large 1, and from the model's MMLU score. Extended reasoning given here: https://docs.google.com/document/d/1I2ZWBLFMpRZYcdMMUfKAGZFJrOJpduNDS9ZeVFIHnd8/edit?usp=sharing",Mistral Large (Nov '24),https://conceptualreasoning.ai/dtbench,
+mistral-small-2506,0.5987,33.1111,8.2685,0.6373,2025-06-20,Mistral AI,France,,"Likely to use >1e23 FLOP because Mistral Small 3 used about 1e24 FLOP. However, if this was continued pretraining (or new post-training), then not clear whether it would have used >1e23 FLOP.",Mistral Small 3.2 (Jun '25),https://conceptualreasoning.ai/dtbench,
+qwen3-30b-a3b-thinking-2507,0.6933,48.8833,7.7745,0.6533,2025-07-30,Alibaba,China,6.48e+23,6 FLOP / parameter / token * 3*10^9 active parameters * 36000000000000 tokens = 6.48e+23 FLOP,Qwen3 30B-A3B Thinking (2507),https://conceptualreasoning.ai/dtbench,
+o3-mini-2025-01-31_high,0.688,48.0,7.8399,0.6267,2025-01-31,OpenAI,United States of America,,"We can’t make a precise estimate, but seems unlikely to exceed 10^25 FLOP. We think active parameter count is 10-30B. This would require >55T tokens to reach 10^25 FLOP at the large size, i.e. well beyond 10x overtraining relative to Chinchilla.",o3-mini,https://conceptualreasoning.ai/dtbench,
+gemini-1.5-pro-002,0.5898,31.6296,8.2973,0.552,2024-09-24,Google DeepMind,United States of America,,Training compute imputed to be 1.58e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,Gemini 1.5 Pro (002),https://conceptualreasoning.ai/dtbench,
+qwen3-30b-a3b-instruct-2507,0.672,45.3333,7.9379,0.7237,2025-07-29,Alibaba,China,6.48e+23,6 FLOP / parameter / token * 3*10^9 active parameters * 36000000000000 tokens = 6.48e+23 FLOP,Qwen3 30B-A3B Instruct (2507),https://conceptualreasoning.ai/dtbench,
+mistral-small-2503,0.5864,31.0741,8.3073,0.6278,2025-03-17,Mistral AI,France,,At least 1.152e+24 FLOP (base model Mistral Small 3 training compute),Mistral Small 3.1 (Mar '25),https://conceptualreasoning.ai/dtbench,
+gpt-4.1-mini-2025-04-14,0.688,48.0,7.8399,0.7641,2025-04-14,OpenAI,United States of America,,,GPT-4.1 mini,https://conceptualreasoning.ai/dtbench,
+mistral-small-2603,0.7093,51.55,7.6765,0.6267,2026-03-16,Mistral AI,France,,,Mistral Small (Mar '26),https://conceptualreasoning.ai/dtbench,
+gpt-oss-20b_high,0.68,46.6667,7.8726,0.4868,2025-08-05,OpenAI,United States of America,5.49e+23,"""The training run for gpt-oss-120b required 2.1
+million H100-hours to complete, with gpt-oss-20b needing almost 10x fewer""
+assuming ""almost 10x fewer"" means ~9x fewer: 4.94e24/9 = 5.49e23",gpt-oss-20b,https://conceptualreasoning.ai/dtbench,
+Qwen3-32B,0.6747,45.7833,7.9052,0.6849,2025-04-29,Alibaba,China,7.0848e+24,6 FLOP / parameter / token * 36 * 10^12 tokens * 32.8  * 10^9 parameters = 7.0848e+24 FLOP,Qwen3 32B,https://conceptualreasoning.ai/dtbench,
+qwen3-14b,0.64,40.0,8.1012,0.5733,2025-04-29,Alibaba,China,3.1968e+24,6 FLOP / parameter / token * 36 * 10^12 tokens * 14.8  * 10^9 parameters = 3.1968e+24 FLOP,Qwen3 14B,https://conceptualreasoning.ai/dtbench,
+mistral-medium-2508,0.6747,45.7833,7.9052,0.6216,2025-08-12,Mistral AI,France,,,Mistral Medium 3.1,https://conceptualreasoning.ai/dtbench,
+mistral-large-2512,0.6507,41.7833,8.0686,0.6533,2025-12-02,Mistral AI,France,,,Mistral Large 3,https://conceptualreasoning.ai/dtbench,
+claude-3-5-haiku-20241022,0.5666,27.7704,8.3591,0.634,2024-10-22,Anthropic,United States of America,,,Claude 3.5 Haiku,https://conceptualreasoning.ai/dtbench,
+gemini-1.5-pro-001,0.5647,27.4519,8.3635,0.5095,2024-05-14,Google DeepMind,United States of America,,Training compute imputed to be 1.58e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,Gemini 1.5 Pro (001),https://conceptualreasoning.ai/dtbench,
+gpt-4o-2024-05-13,0.6453,40.8833,8.0686,0.7315,2024-05-13,OpenAI,United States of America,,Training compute estimated to be 3.8e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,GPT-4o,https://conceptualreasoning.ai/dtbench,
+Llama-4-Maverick-17B-128E-Instruct,0.6187,36.45,8.1992,0.6,2025-04-05,Meta AI,United States of America,2.244000000001e+24,"22T training tokens per model card:
+
+https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md   
+
+Maverick was trained using co-distillation from Llama 4 Behemoth. It isn't 100% clear that all 22T tokens used distillation, but we assume this for the time being.
+
+Estimating training compute from parameters and tokens:
+Compute = 6 FLOP per token per parameter * 17B active parameters * 22T tokens = 2.244e24 FLOP
+(Implying mean throughput was 262 TFLOPS/GPU, or 13.2% MFU in FP8)
+
+
+The model card also states that Llama 4 Maverick used 2.38M H100-hours.
+The blog post gives a figure of 390 TFLOPS/GPU, but this may have been the utilization rate for Behemoth, or all of the models together. Using this utilization, we have:
+Compute = 390 TFLOP/s * 2.38 million hours = 3.342e24 FLOP
+(This value is higher than the compute implied by parameters and tokens, and suggests utilization may have been lower for Maverick than for Behemoth.)",Llama 4 Maverick,https://conceptualreasoning.ai/dtbench,
+mistral-large-2402,0.559,26.5037,8.3754,0.539,2024-02-26,Mistral AI,France,,"https://www.wsj.com/tech/ai/the-9-month-old-ai-startup-challenging-silicon-valleys-giants-ee2e4c48
+
+Mistral spent <20 million euro (meaning approximately 20 million?) to train Mistral Large.
+
+
+Assuming bf16 or fp16, H100 SXM performance is 989 TFLOPS
+At 1.9 euro per H100-hour and 30% utilization, spending 20M euro produces 1.12*10^25 FLOP.
+https://www.wolframalpha.com/input?i=20+million+%2F+%281.9%2Fhour%29+*+989+TFLOPS+*+0.30 ",Mistral Large (Feb '24),https://conceptualreasoning.ai/dtbench,
+DeepSeek-V3-0324,0.648,41.3333,8.0685,0.7123,2025-03-24,DeepSeek,China,3.3e+24,"6 × 37B × 14.8T = 3.29e24 pretraining FLOPs, 1e22 posttrainining FLOPs - see doc below
+
+https://docs.google.com/document/d/1C4zBvHh4UNnzaorwQSdG61zQJsBV9X3i3A70NeelxHY/edit?usp=sharing",DeepSeek Chat V3 (0324),https://conceptualreasoning.ai/dtbench,
+Llama-3.3-70B-Instruct,0.5947,32.45,8.2972,0.5278,2024-12-06,Meta AI,United States of America,6.8649768e+24,"6ND = 6 FLOP / parameter / token * 70*10^9 parameters * 15*10^12 tokens = 6.3e+24 FLOP
+
+7000000 GPU-hours * 3600 sec / hour * 989500000000000 FLOP / second * 0.3 [assumed utilization]= 7.48062e+24 FLOP
+
+sqrt(7.48062e+24*6.3e+24) = 6.8649768e+24",Llama 3.3 70B,https://conceptualreasoning.ai/dtbench,
+gpt-4-0613,0.6267,37.7833,8.1665,0.6667,2023-06-13,OpenAI,United States of America,2.1e+25,"90% CI: 8.2E+24 to 4.4E+25
+
+NOTE: this is a rough estimate based on public information, much less information than most other systems in the database.
+
+Calculation and confidence intervals here: https://colab.research.google.com/drive/1O99z9b1I5O66bT78r9ScslE_nOj5irN9?usp=sharing",GPT-4,https://conceptualreasoning.ai/dtbench,
+Qwen3-30B-A3B,0.6027,33.7833,8.2645,0.6447,2025-04-29,Alibaba,China,6.48e+23,6 FLOP / parameter / token * 3*10^9 active parameters * 36000000000000 tokens = 6.48e+23 FLOP,Qwen3 30B-A3B,https://conceptualreasoning.ai/dtbench,
+Mixtral-8x22B-Instruct-v0.1,0.5514,25.237,8.3896,0.5025,2024-04-17,Mistral AI,France,2.34e+24,"Assuming the model was trained on ~1-10 trillions of tokens (same OOM as the models from the comparison in Figure 1. Llama 2 was trained on 2T tokens) + Mistral Small 3 was trained on 8T of tokens, we can estimate training compute with ""speculative"" confidence:
+
+6 FLOP / token / parameter * 39 * 10^9 active parameters * 10*10^12 tokens [speculatively] = 2.34e+24 FLOP",Mixtral 8x22B,https://conceptualreasoning.ai/dtbench,
+gemini-2.5-flash-lite-preview-06-17-thinking,0.6283,38.05,8.1665,0.5616,2025-06-17,Google DeepMind,United States of America,,,Gemini 2.5 Flash-Lite,https://conceptualreasoning.ai/dtbench,
+deepseek-chat,0.6267,37.7833,8.1665,0.6711,2025-12-01,DeepSeek,China,4.2e+24,"Pre-trained base was DeepSeek-V3.1-Terminus
+3.594058e+24 FLOP [base model] + 2.095014e+23 FLOP = 3.8035594e+24 FLOP for pre-training plus continued pre-training
+
+Then, ""this framework allocates a
+post-training computational budget exceeding 10% of the pre-training cost"", so 4.18e24",DeepSeek Chat,https://conceptualreasoning.ai/dtbench,
+Llama-3.1-70B-Instruct,0.6,33.3333,8.2645,0.527,2024-07-23,Meta AI,United States of America,7.929e+24,"Huggingface page says 3.1-70B used 7.0M H100 hours and trained over 15T tokens. https://huggingface.co/meta-llama/Llama-3.1-70B
+The paper also says that 3.1-405B got MFU of between 38-43%; presumably 70B was around the same or a bit higher. I'll assume utilization of 40%
+
+6ND:
+6 * 15T * 70B = 6.3e24 FLOPs
+
+Hardware:
+7M * 9.9e14 * 3600 * 0.4 = 9.98e24 FLOPs
+
+Geometric mean: sqrt(6.3e24 * 9.98e24) = 7.929e24
+
+Note that Llama 3-70B also said it used 15T tokens, but only 6.4M H100 hours. This suggests 3.1 might have used a bit more than 15T tokens.
+
+Training compute upper bound: 7M H100-hours * 989 TFLOPS * 50% utilization = 1.25e25 FLOP",Llama 3.1 70B,https://conceptualreasoning.ai/dtbench,
+qwen2.5-72b-instruct,0.6293,38.2167,8.1665,0.6133,2024-09-19,Alibaba,China,7.8e+24,"Training dataset size was 18 trillion
+
+6ND = 6 * 72.7 billion parameters * 18 trillion tokens = 7.8e24",Qwen2.5 72B,https://conceptualreasoning.ai/dtbench,
+gpt-5-nano-2025-08-07_high,0.6267,37.7833,8.1665,0.5302,2025-08-07,OpenAI,United States of America,,,GPT-5 nano,https://conceptualreasoning.ai/dtbench,
+claude-3-opus-20240229,0.616,36.0,8.1992,0.5957,2024-02-29,Anthropic,United States of America,,Training compute estimated to be 1.64e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,Claude 3 Opus,https://conceptualreasoning.ai/dtbench,
+Meta-Llama-3-70B-Instruct,0.5416,23.6074,8.405,0.5831,2024-04-18,Meta AI,United States of America,7.861e+24,"Arithmetic calculation:
+6 * 15T tokens * 70B parameters = 6.3e24
+
+GPU calculation:
+https://huggingface.co/meta-llama/Meta-Llama-3-70B indicates training took 6.4M GPU-hours
+We also know their larger scale training runs for 405B were getting between 0.38-0.41 MFU. Presumably the 70B model gets at least 0.43 utilization (405B has to be split across two nodes, while 70B should fit on one).
+990 TFLOPS per GPU * 6.4 million GPU hours * 3600s * 0.43 = 9.808e24
+
+Geometric mean: sqrt(6.3e24 * 9.808e24) = 7.861e24",Llama 3 70B,https://conceptualreasoning.ai/dtbench,
+Llama-4-Scout-17B-16E-Instruct,0.5787,29.7833,8.3299,0.5467,2025-04-05,Meta AI,United States of America,4.08e+24,"40T training tokens per model card:
+
+https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md  
+
+Estimating training compute from parameters and tokens:
+6 FLOP per token per parameter * 17B active parameters * 40T tokens = 4.08e24 FLOP
+(Implying mean throughput was 227 TFLOPS/GPU, or 11.5% MFU in FP8)
+
+
+The model card also states that Llama 4 Scout used 5.0M H100-hours.
+The blog post gives a figure of 390 TFLOPS/GPU, but this may have been the utilization rate for Behemoth, or all of the models together. Using this utilization, we have:
+Compute = 390 TFLOP/s * 5 million hours = 7.02e24 FLOP
+(This value is higher than the compute implied by parameters and tokens, and suggests utilization may have been lower for Scout than for Behemoth.)",Llama 4 Scout,https://conceptualreasoning.ai/dtbench,
+gemini-1.5-flash-002,0.5379,22.9852,8.41,0.5486,2024-09-24,Google DeepMind,United States of America,,"""Gemini 1.5 Flash is a dense Transformer based model that is online distilled [...] from Gemini 1.5 Pro.""",Gemini 1.5 Flash (002),https://conceptualreasoning.ai/dtbench,
+claude-3-sonnet-20240229,0.536,22.6595,8.4125,0.5661,2024-02-29,Anthropic,United States of America,,,Claude 3 Sonnet,https://conceptualreasoning.ai/dtbench,
+mistral-medium-2312,0.533,22.1704,8.416,0.5086,2023-12-11,Mistral AI,France,,,Mistral Medium (Dec '23),https://conceptualreasoning.ai/dtbench,
+mistral-small-2402,0.5296000000000001,21.5926,8.4196,0.518,2024-02-26,,,,,Mistral Small (Feb '24),https://conceptualreasoning.ai/dtbench,
+gpt-4-turbo,0.616,36.0,8.1992,0.5987,2023-11-06,OpenAI,United States of America,,Training compute estimated to be 2.2e25 FLOP using benchmark imputation. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,GPT-4 Turbo,https://conceptualreasoning.ai/dtbench,
+gemini-2.0-flash-lite,0.5253,20.8889,8.4235,0.5442,2025-02-05,Google DeepMind,United States of America,,,Gemini 2.0 Flash-Lite,https://conceptualreasoning.ai/dtbench,
+c4ai-command-a-03-2025,0.6133,35.55,8.2318,0.5333,2025-03-13,Cohere,Canada,,"Unlikely to be >1e25 FLOP. Trained on ""trillions of tokens"", so C=6ND would suggest at most 6*111e9*10e12 = 7e24 FLOP if it used 10T tokens.",Command A,https://conceptualreasoning.ai/dtbench,
+qwen3-8b,0.5972999999999999,32.8833,8.2972,0.6842,2025-04-28,Alibaba,China,1.7712e+24,6 FLOP / parameter / token * 36 * 10^12 tokens * 8.2  * 10^9 parameters = 1.7712e+24 FLOP,Qwen3 8B,https://conceptualreasoning.ai/dtbench,
+claude-2.0,0.5185000000000001,19.7444,8.4286,0.5393,2023-07-11,Anthropic,United States of America,3.866e+24,https://colab.research.google.com/drive/1MdPuhS4Emaf23VXYZ-ooExDW-5GXZkw0#scrollTo=Ds0Q5X8aMnOY,Claude 2.0,https://conceptualreasoning.ai/dtbench,
+gemma-3-27b-it,0.5253,20.8833,8.4278,0.5556,2025-03-12,Google DeepMind,United States of America,2.268e+24,6ND =  6 * 27B parameters * 14T training tokens = 2.268 × 10^24 FLOP,Gemma 3 27B,https://conceptualreasoning.ai/dtbench,
+gemini-1.5-flash-001,0.5138,18.9704,8.4311,0.4819,2024-05-23,Google DeepMind,United States of America,,"""Gemini 1.5 Flash is a dense Transformer based model that is online distilled [...] from Gemini 1.5 Pro.""",Gemini 1.5 Flash (001),https://conceptualreasoning.ai/dtbench,
+claude-2.1,0.5095000000000001,18.2466,8.4328,0.5587,2023-11-21,Anthropic,United States of America,,,Claude 2.1,https://conceptualreasoning.ai/dtbench,
+gpt-4o-mini-2024-07-18,0.544,24.0,8.4278,0.5823,2024-07-18,OpenAI,United States of America,,"Training compute estimated to be 7.36001e+24 from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing
+
+90% CI [3.23e+24, 2.05e+25]",GPT-4o mini,https://conceptualreasoning.ai/dtbench,
+gemini-1.5-flash-8b-001,0.5004,16.7259,8.4343,0.4829,2024-10-03,Google DeepMind,United States of America,,,Gemini 1.5 Flash-8B,https://conceptualreasoning.ai/dtbench,
+open-mixtral-8x7b,0.4961,16.0148,8.4341,0.5109,2023-12-11,Mistral AI,France,7.74e+23,"Assuming the model was trained on ~1-10 trillions of tokens (same OOM as the models from the comparison in Figure 1. Llama 2 was trained on 2T tokens) + Mistral Small 3 was trained on 8T of tokens, we can estimate training compute with ""speculative"" confidence:
+
+6 FLOP / token / parameter * 12.9 * 10^9 active parameters * 10*10^12 tokens [speculatively] = 7.74e+23 FLOP",Mistral Small (Dec '23),https://conceptualreasoning.ai/dtbench,
+mistral-small-2409,0.4953,15.8889,8.434,0.5798,2024-09-17,Mistral AI,France,,,Mistral Small (Sep '24),https://conceptualreasoning.ai/dtbench,
+Mistral-Nemo-Instruct-2407,0.48610000000000003,14.3481,8.431,0.5449,2024-07-18,Mistral AI,France,,,Mistral NeMo,https://conceptualreasoning.ai/dtbench,
+Llama-3.1-8B-Instruct,0.5093,18.2167,8.4278,0.4861,2024-07-23,Meta AI,United States of America,1.224e+24,"Huggingface page says 3.1-8B used 1.46M H100 hours and trained over 15T tokens. https://huggingface.co/meta-llama/Llama-3.1-70B
+The paper also says that 3.1-405B got MFU of between 38-43%; presumably 8B was around the same or a bit higher. I'll assume utilization of 40%
+
+6ND:
+6 * 15T * 8B = 7.2e23 FLOPs
+
+Hardware:
+1.46M * 9.9e14 * 3600 * 0.4 = 2.08e24 FLOPs
+
+Geometric mean: sqrt(7.2e23 * 2.08e24) = 1.224e24
+
+Note that Llama 3-8B also said it used 15T tokens, but only 1.3M H100 hours. This suggests 3.1 might have used a bit more than 15T tokens.",Llama 3.1 8B,https://conceptualreasoning.ai/dtbench,
+gemma-3-12b-it,0.488,14.6667,8.4278,0.64,2025-03-12,Google DeepMind,United States of America,8.64e+23,6ND = 6 * 12B parameters * 12T training tokens = 8.64 × 10^23 FLOP,Gemma 3 12B,https://conceptualreasoning.ai/dtbench,
+gpt-3.5-turbo-0125,0.4853,14.2167,8.4278,0.589,2024-01-25,OpenAI,United States of America,,,GPT-3.5 Turbo,https://conceptualreasoning.ai/dtbench,
+gpt-4.1-nano-2025-04-14,0.5253,20.8833,8.4278,0.5574,2025-04-14,OpenAI,United States of America,,,GPT-4.1 nano,https://conceptualreasoning.ai/dtbench,
+qwen2.5-7b-instruct,0.4773,12.8833,8.4278,0.5102,2024-09-19,Alibaba,China,8.2188e+23,"Training dataset size was 18 trillion
+
+6ND = 6 * 7.61 billion parameters * 18 trillion tokens = 8.2188e+23",Qwen2.5 7B,https://conceptualreasoning.ai/dtbench,
+claude-3-haiku-20240307,0.5013000000000001,16.8833,8.4605,0.5487,2024-03-07,Anthropic,United States of America,,,Claude 3 Haiku,https://conceptualreasoning.ai/dtbench,
+c4ai-command-r-plus-08-2024,0.5493,24.8833,8.3952,0.5139,2024-08-30,"Cohere,Cohere Labs (formerly Cohere for AI)",Canada,,,Command R+ (Aug '24),https://conceptualreasoning.ai/dtbench,
+c4ai-command-r-08-2024,0.46399999999999997,10.6667,8.4278,0.5676,2024-08-30,,,,,Command R (Aug '24),https://conceptualreasoning.ai/dtbench,
+ministral-3b-2410,0.5173,19.55,8.4278,0.5706,2024-10-16,Mistral AI,France,,,Ministral 3B,https://conceptualreasoning.ai/dtbench,
+gemma-3-4b-it,0.5093,18.2167,8.4278,0.5493,2025-03-12,Google DeepMind,United States of America,9.6e+22,6ND = 6 * 4B parameters * 4T training tokens = 9.6 × 10^22 FLOP,Gemma 3 4B,https://conceptualreasoning.ai/dtbench,
+gemini-1.0-pro-001,0.4586,9.7741,8.4055,0.5736,2023-12-13,Google DeepMind,United States of America,,"Training compute estimated to be 1.8e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing 
+
+Our reasoning and calculations for Gemini 1 Ultra are detailed in this Colab notebook.
+https://colab.research.google.com/drive/1sfG91UfiYpEYnj_xB5YRy07T5dv-9O_c
+
+",Gemini 1.0 Pro,https://conceptualreasoning.ai/dtbench,
+claude-instant-1.2,0.45780000000000004,9.6297,8.4042,0.5952,2023-08-09,Anthropic,United States of America,,,Claude Instant 1.2,https://conceptualreasoning.ai/dtbench,
+ministral-8b-2410,0.4569,9.4815,8.403,0.4777,2024-10-16,Mistral AI,France,,,Ministral 8B (Oct '24),https://conceptualreasoning.ai/dtbench,
+gemma-2-27b,0.48,13.3333,8.4278,0.5634,,Google DeepMind,United States of America,2.106e+24,"""For the 27B model, we train on an 8x24x32 configuration of
+TPUv5p, totaling 6144 chips""
+
+trained on 13T tokens
+
+6ND = 6*27000000000*13000000000000=2.106e+24",Gemma 2 27B,https://conceptualreasoning.ai/dtbench,
+Meta-Llama-3-8B-Instruct,0.4393,6.5556,7.4638,0.5405,2024-04-18,Meta AI,United States of America,7.2e+23,"Counting operations
+15000000000000 tokens*8000000000.00 parameters*6 FLOP / token / parameter = 7.2×10^23 FLOP
+
+GPU calculation
+400 TFLOPS per GPU * 1.3M GPU hours * 3600s=1.872×10^24 
+(it is not confident that 400 TFLOPs applies to the Llama 3-8B training run)",Llama 3 8B,https://conceptualreasoning.ai/dtbench,
+open-mistral-7b,0.4254,4.2339,6.3037,0.4549,2023-09-27,Mistral AI,France,,,Mistral Tiny,https://conceptualreasoning.ai/dtbench,
+Llama-2-13b-chat,0.42240000000000005,3.7333,6.0328,0.433,2023-07-18,Meta AI,United States of America,1.6e+23,13 billion parameters * 2 trillion tokens * 6 FLOP / token / parameter = 1.6e23 FLOP,Llama 2 13B,https://conceptualreasoning.ai/dtbench,
+Llama-2-70b-chat,0.4165,2.7556,5.5358,0.5095,2023-07-18,Meta AI,United States of America,8.1e+23,"""Pretraining utilized a cumulative 3.3M GPU hours of computation on hardware of type A100-80GB"" of which 1720320 GPU hours were used to train the 70B model.
+
+311.84 BF16 TFLOP/s * 1720320 hours * 0.40 utilization = 7.725e+23 FLOP.
+
+Alternatively: the model was trained for 1 epoch on 2 trillion tokens and has 70B parameters. C = 6ND = 6*70B*2T = 8.4e+23 FLOP.",Llama 2 70B,https://conceptualreasoning.ai/dtbench,

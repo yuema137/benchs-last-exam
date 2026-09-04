@@ -1,0 +1,4 @@
+Model version,Overall Accuracy,Release date,Organization,Name,Source,Notes
+gpt-4-1-mini,0.5045,2025-04-14,OpenAI,GPT-4.1-mini (FC),https://gorilla.cs.berkeley.edu/leaderboard.html,Official BFCL V4 overall accuracy at the published evaluator checkpoint; native function-calling mode.
+claude-sonnet-4-5,0.7324,2025-09-29,Anthropic,Claude Sonnet 4.5 (FC),https://gorilla.cs.berkeley.edu/leaderboard.html,Official BFCL V4 overall accuracy at the published evaluator checkpoint; native function-calling mode.
+gemini-3-pro,0.7251,2025-11-18,Google DeepMind,Gemini 3 Pro Preview (Prompt),https://gorilla.cs.berkeley.edu/leaderboard.html,Official BFCL V4 overall accuracy at the published evaluator checkpoint; prompt mode is kept separate from native FC observations.

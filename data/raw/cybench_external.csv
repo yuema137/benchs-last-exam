@@ -57,3 +57,5 @@ We also know their larger scale training runs for 405B were getting between 0.38
 990 TFLOPS per GPU * 6.4 million GPU hours * 3600s * 0.43 = 9.808e24
 
 Geometric mean: sqrt(6.3e24 * 9.808e24) = 7.861e24",0.075,0.082,9.0,11.0,,Cybench leaderboard,https://cybench.github.io/,recqUzjd97hyzZN2f
+claude-mythos-preview,1.0,2026-04-07,Anthropic,United States of America,,,,,,"Results from the Claude Mythos Preview System Card, also reported on the official Cybench leaderboard. Subset of 35 problems.",Claude Mythos Preview System Card,https://cdn.sanity.io/files/4zrzovbb/website/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf,cybench-mythos-preview
+claude-opus-4-7-20260416,0.96,2026-04-16,Anthropic,United States of America,,,,,,"Results from the Claude Opus 4.7 System Card, also reported on the official Cybench leaderboard. Subset of 35 problems.",Claude Opus 4.7 System Card,https://cdn.sanity.io/files/4zrzovbb/website/037f06850df7fbe871e206dad004c3db5fd50340.pdf,cybench-opus-4-7

@@ -1,0 +1,6 @@
+Model version,Pass@1,Release date,Organization,Name,Source,Notes
+gpt-3-175b,0.116,2020-06-11,OpenAI,GPT-3 175B,https://arxiv.org/abs/2107.03374,Original HumanEval paper baseline; zero-shot Pass@1.
+code-davinci-001,0.288,2022-03-15,OpenAI,code-davinci-001,https://arxiv.org/abs/2107.03374,Original HumanEval paper Codex-family baseline; Pass@1.
+gpt-4-2023-03-14,0.670,2023-03-14,OpenAI,GPT-4,https://openai.com/research/gpt-4,Official GPT-4 technical-report HumanEval result; Pass@1.
+claude-3-opus,0.849,2024-02-29,Anthropic,Claude 3 Opus,https://www.anthropic.com/news/claude-3-family,Official Claude 3 report HumanEval result; Pass@1.
+gpt-4o-2024-05-13,0.906,2024-05-13,OpenAI,GPT-4o,https://openai.com/index/hello-gpt-4o/,Official GPT-4o release result; Pass@1.

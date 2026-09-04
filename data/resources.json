@@ -17,6 +17,57 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-cybench-mythos-preview",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://cdn.sanity.io/files/4zrzovbb/website/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf",
+    "url": "cybench-mythos-preview",
+    "publisher": "https://cdn.sanity.io/files/4zrzovbb/website/7624816413e9b4d2e3ba620c5a5e091b98b190a5.pdf",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-cybench-opus-4-7",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://cdn.sanity.io/files/4zrzovbb/website/037f06850df7fbe871e206dad004c3db5fd50340.pdf",
+    "url": "cybench-opus-4-7",
+    "publisher": "https://cdn.sanity.io/files/4zrzovbb/website/037f06850df7fbe871e206dad004c3db5fd50340.pdf",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-gso-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GSO Leaderboard",
+    "url": "GSO Leaderboard",
+    "publisher": "GSO Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-http-arxiv-org-abs-2005-14165",
     "resource_scope": [
       "benchmark",
@@ -78,6 +129,23 @@
     "title": "Scaling Language Models: Methods, Analysis & Insights from Training Gopher",
     "url": "http://arxiv.org/abs/2112.11446",
     "publisher": "Scaling Language Models: Methods, Analysis & Insights from Training Gopher",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-http-arxiv-org-abs-2203-15556",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Training Compute-Optimal Large Language Models",
+    "url": "http://arxiv.org/abs/2203.15556",
+    "publisher": "Training Compute-Optimal Large Language Models",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -374,6 +442,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-aclanthology-org-d18-1260",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OpenBookQA primary source",
+    "url": "https://aclanthology.org/D18-1260/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-agents-last-exam-org-leaderboard",
     "resource_scope": [
       "benchmark"
@@ -450,6 +534,22 @@
     "url": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
     "publisher": "Aider LLM Leaderboards",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-alignment-anthropic-com-2026-conceptual-reasoning-index",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "DTBench primary source",
+    "url": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -625,6 +725,22 @@
     "resource_type": "paper",
     "title": "MATH Level 5 primary source",
     "url": "https://arxiv.org/abs/2103.03874",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2107-03374",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "HumanEval primary source",
+    "url": "https://arxiv.org/abs/2107.03374",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -1032,6 +1148,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-pdf-2407-21783",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "The Llama 3 Herd of Models",
+    "url": "https://arxiv.org/pdf/2407.21783",
+    "publisher": "The Llama 3 Herd of Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-pdf-2409-12186",
     "resource_scope": [
       "benchmark",
@@ -1083,6 +1216,54 @@
     "notes": null
   },
   {
+    "id": "resource-https-assistantbench-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "AssistantBench primary source",
+    "url": "https://assistantbench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-balrogai-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BALROG primary source",
+    "url": "https://balrogai.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-benchcad-com-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BenchCAD \u00b7 Vision2Code primary source",
+    "url": "https://benchcad.com/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-cognition-com-blog-frontier-code-1-1",
     "resource_scope": [
       "benchmark"
@@ -1114,6 +1295,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-conceptualreasoning-ai-dtbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://conceptualreasoning.ai/dtbench",
+    "url": "https://conceptualreasoning.ai/dtbench",
+    "publisher": "https://conceptualreasoning.ai/dtbench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-boolq",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Stanford HELM",
+    "url": "https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq",
+    "publisher": "Stanford HELM",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm",
@@ -1264,6 +1479,22 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-deepswe-datacurve-ai",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "DeepSWE v1.1 primary source",
+    "url": "https://deepswe.datacurve.ai/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-developers-openai-com-api-docs-models-gpt-6-astra",
@@ -11955,6 +12186,22 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-exploitbench-ai",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ExploitBench primary source",
+    "url": "https://exploitbench.ai/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
@@ -11963,6 +12210,22 @@
     "resource_type": "paper",
     "title": "LongBench v2 primary source",
     "url": "https://github.com/EnvCommons/LongBench-v2/blob/main/README.md",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-google-research-datasets-boolean-questions",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BoolQ primary source",
+    "url": "https://github.com/google-research-datasets/boolean-questions",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12020,6 +12283,56 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-mmmu-benchmark-mmmu",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MMMU primary source",
+    "url": "https://github.com/MMMU-Benchmark/MMMU",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-openai-mle-bench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://github.com/openai/mle-bench",
+    "url": "https://github.com/openai/mle-bench",
+    "publisher": "https://github.com/openai/mle-bench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-github-com-openai-preparedness-tree-main-project-paperbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "url": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "publisher": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
     "resource_scope": [
       "benchmark",
@@ -12053,6 +12366,55 @@
     "notes": null
   },
   {
+    "id": "resource-https-gorilla-cs-berkeley-edu-leaderboard-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BFCL V4 primary source",
+    "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-gso-bench-github-io-index-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GSO primary source",
+    "url": "https://gso-bench.github.io/index.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-gso-bench-github-io-leaderboard-html",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GSO Leaderboard",
+    "url": "https://gso-bench.github.io/leaderboard.html",
+    "publisher": "GSO Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
     "resource_scope": [
       "benchmark",
@@ -12070,6 +12432,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-hal-cs-princeton-edu-assistantbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://hal.cs.princeton.edu/assistantbench",
+    "url": "https://hal.cs.princeton.edu/assistantbench",
+    "publisher": "https://hal.cs.princeton.edu/assistantbench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-hal-cs-princeton-edu-scienceagentbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ScienceAgentBench primary source",
+    "url": "https://hal.cs.princeton.edu/scienceagentbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-hcompany-ai-holo2-235b-a22b-preview",
     "resource_scope": [
       "benchmark",
@@ -12081,6 +12476,54 @@
     "url": "https://hcompany.ai/holo2-235b-a22b-preview",
     "publisher": "Official H Company release post",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-huggingface-co-blog-leaderboard-bigcodebench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BigCodeBench primary source",
+    "url": "https://huggingface.co/blog/leaderboard-bigcodebench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-huggingface-co-datasets-mmmu-mmmu-pro",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MMMU-Pro primary source",
+    "url": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GAIA primary source",
+    "url": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12120,6 +12563,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-labs-scale-com-leaderboard-mcp-atlas",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MCP-Atlas primary source",
+    "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-mathvista-github-io",
     "resource_scope": [
       "benchmark"
@@ -12128,6 +12587,39 @@
     "resource_type": "paper",
     "title": "MathVista primary source",
     "url": "https://mathvista.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-metr-org-blog-2025-03-19-measuring-ai-ability-to-complete-long-tasks",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "publisher": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-metr-org-blog-2026-1-29-time-horizon-1-1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "METR Time Horizon 1.1 primary source",
+    "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12202,6 +12694,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-openai-com-index-hello-gpt-4o",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://openai.com/index/hello-gpt-4o/",
+    "url": "https://openai.com/index/hello-gpt-4o/",
+    "publisher": "https://openai.com/index/hello-gpt-4o/",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-openai-com-index-introducing-swe-bench-verified",
     "resource_scope": [
       "benchmark"
@@ -12216,6 +12725,55 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-mle-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MLE-bench primary source",
+    "url": "https://openai.com/index/mle-bench/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-paperbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PaperBench primary source",
+    "url": "https://openai.com/index/paperbench/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-research-gpt-4",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://openai.com/research/gpt-4",
+    "url": "https://openai.com/research/gpt-4",
+    "publisher": "https://openai.com/research/gpt-4",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-os-world-github-io",
@@ -12401,6 +12959,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-the-agent-company-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "TheAgentCompany primary source",
+    "url": "https://the-agent-company.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-toolathlon-xyz-docs-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Toolathlon-Verified primary source",
+    "url": "https://toolathlon.xyz/docs/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-video-mme-github-io-home-page-html",
     "resource_scope": [
       "benchmark"
@@ -12448,6 +13038,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-www-anthropic-com-news-claude-3-family",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://www.anthropic.com/news/claude-3-family",
+    "url": "https://www.anthropic.com/news/claude-3-family",
+    "publisher": "https://www.anthropic.com/news/claude-3-family",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-www-anthropic-com-news-releasing-claude-instant-1-2",
@@ -12501,6 +13108,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-frontierswe-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierSWE V2 primary source",
+    "url": "https://www.frontierswe.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-jmlr-org-papers-volume24-22-1144-22-1144-pdf",
     "resource_scope": [
       "benchmark",
@@ -12512,6 +13135,22 @@
     "url": "https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf",
     "publisher": "PaLM: Scaling Language Modeling with Pathways",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-mercor-com-apex-apex-agents-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "APEX-Agents primary source",
+    "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12600,6 +13239,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-vals-ai-benchmarks-proof-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ProofBench v1.1 primary source",
+    "url": "https://www.vals.ai/benchmarks/proof_bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-x-ai-news-grok-4-6",
     "resource_scope": [
       "model"
@@ -12614,6 +13269,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-theagentcompany-experiment-results-github",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "TheAgentCompany experiment results github",
+    "url": "TheAgentCompany experiment results github",
+    "publisher": "TheAgentCompany experiment results github",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-theagentcompany-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "TheAgentCompany leaderboard",
+    "url": "TheAgentCompany leaderboard",
+    "publisher": "TheAgentCompany leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-video-mme-leaderboard",
