@@ -27,8 +27,11 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | HumanEval | Model / Coding | 2021-07-07 | Canonical function-level code generation benchmark with executable hidden tests and a long model-generation history | ADD |
 | BigCodeBench | Model / Coding | 2024-06-18 | 1,140 practical function tasks across diverse libraries; official Complete calibrated Pass@1 leaderboard | ADD |
 | AssistantBench | Agent / General agent tasks | 2024-07-23 | Fixed 214-task web research benchmark; the HAL Browser-Use verified export provides eight dated results across OpenAI, Anthropic, and Google. Official resources: [project page](https://assistantbench.github.io/) and [HAL leaderboard](https://hal.cs.princeton.edu/assistantbench) | ADD_WITH_PARTIAL_DATA |
+| BALROG | Agent / General agent tasks | 2024-11-20 | ICLR 2025 benchmark spanning six interactive game environments; official leaderboard provides a multi-generation Average progress series | ADD |
+| GSO | Agent / Software engineering | 2025-05-29 | Fixed repository-level performance-optimization tasks with precise runtime tests and expert targets; official leaderboard export provides comparable Opt@1 rows | ADD_WITH_PARTIAL_DATA |
+| METR Time Horizon 1.1 | Agent / Science & research | 2026-01-29 | Standardized long-horizon software/research task suite with a 50% human-equivalent time-horizon metric; percentage lifecycle thresholds are explicitly N/A | ADD_WITH_PARTIAL_DATA |
 
-The batch adds 11 measurement objects, not 11 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown` or right-censored when the evidence does not support a crossing.
+This expansion adds 14 measurement objects across the current batches, not 14 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
 
 ## Deferred candidates
 

@@ -17,6 +17,23 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-gso-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GSO Leaderboard",
+    "url": "GSO Leaderboard",
+    "publisher": "GSO Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-http-arxiv-org-abs-2005-14165",
     "resource_scope": [
       "benchmark",
@@ -1107,6 +1124,22 @@
     "resource_type": "paper",
     "title": "AssistantBench primary source",
     "url": "https://assistantbench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-balrogai-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BALROG primary source",
+    "url": "https://balrogai.com/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12183,6 +12216,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-gso-bench-github-io-index-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GSO primary source",
+    "url": "https://gso-bench.github.io/index.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-gso-bench-github-io-leaderboard-html",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GSO Leaderboard",
+    "url": "https://gso-bench.github.io/leaderboard.html",
+    "publisher": "GSO Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
     "resource_scope": [
       "benchmark",
@@ -12355,6 +12421,39 @@
     "resource_type": "paper",
     "title": "MathVista primary source",
     "url": "https://mathvista.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-metr-org-blog-2025-03-19-measuring-ai-ability-to-complete-long-tasks",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "publisher": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-metr-org-blog-2026-1-29-time-horizon-1-1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "METR Time Horizon 1.1 primary source",
+    "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
