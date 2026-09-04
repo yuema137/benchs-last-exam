@@ -500,6 +500,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2311-07911",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "IFEval primary source",
+    "url": "https://arxiv.org/abs/2311.07911",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2311-12022",
     "resource_scope": [
       "benchmark"
@@ -11464,6 +11480,23 @@
     "url": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.0.0",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "IFEval source",
+    "url": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+    "publisher": null,
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

@@ -503,6 +503,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-arxiv-org-abs-2311-07911",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "IFEval primary source",
+      "url": "https://arxiv.org/abs/2311.07911",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-arxiv-org-abs-2311-12022",
       "resource_scope": [
         "benchmark"
@@ -11473,6 +11489,23 @@
       "notes": null
     },
     {
+      "id": "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "IFEval source",
+      "url": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+      "publisher": null,
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding",
       "resource_scope": [
         "benchmark"
@@ -12837,13 +12870,13 @@
       "release_date": "2024-06-20",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
+        "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md"
       ],
       "roles": [
         "contemporary_frontier"
       ],
       "domains": [
-        "Long context"
+        "Instruction following"
       ],
       "evaluation_types": [
         "Model"
@@ -93479,6 +93512,682 @@
       ],
       "resource_ids": [
         "resource-https-openai-com-index-introducing-swe-bench-verified"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "ifeval",
+      "name": "IFEval",
+      "domain": "Instruction following",
+      "release": "2023-11-14",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://arxiv.org/abs/2311.07911",
+      "evaluation_type": "Model",
+      "tags": [
+        "verifiable",
+        "constraints",
+        "format"
+      ],
+      "metric": "Score",
+      "score_format": "ratio",
+      "metric_id": "ifeval-metric-v1",
+      "protocol_id": "ifeval-source-export-v1",
+      "benchmark_version_id": "ifeval-canonical",
+      "summary": {
+        "en": "IFEval tests whether a language model follows concrete, automatically checkable instructions in a prompt.",
+        "zh": "IFEval \u6d4b\u8bd5\u8bed\u8a00\u6a21\u578b\u80fd\u4e0d\u80fd\u9075\u5b88 prompt \u91cc\u5177\u4f53\u3001\u53ef\u4ee5\u81ea\u52a8\u68c0\u67e5\u7684\u6307\u4ee4\u3002"
+      },
+      "task_format": {
+        "en": "Each prompt includes one or more constraints, such as an exact format, word limit, or required phrase. The model writes a response that must satisfy those constraints.",
+        "zh": "\u6bcf\u4e2a prompt \u90fd\u5e26\u6709\u4e00\u4e2a\u6216\u591a\u4e2a\u7ea6\u675f\uff0c\u6bd4\u5982\u56fa\u5b9a\u683c\u5f0f\u3001\u5b57\u6570\u9650\u5236\u6216\u5fc5\u987b\u51fa\u73b0\u67d0\u4e2a\u77ed\u8bed\u3002\u6a21\u578b\u9700\u8981\u5199\u51fa\u6ee1\u8db3\u8fd9\u4e9b\u7ea6\u675f\u7684\u56de\u7b54\u3002"
+      },
+      "scoring": {
+        "metric_name": "Prompt-level accuracy",
+        "explanation": {
+          "en": "A prompt is counted as correct only when the response satisfies all of its verifiable instructions. The score is the fraction of prompts fully satisfied.",
+          "zh": "\u53ea\u6709\u5f53\u56de\u7b54\u6ee1\u8db3\u4e00\u9053 prompt \u7684\u5168\u90e8\u53ef\u9a8c\u8bc1\u6307\u4ee4\u65f6\uff0c\u8fd9\u9053\u9898\u624d\u7b97\u6b63\u786e\u3002\u5206\u6570\u5c31\u662f\u5b8c\u6574\u6ee1\u8db3\u7684 prompt \u5360\u5168\u90e8 prompt \u7684\u6bd4\u4f8b\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 4,
+      "observations": [
+        {
+          "observation_id": "obs-ifeval-gpt-4o",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.794,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-ifeval-claude-3-5-sonnet",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.847,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-ifeval-qwen2-5-72b-instruct",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-qwen2-5-72b-instruct",
+          "model_family_id": "qwen-qwen2-5-72b-instruct",
+          "model": "Qwen2.5-72B-Instruct",
+          "organization": "Qwen",
+          "score": 0.835,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-09-19",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-19",
+          "date_kind": "unknown",
+          "capability_date": "2024-09-19",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-ifeval-llama-3-3-70b-instruct",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-llama-3-3-70b-instruct",
+          "model_family_id": "meta-llama-3-3-70b-instruct",
+          "model": "Llama 3.3 70B Instruct",
+          "organization": "Meta",
+          "score": 0.882,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-12-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-12-06",
+          "date_kind": "unknown",
+          "capability_date": "2024-12-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-ifeval-gpt-4o",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.794,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-ifeval-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-claude-3-5-sonnet",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.847,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-ifeval-claude-3-5-sonnet"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-llama-3-3-70b-instruct",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-llama-3-3-70b-instruct",
+          "model_family_id": "meta-llama-3-3-70b-instruct",
+          "model": "Llama 3.3 70B Instruct",
+          "organization": "Meta",
+          "score": 0.882,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-12-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-12-06",
+          "date_kind": "model release date",
+          "capability_date": "2024-12-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-12-06",
+          "frontier_observation_ids": [
+            "obs-ifeval-llama-3-3-70b-instruct"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-ifeval-gpt-4o",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.794,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-ifeval-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-claude-3-5-sonnet",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.847,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-ifeval-claude-3-5-sonnet"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-llama-3-3-70b-instruct",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-llama-3-3-70b-instruct",
+          "model_family_id": "meta-llama-3-3-70b-instruct",
+          "model": "Llama 3.3 70B Instruct",
+          "organization": "Meta",
+          "score": 0.882,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-12-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-12-06",
+          "date_kind": "model release date",
+          "capability_date": "2024-12-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-12-06",
+          "frontier_observation_ids": [
+            "obs-ifeval-llama-3-3-70b-instruct"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-ifeval-gpt-4o",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.794,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-ifeval-gpt-4o"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-claude-3-5-sonnet",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.847,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-ifeval-claude-3-5-sonnet"
+          ]
+        },
+        {
+          "observation_id": "obs-ifeval-llama-3-3-70b-instruct",
+          "benchmark_id": "ifeval",
+          "benchmark_version_id": "ifeval-canonical",
+          "model_id": "model-llama-3-3-70b-instruct",
+          "model_family_id": "meta-llama-3-3-70b-instruct",
+          "model": "Llama 3.3 70B Instruct",
+          "organization": "Meta",
+          "score": 0.882,
+          "reported_cost_per_task": null,
+          "metric_id": "ifeval-metric-v1",
+          "protocol_id": "ifeval-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+          "model_release_date": "2024-12-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-12-06",
+          "date_kind": "model release date",
+          "capability_date": "2024-12-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md",
+            "resource-https-arxiv-org-abs-2311-07911"
+          ],
+          "source": "https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-12-06",
+          "frontier_observation_ids": [
+            "obs-ifeval-llama-3-3-70b-instruct"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.882,
+      "capability_frontier_value": 0.882,
+      "reported_frontier_value": null,
+      "current_frontier": 0.882,
+      "normalized_progress": 0.882,
+      "normalized_headroom": 0.118,
+      "threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 181
+        },
+        "T80": {
+          "status": "reached",
+          "days": 219
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 1024
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 181
+        },
+        "T80": {
+          "status": "reached",
+          "days": 219
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 1024
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.012940676328502411,
+      "capability_velocity_180d": 0.012940676328502411,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.5714285714285714,
+        "represented_organizations": [
+          "Anthropic",
+          "Meta",
+          "OpenAI",
+          "Qwen"
+        ],
+        "panel_size": 7,
+        "status": "medium"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2311-07911"
       ],
       "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
       "historical_frontier_status": "unknown_public_dates",

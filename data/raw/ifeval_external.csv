@@ -1,0 +1,5 @@
+Model version,Score,Release date,Organization,Name,Source link,Notes
+gpt-4o-2024-08-06,0.794,2024-05-13,OpenAI,GPT-4o,https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md,English IFEval prompt-level accuracy from the published comparison table.
+claude-3-5-sonnet-20241022,0.847,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md,English IFEval prompt-level accuracy from the published comparison table.
+qwen2-5-72b-instruct,0.835,2024-09-19,Qwen,Qwen2.5-72B-Instruct,https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md,English IFEval prompt-level accuracy from the published comparison table.
+llama-3-3-70b-instruct,0.882,2024-12-06,Meta,Llama 3.3 70B Instruct,https://github.com/huggingface/blog/blob/main/leaderboard-3c3h-aragen-ifeval.md,English IFEval prompt-level accuracy from the published comparison table.

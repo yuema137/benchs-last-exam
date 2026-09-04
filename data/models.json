@@ -867,13 +867,13 @@
     "release_date": "2024-06-20",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
+      "resource-https-github-com-huggingface-blog-blob-main-leaderboard-3c3h-aragen-ifeval-md"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Long context"
+      "Instruction following"
     ],
     "evaluation_types": [
       "Model"
