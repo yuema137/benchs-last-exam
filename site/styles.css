@@ -12,6 +12,7 @@ input { color:var(--text); background:var(--panel); border:1px solid var(--line)
 .utility { position:absolute; right:0; top:0; display:flex; align-items:center; gap:6px; color:var(--muted); font-size:12px; }.utility-gap { width:10px; }.utility-btn { border:0; background:transparent; color:var(--muted); cursor:pointer; padding:4px 5px; border-radius:5px; }.utility-btn.active { color:var(--accent); background:color-mix(in srgb,var(--accent) 12%,transparent); }
 label { color:var(--muted); font-size:12px; display:grid; gap:5px; }
 select { color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:7px; padding:8px 28px 8px 10px; }
+.filter-btn { color:var(--bg); background:var(--accent); border:1px solid var(--accent); border-radius:7px; padding:8px 14px; font:inherit; font-size:12px; font-weight:700; cursor:pointer; }.filter-btn:hover { filter:brightness(1.08); }
 .snapshot { margin-left:auto; color:var(--muted); font-size:12px; padding-bottom:8px; }
 .table-wrap { margin-top:24px; overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
 table { width:100%; border-collapse:collapse; min-width:760px; }
