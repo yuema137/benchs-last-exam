@@ -54,6 +54,17 @@ jobs:
           ssh-key: ${{ secrets.BLE_PERSONAL_SITE_DEPLOY_KEY }}
           path: personal-site
           fetch-depth: 0
+      - name: Configure personal-site SSH push
+        env:
+          BLE_DEPLOY_KEY: ${{ secrets.BLE_PERSONAL_SITE_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          eval "$(ssh-agent -s)"
+          printf '%s\n' "$BLE_DEPLOY_KEY" | ssh-add -
+          mkdir -p "$HOME/.ssh"
+          ssh-keyscan -H github.com >> "$HOME/.ssh/known_hosts"
+          echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$GITHUB_ENV"
+          echo "SSH_AGENT_PID=$SSH_AGENT_PID" >> "$GITHUB_ENV"
       - name: Sync isolated BLE branch
         id: sync
         working-directory: personal-site
