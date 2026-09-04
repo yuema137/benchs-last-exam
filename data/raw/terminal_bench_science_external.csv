@@ -1,6 +1,7 @@
 Name,Resolution rate,Release date,Organization,Source,Source Link,Notes
 Claude Opus 5 + Claude Code,0.300,2026-07-24,Anthropic,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 GPT-5.6 Sol + Codex,0.224,2026-07-09,OpenAI,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
+GPT-6 Astra,0.646,2026-09-03,OpenAI,GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,OpenAI published result; 0.1 70-task release; three independent trials per task
 Claude Fable 5 + Claude Code,0.214,2026-06-09,Anthropic,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 Claude Opus 4.8 + Claude Code,0.105,2026-05-28,Anthropic,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 GPT-5.6 Terra + Codex,0.086,2026-07-09,OpenAI,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task

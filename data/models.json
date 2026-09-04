@@ -1357,7 +1357,7 @@
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1924,7 +1924,7 @@
     "release_date": "2025-11-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2302,7 +2302,7 @@
     "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2512,7 +2512,7 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4652,6 +4652,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gdm-ai-co-mathematician",
+    "canonical_name": "gdm-ai-co-mathematician",
+    "family_id": "google-deepmind-gdm-ai-co-mathematician",
+    "release_date": "2026-05-08",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-0-pro-001",
     "canonical_name": "Gemini 1.0 Pro (001)",
     "family_id": "google-deepmind-gemini-1-0-pro-001",
@@ -5141,7 +5162,7 @@
     "release_date": "2025-09-25",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6087,7 +6108,7 @@
     "release_date": "2025-12-17",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6570,7 +6591,7 @@
     "release_date": "2025-09-30",
     "organization": "Z.ai (Zhipu AI),Tsinghua University",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6801,7 +6822,7 @@
     "release_date": "2026-08-14",
     "organization": "Z.ai",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -7725,7 +7746,7 @@
     "release_date": "2025-11-12",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -7746,7 +7767,7 @@
     "release_date": "2025-11-19",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9258,7 +9279,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9426,7 +9447,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9546,6 +9567,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-sol-promax",
+    "canonical_name": "gpt-5.6-sol_promax",
+    "family_id": "openai-gpt-5-6-sol-promax",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-cdwwjsh3jvfrkyhuhmt54t-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-sol-xhigh",
     "canonical_name": "GPT-5.6 Sol (xHigh)",
     "family_id": "openai-gpt-5-6-sol-xhigh",
@@ -9594,7 +9636,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9741,7 +9783,7 @@
     "release_date": "2025-09-15",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10266,19 +10308,64 @@
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
+      "resource-https-openai-com-index-gpt-6-astra",
       "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General knowledge & reasoning"
+      "Mathematics"
     ],
     "evaluation_types": [
       "Model"
     ],
-    "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
-    "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-high",
+    "canonical_name": "gpt-6-astra_high",
+    "family_id": "openai-gpt-6-astra-high",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-low",
+    "canonical_name": "gpt-6-astra_low",
+    "family_id": "openai-gpt-6-astra-low",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
     "id": "model-gpt-6-astra-max",
@@ -10287,7 +10374,7 @@
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-arxiv-org-abs-2311-12022",
+      "resource-https-openai-com-index-gpt-6-astra",
       "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
     ],
     "roles": [
@@ -10295,6 +10382,72 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-medium",
+    "canonical_name": "gpt-6-astra_medium",
+    "family_id": "openai-gpt-6-astra-medium",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-none",
+    "canonical_name": "gpt-6-astra_none",
+    "family_id": "openai-gpt-6-astra-none",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-xhigh",
+    "canonical_name": "gpt-6-astra_xhigh",
+    "family_id": "openai-gpt-6-astra-xhigh",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "evaluation_types": [
       "Model"
@@ -10351,7 +10504,7 @@
     "release_date": "2025-08-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10393,7 +10546,7 @@
     "release_date": "2025-08-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10920,7 +11073,7 @@
     "release_date": "2026-08-12",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement",
+      "resource-https-www-terminal-bench-science-ai",
       "resource-https-x-ai-news-grok-4-6"
     ],
     "roles": [
@@ -11072,7 +11225,7 @@
     "release_date": "2025-08-28",
     "organization": "Unknown",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -11870,7 +12023,7 @@
     "release_date": "2026-07-16",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-announcement"
+      "resource-https-www-terminal-bench-science-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -17313,7 +17466,7 @@
     "release_date": "2025-07-31",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"

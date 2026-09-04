@@ -2,4 +2,5 @@ Model version,Accuracy,Release date,Organization,Name,Source,Source link,Notes,i
 gpt-4o,0.008,2024-05-13,OpenAI,GPT-4o,ScreenSpot-Pro official leaderboard,https://gui-agent.github.io/grounding-leaderboard/,Direct grounding result; greedy decoding,sspro-gpt4o
 qwen2-vl-72b-instruct,0.010,2024-09-18,Alibaba,Qwen2-VL-72B-Instruct,ScreenSpot-Pro official leaderboard,https://gui-agent.github.io/grounding-leaderboard/,Direct grounding result; greedy decoding,sspro-qwen2vl72b
 os-atlas-7b,0.189,2024-10-30,OS-Copilot,OS-Atlas-7B,ScreenSpot-Pro paper,https://arxiv.org/abs/2410.23218,Direct grounding baseline reported by the benchmark paper,sspro-osatlas7b
+gpt-6-astra,0.927,2026-09-03,OpenAI,GPT-6 Astra,ScreenSpot-Pro result in GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,No tools; direct grounding result,sspro-gpt6-astra
 holo2-235b-a22b,0.706,2026-02-03,H Company,Holo2-235B-A22B,Official H Company release post,https://hcompany.ai/holo2-235b-a22b-preview,Single-step direct localization result; agentic 78.5% result excluded from this protocol,sspro-holo2-235b
