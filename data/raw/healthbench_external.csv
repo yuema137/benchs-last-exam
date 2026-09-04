@@ -1,0 +1,4 @@
+Model version,Score,Release date,Organization,Name,Source link,Notes
+gpt-3-5-turbo,0.16,2022-11-30,OpenAI,GPT-3.5 Turbo,https://arxiv.org/abs/2505.08775,HealthBench overall score reported in the official paper abstract.
+gpt-4o,0.32,2024-05-13,OpenAI,GPT-4o,https://arxiv.org/abs/2505.08775,HealthBench overall score reported in the official paper abstract.
+o3,0.60,2025-04-16,OpenAI,o3,https://arxiv.org/abs/2505.08775,HealthBench overall score reported in the official paper abstract.

@@ -1,0 +1,9 @@
+Name,Score,Release date,Organization,Cost,Source,Source Link,Notes
+Claude Fable 5.1 Max,0.734,2026-09-01,Anthropic,9.64,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Claude Fable 5.1 Extra High,0.728,2026-09-01,Anthropic,6.96,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Grok 4.6 Extra High,0.708,2026-08-12,xAI,2.81,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Claude Fable 5 Max,0.705,2026-06-09,Anthropic,17.32,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Claude Opus 5 Max,0.700,2026-07-24,Anthropic,8.23,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Grok 4.6 High,0.699,2026-08-12,xAI,2.34,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+GPT-5.6 Sol Max,0.672,2026-07-09,OpenAI,5.69,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing
+Gemini 3.8 Flash High,0.692,2026-09-02,Google,2.38,CursorBench 3.2 official leaderboard,https://cursor.com/cn/cursorbench,CursorBench 3.2; cost estimated from published token pricing

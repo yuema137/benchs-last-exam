@@ -1,18 +1,39 @@
 # Curation Queue
 
-These are strong candidates or unresolved choices. They are intentionally outside the current Tier A core until they add clear lifecycle value or pass a focused source/protocol audit.
+This is a shortlist of candidates that may be valuable, but are not yet part
+of the curated leaderboard. A candidate is not added until its benchmark
+version, release date, scoring protocol, and model-generation observations are
+source-backed.
 
-| Candidate | Why it may belong | Concern / overlap | Recommendation |
+## Strong candidates requiring additional source work
+
+| Candidate | Reason to include | Current hesitation | Recommendation |
 |---|---|---|---|
-| HumanEval | Historically canonical coding benchmark with clear execution-based scoring | Current selected export lacks a comparable historical observation file; may be saturated and overlap with SWE-bench on coding only superficially | Add after sourcing a clean historical series; do not invent dates |
-| Humanity's Last Exam | Important current expert-knowledge benchmark with potentially long useful lifetime | Limited history and disputed/uncertain item quality; ceiling interpretation needs care | Candidate for later current-frontier cohort, not first core |
-| ARC-AGI-1 / ARC-AGI-2 | Distinct abstract reasoning task and useful contrast with language QA | Separate task-set versions and sparse comparable model coverage | Choose one version only after version/source audit |
-| MMMU | Important multimodal knowledge benchmark | Floor depends on item format; modality adds protocol comparability work | Add if it supplies a genuinely different longitudinal object |
-| MathVista | Multimodal math with clear domain relevance | Overlap with MATH/GSM8K and likely thinner historical series | Keep as alternative to MMMU, not automatic addition |
-| SimpleQA Verified | Factuality is an important measurement target | Grading/abstention semantics and short history | Revisit after stable grader metadata is available |
-| FrontierMath | Valuable hard-math frontier probe | Private-test semantics and fixed ceiling are not yet suitable for normalized thresholds | Keep as non-normalized candidate |
-| SWE-bench original vs Verified | Both have historical relevance | They are related versions, not automatically separate homepage objects | Keep Verified in core; represent original as version lineage unless lifecycle value differs |
+| MMLU-Pro | Important harder successor to MMLU with broad model-report usage | Initial six-point mini-leaderboard series is now included; expand only with matching prompt/protocol evidence | Review trajectory and protocol scope |
+| IFEval | Canonical verifiable instruction-following evaluation | Core uses English prompt-level accuracy; the source table is trusted secondary rather than benchmark-owner leaderboard data | Added to core; review source hierarchy |
+| SimpleQA | Important frontier factuality benchmark | The available local export is SimpleQA Verified, a distinct 1,000-question object | Added as SimpleQA Verified; keep original SimpleQA separate |
+| HealthBench | High-value physician-rubric health evaluation | Overall, Consensus, and Hard are separate variants; current core uses the overall score series | Added to core; review variant coverage |
+| GeneBench-Pro | Research-level scientific-agent evaluation | New benchmark with limited longitudinal coverage | Human review |
+| HumanEval | Canonical historical coding benchmark | No clean local model-generation series currently checked in | Human review |
+| BigCodeBench | More realistic code-generation tasks than HumanEval | Protocol/configuration and score series need audit | Human review |
+| GAIA | Canonical general assistant benchmark with tools and multimodality | Version/scaffold and comparable historical scores need audit | Human review |
+| BrowseComp | Important persistent web-research benchmark | Need a checked-in score series and exact no-browse/browse setup | Human review |
+| τ-bench | Representative tool-agent/user interaction benchmark | Select and freeze a version before adding; τ³ must not be silently merged | Human review |
+| WebArena Verified | Canonical browser-agent environment | Verified task set and harness boundary need explicit registry records | Human review |
+| MMMU | Canonical multimodal academic reasoning benchmark | No checked-in score series yet | Human review |
+| MMMU-Pro | Useful harder multimodal successor | Must remain separate from MMMU and needs comparable scores | Human review |
+| MathVista | Important visual-mathematical reasoning benchmark | Need a fixed version and source-backed model trajectory | Human review |
+| Video-MME v2 | Important video understanding successor | Local data currently represents original Video-MME, not v2 | Human review |
+| LongBench v2 | Meaningful long-context reasoning benchmark | Need a fixed configuration and score series; do not merge with LongBench original | Human review |
+| RULER | Canonical effective-context evaluation | Score depends strongly on context-length/configuration | Human review |
+| HealthBench | High-value physician-rubric health evaluation | Official page exposes methodology and model set, but a checked-in comparable score table still needs extraction | Add when the official score series is captured |
+| MMMU / MMMU-Pro | Important multimodal academic reasoning objects | Official leaderboard is interactive and variants/splits need separate checked-in observations | Add after extracting a stable score series |
+| IFEval | Canonical verifiable instruction-following evaluation | Need a stable source-backed model-generation series | Add after source audit |
+| HumanEval | Canonical historical coding benchmark | Need a clean comparable multi-date score series | Add after source audit |
+| BigCodeBench | More realistic code-generation tasks than HumanEval | Protocol/configuration and score series need audit | Add after source audit |
 
-## Tier C: do not include for now
+## Do not add for now
 
-Do not add obscure, weakly sourced, minor-variant, or nearly empty-history benchmarks merely to increase the catalog count. No exhaustive rejected list is maintained.
+Rolling benchmarks such as LiveBench and LiveCodeBench remain deferred. Their
+task pools change over time, so the current fixed-object capability-lifetime
+definition does not apply without a separate rolling-benchmark methodology.

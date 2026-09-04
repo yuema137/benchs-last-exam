@@ -11,9 +11,11 @@ from .models import (
     PanelMembership,
     PanelRole,
     ReferenceModelPanel,
+    Resource,
+    ResourceAuthority,
+    ResourceScope,
+    ResourceType,
     ScoreObservation,
-    SourceProvenance,
-    SourceType,
     ValidityStatus,
 )
 
@@ -28,8 +30,10 @@ __all__ = [
     "PanelMembership",
     "PanelRole",
     "ReferenceModelPanel",
+    "Resource",
+    "ResourceAuthority",
+    "ResourceScope",
+    "ResourceType",
     "ScoreObservation",
-    "SourceProvenance",
-    "SourceType",
     "ValidityStatus",
 ]

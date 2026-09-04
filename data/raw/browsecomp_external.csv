@@ -1,0 +1,6 @@
+Model version,Score,Release date,Organization,Name,Source link,Notes
+gpt-4o-browsecomp,0.006,2024-05-13,OpenAI,GPT-4o (no browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
+gpt-4o-browsecomp-browsing,0.019,2024-05-13,OpenAI,GPT-4o (with browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; browsing enabled.
+gpt-4-5,0.009,2025-02-27,OpenAI,GPT-4.5,https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
+o1-medium,0.099,2024-09-12,OpenAI,o1 (medium),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
+deep-research,0.515,2025-04-10,OpenAI,Deep Research,https://openai.com/index/browsecomp/,Official BrowseComp result; browsing agent.

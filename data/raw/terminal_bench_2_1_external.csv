@@ -1,0 +1,9 @@
+Name,Accuracy mean,Release date,Organization,Source,Source Link,Notes
+GPT-5.3-Codex + Codex CLI,0.791,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+GPT-5.4 + Codex CLI,0.773,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+Gemini 3.1 Pro + Terminus 2,0.707,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+Claude Opus 4.6 + Claude Code,0.701,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+GPT-5.3-Codex + Terminus 2,0.685,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+Gemini 3.1 Pro + Gemini CLI,0.671,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+GPT-5.4 mini + Codex CLI,0.661,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+Claude Opus 4.6 + Terminus 2,0.638,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair

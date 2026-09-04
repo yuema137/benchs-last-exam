@@ -1,0 +1,7 @@
+Model version,Score,Release date,Organization,Name,Source link,Notes
+gpt-4v,0.499,2023-10-15,OpenAI,GPT-4V,https://mathvista.github.io/,Official MathVista project update; testmini score.
+gemini-1-5-pro,0.503,2023-12-06,Google,Gemini,https://mathvista.github.io/,Official MathVista project update; score.
+qwen-vl-plus,0.433,2023-12-21,Alibaba,Qwen-VL-Plus,https://mathvista.github.io/,Official MathVista project update; score.
+gpt-4o,0.638,2024-05-13,OpenAI,GPT-4o,https://mathvista.github.io/,Official MathVista project update; score.
+claude-3-5-sonnet,0.677,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://mathvista.github.io/,Official MathVista project update; score.
+o1,0.739,2024-09-12,OpenAI,OpenAI o1,https://mathvista.github.io/,Official MathVista project update; score.

@@ -1,0 +1,7 @@
+Model version,Average Accuracy,Release date,Organization,Name,Source link,Notes
+claude-3-5-sonnet,0.7612,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.
+gpt-4o,0.7255,2024-05-13,OpenAI,GPT-4o,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.
+gemini-1-5-pro,0.6903,2024-02-15,Google,Gemini 1.5 Pro,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.
+claude-3-opus,0.6845,2024-02-29,Anthropic,Claude 3 Opus,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.
+gpt-4-turbo,0.6371,2023-11-06,OpenAI,GPT-4 Turbo,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.
+gemini-1-5-flash,0.5912,2024-05-14,Google,Gemini 1.5 Flash,https://github.com/TIGER-AI-Lab/MMLU-Pro,Official MMLU-Pro repository mini-leaderboard; overall accuracy.

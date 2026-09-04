@@ -41,13 +41,16 @@ def main():
             "source_publication_date": "Unknown",
             "plotting_date_current": plotting_date or "Unknown",
             "plotting_date_reason": reason,
+            "retrospective": "yes",
+            "historical_frontier_eligible": "no",
+            "eligibility_reason": "No defensible result-public date or row-level comparable protocol; Epoch export is treated as retrospective standardized evaluation",
             "temporal_interpretation": "Retrospective Epoch internal run; contemporaneous public result not established",
             "protocol_evidence": "Epoch benchmark methodology page; CSV score column is Best score (across scorers)",
         })
 
     fields = list(diagnostics[0])
     with CSV_OUT.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(diagnostics)
 
@@ -57,13 +60,14 @@ def main():
     lines = [
         "# MATH Level 5 Time Audit",
         "",
-        "Status: forensic audit only; no metric output or frontend behavior was changed.",
+        "Status: forensic audit plus MATH semantic correction; visualization behavior is intentionally limited to separating historical and retrospective points.",
         "",
         "## Executive finding",
         "",
         "The current site does not plot MATH Level 5 on result-publication time. Its current `build_snapshot.py` date policy uses `Started at` first and `Release date` second. Every one of the 108 rows has both fields, so all 108 current plotting dates use `Started at`, not a model-release fallback.",
         "",
         "The dates describe Epoch evaluation runs. They do not establish when each score first became publicly available. Therefore the current MATH Level 5 curve is an Epoch retrospective evaluation trajectory ordered by run start, not a historical public-result frontier. T50/T90 computed from it must not yet be interpreted as historical benchmark lifetime metrics.",
+        "The prior snapshot reported T50 = 46.8 months and T90 = 46.8 months because both thresholds were crossed by the same clustered evaluation-time frontier event. That was an artifact of the operational evaluation timeline, not evidence that the benchmark crossed both historical lifecycle thresholds on that date.",
         "",
         "## Findings",
         "",
@@ -79,7 +83,7 @@ def main():
         "",
         "## Why the vertical cluster occurs",
         "",
-        "The current code's `parse_date()` returns `Started at` before `Release date`. Epoch's MATH Level 5 export contains many standardized internal evaluation runs started on the same date, especially 2025-01-27. Those observations therefore share one x-coordinate even though their model release dates differ. The run date is useful for an evaluation-operation view, but it is not a public-result date.",
+        "The current code's `parse_date()` returns `Started at` before `Release date`. Epoch's MATH Level 5 export contains many standardized internal evaluation runs started on the same date, especially 2025-01-27. Those observations therefore share one x-coordinate even though their model release dates differ. The run date is useful for an evaluation-operation view, but it is not a public-result date. The corrected snapshot keeps these rows as retrospective observations and excludes them from the historical lifecycle frontier.",
         "",
         "The raw observations are not deleted or reordered in this audit. The diagnostic export preserves both model-release and evaluation-run dates so the same rows can later support separate views.",
         "",
@@ -101,13 +105,13 @@ def main():
         "evaluation_date          = actual evaluation/run date",
         "```",
         "",
-        "For the historical benchmark-lifecycle curve and T50/T90, use `historical_frontier_date`. If it cannot be established, keep the date unknown and exclude the observation from that curve rather than substituting model release or evaluation date. Use `model_generation_date` for a separate standardized capability-by-generation view and `evaluation_date` for evaluation-operation analysis.",
+        "For the historical benchmark-lifecycle curve and T50/T90, use `historical_frontier_date`. If it cannot be established, keep the date unknown and exclude the observation from that curve rather than substituting model release or evaluation date. Use `model_generation_date` for a separate standardized capability-by-generation view and `evaluation_date` for evaluation-operation analysis. In the current corrected snapshot, MATH Level 5 therefore reports T50/T90 as `Unknown`.",
         "",
         "## Diagnostic artifacts",
         "",
         f"- Full row-level diagnostic table: `{CSV_OUT.relative_to(ROOT)}`.",
-        "- The table includes model, score, source, benchmark/protocol note, all available date fields, current plotting date, selection reason, temporal interpretation, and protocol evidence.",
-        "- No site snapshot, metric output, or frontend file was changed by this audit.",
+        "- The table includes model, score, source, benchmark/protocol note, all available date fields, current plotting date, selection reason, retrospective classification, historical-frontier eligibility, and protocol evidence.",
+        "- The corrected snapshot excludes these retrospective rows from historical lifecycle metrics; the frontend renders them as a separate marker layer.",
         "",
         "## Source notes",
         "",
