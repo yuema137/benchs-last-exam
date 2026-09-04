@@ -396,6 +396,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-c4ai-command-a-03-2025",
+    "canonical_name": "c4ai-command-a-03-2025",
+    "family_id": "cohere-c4ai-command-a-03-2025",
+    "release_date": "2025-03-13",
+    "organization": "Cohere",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-cerebras-gpt-13b",
     "canonical_name": "Cerebras-GPT-13B",
     "family_id": "cerebras-systems-cerebras-gpt-13b",
@@ -481,6 +499,42 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-chatgpt-4o-01-29-2025",
+    "canonical_name": "chatgpt-4o-01-29-2025",
+    "family_id": "openai-chatgpt-4o-01-29-2025",
+    "release_date": "2025-01-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-chatgpt-4o-03-27-2025",
+    "canonical_name": "chatgpt-4o-03-27-2025",
+    "family_id": "openai-chatgpt-4o-03-27-2025",
+    "release_date": "2025-03-27",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -648,6 +702,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-3-7",
+    "canonical_name": "Claude 3.7",
+    "family_id": "anthropic-claude-3-7",
+    "release_date": "2025-02-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-7-16k",
+    "canonical_name": "Claude 3.7 (16K)",
+    "family_id": "anthropic-claude-3-7-16k",
+    "release_date": "2025-02-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-7-1k",
+    "canonical_name": "Claude 3.7 (1K)",
+    "family_id": "anthropic-claude-3-7-1k",
+    "release_date": "2025-02-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-7-8k",
+    "canonical_name": "Claude 3.7 (8K)",
+    "family_id": "anthropic-claude-3-7-8k",
+    "release_date": "2025-02-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-3-7-sonnet-20250219",
     "canonical_name": "claude-3-7-sonnet-20250219",
     "family_id": "anthropic-claude-3-7-sonnet-20250219",
@@ -774,6 +900,204 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-4-5-sonnet",
+    "canonical_name": "Claude 4.5 Sonnet",
+    "family_id": "anthropic-claude-4-5-sonnet",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-4-6-opus",
+    "canonical_name": "Claude 4.6 Opus",
+    "family_id": "anthropic-claude-4-6-opus",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-4-7-high",
+    "canonical_name": "Claude 4.7 (High)",
+    "family_id": "anthropic-claude-4-7-high",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-4-7-low",
+    "canonical_name": "Claude 4.7 (Low)",
+    "family_id": "anthropic-claude-4-7-low",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-4-7-max",
+    "canonical_name": "Claude 4.7 (Max)",
+    "family_id": "anthropic-claude-4-7-max",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-4-7-medium",
+    "canonical_name": "Claude 4.7 (Medium)",
+    "family_id": "anthropic-claude-4-7-medium",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-1-high",
+    "canonical_name": "Claude Fable 5.1 (High)",
+    "family_id": "anthropic-claude-fable-5-1-high",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-1-low",
+    "canonical_name": "Claude Fable 5.1 (Low)",
+    "family_id": "anthropic-claude-fable-5-1-low",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-1-max",
+    "canonical_name": "claude-fable-5-1_max",
+    "family_id": "anthropic-claude-fable-5-1-max",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-1-medium",
+    "canonical_name": "Claude Fable 5.1 (Medium)",
+    "family_id": "anthropic-claude-fable-5-1-medium",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-1-xhigh",
+    "canonical_name": "Claude Fable 5.1 (XHigh)",
+    "family_id": "anthropic-claude-fable-5-1-xhigh",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-fable-5-high",
     "canonical_name": "claude-fable-5_high",
     "family_id": "anthropic-claude-fable-5-high",
@@ -828,6 +1152,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-fable-5-medium",
+    "canonical_name": "Claude Fable 5 (Medium)",
+    "family_id": "anthropic-claude-fable-5-medium",
+    "release_date": "2026-06-09",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-fable-5-xhigh",
+    "canonical_name": "Claude Fable 5 (XHigh)",
+    "family_id": "anthropic-claude-fable-5-xhigh",
+    "release_date": "2026-06-09",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5",
+    "canonical_name": "Claude Haiku 4.5",
+    "family_id": "anthropic-claude-haiku-4-5",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-haiku-4-5-20251001",
     "canonical_name": "claude-haiku-4-5-20251001",
     "family_id": "anthropic-claude-haiku-4-5-20251001",
@@ -859,6 +1237,78 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5-thinking-16k",
+    "canonical_name": "Claude Haiku 4.5 (Thinking 16K)",
+    "family_id": "anthropic-claude-haiku-4-5-thinking-16k",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5-thinking-1k",
+    "canonical_name": "Claude Haiku 4.5 (Thinking 1K)",
+    "family_id": "anthropic-claude-haiku-4-5-thinking-1k",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5-thinking-32k",
+    "canonical_name": "Claude Haiku 4.5 (Thinking 32K)",
+    "family_id": "anthropic-claude-haiku-4-5-thinking-32k",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5-thinking-8k",
+    "canonical_name": "Claude Haiku 4.5 (Thinking 8K)",
+    "family_id": "anthropic-claude-haiku-4-5-thinking-8k",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -918,6 +1368,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4",
+    "canonical_name": "Claude Opus 4",
+    "family_id": "anthropic-claude-opus-4",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-1",
+    "canonical_name": "Claude Opus 4.1",
+    "family_id": "anthropic-claude-opus-4-1",
+    "release_date": "2025-08-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-1-20250805",
     "canonical_name": "claude-opus-4-1-20250805",
     "family_id": "anthropic-claude-opus-4-1-20250805",
@@ -972,6 +1458,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-1-20250805-32k",
+    "canonical_name": "claude-opus-4-1-20250805_32K",
+    "family_id": "anthropic-claude-opus-4-1-20250805-32k",
+    "release_date": "2025-08-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-5erkmxcurh2prbhjoukfnc-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-20250514",
     "canonical_name": "claude-opus-4-20250514",
     "family_id": "anthropic-claude-opus-4-20250514",
@@ -1008,6 +1512,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-20250514-32k",
+    "canonical_name": "claude-opus-4-20250514_32K",
+    "family_id": "anthropic-claude-opus-4-20250514-32k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-5",
+    "canonical_name": "Claude Opus 4.5",
+    "family_id": "anthropic-claude-opus-4-5",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-5-20251101",
     "canonical_name": "claude-opus-4-5-20251101",
     "family_id": "anthropic-claude-opus-4-5-20251101",
@@ -1021,6 +1561,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-5-20251101-128k",
+    "canonical_name": "claude-opus-4-5-20251101_128K",
+    "family_id": "anthropic-claude-opus-4-5-20251101-128k",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1080,6 +1638,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-6-120k-high",
+    "canonical_name": "Claude Opus 4.6 (120K, High)",
+    "family_id": "anthropic-claude-opus-4-6-120k-high",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-6-120k-low",
+    "canonical_name": "Claude Opus 4.6 (120K, Low)",
+    "family_id": "anthropic-claude-opus-4-6-120k-low",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-6-120k-max",
+    "canonical_name": "Claude Opus 4.6 (120K, Max)",
+    "family_id": "anthropic-claude-opus-4-6-120k-max",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-6-120k-medium",
+    "canonical_name": "Claude Opus 4.6 (120K, Medium)",
+    "family_id": "anthropic-claude-opus-4-6-120k-medium",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-6-32k",
     "canonical_name": "claude-opus-4-6_32K",
     "family_id": "anthropic-claude-opus-4-6-32k",
@@ -1134,6 +1764,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-7",
+    "canonical_name": "Claude Opus 4.7",
+    "family_id": "anthropic-claude-opus-4-7",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-7-high",
+    "canonical_name": "Claude Opus 4.7 (High)",
+    "family_id": "anthropic-claude-opus-4-7-high",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-7-max",
     "canonical_name": "claude-opus-4-7_max",
     "family_id": "anthropic-claude-opus-4-7-max",
@@ -1165,6 +1831,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-8-high",
+    "canonical_name": "Claude Opus 4.8 (High)",
+    "family_id": "anthropic-claude-opus-4-8-high",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1206,6 +1890,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-8-medium",
+    "canonical_name": "Claude Opus 4.8 (Medium)",
+    "family_id": "anthropic-claude-opus-4-8-medium",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-8-none",
     "canonical_name": "claude-opus-4-8_none",
     "family_id": "anthropic-claude-opus-4-8-none",
@@ -1224,6 +1926,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-thinking-16k",
+    "canonical_name": "Claude Opus 4 (Thinking 16K)",
+    "family_id": "anthropic-claude-opus-4-thinking-16k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-thinking-1k",
+    "canonical_name": "Claude Opus 4 (Thinking 1K)",
+    "family_id": "anthropic-claude-opus-4-thinking-1k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-thinking-8k",
+    "canonical_name": "Claude Opus 4 (Thinking 8K)",
+    "family_id": "anthropic-claude-opus-4-thinking-8k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-5",
     "canonical_name": "claude-opus-5",
     "family_id": "anthropic-claude-opus-5",
@@ -1237,6 +1993,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-high",
+    "canonical_name": "Claude Opus 5 (High)",
+    "family_id": "anthropic-claude-opus-5-high",
+    "release_date": "2026-07-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1273,6 +2047,60 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-medium",
+    "canonical_name": "Claude Opus 5 (medium)",
+    "family_id": "anthropic-claude-opus-5-medium",
+    "release_date": "2026-07-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-os-world-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-xhigh",
+    "canonical_name": "Claude Opus 5 (xhigh)",
+    "family_id": "anthropic-claude-opus-5-xhigh",
+    "release_date": "2026-07-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-os-world-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4",
+    "canonical_name": "Claude Sonnet 4",
+    "family_id": "anthropic-claude-sonnet-4",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1350,6 +2178,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-sonnet-4-5",
+    "canonical_name": "Claude Sonnet 4.5",
+    "family_id": "anthropic-claude-sonnet-4-5",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-sonnet-4-5-20250929",
     "canonical_name": "claude-sonnet-4-5-20250929",
     "family_id": "anthropic-claude-sonnet-4-5-20250929",
@@ -1417,6 +2263,78 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-5-thinking-16k",
+    "canonical_name": "Claude Sonnet 4.5 (Thinking 16K)",
+    "family_id": "anthropic-claude-sonnet-4-5-thinking-16k",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-5-thinking-1k",
+    "canonical_name": "Claude Sonnet 4.5 (Thinking 1K)",
+    "family_id": "anthropic-claude-sonnet-4-5-thinking-1k",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-5-thinking-32k",
+    "canonical_name": "Claude Sonnet 4.5 (Thinking 32K)",
+    "family_id": "anthropic-claude-sonnet-4-5-thinking-32k",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-5-thinking-8k",
+    "canonical_name": "Claude Sonnet 4.5 (Thinking 8K)",
+    "family_id": "anthropic-claude-sonnet-4-5-thinking-8k",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1512,6 +2430,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-sonnet-4-thinking-16k",
+    "canonical_name": "Claude Sonnet 4 (Thinking 16K)",
+    "family_id": "anthropic-claude-sonnet-4-thinking-16k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-thinking-1k",
+    "canonical_name": "Claude Sonnet 4 (Thinking 1K)",
+    "family_id": "anthropic-claude-sonnet-4-thinking-1k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-thinking-8k",
+    "canonical_name": "Claude Sonnet 4 (Thinking 8K)",
+    "family_id": "anthropic-claude-sonnet-4-thinking-8k",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-sonnet-5-max",
     "canonical_name": "claude-sonnet-5_max",
     "family_id": "anthropic-claude-sonnet-5-max",
@@ -1597,6 +2569,42 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-codestral-2501",
+    "canonical_name": "codestral-2501",
+    "family_id": "mistral-ai-codestral-2501",
+    "release_date": "2025-01-13",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-codex-mini-latest",
+    "canonical_name": "Codex Mini (Latest)",
+    "family_id": "unknown-codex-mini-latest",
+    "release_date": "2025-05-16",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1908,6 +2916,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-r1-05-28",
+    "canonical_name": "Deepseek R1 (05/28)",
+    "family_id": "deepseek-deepseek-r1-05-28",
+    "release_date": "2025-05-28",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-r1-0528",
     "canonical_name": "DeepSeek-R1-0528",
     "family_id": "deepseek-deepseek-r1-0528",
@@ -2034,6 +3060,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v2-5",
+    "canonical_name": "DeepSeek-V2.5",
+    "family_id": "deepseek-deepseek-v2-5",
+    "release_date": "2024-09-06",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v2-base",
     "canonical_name": "DeepSeek-V2 Base",
     "family_id": "deepseek-deepseek-v2-base",
@@ -2088,6 +3132,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v3-2",
+    "canonical_name": "Deepseek V3.2",
+    "family_id": "deepseek-deepseek-v3-2",
+    "release_date": "2025-12-01",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v3-2-exp",
+    "canonical_name": "DeepSeek-V3.2-Exp",
+    "family_id": "deepseek-deepseek-v3-2-exp",
+    "release_date": "2025-09-29",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v3-2-exp-thinking",
+    "canonical_name": "DeepSeek-V3.2-Exp_thinking",
+    "family_id": "deepseek-deepseek-v3-2-exp-thinking",
+    "release_date": "2025-09-29",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v3-base",
     "canonical_name": "DeepSeek-V3 Base",
     "family_id": "deepseek-deepseek-v3-base",
@@ -2101,6 +3199,42 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-flash-0731-high",
+    "canonical_name": "DeepSeek V4 Flash 0731 (High)",
+    "family_id": "deepseek-deepseek-v4-flash-0731-high",
+    "release_date": "2026-07-31",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-flash-0731-low",
+    "canonical_name": "DeepSeek V4 Flash 0731 (Low)",
+    "family_id": "deepseek-deepseek-v4-flash-0731-low",
+    "release_date": "2026-07-31",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2124,6 +3258,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v4-flash-0731-none",
+    "canonical_name": "DeepSeek V4 Flash 0731 (None)",
+    "family_id": "deepseek-deepseek-v4-flash-0731-none",
+    "release_date": "2026-07-31",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-0813-high",
+    "canonical_name": "DeepSeek V4 Pro 0813 (High)",
+    "family_id": "deepseek-deepseek-v4-pro-0813-high",
+    "release_date": "2026-08-13",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-0813-low",
+    "canonical_name": "DeepSeek V4 Pro 0813 (Low)",
+    "family_id": "deepseek-deepseek-v4-pro-0813-low",
+    "release_date": "2026-08-13",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v4-pro-0813-max",
     "canonical_name": "deepseek-v4-pro-0813_max",
     "family_id": "deepseek-deepseek-v4-pro-0813-max",
@@ -2137,6 +3325,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-0813-none",
+    "canonical_name": "DeepSeek V4 Pro 0813 (None)",
+    "family_id": "deepseek-deepseek-v4-pro-0813-none",
+    "release_date": "2026-08-13",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2628,6 +3834,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-1-5-pro",
+    "canonical_name": "Gemini 1.5 Pro",
+    "family_id": "google-deepmind-gemini-1-5-pro",
+    "release_date": "2024-09-24",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-5-pro-001",
     "canonical_name": "Gemini 1.5 Pro (001)",
     "family_id": "google-deepmind-gemini-1-5-pro-001",
@@ -2718,6 +3942,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-0-flash",
+    "canonical_name": "Gemini 2.0 Flash",
+    "family_id": "google-deepmind-google-gemini-2-0-flash",
+    "release_date": "2025-02-05",
+    "organization": "Google DeepMind,Google",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-2-0-flash-001",
     "canonical_name": "gemini-2.0-flash-001",
     "family_id": "google-deepmind-google-gemini-2-0-flash-001",
@@ -2731,6 +3973,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-0-flash-exp",
+    "canonical_name": "gemini-2.0-flash-exp",
+    "family_id": "google-deepmind-google-gemini-2-0-flash-exp",
+    "release_date": "2024-12-11",
+    "organization": "Google DeepMind,Google",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2785,6 +4045,186 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash",
+    "canonical_name": "Gemini 2.5 Flash",
+    "family_id": "google-deepmind-gemini-2-5-flash",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview",
+    "canonical_name": "Gemini 2.5 Flash (Preview)",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-04-17",
+    "canonical_name": "gemini-2.5-flash-preview-04-17",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-04-17",
+    "release_date": "2025-04-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-05-20",
+    "canonical_name": "gemini-2.5-flash-preview-05-20",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-05-20",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-05-20-23k",
+    "canonical_name": "gemini-2.5-flash-preview-05-20_23K",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-05-20-23k",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-09-2025",
+    "canonical_name": "gemini-2.5-flash-preview-09-2025",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-09-2025",
+    "release_date": "2025-09-25",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-thinking-16k",
+    "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 16K)",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-16k",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-thinking-1k",
+    "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 1K)",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-1k",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-thinking-24k",
+    "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 24K)",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-24k",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-preview-thinking-8k",
+    "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 8K)",
+    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-8k",
+    "release_date": "2025-05-20",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2880,6 +4320,96 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-5-pro-preview-06-05-32k",
+    "canonical_name": "gemini-2.5-pro-preview-06-05_32K",
+    "family_id": "google-deepmind-gemini-2-5-pro-preview-06-05-32k",
+    "release_date": "2025-06-05",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-thinking-16k",
+    "canonical_name": "Gemini 2.5 Pro (Thinking 16K)",
+    "family_id": "google-deepmind-gemini-2-5-pro-thinking-16k",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-thinking-1k",
+    "canonical_name": "Gemini 2.5 Pro (Thinking 1K)",
+    "family_id": "google-deepmind-gemini-2-5-pro-thinking-1k",
+    "release_date": "2025-06-05",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-thinking-32k",
+    "canonical_name": "Gemini 2.5 Pro (Thinking 32K)",
+    "family_id": "google-deepmind-gemini-2-5-pro-thinking-32k",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-thinking-8k",
+    "canonical_name": "Gemini 2.5 Pro (Thinking 8K)",
+    "family_id": "google-deepmind-gemini-2-5-pro-thinking-8k",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-1-flash-lite-high",
     "canonical_name": "gemini-3.1-flash-lite_high",
     "family_id": "google-gemini-3-1-flash-lite-high",
@@ -2929,6 +4459,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-1-pro",
+    "canonical_name": "Gemini 3.1 Pro",
+    "family_id": "google-deepmind-gemini-3-1-pro",
+    "release_date": "2026-02-19",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3042,6 +4590,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-5-flash-lite-medium",
+    "canonical_name": "Gemini 3.5 Flash-Lite (Medium)",
+    "family_id": "google-deepmind-gemini-3-5-flash-lite-medium",
+    "release_date": "2026-07-21",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-5-flash-lite-minimal",
     "canonical_name": "gemini-3.5-flash-lite_minimal",
     "family_id": "google-deepmind-gemini-3-5-flash-lite-minimal",
@@ -3132,6 +4698,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-6-flash-medium",
+    "canonical_name": "Gemini 3.6 Flash (Medium)",
+    "family_id": "google-deepmind-gemini-3-6-flash-medium",
+    "release_date": "2026-07-21",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-6-flash-minimal",
     "canonical_name": "gemini-3.6-flash_minimal",
     "family_id": "google-deepmind-gemini-3-6-flash-minimal",
@@ -3163,6 +4747,96 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-7-flash-low",
+    "canonical_name": "Gemini 3.7 Flash (Low)",
+    "family_id": "google-deepmind-gemini-3-7-flash-low",
+    "release_date": "2026-08-13",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-7-flash-medium",
+    "canonical_name": "Gemini 3.7 Flash (Medium)",
+    "family_id": "google-deepmind-gemini-3-7-flash-medium",
+    "release_date": "2026-08-13",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-deep-think-2-26",
+    "canonical_name": "Gemini 3 Deep Think (2/26)",
+    "family_id": "unknown-gemini-3-deep-think-2-26",
+    "release_date": "2026-02-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-deep-think-preview",
+    "canonical_name": "Gemini 3 Deep Think (Preview) \u00b2",
+    "family_id": "unknown-gemini-3-deep-think-preview",
+    "release_date": "2026-02-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-flash",
+    "canonical_name": "Gemini 3 Flash",
+    "family_id": "google-deepmind-gemini-3-flash",
+    "release_date": "2025-12-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3204,6 +4878,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-flash-preview-low",
+    "canonical_name": "Gemini 3 Flash Preview (Low)",
+    "family_id": "google-deepmind-gemini-3-flash-preview-low",
+    "release_date": "2025-12-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-flash-preview-medium",
+    "canonical_name": "Gemini 3 Flash Preview (Medium)",
+    "family_id": "google-deepmind-gemini-3-flash-preview-medium",
+    "release_date": "2025-12-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-flash-preview-minimal",
+    "canonical_name": "Gemini 3 Flash Preview (Minimal)",
+    "family_id": "google-deepmind-gemini-3-flash-preview-minimal",
+    "release_date": "2025-12-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-pro",
+    "canonical_name": "Gemini 3 Pro",
+    "family_id": "google-deepmind-gemini-3-pro",
+    "release_date": "2025-11-18",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-pro-preview",
     "canonical_name": "gemini-3-pro-preview",
     "family_id": "google-deepmind-gemini-3-pro-preview",
@@ -3217,6 +4963,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-exp-1206",
+    "canonical_name": "gemini-exp-1206",
+    "family_id": "google-deepmind-google-gemini-exp-1206",
+    "release_date": "2024-12-06",
+    "organization": "Google DeepMind,Google",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3474,6 +5238,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-glm-4-6",
+    "canonical_name": "glm-4.6",
+    "family_id": "z-ai-zhipu-ai-tsinghua-university-glm-4-6",
+    "release_date": "2025-09-30",
+    "organization": "Z.ai (Zhipu AI),Tsinghua University",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-glm-4-7",
     "canonical_name": "glm-4.7",
     "family_id": "z-ai-zhipu-ai-glm-4-7",
@@ -3559,6 +5341,42 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-none",
+    "canonical_name": "glm-5.1_none",
+    "family_id": "z-ai-zhipu-ai-glm-5-1-none",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-4hmmfwg9tgzjvkhl78nkzl-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-2",
+    "canonical_name": "GLM-5.2",
+    "family_id": "z-ai-zhipu-ai-glm-5-2",
+    "release_date": "2026-06-16",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3942,6 +5760,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-4-1",
+    "canonical_name": "GPT-4.1",
+    "family_id": "openai-gpt-4-1",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-4-1-2025-04-14",
     "canonical_name": "gpt-4.1-2025-04-14",
     "family_id": "openai-gpt-4-1-2025-04-14",
@@ -3960,6 +5796,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-4-1-mini",
+    "canonical_name": "GPT-4.1-Mini",
+    "family_id": "openai-gpt-4-1-mini",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-4-1-mini-2025-04-14",
     "canonical_name": "gpt-4.1-mini-2025-04-14",
     "family_id": "openai-gpt-4-1-mini-2025-04-14",
@@ -3973,6 +5827,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4-1-nano",
+    "canonical_name": "GPT-4.1-Nano",
+    "family_id": "openai-gpt-4-1-nano",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4009,6 +5881,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4-5",
+    "canonical_name": "GPT-4.5",
+    "family_id": "openai-gpt-4-5",
+    "release_date": "2025-02-27",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4212,6 +6102,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5",
+    "canonical_name": "GPT-5",
+    "family_id": "openai-gpt-5",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1",
+    "canonical_name": "GPT-5.1",
+    "family_id": "openai-gpt-5-1",
+    "release_date": "2025-11-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-1-2025-11-13-high",
     "canonical_name": "gpt-5.1-2025-11-13_high",
     "family_id": "openai-gpt-5-1-2025-11-13-high",
@@ -4261,6 +6187,150 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-codex",
+    "canonical_name": "gpt-5.1-codex",
+    "family_id": "openai-gpt-5-1-codex",
+    "release_date": "2025-11-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-codex-max",
+    "canonical_name": "GPT-5.1-Codex-Max",
+    "family_id": "openai-gpt-5-1-codex-max",
+    "release_date": "2025-11-19",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-codex-mini",
+    "canonical_name": "GPT-5.1-Codex-Mini",
+    "family_id": "openai-gpt-5-1-codex-mini",
+    "release_date": "2025-11-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-thinking-high",
+    "canonical_name": "GPT-5.1 (Thinking, High)",
+    "family_id": "openai-gpt-5-1-thinking-high",
+    "release_date": "2025-11-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-thinking-low",
+    "canonical_name": "GPT-5.1 (Thinking, Low)",
+    "family_id": "openai-gpt-5-1-thinking-low",
+    "release_date": "2025-11-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-thinking-medium",
+    "canonical_name": "GPT-5.1 (Thinking, Medium)",
+    "family_id": "openai-gpt-5-1-thinking-medium",
+    "release_date": "2025-11-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-1-thinking-none",
+    "canonical_name": "GPT-5.1 (Thinking, None)",
+    "family_id": "openai-gpt-5-1-thinking-none",
+    "release_date": "2025-11-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2",
+    "canonical_name": "GPT-5.2",
+    "family_id": "openai-gpt-5-2",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4356,6 +6426,168 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-2-codex",
+    "canonical_name": "GPT-5.2-Codex",
+    "family_id": "openai-gpt-5-2-codex",
+    "release_date": "2025-12-18",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-high",
+    "canonical_name": "GPT-5.2 (High)",
+    "family_id": "openai-gpt-5-2-high",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-low",
+    "canonical_name": "GPT-5.2 (Low)",
+    "family_id": "openai-gpt-5-2-low",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-medium",
+    "canonical_name": "GPT-5.2 (Medium)",
+    "family_id": "openai-gpt-5-2-medium",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-pro-2025-12-11-xhigh",
+    "canonical_name": "gpt-5.2-pro-2025-12-11_xhigh",
+    "family_id": "openai-gpt-5-2-pro-2025-12-11-xhigh",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-pro-high",
+    "canonical_name": "GPT-5.2 Pro (High)",
+    "family_id": "openai-gpt-5-2-pro-high",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-pro-medium",
+    "canonical_name": "GPT-5.2 Pro (Medium)",
+    "family_id": "openai-gpt-5-2-pro-medium",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-x-high",
+    "canonical_name": "GPT-5.2 (X-High)",
+    "family_id": "openai-gpt-5-2-x-high",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-xhigh",
+    "canonical_name": "GPT-5.2 (xHigh)",
+    "family_id": "openai-gpt-5-2-xhigh",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-2025-08-07-high",
     "canonical_name": "gpt-5-2025-08-07_high",
     "family_id": "openai-gpt-5-2025-08-07-high",
@@ -4363,6 +6595,24 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-4wn6fke2db9clq3nuffyge-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2025-08-07-low",
+    "canonical_name": "gpt-5-2025-08-07_low",
+    "family_id": "openai-gpt-5-2025-08-07-low",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-j2dwdpglbhihzx82m3hhug-eval"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4410,6 +6660,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-3-codex",
+    "canonical_name": "GPT-5.3-Codex",
+    "family_id": "openai-gpt-5-3-codex",
+    "release_date": "2026-02-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-3-codex-high",
     "canonical_name": "gpt-5.3-codex_high",
     "family_id": "openai-gpt-5-3-codex-high",
@@ -4423,6 +6691,24 @@
     ],
     "domains": [
       "Coding / agents"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4",
+    "canonical_name": "GPT-5.4",
+    "family_id": "openai-gpt-5-4",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4518,6 +6804,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-4-high",
+    "canonical_name": "GPT-5.4 (High)",
+    "family_id": "openai-gpt-5-4-high",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-low",
+    "canonical_name": "GPT-5.4 (Low)",
+    "family_id": "openai-gpt-5-4-low",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-medium",
+    "canonical_name": "GPT-5.4 (Medium)",
+    "family_id": "openai-gpt-5-4-medium",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-4-mini-2026-03-17-high",
     "canonical_name": "gpt-5.4-mini-2026-03-17_high",
     "family_id": "openai-gpt-5-4-mini-2026-03-17-high",
@@ -4531,6 +6871,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-2026-03-17-low",
+    "canonical_name": "gpt-5.4-mini-2026-03-17_low",
+    "family_id": "openai-gpt-5-4-mini-2026-03-17-low",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-8nsnpe6etiklf4tsrnhmgs-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4567,6 +6925,78 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-high",
+    "canonical_name": "GPT-5.4 Mini (High)",
+    "family_id": "openai-gpt-5-4-mini-high",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-low",
+    "canonical_name": "GPT-5.4 Mini (Low)",
+    "family_id": "openai-gpt-5-4-mini-low",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-medium",
+    "canonical_name": "GPT-5.4 Mini (Medium)",
+    "family_id": "openai-gpt-5-4-mini-medium",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-xhigh",
+    "canonical_name": "GPT-5.4 Mini (xHigh)",
+    "family_id": "openai-gpt-5-4-mini-xhigh",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4626,6 +7056,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-4-nano-high",
+    "canonical_name": "GPT-5.4 Nano (High)",
+    "family_id": "openai-gpt-5-4-nano-high",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-nano-low",
+    "canonical_name": "GPT-5.4 Nano (Low)",
+    "family_id": "openai-gpt-5-4-nano-low",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-nano-medium",
+    "canonical_name": "GPT-5.4 Nano (Medium)",
+    "family_id": "openai-gpt-5-4-nano-medium",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-nano-xhigh",
+    "canonical_name": "GPT-5.4 Nano (xHigh)",
+    "family_id": "openai-gpt-5-4-nano-xhigh",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-4-pro-2026-03-05-xhigh",
     "canonical_name": "gpt-5.4-pro-2026-03-05_xhigh",
     "family_id": "openai-gpt-5-4-pro-2026-03-05-xhigh",
@@ -4639,6 +7141,78 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-pro-xhigh",
+    "canonical_name": "GPT-5.4 Pro (xHigh)",
+    "family_id": "openai-gpt-5-4-pro-xhigh",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-xhigh",
+    "canonical_name": "GPT-5.4 (xHigh)",
+    "family_id": "openai-gpt-5-4-xhigh",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5",
+    "canonical_name": "GPT-5.5",
+    "family_id": "openai-gpt-5-5",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-high",
+    "canonical_name": "GPT-5.5 (High)",
+    "family_id": "openai-gpt-5-5-high",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4680,6 +7254,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-5-medium",
+    "canonical_name": "GPT-5.5 (Medium)",
+    "family_id": "openai-gpt-5-5-medium",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-5-none",
     "canonical_name": "gpt-5.5_none",
     "family_id": "openai-gpt-5-5-none",
@@ -4716,6 +7308,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-5-pro-high",
+    "canonical_name": "GPT-5.5 Pro (High)",
+    "family_id": "openai-gpt-5-5-pro-high",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-5-pro-pre-release-xhigh",
     "canonical_name": "gpt-5.5-pro-pre-release_xhigh",
     "family_id": "openai-gpt-5-5-pro-pre-release-xhigh",
@@ -4729,6 +7339,60 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-pro-xhigh",
+    "canonical_name": "gpt-5.5-pro_xhigh",
+    "family_id": "openai-gpt-5-5-pro-xhigh",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-xhigh",
+    "canonical_name": "gpt-5.5_xhigh",
+    "family_id": "openai-gpt-5-5-xhigh",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-luna-high",
+    "canonical_name": "GPT-5.6 Luna (High)",
+    "family_id": "openai-gpt-5-6-luna-high",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4770,6 +7434,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-luna-medium",
+    "canonical_name": "GPT-5.6 Luna (Medium)",
+    "family_id": "openai-gpt-5-6-luna-medium",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-luna-none",
     "canonical_name": "gpt-5.6-luna_none",
     "family_id": "openai-gpt-5-6-luna-none",
@@ -4783,6 +7465,42 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-luna-xhigh",
+    "canonical_name": "GPT-5.6 Luna (xHigh)",
+    "family_id": "openai-gpt-5-6-luna-xhigh",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-sol-high",
+    "canonical_name": "GPT-5.6 Sol (High)",
+    "family_id": "openai-gpt-5-6-sol-high",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4824,6 +7542,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-sol-medium",
+    "canonical_name": "GPT-5.6 Sol (Medium)",
+    "family_id": "openai-gpt-5-6-sol-medium",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-sol-none",
     "canonical_name": "gpt-5.6-sol_none",
     "family_id": "openai-gpt-5-6-sol-none",
@@ -4837,6 +7573,42 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-sol-xhigh",
+    "canonical_name": "GPT-5.6 Sol (xHigh)",
+    "family_id": "openai-gpt-5-6-sol-xhigh",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-terra-high",
+    "canonical_name": "GPT-5.6 Terra (High)",
+    "family_id": "openai-gpt-5-6-terra-high",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4878,6 +7650,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-terra-medium",
+    "canonical_name": "GPT-5.6 Terra (Medium)",
+    "family_id": "openai-gpt-5-6-terra-medium",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-terra-none",
     "canonical_name": "gpt-5.6-terra_none",
     "family_id": "openai-gpt-5-6-terra-none",
@@ -4896,6 +7686,114 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-terra-xhigh",
+    "canonical_name": "GPT-5.6 Terra (xHigh)",
+    "family_id": "openai-gpt-5-6-terra-xhigh",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-codex",
+    "canonical_name": "gpt-5-codex",
+    "family_id": "openai-gpt-5-codex",
+    "release_date": "2025-09-15",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-high",
+    "canonical_name": "GPT-5 (High)",
+    "family_id": "openai-gpt-5-high",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-low",
+    "canonical_name": "GPT-5 (Low)",
+    "family_id": "openai-gpt-5-low",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-medium",
+    "canonical_name": "GPT-5 (Medium)",
+    "family_id": "openai-gpt-5-medium",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini",
+    "canonical_name": "GPT-5-Mini",
+    "family_id": "openai-gpt-5-mini",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-mini-2025-08-07-high",
     "canonical_name": "gpt-5-mini-2025-08-07_high",
     "family_id": "openai-gpt-5-mini-2025-08-07-high",
@@ -4903,6 +7801,24 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-5duoindccsgaw7uvt6feyx-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini-2025-08-07-low",
+    "canonical_name": "gpt-5-mini-2025-08-07_low",
+    "family_id": "openai-gpt-5-mini-2025-08-07-low",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-srvpkvkrweabhsvwplahbq-eval"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4945,6 +7861,114 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini-high",
+    "canonical_name": "GPT-5 Mini (High)",
+    "family_id": "openai-gpt-5-mini-high",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini-low",
+    "canonical_name": "GPT-5 Mini (Low)",
+    "family_id": "openai-gpt-5-mini-low",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini-medium",
+    "canonical_name": "GPT-5 Mini (Medium)",
+    "family_id": "openai-gpt-5-mini-medium",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-mini-minimal",
+    "canonical_name": "GPT-5 Mini (Minimal)",
+    "family_id": "openai-gpt-5-mini-minimal",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-minimal",
+    "canonical_name": "GPT-5 (Minimal)",
+    "family_id": "openai-gpt-5-minimal",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano",
+    "canonical_name": "GPT-5-Nano",
+    "family_id": "openai-gpt-5-nano",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5022,6 +8046,114 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-nano-high",
+    "canonical_name": "GPT-5 Nano (High)",
+    "family_id": "openai-gpt-5-nano-high",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano-low",
+    "canonical_name": "GPT-5 Nano (Low)",
+    "family_id": "openai-gpt-5-nano-low",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano-medium",
+    "canonical_name": "GPT-5 Nano (Medium)",
+    "family_id": "openai-gpt-5-nano-medium",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano-minimal",
+    "canonical_name": "GPT-5 Nano (Minimal)",
+    "family_id": "openai-gpt-5-nano-minimal",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-pro",
+    "canonical_name": "GPT-5 Pro",
+    "family_id": "openai-gpt-5-pro",
+    "release_date": "2025-10-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-pro-2025-10-06-high",
+    "canonical_name": "gpt-5-pro-2025-10-06_high",
+    "family_id": "openai-gpt-5-pro-2025-10-06-high",
+    "release_date": "2025-10-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-tfdquerkbwieodrqrrkdpy-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-6-astra-max",
     "canonical_name": "gpt-6-astra_max",
     "family_id": "openai-gpt-6-astra-max",
@@ -5071,6 +8203,60 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-oss-120b",
+    "canonical_name": "gpt-oss-120b",
+    "family_id": "openai-gpt-oss-120b",
+    "release_date": "2025-08-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-oss-120b-high",
+    "canonical_name": "gpt-oss-120b_high",
+    "family_id": "openai-gpt-oss-120b-high",
+    "release_date": "2025-08-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-oss-20b",
+    "canonical_name": "gpt-oss-20b",
+    "family_id": "openai-gpt-oss-20b",
+    "release_date": "2025-08-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5202,6 +8388,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-3",
+    "canonical_name": "Grok 3",
+    "family_id": "xai-grok-3",
+    "release_date": "2025-04-09",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-3-beta",
     "canonical_name": "grok-3-beta",
     "family_id": "xai-grok-3-beta",
@@ -5256,6 +8460,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-3-mini-low",
+    "canonical_name": "Grok 3 Mini (Low)",
+    "family_id": "xai-grok-3-mini-low",
+    "release_date": "2025-06-24",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4",
+    "canonical_name": "Grok 4",
+    "family_id": "xai-grok-4",
+    "release_date": "2025-07-09",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-0709",
     "canonical_name": "grok-4-0709",
     "family_id": "xai-grok-4-0709",
@@ -5274,6 +8514,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-4-0709-high",
+    "canonical_name": "grok-4-0709_high",
+    "family_id": "xai-grok-4-0709-high",
+    "release_date": "2025-07-09",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-20-0309-reasoning",
     "canonical_name": "grok-4.20-0309-reasoning",
     "family_id": "xai-grok-4-20-0309-reasoning",
@@ -5287,6 +8545,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-20-reasoning",
+    "canonical_name": "Grok 4.20 (Reasoning)",
+    "family_id": "xai-grok-4-20-reasoning",
+    "release_date": "2026-02-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5328,6 +8604,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-4-5-low",
+    "canonical_name": "Grok 4.5 (Low)",
+    "family_id": "xai-grok-4-5-low",
+    "release_date": "2026-07-08",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-5-medium",
+    "canonical_name": "Grok 4.5 (Medium)",
+    "family_id": "xai-grok-4-5-medium",
+    "release_date": "2026-07-08",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-6-high",
     "canonical_name": "grok-4.6_high",
     "family_id": "xai-grok-4-6-high",
@@ -5346,6 +8658,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-4-6-low",
+    "canonical_name": "Grok 4.6 (Low)",
+    "family_id": "xai-grok-4-6-low",
+    "release_date": "2026-08-12",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-6-medium",
+    "canonical_name": "Grok 4.6 (Medium)",
+    "family_id": "xai-grok-4-6-medium",
+    "release_date": "2026-08-12",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-6-xhigh",
     "canonical_name": "grok-4.6_xhigh",
     "family_id": "xai-grok-4-6-xhigh",
@@ -5359,6 +8707,60 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-fast-reasoning",
+    "canonical_name": "Grok 4 (Fast Reasoning)",
+    "family_id": "xai-grok-4-fast-reasoning",
+    "release_date": "2025-09-19",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-thinking",
+    "canonical_name": "Grok 4 (Thinking)",
+    "family_id": "xai-grok-4-thinking",
+    "release_date": "2025-07-09",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-code-fast-1",
+    "canonical_name": "grok-code-fast-1",
+    "family_id": "unknown-grok-code-fast-1",
+    "release_date": "2025-08-28",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5395,6 +8797,114 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling",
+    "canonical_name": "Inkling",
+    "family_id": "thinking-machines-inkling",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling-small-high",
+    "canonical_name": "Inkling Small (High)",
+    "family_id": "thinking-machines-inkling-small-high",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling-small-low",
+    "canonical_name": "Inkling Small (Low)",
+    "family_id": "thinking-machines-inkling-small-low",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling-small-medium",
+    "canonical_name": "Inkling Small (Medium)",
+    "family_id": "thinking-machines-inkling-small-medium",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling-small-minimal",
+    "canonical_name": "Inkling Small (Minimal)",
+    "family_id": "thinking-machines-inkling-small-minimal",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-inkling-small-none",
+    "canonical_name": "Inkling Small (None)",
+    "family_id": "thinking-machines-inkling-small-none",
+    "release_date": "2026-07-15",
+    "organization": "Thinking Machines",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5742,6 +9252,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-kimi-2-6-enabled",
+    "canonical_name": "Kimi 2.6 (enabled)",
+    "family_id": "moonshot-kimi-2-6-enabled",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-os-world-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-kimi-k2-5",
     "canonical_name": "kimi-k2.5",
     "family_id": "moonshot-kimi-k2-5",
@@ -5791,6 +9319,42 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-instruct",
+    "canonical_name": "Kimi-K2-Instruct",
+    "family_id": "moonshot-kimi-k2-instruct",
+    "release_date": "2025-07-12",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-thinking",
+    "canonical_name": "Kimi K2 Thinking",
+    "family_id": "moonshot-kimi-k2-thinking",
+    "release_date": "2025-11-06",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6462,6 +10026,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama-4-maverick",
+    "canonical_name": "Llama 4 Maverick",
+    "family_id": "meta-ai-llama-4-maverick",
+    "release_date": "2025-04-05",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-4-maverick-17b-128e-instruct",
+    "canonical_name": "Llama-4-Maverick-17B-128E-Instruct",
+    "family_id": "meta-ai-llama-4-maverick-17b-128e-instruct",
+    "release_date": "2025-04-05",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama-4-maverick-17b-128e-instruct-fp8",
     "canonical_name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
     "family_id": "meta-ai-llama-4-maverick-17b-128e-instruct-fp8",
@@ -6475,6 +10075,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-4-scout",
+    "canonical_name": "Llama 4 Scout",
+    "family_id": "meta-ai-llama-4-scout",
+    "release_date": "2025-04-05",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6660,6 +10278,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-magistral-medium",
+    "canonical_name": "Magistral Medium",
+    "family_id": "mistral-ai-magistral-medium",
+    "release_date": "2025-06-10",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-magistral-medium-thinking",
+    "canonical_name": "Magistral Medium (Thinking)",
+    "family_id": "mistral-ai-magistral-medium-thinking",
+    "release_date": "2025-06-10",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-magistral-small",
+    "canonical_name": "Magistral Small",
+    "family_id": "mistral-ai-magistral-small",
+    "release_date": "2025-06-10",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-magistral-small-2506",
     "canonical_name": "magistral-small-2506",
     "family_id": "mistral-ai-magistral-small-2506",
@@ -6786,6 +10458,96 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-minimax-m2",
+    "canonical_name": "MiniMax M2",
+    "family_id": "minimax-minimax-m2",
+    "release_date": "2025-10-27",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m2-1",
+    "canonical_name": "MiniMax M2.1",
+    "family_id": "minimax-minimax-m2-1",
+    "release_date": "2025-12-23",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m2-5",
+    "canonical_name": "Minimax M2.5",
+    "family_id": "minimax-minimax-m2-5",
+    "release_date": "2026-02-12",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m2-7",
+    "canonical_name": "MiniMax M2.7",
+    "family_id": "minimax-minimax-m2-7",
+    "release_date": "2026-03-18",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m2-7-highspeed",
+    "canonical_name": "MiniMax M2.7 Highspeed",
+    "family_id": "minimax-minimax-m2-7-highspeed",
+    "release_date": "2026-03-18",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-minimax-m3",
     "canonical_name": "MiniMax-M3",
     "family_id": "minimax-minimax-m3",
@@ -6799,6 +10561,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m3-enabled",
+    "canonical_name": "MiniMax M3 (enabled)",
+    "family_id": "minimax-minimax-m3-enabled",
+    "release_date": "2026-06-01",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-os-world-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7236,6 +11016,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-moonshotai-kimi-k2-0905",
+    "canonical_name": "moonshotai/kimi-k2-0905",
+    "family_id": "moonshot-moonshotai-kimi-k2-0905",
+    "release_date": "2025-09-05",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mpt-30b",
     "canonical_name": "MPT 30B",
     "family_id": "mosaicml-mpt-30b",
@@ -7398,6 +11196,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o1-mini",
+    "canonical_name": "o1-mini",
+    "family_id": "openai-o1-mini",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o1-mini-2024-09-12-high",
     "canonical_name": "o1-mini-2024-09-12_high",
     "family_id": "openai-o1-mini-2024-09-12-high",
@@ -7429,6 +11245,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o1-mini-2024-09-12-unknown",
+    "canonical_name": "o1-mini-2024-09-12_unknown",
+    "family_id": "openai-o1-mini-2024-09-12-unknown",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7506,6 +11340,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o3-2025-04-16-unknown",
+    "canonical_name": "o3-2025-04-16_unknown",
+    "family_id": "openai-o3-2025-04-16-unknown",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-high",
+    "canonical_name": "o3 (High)",
+    "family_id": "openai-o3-high",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-low",
+    "canonical_name": "o3 (Low)",
+    "family_id": "openai-o3-low",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-medium",
+    "canonical_name": "o3 (Medium)",
+    "family_id": "openai-o3-medium",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o3-mini-2025-01-31-high",
     "canonical_name": "o3-mini-2025-01-31_high",
     "family_id": "openai-o3-mini-2025-01-31-high",
@@ -7560,6 +11466,132 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o3-mini-high",
+    "canonical_name": "o3-mini (High)",
+    "family_id": "openai-o3-mini-high",
+    "release_date": "2025-01-31",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-mini-low",
+    "canonical_name": "o3-mini (Low)",
+    "family_id": "openai-o3-mini-low",
+    "release_date": "2025-01-31",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-mini-medium",
+    "canonical_name": "o3-mini (Medium)",
+    "family_id": "openai-o3-mini-medium",
+    "release_date": "2025-01-31",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-pro-2025-06-10-high",
+    "canonical_name": "o3-pro-2025-06-10_high",
+    "family_id": "openai-o3-pro-2025-06-10-high",
+    "release_date": "2025-06-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-pro-high",
+    "canonical_name": "o3-Pro (High)",
+    "family_id": "openai-o3-pro-high",
+    "release_date": "2025-06-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-pro-low",
+    "canonical_name": "o3-Pro (Low)",
+    "family_id": "openai-o3-pro-low",
+    "release_date": "2025-06-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o3-pro-medium",
+    "canonical_name": "o3-Pro (Medium)",
+    "family_id": "openai-o3-pro-medium",
+    "release_date": "2025-06-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o4-mini-2025-04-16-high",
     "canonical_name": "o4-mini-2025-04-16_high",
     "family_id": "openai-o4-mini-2025-04-16-high",
@@ -7609,6 +11641,60 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o4-mini-high",
+    "canonical_name": "o4-mini (High)",
+    "family_id": "openai-o4-mini-high",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o4-mini-low",
+    "canonical_name": "o4-mini (Low)",
+    "family_id": "openai-o4-mini-low",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o4-mini-medium",
+    "canonical_name": "o4-mini (Medium)",
+    "family_id": "openai-o4-mini-medium",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7740,6 +11826,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-openhands-lm-32b-v0-1",
+    "canonical_name": "openhands-lm-32b-v0.1",
+    "family_id": "unknown-openhands-lm-32b-v0-1",
+    "release_date": "2024-03-26",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-openllama-7b",
     "canonical_name": "OpenLLaMA-7B",
     "family_id": "unknown-openllama-7b",
@@ -7807,6 +11911,78 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-5-thinking-16k",
+    "canonical_name": "Opus 4.5 (Thinking, 16K)",
+    "family_id": "anthropic-opus-4-5-thinking-16k",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-5-thinking-64k",
+    "canonical_name": "Opus 4.5 (Thinking, 64K)",
+    "family_id": "anthropic-opus-4-5-thinking-64k",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-5-thinking-8k",
+    "canonical_name": "Opus 4.5 (Thinking, 8K)",
+    "family_id": "anthropic-opus-4-5-thinking-8k",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-5-thinking-none",
+    "canonical_name": "Opus 4.5 (Thinking, None)",
+    "family_id": "anthropic-opus-4-5-thinking-none",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8257,6 +12433,42 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-7-plus-thinking",
+    "canonical_name": "Qwen 3.7-Plus (thinking)",
+    "family_id": "alibaba-qwen-3-7-plus-thinking",
+    "release_date": "2026-06-02",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-os-world-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-coder-480b",
+    "canonical_name": "Qwen 3 Coder 480B",
+    "family_id": "alibaba-qwen-3-coder-480b",
+    "release_date": "2025-07-31",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9018,6 +13230,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-235b-a22b-instruct-25-07",
+    "canonical_name": "Qwen3-235b-a22b Instruct (25/07)",
+    "family_id": "alibaba-qwen3-235b-a22b-instruct-25-07",
+    "release_date": "2025-07-25",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-235b-a22b-instruct-2507",
+    "canonical_name": "Qwen3-235B-A22B-Instruct-2507",
+    "family_id": "alibaba-qwen3-235b-a22b-instruct-2507",
+    "release_date": "2025-07-25",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-aider-chat-2024-12-21-polyglot-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-235b-a22b-thinking-2507",
     "canonical_name": "Qwen3-235B-A22B-Thinking-2507",
     "family_id": "alibaba-qwen3-235b-a22b-thinking-2507",
@@ -9324,6 +13572,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-5-flash-none",
+    "canonical_name": "qwen3.5-flash_none",
+    "family_id": "alibaba-qwen3-5-flash-none",
+    "release_date": "2026-02-25",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-afxoicjc4c6cavdwupsime-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-5-plus",
     "canonical_name": "qwen3.5-plus",
     "family_id": "alibaba-qwen3-5-plus",
@@ -9432,6 +13698,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-6-flash-none",
+    "canonical_name": "qwen3.6-flash_none",
+    "family_id": "alibaba-qwen3-6-flash-none",
+    "release_date": "2026-04-27",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-roscwx4nugvqchdko6qhkd-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-6-max-preview",
     "canonical_name": "qwen3.6-max-preview",
     "family_id": "alibaba-qwen3-6-max-preview",
@@ -9463,6 +13747,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-6-plus-none",
+    "canonical_name": "qwen3.6-plus_none",
+    "family_id": "alibaba-qwen3-6-plus-none",
+    "release_date": "2026-03-31",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-z4xfwtke5pr6rry952btta-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9607,6 +13909,24 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-coder-480b-a35b-instruct",
+    "canonical_name": "Qwen3-Coder-480B-A35B-Instruct",
+    "family_id": "alibaba-qwen3-coder-480b-a35b-instruct",
+    "release_date": "2025-07-31",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-announcement-2-0"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Agents / computer use"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10008,6 +14328,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-tiny-recursion-model-trm",
+    "canonical_name": "Tiny Recursion Model (TRM)",
+    "family_id": "unknown-tiny-recursion-model-trm",
+    "release_date": "2025-10-06",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract / novel reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-tnlg-v2-530b",
     "canonical_name": "TNLG v2 (530B)",
     "family_id": "unknown-tnlg-v2-530b",
@@ -10057,6 +14395,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-unknown-model",
+    "canonical_name": "Unknown model",
+    "family_id": "unknown-unknown-model",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10327,6 +14683,24 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-yi-lightning",
+    "canonical_name": "yi-lightning",
+    "family_id": "01-ai-yi-lightning",
+    "release_date": "2024-12-02",
+    "organization": "01.AI",
+    "resource_ids": [
+      "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding / software engineering"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."

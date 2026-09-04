@@ -272,6 +272,72 @@
     "notes": null
   },
   {
+    "id": "resource-https-aider-chat-2024-12-21-polyglot-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Aider Polyglot primary source",
+    "url": "https://aider.chat/2024/12/21/polyglot.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aider-chat-docs-leaderboards",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Aider LLM Leaderboards",
+    "url": "https://aider.chat/docs/leaderboards/",
+    "publisher": "Aider LLM Leaderboards",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Aider LLM Leaderboards",
+    "url": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
+    "publisher": "Aider LLM Leaderboards",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ARC-AGI-2 primary source",
+    "url": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2009-03300",
     "resource_scope": [
       "benchmark"
@@ -483,6 +549,22 @@
     "url": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu",
     "publisher": "Stanford CRFM Leaderboard",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierMath Tiers 1\u20133 (v2) primary source",
+    "url": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -7000,6 +7082,1553 @@
     "notes": null
   },
   {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-4gzy2daat2epzdgz5pud3h-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/4gZy2dAAT2EPZDGz5puD3H.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-4hmmfwg9tgzjvkhl78nkzl-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/4hmmfwG9tgZJvKhL78nKzL.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-4rnnjhafmgdlsfjohhmr8k-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/4RnNJhaFMGdLSFjoHHMR8k.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-53ptw8g64r6zely38ak9q4-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/53PtW8g64r6zeLY38aK9Q4.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-5erkmxcurh2prbhjoukfnc-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/5eRkmXCURH2pRbhJoukfnC.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-6eqrp2my4qmylftxpioyte-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/6EQrp2MY4QMYLfTxpioYTe.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-6kvqvummx5zauteuc6pfcw-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/6KvQvuMMX5zAuteUc6pFcW.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-6ptymqcw3embervaqpivh5-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/6pTYmQCw3EMbErvAqpivH5.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-6xhtkr59amkko65t7rub2a-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/6XhtKr59amKko65T7RUB2a.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-6xzaenohp9pcgq3gveuai8-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/6XZAenohp9pCgQ3gVeUAi8.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-72dqvwbyiqw5pjhshjbagu-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/72DQVwbYiQW5pjhshjBaGU.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-7oukelfwmk3mtksnhx6qpu-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/7oUkeLfwMK3MtkSNHX6QPu.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-8nsnpe6etiklf4tsrnhmgs-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/8nsNpE6ETikLf4tSrNHmGs.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-8o2j9uqlkdcticfwydkjrk-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/8o2J9uQLKDCTiCFwYdkJRK.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-a4yua9pfzrr92jaqddo9ro-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/A4yUA9PfzRr92JAqDDo9ro.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-abt89ieswgngj4rymduhig-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ABT89ieSWGnGj4RYMduHiG.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-abypn5zgpprdboydzuinpt-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/abYpn5zgPpRdBoYdzuinPt.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-afxoicjc4c6cavdwupsime-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/afxoicJc4C6caVDwUpsiME.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-axmdgndc8uyylnzylhzpf5-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/axMdgNDC8UYYLnZYLHZpF5.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-b6bzbqickq8o2fqcgdmzmo-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/B6bZbqickq8o2fQcgDmzMo.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-b6ywmefgsweeig9qzs3nsf-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/b6yWmeFgsWeEiG9Qzs3NSf.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-bc2dbn4x2gwwmnnfsekxgq-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/bC2dbN4x2GWWmnnfseKxgQ.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-bdszjrg4ayzp8najg5q586-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/bdsZjrG4ayzP8NAJg5q586.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-bnsjwbcpnsadxhf7gc9won-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/BNSjwbcpNSaDXHF7gC9WoN.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-bxrnfymffkvuq4n7u5ek3q-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/BxrNfyMffkVUq4n7U5eK3Q.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-cpezwr38by8xb29bvmnhfm-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/CpEZwR38bY8xb29bVmNHFm.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-cx3btd8yir7nqarangwha4-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/CX3BTd8Yir7nQaRaNGWhA4.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-dcmri5jta27euwiqtdqr2b-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/dcmRi5JTa27EuwiQTdqr2B.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-donrggqy5sytqv22wrqw5l-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/doNrgGQY5SytQV22WRqw5L.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-e28uzijvrpgktawbjpozq8-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/E28uZiJvrPgKtawbJpoZQ8.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ecdg3m8n5abfwvz55rpfmt-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ECdG3m8n5ABfWVZ55rPFmT.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-etgrdq6ei6kze8k7qbxue3-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/EtgrDq6ei6kZe8K7QbXUe3.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ezmaddxs4yqtmlgppbgxab-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/EzMaDdXs4YQTMLgppBGxAb.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ff7ges7rdperjxsbz7mhzy-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ff7GeS7rdperjxSBZ7MHZY.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-fkywq2ks4aklpzjspmhhcs-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/FkywQ2KS4AkLPzjSPmhHcS.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-fldt53walteshc7pk9uvy2-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/FLDt53waLTeshC7PK9uVy2.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-fnabavmetirrfdw63kemz7-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/FNaBAvmeTiRRFDW63KemZ7.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-gdwrsbe5gvfxymdbymnmyv-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/gDwrSBE5GvFXymdBYMnMyV.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ggchje6ppy54ahn2pfxsgh-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/gGcHjE6ppy54ahN2pfxsGH.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ggg3n6wvpzn7gu2rnyfqbk-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ggG3n6WVPZn7Gu2RNyfQbK.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-gvmgtgkmweqc54f3ja7aup-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/GVmgtgKMwEqc54f3jA7auP.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hryelqpg6rny5cbtjhynt7-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/hRYELqPG6rnY5cBtJhYnt7.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hviftudqzrfeyabgcru8qq-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/hVifTUdQZrFEYabgCRu8Qq.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-iks95cxy2foitnupdkwnjn-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ikS95CXY2foitnUPDKwNJn.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-iktopjtjycwzqjaejcc7zl-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/iKtopjTjyCWZqJaEjcc7ZL.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-j2dwdpglbhihzx82m3hhug-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/J2DWDpGLBhihZx82M3hhug.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-j6evjtmghkrun8txnevzdn-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/J6evjTMgHkrun8txnEvzdN.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-jbyvwnevvfvnnc8aef6wcq-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/jbyVWnEvvFVNNc8AEF6WcQ.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-jh3pjdrbrqndecc8fh5qre-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/JH3PjDrbrQndEcc8fh5Qre.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-jrbb2ojv95wifbncfn56y9-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/jrbb2oJv95wiFbnCfN56y9.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-kcg2nzsprymy7lbwwpqwxy-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/kCG2nzspryMy7LBwWPqwXy.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-kdqzwipxb2vxc4bj4gjqw4-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/KDQZWiPXB2VXc4bj4GJQW4.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-kfdcrjxjgjsw8cvg3l8yxz-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/kfDcrjxJgjsW8CvG3L8yxz.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-kgj2d6xbkj3dzutdcbysku-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/kgJ2d6XbKj3dZutDcBYSKU.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-kuar3fafjzq5smkrehtn8e-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/KUar3FaFjzq5SMKrEhtn8e.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-mhwme9odwjmzmjoykw8r6b-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Mhwme9odWJMzMjoYkW8r6B.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-mkhvmeiczegjdvjdtrd7mk-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/mKhVMEicZeGjdvJdTRd7mK.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-mrjajyby2m2ggdbdmmt6iq-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/mRJaJyBY2M2GGdbdMmT6iq.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ms5ewcrzvpvuvjeehpudzu-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/mS5EwCRZVpvUvJEehPUDZu.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-mvzf59jt9ueowg9w5w9apb-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/MVZf59jt9uEoWG9w5W9apB.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-n4heryebfnjdeu4pevnngm-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/N4HerYebFnJDEU4PEvNNGM.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-nb9lndeeqyvrcqsbstangd-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/nb9LnDeeQyvRCqsbsTANGD.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ndsnfm5iogzywcpeukvotg-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/nDsNFM5ioGzyWcpeUKVotg.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-nft6poshwavxe6ih9pqgo2-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/nFt6PoshWAVXE6iH9PQgo2.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-nmjhdtxtyqjchq4eapr9lm-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/NMJhDtxtyQJCHQ4EApr9LM.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-nrth3eyhjp4hpdxgpcpgtx-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/NrTH3EYHjp4hPdxgpCPGTX.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-payeq37a2n6giybwzgbnxy-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/PaYEQ37A2n6giYBwZGBnXY.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-qnmpqzzdrhctkzrawyunaa-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/QnMPQZzDRHcTKZRaWYunaa.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-qv5jgkbrztfvmnj9frwjka-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/QV5JgKBrZtfVmNj9fRWJKA.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-rg2biwnmgybsvtvxxmdrwa-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/RG2biwnmGybSVTVxxMdRWa.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-roscwx4nugvqchdko6qhkd-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/RoscWx4NUGVqcHdko6QhKd.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-srvpkvkrweabhsvwplahbq-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/SrVpkvKRweaBHSVwPLAhBQ.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-tfdquerkbwieodrqrrkdpy-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/TFDQUeRKbWiEodRQRrKdpy.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-tt8tbxhoceyqglepwxkm8u-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Tt8tBXHoCEYqGLePWXkM8u.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-unkhyc2idttmotugxgenjv-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/UnKHyc2idtTmoTUGxGeNJV.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-v6yugpcu8mcbjnxkojma6b-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/V6YuGpcu8MCbJNXKoJMA6b.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-vbpt2wwykbztuxg9z3svgh-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/VBpT2WWYKBZtUxG9Z3svGh.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-vcuyqvf8lwuyhqcx2fgdhh-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/VcuyQvF8LWuYhQCx2FGDHh.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-vonoehasgsj2fhu33qnhui-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/VonoEhAsGSJ2FHU33qnhui.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-wjxdtpmnjuat27azuko3ka-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/WjXdTPMnJUAT27azUKo3Ka.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-worgtxwbnwqsazmfpgbbh9-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/WorgtXwbnWQSAzMfPgbBH9.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-x3rxrkt2pbuxyjjaqhsuo6-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/X3RxRkt2pBUXYJjAQHsUo6.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ylak5j3wd8eruvxee8baqb-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/YLAk5J3Wd8EruVXee8bAQb.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-yrvn36dmmydbs5e4xkf4xi-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/YRvn36dmMyDbS5e4XkF4Xi.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ysr9wcr2snjyvp7djwx7yn-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/YSR9WCR2SnJYvP7DJwX7YN.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-ywhknfqjbat97wvlqachmi-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/YwHKNFQjbat97wVLqachmi.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-z4xfwtke5pr6rry952btta-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Z4xfwTke5pR6RrY952bttA.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zb2akwa942d7dbttcebaba-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Zb2AKwa942D7dBTTcebAba.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zfva8dw7oiir6phcf8xzmo-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ZFVa8dw7oiir6PhcF8XZMo.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zknq7ger7mc9fspmpuzgkh-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ZkNQ7GER7Mc9FSPmpUzgKH.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zryxhnuppedpvghbqdnbew-eval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "evaluation_log",
+    "title": "Epoch evaluation log",
+    "url": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ZryXhNUpPedPvGhbqdNBEw.eval",
+    "publisher": "Epoch AI",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-epoch-benchmarks-staging-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-2hh2gapufajr7pfvkhhicg-eval",
     "resource_scope": [
       "benchmark",
@@ -7747,6 +9376,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-os-world-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OSWorld 2.0 primary source",
+    "url": "https://os-world.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-static-aminer-cn-upload-pdf-127-1564-656-6481884993eaf7045294a0c4-0-pdf",
     "resource_scope": [
       "benchmark",
@@ -7809,6 +9454,22 @@
     "url": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf",
     "publisher": "Model Card and Evaluations for Claude Models",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-tbench-ai-news-announcement-2-0",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Terminal-Bench 2.0 primary source",
+    "url": "https://www.tbench.ai/news/announcement-2-0",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
