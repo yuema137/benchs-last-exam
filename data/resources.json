@@ -7747,6 +7747,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-static-aminer-cn-upload-pdf-127-1564-656-6481884993eaf7045294a0c4-0-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "InternLM: A Multilingual Language Model with Progressively Enhanced Capabilities",
+    "url": "https://static.aminer.cn/upload/pdf/127/1564/656/6481884993eaf7045294a0c4_0.pdf",
+    "publisher": "InternLM: A Multilingual Language Model with Progressively Enhanced Capabilities",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-storage-googleapis-com-deepmind-media-gemini-gemini-v1-5-report-pdf",
     "resource_scope": [
       "benchmark",

@@ -32,16 +32,29 @@ def main():
                 errors.append(f"{observation['observation_id']}: missing model {observation.get('model_id')}")
             if observation.get("result_public_date") is None:
                 gaps.append(f"{observation['observation_id']}: result_public_date is unknown")
+        frontier_lists = {
+            "frontier": benchmark.get("frontier", []),
+            "frontier_events": benchmark.get("frontier_events", []),
+            "capability_frontier": benchmark.get("capability_frontier", []),
+            "reported_frontier": benchmark.get("reported_frontier", []),
+        }
+        for frontier_name, frontier_points in frontier_lists.items():
+            point_ids = set()
+            for point in frontier_points:
+                observation_id = point.get("observation_id")
+                point_ids.add(observation_id)
+                if observation_id not in observation_ids:
+                    errors.append(f"{benchmark['id']}: {frontier_name} point is not a canonical observation: {observation_id}")
+                elif point.get("source_ids", []) != observations_by_id[observation_id].get("source_ids", []):
+                    errors.append(f"{benchmark['id']} {frontier_name} {observation_id}: source lineage differs from observation")
+                for source_id in point.get("source_ids", []):
+                    if source_id not in resources:
+                        errors.append(f"{benchmark['id']} {frontier_name} {observation_id}: missing resource {source_id}")
+            if len(point_ids) != len(frontier_points):
+                errors.append(f"{benchmark['id']}: duplicate {frontier_name} observation IDs")
         for point in benchmark.get("frontier", []):
             observation_id = point.get("observation_id")
             frontier_ids.add(observation_id)
-            if observation_id not in observation_ids:
-                errors.append(f"{benchmark['id']}: frontier point is not a canonical observation: {observation_id}")
-            elif point.get("source_ids", []) != observations_by_id[observation_id].get("source_ids", []):
-                errors.append(f"{benchmark['id']} frontier {observation_id}: source lineage differs from observation")
-            for source_id in point.get("source_ids", []):
-                if source_id not in resources:
-                    errors.append(f"{benchmark['id']} frontier {observation_id}: missing resource {source_id}")
         if len(frontier_ids) != len(benchmark.get("frontier", [])):
             errors.append(f"{benchmark['id']}: duplicate frontier observation IDs")
     REPORT.write_text("# Provenance Gaps\n\n" +

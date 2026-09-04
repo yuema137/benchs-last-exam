@@ -1,5 +1,59 @@
 [
   {
+    "id": "model-8-shot-minerva",
+    "canonical_name": "8-shot Minerva",
+    "family_id": "unknown-8-shot-minerva",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2303-08774"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-ada-350m",
+    "canonical_name": "ada (350M)",
+    "family_id": "openai-ada-350m",
+    "release_date": null,
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-alpaca-7b",
+    "canonical_name": "Alpaca (7B)",
+    "family_id": "unknown-alpaca-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-amazon-nova-lite",
     "canonical_name": "Amazon Nova Lite",
     "family_id": "amazon-amazon-nova-lite",
@@ -41,6 +95,60 @@
     "family_id": "amazon-amazon-nova-pro",
     "release_date": "2024-12-03",
     "organization": "Amazon",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-anthropic-lm-v4-s3-52b",
+    "canonical_name": "Anthropic-LM v4-s3 (52B)",
+    "family_id": "unknown-anthropic-lm-v4-s3-52b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-aquilachat2-34b",
+    "canonical_name": "AquilaChat2 34B",
+    "family_id": "unknown-aquilachat2-34b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2403-04652"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-arctic-instruct",
+    "canonical_name": "Arctic Instruct",
+    "family_id": "unknown-arctic-instruct",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
     ],
@@ -234,6 +342,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-baichuan2-chat-13b-8-shot",
+    "canonical_name": "Baichuan2-Chat 13B (8-shot)",
+    "family_id": "unknown-baichuan2-chat-13b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-baichuan2-chat-7b-8-shot",
+    "canonical_name": "Baichuan2-Chat 7B (8-shot)",
+    "family_id": "unknown-baichuan2-chat-7b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-bloom-176b",
     "canonical_name": "BLOOM (176B)",
     "family_id": "hugging-face-bigscience-bloom-176b",
@@ -288,6 +432,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-chatglm-2-6b-base",
+    "canonical_name": "ChatGLM 2-6B (base)*",
+    "family_id": "unknown-chatglm-2-6b-base",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-10305"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-chatglm2-6b",
     "canonical_name": "ChatGLM2 6B",
     "family_id": "unknown-chatglm2-6b",
@@ -331,6 +493,24 @@
     "organization": "DeepMind",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-chinese-alpaca-plus-13b",
+    "canonical_name": "Chinese-Alpaca-Plus-13B",
+    "family_id": "unknown-chinese-alpaca-plus-13b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-10305"
     ],
     "roles": [
       "contemporary_frontier"
@@ -679,6 +859,42 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-instant",
+    "canonical_name": "Claude instant",
+    "family_id": "anthropic-claude-instant",
+    "release_date": null,
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-cdn-anthropic-com-5c49cc247484cecf107c699baf29250302e5da70-claude-2-model-card-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-instant-1-1",
+    "canonical_name": "Claude Instant 1.1",
+    "family_id": "anthropic-claude-instant-1-1",
+    "release_date": null,
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-releasing-claude-instant-1-2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1332,6 +1548,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-code-cushman-001-12b",
+    "canonical_name": "code-cushman-001 (12B)",
+    "family_id": "unknown-code-cushman-001-12b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-code-davinci-002",
     "canonical_name": "code-davinci-002",
     "family_id": "openai-code-davinci-002",
@@ -1363,6 +1597,150 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-command-beta-52-4b",
+    "canonical_name": "Cohere Command beta (52.4B)",
+    "family_id": "unknown-cohere-command-beta-52-4b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-command-beta-6-1b",
+    "canonical_name": "Cohere Command beta (6.1B)",
+    "family_id": "unknown-cohere-command-beta-6-1b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-large-v20220720-13-1b",
+    "canonical_name": "Cohere large v20220720 (13.1B)",
+    "family_id": "unknown-cohere-large-v20220720-13-1b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-medium-v20220720-6-1b",
+    "canonical_name": "Cohere medium v20220720 (6.1B)",
+    "family_id": "unknown-cohere-medium-v20220720-6-1b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-medium-v20221108-6-1b",
+    "canonical_name": "Cohere medium v20221108 (6.1B)",
+    "family_id": "unknown-cohere-medium-v20221108-6-1b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-small-v20220720-410m",
+    "canonical_name": "Cohere small v20220720 (410M)",
+    "family_id": "unknown-cohere-small-v20220720-410m",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-xlarge-v20220609-52-4b",
+    "canonical_name": "Cohere xlarge v20220609 (52.4B)",
+    "family_id": "unknown-cohere-xlarge-v20220609-52-4b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-cohere-xlarge-v20221108-52-4b",
+    "canonical_name": "Cohere xlarge v20221108 (52.4B)",
+    "family_id": "unknown-cohere-xlarge-v20221108-52-4b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1404,19 +1782,55 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
-    "id": "model-dbrx-instruct",
-    "canonical_name": "dbrx-instruct",
-    "family_id": "databricks-dbrx-instruct",
-    "release_date": "2024-03-27",
-    "organization": "Databricks",
+    "id": "model-curie-6-7b",
+    "canonical_name": "curie (6.7B)",
+    "family_id": "openai-curie-6-7b",
+    "release_date": null,
+    "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-pmbefrjykqmtbpabma7fji-eval"
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-davinci-175b",
+    "canonical_name": "davinci (175B)",
+    "family_id": "openai-davinci-175b",
+    "release_date": null,
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-dbrx-instruct",
+    "canonical_name": "DBRX Instruct",
+    "family_id": "unknown-dbrx-instruct",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1453,6 +1867,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-llm-chat-67b",
+    "canonical_name": "DeepSeek LLM Chat (67B)",
+    "family_id": "unknown-deepseek-llm-chat-67b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1998,6 +2430,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-falcon-instruct-7b",
+    "canonical_name": "Falcon-Instruct (7B)",
+    "family_id": "unknown-falcon-instruct-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-falcon-rw-1-3b",
+    "canonical_name": "Falcon-rw-1.3B",
+    "family_id": "unknown-falcon-rw-1-3b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-05463"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-falcon2-11b",
     "canonical_name": "Falcon2-11B",
     "family_id": "technology-innovation-institute-falcon2-11b",
@@ -2183,6 +2651,24 @@
     "family_id": "google-deepmind-gemini-1-5-pro-002",
     "release_date": "2024-09-24",
     "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-1-5-pro-0409-preview",
+    "canonical_name": "Gemini 1.5 Pro (0409 preview)",
+    "family_id": "unknown-gemini-1-5-pro-0409-preview",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
     ],
@@ -2754,6 +3240,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-2-9b",
+    "canonical_name": "Gemma-2 9B",
+    "family_id": "google-deepmind-gemma-2-9b",
+    "release_date": null,
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2404-14219"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-2-9b-it",
     "canonical_name": "gemma-2-9b-it",
     "family_id": "google-deepmind-gemma-2-9b-it",
@@ -2947,6 +3451,24 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-glm-130b",
+    "canonical_name": "GLM (130B)",
+    "family_id": "unknown-glm-130b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3242,9 +3764,9 @@
   {
     "id": "model-gpt-3-5-turbo",
     "canonical_name": "GPT-3.5 Turbo",
-    "family_id": "openai-gpt-3-5-turbo",
-    "release_date": "2023-06-13",
-    "organization": "OpenAI",
+    "family_id": "unknown-gpt-3-5-turbo",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2309-10305"
     ],
@@ -3252,7 +3774,7 @@
       "contemporary_frontier"
     ],
     "domains": [
-      "Mathematics"
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3271,6 +3793,24 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-3-5-turbo-0301",
+    "canonical_name": "gpt-3.5-turbo-0301",
+    "family_id": "unknown-gpt-3-5-turbo-0301",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3332,9 +3872,9 @@
   {
     "id": "model-gpt-4",
     "canonical_name": "GPT-4",
-    "family_id": "openai-gpt-4",
-    "release_date": "2023-06-13",
-    "organization": "OpenAI",
+    "family_id": "unknown-gpt-4",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2309-10305"
     ],
@@ -3342,7 +3882,7 @@
       "contemporary_frontier"
     ],
     "domains": [
-      "Mathematics"
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3481,6 +4021,24 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-japqzfi3fs7um32ehg6www-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4-8-shot",
+    "canonical_name": "GPT-4 (8-shot)",
+    "family_id": "unknown-gpt-4-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4500,6 +5058,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-neox-20b",
+    "canonical_name": "GPT-NeoX 20B",
+    "family_id": "unknown-gpt-neox-20b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-oss-20b-high",
     "canonical_name": "gpt-oss-20b_high",
     "family_id": "openai-gpt-oss-20b-high",
@@ -4860,6 +5436,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-instructpalmyra-30b",
+    "canonical_name": "InstructPalmyra (30B)",
+    "family_id": "unknown-instructpalmyra-30b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-intellect-1-instruct",
     "canonical_name": "INTELLECT-1-INSTRUCT",
     "family_id": "prime-intellect-hugging-face-arcee-ai-intellect-1-instruct",
@@ -4867,6 +5461,24 @@
     "organization": "Prime Intellect,Hugging Face,Arcee AI",
     "resource_ids": [
       "resource-https-arxiv-org-abs-2412-01152"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-internlm-104b",
+    "canonical_name": "InternLM (104B)",
+    "family_id": "unknown-internlm-104b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-static-aminer-cn-upload-pdf-127-1564-656-6481884993eaf7045294a0c4-0-pdf"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4927,6 +5539,204 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-internlm-chat-7b-8-shot",
+    "canonical_name": "InternLM-Chat 7B (8-shot)",
+    "family_id": "unknown-internlm-chat-7b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-j1-grande-v1-17b",
+    "canonical_name": "J1-Grande v1 (17B)",
+    "family_id": "unknown-j1-grande-v1-17b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-j1-grande-v2-beta-17b",
+    "canonical_name": "J1-Grande v2 beta (17B)",
+    "family_id": "unknown-j1-grande-v2-beta-17b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-j1-jumbo-v1-178b",
+    "canonical_name": "J1-Jumbo v1 (178B)",
+    "family_id": "unknown-j1-jumbo-v1-178b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-j1-large-v1-7-5b",
+    "canonical_name": "J1-Large v1 (7.5B)",
+    "family_id": "unknown-j1-large-v1-7-5b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jamba-1-5-large",
+    "canonical_name": "Jamba 1.5 Large",
+    "family_id": "unknown-jamba-1-5-large",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jamba-1-5-mini",
+    "canonical_name": "Jamba 1.5 Mini",
+    "family_id": "unknown-jamba-1-5-mini",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jamba-instruct",
+    "canonical_name": "Jamba Instruct",
+    "family_id": "unknown-jamba-instruct",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jurassic-2-grande-17b",
+    "canonical_name": "Jurassic-2 Grande (17B)",
+    "family_id": "unknown-jurassic-2-grande-17b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jurassic-2-jumbo-178b",
+    "canonical_name": "Jurassic-2 Jumbo (178B)",
+    "family_id": "unknown-jurassic-2-jumbo-178b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-jurassic-2-large-7-5b",
+    "canonical_name": "Jurassic-2 Large (7.5B)",
+    "family_id": "unknown-jurassic-2-large-7-5b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5233,6 +6043,60 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-2-chat-13b-8-shot",
+    "canonical_name": "LLAMA 2-CHAT 13B (8-shot)",
+    "family_id": "unknown-llama-2-chat-13b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-2-chat-70b-8-shot",
+    "canonical_name": "LLAMA 2-CHAT 70B (8-shot)",
+    "family_id": "unknown-llama-2-chat-70b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-2-chat-7b-8-shot",
+    "canonical_name": "LLAMA 2-CHAT 7B (8-shot)",
+    "family_id": "unknown-llama-2-chat-7b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5742,6 +6606,60 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-luminous-base-13b",
+    "canonical_name": "Luminous Base (13B)",
+    "family_id": "unknown-luminous-base-13b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-luminous-extended-30b",
+    "canonical_name": "Luminous Extended (30B)",
+    "family_id": "unknown-luminous-extended-30b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-luminous-supreme-70b",
+    "canonical_name": "Luminous Supreme (70B)",
+    "family_id": "unknown-luminous-supreme-70b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-magistral-small-2506",
     "canonical_name": "magistral-small-2506",
     "family_id": "mistral-ai-magistral-small-2506",
@@ -5803,6 +6721,60 @@
     "organization": "Meta AI",
     "resource_ids": [
       "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-burdku7mhux4ympudofsed-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minerva-540b",
+    "canonical_name": "Minerva 540B",
+    "family_id": "unknown-minerva-540b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minerva-62b",
+    "canonical_name": "Minerva 62B",
+    "family_id": "unknown-minerva-62b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minerva-8b",
+    "canonical_name": "Minerva 8B",
+    "family_id": "unknown-minerva-8b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2302-13971"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6048,6 +7020,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mistral-nemo-2402",
+    "canonical_name": "Mistral NeMo (2402)",
+    "family_id": "unknown-mistral-nemo-2402",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mistral-small-2402",
     "canonical_name": "Mistral Small (2402)",
     "family_id": "unknown-mistral-small-2402",
@@ -6199,6 +7189,24 @@
     "organization": "Mistral AI",
     "resource_ids": [
       "resource-https-arxiv-org-pdf-2401-04088"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mixtral-8x7b-32k-seqlen",
+    "canonical_name": "Mixtral (8x7B 32K seqlen)",
+    "family_id": "unknown-mixtral-8x7b-32k-seqlen",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6606,6 +7614,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-olmo-1-7-7b",
+    "canonical_name": "OLMo 1.7 (7B)",
+    "family_id": "unknown-olmo-1-7-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-olmo-7b",
+    "canonical_name": "OLMo (7B)",
+    "family_id": "unknown-olmo-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-open-mistral-7b",
     "canonical_name": "open-mistral-7b",
     "family_id": "mistral-ai-open-mistral-7b",
@@ -6768,6 +7812,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-palm-2-bison",
+    "canonical_name": "PaLM-2 (Bison)",
+    "family_id": "unknown-palm-2-bison",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palm-2-unicorn",
+    "canonical_name": "PaLM-2 (Unicorn)",
+    "family_id": "unknown-palm-2-unicorn",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-palm-540b",
     "canonical_name": "PaLM 540B",
     "family_id": "google-research-palm-540b",
@@ -6793,6 +7873,96 @@
     "organization": "Unknown",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palm-8b",
+    "canonical_name": "PaLM 8B",
+    "family_id": "unknown-palm-8b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2302-13971"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palmyra-x-004",
+    "canonical_name": "Palmyra-X-004",
+    "family_id": "unknown-palmyra-x-004",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palmyra-x-43b",
+    "canonical_name": "Palmyra X (43B)",
+    "family_id": "unknown-palmyra-x-43b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palmyra-x-v2-33b",
+    "canonical_name": "Palmyra X V2 (33B)",
+    "family_id": "unknown-palmyra-x-v2-33b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-palmyra-x-v3-72b",
+    "canonical_name": "Palmyra X V3 (72B)",
+    "family_id": "unknown-palmyra-x-v3-72b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6889,6 +8059,24 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-phi-3-7b",
+    "canonical_name": "Phi-3 (7B)",
+    "family_id": "unknown-phi-3-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7002,6 +8190,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-pythia-12b",
+    "canonical_name": "Pythia (12B)",
+    "family_id": "unknown-pythia-12b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-pythia-6-9b",
+    "canonical_name": "Pythia (6.9B)",
+    "family_id": "unknown-pythia-6-9b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen-1-8b",
     "canonical_name": "Qwen 1.8B",
     "family_id": "unknown-qwen-1-8b",
@@ -7056,6 +8280,42 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen-chat-1-8b-0-shot",
+    "canonical_name": "QWEN-CHAT 1.8B (0-shot)",
+    "family_id": "unknown-qwen-chat-1-8b-0-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-chat-1-8b-8-shot",
+    "canonical_name": "QWEN-CHAT 1.8B (8-shot)",
+    "family_id": "unknown-qwen-chat-1-8b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen-chat-14b",
     "canonical_name": "Qwen-Chat 14B",
     "family_id": "alibaba-qwen-chat-14b",
@@ -7069,6 +8329,78 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-chat-14b-0-shot",
+    "canonical_name": "QWEN-CHAT 14B (0-shot)",
+    "family_id": "unknown-qwen-chat-14b-0-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-chat-14b-8-shot",
+    "canonical_name": "QWEN-CHAT 14B (8-shot)",
+    "family_id": "unknown-qwen-chat-14b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-chat-7b-0-shot",
+    "canonical_name": "QWEN-CHAT 7B (0-shot)",
+    "family_id": "unknown-qwen-chat-7b-0-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-chat-7b-8-shot",
+    "canonical_name": "QWEN-CHAT 7B (8-shot)",
+    "family_id": "unknown-qwen-chat-7b-8-shot",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7182,6 +8514,24 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen1-5-72b",
+    "canonical_name": "Qwen1.5 (72B)",
+    "family_id": "unknown-qwen1-5-72b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen1-5-72b-chat",
     "canonical_name": "qwen1.5-72b-chat",
     "family_id": "alibaba-qwen1-5-72b-chat",
@@ -7205,6 +8555,24 @@
     "family_id": "alibaba-qwen1-5-7b",
     "release_date": "2024-02-04",
     "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen1-5-chat-110b",
+    "canonical_name": "Qwen1.5 Chat (110B)",
+    "family_id": "unknown-qwen1-5-chat-110b",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
     ],
@@ -8316,6 +9684,78 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-redpajama-incite-base-7b",
+    "canonical_name": "RedPajama-INCITE-Base (7B)",
+    "family_id": "unknown-redpajama-incite-base-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-redpajama-incite-base-v1-3b",
+    "canonical_name": "RedPajama-INCITE-Base-v1 (3B)",
+    "family_id": "unknown-redpajama-incite-base-v1-3b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-redpajama-incite-instruct-7b",
+    "canonical_name": "RedPajama-INCITE-Instruct (7B)",
+    "family_id": "unknown-redpajama-incite-instruct-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-redpajama-incite-instruct-v1-3b",
+    "canonical_name": "RedPajama-INCITE-Instruct-v1 (3B)",
+    "family_id": "unknown-redpajama-incite-instruct-v1-3b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-seed-oss-36b-instruct",
     "canonical_name": "seed-oss-36b-instruct",
     "family_id": "unknown-seed-oss-36b-instruct",
@@ -8329,6 +9769,42 @@
     ],
     "domains": [
       "Science reasoning"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-skywork-7b",
+    "canonical_name": "Skywork 7B",
+    "family_id": "unknown-skywork-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2403-04652"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-solar-pro",
+    "canonical_name": "Solar Pro",
+    "family_id": "unknown-solar-pro",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8406,6 +9882,96 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-t0pp-11b",
+    "canonical_name": "T0pp (11B)",
+    "family_id": "unknown-t0pp-11b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-t5-11b",
+    "canonical_name": "T5 (11B)",
+    "family_id": "unknown-t5-11b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-text-ada-001",
+    "canonical_name": "text-ada-001",
+    "family_id": "openai-text-ada-001",
+    "release_date": null,
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-text-babbage-001",
+    "canonical_name": "text-babbage-001",
+    "family_id": "openai-text-babbage-001",
+    "release_date": null,
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-text-curie-001",
+    "canonical_name": "text-curie-001",
+    "family_id": "openai-text-curie-001",
+    "release_date": null,
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-text-davinci-002",
     "canonical_name": "text-davinci-002",
     "family_id": "openai-text-davinci-002",
@@ -8442,13 +10008,13 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
-    "id": "model-vicuna-13b",
-    "canonical_name": "Vicuna-13B",
-    "family_id": "unknown-vicuna-13b",
-    "release_date": "2023-04-12",
+    "id": "model-tnlg-v2-530b",
+    "canonical_name": "TNLG v2 (530B)",
+    "family_id": "unknown-tnlg-v2-530b",
+    "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
-      "resource-http-arxiv-org-abs-2309-10305"
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
     ],
     "roles": [
       "contemporary_frontier"
@@ -8460,11 +10026,83 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-tnlg-v2-6-7b",
+    "canonical_name": "TNLG v2 (6.7B)",
+    "family_id": "unknown-tnlg-v2-6-7b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-ul2-20b",
+    "canonical_name": "UL2 (20B)",
+    "family_id": "unknown-ul2-20b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-vicuna-13b",
+    "canonical_name": "Vicuna-13B",
+    "family_id": "unknown-vicuna-13b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-10305"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-vicuna-v1-3-13b",
     "canonical_name": "Vicuna v1.3 (13B)",
     "family_id": "large-model-systems-organization-university-of-california-uc-berkeley-vicuna-v1-3-13b",
     "release_date": "2023-06-18",
     "organization": "Large Model Systems Organization,University of California (UC) Berkeley",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-vicuna-v1-3-7b",
+    "canonical_name": "Vicuna v1.3 (7B)",
+    "family_id": "unknown-vicuna-v1-3-7b",
+    "release_date": null,
+    "organization": "Unknown",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
     ],
@@ -8509,6 +10147,42 @@
     ],
     "domains": [
       "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-xverse-13b",
+    "canonical_name": "XVERSE-13B",
+    "family_id": "unknown-xverse-13b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-10305"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-yalm-100b",
+    "canonical_name": "YaLM (100B)",
+    "family_id": "unknown-yalm-100b",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."

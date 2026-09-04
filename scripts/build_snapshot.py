@@ -62,13 +62,65 @@ def model_family(model, organization):
 def parse_dates(row):
     evaluation_date = (row.get("Started at") or "")[:10] or None
     model_release_date = row.get("Release date") or None
-    if evaluation_date:
-        plot_date, plot_date_reason = evaluation_date, "evaluation_date (provisional operational view)"
-    elif model_release_date:
-        plot_date, plot_date_reason = model_release_date, "model_release_date (explicit non-historical fallback)"
-    else:
-        plot_date, plot_date_reason = None, "unknown; excluded from operational frontier"
-    return evaluation_date, model_release_date, plot_date, plot_date_reason
+    return evaluation_date, model_release_date
+
+
+def build_frontier(rows, date_field, date_meaning):
+    """Build a deterministic, step-function frontier from canonical observations.
+
+    Observations sharing a date are evaluated as one cohort. The winning
+    observation retains the lineage of the score that established the event;
+    the cohort IDs document the other observations considered at that date.
+    """
+    cohorts = {}
+    for row in rows:
+        event_date = row.get(date_field)
+        if event_date:
+            cohorts.setdefault(event_date, []).append(row)
+    frontier = []
+    best_score = None
+    for event_date in sorted(cohorts):
+        cohort = sorted(cohorts[event_date], key=lambda item: (item["score"], item["observation_id"]))
+        winner = cohort[-1]
+        if best_score is None or winner["score"] > best_score:
+            event = {**winner}
+            event["plot_date"] = event_date
+            event["date"] = event_date
+            event["date_kind"] = date_meaning
+            event["frontier_observation_ids"] = [item["observation_id"] for item in cohort]
+            frontier.append(event)
+            best_score = winner["score"]
+    return frontier
+
+
+def threshold_metrics(frontier, release, floor, ceiling):
+    result = {}
+    if floor is None or ceiling is None or ceiling == floor:
+        for label in ("T50", "T80", "T90"):
+            result[label] = {"status": "not_applicable", "reason": "No defensible fixed floor and ceiling."}
+        return result
+    for label, target in (("T50", 0.5), ("T80", 0.8), ("T90", 0.9)):
+        crossing = next((point for point in frontier if (point["score"] - floor) / (ceiling - floor) >= target), None)
+        if crossing:
+            result[label] = {"status": "reached", "days": (date.fromisoformat(crossing["plot_date"]) - release).days}
+        elif frontier:
+            result[label] = {"status": "right_censored", "days": (date.fromisoformat(frontier[-1]["plot_date"]) - release).days}
+        else:
+            result[label] = {"status": "unknown", "reason": "No dated observations are available on this timeline."}
+    return result
+
+
+def frontier_velocity(frontier, window_days=180):
+    if len(frontier) < 2:
+        return None
+    latest = frontier[-1]
+    latest_date = date.fromisoformat(latest["plot_date"])
+    prior = next((point for point in reversed(frontier[:-1])
+                  if (latest_date - date.fromisoformat(point["plot_date"])).days >= window_days), None)
+    if not prior:
+        return None
+    elapsed = (latest_date - date.fromisoformat(prior["plot_date"])).days
+    return (latest["score"] - prior["score"]) / elapsed * 30.44
 
 
 def build_benchmark(spec, resources, models):
@@ -83,9 +135,7 @@ def build_benchmark(spec, resources, models):
                 score = float(row[spec["score"]])
             except (KeyError, TypeError, ValueError):
                 continue
-            evaluation_date, model_release_date, plot_date, plot_date_reason = parse_dates(row)
-            if not plot_date:
-                continue
+            evaluation_date, model_release_date = parse_dates(row)
             model = row.get("Name") or row.get("Model version") or "Unknown model"
             source_url = row.get("Source link") or row.get("Logs") or spec["source"]
             source_is_benchmark_primary = source_url == spec["source"]
@@ -135,52 +185,41 @@ def build_benchmark(spec, resources, models):
                 "result_public_date": None,
                 "source_publication_date": None,
                 "ingested_at": datetime.now().date().isoformat(),
-                "date_precision": "day" if plot_date else None,
+                "date_precision": "day" if evaluation_date or model_release_date else None,
                 "date_notes": "Result-public date is not present in the source export.",
-                "date": plot_date,
-                "date_kind": plot_date_reason,
+                "date": evaluation_date or model_release_date,
+                "date_kind": "evaluation_date" if evaluation_date else "unknown",
+                "capability_date": model_release_date,
+                "capability_date_meaning": "model_release_date",
+                "reported_date_meaning": "result_public_date",
                 "historical_frontier_date": None,
                 "temporal_class": "retrospective_evaluation" if retrospective else "historical_or_unknown",
                 "retrospective": retrospective,
+                "capability_frontier_eligible": bool(model_release_date),
                 "historical_frontier_eligible": False,
-                "eligibility_reason": "No defensible result_public_date and comparable public protocol in the source export.",
+                "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
                 "contemporaneous": not retrospective,
                 "source_ids": [source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id],
                 "source": source_url,
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })
-    rows.sort(key=lambda item: (item["date"], item["score"]))
-    frontier = []
-    best = None
-    for row in rows:
-        if best is None or row["score"] > best["score"]:
-            best = row
-            frontier.append({**row})
-    current = max(rows, key=lambda row: row["score"]) if rows else None
+    capability_frontier = build_frontier(rows, "capability_date", "model release date")
+    reported_frontier = build_frontier(
+        [row for row in rows if row.get("result_public_date")],
+        "result_public_date",
+        "result first-public date",
+    )
+    current = capability_frontier[-1] if capability_frontier else None
+    reported_current = reported_frontier[-1] if reported_frontier else None
     progress = None
     if current and spec["ceiling"] != spec["floor"]:
         progress = (current["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"])
         progress = max(0.0, min(1.0, progress))
     release = date.fromisoformat(spec["release"])
-    threshold_days = {}
-    lifecycle_rows = rows if spec["id"] != "math-level-5" else []
-    lifecycle_frontier = frontier if spec["id"] != "math-level-5" else []
-    for label, target in (("T50", 0.5), ("T90", 0.9)):
-        crossing = next((p for p in lifecycle_frontier if (p["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"]) >= target), None)
-        if spec["id"] == "math-level-5":
-            threshold_days[label] = {"status": "unknown", "reason": "No comparable historical public-result observations are available."}
-        elif crossing:
-            threshold_days[label] = {"status": "reached", "days": (date.fromisoformat(crossing["date"]) - release).days}
-        else:
-            threshold_days[label] = {"status": "right_censored", "days": (date.fromisoformat(lifecycle_rows[-1]["date"]) - release).days}
-    latest_frontier = frontier[-1] if frontier else None
-    velocity_180d = None
-    if latest_frontier and spec["id"] != "math-level-5":
-        latest_date = date.fromisoformat(latest_frontier["date"])
-        prior = next((p for p in reversed(frontier[:-1]) if (latest_date - date.fromisoformat(p["date"])).days >= 180), None)
-        if prior:
-            elapsed = (latest_date - date.fromisoformat(prior["date"])).days
-            velocity_180d = (latest_frontier["score"] - prior["score"]) / elapsed * 30.44
+    threshold_days = threshold_metrics(capability_frontier, release, spec["floor"], spec["ceiling"])
+    reported_threshold_days = threshold_metrics(reported_frontier, release, spec["floor"], spec["ceiling"])
+    velocity_180d = frontier_velocity(capability_frontier)
+    reported_velocity_180d = frontier_velocity(reported_frontier)
     organizations = {row["organization"] for row in rows}
     coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
@@ -196,20 +235,30 @@ def build_benchmark(spec, resources, models):
         "evaluation_target": spec["evaluation_target"],
         "observation_count": len(rows),
         "observations": rows,
-        "frontier": [{**point, "source_ids": point["source_ids"]} for point in frontier],
-        "historical_frontier": [{**point, "source_ids": point["source_ids"]} for point in lifecycle_frontier],
+        "frontier": [{**point, "source_ids": point["source_ids"]} for point in capability_frontier],
+        "frontier_events": [{**point, "source_ids": point["source_ids"]} for point in capability_frontier],
+        "capability_frontier": [{**point, "source_ids": point["source_ids"]} for point in capability_frontier],
+        "reported_frontier": [{**point, "source_ids": point["source_ids"]} for point in reported_frontier],
+        "historical_frontier": [{**point, "source_ids": point["source_ids"]} for point in reported_frontier],
         "retrospective_observations": [row for row in rows if row["retrospective"]],
         "observed_frontier": current["score"] if current else None,
+        "capability_frontier_value": current["score"] if current else None,
+        "reported_frontier_value": reported_current["score"] if reported_current else None,
         "current_frontier": current["score"] if current else None,
         "normalized_progress": progress,
         "normalized_headroom": None if progress is None else 1 - progress,
         "threshold_days": threshold_days,
+        "capability_threshold_days": threshold_days,
+        "reported_threshold_days": reported_threshold_days,
         "velocity_180d": velocity_180d,
+        "capability_velocity_180d": velocity_180d,
+        "reported_velocity_180d": reported_velocity_180d,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATIONS), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
         "resource_ids": [benchmark_resource_id],
-        "date_policy": "The displayed pilot curve uses an explicit operational date: evaluation_date when available, otherwise model_release_date. It is not a historical public-result frontier because result_public_date is unavailable.",
-        "historical_frontier_status": "unknown_public_dates" if spec["id"] == "math-level-5" else "not_classified",
+        "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+        "historical_frontier_status": "unknown_public_dates" if not reported_frontier else "available",
+        "timeline_default": "capability",
     }
 
 
