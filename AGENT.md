@@ -83,4 +83,4 @@ The style applies to conversational explanations and explicitly selected explana
 - Do not add a composite health score to the MVP.
 - Do not assign lifecycle thresholds before inspecting empirical distributions.
 - Preserve right-censored benchmarks for later survival analysis.
-- Do not expand to 10–20 benchmarks or GitHub Pages deployment until the first 3–5 benchmark local slice has been used and validated.
+- Every benchmark addition must satisfy the Benchmark Integration Contract in `docs/BENCHMARK_INTEGRATION.md` and pass `python3 scripts/validate_benchmark_integration.py` before it is considered complete. This applies to partial-core benchmarks with truthful `Unknown`, `N/A`, or `—` values as well as fully measured benchmarks.
