@@ -1,0 +1,4 @@
+Model version,Accuracy,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+gemini-3-pro-preview,0.88,2025-11-18,Google,Gemini 3 Pro Preview,"TableQA2-PDF; native runner; tools/high; 98 completed and 2 failures.",LABBench2 official paper reports,https://github.com/EdisonScientific/labbench2,labbench2-tableqa-gemini-3-pro,2026-02-04
+gpt-5-2,0.84,2025-12-11,OpenAI,GPT-5.2,"TableQA2-PDF; native runner; tools/high; 98 completed and 2 failures.",LABBench2 official paper reports,https://github.com/EdisonScientific/labbench2,labbench2-tableqa-gpt-5-2,2026-02-04
+claude-opus-4-6,0.88,2026-02-05,Anthropic,Claude Opus 4.6,"TableQA2-PDF; native runner; tools/high; 100 completed.",LABBench2 official paper reports,https://github.com/EdisonScientific/labbench2,labbench2-tableqa-claude-opus-4-6,2026-02-05

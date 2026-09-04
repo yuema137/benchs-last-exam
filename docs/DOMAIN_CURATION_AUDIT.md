@@ -56,3 +56,26 @@ AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and Andr
 Benchmark-family variants remain separate measurement objects only when their task set or scoring protocol is materially different. A family version is not counted as independent domain coverage. Rolling benchmarks remain deferred because their target changes over time and therefore do not fit the fixed benchmark-release → model-release capability timeline without another methodology.
 
 Citation counts are not hard-coded into the leaderboard. When used for a future admission decision, record the count, index/source, and `checked_at` date next to the candidate. New benchmarks may instead qualify through repeated official adoption by major model developers.
+# Science and engineering expansion audit — 2026-09-04
+
+This batch required at least two of the seven reference organizations to have public results for one pinned measurement object. Coverage counts organizations, not model snapshots. Alternate modalities, subsets, prompt regimes, and process metrics were not combined merely to raise coverage.
+
+| Candidate | Type → Domain | Canonical measurement | Coverage | Decision | Main caveat |
+|---|---|---|---:|---|---|
+| PhysReason | Model → Physics | Full 1,200-item set; PSAS-A | 5/7 | ADD | Q+image and Q+caption conditions remain explicit. |
+| OlympiadBench Physics | Model → Physics | Full multimodal Physics slice | 4/7 | ADD | Text-only experiment excluded. |
+| QuantiPhy | Model → Physics | Unresolved | 5/7 | DEFER | Original and competition releases disagree on task count and checkpoint identity. |
+| ChemIQ | Model → Chemistry | Final 816-question release | 3/7 | ADD | Parser-assisted DeepSeek result is identified explicitly. |
+| SUPERChem (Multimodal) | Model → Chemistry | SUPERChem-500 multimodal Pass@1 | 2/7 | ADD_WITH_PARTIAL_DATA | Text-only accuracy and RPF are separate metrics. |
+| ChemLLMBench | Model → Chemistry | Heterogeneous suite | ≥2/7 | DEFER | No canonical scalar metric across task families. |
+| MatSciBench v2 | Model → Materials Science | v2 text-only direct/basic-CoT accuracy | 6/7 | ADD | Image, RAG, and self-correction settings excluded. |
+| AtomWorld v4 | Model → Materials Science | Fixed 2,500-case full suite | 3/7 | ADD | Diagnostic subsets are not mixed with full-suite scores. |
+| MatQnA objective subset | Model → Materials Science | Unpinned | 4/7 | DEFER | Prompt, extraction, and exact dataset configuration are not frozen. |
+| EngiBench v2 — Level 3 | Model → Engineering | Level 3 Original average rubric score | 6/7 | ADD | Perturbed prompts and Levels 1–2 are separate objects. |
+| EEE-Bench v2 | Model → Engineering | v2 overall zero-shot two-run accuracy | 4/7 | ADD | Dataset revision and GPT-4o-mini extraction procedure are material protocol fields. |
+| TransportBench | Model → Engineering | Unpinned web snapshot | 4/7 | DEFER | Evaluated web-product snapshot and task count are not stable enough. |
+| LABBench2 — TableQA2 PDF | Agent → Life Science | 100-task PDF/tools/high track | 3/7 | ADD | LABBench2 has no defensible all-suite composite; this card is one fixed track. |
+| PG-LLM — ProteinGym | Model → Life Science | ProteinGym v1.3, N=50, seeds 1–3 | 3/7 | ADD | Recent-assay holdout uses a different aggregation and stays separate. |
+| LifeSciBench | Agent → Life Science | Closed 750-task evaluation | 3/7 | DEFER | Tasks, artifacts, grader, and full run configuration are not publicly reproducible. |
+
+The ten additions are partial or full core records. Missing cost and unreached thresholds remain explicit; they are not reasons to hide a methodologically identifiable benchmark.

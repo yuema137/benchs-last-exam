@@ -1,0 +1,3 @@
+Model version,Pass@1 accuracy,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+gemini-2-5-pro,0.379,2025-06-17,Google,Gemini 2.5 Pro,"SUPERChem-500 multimodal input; Pass@1 final-answer accuracy; RPF excluded.",SUPERChem official paper and artifacts,https://github.com/catalystforyou/SUPERChem_eval,superchem-gemini-2-5-pro,2025-12-01
+gpt-5-high,0.385,2025-08-07,OpenAI,GPT-5 (High),"SUPERChem-500 multimodal input; Pass@1 final-answer accuracy; RPF excluded.",SUPERChem official paper and artifacts,https://github.com/catalystforyou/SUPERChem_eval,superchem-gpt-5-high,2025-12-01

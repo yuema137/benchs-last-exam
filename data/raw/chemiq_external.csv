@@ -1,0 +1,6 @@
+Model version,Success rate,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+gpt-4o-2024-05-13,0.069,2024-05-13,OpenAI,GPT-4o,"Final 816-question ChemIQ release; micro-average success rate.",ChemIQ official artifacts,https://github.com/oxpig/ChemIQ,chemiq-gpt-4o,2025-12-18
+deepseek-v3,0.070,2024-12-26,DeepSeek,DeepSeek-V3,"Final release; micro-average success rate.",ChemIQ official artifacts,https://github.com/oxpig/ChemIQ,chemiq-deepseek-v3,2025-12-18
+o3-mini-high,0.567,2025-01-31,OpenAI,o3-mini (High),"Final release; micro-average success rate.",ChemIQ official artifacts,https://github.com/oxpig/ChemIQ,chemiq-o3-mini-high,2025-12-18
+gemini-2-5-pro-preview,0.555,2025-03-25,Google,Gemini 2.5 Pro,"Final release; micro-average success rate.",ChemIQ official artifacts,https://github.com/oxpig/ChemIQ,chemiq-gemini-2-5-pro,2025-12-18
+deepseek-r1-0528,0.502,2025-05-28,DeepSeek,DeepSeek-R1-0528,"Final release; parsed score. The raw parser is sensitive to this model's answer format.",ChemIQ official artifacts,https://github.com/oxpig/ChemIQ,chemiq-deepseek-r1-0528,2025-12-18

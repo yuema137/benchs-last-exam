@@ -182,7 +182,7 @@ https://arxiv.org/abs/2005.14165",babbage (1.3B),5,,Stanford HELM,https://crfm.s
 text-ada-001,0.464,,OpenAI,United States of America,,,text-ada-001,5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq,recMowoIcCL0xyNCc
 ,0.457,,,,,,Cohere small v20220720 (410M),5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq,recB5FNshTVhRpthj
 text-babbage-001,0.451,,OpenAI,United States of America,,,text-babbage-001,5,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq,recwFyj4k7N8CWhsj
-,0.0,,,,,,T0pp (11B),,,Stanford HELM,https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq,recUwgPFUdlclbdtt
+,0.322,,,,,,T0pp (11B),,HELM Classic v0.2.4 core-scenarios BoolQ EM.,Stanford HELM,https://crfm.stanford.edu/helm/classic/v0.2.4/?group=core_scenarios,recUwgPFUdlclbdtt
 ,0.566,,,,,,GLaM (MoE) 0.1B/64E,0,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,recspTyjE5hylm1UT
 ,0.627,,,,,,GLaM (MoE) 1.7B/64E,0,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,recaOxFtPf6V24w6g
 ,0.722,,,,,,GLaM (MoE) 8B/64E,0,,GLaM: Efficient Scaling of Language Models with Mixture-of-Experts,http://arxiv.org/abs/2112.06905,recrLAm0to0YVSV7Y

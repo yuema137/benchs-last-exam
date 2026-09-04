@@ -1,0 +1,7 @@
+Model version,Rubric score,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+llama-3-3-70b,5.01,2024-12-06,Meta,Llama 3.3 70B,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-llama-3-3-70b,2026-05-02
+qwen2-5-72b,4.72,2024-09-19,Qwen,Qwen2.5-72B,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-qwen2-5-72b,2026-05-02
+deepseek-v3,6.33,2024-12-26,DeepSeek,DeepSeek-V3,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-deepseek-v3,2026-05-02
+claude-3-7-sonnet,6.45,2025-02-19,Anthropic,Claude 3.7 Sonnet,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-claude-3-7-sonnet,2026-05-02
+gemini-2-5-flash,6.21,2025-04-17,Google,Gemini 2.5 Flash,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-gemini-2-5-flash,2026-05-02
+gpt-4-1,7.00,2025-04-14,OpenAI,GPT-4.1,"EngiBench v2 Level 3 Original average 0-10 rubric score.",EngiBench official repository,https://github.com/AI4Engi/EngiBench,engibench-l3-gpt-4-1,2026-05-02

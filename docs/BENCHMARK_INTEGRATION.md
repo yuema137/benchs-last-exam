@@ -19,6 +19,7 @@ Run the acceptance check after every benchmark addition or observation update:
 
 ```bash
 python3 scripts/build_snapshot.py
+python3 scripts/validate_score_semantics.py
 python3 scripts/validate_benchmark_integration.py
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```

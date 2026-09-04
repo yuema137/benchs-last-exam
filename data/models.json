@@ -6527,6 +6527,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-vl-7b",
+    "canonical_name": "DeepSeek-VL-7B",
+    "family_id": "deepseek-deepseek-vl-7b",
+    "release_date": "2024-03-11",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-openaccess-thecvf-com-content-cvpr2025-papers-li-eee-bench-a-comprehensive-multimodal-electrical-and-electronics-engineering-benchmark-cvpr-2025-paper-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-devstral-small-2",
     "canonical_name": "Devstral Small 2",
     "family_id": "mistral-ai-devstral-small-2",
@@ -7747,6 +7768,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-0-flash-thinking-0121",
+    "canonical_name": "Gemini 2.0 Flash Thinking 0121",
+    "family_id": "google-gemini-2-0-flash-thinking-0121",
+    "release_date": "2025-01-21",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-zhang-xinyu-1204-physreason"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-2-0-flash-thinking-exp-01-21",
     "canonical_name": "gemini-2.0-flash-thinking-exp-01-21",
     "family_id": "google-deepmind-google-gemini-2-0-flash-thinking-exp-01-21",
@@ -7760,6 +7802,27 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-0-pro",
+    "canonical_name": "Gemini 2.0 Pro",
+    "family_id": "google-gemini-2-0-pro",
+    "release_date": "2025-02-05",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-zhang-xinyu-1204-physreason"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
     ],
     "evaluation_types": [
       "Model"
@@ -9338,6 +9401,27 @@
     ],
     "domains": [
       "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-pro-vision",
+    "canonical_name": "Gemini Pro Vision",
+    "family_id": "google-gemini-pro-vision",
+    "release_date": "2023-12-06",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-openbmb-olympiadbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
     ],
     "evaluation_types": [
       "Model"

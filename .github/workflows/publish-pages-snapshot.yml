@@ -28,6 +28,8 @@ jobs:
           python-version: "3.11"
       - name: Validate source data and code
         run: |
+          python3 scripts/build_snapshot.py
+          python3 scripts/validate_score_semantics.py
           python3 scripts/validate_provenance.py
           PYTHONPATH=src python3 -m unittest discover -s tests -v
           node --check site/app.js
