@@ -912,6 +912,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2503-00096",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BixBench primary source",
+    "url": "https://arxiv.org/abs/2503.00096",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2505-08775",
     "resource_scope": [
       "benchmark",
@@ -1256,6 +1272,22 @@
     "resource_type": "paper",
     "title": "BenchCAD \u00b7 Vision2Code primary source",
     "url": "https://benchcad.com/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-chembench-lamalab-org",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ChemBench primary source",
+    "url": "https://chembench.lamalab.org/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,

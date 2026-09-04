@@ -915,6 +915,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-arxiv-org-abs-2503-00096",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "BixBench primary source",
+      "url": "https://arxiv.org/abs/2503.00096",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-arxiv-org-abs-2505-08775",
       "resource_scope": [
         "benchmark",
@@ -1259,6 +1275,22 @@
       "resource_type": "paper",
       "title": "BenchCAD \u00b7 Vision2Code primary source",
       "url": "https://benchcad.com/leaderboard",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
+      "id": "resource-https-chembench-lamalab-org",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "ChemBench primary source",
+      "url": "https://chembench.lamalab.org/",
       "publisher": "Benchmark authors",
       "authority": "primary",
       "active": true,
@@ -14604,18 +14636,18 @@
     },
     {
       "id": "model-claude-3-7-sonnet",
-      "canonical_name": "Claude-3.7-sonnet",
+      "canonical_name": "Claude 3.7 Sonnet",
       "family_id": "anthropic-claude-3-7-sonnet",
-      "release_date": "2025-02-24",
+      "release_date": "2025-02-19",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-arxiv-org-abs-2507-07610"
+        "resource-https-chembench-lamalab-org"
       ],
       "roles": [
         "contemporary_frontier"
       ],
       "domains": [
-        "Multimodal"
+        "Chemistry"
       ],
       "evaluation_types": [
         "Model"
@@ -192453,6 +192485,1083 @@
       "timeline_default": "capability"
     },
     {
+      "id": "bixbench",
+      "name": "BixBench",
+      "domain": "Life Science",
+      "release": "2025-03-01",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://arxiv.org/abs/2503.00096",
+      "evaluation_type": "Agent",
+      "tags": [
+        "bioinformatics",
+        "notebook",
+        "long-horizon",
+        "open-answer"
+      ],
+      "metric": "Open-answer accuracy",
+      "score_format": "ratio",
+      "metric_id": "bixbench-metric-v1",
+      "protocol_id": "bixbench-source-export-v1",
+      "benchmark_version_id": "bixbench-canonical",
+      "summary": {
+        "en": "BixBench evaluates agents on open-ended computational-biology analyses built from real-world research notebooks and datasets.",
+        "zh": "BixBench \u8bc4\u4f30 agent \u5b8c\u6210\u5f00\u653e\u5f0f computational biology \u5206\u6790\u7684\u80fd\u529b\uff0c\u4efb\u52a1\u6765\u81ea\u771f\u5b9e research notebook \u548c\u6570\u636e\u96c6\u3002"
+      },
+      "task_format": {
+        "en": "The agent explores biological data, writes and executes Python, R, or Bash analysis code in a notebook environment, and submits answers to research questions.",
+        "zh": "agent \u9700\u8981\u5728 notebook environment \u4e2d\u63a2\u7d22\u751f\u7269\u6570\u636e\u3001\u7f16\u5199\u5e76\u6267\u884c Python\u3001R \u6216 Bash \u5206\u6790\u4ee3\u7801\uff0c\u518d\u56de\u7b54 research question\u3002"
+      },
+      "scoring": {
+        "metric_name": "Open-answer accuracy",
+        "explanation": {
+          "en": "The headline series uses binary correctness of answers across the fixed open-answer questions and repeated trajectories. The paper reports approximately 17% for Claude 3.5 Sonnet and 9% for GPT-4o; MCQ, refusal-option, and majority-vote results are separate variants.",
+          "zh": "headline series \u4f7f\u7528\u56fa\u5b9a open-answer question \u548c\u91cd\u590d trajectory \u4e0a\u7684 binary correctness\u3002\u8bba\u6587\u62a5\u544a Claude 3.5 Sonnet \u7ea6 17%\u3001GPT-4o \u7ea6 9%\uff1bMCQ\u3001\u5e26 refusal option \u548c majority-vote \u7ed3\u679c\u5c5e\u4e8e\u72ec\u7acb variant\u3002"
+        }
+      },
+      "evaluation_target": "process_and_output",
+      "observation_count": 2,
+      "observations": [
+        {
+          "observation_id": "obs-bixbench-bixbench-gpt-4o-1",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.09,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-bixbench-bixbench-claude-3-5-sonnet-2",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.17,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-bixbench-bixbench-gpt-4o-1",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.09,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-gpt-4o-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bixbench-bixbench-claude-3-5-sonnet-2",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.17,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-claude-3-5-sonnet-2"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-bixbench-bixbench-gpt-4o-1",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.09,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-gpt-4o-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bixbench-bixbench-claude-3-5-sonnet-2",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.17,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-claude-3-5-sonnet-2"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-bixbench-bixbench-gpt-4o-1",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.09,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-gpt-4o-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bixbench-bixbench-claude-3-5-sonnet-2",
+          "benchmark_id": "bixbench",
+          "benchmark_version_id": "bixbench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.17,
+          "reported_cost_per_task": null,
+          "metric_id": "bixbench-metric-v1",
+          "protocol_id": "bixbench-source-export-v1",
+          "metric": "Open-answer accuracy",
+          "evaluation_protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2503-00096"
+          ],
+          "source": "https://arxiv.org/abs/2503.00096",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-bixbench-bixbench-claude-3-5-sonnet-2"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.17,
+      "capability_frontier_value": 0.17,
+      "reported_frontier_value": null,
+      "current_frontier": 0.17,
+      "normalized_progress": 0.17,
+      "normalized_headroom": 0.83,
+      "threshold_days": {
+        "T50": {
+          "status": "right_censored",
+          "days": 551
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 551
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 551
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "right_censored",
+          "days": 551
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 551
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 551
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": null,
+      "capability_velocity_180d": null,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.2857142857142857,
+        "represented_organizations": [
+          "Anthropic",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "low"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2503-00096"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "chembench",
+      "name": "ChemBench",
+      "domain": "Chemistry",
+      "release": "2024-04-01",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://chembench.lamalab.org/",
+      "evaluation_type": "Model",
+      "tags": [
+        "chemical reasoning",
+        "multi-topic",
+        "accuracy"
+      ],
+      "metric": "Overall",
+      "score_format": "ratio",
+      "metric_id": "chembench-metric-v1",
+      "protocol_id": "chembench-source-export-v1",
+      "benchmark_version_id": "chembench-canonical",
+      "summary": {
+        "en": "ChemBench evaluates chemical knowledge and reasoning across a broad set of chemistry topics and question types.",
+        "zh": "ChemBench \u5728\u591a\u4e2a\u5316\u5b66\u4e3b\u9898\u548c\u9898\u578b\u4e0a\u8bc4\u4f30\u6a21\u578b\u7684\u5316\u5b66\u77e5\u8bc6\u4e0e\u63a8\u7406\u80fd\u529b\u3002"
+      },
+      "task_format": {
+        "en": "The model answers chemistry questions spanning analytical, inorganic, organic, physical, materials, and safety topics under the benchmark's evaluation interface.",
+        "zh": "\u6a21\u578b\u9700\u8981\u6309\u7167 benchmark evaluation interface \u56de\u7b54\u6db5\u76d6\u5206\u6790\u3001\u65e0\u673a\u3001\u6709\u673a\u3001\u7269\u7406\u3001\u6750\u6599\u548c\u5b89\u5168\u7b49\u4e3b\u9898\u7684\u5316\u5b66\u95ee\u9898\u3002"
+      },
+      "scoring": {
+        "metric_name": "Overall accuracy",
+        "explanation": {
+          "en": "Overall is the official aggregate accuracy across the ChemBench question set. Topic-level scores remain separate and are not substituted for the headline series.",
+          "zh": "Overall \u662f ChemBench question set \u4e0a\u7684\u5b98\u65b9 aggregate accuracy\u3002\u5404 topic \u5206\u6570\u4fdd\u6301\u72ec\u7acb\uff0c\u4e0d\u66ff\u4ee3 headline series\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 3,
+      "observations": [
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-7-sonnet-1",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-7-sonnet",
+          "model_family_id": "anthropic-claude-3-7-sonnet",
+          "model": "Claude 3.7 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.6583,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2025-02-19",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-02-19",
+          "date_kind": "unknown",
+          "capability_date": "2025-02-19",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-chembench-chembench-o1-preview-2",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-o1-preview",
+          "model_family_id": "openai-o1-preview",
+          "model": "o1-preview",
+          "organization": "OpenAI",
+          "score": 0.64,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-09-12",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-12",
+          "date_kind": "unknown",
+          "capability_date": "2024-09-12",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-5-sonnet-3",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.63,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-5-sonnet-3",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.63,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-5-sonnet-3"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-o1-preview-2",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-o1-preview",
+          "model_family_id": "openai-o1-preview",
+          "model": "o1-preview",
+          "organization": "OpenAI",
+          "score": 0.64,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-09-12",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-12",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-12",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-12",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-o1-preview-2"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-7-sonnet-1",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-7-sonnet",
+          "model_family_id": "anthropic-claude-3-7-sonnet",
+          "model": "Claude 3.7 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.6583,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2025-02-19",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-02-19",
+          "date_kind": "model release date",
+          "capability_date": "2025-02-19",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-02-19",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-7-sonnet-1"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-5-sonnet-3",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.63,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-5-sonnet-3"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-o1-preview-2",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-o1-preview",
+          "model_family_id": "openai-o1-preview",
+          "model": "o1-preview",
+          "organization": "OpenAI",
+          "score": 0.64,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-09-12",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-12",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-12",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-12",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-o1-preview-2"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-7-sonnet-1",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-7-sonnet",
+          "model_family_id": "anthropic-claude-3-7-sonnet",
+          "model": "Claude 3.7 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.6583,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2025-02-19",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-02-19",
+          "date_kind": "model release date",
+          "capability_date": "2025-02-19",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-02-19",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-7-sonnet-1"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-5-sonnet-3",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.63,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "model release date",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-06-20",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-5-sonnet-3"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-o1-preview-2",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-o1-preview",
+          "model_family_id": "openai-o1-preview",
+          "model": "o1-preview",
+          "organization": "OpenAI",
+          "score": 0.64,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2024-09-12",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-12",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-12",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-12",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-o1-preview-2"
+          ]
+        },
+        {
+          "observation_id": "obs-chembench-chembench-claude-3-7-sonnet-1",
+          "benchmark_id": "chembench",
+          "benchmark_version_id": "chembench-canonical",
+          "model_id": "model-claude-3-7-sonnet",
+          "model_family_id": "anthropic-claude-3-7-sonnet",
+          "model": "Claude 3.7 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.6583,
+          "reported_cost_per_task": null,
+          "metric_id": "chembench-metric-v1",
+          "protocol_id": "chembench-source-export-v1",
+          "metric": "Overall",
+          "evaluation_protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+          "model_release_date": "2025-02-19",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-02-19",
+          "date_kind": "model release date",
+          "capability_date": "2025-02-19",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-chembench-lamalab-org"
+          ],
+          "source": "https://chembench.lamalab.org/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-02-19",
+          "frontier_observation_ids": [
+            "obs-chembench-chembench-claude-3-7-sonnet-1"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.6583,
+      "capability_frontier_value": 0.6583,
+      "reported_frontier_value": null,
+      "current_frontier": 0.6583,
+      "normalized_progress": 0.6583,
+      "normalized_headroom": 0.3417,
+      "threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 80
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 885
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 885
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 80
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 885
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 885
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.0035305409836065564,
+      "capability_velocity_180d": 0.0035305409836065564,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.2857142857142857,
+        "represented_organizations": [
+          "Anthropic",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "low"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-chembench-lamalab-org"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
       "id": "cybench",
       "name": "CyBench",
       "domain": "Cybersecurity",
@@ -280744,6 +281853,8 @@
       "piqa",
       "triviaqa",
       "superglue",
+      "bixbench",
+      "chembench",
       "cybench",
       "scicode",
       "spatialviz-bench",

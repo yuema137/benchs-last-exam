@@ -1261,18 +1261,18 @@
   },
   {
     "id": "model-claude-3-7-sonnet",
-    "canonical_name": "Claude-3.7-sonnet",
+    "canonical_name": "Claude 3.7 Sonnet",
     "family_id": "anthropic-claude-3-7-sonnet",
-    "release_date": "2025-02-24",
+    "release_date": "2025-02-19",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arxiv-org-abs-2507-07610"
+      "resource-https-chembench-lamalab-org"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Multimodal"
+      "Chemistry"
     ],
     "evaluation_types": [
       "Model"
