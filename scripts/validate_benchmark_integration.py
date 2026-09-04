@@ -60,6 +60,23 @@ def main():
         errors.append("duplicate active benchmark IDs")
     for benchmark in benchmarks:
         errors.extend(validate_benchmark(benchmark, resources, models))
+    lifecycle_views = payload.get("lifecycle_views")
+    if not isinstance(lifecycle_views, dict):
+        errors.append("generated lifecycle_views missing")
+    else:
+        benchmark_ids = set(ids)
+        for view in REQUIRED_STORY_VIEWS:
+            if view == "leaderboard":
+                continue
+            members = lifecycle_views.get(view)
+            if not isinstance(members, list):
+                errors.append(f"generated lifecycle view missing {view}")
+                continue
+            unknown = set(members) - benchmark_ids
+            if unknown:
+                errors.append(f"{view}: unresolved benchmark IDs {sorted(unknown)}")
+            if len(members) != len(set(members)):
+                errors.append(f"{view}: duplicate benchmark IDs")
     app = APP.read_text()
     for view in REQUIRED_STORY_VIEWS:
         if view not in app:

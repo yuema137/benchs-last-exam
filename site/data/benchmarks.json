@@ -272330,5 +272330,64 @@
       "historical_frontier_status": "unknown_public_dates",
       "timeline_default": "capability"
     }
-  ]
+  ],
+  "lifecycle_views": {
+    "test-of-time": [
+      "mmlu",
+      "math-level-5",
+      "gpqa-diamond",
+      "swe-bench-verified",
+      "ifeval",
+      "video-mme",
+      "mathvista",
+      "mmlu-pro",
+      "big-bench-hard",
+      "hellaswag",
+      "piqa",
+      "triviaqa",
+      "superglue",
+      "cybench",
+      "scicode",
+      "spatialviz-bench",
+      "humanitys-last-exam",
+      "screenspot-pro",
+      "gaia",
+      "the-agent-company",
+      "scienceagentbench",
+      "mle-bench",
+      "paperbench",
+      "mmmu",
+      "humaneval",
+      "bigcodebench",
+      "assistantbench",
+      "gso",
+      "openbookqa",
+      "boolq"
+    ],
+    "still-frontier": [
+      "cybench",
+      "automationbench",
+      "benchcad-vision2code",
+      "the-agent-company",
+      "scienceagentbench",
+      "paperbench",
+      "assistantbench",
+      "apex-agents"
+    ],
+    "fastest-solved": [
+      "frontiermath-tiers-1-3-v2",
+      "vending-bench-2",
+      "frontiermath-tier-4-v2",
+      "arc-agi-3"
+    ],
+    "recently-saturated": [
+      "frontiermath-tiers-1-3-v2",
+      "arc-agi-2",
+      "frontiermath-tier-4-v2",
+      "arc-agi-3",
+      "screenspot-pro",
+      "proofbench-v1-1",
+      "dtbench"
+    ]
+  }
 }
