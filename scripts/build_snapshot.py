@@ -440,6 +440,31 @@ def frontier_velocity(frontier, window_days=180):
     return (latest["score"] - prior["score"]) / elapsed * 30.44
 
 
+def lifecycle_view_ids(benchmarks, snapshot_date):
+    """Derive all story-tab membership from the same generated benchmark data."""
+    month_days = 30.44
+    views = {name: [] for name in ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")}
+    for benchmark in benchmarks:
+        t50 = benchmark["threshold_days"].get("T50", {})
+        t90 = benchmark["threshold_days"].get("T90", {})
+        t50_days, t90_days = t50.get("days"), t90.get("days")
+        progress = benchmark.get("normalized_progress")
+        if ((t50_days is not None and t50_days >= 12 * month_days)
+                or (t90_days is not None and t90_days >= 24 * month_days)):
+            views["test-of-time"].append(benchmark["id"])
+        if (t50.get("status") == "right_censored" and progress is not None
+                and progress < 0.5 and benchmark["coverage"].get("status") != "low"):
+            views["still-frontier"].append(benchmark["id"])
+        if t90.get("status") == "reached" and t90_days is not None and t90_days < 6 * month_days:
+            views["fastest-solved"].append(benchmark["id"])
+        if t90.get("status") in {"reached", "at_release"} and t90_days is not None:
+            release = date.fromisoformat(benchmark["release"])
+            crossing_age = (snapshot_date - release).days - t90_days
+            if 0 <= crossing_age <= 3 * month_days:
+                views["recently-saturated"].append(benchmark["id"])
+    return views
+
+
 def build_benchmark(spec, resources, models):
     benchmark_resource_id = register_resource(
         resources, spec["source"], f"{spec['name']} primary source", resource_type="paper",
@@ -624,12 +649,14 @@ def main():
             "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
             "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set.",
         })
+    snapshot_date = date.today()
     payload = {
         "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
         "source": "Curated benchmark exports; see resource registry for source lineage",
         "resources": sorted(resources.values(), key=lambda item: item["id"]),
         "models": sorted(models.values(), key=lambda item: item["id"]),
         "benchmarks": benchmarks,
+        "lifecycle_views": lifecycle_view_ids(benchmarks, snapshot_date),
     }
     OUT.write_text(json.dumps(payload, indent=2) + "\n")
     RESOURCE_OUT.write_text(json.dumps(payload["resources"], indent=2) + "\n")
