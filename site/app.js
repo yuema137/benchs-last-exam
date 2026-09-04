@@ -82,6 +82,14 @@ function routeToLeaderboard(event) { event?.preventDefault(); history.pushState(
 function bindChartInteractions(b) { const wrapper=document.querySelector(".detail-chart"); const svg=wrapper?.querySelector("svg"); const tooltip=wrapper?.querySelector(".chart-tooltip"); if(!svg||!tooltip)return; const points=[...(svg.querySelectorAll(".frontier-hit"))]; const show=(hit,event)=>{ points.forEach(item=>item.parentElement.classList.toggle("is-hovered",item===hit)); const point=(b.capability_frontier||[]).find(item=>item.observation_id===hit.dataset.observationId)||(b.reported_frontier||[]).find(item=>item.observation_id===hit.dataset.observationId); if(!point)return; tooltip.innerHTML=tooltipMarkup(b,point,state.detailTimeline); tooltip.hidden=false; const rect=wrapper.getBoundingClientRect(),svgRect=svg.getBoundingClientRect(),sx=svgRect.width/760,sy=svgRect.height/340,px=svgRect.left-rect.left+Number(hit.getAttribute("cx"))*sx,py=svgRect.top-rect.top+Number(hit.getAttribute("cy"))*sy; const tw=tooltip.offsetWidth,th=tooltip.offsetHeight; const left=Math.max(8,Math.min(wrapper.clientWidth-tw-8,px+18)); const top=py-th-14>=8?py-th-14:Math.min(wrapper.clientHeight-th-8,py+18); tooltip.style.left=`${left}px`;tooltip.style.top=`${Math.max(8,top)}px`; }; points.forEach(hit=>{hit.addEventListener("mouseenter",event=>show(hit,event));hit.addEventListener("focus",event=>show(hit,event));hit.addEventListener("mouseleave",()=>{hit.parentElement.classList.remove("is-hovered");tooltip.hidden=true});hit.addEventListener("blur",()=>{hit.parentElement.classList.remove("is-hovered");tooltip.hidden=true});}); }
 function showDetail(id) {
   const b=state.data.benchmarks.find(x=>x.id===id);
+  if(!b){
+    $("controls").hidden=true;$("leaderboard").hidden=true;$("detail").hidden=false;
+    $("page-title").textContent=t("unknown");
+    $("page-lede").innerHTML="<a href=\"#leaderboard\" id=\"back-link\">"+t("back")+"</a>";
+    $("detail").innerHTML="<p class=\"notice\">"+t("unknown")+"</p>";
+    $("back-link").onclick=routeToLeaderboard;
+    return;
+  }
   $("controls").hidden=true;$("leaderboard").hidden=true;$("detail").hidden=false;
   $("page-title").textContent=b.name;
   $("page-lede").innerHTML=`<a href="#leaderboard" id="back-link">${t("back")}</a> · ${domainLabel(b.domain)} · ${t("released")} ${b.release} · Age ${months(b.release)} mo`;
@@ -106,4 +114,4 @@ $("evaluation-type").addEventListener("change",()=>{updateDomainOptions();});
 window.addEventListener("popstate",()=>{if(location.hash==="#leaderboard"||location.hash==="")showLeaderboard();});
 window.addEventListener("hashchange",()=>{if(location.hash==="#leaderboard")showLeaderboard();});
 $("apply-filters").addEventListener("click",event=>{event.preventDefault();renderTable();});
-fetch("data/benchmarks.json").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));renderTable();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
+fetch("data/benchmarks.json?v=20260903-5").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));renderTable();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
