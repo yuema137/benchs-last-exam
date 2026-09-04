@@ -1035,16 +1035,16 @@
     "release_date": "2024-10-22",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1539,16 +1539,16 @@
     "release_date": "2025-10-15",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1581,16 +1581,16 @@
     "release_date": "2025-09-29",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1707,16 +1707,16 @@
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1771,17 +1771,17 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1793,17 +1793,17 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1815,17 +1815,17 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1837,17 +1837,17 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1859,17 +1859,17 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2013,16 +2013,16 @@
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3231,16 +3231,16 @@
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3336,16 +3336,16 @@
     "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3609,16 +3609,16 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3630,16 +3630,16 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3672,16 +3672,16 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -3693,16 +3693,16 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4302,16 +4302,16 @@
     "release_date": "2026-02-17",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4491,16 +4491,16 @@
     "release_date": "2026-06-30",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4596,16 +4596,16 @@
     "release_date": "2026-06-30",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4785,16 +4785,16 @@
     "release_date": "2025-11-19",
     "organization": "Deep Cogito",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -4995,16 +4995,16 @@
     "release_date": "2026-05-20",
     "organization": "Cohere,Cohere Labs (formerly Cohere for AI)",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5835,16 +5835,16 @@
     "release_date": "2025-09-22",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5919,16 +5919,16 @@
     "release_date": "2025-09-29",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5961,16 +5961,16 @@
     "release_date": "2024-12-26",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6108,16 +6108,16 @@
     "release_date": "2026-07-31",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6129,16 +6129,16 @@
     "release_date": "2026-04-24",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6150,16 +6150,16 @@
     "release_date": "2026-04-24",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6301,17 +6301,17 @@
     "release_date": "2026-08-13",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-api-docs-deepseek-com-news-news260813"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6386,16 +6386,16 @@
     "release_date": "2026-04-24",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6407,16 +6407,16 @@
     "release_date": "2026-04-24",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6428,16 +6428,16 @@
     "release_date": "2025-12-09",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8147,21 +8147,21 @@
   },
   {
     "id": "model-gemini-3-1-flash-lite",
-    "canonical_name": "gemini-3.1-flash-lite",
+    "canonical_name": "Gemini 3.1 Flash-Lite",
     "family_id": "google-gemini-3-1-flash-lite",
     "release_date": "2026-03-03",
     "organization": "Google",
     "resource_ids": [
-      "resource-https-evals-futuresearch-ai-drb"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General agent tasks"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8446,16 +8446,16 @@
     "release_date": "2026-07-21",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8824,17 +8824,17 @@
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8846,17 +8846,17 @@
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8868,17 +8868,38 @@
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-deep-think",
+    "canonical_name": "Gemini 3 Deep Think",
+    "family_id": "unknown-gemini-3-deep-think",
+    "release_date": "2026-02-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9373,16 +9394,16 @@
     "release_date": "2025-03-12",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9457,16 +9478,16 @@
     "release_date": "2025-03-12",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9583,16 +9604,16 @@
     "release_date": "2026-04-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9667,16 +9688,16 @@
     "release_date": "2026-04-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9961,16 +9982,16 @@
     "release_date": "2025-09-30",
     "organization": "Z.ai (Zhipu AI),Tsinghua University",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10045,16 +10066,16 @@
     "release_date": "2025-12-22",
     "organization": "Z.ai (Zhipu AI)",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10129,16 +10150,16 @@
     "release_date": "2026-04-07",
     "organization": "Z.ai (Zhipu AI)",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10234,16 +10255,16 @@
     "release_date": "2026-06-16",
     "organization": "Z.ai (Zhipu AI)",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10318,16 +10339,16 @@
     "release_date": "2026-08-20",
     "organization": "Z.ai (Zhipu AI)",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -11620,16 +11641,16 @@
     "release_date": "2025-11-13",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13006,16 +13027,16 @@
     "release_date": "2026-05-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13069,16 +13090,16 @@
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13384,16 +13405,16 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13594,16 +13615,16 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13825,16 +13846,16 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -13916,6 +13937,27 @@
     ],
     "domains": [
       "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-high-code-web",
+    "canonical_name": "GPT-5 (high, code & web)",
+    "family_id": "openai-gpt-5",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
     ],
     "evaluation_types": [
       "Model"
@@ -14672,16 +14714,16 @@
     "release_date": "2025-08-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -14903,16 +14945,16 @@
     "release_date": "2026-04-29",
     "organization": "IBM",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -15275,6 +15317,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-4-3-non-reasoning",
+    "canonical_name": "Grok 4.3 (Non-reasoning)",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-5",
     "canonical_name": "Grok 4.5",
     "family_id": "xai-grok-4-5",
@@ -15582,16 +15645,16 @@
     "release_date": "2026-05-29",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -15834,16 +15897,16 @@
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -16590,16 +16653,16 @@
     "release_date": "2026-01-27",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -16758,16 +16821,16 @@
     "release_date": "2026-07-16",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -17472,16 +17535,16 @@
     "release_date": "2024-07-23",
     "organization": "Meta AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -17745,16 +17808,16 @@
     "release_date": "2024-12-06",
     "organization": "Meta AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -18735,16 +18798,16 @@
     "release_date": "2025-09-18",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -18798,16 +18861,16 @@
     "release_date": "2025-09-18",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19008,16 +19071,16 @@
     "release_date": null,
     "organization": "Inception Labs",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19092,16 +19155,16 @@
     "release_date": null,
     "organization": "Xiaomi Corp",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19113,16 +19176,16 @@
     "release_date": null,
     "organization": "Xiaomi Corp",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19134,16 +19197,16 @@
     "release_date": null,
     "organization": "Xiaomi Corp",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19764,16 +19827,16 @@
     "release_date": "2025-12-02",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19848,16 +19911,16 @@
     "release_date": "2025-08-12",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19869,16 +19932,16 @@
     "release_date": "2026-04-28",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -20079,16 +20142,16 @@
     "release_date": "2025-03-17",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -20142,16 +20205,16 @@
     "release_date": "2025-06-20",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -20940,16 +21003,16 @@
     "release_date": "2026-06-04",
     "organization": "NVIDIA",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -21003,16 +21066,16 @@
     "release_date": "2025-12-02",
     "organization": "Amazon",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -21024,16 +21087,16 @@
     "release_date": "2025-12-02",
     "organization": "Amazon",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -21045,16 +21108,16 @@
     "release_date": "2025-12-02",
     "organization": "Amazon",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -21066,16 +21129,16 @@
     "release_date": "2026-03-11",
     "organization": "NVIDIA",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -23523,16 +23586,16 @@
     "release_date": "2025-02-27",
     "organization": "Microsoft",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25014,16 +25077,16 @@
     "release_date": "2025-04-29",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25077,16 +25140,16 @@
     "release_date": "2025-07-25",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25203,16 +25266,16 @@
     "release_date": "2025-07-30",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25329,16 +25392,16 @@
     "release_date": "2025-04-29",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25434,16 +25497,16 @@
     "release_date": "2026-02-24",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25497,16 +25560,16 @@
     "release_date": "2026-02-24",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25623,16 +25686,16 @@
     "release_date": "2026-02-24",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25728,16 +25791,16 @@
     "release_date": "2026-04-22",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25791,16 +25854,16 @@
     "release_date": "2026-04-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -25833,16 +25896,16 @@
     "release_date": "2026-04-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26064,16 +26127,16 @@
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26085,16 +26148,16 @@
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26106,16 +26169,16 @@
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26127,16 +26190,16 @@
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26148,17 +26211,17 @@
     "release_date": "2026-08-02",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode",
+      "resource-https-github-com-critpt-benchmark-critpt",
       "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26234,16 +26297,16 @@
     "release_date": "2025-04-28",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26276,16 +26339,16 @@
     "release_date": "2026-02-02",
     "organization": "Unknown",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26528,16 +26591,16 @@
     "release_date": "2026-05-14",
     "organization": "Ant Group",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26696,16 +26759,16 @@
     "release_date": "2026-01-27",
     "organization": "Upstage",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -26927,16 +26990,16 @@
     "release_date": "2026-05-29",
     "organization": "StepFun",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -27431,16 +27494,16 @@
     "release_date": "2026-04-01",
     "organization": "Arcee AI",
     "resource_ids": [
-      "resource-https-artificialanalysis-ai-evaluations-scicode"
+      "resource-https-github-com-critpt-benchmark-critpt"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Science / research"
+      "Physics"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."

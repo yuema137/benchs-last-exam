@@ -12202,6 +12202,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-critpt-benchmark-critpt",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CritPt primary source",
+    "url": "https://github.com/CritPt-Benchmark/CritPt",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
