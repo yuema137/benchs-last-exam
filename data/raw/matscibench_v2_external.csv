@@ -1,0 +1,8 @@
+Model version,Accuracy,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+llama-4-maverick,0.6741,2025-04-05,Meta,Llama 4 Maverick,"MatSciBench v2 text-only direct/basic-CoT accuracy; image and RAG settings excluded.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-llama-4-maverick,2026-06-08
+o3,0.7054,2025-04-16,OpenAI,o3,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-o3,2026-06-08
+qwen3-235b,0.7337,2025-04-28,Qwen,Qwen3-235B,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-qwen3-235b,2026-06-08
+claude-sonnet-4,0.6849,2025-05-22,Anthropic,Claude Sonnet 4,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-claude-sonnet-4,2026-06-08
+gemini-2-5-pro,0.7444,2025-06-17,Google,Gemini 2.5 Pro,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-gemini-2-5-pro,2026-06-08
+gpt-5,0.7502,2025-08-07,OpenAI,GPT-5,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-gpt-5,2026-06-08
+deepseek-r1,0.7522,2025-01-20,DeepSeek,DeepSeek-R1,"MatSciBench v2 text-only direct/basic-CoT accuracy.",MatSciBench official repository,https://github.com/Jun-Kai-Zhang/MatSciBench,matscibench-v2-deepseek-r1,2026-06-08

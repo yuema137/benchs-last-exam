@@ -109,6 +109,36 @@ class SnapshotInvariantTests(unittest.TestCase):
             self.assertIsNone(benchmark["ceiling"], benchmark_id)
             self.assertIsNone(benchmark["normalized_progress"], benchmark_id)
 
+    def test_science_engineering_batch_is_fully_integrated(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        by_id = {item["id"]: item for item in payload["benchmarks"]}
+        expected = {
+            "physreason", "olympiadbench-physics", "chemiq", "superchem-multimodal",
+            "matscibench-v2", "atomworld-v4", "engibench-v2-level3", "eee-bench-v2",
+            "labbench2-tableqa-pdf", "pg-llm-proteingym",
+        }
+        self.assertTrue(expected.issubset(by_id))
+        for benchmark_id in expected:
+            benchmark = by_id[benchmark_id]
+            self.assertGreaterEqual(len(benchmark["coverage"]["represented_organizations"]), 2, benchmark_id)
+            self.assertTrue(benchmark["frontier_events"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["en"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["zh"], benchmark_id)
+
+    def test_new_story_membership_is_recomputed_from_metrics(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        views = payload["lifecycle_views"]
+        for benchmark_id in ("olympiadbench-physics", "eee-bench-v2"):
+            self.assertIn(benchmark_id, views["test-of-time"])
+            self.assertIn(benchmark_id, views["still-frontier"])
+            self.assertNotIn(benchmark_id, views["fastest-solved"])
+            self.assertNotIn(benchmark_id, views["recently-saturated"])
+
+    def test_numeric_metrics_preserve_display_precision(self):
+        by_id = {item["id"]: item for item in self.benchmarks}
+        self.assertEqual(by_id["engibench-v2-level3"]["score_decimals"], 2)
+        self.assertEqual(by_id["pg-llm-proteingym"]["score_decimals"], 3)
+
 
 if __name__ == "__main__":
     unittest.main()

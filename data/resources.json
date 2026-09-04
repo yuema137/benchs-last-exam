@@ -12298,6 +12298,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-ai4engi-engibench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EngiBench v2 \u2014 Level 3 primary source",
+    "url": "https://github.com/AI4Engi/EngiBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-catalystforyou-superchem-eval",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SUPERChem (Multimodal) primary source",
+    "url": "https://github.com/catalystforyou/SUPERChem_eval",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-critpt-benchmark-critpt",
     "resource_scope": [
       "benchmark"
@@ -12306,6 +12338,22 @@
     "resource_type": "paper",
     "title": "CritPt primary source",
     "url": "https://github.com/CritPt-Benchmark/CritPt",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-edisonscientific-labbench2",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "LABBench2 \u2014 TableQA2 PDF primary source",
+    "url": "https://github.com/EdisonScientific/labbench2",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12379,6 +12427,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-jun-kai-zhang-matscibench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MatSciBench v2 primary source",
+    "url": "https://github.com/Jun-Kai-Zhang/MatSciBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding",
     "resource_scope": [
       "benchmark"
@@ -12445,6 +12509,38 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-github-com-openbmb-olympiadbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OlympiadBench Physics primary source",
+    "url": "https://github.com/OpenBMB/OlympiadBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-oxpig-chemiq",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ChemIQ primary source",
+    "url": "https://github.com/oxpig/ChemIQ",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-scienceone-ai-scienceeval",
     "resource_scope": [
       "benchmark",
@@ -12456,6 +12552,22 @@
     "url": "https://github.com/ScienceOne-AI/ScienceEval",
     "publisher": "ScienceEval",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-theafish-atomworldbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "AtomWorld v4 primary source",
+    "url": "https://github.com/theAfish/AtomWorldBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12487,6 +12599,22 @@
     "resource_type": "paper",
     "title": "AutomationBench primary source",
     "url": "https://github.com/zapier/AutomationBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-zhang-xinyu-1204-physreason",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PhysReason primary source",
+    "url": "https://github.com/zhang-xinyu-1204/PhysReason",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12768,6 +12896,22 @@
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/17590",
     "publisher": "UNICORN on RAINBOW: A Universal Commonsense Reasoning Model on a New Multitask Benchmark",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openaccess-thecvf-com-content-cvpr2025-papers-li-eee-bench-a-comprehensive-multimodal-electrical-and-electronics-engineering-benchmark-cvpr-2025-paper-pdf",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EEE-Bench v2 primary source",
+    "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_EEE-Bench_A_Comprehensive_Multimodal_Electrical_And_Electronics_Engineering_Benchmark_CVPR_2025_paper.pdf",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -13376,6 +13520,39 @@
     "title": "PHYBench",
     "url": "https://www.phybench.cn/leaderboard",
     "publisher": "PHYBench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-proteingymllm-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PG-LLM \u2014 ProteinGym primary source",
+    "url": "https://www.proteingymllm.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-proteingymllm-com-benchmark",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PG-LLM official leaderboard",
+    "url": "https://www.proteingymllm.com/benchmark",
+    "publisher": "PG-LLM official leaderboard",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,

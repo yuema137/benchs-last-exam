@@ -1,0 +1,4 @@
+Model version,Success rate,Release date,Organization,Name,Notes,Source,Source link,id,Evaluation date
+claude-opus-4-6,0.8192,2026-02-05,Anthropic,Claude Opus 4.6,"AtomWorld v4 fixed 2,500-case full suite; diagnostic subsets excluded.",AtomWorld official artifacts,https://github.com/theAfish/AtomWorldBench,atomworld-v4-claude-opus-4-6,2026-05-28
+gemini-3-1-pro,0.6932,2026-02-19,Google,Gemini 3.1 Pro,"AtomWorld v4 fixed 2,500-case full suite.",AtomWorld official artifacts,https://github.com/theAfish/AtomWorldBench,atomworld-v4-gemini-3-1-pro,2026-05-28
+gpt-5-4,0.6188,2026-03-05,OpenAI,GPT-5.4,"AtomWorld v4 fixed 2,500-case full suite.",AtomWorld official artifacts,https://github.com/theAfish/AtomWorldBench,atomworld-v4-gpt-5-4,2026-05-28

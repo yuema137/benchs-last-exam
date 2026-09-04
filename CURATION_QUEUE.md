@@ -8,6 +8,14 @@
 
 Sparse T50/T90 data alone is not a reason to defer. The queue is for unresolved identity, version, protocol, or observation provenance.
 
+## Science and engineering batch — 2026-09-04
+
+- **QuantiPhy** — strong 5/7 organization coverage, but the original 3,355-pair/569-video release and the 3,289-pair/568-video competition checkpoint are not yet reconciled. Pin one immutable dataset and leaderboard snapshot before adding.
+- **ChemLLMBench** — important chemistry suite, but its heterogeneous tasks expose different metrics and do not define one defensible canonical scalar frontier. Add only after selecting a named fixed track.
+- **MatQnA objective subset** — 4/7 organization coverage, but the exact prompt, extraction procedure, dataset revision, and generated-question provenance are not pinned sufficiently for a canonical observation series.
+- **TransportBench** — 4/7 organization coverage, but evaluated web-product snapshots are mutable and public materials disagree on 140 versus 141 tasks. Require a versioned snapshot and evaluation configuration.
+- **LifeSciBench** — high-value closed 750-task evaluation with 3/7 coverage. Defer until tasks/artifacts, grader identity, browser interface, and run configuration are sufficiently reproducible; the current results all originate from one operator.
+
 ## Previously identified candidates
 
 - **GeneBench-Pro** — important scientific-agent candidate, but new and currently too sparse for a trustworthy longitudinal series.
