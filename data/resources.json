@@ -17,6 +17,57 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-http-arxiv-org-abs-2005-14165",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Language Models are Few-Shot Learners",
+    "url": "http://arxiv.org/abs/2005.14165",
+    "publisher": "Language Models are Few-Shot Learners",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-http-arxiv-org-abs-2101-03961",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and E\ufb03cient Sparsity",
+    "url": "http://arxiv.org/abs/2101.03961",
+    "publisher": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and E\ufb03cient Sparsity",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-http-arxiv-org-abs-2112-06905",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
+    "url": "http://arxiv.org/abs/2112.06905",
+    "publisher": "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-http-arxiv-org-abs-2112-11446",
     "resource_scope": [
       "benchmark",
@@ -129,6 +180,23 @@
     "title": "Baichuan 2: Open Large-scale Language Models",
     "url": "http://arxiv.org/abs/2309.10305",
     "publisher": "Baichuan 2: Open Large-scale Language Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-http-arxiv-org-abs-2309-16609",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Qwen Technical Report",
+    "url": "http://arxiv.org/abs/2309.16609",
+    "publisher": "Qwen Technical Report",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -289,6 +357,23 @@
     "notes": null
   },
   {
+    "id": "resource-http-arxiv-org-abs-2412-19437",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "DeepSeek-V3 Technical Report",
+    "url": "http://arxiv.org/abs/2412.19437",
+    "publisher": "DeepSeek-V3 Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-agents-last-exam-org-leaderboard",
     "resource_scope": [
       "benchmark"
@@ -371,6 +456,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-andonlabs-com-evals-vending-bench-2",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Vending-Bench 2 primary source",
+    "url": "https://andonlabs.com/evals/vending-bench-2",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-api-docs-deepseek-com-news-news260813",
     "resource_scope": [
       "model"
@@ -435,6 +536,71 @@
     "notes": null
   },
   {
+    "id": "resource-https-artificialanalysis-ai-evaluations-scicode",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://artificialanalysis.ai/evaluations/scicode",
+    "url": "https://artificialanalysis.ai/evaluations/scicode",
+    "publisher": "https://artificialanalysis.ai/evaluations/scicode",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-1705-03551",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "TriviaQA primary source",
+    "url": "https://arxiv.org/abs/1705.03551",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-1905-07830",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "HellaSwag primary source",
+    "url": "https://arxiv.org/abs/1905.07830",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-1911-11641",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PIQA primary source",
+    "url": "https://arxiv.org/abs/1911.11641",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2009-03300",
     "resource_scope": [
       "benchmark"
@@ -475,6 +641,22 @@
     "resource_type": "paper",
     "title": "GSM8K primary source",
     "url": "https://arxiv.org/abs/2110.14168",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2210-09261",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BIG-Bench Hard primary source",
+    "url": "https://arxiv.org/abs/2210.09261",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -548,6 +730,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2407-13168",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SciCode primary source",
+    "url": "https://arxiv.org/abs/2407.13168",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2409-13253",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SpatialViz-Bench primary source",
+    "url": "https://arxiv.org/abs/2409.13253",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2410-23218",
     "resource_scope": [
       "benchmark",
@@ -599,6 +813,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2506-11763",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "DeepResearch Bench primary source",
+    "url": "https://arxiv.org/abs/2506.11763",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2507-07610",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://arxiv.org/abs/2507.07610",
+    "url": "https://arxiv.org/abs/2507.07610",
+    "publisher": "https://arxiv.org/abs/2507.07610",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2509-07968",
     "resource_scope": [
       "benchmark"
@@ -615,6 +862,74 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-pdf-1910-10683",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+    "url": "https://arxiv.org/pdf/1910.10683",
+    "publisher": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2005-14165v4",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Language Models are Few-Shot Learners",
+    "url": "https://arxiv.org/pdf/2005.14165v4",
+    "publisher": "Language Models are Few-Shot Learners",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2201-11990",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",
+    "url": "https://arxiv.org/pdf/2201.11990",
+    "publisher": "Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2302-13971",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "LLaMA: Open and Efficient Foundation Language Models",
+    "url": "https://arxiv.org/pdf/2302.13971",
+    "publisher": "LLaMA: Open and Efficient Foundation Language Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-pdf-2303-08774",
     "resource_scope": [
       "benchmark",
@@ -625,6 +940,40 @@
     "title": "GPT-4 Technical Report",
     "url": "https://arxiv.org/pdf/2303.08774",
     "publisher": "GPT-4 Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2305-10403",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PaLM 2 Technical Report",
+    "url": "https://arxiv.org/pdf/2305.10403",
+    "publisher": "PaLM 2 Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2307-09288v2",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "url": "https://arxiv.org/pdf/2307.09288v2",
+    "publisher": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -683,6 +1032,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-pdf-2409-12186",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Qwen2.5-Coder Technical Report",
+    "url": "https://arxiv.org/pdf/2409.12186",
+    "publisher": "Qwen2.5-Coder Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-pdf-2412-19437",
     "resource_scope": [
       "benchmark",
@@ -693,6 +1059,23 @@
     "title": "DeepSeek-V3 Technical Report",
     "url": "https://arxiv.org/pdf/2412.19437",
     "publisher": "DeepSeek-V3 Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-assets-anthropic-com-m-64823ba7485345a7-claude-opus-4-5-system-card-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Opus 4.5 System Card",
+    "url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf",
+    "publisher": "Opus 4.5 System Card",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -750,6 +1133,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-hellaswag",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Stanford HELM",
+    "url": "https://crfm.stanford.edu/helm/classic/latest/#/groups/hellaswag",
+    "publisher": "Stanford HELM",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu",
     "resource_scope": [
       "benchmark",
@@ -777,6 +1177,73 @@
     "url": "https://cursor.com/cn/cursorbench",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-cybench-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CyBench primary source",
+    "url": "https://cybench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-data-x-ai-2025-08-20-grok-4-model-card-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Grok 4 Model Card",
+    "url": "https://data.x.ai/2025-08-20-grok-4-model-card.pdf",
+    "publisher": "Grok 4 Model Card",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-data-x-ai-2025-09-19-grok-4-fast-model-card-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Grok 4 Fast Model Card",
+    "url": "https://data.x.ai/2025-09-19-grok-4-fast-model-card.pdf",
+    "publisher": "Grok 4 Fast Model Card",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-data-x-ai-2025-11-17-grok-4-1-model-card-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Grok 4.1 Model Card",
+    "url": "https://data.x.ai/2025-11-17-grok-4-1-model-card.pdf",
+    "publisher": "Grok 4.1 Model Card",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -829,6 +1296,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-drb-futuresearch-ai",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "DeepResearchBench Leaderboard",
+    "url": "https://drb.futuresearch.ai",
+    "publisher": "DeepResearchBench Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2",
@@ -11454,6 +11938,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-evals-futuresearch-ai-drb",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://evals.futuresearch.ai/#drb",
+    "url": "https://evals.futuresearch.ai/#drb",
+    "publisher": "https://evals.futuresearch.ai/#drb",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
@@ -11635,6 +12136,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-ojs-aaai-org-index-php-aaai-article-view-17590",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "UNICORN on RAINBOW: A Universal Commonsense Reasoning Model on a New Multitask Benchmark",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/17590",
+    "publisher": "UNICORN on RAINBOW: A Universal Commonsense Reasoning Model on a New Multitask Benchmark",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-openai-com-index-browsecomp",
     "resource_scope": [
       "benchmark"
@@ -11733,6 +12251,73 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-paperswithcode-com-sota-question-answering-on-triviaqa",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PapersWithCode",
+    "url": "https://paperswithcode.com/sota/question-answering-on-triviaqa",
+    "publisher": "PapersWithCode",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-proceedings-neurips-cc-paper-files-paper-2024-file-81a60d18e010b27b36cd465c6604b915-paper-conference-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/81a60d18e010b27b36cd465c6604b915-Paper-Conference.pdf",
+    "publisher": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-scienceqa-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ScienceQA primary source",
+    "url": "https://scienceqa.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-scienceqa-github-io-leaderboard-html",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ScienceQA leaderboard",
+    "url": "https://scienceqa.github.io/leaderboard.html",
+    "publisher": "ScienceQA leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0",
     "resource_scope": [
       "benchmark",
@@ -11778,6 +12363,22 @@
     "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf",
     "publisher": "Gemini 1.5 Report",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-super-gluebenchmark-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SuperGLUE primary source",
+    "url": "https://super.gluebenchmark.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -11866,6 +12467,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-cdn-anthropic-com-0dd865075ad3132672ee0ab40b05a53f14cf5288-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Opus 4.6 System Card",
+    "url": "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf",
+    "publisher": "Opus 4.6 System Card",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-cdn-anthropic-com-5c49cc247484cecf107c699baf29250302e5da70-claude-2-model-card-pdf",
     "resource_scope": [
       "benchmark",
@@ -11876,6 +12494,23 @@
     "title": "Model Card and Evaluations for Claude Models",
     "url": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf",
     "publisher": "Model Card and Evaluations for Claude Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-jmlr-org-papers-volume24-22-1144-22-1144-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PaLM: Scaling Language Modeling with Pathways",
+    "url": "https://www.jmlr.org/papers/volume24/22-1144/22-1144.pdf",
+    "publisher": "PaLM: Scaling Language Modeling with Pathways",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
