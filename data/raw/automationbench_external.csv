@@ -1,0 +1,8 @@
+Name,Pass Rate,Release date,Organization,Source,Source Link,Notes
+Claude Opus 4.8,0.3033,2026-05-28,Anthropic,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+GPT-5.6 Sol,0.2917,2026-07-09,OpenAI,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+GPT-5.6 Terra,0.2583,2026-07-09,OpenAI,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+Claude Fable 5,0.2583,2026-06-09,Anthropic,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+Claude Sonnet 5,0.2400,2026-06-30,Anthropic,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+GLM 5.2,0.2033,2026-04-24,Z.ai,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort
+Gemini 3.5 Flash,0.1483,2025-11-20,Google,AutomationBench public benchmark README,https://github.com/zapier/AutomationBench,Public 600-task set; highest available reasoning effort

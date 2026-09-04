@@ -1,0 +1,9 @@
+Name,Elo,Release date,Organization,Source,Source Link,Notes
+Claude Fable 5.1 Max,1853,2026-09-01,Anthropic,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+Claude Opus 5 Max,1824,2026-07-24,Anthropic,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+GLM-5.3-Flash,1765,2026-08-14,Z.ai,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+GLM-5.3 Max,1758,2026-08-14,Z.ai,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+Grok 4.6,1755,2026-08-12,xAI,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+Claude Fable 5,1723,2026-06-09,Anthropic,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+Claude Opus 5 High,1719,2026-07-24,Anthropic,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000
+GPT-5.6 Sol,1708,2026-07-09,OpenAI,GDPval-AA v2 leaderboard,https://artificialanalysis.ai/evaluations/gdpval-aa,Agentic evaluation; Elo anchored to human baseline 1000

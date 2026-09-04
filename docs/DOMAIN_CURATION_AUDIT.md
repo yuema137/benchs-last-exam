@@ -18,8 +18,13 @@ This audit treats benchmark selection as curation, not catalog construction. A c
 | Terminal-Bench-Science 0.1 | Science / research | 0.1, 2026-05-20 | Expert-curated scientific workflows executed in terminal environments | Resolution rate; floor 0.0; ceiling 1.0 | 8 representative leaderboard observations; later releases are continuous | CORE for fixed 0.1 snapshot |
 | TerminalWorld Verified | Terminal / OS | Verified subset, 2026-05-21 | Real-world terminal workflows derived from developer recordings and manually verified | Verified task pass rate; floor 0.0; ceiling 1.0 | 8 representative leaderboard observations | CORE |
 | Terminal-Bench 2.1 | Terminal / OS | 2.1, 2026-05-06 | A separately versioned revision fixing 28 tasks from Terminal-Bench 2.0 | Mean task accuracy; floor 0.0; ceiling 1.0 | 8 representative agent-model observations | CORE as a separate versioned object |
+| Terminal-Bench 4.0 | Terminal / OS | v4.0.0, 2026-08-26 | A newer separately tagged terminal benchmark release with a revised 66-task object | Resolution rate; floor 0.0; ceiling 1.0 | 8 representative agent-model observations | CORE as a separate versioned object |
+| Humanity's Last Exam | General knowledge & reasoning | Finalized 2,500-question set, 2025-04-03 | A canonical, difficult, multi-domain academic benchmark with text and multimodal questions | Accuracy; floor 0.0; ceiling 1.0 | 8 representative model-generation observations | CORE |
+| CursorBench 3.2 | Software engineering | 3.2, 2026-07-08 | Real Cursor-session coding tasks with ambiguous multi-file work and explicit cost reporting | Task score; floor 0.0; ceiling 1.0 | 8 representative agent observations | CORE |
+| GDPval-AA v2 | General agent tasks | v2, 2026-04-18 | Agentic evaluation of professional deliverables across occupations and industries | Elo anchored to human baseline 1,000; no fixed floor/ceiling | 8 representative model-generation observations | CORE; threshold metrics N/A |
+| AutomationBench | General agent tasks | Initial public release, 2026-04-20 | Programmatically verified cross-application business workflows across simulated SaaS tools | Strict task pass rate; floor 0.0; ceiling 1.0 | 7 representative agent observations | CORE |
 
-The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. This produces a ten-benchmark core without treating related versions as silently interchangeable.
+The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. Together with the versioned additions above, the local curated set now contains twenty benchmark objects without silently merging related versions.
 
 ## Candidate audit
 
@@ -47,6 +52,11 @@ The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Dia
 - Terminal-Bench-Science's official 0.1 announcement defines 70 scientific workflow tasks, three independent trials per task, and a continuous future release process; only the fixed 0.1 snapshot is represented here.
 - TerminalWorld's official Verified leaderboard defines a 200-task manually verified subset evaluated with the standardized Terminus-2 agent framework and Harbor harness.
 - Terminal-Bench's official 2.1 announcement defines a separate revision of 2.0 with 28 task fixes; it is not merged with the existing 2.0 object.
+- Terminal-Bench's v4.0.0 release is represented as a separate tagged object; its official partner leaderboard reports a 66-task resolution-rate setup and warns against comparing scores with earlier versions.
+- Scale AI's HLE leaderboard identifies the finalized 2,500-question object; the curated release date is the finalization/update date rather than the earlier HLE-preview date.
+- Cursor's official CursorBench page dates the 3.2 task release to 2026-07-08 and reports score, token, step, and cost columns; costs are retained as source-context observations.
+- Artificial Analysis defines GDPval-AA v2 as an agentic, pairwise-judged Elo evaluation; because Elo has no fixed floor/ceiling, normalized progress and threshold timings are not computed.
+- Zapier's AutomationBench repository distinguishes its public 600-task set from the official held-out private leaderboard; this snapshot uses the reproducible public set and labels that choice in observation notes.
 
 ARC-AGI-1 remains in the queue because the current authoritative source establishes a 2019 origin but not a precise day-level release date suitable for the present schema.
 

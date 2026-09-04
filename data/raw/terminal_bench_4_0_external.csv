@@ -1,0 +1,9 @@
+Name,Resolution rate,Release date,Organization,Source,Source Link,Notes
+Claude Opus 5 + Claude Code,0.5182,2026-07-24,Anthropic,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+Claude Fable 5 + Claude Code,0.4455,2026-06-09,Anthropic,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+GLM-5.3 + Claude Code,0.4182,2026-08-14,Z.ai,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+GPT-5.6 Sol + Codex,0.3727,2026-07-09,OpenAI,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+Claude Opus 4.8 + Claude Code,0.2364,2026-05-28,Anthropic,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+GPT-5.6 Terra + Codex,0.2152,2026-07-09,OpenAI,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+Grok 4.6 + Grok Build,0.2030,2026-08-12,xAI,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release
+GPT-5.6 Luna + Codex,0.1730,2026-07-09,OpenAI,Terminal-Bench 4.0 partner leaderboard,https://snorkel.ai/leaderboard/terminal-bench-4-0/,66-task v4.0.0 release

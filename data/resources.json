@@ -354,6 +354,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-artificialanalysis-ai-evaluations-gdpval-aa",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GDPval-AA v2 primary source",
+    "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2009-03300",
     "resource_scope": [
       "benchmark"
@@ -581,6 +597,22 @@
     "url": "https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu",
     "publisher": "Stanford CRFM Leaderboard",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-cursor-com-cn-cursorbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CursorBench 3.2 primary source",
+    "url": "https://cursor.com/cn/cursorbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -9375,6 +9407,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-harbor-framework-terminal-bench-releases-tag-v4-0-0",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Terminal-Bench 4.0 primary source",
+    "url": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.0.0",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-zapier-automationbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "AutomationBench primary source",
+    "url": "https://github.com/zapier/AutomationBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-inflection-ai-blog-inflection-1",
     "resource_scope": [
       "benchmark",
@@ -9386,6 +9450,22 @@
     "url": "https://inflection.ai/blog/inflection-1",
     "publisher": "Inflection-1 ",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-labs-scale-com-leaderboard-humanitys-last-exam",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Humanity's Last Exam primary source",
+    "url": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
