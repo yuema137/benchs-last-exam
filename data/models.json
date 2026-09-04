@@ -2428,12 +2428,12 @@
   },
   {
     "id": "model-claude-mythos-preview",
-    "canonical_name": "Claude Mythos Preview",
+    "canonical_name": "claude-mythos-preview",
     "family_id": "anthropic-claude-mythos-preview",
     "release_date": "2026-04-07",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-exploitbench-ai"
+      "resource-cybench-mythos-preview"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3196,6 +3196,27 @@
     ],
     "domains": [
       "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-7-20260416",
+    "canonical_name": "claude-opus-4-7-20260416",
+    "family_id": "anthropic-claude-opus-4-7-20260416",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-cybench-opus-4-7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent"

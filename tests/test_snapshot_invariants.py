@@ -92,6 +92,13 @@ class SnapshotInvariantTests(unittest.TestCase):
             self.assertTrue(benchmark.get("scoring", {}).get("explanation", {}).get("zh"), benchmark["id"])
             self.assertIn(benchmark.get("evaluation_target"), {"final_output", "environment_outcome", "process_and_output"})
 
+    def test_cybench_ratio_scores_are_not_double_converted(self):
+        benchmark = next(item for item in self.benchmarks if item["id"] == "cybench")
+        self.assertEqual(benchmark["observation_count"], 24)
+        self.assertEqual(benchmark["observed_frontier"], 1.0)
+        self.assertEqual(benchmark["frontier_events"][-1]["score"], 1.0)
+        self.assertEqual(benchmark["frontier_events"][-1]["model"], "claude-mythos-preview")
+
 
 if __name__ == "__main__":
     unittest.main()
