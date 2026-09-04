@@ -1,5 +1,29 @@
 # Domain Curation Audit
 
+## 2026-09 expansion audit
+
+The expansion target is approximately 40 cards, not a quota. The current
+repository has checked-in source exports for only a subset of the proposed
+seeds. This pass adds `SimpleQA Verified` because its benchmark identity is
+explicitly distinct from the original SimpleQA object and the local export
+contains a usable model-generation series. The remaining candidates are
+tracked in [`CURATION_QUEUE.md`](../CURATION_QUEUE.md) until their canonical
+versions, scoring protocols, and observations are source-backed.
+
+The current core still intentionally contains many terminal/software-agent
+variants. Those variants remain useful lifecycle objects, but they count as
+one benchmark family when assessing domain coverage. Version lineage must not
+be confused with independent domain diversity.
+
+## Newly added core benchmark
+
+| Benchmark | Type | Domain | Canonical object | Metric | Lifecycle value | Source |
+|---|---|---|---|---|---|---|
+| SimpleQA Verified | Model | General knowledge & reasoning | 1,000-question verified variant | Graded factuality accuracy; 0–1 | Gives the leaderboard a factuality trajectory distinct from broad knowledge or reasoning scores | [paper](https://arxiv.org/abs/2509.07968), [evaluation resource](https://epoch.ai/benchmarks/simple-qa-verified) |
+
+The original SimpleQA (4,326 questions) is not silently merged with SimpleQA
+Verified. The benchmark page and protocol text preserve that distinction.
+
 Status: initial expansion audit, 2026-09-03
 
 This audit treats benchmark selection as curation, not catalog construction. A candidate enters the local core only when its measurement object, version, scoring rule, provenance, and model-generation data are sufficiently clear for a useful capability frontier.

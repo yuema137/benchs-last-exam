@@ -1291,14 +1291,14 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+      "resource-https-arxiv-org-abs-2509-07968",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Mathematics"
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -1457,18 +1457,18 @@
   },
   {
     "id": "model-claude-fable-5-xhigh",
-    "canonical_name": "Claude Fable 5 (XHigh)",
+    "canonical_name": "claude-fable-5_xhigh",
     "family_id": "anthropic-claude-fable-5-xhigh",
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-arxiv-org-abs-2509-07968"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Abstract reasoning"
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -6522,6 +6522,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-4-31b-it",
+    "canonical_name": "gemma-4-31b-it",
+    "family_id": "google-deepmind-gemma-4-31b-it",
+    "release_date": "2026-04-02",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-d5cbxacpnj8akq2jatifeq-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-4-31b-it-minimal",
     "canonical_name": "gemma-4-31b-it_minimal",
     "family_id": "google-deepmind-gemma-4-31b-it-minimal",
@@ -9237,13 +9258,13 @@
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+      "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-tijcafttjufrj6jpgvbbgq-eval"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Mathematics"
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -14070,6 +14091,48 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-1-1",
+    "canonical_name": "muse-spark-1.1",
+    "family_id": "meta-ai-muse-spark-1-1",
+    "release_date": "2026-07-09",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-bcdwprxgztvqlyc4wa9jxr-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-1-2-xhigh",
+    "canonical_name": "muse-spark-1.2_xhigh",
+    "family_id": "meta-ai-muse-spark-1-2-xhigh",
+    "release_date": "2026-08-05",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-mllmvvvo6t23mm5yxq7ryw-eval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
