@@ -1,0 +1,10 @@
+Name,Average criteria,Release date,Organization,Result public date,Source,Source link,id
+GPT-4-Turbo,0.515,2023-11-06,OpenAI,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-gpt4turbo
+Gemini-1.5-Pro,0.380,2024-02-15,Google,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-gemini15
+GPT-4o,0.444,2024-05-13,OpenAI,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-gpt4o
+Claude-3.5-Sonnet,0.489,2024-06-20,Anthropic,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-claude35
+Qwen2.5-unspecified,0.203,,Qwen,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-qwen25
+Qwen2.5-Coder-7B-Instruct,0.310,2024-11-12,Qwen/Alibaba,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-qwen25coder
+DeepSeek-V2.5,0.387,2024-09-05,DeepSeek,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-deepseek25
+Llama-3.1-8B-Instruct,0.120,2024-07-23,Meta,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-llama31
+o1-preview,0.583,2024-09-12,OpenAI,2024-12-16,BlenderLLM Table 2 CADBench-Wild,https://arxiv.org/html/2412.14203,cadwild-o1preview

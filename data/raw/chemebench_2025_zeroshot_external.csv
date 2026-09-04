@@ -1,0 +1,8 @@
+Name,Overall,Release date,Organization,Result public date,Source,Source link,id
+GPT-4o,56.69,2024-05-13,OpenAI,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-gpt4o
+Llama-3.1-70B,45.26,2024-07-23,Meta,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-llama31
+o1-preview,65.76,2024-09-12,OpenAI,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-o1preview
+DeepSeek-V3,62.96,2024-12-26,DeepSeek,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-deepseekv3
+DeepSeek-R1,70.33,2025-01-20,DeepSeek,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-deepseekr1
+o3-mini,58.85,2025-01-31,OpenAI,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-o3mini
+Claude-3.7-Sonnet,61.75,2025-02-24,Anthropic,2025-06-12,ChemEBench Table 9 zero-shot overall,https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5,cheme-claude37

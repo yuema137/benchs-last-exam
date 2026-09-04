@@ -1,0 +1,14 @@
+Name,Pass@1,Release date,Organization,Result public date,Source,Source link,id
+gpt-3.5-turbo-0125,0.0815,2024-01-25,OpenAI,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gpt35
+Llama-3.1-8B-Instruct,0.0704,2024-07-23,Meta,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-llama31
+DeepSeek-V2.5-API-deepseek-coder,0.2926,2024-09-05,DeepSeek,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-deepseekcoder
+gpt-4o-2024-11-20,0.1037,2024-11-20,OpenAI,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gpt4o
+Llama-3.3-70B,0.0704,2024-12-06,Meta,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-llama33
+DeepSeek-R1,0.2370,2025-01-20,DeepSeek,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-deepseekr1
+Gemini-2.5-Pro,0.0111,2025-06-17,Google,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gemini25
+GPT-5,0.2481,2025-08-07,OpenAI,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gpt5
+Claude-Sonnet-4.5,0.1259,2025-09-29,Anthropic,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-sonnet45
+Claude-Haiku-4.5,0.1926,2025-10-15,Anthropic,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-haiku45
+Claude-Opus-4.5,0.3074,2025-11-24,Anthropic,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-opus45
+GPT-5.2,0.2629,2025-12-11,OpenAI,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gpt52
+Gemini-3-Flash,0.3074,2025-12-17,Google,2026-02-01,ChipBench arXiv v2 Table 2,https://arxiv.org/html/2601.21448,chipbench-gemini3flash

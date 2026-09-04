@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-4-Vision,0.563,2023-11-06,OpenAI,2024-08-23,DesignQA v2 RAG table,https://arxiv.org/html/2404.07917,designqa-gpt4v
+Gemini-1.0-Pro-Vision,0.438,2023-12-06,Google,2024-08-23,DesignQA v2 RAG table,https://arxiv.org/html/2404.07917,designqa-gemini10
+Claude-3-Opus,0.875,2024-03-04,Anthropic,2024-08-23,DesignQA v2 RAG table,https://arxiv.org/html/2404.07917,designqa-claude3opus
+GPT-4o,0.750,2024-05-13,OpenAI,2024-08-23,DesignQA v2 RAG table,https://arxiv.org/html/2404.07917,designqa-gpt4o

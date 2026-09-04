@@ -1,0 +1,4 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-4-Turbo,0.384,2023-11-06,OpenAI,2025-02-11,CIRCUIT paper global accuracy table,https://arxiv.org/html/2502.07980,circuit-gpt4turbo
+Gemini-1.5-Pro,0.363,2024-02-15,Google,2025-02-11,CIRCUIT paper global accuracy table,https://arxiv.org/html/2502.07980,circuit-gemini15
+GPT-4o,0.467,2024-05-13,OpenAI,2025-02-11,CIRCUIT paper global accuracy table,https://arxiv.org/html/2502.07980,circuit-gpt4o

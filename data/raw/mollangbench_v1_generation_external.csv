@@ -1,0 +1,11 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+gpt-4o-2024-11-20,0.005,2024-11-20,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-gpt4o
+o1-mini,0.035,2024-09-12,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-o1mini
+o1-2024-12-17,0.100,2024-12-17,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-o1
+DeepSeek-R1,0.045,2025-01-20,DeepSeek,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-deepseekr1
+DeepSeek-R1-Distill-Llama-70B-b1c0b44,0.010,2025-02-23,DeepSeek,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-deepseekr170b
+o3-mini,0.175,2025-01-31,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-o3mini
+GPT-4.5-preview,0.055,2025-02-27,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-gpt45
+GPT-4.1,0.035,2025-04-14,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-gpt41
+o3,0.290,2025-04-16,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-o3
+o4-mini,0.260,2025-04-16,OpenAI,2025-05-21,MolLangBench v1 Table S4,https://arxiv.org/abs/2505.15054,mollang-o4mini

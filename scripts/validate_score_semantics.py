@@ -23,6 +23,8 @@ REVIEWED_LOW_RATIO_BENCHMARKS = {
     "screenspot-pro": "The official micro-average leaderboard reports GPT-4o at 0.8%.",
     "gso": "The official Opt@1 export includes a zero-task-success GPT-4o run.",
     "chemm-bench-acl2026": "The pinned ACL table reports zero/near-zero exact molecular-structure task performance.",
+    "tomg-bench-v1-wacc": "The official v1 leaderboard reports 0.15% weighted accuracy for Qwen2-7B under the fixed open-molecule protocol.",
+    "mollangbench-v1-generation-pass1": "The v1 supplementary table reports 0.5% exact structural generation accuracy for GPT-4o; validity is a separate metric.",
 }
 
 REVIEWED_LARGE_NUMERIC_BENCHMARKS = {

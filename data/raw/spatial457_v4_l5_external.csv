@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Gemini-1.5-Pro,0.3936,2024-02-15,Google,2025-06-08,Spatial457 v4 L5 table,https://arxiv.org/html/2502.08636,sp457-gemini15
+GPT-4o,0.3701,2024-05-13,OpenAI,2025-06-08,Spatial457 v4 L5 table,https://arxiv.org/html/2502.08636,sp457-gpt4o
+Claude-3.5-Sonnet,0.3348,2024-06-20,Anthropic,2025-06-08,Spatial457 v4 L5 table,https://arxiv.org/html/2502.08636,sp457-claude35
+Qwen2-VL-7B-Instruct,0.3375,2024-08-29,Qwen,2025-06-08,Spatial457 v4 L5 table,https://arxiv.org/html/2502.08636,sp457-qwen2vl

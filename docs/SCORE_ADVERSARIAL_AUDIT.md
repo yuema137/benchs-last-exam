@@ -1,13 +1,13 @@
 # Adversarial Score-Semantics Audit
 
 Snapshot: `2026-09-04`  
-Benchmarks: 129
+Benchmarks: 150
 
 ## Gate result
 
 - Ratio observations outside `[0, 1]`: **0**
-- Ratio observations below `1%`: **116**
-- Observations below a normalization/reference floor: **27**
+- Ratio observations below `1%`: **118**
+- Observations below a normalization/reference floor: **28**
 - Unbounded numeric observations above `100`: **79**
 
 `progress_baseline` is treated as a chance/reference baseline for normalized progress, not as a hard observation bound. Accordingly, a model may score below the floor without the canonical observation being invalid.
@@ -24,7 +24,9 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - **frontiermath-tiers-1-3-v2** — 4 observations. The fixed hard-math set permits zero and one/few-item successes.
 - **gsm8k** — 8 observations. HELM exact-match results for early models genuinely include zero and sub-1% accuracy.
 - **gso** — 1 observations. The official Opt@1 export includes a zero-task-success GPT-4o run.
+- **mollangbench-v1-generation-pass1** — 1 observations. The v1 supplementary table reports 0.5% exact structural generation accuracy for GPT-4o; validity is a separate metric.
 - **screenspot-pro** — 1 observations. The official micro-average leaderboard reports GPT-4o at 0.8%.
+- **tomg-bench-v1-wacc** — 1 observations. The official v1 leaderboard reports 0.15% weighted accuracy for Qwen2-7B under the fixed open-molecule protocol.
 
 ### Observation sample
 
@@ -88,7 +90,7 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - critpt / Claude 4 Sonnet (Reasoning) / 0.00285714
 - critpt / Qwen3 32B (Reasoning) / 0.00285714
 - critpt / Magistral Medium 1.2 / 0.00285714
-- …and 56 more canonical low-score observations.
+- …and 58 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
 

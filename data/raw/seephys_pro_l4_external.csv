@@ -1,0 +1,6 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-5,23.2,2025-08-07,OpenAI,2026-05-13,SeePhys Pro full L4 table,https://seephyspro.github.io/,seephys-gpt5
+Gemini-3-Pro,45.5,2025-11-18,Google,2026-05-13,SeePhys Pro full L4 table,https://seephyspro.github.io/,seephys-gemini3
+Claude-Opus-4.6,30.0,2026-02-05,Anthropic,2026-05-13,SeePhys Pro full L4 table,https://seephyspro.github.io/,seephys-opus46
+Qwen3.5-27B,25.6,2026-02-24,Qwen/Alibaba,2026-05-13,SeePhys Pro full L4 table,https://seephyspro.github.io/,seephys-qwen35
+GPT-5.4,53.0,2026-03-05,OpenAI,2026-05-13,SeePhys Pro full L4 table,https://seephyspro.github.io/,seephys-gpt54
