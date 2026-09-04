@@ -21,6 +21,8 @@ be confused with independent domain diversity.
 |---|---|---|---|---|---|---|
 | SimpleQA Verified | Model | General knowledge & reasoning | 1,000-question verified variant | Graded factuality accuracy; 0–1 | Gives the leaderboard a factuality trajectory distinct from broad knowledge or reasoning scores | [paper](https://arxiv.org/abs/2509.07968), [evaluation resource](https://epoch.ai/benchmarks/simple-qa-verified) |
 | MMLU-Pro | Model | General knowledge & reasoning | Official MMLU-Pro object; separate from MMLU | Overall accuracy; 0.1 random-choice floor to 1.0 | Adds a harder, reasoning-focused general benchmark with an initial six-point cross-generation trajectory | [official repository](https://github.com/TIGER-AI-Lab/MMLU-Pro), [paper](https://arxiv.org/abs/2406.01574) |
+| BrowseComp | Agent | General agent tasks | Official 1,266-task browsing benchmark | Answer accuracy; 0.0–1.0 | Adds a persistent web-research capability object with an initial official result series | [official benchmark page](https://openai.com/index/browsecomp/) |
+| LongBench v2 | Model | Long context | Fixed 503-task test split; separate from original LongBench | Exact-match accuracy; 0.0–1.0 | Adds a long-document reasoning trajectory with explicit split and score semantics | [official repository](https://github.com/EnvCommons/LongBench-v2/blob/main/README.md), [paper](https://arxiv.org/abs/2412.15204) |
 
 The original SimpleQA (4,326 questions) is not silently merged with SimpleQA
 Verified. The benchmark page and protocol text preserve that distinction.
@@ -50,7 +52,7 @@ This audit treats benchmark selection as curation, not catalog construction. A c
 | AutomationBench | General agent tasks | Initial public release, 2026-04-20 | Programmatically verified cross-application business workflows across simulated SaaS tools | Strict task pass rate; floor 0.0; ceiling 1.0 | 7 representative agent observations | CORE |
 | ScreenSpot-Pro | Multimodal | Initial release, 2025-01-04 | High-resolution professional GUI grounding with expert-annotated screenshots across multiple applications and operating systems | Grounding accuracy; floor 0.0; ceiling 1.0 | 4 direct-grounding observations; agentic/zoom-assisted results excluded from this protocol | CORE |
 
-The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. FrontierCode 1.1 was already part of the core set and was not duplicated. Together with the versioned additions above, the local curated set now contains twenty-one benchmark objects without silently merging related versions.
+The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. FrontierCode 1.1 was already part of the core set and was not duplicated. Together with the versioned additions above, the local curated set now contains twenty-nine benchmark objects without silently merging related versions.
 
 ## Candidate audit
 

@@ -42,6 +42,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-adaretake",
+    "canonical_name": "AdaReTaKe",
+    "family_id": "alibaba-adaretake",
+    "release_date": "2024-09-19",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-alpaca-7b",
     "canonical_name": "Alpaca (7B)",
     "family_id": "unknown-alpaca-7b",
@@ -181,6 +202,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-aria",
+    "canonical_name": "Aria",
+    "family_id": "unknown-aria",
+    "release_date": "2024-09-30",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -462,6 +504,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-bytevideollm",
+    "canonical_name": "ByteVideoLLM",
+    "family_id": "unknown-bytevideollm",
+    "release_date": "2024-10-13",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-c4ai-command-a-03-2025",
     "canonical_name": "c4ai-command-a-03-2025",
     "family_id": "cohere-c4ai-command-a-03-2025",
@@ -496,6 +559,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-chat-univi-v1-5",
+    "canonical_name": "Chat-UniVi-v1.5",
+    "family_id": "unknown-chat-univi-v1-5",
+    "release_date": "2024-04-23",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -783,13 +867,13 @@
     "release_date": "2024-06-20",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-github-com-tiger-ai-lab-mmlu-pro"
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General knowledge & reasoning"
+      "Long context"
     ],
     "evaluation_types": [
       "Model"
@@ -3598,6 +3682,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deep-research",
+    "canonical_name": "Deep Research",
+    "family_id": "openai-deep-research",
+    "release_date": "2025-04-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-browsecomp"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-chat",
     "canonical_name": "deepseek-chat",
     "family_id": "deepseek-deepseek-chat",
@@ -4715,6 +4820,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini",
+    "canonical_name": "Gemini",
+    "family_id": "google-gemini",
+    "release_date": "2023-12-06",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-mathvista-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-0-pro-001",
     "canonical_name": "Gemini 1.0 Pro (001)",
     "family_id": "google-deepmind-gemini-1-0-pro-001",
@@ -4843,17 +4969,17 @@
   {
     "id": "model-gemini-1-5-pro",
     "canonical_name": "Gemini 1.5 Pro",
-    "family_id": "google-gemini-1-5-pro",
+    "family_id": "google-deepmind-gemini-1-5-pro",
     "release_date": "2024-02-15",
-    "organization": "Google",
+    "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-github-com-tiger-ai-lab-mmlu-pro"
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General knowledge & reasoning"
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -5095,20 +5221,20 @@
   {
     "id": "model-gemini-2-5-flash",
     "canonical_name": "Gemini 2.5 Flash",
-    "family_id": "google-deepmind-gemini-2-5-flash",
-    "release_date": "2025-06-17",
-    "organization": "Google DeepMind",
+    "family_id": "google-gemini-2-5-flash",
+    "release_date": "2025-04-17",
+    "organization": "Google",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Terminal / OS"
+      "Long context"
     ],
     "evaluation_types": [
-      "Agent"
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7452,16 +7578,16 @@
     "release_date": "2025-02-27",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-openai-com-index-browsecomp"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Abstract reasoning"
+      "General agent tasks"
     ],
     "evaluation_types": [
-      "Model"
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7711,6 +7837,90 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4o-no-browsing",
+    "canonical_name": "GPT-4o (no browsing)",
+    "family_id": "openai-gpt-4o-no-browsing",
+    "release_date": "2024-05-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-browsecomp"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4o-with-browsing",
+    "canonical_name": "GPT-4o (with browsing)",
+    "family_id": "openai-gpt-4o-with-browsing",
+    "release_date": "2024-05-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-browsecomp"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4v",
+    "canonical_name": "GPT-4V",
+    "family_id": "openai-gpt-4v",
+    "release_date": "2023-10-15",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-mathvista-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4vopenai",
+    "canonical_name": "GPT-4VOpenAI",
+    "family_id": "openai-gpt-4vopenai",
+    "release_date": "2023-11-06",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -11702,6 +11912,69 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-internvl-chat-v1-5",
+    "canonical_name": "InternVL-Chat-V1.5",
+    "family_id": "unknown-internvl-chat-v1-5",
+    "release_date": "2024-04-18",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-internvl2",
+    "canonical_name": "InternVL2",
+    "family_id": "shanghai-ai-lab-internvl2",
+    "release_date": "2024-07-08",
+    "organization": "Shanghai AI Lab",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-internvl2-5",
+    "canonical_name": "InternVL2.5",
+    "family_id": "shanghai-ai-lab-sensetime-tsinghua-university-nanjing-university-fudan-university-chinese-university-of-hong-kong-cuhk-shanghai-jiao-tong-university-internvl2-5",
+    "release_date": "2024-12-06",
+    "organization": "Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-j1-grande-v1-17b",
     "canonical_name": "J1-Grande v1 (17B)",
     "family_id": "unknown-j1-grande-v1-17b",
@@ -11904,6 +12177,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-kangaroo",
+    "canonical_name": "Kangaroo",
+    "family_id": "unknown-kangaroo",
+    "release_date": "2024-11-13",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -12177,6 +12471,48 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-linvt",
+    "canonical_name": "LinVT",
+    "family_id": "unknown-linvt",
+    "release_date": "2024-12-06",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-livecc",
+    "canonical_name": "LiveCC",
+    "family_id": "unknown-livecc",
+    "release_date": "2024-04-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -13112,6 +13448,90 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llava-onevision",
+    "canonical_name": "LLaVA-OneVision",
+    "family_id": "unknown-llava-onevision",
+    "release_date": "2024-08-06",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llava-video",
+    "canonical_name": "LLaVA-Video",
+    "family_id": "unknown-llava-video",
+    "release_date": "2024-09-02",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-long-llava",
+    "canonical_name": "Long-LLaVA",
+    "family_id": "unknown-long-llava",
+    "release_date": "2024-08-30",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-longva",
+    "canonical_name": "LongVA",
+    "family_id": "unknown-longva",
+    "release_date": "2024-06-13",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-luminous-base-13b",
     "canonical_name": "Luminous Base (13B)",
     "family_id": "unknown-luminous-base-13b",
@@ -13377,6 +13797,48 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minicpm-o-2-6",
+    "canonical_name": "MiniCPM-o 2.6",
+    "family_id": "unknown-minicpm-o-2-6",
+    "release_date": "2025-01-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-minicpm-v-2-6",
+    "canonical_name": "MiniCPM-V 2.6",
+    "family_id": "unknown-minicpm-v-2-6",
+    "release_date": "2024-08-03",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -14078,6 +14540,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mplug-owl3",
+    "canonical_name": "mPLUG-Owl3",
+    "family_id": "unknown-mplug-owl3",
+    "release_date": "2024-11-26",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mpt-30b",
     "canonical_name": "MPT 30B",
     "family_id": "mosaicml-mpt-30b",
@@ -14246,6 +14729,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-nvila",
+    "canonical_name": "NVILA",
+    "family_id": "nvidia-massachusetts-institute-of-technology-mit-university-of-california-uc-berkeley-university-of-california-san-diego-university-of-washington-tsinghua-university-nvila",
+    "release_date": "2024-12-10",
+    "organization": "NVIDIA,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o1-2024-12-17-high",
     "canonical_name": "o1-2024-12-17_high",
     "family_id": "openai-o1-2024-12-17-high",
@@ -14309,19 +14813,40 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o1-medium",
+    "canonical_name": "o1 (medium)",
+    "family_id": "openai-o1-medium",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-browsecomp"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o1-mini",
     "canonical_name": "o1-mini",
     "family_id": "openai-o1-mini",
     "release_date": "2024-09-12",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Abstract reasoning"
+      "Long context"
     ],
     "evaluation_types": [
       "Model"
@@ -14385,6 +14910,27 @@
     ],
     "domains": [
       "Coding"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o1-preview",
+    "canonical_name": "o1-preview",
+    "family_id": "openai-o1-preview",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Long context"
     ],
     "evaluation_types": [
       "Model"
@@ -15044,6 +15590,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-openai-o1",
+    "canonical_name": "OpenAI o1",
+    "family_id": "openai-openai-o1",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-mathvista-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-openhands-lm-32b-v0-1",
     "canonical_name": "openhands-lm-32b-v0.1",
     "family_id": "unknown-openhands-lm-32b-v0-1",
@@ -15225,6 +15792,27 @@
     ],
     "domains": [
       "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-oryx-1-5",
+    "canonical_name": "Oryx-1.5",
+    "family_id": "unknown-oryx-1-5",
+    "release_date": "2024-10-22",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -15737,6 +16325,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-quota",
+    "canonical_name": "QuoTA",
+    "family_id": "unknown-quota",
+    "release_date": "2024-09-02",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen-1-8b",
     "canonical_name": "Qwen 1.8B",
     "family_id": "unknown-qwen-1-8b",
@@ -16115,6 +16724,69 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen-vl-chat",
+    "canonical_name": "Qwen-VL-Chat",
+    "family_id": "unknown-qwen-vl-chat",
+    "release_date": "2023-08-20",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-vl-max",
+    "canonical_name": "Qwen-VL-Max",
+    "family_id": "unknown-qwen-vl-max",
+    "release_date": "2024-01-18",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-vl-plus",
+    "canonical_name": "Qwen-VL-Plus",
+    "family_id": "alibaba-qwen-vl-plus",
+    "release_date": "2023-12-21",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-mathvista-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen1-5-14b",
     "canonical_name": "Qwen1.5 (14B)",
     "family_id": "alibaba-qwen1-5-14b",
@@ -16296,6 +16968,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen2-5-72b",
+    "canonical_name": "Qwen2.5-72B",
+    "family_id": "qwen-qwen2-5-72b",
+    "release_date": "2024-09-19",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Long context"
     ],
     "evaluation_types": [
       "Model"
@@ -16661,6 +17354,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen2-vl",
+    "canonical_name": "Qwen2-VL",
+    "family_id": "unknown-qwen2-vl",
+    "release_date": "2024-08-29",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen2-vl-72b-instruct",
     "canonical_name": "Qwen2-VL-72B-Instruct",
     "family_id": "alibaba-qwen2-vl-72b-instruct",
@@ -16821,6 +17535,27 @@
     ],
     "domains": [
       "Coding"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-235b-a22b-thinking",
+    "canonical_name": "Qwen3-235B-A22B-Thinking",
+    "family_id": "qwen-qwen3-235b-a22b-thinking",
+    "release_date": "2025-04-28",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Long context"
     ],
     "evaluation_types": [
       "Model"
@@ -17775,6 +18510,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-retake",
+    "canonical_name": "ReTaKe",
+    "family_id": "unknown-retake",
+    "release_date": "2024-08-29",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-seed-oss-36b-instruct",
     "canonical_name": "seed-oss-36b-instruct",
     "family_id": "unknown-seed-oss-36b-instruct",
@@ -17788,6 +18544,48 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-sharegeminixmu",
+    "canonical_name": "ShareGeminiXMU",
+    "family_id": "unknown-sharegeminixmu",
+    "release_date": "2024-06-20",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-sharegpt4video",
+    "canonical_name": "ShareGPT4Video",
+    "family_id": "unknown-sharegpt4video",
+    "release_date": "2024-05-27",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -17817,6 +18615,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-slime",
+    "canonical_name": "SliME",
+    "family_id": "unknown-slime",
+    "release_date": "2024-06-02",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-solar-pro",
     "canonical_name": "Solar Pro",
     "family_id": "unknown-solar-pro",
@@ -17830,6 +18649,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-st-llm",
+    "canonical_name": "ST-LLM",
+    "family_id": "unknown-st-llm",
+    "release_date": "2024-03-28",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -18111,6 +18951,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-timemarker",
+    "canonical_name": "TimeMarker",
+    "family_id": "unknown-timemarker",
+    "release_date": "2024-11-27",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-tiny-recursion-model-trm",
     "canonical_name": "Tiny Recursion Model (TRM)",
     "family_id": "unknown-tiny-recursion-model-trm",
@@ -18166,6 +19027,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-tpo",
+    "canonical_name": "TPO",
+    "family_id": "unknown-tpo",
+    "release_date": "2025-01-19",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -18271,6 +19153,237 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-video-ccam",
+    "canonical_name": "Video-CCAM",
+    "family_id": "unknown-video-ccam",
+    "release_date": "2024-09-29",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-video-llava",
+    "canonical_name": "Video-LLaVA",
+    "family_id": "unknown-video-llava",
+    "release_date": "2023-11-17",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-video-salmonn-2",
+    "canonical_name": "video-SALMONN 2+",
+    "family_id": "bytedance-video-salmonn-2",
+    "release_date": "2025-06-18",
+    "organization": "ByteDance",
+    "resource_ids": [
+      "resource-video-mme-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-video-xl",
+    "canonical_name": "Video-XL",
+    "family_id": "unknown-video-xl",
+    "release_date": "2024-10-17",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-videochat-flash",
+    "canonical_name": "VideoChat-Flash",
+    "family_id": "unknown-videochat-flash",
+    "release_date": "2025-01-11",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-videochat2-mistral",
+    "canonical_name": "VideoChat2-Mistral",
+    "family_id": "unknown-videochat2-mistral",
+    "release_date": "2023-11-29",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-videollama-2",
+    "canonical_name": "VideoLLaMA 2",
+    "family_id": "unknown-videollama-2",
+    "release_date": "2024-06-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-videollama-3",
+    "canonical_name": "VideoLLaMA 3",
+    "family_id": "unknown-videollama-3",
+    "release_date": "2024-01-22",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-vilamp",
+    "canonical_name": "ViLAMP",
+    "family_id": "unknown-vilamp",
+    "release_date": "2025-05-01",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-vita",
+    "canonical_name": "VITA",
+    "family_id": "unknown-vita",
+    "release_date": "2024-08-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-vita-1-5",
+    "canonical_name": "VITA 1.5",
+    "family_id": "unknown-vita-1-5",
+    "release_date": "2024-12-20",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-video-mme-github-io-home-page-html-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"

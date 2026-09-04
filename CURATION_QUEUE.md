@@ -26,6 +26,11 @@ source-backed.
 | Video-MME v2 | Important video understanding successor | Local data currently represents original Video-MME, not v2 | Human review |
 | LongBench v2 | Meaningful long-context reasoning benchmark | Need a fixed configuration and score series; do not merge with LongBench original | Human review |
 | RULER | Canonical effective-context evaluation | Score depends strongly on context-length/configuration | Human review |
+| HealthBench | High-value physician-rubric health evaluation | Official page exposes methodology and model set, but a checked-in comparable score table still needs extraction | Add when the official score series is captured |
+| MMMU / MMMU-Pro | Important multimodal academic reasoning objects | Official leaderboard is interactive and variants/splits need separate checked-in observations | Add after extracting a stable score series |
+| IFEval | Canonical verifiable instruction-following evaluation | Need a stable source-backed model-generation series | Add after source audit |
+| HumanEval | Canonical historical coding benchmark | Need a clean comparable multi-date score series | Add after source audit |
+| BigCodeBench | More realistic code-generation tasks than HumanEval | Protocol/configuration and score series need audit | Add after source audit |
 
 ## Do not add for now
 

@@ -1,0 +1,10 @@
+Model version,Score,Release date,Organization,Name,Source link,Notes
+claude-3-5-sonnet,0.467,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+qwen2-5-72b,0.435,2024-09-19,Qwen,Qwen2.5-72B,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+o1-mini,0.389,2024-09-12,OpenAI,o1-mini,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+o1-preview,0.577,2024-09-12,OpenAI,o1-preview,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+gpt-4o,0.514,2024-05-13,OpenAI,GPT-4o,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+deepseek-r1,0.583,2025-01-20,DeepSeek,DeepSeek-R1,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+qwen3-235b-thinking,0.606,2025-04-28,Qwen,Qwen3-235B-A22B-Thinking,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+gemini-2-5-flash,0.621,2025-04-17,Google,Gemini 2.5 Flash,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.
+gemini-2-5-pro,0.633,2025-03-25,Google,Gemini 2.5 Pro,https://github.com/EnvCommons/LongBench-v2/blob/main/README.md,Official LongBench-v2 test accuracy; fixed 503-task split.

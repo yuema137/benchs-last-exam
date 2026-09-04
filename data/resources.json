@@ -11421,6 +11421,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "LongBench v2 primary source",
+    "url": "https://github.com/EnvCommons/LongBench-v2/blob/main/README.md",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-harbor-framework-terminal-bench-releases-tag-v4-0-0",
     "resource_scope": [
       "benchmark"
@@ -11545,6 +11561,38 @@
     "resource_type": "paper",
     "title": "Humanity's Last Exam primary source",
     "url": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-mathvista-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MathVista primary source",
+    "url": "https://mathvista.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-browsecomp",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BrowseComp primary source",
+    "url": "https://openai.com/index/browsecomp/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -11680,6 +11728,39 @@
     "url": "https://terminalworld.ai/leaderboard/",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-video-mme-github-io-home-page-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Video-MME primary source",
+    "url": "https://video-mme.github.io/home_page.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-video-mme-github-io-home-page-html-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Video-MME Leaderboard",
+    "url": "https://video-mme.github.io/home_page.html#leaderboard",
+    "publisher": "Video-MME Leaderboard",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -11832,5 +11913,22 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-video-mme-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Video-MME Leaderboard",
+    "url": "Video-MME Leaderboard",
+    "publisher": "Video-MME Leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   }
 ]
