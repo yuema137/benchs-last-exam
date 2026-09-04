@@ -1,0 +1,7 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Gemini-1.5-Pro,82.90,2024-02-15,Google,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-gemini15pro
+Gemini-1.5-Flash,76.37,2024-05-14,Google,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-gemini15flash
+Qwen2.5-7B-Instruct,75.79,2024-09-19,Qwen,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-qwen257
+Qwen2.5-32B-Instruct,82.01,2024-09-19,Qwen,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-qwen2532
+Qwen2.5-Coder-32B-Instruct,79.85,2024-11-12,Qwen,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-qwen25coder32
+Gemini-2.0-Flash,82.76,2025-02-05,Google,2025-05-16,MatTools pymatgen_doc_qa table,https://arxiv.org/abs/2505.10852,mattools-gemini20flash

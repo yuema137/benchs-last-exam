@@ -1,0 +1,4 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-4.1,89.8,2025-04-14,OpenAI,2025-09-14,MatQnA Table 2 objective overall,https://arxiv.org/abs/2509.11335,matqna-gpt41
+Claude-Sonnet-4,89.7,2025-05-22,Anthropic,2025-09-14,MatQnA Table 2 objective overall,https://arxiv.org/abs/2509.11335,matqna-sonnet4
+Gemini-2.5-Flash,89.6,2025-06-17,Google,2025-09-14,MatQnA Table 2 objective overall,https://arxiv.org/abs/2509.11335,matqna-gemini25flash

@@ -1,0 +1,5 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id
+Gemini-3.5-Flash,0.594,2026-05-19,Google,2026-08-17,AeroCopilotBench Tier 2 table,https://arxiv.org/html/2608.16349,aerocopilot-gemini35flash
+GPT-5.6-sol,0.726,2026-07-09,OpenAI,2026-08-17,AeroCopilotBench Tier 2 table,https://arxiv.org/html/2608.16349,aerocopilot-gpt56sol
+DeepSeek-V4-Flash,0.292,2026-07-31,DeepSeek,2026-08-17,AeroCopilotBench Tier 2 table,https://arxiv.org/html/2608.16349,aerocopilot-deepseekv4flash
+DeepSeek-V4-Pro,0.461,2026-08-13,DeepSeek,2026-08-17,AeroCopilotBench Tier 2 table,https://arxiv.org/html/2608.16349,aerocopilot-deepseekv4pro

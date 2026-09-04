@@ -1,0 +1,7 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Claude-3.5-Sonnet-20241022,0.834,2024-10-22,Anthropic,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-claude35
+Grok-2-1212,0.850,2024-12-12,xAI,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-grok2
+DeepSeek-V3,0.844,2024-12-26,DeepSeek,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-deepseekv3
+o3-mini-medium,0.853,2025-01-31,OpenAI,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-o3mini
+Gemini-2.0-Pro-Experimental,0.850,2025-02-05,Google,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-gemini20pro
+Llama-4-Maverick,0.860,2025-04-05,Meta,2025-05-09,Biology benchmarks standardized panel,https://arxiv.org/abs/2505.06108,wmdpbio-llama4

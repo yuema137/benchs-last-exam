@@ -1,0 +1,5 @@
+Name,Mean,Release date,Organization,Result public date,Source,Source link,id
+Qwen3.5-397B-A17B,58.6,2026-02-15,Qwen,2026-04-28,QCalEval Table 3 zero-shot,https://arxiv.org/html/2604.25884,qcal-qwen35
+Claude-Opus-4.6,67.8,2026-02-05,Anthropic,2026-04-28,QCalEval Table 3 zero-shot,https://arxiv.org/html/2604.25884,qcal-opus46
+Gemini-3.1-Pro,72.3,2026-02-19,Google,2026-04-28,QCalEval Table 3 zero-shot,https://arxiv.org/html/2604.25884,qcal-gemini31
+GPT-5.4,64.6,2026-03-05,OpenAI,2026-04-28,QCalEval Table 3 zero-shot,https://arxiv.org/html/2604.25884,qcal-gpt54

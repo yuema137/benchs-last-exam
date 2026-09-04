@@ -1,0 +1,6 @@
+Name,MRA,Release date,Organization,Result public date,Source,Source link,id
+Gemini-2.5-Pro,49.6,2025-03-25,Google,2025-12-22,QuantiPhy full results,https://arxiv.org/html/2512.19526,quantiphy-gemini25
+GPT-5,32.6,2025-08-07,OpenAI,2025-12-22,QuantiPhy full results,https://arxiv.org/html/2512.19526,quantiphy-gpt5
+Claude-Sonnet-4.5,22.8,2025-09-29,Anthropic,2025-12-22,QuantiPhy full results,https://arxiv.org/html/2512.19526,quantiphy-sonnet45
+GPT-5.1,53.1,2025-11-12,OpenAI,2025-12-22,QuantiPhy full results,https://arxiv.org/html/2512.19526,quantiphy-gpt51
+Grok-4.1-Fast-Reasoning,45.0,2025-11-19,xAI,2025-12-22,QuantiPhy full results,https://arxiv.org/html/2512.19526,quantiphy-grok41

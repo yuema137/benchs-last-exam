@@ -101,3 +101,19 @@ This expansion applies one admission gate consistently: a fixed, named measureme
 | Computational Engineering | FEABench; CFDCodeBench; FEM-Bench | 3–5 / 7 |
 
 The domain count is not padded with incompatible variants. NRT-Bench is deferred because its canonical `ASR_CSF` is lower-is-better and the current lifecycle schema does not yet model inverse metrics safely. Sparse lifecycle crossings remain explicit rather than being fabricated.
+
+## Seven-domain 3× expansion — 2026-09-04
+
+This batch adds exactly three fixed measurement objects in each of seven science and engineering domains. Every object has comparable published results from at least two of the seven reference organizations; variants and alternate metrics remain separate.
+
+| Domain | Added objects | Coverage |
+|---|---|---:|
+| Life Science | PubMedQA PQA-L Test 500; WMDP-Bio v1; VCT v2 Text 101 | 6/7 each |
+| Chemistry | TOMG-Bench v1 wAcc; MolLangBench v1 Generation; ChemEBench Zero-shot Overall | 2–5/7 |
+| Mechanical & Aerospace Engineering | DesignQA v2 Functional RAG; CADBench-Wild; AeroCopilotBench Tier 2 | 3–5/7 |
+| Electrical Engineering | ChipBench v2 Verilog; CIRCUIT Zero-shot Global; PICBench Functional Pass@1 | 2–5/7 |
+| Robotics | MV-RoboBench v2; Spatial457 v4 L5; EAI v3 VirtualHome Action Sequencing | 4/7 each |
+| Physics | QuantiPhy Overall MRA; SeePhys Pro Level 4 Full; QCalEval April 2026 Zero-shot | 3–4/7 |
+| Materials Science | MaScQA Corrected 644; MatQnA Objective; MatTools pymatgen Doc QA | 2–4/7 |
+
+The two sub-1% observations in TOMG-Bench and MolLangBench were checked against their primary tables and added to the permanent adversarial-score gate. AeroCopilotBench excludes model labels whose release dates could not be independently pinned. All story-view membership remains derived from the rebuilt canonical metrics.
