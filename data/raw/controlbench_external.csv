@@ -1,0 +1,4 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Gemini 1.0 Ultra,0.340,2023-12-06,Google,2024-04-04,ControlBench paper,https://arxiv.org/html/2404.03647,controlbench-gemini-ultra
+GPT-4,0.456,2023-03-14,OpenAI,2024-04-04,ControlBench paper,https://arxiv.org/html/2404.03647,controlbench-gpt4
+Claude 3 Opus,0.585,2024-03-04,Anthropic,2024-04-04,ControlBench paper,https://arxiv.org/html/2404.03647,controlbench-claude3-opus

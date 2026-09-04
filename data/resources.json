@@ -442,6 +442,72 @@
     "notes": null
   },
   {
+    "id": "resource-https-aclanthology-org-2023-emnlp-main-468",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "JEEBench Physics primary source",
+    "url": "https://aclanthology.org/2023.emnlp-main.468/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aclanthology-org-2023-emnlp-main-468-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "JEEBench EMNLP paper",
+    "url": "https://aclanthology.org/2023.emnlp-main.468.pdf",
+    "publisher": "JEEBench EMNLP paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aclanthology-org-2026-findings-acl-1341",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CheMM-Bench ACL 2026 primary source",
+    "url": "https://aclanthology.org/2026.findings-acl.1341/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aclanthology-org-2026-findings-acl-1341-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CheMM-Bench ACL 2026 paper",
+    "url": "https://aclanthology.org/2026.findings-acl.1341.pdf",
+    "publisher": "CheMM-Bench ACL 2026 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-aclanthology-org-d18-1260",
     "resource_scope": [
       "benchmark"
@@ -830,6 +896,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2404-03647",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ControlBench primary source",
+    "url": "https://arxiv.org/abs/2404.03647",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2406-01574",
     "resource_scope": [
       "benchmark"
@@ -846,6 +928,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2407-10362",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "LAB-Bench ProtocolQA primary source",
+    "url": "https://arxiv.org/abs/2407.10362",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2407-13168",
     "resource_scope": [
       "benchmark"
@@ -854,6 +952,22 @@
     "resource_type": "paper",
     "title": "SciCode primary source",
     "url": "https://arxiv.org/abs/2407.13168",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2408-03361",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GMAI-MMBench v7 Test primary source",
+    "url": "https://arxiv.org/abs/2408.03361",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -928,6 +1042,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2501-18362",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MedXpertQA Text v3 primary source",
+    "url": "https://arxiv.org/abs/2501.18362",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2503-00096",
     "resource_scope": [
       "benchmark"
@@ -993,6 +1123,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2505-22304",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CADReview \u2014 Human Feedback primary source",
+    "url": "https://arxiv.org/abs/2505.22304",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2505-23982",
     "resource_scope": [
       "benchmark"
@@ -1050,6 +1196,322 @@
     "resource_type": "paper",
     "title": "SimpleQA Verified primary source",
     "url": "https://arxiv.org/abs/2509.07968",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2509-09307v1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MatCha v1 \u2014 Zero-shot primary source",
+    "url": "https://arxiv.org/abs/2509.09307v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2601-02404",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PCEval paper",
+    "url": "https://arxiv.org/abs/2601.02404",
+    "publisher": "PCEval paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2605-29833v2",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OmniMatBench v2 \u2014 Vanilla primary source",
+    "url": "https://arxiv.org/abs/2605.29833v2",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2606-27047",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "NuclearQAv2 \u2014 Aggregate primary source",
+    "url": "https://arxiv.org/abs/2606.27047",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2404-03647",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ControlBench paper",
+    "url": "https://arxiv.org/html/2404.03647",
+    "publisher": "ControlBench paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2407-10362v3",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "LAB-Bench v3 paper",
+    "url": "https://arxiv.org/html/2407.10362v3",
+    "publisher": "LAB-Bench v3 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2408-03361v7",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GMAI-MMBench v7 paper",
+    "url": "https://arxiv.org/html/2408.03361v7",
+    "publisher": "GMAI-MMBench v7 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2408-11053v2",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "VerilogEval v2 paper",
+    "url": "https://arxiv.org/html/2408.11053v2",
+    "publisher": "VerilogEval v2 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2412-09819v1",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FDM-Bench paper deterministic task",
+    "url": "https://arxiv.org/html/2412.09819v1",
+    "publisher": "FDM-Bench paper deterministic task",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2501-18362v3",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MedXpertQA v3 paper",
+    "url": "https://arxiv.org/html/2501.18362v3",
+    "publisher": "MedXpertQA v3 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2502-09560",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "EmbodiedBench v3 paper",
+    "url": "https://arxiv.org/html/2502.09560",
+    "publisher": "EmbodiedBench v3 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2504-06260",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FEABench paper Table 1",
+    "url": "https://arxiv.org/html/2504.06260",
+    "publisher": "FEABench paper Table 1",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2505-17139",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EarthSE \u2014 Earth-Silver MC primary source",
+    "url": "https://arxiv.org/html/2505.17139",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2505-22304",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CADReview paper",
+    "url": "https://arxiv.org/html/2505.22304",
+    "publisher": "CADReview paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2509-20374",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CFDCodeBench paper Figure 4",
+    "url": "https://arxiv.org/html/2509.20374",
+    "publisher": "CFDCodeBench paper Figure 4",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2512-20732",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FEM-Bench paper Table 3",
+    "url": "https://arxiv.org/html/2512.20732",
+    "publisher": "FEM-Bench paper Table 3",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2604-17966",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "TPS-CalcBench \u2014 Core Exact primary source",
+    "url": "https://arxiv.org/html/2604.17966",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2605-18642",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GS-PowerFlow-100 \u2014 Procedural Text primary source",
+    "url": "https://arxiv.org/html/2605.18642",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-html-2606-12821v1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GeoNatureAgent v5 primary source",
+    "url": "https://arxiv.org/html/2606.12821v1",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -1262,6 +1724,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-pdf-2409-15477",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MediConfusion v2 paper Table 1",
+    "url": "https://arxiv.org/pdf/2409.15477",
+    "publisher": "MediConfusion v2 paper Table 1",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-pdf-2412-19437",
     "resource_scope": [
       "benchmark",
@@ -1272,6 +1751,91 @@
     "title": "DeepSeek-V3 Technical Report",
     "url": "https://arxiv.org/pdf/2412.19437",
     "publisher": "DeepSeek-V3 Technical Report",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2501-14654",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MedAgentBench paper Table 3",
+    "url": "https://arxiv.org/pdf/2501.14654",
+    "publisher": "MedAgentBench paper Table 3",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2509-09307",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MatCha v1 paper",
+    "url": "https://arxiv.org/pdf/2509.09307",
+    "publisher": "MatCha v1 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2509-22339",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CircuitSense v2 paper",
+    "url": "https://arxiv.org/pdf/2509.22339",
+    "publisher": "CircuitSense v2 paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2601-02158",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FormationEval paper",
+    "url": "https://arxiv.org/pdf/2601.02158",
+    "publisher": "FormationEval paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-pdf-2605-29833v2",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "OmniMatBench v2 paper",
+    "url": "https://arxiv.org/pdf/2605.29833v2",
+    "publisher": "OmniMatBench v2 paper",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -1352,6 +1916,22 @@
     "resource_type": "paper",
     "title": "ChemBench primary source",
     "url": "https://chembench.lamalab.org/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-circuitsense-benchmark-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CircuitSense \u2014 Synthetic Analysis primary source",
+    "url": "https://circuitsense-benchmark.github.io/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12315,6 +12895,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-gair-nlp-github-io-olympicarena",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OlympicArena Physics primary source",
+    "url": "https://gair-nlp.github.io/OlympicArena/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-ahmadrezania-fdm-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FDM-Bench \u2014 G-code Detection primary source",
+    "url": "https://github.com/AhmadrezaNia/FDM-Bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-ai4engi-engibench",
     "resource_scope": [
       "benchmark"
@@ -12341,6 +12953,39 @@
     "url": "https://github.com/catalystforyou/SUPERChem_eval",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-cladbrain-cladbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CladBench v1 primary source",
+    "url": "https://github.com/cladbrain/cladbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-cladbrain-cladbench-blob-main-docs-results-tables-md",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CladBench official results",
+    "url": "https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md",
+    "publisher": "CladBench official results",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12379,6 +13024,38 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-elejeune11-fem-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FEM-Bench 2025 \u2014 First Run primary source",
+    "url": "https://github.com/elejeune11/FEM-bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-embodiedbench-embodiedbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EmbodiedBench \u2014 Manipulation v3 primary source",
+    "url": "https://github.com/EmbodiedBench/EmbodiedBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
@@ -12387,6 +13064,38 @@
     "resource_type": "paper",
     "title": "LongBench v2 primary source",
     "url": "https://github.com/EnvCommons/LongBench-v2/blob/main/README.md",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-enviroscientist-enviroexam",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EnviroExam \u2014 Zero-shot primary source",
+    "url": "https://github.com/EnviroScientist/enviroexam",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-google-feabench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FEABench Gold \u2014 Executability primary source",
+    "url": "https://github.com/google/feabench",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12444,6 +13153,71 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-internrobotics-ost-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OST-Bench v2 \u2014 Multi-round primary source",
+    "url": "https://github.com/InternRobotics/OST-Bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-internrobotics-ost-bench-blob-main-readme-md",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "OST-Bench official multi-round leaderboard",
+    "url": "https://github.com/InternRobotics/OST-Bench/blob/main/README.md",
+    "publisher": "OST-Bench official multi-round leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-isafetybench-data",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "iSafetyBench \u2014 Single Accuracy primary source",
+    "url": "https://github.com/iSafetyBench/data",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-jackhopkins-factorio-learning-environment",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Factorio Learning Environment \u2014 Planning primary source",
+    "url": "https://github.com/JackHopkins/factorio-learning-environment",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-jun-kai-zhang-matscibench",
     "resource_scope": [
       "benchmark"
@@ -12454,6 +13228,39 @@
     "url": "https://github.com/Jun-Kai-Zhang/MatSciBench",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-lamalab-org-macbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MaCBench v1 primary source",
+    "url": "https://github.com/lamalab-org/macbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-lamalab-org-macbench-blob-main-plots-results-aggregated-model-metrics-main-csv",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MaCBench official results",
+    "url": "https://github.com/lamalab-org/macbench/blob/main/plots/RESULTS/aggregated_model_metrics_main.csv",
+    "publisher": "MaCBench official results",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12484,6 +13291,102 @@
     "resource_type": "paper",
     "title": "MMMU primary source",
     "url": "https://github.com/MMMU-Benchmark/MMMU",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-mshahabsepehri-mediconfusion",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MediConfusion v2 \u2014 MC Set Accuracy primary source",
+    "url": "https://github.com/mshahabsepehri/mediconfusion",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-ncbi-nlp-medcalc-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MedCalc-Bench Paper-1047 primary source",
+    "url": "https://github.com/ncbi-nlp/MedCalc-Bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-nlr-theseus-cfdllmbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CFDCodeBench \u2014 Zero-shot primary source",
+    "url": "https://github.com/NLR-Theseus/cfdllmbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-null99-dog-pceval-dataset",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PCEval \u2014 Physical Circuit primary source",
+    "url": "https://github.com/Null99-Dog/PCEval-Dataset",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-nvlabs-verilog-eval",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "VerilogEval v2 \u2014 Spec-to-RTL primary source",
+    "url": "https://github.com/NVlabs/verilog-eval",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-olivenet-iot-thermoqa",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ThermoQA v0.4 \u2014 Composite primary source",
+    "url": "https://github.com/olivenet-iot/ThermoQA",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12558,6 +13461,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-rose-stl-lab-genie-climaqa",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ClimaQA-Gold \u2014 Default MCQ primary source",
+    "url": "https://github.com/Rose-STL-Lab/genie-climaqa",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-scienceone-ai-scienceeval",
     "resource_scope": [
       "benchmark",
@@ -12569,6 +13488,55 @@
     "url": "https://github.com/ScienceOne-AI/ScienceEval",
     "publisher": "ScienceEval",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-sombsuk-pse-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PSE-Bench v3 primary source",
+    "url": "https://github.com/sombsuk/PSE-Bench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-sombsuk-pse-bench-blob-main-pse-bench-summary-xlsx",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PSE-Bench official summary",
+    "url": "https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx",
+    "publisher": "PSE-Bench official summary",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-stanfordmlgroup-medagentbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MedAgentBench v1 \u2014 Overall primary source",
+    "url": "https://github.com/stanfordmlgroup/MedAgentBench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12919,6 +13887,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-open-eqa-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OpenEQA EM-EQA v0 primary source",
+    "url": "https://open-eqa.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-open-eqa-github-io-assets-pdfs-paper-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "OpenEQA paper",
+    "url": "https://open-eqa.github.io/assets/pdfs/paper.pdf",
+    "publisher": "OpenEQA paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-openaccess-thecvf-com-content-cvpr2025-papers-li-eee-bench-a-comprehensive-multimodal-electrical-and-electronics-engineering-benchmark-cvpr-2025-paper-pdf",
     "resource_scope": [
       "benchmark"
@@ -13115,6 +14116,23 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-papers-neurips-cc-paper-files-paper-2025-file-75f3a62e55187bc3e5e5961fa2a46bcf-paper-datasets-and-benchmarks-track-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FLE NeurIPS 2025 Table 1",
+    "url": "https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf",
+    "publisher": "FLE NeurIPS 2025 Table 1",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-paperswithcode-com-sota-question-answering-on-triviaqa",
     "resource_scope": [
       "benchmark",
@@ -13125,6 +14143,39 @@
     "title": "PapersWithCode",
     "url": "https://paperswithcode.com/sota/question-answering-on-triviaqa",
     "publisher": "PapersWithCode",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-physbench-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PhysBench \u2014 Seq primary source",
+    "url": "https://physbench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-proceedings-iclr-cc-paper-files-paper-2025-file-3eff068e195daace49955348de9f8398-paper-conference-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ClimaQA final paper Table 3",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/3eff068e195daace49955348de9f8398-Paper-Conference.pdf",
+    "publisher": "ClimaQA final paper Table 3",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -13143,6 +14194,39 @@
     "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/81a60d18e010b27b36cd465c6604b915-Paper-Conference.pdf",
     "publisher": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-proceedings-neurips-cc-paper-files-paper-2024-file-99e81750f3fdfcaf9613db2dbf4bd623-paper-datasets-and-benchmarks-track-pdf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MedCalc-Bench NeurIPS paper Table 2",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/99e81750f3fdfcaf9613db2dbf4bd623-Paper-Datasets_and_Benchmarks_Track.pdf",
+    "publisher": "MedCalc-Bench NeurIPS paper Table 2",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-pubs-rsc-org-en-content-articlehtml-2026-dd-d5dd00519a",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OPENXRD \u2014 Closed Book primary source",
+    "url": "https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -13478,6 +14562,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-formationeval-no",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FormationEval v0.1 primary source",
+    "url": "https://www.formationeval.no/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-frontierswe-com",
     "resource_scope": [
       "benchmark"
@@ -13519,6 +14619,22 @@
     "resource_type": "paper",
     "title": "APEX-Agents primary source",
     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-nature-com-articles-s41598-025-91150-5",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "APBench-\u03b3 primary source",
+    "url": "https://www.nature.com/articles/s41598-025-91150-5",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,

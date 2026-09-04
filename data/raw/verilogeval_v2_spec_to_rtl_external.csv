@@ -1,0 +1,12 @@
+Name,Pass@1,Release date,Organization,Result public date,Source,Source link,id
+Llama2-70B,0.046,2023-07-18,Meta,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-llama2
+CodeGemma-7B,0.066,2024-04-09,Google,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-codegemma
+Llama3.1-8B,0.191,2024-07-23,Meta,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-llama31-8b
+DeepSeek-Coder-33B,0.217,2023-11-29,DeepSeek,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-deepseek33
+DeepSeek-Coder-6.7B,0.296,2023-11-29,DeepSeek,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-deepseek67
+GPT-4-0613,0.320,2023-06-13,OpenAI,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-gpt4
+Llama3-70B,0.408,2024-04-18,Meta,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-llama3-70b
+Llama3.1-70B,0.428,2024-07-23,Meta,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-llama31-70b
+Llama3.1-405B,0.572,2024-07-23,Meta,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-llama31-405b
+GPT-4-Turbo-1106-preview,0.596,2023-11-06,OpenAI,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-gpt4-turbo
+GPT-4o,0.625,2024-05-13,OpenAI,2025-02-03,VerilogEval v2 paper,https://arxiv.org/html/2408.11053v2,verilogeval-gpt4o

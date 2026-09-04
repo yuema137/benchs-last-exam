@@ -15,6 +15,7 @@ Sparse T50/T90 data alone is not a reason to defer. The queue is for unresolved 
 - **MatQnA objective subset** — 4/7 organization coverage, but the exact prompt, extraction procedure, dataset revision, and generated-question provenance are not pinned sufficiently for a canonical observation series.
 - **TransportBench** — 4/7 organization coverage, but evaluated web-product snapshots are mutable and public materials disagree on 140 versus 141 tasks. Require a versioned snapshot and evaluation configuration.
 - **LifeSciBench** — high-value closed 750-task evaluation with 3/7 coverage. Defer until tasks/artifacts, grader identity, browser interface, and run configuration are sufficiently reproducible; the current results all originate from one operator.
+- **NRT-Bench v1 paired replay** — fixed 149-session nuclear-control-room safety cohort with 4/7 organization coverage, but its canonical attack-success rate is lower-is-better. Do not silently invert it into a positive capability score; add only after score-direction support is explicit end to end.
 
 ## Previously identified candidates
 

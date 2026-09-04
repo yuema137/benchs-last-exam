@@ -1,0 +1,7 @@
+Name,Overall score,Release date,Organization,Result public date,Source,Source link,id
+Llama-4-Maverick,0.200,2025-04-05,Meta,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-llama4
+Grok-4.3,0.291,2026-04-17,xAI,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-grok43
+Qwen3.6-Plus,0.299,2026-03-31,Qwen,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-qwen36
+GPT-5.5,0.324,2026-04-23,OpenAI,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-gpt55
+Gemini-3.1-Pro,0.347,2026-02-19,Google,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-gemini31
+Claude-Opus-4.7,0.372,2026-04-16,Anthropic,2026-05-29,OmniMatBench v2 paper,https://arxiv.org/pdf/2605.29833v2,omnimat-opus47

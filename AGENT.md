@@ -103,6 +103,10 @@ After any such change, the agent must:
 5. verify the Leaderboard row, detail page, filters, card metrics, sparklines, and provenance all resolve to the updated canonical data;
 6. run `python3 scripts/validate_benchmark_integration.py`, provenance validation, and the test suite before reporting completion.
 
+The integration validator independently recomputes all four lifecycle memberships and compares them with the generated snapshot. A stale or partially updated tab is a hard failure, even when the benchmark card itself renders correctly.
+
 Score updates must additionally run `python3 scripts/validate_score_semantics.py`. Ratio metrics must remain in `[0, 1]`; unbounded numeric metrics such as minutes, Elo, or business outcomes must never be auto-converted to percentages. A normalization `floor` may be a chance/reference baseline rather than a hard lower bound, so a genuine below-floor observation is preserved and investigated instead of silently clamped or deleted.
+
+Extreme values require explicit adversarial review. Any benchmark group introducing a ratio observation below `1%` or an unbounded numeric observation above `100` must be checked against its primary measurement source and documented in `REVIEWED_LOW_RATIO_BENCHMARKS` or `REVIEWED_LARGE_NUMERIC_BENCHMARKS` in `scripts/validate_score_semantics.py`. An unreviewed extreme-score group is a hard validation failure; never fix it by silently clamping, rescaling, or deleting the observation.
 
 Do not update only the visible benchmark card and assume the story tabs remain correct. Do not manually patch a tab to compensate for stale derived data. If a lifecycle result changes, the generated snapshot and its source data must be included in the same change.

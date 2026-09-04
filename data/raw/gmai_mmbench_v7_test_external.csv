@@ -1,0 +1,6 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Claude3-Opus,0.3244,2024-03-04,Anthropic,2024-10-21,GMAI-MMBench v7 paper,https://arxiv.org/html/2408.03361v7,gmai-claude3-opus
+Qwen-VL-Max,0.4216,2024-01-24,Qwen,2024-10-21,GMAI-MMBench v7 paper,https://arxiv.org/html/2408.03361v7,gmai-qwen-vl-max
+DeepSeek-VL-7B,0.4343,2024-03-11,DeepSeek,2024-10-21,GMAI-MMBench v7 paper,https://arxiv.org/html/2408.03361v7,gmai-deepseek-vl
+Gemini 1.5,0.4836,2024-02-15,Google,2024-10-21,GMAI-MMBench v7 paper,https://arxiv.org/html/2408.03361v7,gmai-gemini15
+GPT-4o,0.5396,2024-05-13,OpenAI,2024-10-21,GMAI-MMBench v7 paper,https://arxiv.org/html/2408.03361v7,gmai-gpt4o

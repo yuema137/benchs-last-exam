@@ -1,0 +1,6 @@
+Name,Overall,Release date,Organization,Started at,Result public date,Source,Source link,id
+Llama-3.3-70B-Versatile,0.406,2024-12-06,Meta,2026-02-23,2026-08-01,PSE-Bench official summary,https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx,pse-llama33
+GPT-4o-2024-08-06,0.448,2024-08-06,OpenAI,2026-02-23,2026-08-01,PSE-Bench official summary,https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx,pse-gpt4o
+Gemini-2.5-Flash,0.473,2025-04-17,Google,2026-02-23,2026-08-01,PSE-Bench official summary,https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx,pse-gemini25
+Claude-Sonnet-4-20250514,0.506,2025-05-22,Anthropic,2026-02-23,2026-08-01,PSE-Bench official summary,https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx,pse-claude4
+DeepSeek-V3,0.519,2024-12-26,DeepSeek,2026-02-23,2026-08-01,PSE-Bench official summary,https://github.com/sombsuk/PSE-Bench/blob/main/PSE-Bench_Summary.xlsx,pse-deepseek-v3

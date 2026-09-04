@@ -1,0 +1,8 @@
+Name,Score,Release date,Organization,Result public date,Source,Source link,id
+Qwen-2.5-7B-Instruct-Turbo,0.540,2024-09-19,Qwen,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-qwen25
+Llama-3.3-70B-Instruct-Turbo,0.655,2024-12-06,Meta,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-llama33
+GPT-4o,0.691,2024-05-13,OpenAI,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-gpt4o
+GPT-5,0.823,2025-08-07,OpenAI,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-gpt5
+Gemini-2.5-Pro,0.831,2025-06-17,Google,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-gemini25
+Claude-Opus-4.8,0.869,2026-07-23,Anthropic,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-opus48
+Claude-Opus-4.7,0.888,2026-04-16,Anthropic,2026-08-13,CladBench official results,https://github.com/cladbrain/cladbench/blob/main/docs/results_tables.md,cladbench-opus47

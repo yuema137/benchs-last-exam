@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Llama-3.1-70B-Instruct,0.31,2024-07-23,Meta,2024-12-13,FDM-Bench paper deterministic task,https://arxiv.org/html/2412.09819v1,fdm-llama31-70b
+Llama-3.1-405B-Instruct,0.44,2024-07-23,Meta,2024-12-13,FDM-Bench paper deterministic task,https://arxiv.org/html/2412.09819v1,fdm-llama31-405b
+GPT-4o,0.62,2024-05-13,OpenAI,2024-12-13,FDM-Bench paper deterministic task,https://arxiv.org/html/2412.09819v1,fdm-gpt4o
+Claude-3.5-Sonnet,0.44,2024-06-20,Anthropic,2024-12-13,FDM-Bench paper deterministic task,https://arxiv.org/html/2412.09819v1,fdm-sonnet35

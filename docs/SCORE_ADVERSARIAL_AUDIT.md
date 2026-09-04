@@ -1,13 +1,13 @@
 # Adversarial Score-Semantics Audit
 
 Snapshot: `2026-09-04`  
-Benchmarks: 89
+Benchmarks: 129
 
 ## Gate result
 
 - Ratio observations outside `[0, 1]`: **0**
-- Ratio observations below `1%`: **114**
-- Observations below a normalization/reference floor: **21**
+- Ratio observations below `1%`: **116**
+- Observations below a normalization/reference floor: **27**
 - Unbounded numeric observations above `100`: **79**
 
 `progress_baseline` is treated as a chance/reference baseline for normalized progress, not as a hard observation bound. Accordingly, a model may score below the floor without the canonical observation being invalid.
@@ -15,6 +15,18 @@ Benchmarks: 89
 Values above 100 are accepted only for `score_format: number`; examples include minutes, Elo, and simulated business outcomes. They are never formatted or normalized as percentages unless explicit finite bounds exist.
 
 ## Low ratio observations (<1%)
+
+- **arc-agi-2** — 33 observations. ARC Prize reports pure LLMs near zero and public reasoning systems in single digits under pass@2.
+- **browsecomp** — 2 observations. OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.
+- **chemm-bench-acl2026** — 2 observations. The pinned ACL table reports zero/near-zero exact molecular-structure task performance.
+- **critpt** — 62 observations. The official 70-challenge, five-run leaderboard reports several 0–0.9% accuracies.
+- **frontiermath-tier-4-v2** — 3 observations. The research-level Tier 4 set explicitly contains zero-score model runs.
+- **frontiermath-tiers-1-3-v2** — 4 observations. The fixed hard-math set permits zero and one/few-item successes.
+- **gsm8k** — 8 observations. HELM exact-match results for early models genuinely include zero and sub-1% accuracy.
+- **gso** — 1 observations. The official Opt@1 export includes a zero-task-success GPT-4o run.
+- **screenspot-pro** — 1 observations. The official micro-average leaderboard reports GPT-4o at 0.8%.
+
+### Observation sample
 
 - gsm8k / babbage (1.3B) / 0.007
 - gsm8k / ada (350M) / 0.006
@@ -76,9 +88,15 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - critpt / Claude 4 Sonnet (Reasoning) / 0.00285714
 - critpt / Qwen3 32B (Reasoning) / 0.00285714
 - critpt / Magistral Medium 1.2 / 0.00285714
-- …and 54 more canonical low-score observations.
+- …and 56 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
+
+- **gdpval-aa-v2** — 8 observations. Unbounded Elo-like rating, not percent.
+- **metr-time-horizon-1-1** — 19 observations. Human-equivalent task duration in minutes, not percent.
+- **vending-bench-2** — 52 observations. Simulated business outcome denominated in dollars, not percent.
+
+### Observation sample
 
 - vending-bench-2 / Claude Opus 5 / 11181.9
 - vending-bench-2 / Claude Opus 4.7 / 10936.8

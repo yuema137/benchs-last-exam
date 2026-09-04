@@ -79,3 +79,25 @@ This batch required at least two of the seven reference organizations to have pu
 | LifeSciBench | Agent → Life Science | Closed 750-task evaluation | 3/7 | DEFER | Tasks, artifacts, grader, and full run configuration are not publicly reproducible. |
 
 The ten additions are partial or full core records. Missing cost and unreached thresholds remain explicit; they are not reasons to hide a methodologically identifiable benchmark.
+
+## Multi-domain science and engineering expansion — 2026-09-04
+
+This expansion applies one admission gate consistently: a fixed, named measurement object with comparable public observations from at least two of the seven reference organizations. It adds 40 objects across physics, chemistry, life science, materials, electrical, mechanical/aerospace, robotics, Earth science, energy/infrastructure, nuclear, biomedical, manufacturing, and computational engineering. Every accepted object includes bilingual task/scoring text, canonical resources, observations, a derived frontier, and automatic lifecycle-view evaluation.
+
+| Domain | Added objects | Coverage range |
+|---|---|---:|
+| Physics | PhysBench Seq; OlympicArena Physics; JEEBench Physics | 2–4 / 7 |
+| Chemistry | MaCBench; PSE-Bench; CheMM-Bench | 4–5 / 7 |
+| Life Science | MedXpertQA Text; GMAI-MMBench v7; LAB-Bench ProtocolQA | 4–6 / 7 |
+| Materials Science | OPENXRD; MatCha; OmniMatBench v2 | 5–7 / 7 |
+| Electrical Engineering | ControlBench; CircuitSense; PCEval; VerilogEval v2 | 3–5 / 7 |
+| Mechanical & Aerospace | APBench-γ; CADReview; TPS-CalcBench | 3–4 / 7 |
+| Robotics | OpenEQA; EmbodiedBench Manipulation; OST-Bench | 3–5 / 7 |
+| Earth Science | EarthSE Earth-Silver; GeoNatureAgent v5; ClimaQA-Gold | 3–7 / 7 |
+| Energy & Infrastructure | FormationEval; CladBench; EnviroExam; GS-PowerFlow-100 | 3–7 / 7 |
+| Nuclear Engineering | NuclearQAv2; ThermoQA v0.4 | 2–5 / 7 |
+| Biomedical Engineering | MedAgentBench; MedCalc-Bench; MediConfusion | 2–6 / 7 |
+| Manufacturing | FDM-Bench; iSafetyBench; Factorio Learning Environment Planning | 2–5 / 7 |
+| Computational Engineering | FEABench; CFDCodeBench; FEM-Bench | 3–5 / 7 |
+
+The domain count is not padded with incompatible variants. NRT-Bench is deferred because its canonical `ASR_CSF` is lower-is-better and the current lifecycle schema does not yet model inverse metrics safely. Sparse lifecycle crossings remain explicit rather than being fabricated.

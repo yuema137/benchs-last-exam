@@ -1,0 +1,8 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Llama-3.1-405B-Instruct,0.8756,2024-07-23,Meta,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-llama31
+DeepSeek-V3.1-Terminus,0.8986,2025-09-22,DeepSeek,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-deepseek
+Qwen3-Next-80B-A3B-Instruct,0.9032,2025-09-10,Qwen,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-qwen3next
+Claude-3.5-Sonnet,0.9124,2024-06-20,Anthropic,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-claude35
+Gemini-2.5-Pro,0.9539,2025-06-17,Google,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-gemini25
+Grok-4-Fast,0.9631,2025-09-19,xAI,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-grok4fast
+GPT-5,0.9677,2025-08-07,OpenAI,2026-03-16,OPENXRD RSC paper,https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00519a,openxrd-gpt5

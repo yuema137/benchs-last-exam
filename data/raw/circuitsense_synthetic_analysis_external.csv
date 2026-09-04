@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Qwen2.5-VL-72B-Instruct,0.0496,2025-02-19,Qwen,2026-02-28,CircuitSense v2 paper,https://arxiv.org/pdf/2509.22339,circuitsense-qwen25
+GPT-4o-2024-08-06,0.0498,2024-08-06,OpenAI,2026-02-28,CircuitSense v2 paper,https://arxiv.org/pdf/2509.22339,circuitsense-gpt4o
+Claude-Sonnet-4,0.0629,2025-05-22,Anthropic,2026-02-28,CircuitSense v2 paper,https://arxiv.org/pdf/2509.22339,circuitsense-claude4
+Gemini-2.5-Pro-preview-0605,0.1906,2025-06-05,Google,2026-02-28,CircuitSense v2 paper,https://arxiv.org/pdf/2509.22339,circuitsense-gemini25

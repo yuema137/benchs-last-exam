@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-3.5-Turbo,0.349,2022-11-30,OpenAI,2024-06-17,MedCalc-Bench NeurIPS paper Table 2,https://proceedings.neurips.cc/paper_files/paper/2024/file/99e81750f3fdfcaf9613db2dbf4bd623-Paper-Datasets_and_Benchmarks_Track.pdf,medcalc-gpt35
+GPT-4,0.509,2023-03-14,OpenAI,2024-06-17,MedCalc-Bench NeurIPS paper Table 2,https://proceedings.neurips.cc/paper_files/paper/2024/file/99e81750f3fdfcaf9613db2dbf4bd623-Paper-Datasets_and_Benchmarks_Track.pdf,medcalc-gpt4
+Meta-Llama-3-8B-Instruct,0.271,2024-04-18,Meta,2024-06-17,MedCalc-Bench NeurIPS paper Table 2,https://proceedings.neurips.cc/paper_files/paper/2024/file/99e81750f3fdfcaf9613db2dbf4bd623-Paper-Datasets_and_Benchmarks_Track.pdf,medcalc-llama3-8b
+Meta-Llama-3-70B-Instruct,0.395,2024-04-18,Meta,2024-06-17,MedCalc-Bench NeurIPS paper Table 2,https://proceedings.neurips.cc/paper_files/paper/2024/file/99e81750f3fdfcaf9613db2dbf4bd623-Paper-Datasets_and_Benchmarks_Track.pdf,medcalc-llama3-70b

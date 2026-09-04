@@ -1,0 +1,7 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Llama-3-8B-Instruct,0.6236,2024-04-18,Meta,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-llama3-8b
+Llama-3-70B-Instruct,0.7092,2024-04-18,Meta,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-llama3-70b
+GPT-4o,0.7245,2024-05-13,OpenAI,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-gpt4o
+gpt-oss-120B,0.7923,2025-08-05,OpenAI,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-gptoss
+GPT-5.2,0.7842,2025-12-11,OpenAI,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-gpt52
+GPT-5.4,0.7891,2026-03-05,OpenAI,2026-06-25,NuclearQAv2 paper Table 2,https://arxiv.org/abs/2606.27047,nuclearqa-gpt54

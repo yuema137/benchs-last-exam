@@ -1,0 +1,5 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Meta-Llama-3-70B-Instruct,0.44,2024-04-18,Meta,2024-07-17,LAB-Bench v3 paper,https://arxiv.org/html/2407.10362v3,labbench-protocolqa-llama3
+gemini-1.5-pro-001,0.47,2024-02-15,Google,2024-07-17,LAB-Bench v3 paper,https://arxiv.org/html/2407.10362v3,labbench-protocolqa-gemini
+claude-3-5-sonnet-20240620,0.48,2024-06-20,Anthropic,2024-07-17,LAB-Bench v3 paper,https://arxiv.org/html/2407.10362v3,labbench-protocolqa-claude
+gpt-4o,0.53,2024-05-13,OpenAI,2024-07-17,LAB-Bench v3 paper,https://arxiv.org/html/2407.10362v3,labbench-protocolqa-gpt4o

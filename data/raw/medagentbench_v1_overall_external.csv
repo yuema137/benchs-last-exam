@@ -1,0 +1,7 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id
+Gemini-1.5-Pro,0.6200,2024-02-15,Google,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-gemini15
+Llama-3.3-70B,0.4633,2024-12-06,Meta,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-llama33
+Qwen2.5-72B-Instruct,0.5133,2024-09-19,Qwen,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-qwen25
+DeepSeek-V3,0.6267,2024-12-26,DeepSeek,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-deepseekv3
+GPT-4o,0.6400,2024-05-13,OpenAI,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-gpt4o
+Claude-3.5-Sonnet-v2,0.6967,2024-10-22,Anthropic,2025-02-12,MedAgentBench paper Table 3,https://arxiv.org/pdf/2501.14654,medagent-sonnet35v2

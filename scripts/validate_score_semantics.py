@@ -9,6 +9,28 @@ ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 REPORT = ROOT / "docs" / "SCORE_ADVERSARIAL_AUDIT.md"
 
+# Values in these groups were checked against the named primary measurement
+# object. Any newly introduced <1% ratio or >100 numeric benchmark must be
+# explicitly reviewed here; otherwise the acceptance gate fails instead of
+# normalizing the anomaly away.
+REVIEWED_LOW_RATIO_BENCHMARKS = {
+    "gsm8k": "HELM exact-match results for early models genuinely include zero and sub-1% accuracy.",
+    "browsecomp": "OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.",
+    "frontiermath-tiers-1-3-v2": "The fixed hard-math set permits zero and one/few-item successes.",
+    "frontiermath-tier-4-v2": "The research-level Tier 4 set explicitly contains zero-score model runs.",
+    "arc-agi-2": "ARC Prize reports pure LLMs near zero and public reasoning systems in single digits under pass@2.",
+    "critpt": "The official 70-challenge, five-run leaderboard reports several 0–0.9% accuracies.",
+    "screenspot-pro": "The official micro-average leaderboard reports GPT-4o at 0.8%.",
+    "gso": "The official Opt@1 export includes a zero-task-success GPT-4o run.",
+    "chemm-bench-acl2026": "The pinned ACL table reports zero/near-zero exact molecular-structure task performance.",
+}
+
+REVIEWED_LARGE_NUMERIC_BENCHMARKS = {
+    "vending-bench-2": "Simulated business outcome denominated in dollars, not percent.",
+    "gdpval-aa-v2": "Unbounded Elo-like rating, not percent.",
+    "metr-time-horizon-1-1": "Human-equivalent task duration in minutes, not percent.",
+}
+
 
 def main():
     payload = json.loads(SNAPSHOT.read_text())
@@ -16,6 +38,8 @@ def main():
     low_ratios = []
     baseline_undershoots = []
     large_numeric = []
+    low_ratio_counts = {}
+    large_numeric_counts = {}
 
     for benchmark in payload["benchmarks"]:
         score_format = benchmark.get("score_format", "ratio")
@@ -33,9 +57,11 @@ def main():
                     errors.append(f"{label}: ratio score is outside [0, 1]")
                 elif score < 0.01:
                     low_ratios.append(label)
+                    low_ratio_counts[benchmark["id"]] = low_ratio_counts.get(benchmark["id"], 0) + 1
             elif score_format == "number":
                 if score > 100:
                     large_numeric.append(label)
+                    large_numeric_counts[benchmark["id"]] = large_numeric_counts.get(benchmark["id"], 0) + 1
             else:
                 errors.append(f"{benchmark['id']}: unknown score_format {score_format!r}")
 
@@ -63,6 +89,13 @@ def main():
             if baseline is None or target is None:
                 errors.append(f"{benchmark['id']}: unbounded numeric metric has normalized progress")
 
+    unexpected_low = set(low_ratio_counts) - set(REVIEWED_LOW_RATIO_BENCHMARKS)
+    unexpected_large = set(large_numeric_counts) - set(REVIEWED_LARGE_NUMERIC_BENCHMARKS)
+    if unexpected_low:
+        errors.append(f"unreviewed <1% ratio benchmark(s): {sorted(unexpected_low)}")
+    if unexpected_large:
+        errors.append(f"unreviewed >100 numeric benchmark(s): {sorted(unexpected_large)}")
+
     lines = [
         "# Adversarial Score-Semantics Audit",
         "",
@@ -85,10 +118,22 @@ def main():
         "## Low ratio observations (<1%)",
         "",
     ]
+    for benchmark_id in sorted(low_ratio_counts):
+        lines.append(
+            f"- **{benchmark_id}** — {low_ratio_counts[benchmark_id]} observations. "
+            f"{REVIEWED_LOW_RATIO_BENCHMARKS[benchmark_id]}"
+        )
+    lines.extend(["", "### Observation sample", ""])
     lines.extend(f"- {item}" for item in low_ratios[:60])
     if len(low_ratios) > 60:
         lines.append(f"- …and {len(low_ratios) - 60} more canonical low-score observations.")
     lines.extend(["", "## Large unbounded numeric observations (>100)", ""])
+    for benchmark_id in sorted(large_numeric_counts):
+        lines.append(
+            f"- **{benchmark_id}** — {large_numeric_counts[benchmark_id]} observations. "
+            f"{REVIEWED_LARGE_NUMERIC_BENCHMARKS[benchmark_id]}"
+        )
+    lines.extend(["", "### Observation sample", ""])
     lines.extend(f"- {item}" for item in large_numeric[:30])
     if len(large_numeric) > 30:
         lines.append(f"- …and {len(large_numeric) - 30} more numeric observations.")

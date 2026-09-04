@@ -52,7 +52,7 @@ const storyNav = document.createElement("nav"); storyNav.className = "story-tabs
 storyNav.innerHTML = `<button class="story-tab" data-view="leaderboard">Leaderboard</button>${STORY_VIEWS.map(view => `<button class="story-tab" data-view="${view}"></button>`).join("")}`;
 document.querySelector(".hero")?.after(storyNav);
 const storyDescription = document.createElement("section"); storyDescription.id = "story-description"; storyDescription.className = "story-description"; storyDescription.hidden = true; storyNav.after(storyDescription);
-const DOMAIN_LABELS = {"General knowledge & reasoning":"综合知识与推理", Mathematics:"数学", Science:"科学", Physics:"物理", Chemistry:"化学", "Life Science":"生命科学", "Materials Science":"材料科学", Engineering:"工程", Coding:"Coding", "Abstract reasoning":"抽象推理", Multimodal:"多模态", "Long context":"长上下文", "General agent tasks":"通用 agent 任务", "Software engineering":"软件工程", "Computer use":"Computer use", "Terminal / OS":"Terminal / OS", "Web / tool use":"Web / tool use", "Science / research":"科学 / research"};
+const DOMAIN_LABELS = {"General knowledge & reasoning":"综合知识与推理", Mathematics:"数学", Science:"科学", Physics:"物理", Chemistry:"化学", "Life Science":"生命科学", "Materials Science":"材料科学", Engineering:"工程", "Mechanical & Aerospace Engineering":"机械与航空航天工程", "Electrical Engineering":"电气与电子工程", Robotics:"机器人", "Energy & Infrastructure":"能源与基础设施", "Earth Science":"地球科学", "Nuclear Engineering":"核工程", "Biomedical Engineering":"生物医学工程", Manufacturing:"制造工程", "Computational Engineering":"计算工程", Coding:"Coding", "Abstract reasoning":"抽象推理", Multimodal:"多模态", "Long context":"长上下文", "General agent tasks":"通用 agent 任务", "Software engineering":"软件工程", "Computer use":"Computer use", "Terminal / OS":"Terminal / OS", "Web / tool use":"Web / tool use", "Science / research":"科学 / research"};
 const REFERENCE_ORGANIZATIONS = ["OpenAI", "Anthropic", "Google", "DeepSeek", "Qwen", "Meta", "xAI"];
 const domainLabel = value => state.lang === "zh" ? (DOMAIN_LABELS[value] || value) : value;
 const score = v => v == null ? "N/A" : `${(v * 100).toFixed(1)}%`;
@@ -110,12 +110,9 @@ chart = function(b) { return b.score_format === "number" ? numericChart(b) : rat
 // Keep edge events visible: the plot data layer gets a small horizontal safety margin.
 const chartWithSafetyMargin=chart;
 function keepBoundaryMarkersVisible(svg) {
-  // A capability event at benchmark release is validly plotted at x=0.
-  // Inset only the marker/hit target by a few SVG units so its radius is not
-  // half-hidden by the left border; the observation retains its real date.
-  return svg
-    .replace(/(<circle class="dot [^"]+" cx=")58"/g, '$166"')
-    .replace(/(<circle class="frontier-hit"[^>]*cx=")58"/g, '$166"');
+  // The clip rectangle, not the data coordinates, carries the safety margin.
+  // This keeps a release-date marker centered on its actual frontier vertex.
+  return svg;
 }
 chart=function(b) { if(state.detailTimeline==="capability" && !(b.capability_frontier||b.frontier||[]).length) return `<svg viewBox="0 0 760 340" role="img" aria-label="${state.detailY} frontier for ${b.name}"></svg>`; return keepBoundaryMarkersVisible(chartWithSafetyMargin(b).replace(/<rect x="58" y="22" width="684" height="226"\/>/, '<rect x="50" y="22" width="700" height="226"/>')); };
 function showLeaderboard(event) {

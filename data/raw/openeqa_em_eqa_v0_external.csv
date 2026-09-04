@@ -1,0 +1,4 @@
+Name,LLM-Match,Release date,Organization,Result public date,Source,Source link,id
+Claude 3 Opus 20 frames,0.363,2024-03-04,Anthropic,2024-04-11,OpenEQA paper,https://open-eqa.github.io/assets/pdfs/paper.pdf,openeqa-claude3-opus
+Gemini 1.0 Pro Vision 15 frames,0.449,2023-12-06,Google,2024-04-11,OpenEQA paper,https://open-eqa.github.io/assets/pdfs/paper.pdf,openeqa-gemini-pro-vision
+GPT-4V 50 frames,0.553,2023-09-25,OpenAI,2024-04-11,OpenEQA paper,https://open-eqa.github.io/assets/pdfs/paper.pdf,openeqa-gpt4v

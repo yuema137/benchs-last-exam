@@ -1,0 +1,7 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Claude-3.5-Haiku-20241022,0.1776,2024-10-22,Anthropic,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-claude-haiku
+Qwen2.5-72B-Instruct,0.1890,2024-09-19,Qwen,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-qwen25
+Gemini-1.5-Pro-002,0.1967,2024-09-24,Google,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-gemini15
+LLaMA-3.3-70B-Instruct,0.2449,2024-12-06,Meta,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-llama33
+GPT-4o-2024-11-20,0.3037,2024-11-20,OpenAI,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-gpt4o
+DeepSeek-R1,0.3776,2025-01-20,DeepSeek,2025-06-06,MedXpertQA v3 paper,https://arxiv.org/html/2501.18362v3,medxpertqa-deepseek-r1
