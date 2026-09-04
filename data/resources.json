@@ -1,5 +1,22 @@
 [
   {
+    "id": "resource-aider-llm-leaderboards",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Aider LLM Leaderboards",
+    "url": "Aider LLM Leaderboards",
+    "publisher": "Aider LLM Leaderboards",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-http-arxiv-org-abs-2112-11446",
     "resource_scope": [
       "benchmark",
@@ -632,6 +649,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-cognition-com-frontiercode",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://cognition.com/frontiercode",
+    "url": "https://cognition.com/frontiercode",
+    "publisher": "https://cognition.com/frontiercode",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm",
@@ -10431,6 +10465,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-osworld-v2-xlang-ai",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://osworld-v2.xlang.ai/",
+    "url": "https://osworld-v2.xlang.ai/",
+    "publisher": "https://osworld-v2.xlang.ai/",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0",
     "resource_scope": [
       "benchmark",
@@ -10555,9 +10606,9 @@
     ],
     "entity_id": null,
     "resource_type": "official_leaderboard",
-    "title": "Terminal-Bench v2 Leaderboard",
+    "title": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
     "url": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
-    "publisher": "Terminal-Bench v2 Leaderboard",
+    "publisher": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,

@@ -3,6 +3,23 @@
   "source": "Curated benchmark exports; see resource registry for source lineage",
   "resources": [
     {
+      "id": "resource-aider-llm-leaderboards",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "Aider LLM Leaderboards",
+      "url": "Aider LLM Leaderboards",
+      "publisher": "Aider LLM Leaderboards",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+    },
+    {
       "id": "resource-http-arxiv-org-abs-2112-11446",
       "resource_scope": [
         "benchmark",
@@ -635,6 +652,23 @@
       "watch": false,
       "last_checked_at": null,
       "notes": null
+    },
+    {
+      "id": "resource-https-cognition-com-frontiercode",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "https://cognition.com/frontiercode",
+      "url": "https://cognition.com/frontiercode",
+      "publisher": "https://cognition.com/frontiercode",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
     },
     {
       "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm",
@@ -10434,6 +10468,23 @@
       "notes": null
     },
     {
+      "id": "resource-https-osworld-v2-xlang-ai",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "https://osworld-v2.xlang.ai/",
+      "url": "https://osworld-v2.xlang.ai/",
+      "publisher": "https://osworld-v2.xlang.ai/",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+    },
+    {
       "id": "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0",
       "resource_scope": [
         "benchmark",
@@ -10558,9 +10609,9 @@
       ],
       "entity_id": null,
       "resource_type": "official_leaderboard",
-      "title": "Terminal-Bench v2 Leaderboard",
+      "title": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
       "url": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
-      "publisher": "Terminal-Bench v2 Leaderboard",
+      "publisher": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
       "authority": "trusted_secondary",
       "active": true,
       "watch": false,
@@ -11728,7 +11779,7 @@
       "release_date": "2026-02-05",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -11833,7 +11884,7 @@
       "release_date": "2026-06-09",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -11854,7 +11905,7 @@
       "release_date": "2026-09-01",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1",
+        "resource-https-cognition-com-frontiercode",
         "resource-https-www-anthropic-com-claude-fable"
       ],
       "roles": [
@@ -12848,7 +12899,7 @@
       "release_date": "2026-04-16",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -12932,7 +12983,7 @@
       "release_date": "2026-05-28",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13247,7 +13298,7 @@
       "release_date": "2026-07-24",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-os-world-github-io"
+        "resource-https-osworld-v2-xlang-ai"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13268,7 +13319,7 @@
       "release_date": "2026-07-24",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-os-world-github-io"
+        "resource-https-osworld-v2-xlang-ai"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13751,7 +13802,7 @@
       "release_date": "2026-06-30",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -14129,7 +14180,7 @@
       "release_date": "2026-05-18",
       "organization": "Cursor",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -14633,7 +14684,7 @@
       "release_date": "2026-07-31",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -14738,7 +14789,7 @@
       "release_date": "2026-04-24",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -16191,7 +16242,7 @@
       "release_date": "2026-02-19",
       "organization": "Google DeepMind",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -16485,7 +16536,7 @@
       "release_date": "2026-07-21",
       "organization": "Google DeepMind",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -16590,7 +16641,7 @@
       "release_date": "2026-08-13",
       "organization": "Google DeepMind",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -18439,7 +18490,7 @@
       "release_date": "2025-11-12",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -18943,7 +18994,7 @@
       "release_date": "2026-02-05",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -19027,7 +19078,7 @@
       "release_date": "2026-03-05",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -19237,7 +19288,7 @@
       "release_date": "2026-03-17",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -19678,7 +19729,7 @@
       "release_date": "2026-04-23",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -19909,7 +19960,7 @@
       "release_date": "2026-07-09",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20077,7 +20128,7 @@
       "release_date": "2026-07-09",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20266,7 +20317,7 @@
       "release_date": "2026-07-09",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20728,7 +20779,7 @@
       "release_date": "2025-08-07",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20966,10 +21017,10 @@
         "contemporary_frontier"
       ],
       "domains": [
-        "Mathematics"
+        "Computer use"
       ],
       "evaluation_types": [
-        "Model"
+        "Agent"
       ],
       "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -21176,7 +21227,7 @@
       "release_date": "2025-08-05",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-aider-llm-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -21512,7 +21563,7 @@
       "release_date": "2025-07-09",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-https-aider-chat-docs-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -21596,7 +21647,7 @@
       "release_date": "2026-07-08",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -21680,7 +21731,7 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1",
+        "resource-https-cognition-com-frontiercode",
         "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
@@ -22485,7 +22536,7 @@
       "release_date": "2026-04-20",
       "organization": "Moonshot",
       "resource_ids": [
-        "resource-https-os-world-github-io"
+        "resource-https-osworld-v2-xlang-ai"
       ],
       "roles": [
         "contemporary_frontier"
@@ -22548,7 +22599,7 @@
       "release_date": "2026-06-12",
       "organization": "Moonshot",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -22653,7 +22704,7 @@
       "release_date": "2026-07-16",
       "organization": "Moonshot",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24021,7 +24072,7 @@
       "release_date": "2026-03-18",
       "organization": "MiniMax",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24042,7 +24093,7 @@
       "release_date": "2026-03-18",
       "organization": "MiniMax",
       "resource_ids": [
-        "resource-https-www-tbench-ai-news-announcement-2-0"
+        "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24084,7 +24135,7 @@
       "release_date": "2026-06-01",
       "organization": "MiniMax",
       "resource_ids": [
-        "resource-https-os-world-github-io"
+        "resource-https-osworld-v2-xlang-ai"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24168,7 +24219,7 @@
       "release_date": "2026-04-28",
       "organization": "Mistral AI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24630,7 +24681,7 @@
       "release_date": "2025-09-05",
       "organization": "Moonshot",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-https-aider-chat-docs-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -24903,7 +24954,7 @@
       "release_date": "2024-09-12",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-https-aider-chat-docs-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -25008,7 +25059,7 @@
       "release_date": "2025-04-16",
       "organization": "OpenAI",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-https-aider-chat-docs-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -26310,7 +26361,7 @@
       "release_date": null,
       "organization": "Unknown",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -26331,7 +26382,7 @@
       "release_date": "2026-06-02",
       "organization": "Alibaba",
       "resource_ids": [
-        "resource-https-os-world-github-io"
+        "resource-https-osworld-v2-xlang-ai"
       ],
       "roles": [
         "contemporary_frontier"
@@ -27339,7 +27390,7 @@
       "release_date": "2025-07-25",
       "organization": "Alibaba",
       "resource_ids": [
-        "resource-https-aider-chat-2024-12-21-polyglot-html"
+        "resource-https-aider-chat-docs-leaderboards"
       ],
       "roles": [
         "contemporary_frontier"
@@ -28453,7 +28504,7 @@
       "release_date": null,
       "organization": "Unknown",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -28474,7 +28525,7 @@
       "release_date": null,
       "organization": "Unknown",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-frontiercode"
       ],
       "roles": [
         "contemporary_frontier"
@@ -111853,9 +111904,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-aider-llm-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "Aider LLM Leaderboards",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114573,9 +114625,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114612,9 +114665,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114651,9 +114705,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114690,9 +114745,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114729,9 +114785,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114768,9 +114825,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114807,9 +114865,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114846,9 +114905,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -114885,9 +114945,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         }
       ],
@@ -115014,9 +115075,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2024-09-12",
           "frontier_observation_ids": [
@@ -115507,9 +115569,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2024-09-12",
           "frontier_observation_ids": [
@@ -116000,9 +116063,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-aider-chat-docs-leaderboards",
             "resource-https-aider-chat-2024-12-21-polyglot-html"
           ],
-          "source": "https://aider.chat/2024/12/21/polyglot.html",
+          "source": "https://aider.chat/docs/leaderboards/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2024-09-12",
           "frontier_observation_ids": [
@@ -116432,6 +116496,7 @@
         "per_task": true,
         "method": "median of reported full-run costs divided by the documented 225-task benchmark size",
         "source_ids": [
+          "resource-aider-llm-leaderboards",
           "resource-https-ai-meta-com-llama-get-started",
           "resource-https-aider-chat-2024-12-21-polyglot-html",
           "resource-https-aider-chat-docs-leaderboards",
@@ -116474,7 +116539,7 @@
         "web",
         "environment"
       ],
-      "metric": "Binary accuracy",
+      "metric": "Partial score",
       "score_format": "ratio",
       "metric_id": "osworld-2-metric-v1",
       "protocol_id": "osworld-2-source-export-v1",
@@ -116488,16 +116553,57 @@
         "zh": "agent \u901a\u8fc7\u5de5\u5177\u64cd\u4f5c\u7535\u8111\uff0c\u5728\u89c4\u5b9a\u7684 task \u548c\u6b65\u6570\u9884\u7b97\u5185\u5b8c\u6210\u76ee\u6807\uff0c\u6700\u540e\u6839\u636e\u7ed3\u679c\u8ba1\u5206\u3002"
       },
       "scoring": {
-        "metric_name": "Binary task success rate",
+        "metric_name": "Partial task score",
         "explanation": {
-          "en": "A task is solved only when its required outcome is completed. The score is the fraction of tasks completed successfully; partial progress is tracked separately.",
-          "zh": "\u53ea\u6709\u5b8c\u6210 task \u8981\u6c42\u7684\u6700\u7ec8\u76ee\u6807\u624d\u7b97\u89e3\u51b3\u3002\u5206\u6570\u662f\u6210\u529f\u5b8c\u6210\u7684 task \u6bd4\u4f8b\uff1b\u90e8\u5206\u8fdb\u5c55\u53e6\u884c\u8bb0\u5f55\u3002"
+          "en": "The benchmark assigns partial credit for progress toward the requested computer-use outcome. The score is the average partial credit across tasks; it is distinct from binary task success.",
+          "zh": "benchmark \u4f1a\u6839\u636e computer-use task \u7684\u5b8c\u6210\u8fdb\u5ea6\u7ed9\u90e8\u5206\u5206\u6570\u3002\u6700\u7ec8\u5206\u6570\u662f\u6240\u6709 task \u7684\u5e73\u5747 partial credit\uff0c\u548c binary task success \u4e0d\u662f\u540c\u4e00\u4e2a\u6307\u6807\u3002"
         }
       },
       "evaluation_target": "environment_outcome",
-      "observation_count": 16,
+      "observation_count": 17,
       "observations": [
         {
+          "observation_id": "obs-osworld-2-gpt-6-astra",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-6-astra",
+          "model_family_id": "openai-gpt-6-astra",
+          "model": "GPT-6 Astra",
+          "organization": "OpenAI",
+          "score": 0.726,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-09-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-09-03",
+          "date_kind": "unknown",
+          "capability_date": "2026-09-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-gpt-6-astra",
+            "resource-https-os-world-github-io",
+            "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+          ],
+          "source": "https://openai.com/index/gpt-6-astra/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
           "observation_id": "obs-osworld-2-claude-opus-4-8-max",
           "benchmark_id": "osworld-2",
           "benchmark_version_id": "osworld-2-canonical",
@@ -116505,12 +116611,12 @@
           "model_family_id": "anthropic-claude-opus-4-8-max",
           "model": "Claude Opus 4.8 (max)",
           "organization": "Anthropic",
-          "score": 0.20600000000000002,
+          "score": 0.5479999999999999,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-05-28",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116531,9 +116637,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116544,12 +116651,12 @@
           "model_family_id": "anthropic-claude-opus-4-8-max",
           "model": "Claude Opus 4.8 (max)",
           "organization": "Anthropic",
-          "score": 0.1852,
+          "score": 0.4933,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-05-28",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116570,9 +116677,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116583,12 +116691,12 @@
           "model_family_id": "anthropic-claude-opus-4-7-max",
           "model": "Claude Opus 4.7 (max)",
           "organization": "Anthropic",
-          "score": 0.182,
+          "score": 0.4891,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-16",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116609,9 +116717,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116622,12 +116731,12 @@
           "model_family_id": "anthropic-claude-opus-4-7-max",
           "model": "Claude Opus 4.7 (max)",
           "organization": "Anthropic",
-          "score": 0.139,
+          "score": 0.49100000000000005,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-16",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116648,9 +116757,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116661,12 +116771,12 @@
           "model_family_id": "anthropic-claude-sonnet-4-6-medium",
           "model": "Claude Sonnet 4.6 (medium)",
           "organization": "Anthropic",
-          "score": 0.09300000000000001,
+          "score": 0.33899999999999997,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-02-17",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116687,9 +116797,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116700,12 +116811,12 @@
           "model_family_id": "anthropic-claude-sonnet-4-6-max",
           "model": "Claude Sonnet 4.6 (max)",
           "organization": "Anthropic",
-          "score": 0.083,
+          "score": 0.41500000000000004,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-02-17",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116726,9 +116837,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116739,12 +116851,12 @@
           "model_family_id": "openai-gpt-5-5-xhigh",
           "model": "GPT-5.5 (xhigh)",
           "organization": "OpenAI",
-          "score": 0.13,
+          "score": 0.495,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-23",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116765,9 +116877,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116778,12 +116891,12 @@
           "model_family_id": "minimax-minimax-m3-enabled",
           "model": "MiniMax M3 (enabled)",
           "organization": "MiniMax",
-          "score": 0.046,
+          "score": 0.223,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-06-01",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116804,9 +116917,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116817,12 +116931,12 @@
           "model_family_id": "moonshot-kimi-2-6-enabled",
           "model": "Kimi 2.6 (enabled)",
           "organization": "Moonshot",
-          "score": 0.046,
+          "score": 0.22100000000000003,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-20",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116843,9 +116957,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116856,12 +116971,12 @@
           "model_family_id": "alibaba-qwen-3-7-plus-thinking",
           "model": "Qwen 3.7-Plus (thinking)",
           "organization": "Alibaba",
-          "score": 0.027999999999999997,
+          "score": 0.215,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-06-02",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116882,9 +116997,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116895,12 +117011,12 @@
           "model_family_id": "anthropic-claude-opus-5-low",
           "model": "Claude Opus 5 (low)",
           "organization": "Anthropic",
-          "score": 0.2232,
+          "score": 0.5489,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116921,9 +117037,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116934,12 +117051,12 @@
           "model_family_id": "anthropic-claude-opus-5-medium",
           "model": "Claude Opus 5 (medium)",
           "organization": "Anthropic",
-          "score": 0.25329999999999997,
+          "score": 0.6049,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116960,9 +117077,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -116973,12 +117091,12 @@
           "model_family_id": "anthropic-claude-opus-5-high",
           "model": "Claude Opus 5 (high)",
           "organization": "Anthropic",
-          "score": 0.2898,
+          "score": 0.6379,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -116999,9 +117117,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -117012,12 +117131,12 @@
           "model_family_id": "anthropic-claude-opus-5-xhigh",
           "model": "Claude Opus 5 (xhigh)",
           "organization": "Anthropic",
-          "score": 0.30210000000000004,
+          "score": 0.6767000000000001,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117038,9 +117157,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -117051,12 +117171,12 @@
           "model_family_id": "anthropic-claude-opus-5-max",
           "model": "Claude Opus 5 (max)",
           "organization": "Anthropic",
-          "score": 0.3143,
+          "score": 0.6831,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117077,9 +117197,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -117090,12 +117211,12 @@
           "model_family_id": "openai-gpt-5-6-sol-max",
           "model": "GPT-5.6 Sol (max)",
           "organization": "OpenAI",
-          "score": 0.27340000000000003,
+          "score": 0.6272,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-09",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117116,27 +117237,28 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         }
       ],
       "frontier": [
         {
-          "observation_id": "obs-osworld-2-claude-sonnet-4-6-medium",
+          "observation_id": "obs-osworld-2-claude-sonnet-4-6-max",
           "benchmark_id": "osworld-2",
           "benchmark_version_id": "osworld-2-canonical",
-          "model_id": "model-claude-sonnet-4-6-medium",
-          "model_family_id": "anthropic-claude-sonnet-4-6-medium",
-          "model": "Claude Sonnet 4.6 (medium)",
+          "model_id": "model-claude-sonnet-4-6-max",
+          "model_family_id": "anthropic-claude-sonnet-4-6-max",
+          "model": "Claude Sonnet 4.6 (max)",
           "organization": "Anthropic",
-          "score": 0.09300000000000001,
+          "score": 0.41500000000000004,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-02-17",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117157,14 +117279,15 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-17",
           "frontier_observation_ids": [
-            "obs-osworld-2-claude-sonnet-4-6-max",
-            "obs-osworld-2-claude-sonnet-4-6-medium"
+            "obs-osworld-2-claude-sonnet-4-6-medium",
+            "obs-osworld-2-claude-sonnet-4-6-max"
           ]
         },
         {
@@ -117175,12 +117298,12 @@
           "model_family_id": "anthropic-claude-opus-4-7-max",
           "model": "Claude Opus 4.7 (max)",
           "organization": "Anthropic",
-          "score": 0.182,
+          "score": 0.49100000000000005,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-16",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117201,14 +117324,59 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
             "obs-osworld-2-claude-opus-4-7-max",
             "obs-osworld-2-claude-opus-4-7-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-5-5-xhigh",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-5-5-xhigh",
+          "model_family_id": "openai-gpt-5-5-xhigh",
+          "model": "GPT-5.5 (xhigh)",
+          "organization": "OpenAI",
+          "score": 0.495,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-04-23",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-04-23",
+          "date_kind": "model release date",
+          "capability_date": "2026-04-23",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
+            "resource-https-os-world-github-io"
+          ],
+          "source": "https://osworld-v2.xlang.ai/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-04-23",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-5-5-xhigh"
           ]
         },
         {
@@ -117219,12 +117387,12 @@
           "model_family_id": "anthropic-claude-opus-4-8-max",
           "model": "Claude Opus 4.8 (max)",
           "organization": "Anthropic",
-          "score": 0.20600000000000002,
+          "score": 0.5479999999999999,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-05-28",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117245,9 +117413,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -117263,12 +117432,12 @@
           "model_family_id": "openai-gpt-5-6-sol-max",
           "model": "GPT-5.6 Sol (max)",
           "organization": "OpenAI",
-          "score": 0.27340000000000003,
+          "score": 0.6272,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-09",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117289,9 +117458,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-09",
           "frontier_observation_ids": [
@@ -117306,12 +117476,12 @@
           "model_family_id": "anthropic-claude-opus-5-max",
           "model": "Claude Opus 5 (max)",
           "organization": "Anthropic",
-          "score": 0.3143,
+          "score": 0.6831,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117332,9 +117502,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-24",
           "frontier_observation_ids": [
@@ -117343,24 +117514,69 @@
             "obs-osworld-2-claude-opus-5-high",
             "obs-osworld-2-claude-opus-5-xhigh",
             "obs-osworld-2-claude-opus-5-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-6-astra",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-6-astra",
+          "model_family_id": "openai-gpt-6-astra",
+          "model": "GPT-6 Astra",
+          "organization": "OpenAI",
+          "score": 0.726,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-09-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-09-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-09-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-gpt-6-astra",
+            "resource-https-os-world-github-io",
+            "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+          ],
+          "source": "https://openai.com/index/gpt-6-astra/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-09-03",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-6-astra"
           ]
         }
       ],
       "frontier_events": [
         {
-          "observation_id": "obs-osworld-2-claude-sonnet-4-6-medium",
+          "observation_id": "obs-osworld-2-claude-sonnet-4-6-max",
           "benchmark_id": "osworld-2",
           "benchmark_version_id": "osworld-2-canonical",
-          "model_id": "model-claude-sonnet-4-6-medium",
-          "model_family_id": "anthropic-claude-sonnet-4-6-medium",
-          "model": "Claude Sonnet 4.6 (medium)",
+          "model_id": "model-claude-sonnet-4-6-max",
+          "model_family_id": "anthropic-claude-sonnet-4-6-max",
+          "model": "Claude Sonnet 4.6 (max)",
           "organization": "Anthropic",
-          "score": 0.09300000000000001,
+          "score": 0.41500000000000004,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-02-17",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117381,14 +117597,15 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-17",
           "frontier_observation_ids": [
-            "obs-osworld-2-claude-sonnet-4-6-max",
-            "obs-osworld-2-claude-sonnet-4-6-medium"
+            "obs-osworld-2-claude-sonnet-4-6-medium",
+            "obs-osworld-2-claude-sonnet-4-6-max"
           ]
         },
         {
@@ -117399,12 +117616,12 @@
           "model_family_id": "anthropic-claude-opus-4-7-max",
           "model": "Claude Opus 4.7 (max)",
           "organization": "Anthropic",
-          "score": 0.182,
+          "score": 0.49100000000000005,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-16",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117425,14 +117642,59 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
             "obs-osworld-2-claude-opus-4-7-max",
             "obs-osworld-2-claude-opus-4-7-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-5-5-xhigh",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-5-5-xhigh",
+          "model_family_id": "openai-gpt-5-5-xhigh",
+          "model": "GPT-5.5 (xhigh)",
+          "organization": "OpenAI",
+          "score": 0.495,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-04-23",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-04-23",
+          "date_kind": "model release date",
+          "capability_date": "2026-04-23",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
+            "resource-https-os-world-github-io"
+          ],
+          "source": "https://osworld-v2.xlang.ai/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-04-23",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-5-5-xhigh"
           ]
         },
         {
@@ -117443,12 +117705,12 @@
           "model_family_id": "anthropic-claude-opus-4-8-max",
           "model": "Claude Opus 4.8 (max)",
           "organization": "Anthropic",
-          "score": 0.20600000000000002,
+          "score": 0.5479999999999999,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-05-28",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117469,9 +117731,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -117487,12 +117750,12 @@
           "model_family_id": "openai-gpt-5-6-sol-max",
           "model": "GPT-5.6 Sol (max)",
           "organization": "OpenAI",
-          "score": 0.27340000000000003,
+          "score": 0.6272,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-09",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117513,9 +117776,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-09",
           "frontier_observation_ids": [
@@ -117530,12 +117794,12 @@
           "model_family_id": "anthropic-claude-opus-5-max",
           "model": "Claude Opus 5 (max)",
           "organization": "Anthropic",
-          "score": 0.3143,
+          "score": 0.6831,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117556,9 +117820,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-24",
           "frontier_observation_ids": [
@@ -117567,24 +117832,69 @@
             "obs-osworld-2-claude-opus-5-high",
             "obs-osworld-2-claude-opus-5-xhigh",
             "obs-osworld-2-claude-opus-5-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-6-astra",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-6-astra",
+          "model_family_id": "openai-gpt-6-astra",
+          "model": "GPT-6 Astra",
+          "organization": "OpenAI",
+          "score": 0.726,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-09-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-09-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-09-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-gpt-6-astra",
+            "resource-https-os-world-github-io",
+            "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+          ],
+          "source": "https://openai.com/index/gpt-6-astra/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-09-03",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-6-astra"
           ]
         }
       ],
       "capability_frontier": [
         {
-          "observation_id": "obs-osworld-2-claude-sonnet-4-6-medium",
+          "observation_id": "obs-osworld-2-claude-sonnet-4-6-max",
           "benchmark_id": "osworld-2",
           "benchmark_version_id": "osworld-2-canonical",
-          "model_id": "model-claude-sonnet-4-6-medium",
-          "model_family_id": "anthropic-claude-sonnet-4-6-medium",
-          "model": "Claude Sonnet 4.6 (medium)",
+          "model_id": "model-claude-sonnet-4-6-max",
+          "model_family_id": "anthropic-claude-sonnet-4-6-max",
+          "model": "Claude Sonnet 4.6 (max)",
           "organization": "Anthropic",
-          "score": 0.09300000000000001,
+          "score": 0.41500000000000004,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-02-17",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117605,14 +117915,15 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-17",
           "frontier_observation_ids": [
-            "obs-osworld-2-claude-sonnet-4-6-max",
-            "obs-osworld-2-claude-sonnet-4-6-medium"
+            "obs-osworld-2-claude-sonnet-4-6-medium",
+            "obs-osworld-2-claude-sonnet-4-6-max"
           ]
         },
         {
@@ -117623,12 +117934,12 @@
           "model_family_id": "anthropic-claude-opus-4-7-max",
           "model": "Claude Opus 4.7 (max)",
           "organization": "Anthropic",
-          "score": 0.182,
+          "score": 0.49100000000000005,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-04-16",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117649,14 +117960,59 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
             "obs-osworld-2-claude-opus-4-7-max",
             "obs-osworld-2-claude-opus-4-7-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-5-5-xhigh",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-5-5-xhigh",
+          "model_family_id": "openai-gpt-5-5-xhigh",
+          "model": "GPT-5.5 (xhigh)",
+          "organization": "OpenAI",
+          "score": 0.495,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-04-23",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-04-23",
+          "date_kind": "model release date",
+          "capability_date": "2026-04-23",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
+            "resource-https-os-world-github-io"
+          ],
+          "source": "https://osworld-v2.xlang.ai/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-04-23",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-5-5-xhigh"
           ]
         },
         {
@@ -117667,12 +118023,12 @@
           "model_family_id": "anthropic-claude-opus-4-8-max",
           "model": "Claude Opus 4.8 (max)",
           "organization": "Anthropic",
-          "score": 0.20600000000000002,
+          "score": 0.5479999999999999,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-05-28",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117693,9 +118049,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -117711,12 +118068,12 @@
           "model_family_id": "openai-gpt-5-6-sol-max",
           "model": "GPT-5.6 Sol (max)",
           "organization": "OpenAI",
-          "score": 0.27340000000000003,
+          "score": 0.6272,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-09",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117737,9 +118094,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-09",
           "frontier_observation_ids": [
@@ -117754,12 +118112,12 @@
           "model_family_id": "anthropic-claude-opus-5-max",
           "model": "Claude Opus 5 (max)",
           "organization": "Anthropic",
-          "score": 0.3143,
+          "score": 0.6831,
           "reported_cost_per_task": null,
           "metric_id": "osworld-2-metric-v1",
           "protocol_id": "osworld-2-source-export-v1",
-          "metric": "Binary accuracy",
-          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
           "model_release_date": "2026-07-24",
           "evaluation_date": null,
           "result_public_date": null,
@@ -117780,9 +118138,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-osworld-v2-xlang-ai",
             "resource-https-os-world-github-io"
           ],
-          "source": "https://os-world.github.io/",
+          "source": "https://osworld-v2.xlang.ai/",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-07-24",
           "frontier_observation_ids": [
@@ -117791,22 +118150,68 @@
             "obs-osworld-2-claude-opus-5-high",
             "obs-osworld-2-claude-opus-5-xhigh",
             "obs-osworld-2-claude-opus-5-max"
+          ]
+        },
+        {
+          "observation_id": "obs-osworld-2-gpt-6-astra",
+          "benchmark_id": "osworld-2",
+          "benchmark_version_id": "osworld-2-canonical",
+          "model_id": "model-gpt-6-astra",
+          "model_family_id": "openai-gpt-6-astra",
+          "model": "GPT-6 Astra",
+          "organization": "OpenAI",
+          "score": 0.726,
+          "reported_cost_per_task": null,
+          "metric_id": "osworld-2-metric-v1",
+          "protocol_id": "osworld-2-source-export-v1",
+          "metric": "Partial score",
+          "evaluation_protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+          "model_release_date": "2026-09-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-09-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-09-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-gpt-6-astra",
+            "resource-https-os-world-github-io",
+            "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+          ],
+          "source": "https://openai.com/index/gpt-6-astra/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-09-03",
+          "frontier_observation_ids": [
+            "obs-osworld-2-gpt-6-astra"
           ]
         }
       ],
       "reported_frontier": [],
       "historical_frontier": [],
       "retrospective_observations": [],
-      "observed_frontier": 0.3143,
-      "capability_frontier_value": 0.3143,
+      "observed_frontier": 0.726,
+      "capability_frontier_value": 0.726,
       "reported_frontier_value": null,
-      "current_frontier": 0.3143,
-      "normalized_progress": 0.3143,
-      "normalized_headroom": 0.6857,
+      "current_frontier": 0.726,
+      "normalized_progress": 0.726,
+      "normalized_headroom": 0.274,
       "threshold_days": {
         "T50": {
-          "status": "right_censored",
-          "days": 69
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2026-05-28"
         },
         "T80": {
           "status": "right_censored",
@@ -117819,8 +118224,9 @@
       },
       "capability_threshold_days": {
         "T50": {
-          "status": "right_censored",
-          "days": 69
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2026-05-28"
         },
         "T80": {
           "status": "right_censored",
@@ -117845,8 +118251,8 @@
           "reason": "No dated observations are available on this timeline."
         }
       },
-      "velocity_180d": null,
-      "capability_velocity_180d": null,
+      "velocity_180d": 0.04781232323232323,
+      "capability_velocity_180d": 0.04781232323232323,
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
@@ -117938,9 +118344,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -117977,9 +118384,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118016,9 +118424,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118055,9 +118464,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118094,9 +118504,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118133,9 +118544,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118172,9 +118584,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118211,9 +118624,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118290,9 +118704,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118329,9 +118744,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118408,9 +118824,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118447,9 +118864,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118486,9 +118904,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118525,9 +118944,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118721,9 +119141,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118799,9 +119220,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -118995,9 +119417,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -119151,9 +119574,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -119623,9 +120047,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -119702,9 +120127,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -119900,9 +120326,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -120214,9 +120641,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -120253,9 +120681,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -120489,9 +120918,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -121000,9 +121430,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -121078,9 +121509,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -121511,9 +121943,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -121668,9 +122101,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -121707,9 +122141,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -122810,9 +123245,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -124506,9 +124942,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -124624,9 +125061,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -125611,9 +126049,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -126149,9 +126588,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2025-11-12",
           "frontier_observation_ids": [
@@ -126249,9 +126689,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -126313,9 +126754,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-19",
           "frontier_observation_ids": [
@@ -126360,9 +126802,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-05",
           "frontier_observation_ids": [
@@ -126403,9 +126846,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -126633,9 +127077,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2025-11-12",
           "frontier_observation_ids": [
@@ -126733,9 +127178,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -126797,9 +127243,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-19",
           "frontier_observation_ids": [
@@ -126844,9 +127291,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-05",
           "frontier_observation_ids": [
@@ -126887,9 +127335,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -127117,9 +127566,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2025-11-12",
           "frontier_observation_ids": [
@@ -127217,9 +127667,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -127281,9 +127732,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-19",
           "frontier_observation_ids": [
@@ -127328,9 +127780,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-05",
           "frontier_observation_ids": [
@@ -127371,9 +127824,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0",
             "resource-https-www-tbench-ai-news-announcement-2-0"
           ],
-          "source": "https://www.tbench.ai/news/announcement-2-0",
+          "source": "https://www.tbench.ai/leaderboard/terminal-bench/2.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -127531,9 +127985,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127570,9 +128025,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127609,10 +128065,11 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1",
             "resource-https-www-anthropic-com-claude-fable"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127649,10 +128106,11 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1",
             "resource-https-x-ai-news-grok-4-6"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127689,9 +128147,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127728,9 +128187,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127767,9 +128227,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127806,9 +128267,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127845,9 +128307,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127884,9 +128347,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127923,9 +128387,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -127962,9 +128427,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128001,9 +128467,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128040,9 +128507,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128079,9 +128547,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128118,9 +128587,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128157,9 +128627,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128196,9 +128667,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128235,9 +128707,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128274,9 +128747,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128313,9 +128787,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128352,9 +128827,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128391,9 +128867,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128430,9 +128907,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128469,9 +128947,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128508,9 +128987,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128547,9 +129027,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128586,9 +129067,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128625,9 +129107,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128664,9 +129147,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128703,9 +129187,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128742,9 +129227,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128781,9 +129267,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
@@ -128820,9 +129307,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         }
       ],
@@ -128861,9 +129349,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -128904,9 +129393,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-17",
           "frontier_observation_ids": [
@@ -128947,9 +129437,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
@@ -128990,9 +129481,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -129033,9 +129525,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -129076,9 +129569,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-06-09",
           "frontier_observation_ids": [
@@ -129121,9 +129615,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -129164,9 +129659,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-17",
           "frontier_observation_ids": [
@@ -129207,9 +129703,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
@@ -129250,9 +129747,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -129293,9 +129791,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -129336,9 +129835,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-06-09",
           "frontier_observation_ids": [
@@ -129381,9 +129881,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-02-05",
           "frontier_observation_ids": [
@@ -129424,9 +129925,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-03-17",
           "frontier_observation_ids": [
@@ -129467,9 +129969,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-16",
           "frontier_observation_ids": [
@@ -129510,9 +130013,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-04-23",
           "frontier_observation_ids": [
@@ -129553,9 +130057,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-05-28",
           "frontier_observation_ids": [
@@ -129596,9 +130101,10 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
+            "resource-https-cognition-com-frontiercode",
             "resource-https-cognition-com-blog-frontier-code-1-1"
           ],
-          "source": "https://cognition.com/blog/frontier-code-1.1",
+          "source": "https://cognition.com/frontiercode",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "plot_date": "2026-06-09",
           "frontier_observation_ids": [

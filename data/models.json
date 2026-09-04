@@ -1077,7 +1077,7 @@
     "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1182,7 +1182,7 @@
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1203,7 +1203,7 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1",
+      "resource-https-cognition-com-frontiercode",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
@@ -2197,7 +2197,7 @@
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2281,7 +2281,7 @@
     "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2596,7 +2596,7 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-os-world-github-io"
+      "resource-https-osworld-v2-xlang-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2617,7 +2617,7 @@
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-os-world-github-io"
+      "resource-https-osworld-v2-xlang-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3100,7 +3100,7 @@
     "release_date": "2026-06-30",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3478,7 +3478,7 @@
     "release_date": "2026-05-18",
     "organization": "Cursor",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3982,7 +3982,7 @@
     "release_date": "2026-07-31",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4087,7 +4087,7 @@
     "release_date": "2026-04-24",
     "organization": "DeepSeek",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -5540,7 +5540,7 @@
     "release_date": "2026-02-19",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -5834,7 +5834,7 @@
     "release_date": "2026-07-21",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -5939,7 +5939,7 @@
     "release_date": "2026-08-13",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -7788,7 +7788,7 @@
     "release_date": "2025-11-12",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -8292,7 +8292,7 @@
     "release_date": "2026-02-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -8376,7 +8376,7 @@
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -8586,7 +8586,7 @@
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9027,7 +9027,7 @@
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9258,7 +9258,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9426,7 +9426,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9615,7 +9615,7 @@
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10077,7 +10077,7 @@
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10315,10 +10315,10 @@
       "contemporary_frontier"
     ],
     "domains": [
-      "Mathematics"
+      "Computer use"
     ],
     "evaluation_types": [
-      "Model"
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10525,7 +10525,7 @@
     "release_date": "2025-08-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-aider-llm-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10861,7 +10861,7 @@
     "release_date": "2025-07-09",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-https-aider-chat-docs-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10945,7 +10945,7 @@
     "release_date": "2026-07-08",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -11029,7 +11029,7 @@
     "release_date": "2026-08-12",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1",
+      "resource-https-cognition-com-frontiercode",
       "resource-https-x-ai-news-grok-4-6"
     ],
     "roles": [
@@ -11834,7 +11834,7 @@
     "release_date": "2026-04-20",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-os-world-github-io"
+      "resource-https-osworld-v2-xlang-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -11897,7 +11897,7 @@
     "release_date": "2026-06-12",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -12002,7 +12002,7 @@
     "release_date": "2026-07-16",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -13370,7 +13370,7 @@
     "release_date": "2026-03-18",
     "organization": "MiniMax",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -13391,7 +13391,7 @@
     "release_date": "2026-03-18",
     "organization": "MiniMax",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-announcement-2-0"
+      "resource-https-www-tbench-ai-leaderboard-terminal-bench-2-0"
     ],
     "roles": [
       "contemporary_frontier"
@@ -13433,7 +13433,7 @@
     "release_date": "2026-06-01",
     "organization": "MiniMax",
     "resource_ids": [
-      "resource-https-os-world-github-io"
+      "resource-https-osworld-v2-xlang-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -13517,7 +13517,7 @@
     "release_date": "2026-04-28",
     "organization": "Mistral AI",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -13979,7 +13979,7 @@
     "release_date": "2025-09-05",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-https-aider-chat-docs-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -14252,7 +14252,7 @@
     "release_date": "2024-09-12",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-https-aider-chat-docs-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -14357,7 +14357,7 @@
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-https-aider-chat-docs-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -15659,7 +15659,7 @@
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -15680,7 +15680,7 @@
     "release_date": "2026-06-02",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-os-world-github-io"
+      "resource-https-osworld-v2-xlang-ai"
     ],
     "roles": [
       "contemporary_frontier"
@@ -16688,7 +16688,7 @@
     "release_date": "2025-07-25",
     "organization": "Alibaba",
     "resource_ids": [
-      "resource-https-aider-chat-2024-12-21-polyglot-html"
+      "resource-https-aider-chat-docs-leaderboards"
     ],
     "roles": [
       "contemporary_frontier"
@@ -17802,7 +17802,7 @@
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
@@ -17823,7 +17823,7 @@
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-frontiercode"
     ],
     "roles": [
       "contemporary_frontier"
