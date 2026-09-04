@@ -34,8 +34,10 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | ProofBench v1.1 | Model / Mathematics | 2026-08-14 | Formal theorem proving with Lean 4 kernel verification; Vals AI's v1.1 re-grade is modeled separately from v1.0-era results | ADD_WITH_PARTIAL_DATA |
 | DTBench | Model / General knowledge & reasoning | 2026-08-12 | 407 handcrafted decision-theory multiple-choice questions reported as a distinct component of the Conceptual Reasoning Index; the aggregate CRI and attitude questions are excluded | ADD_WITH_PARTIAL_DATA |
 | APEX-Agents | Agent / General agent tasks | 2026-01-20 | Fixed 480-task professional-work benchmark across banking, consulting, and legal workflows; the public leaderboard reports Pass@1 across multiple agent/model generations | ADD_WITH_PARTIAL_DATA |
+| OpenBookQA | Model / Science | 2018-09-07 | Canonical fixed four-choice open-book science QA with a long model-generation record; the open-book facts and commonsense requirement are kept explicit | ADD |
+| BoolQ | Model / General knowledge & reasoning | 2019-05-24 | Canonical fixed yes/no reading-comprehension benchmark with supporting passages and a large longitudinal score export | ADD |
 
-This expansion adds 18 measurement objects across the current batches, not 18 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
+This expansion adds 20 measurement objects across the current batches, not 20 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
 
 ## Deferred candidates
 

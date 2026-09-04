@@ -20619,6 +20619,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mt-nlg-530b",
+    "canonical_name": "MT-NLG 530B",
+    "family_id": "microsoft-nvidia-mt-nlg-530b",
+    "release_date": "2021-10-11",
+    "organization": "Microsoft,NVIDIA",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2203-15556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-multi-agent-experiment-v0-1",
     "canonical_name": "Multi-Agent Experiment v0.1",
     "family_id": "msr-ai-frontiers-multi-agent-experiment-v0-1",
@@ -23076,6 +23097,69 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-phi-1-5-1-3b",
+    "canonical_name": "phi-1.5 (1.3B)",
+    "family_id": "microsoft-phi-1-5",
+    "release_date": "2023-09-11",
+    "organization": "Microsoft",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-05463"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-phi-1-5-web-1-3b",
+    "canonical_name": "phi-1.5-web (1.3B)",
+    "family_id": "unknown-phi-1-5-web",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-05463"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-phi-1-5-web-only-1-3b",
+    "canonical_name": "phi-1.5-web-only (1.3B)",
+    "family_id": "unknown-phi-1-5-web-only",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-05463"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-phi-2",
     "canonical_name": "Phi-2",
     "family_id": "microsoft-phi-2",
@@ -23089,6 +23173,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-phi-2-2-7b",
+    "canonical_name": "Phi-2 2.7b             ",
+    "family_id": "microsoft-phi-2-2-7b",
+    "release_date": "2023-12-12",
+    "organization": "Microsoft",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2404-14219"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science"
     ],
     "evaluation_types": [
       "Model"
@@ -23244,6 +23349,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-phi-3-medium-14b",
+    "canonical_name": "Phi-3-medium 14b       ",
+    "family_id": "microsoft-phi-3-medium-14b",
+    "release_date": "2024-04-23",
+    "organization": "Microsoft",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2404-14219"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-phi-3-mini",
     "canonical_name": "Phi-3-mini",
     "family_id": "microsoft-phi-3-mini",
@@ -23265,6 +23391,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-phi-3-mini-3-8b",
+    "canonical_name": "Phi-3-mini 3.8b        ",
+    "family_id": "microsoft-phi-3-mini-3-8b",
+    "release_date": "2024-04-23",
+    "organization": "Microsoft",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2404-14219"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-phi-3-small",
     "canonical_name": "Phi-3-small",
     "family_id": "microsoft-phi-3-small",
@@ -23278,6 +23425,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-phi-3-small-7b",
+    "canonical_name": "Phi-3-small 7b         ",
+    "family_id": "microsoft-phi-3-small-7b",
+    "release_date": "2024-04-23",
+    "organization": "Microsoft",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2404-14219"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science"
     ],
     "evaluation_types": [
       "Model"
@@ -27404,6 +27572,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-vicuna-13b-v1-1",
+    "canonical_name": "Vicuna-13B (v1.1)",
+    "family_id": "unknown-vicuna-13b",
+    "release_date": "2023-04-12",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-http-arxiv-org-abs-2309-05463"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-vicuna-v1-3-13b",
     "canonical_name": "Vicuna v1.3 (13B)",
     "family_id": "large-model-systems-organization-university-of-california-uc-berkeley-vicuna-v1-3",
@@ -27831,6 +28020,27 @@
     "organization": "Salesforce",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2309-03450"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-xverse",
+    "canonical_name": "XVerse",
+    "family_id": "unknown-xverse",
+    "release_date": null,
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2309-16609"
     ],
     "roles": [
       "contemporary_frontier"

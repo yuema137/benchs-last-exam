@@ -102,6 +102,23 @@
     "notes": null
   },
   {
+    "id": "resource-http-arxiv-org-abs-2203-15556",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Training Compute-Optimal Large Language Models",
+    "url": "http://arxiv.org/abs/2203.15556",
+    "publisher": "Training Compute-Optimal Large Language Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-http-arxiv-org-abs-2302-13971",
     "resource_scope": [
       "benchmark",
@@ -385,6 +402,22 @@
     "url": "http://arxiv.org/abs/2412.19437",
     "publisher": "DeepSeek-V3 Technical Report",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-aclanthology-org-d18-1260",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "OpenBookQA primary source",
+    "url": "https://aclanthology.org/D18-1260/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -1081,6 +1114,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-pdf-2407-21783",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "The Llama 3 Herd of Models",
+    "url": "https://arxiv.org/pdf/2407.21783",
+    "publisher": "The Llama 3 Herd of Models",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-pdf-2409-12186",
     "resource_scope": [
       "benchmark",
@@ -1228,6 +1278,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-boolq",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Stanford HELM",
+    "url": "https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq",
+    "publisher": "Stanford HELM",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm",
@@ -12109,6 +12176,22 @@
     "resource_type": "paper",
     "title": "LongBench v2 primary source",
     "url": "https://github.com/EnvCommons/LongBench-v2/blob/main/README.md",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-github-com-google-research-datasets-boolean-questions",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BoolQ primary source",
+    "url": "https://github.com/google-research-datasets/boolean-questions",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
