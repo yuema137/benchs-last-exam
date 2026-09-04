@@ -1,0 +1,75 @@
+name: Publish BLE Pages Snapshot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/publish-pages-snapshot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ble-snapshot
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate source data and code
+        run: |
+          python3 scripts/validate_provenance.py
+          PYTHONPATH=src python3 -m unittest discover -s tests -v
+          node --check site/app.js
+      - name: Build self-contained BLE snapshot
+        run: python3 scripts/build_pages_snapshot.py --output "$RUNNER_TEMP/ble" --source-sha "$GITHUB_SHA"
+      - name: Validate publication boundary
+        run: |
+          set -euo pipefail
+          test -f "$RUNNER_TEMP/ble/index.html"
+          test -f "$RUNNER_TEMP/ble/app.js"
+          test -f "$RUNNER_TEMP/ble/styles.css"
+          test -f "$RUNNER_TEMP/ble/data/benchmarks.json"
+          test -f "$RUNNER_TEMP/ble/manifest.json"
+          test -z "$(find "$RUNNER_TEMP/ble" -type l -print -quit)"
+          test -z "$(find "$RUNNER_TEMP/ble" -name '*.md' -print -quit)"
+          node --check "$RUNNER_TEMP/ble/app.js"
+          python3 -m json.tool "$RUNNER_TEMP/ble/data/benchmarks.json" >/dev/null
+          python3 -m json.tool "$RUNNER_TEMP/ble/manifest.json" >/dev/null
+      - name: Check out personal site
+        uses: actions/checkout@v4
+        with:
+          repository: yuema137/yuema137.github.io
+          ref: main
+          ssh-key: ${{ secrets.BLE_PERSONAL_SITE_DEPLOY_KEY }}
+          path: personal-site
+          fetch-depth: 0
+      - name: Sync isolated BLE branch
+        id: sync
+        working-directory: personal-site
+        run: |
+          set -euo pipefail
+          git checkout -B auto/ble-sync origin/main
+          mkdir -p ble
+          rsync -a --delete "$RUNNER_TEMP/ble/" ble/
+          if [ -z "$(git status --porcelain -- ble)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ble
+          git commit -m "Update BLE snapshot"
+          git fetch origin auto/ble-sync || true
+          git push --force-with-lease origin HEAD:auto/ble-sync
+          echo "changed=true" >> "$GITHUB_OUTPUT"
