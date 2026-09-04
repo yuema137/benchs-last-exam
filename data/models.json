@@ -6506,6 +6506,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-doubao-1-6-thinking",
+    "canonical_name": "Doubao 1.6 Thinking",
+    "family_id": "bytedance-doubao-1-6-thinking",
+    "release_date": "2025-05-20",
+    "organization": "ByteDance",
+    "resource_ids": [
+      "resource-https-github-com-scienceone-ai-scienceeval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Materials Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-dpmm-cot-base",
     "canonical_name": "DPMM-CoT_Base",
     "family_id": "unknown-dpmm-cot-base",
@@ -25084,6 +25105,27 @@
     ],
     "domains": [
       "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-235b",
+    "canonical_name": "Qwen3 235B",
+    "family_id": "alibaba-qwen-qwen3-235b",
+    "release_date": "2025-04-28",
+    "organization": "Alibaba/Qwen",
+    "resource_ids": [
+      "resource-https-github-com-scienceone-ai-scienceeval"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Materials Science"
     ],
     "evaluation_types": [
       "Model"

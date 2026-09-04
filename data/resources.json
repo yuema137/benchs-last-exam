@@ -945,6 +945,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2505-23982",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MSQA primary source",
+    "url": "https://arxiv.org/abs/2505.23982",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2506-11763",
     "resource_scope": [
       "benchmark"
@@ -12379,6 +12395,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-github-com-scienceone-ai-scienceeval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ScienceEval",
+    "url": "https://github.com/ScienceOne-AI/ScienceEval",
+    "publisher": "ScienceEval",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
