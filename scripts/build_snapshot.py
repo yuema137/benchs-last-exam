@@ -24,6 +24,21 @@ BENCHMARKS = [
 
 REFERENCE_ORGANIZATIONS = {"OpenAI", "Anthropic", "Google", "DeepSeek", "Qwen", "Meta", "xAI"}
 
+MODEL_RELEASE_RESOURCES = {
+    "fable-5-1": {
+        "url": "https://www.anthropic.com/claude/fable",
+        "title": "Claude Fable 5.1 official release page",
+        "resource_type": "release_post",
+        "publisher": "Anthropic",
+    },
+    "gpt-6-astra": {
+        "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "title": "GPT-6 Astra official model page",
+        "resource_type": "model_card",
+        "publisher": "OpenAI",
+    },
+}
+
 BENCHMARKS.extend([
     {"id": "frontiermath-tiers-1-3-v2", "name": "FrontierMath Tiers 1–3 (v2)", "domain": "Mathematics", "file": "frontiermath_tiers_1_3_v2.csv", "score": "Best score (across scorers)", "release": "2026-06-12", "floor": 0.0, "ceiling": 1.0, "source": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3", "summary": {"en": "FrontierMath Tiers 1–3 tests advanced mathematics problems written by experts and checked by executable verifiers.", "zh": "FrontierMath Tiers 1–3 测试专家编写、由可执行 verifier 检查的高难度数学题。"}, "task_format": {"en": "The model writes a Python answer function for each mathematics problem and can use an isolated Python tool while solving.", "zh": "模型需要为每道数学题编写 Python answer function，解题时可以使用隔离的 Python 工具。"}, "scoring": {"metric_name": "Verified task accuracy", "explanation": {"en": "A task counts as correct when the submitted answer passes the benchmark's verifier. The score is the fraction of verified tasks solved.", "zh": "提交的答案通过 benchmark verifier，这道题才算正确。分数就是通过验证的 task 占全部 task 的比例。"}}, "evaluation_target": "final_output"},
     {"id": "arc-agi-2", "name": "ARC-AGI-2", "domain": "Abstract / novel reasoning", "file": "arc_agi_2_external.csv", "score": "Score", "release": "2025-03-24", "floor": 0.0, "ceiling": 1.0, "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025", "summary": {"en": "ARC-AGI-2 tests whether a system can infer abstract transformations from a few visual examples and generalize them to new grids.", "zh": "ARC-AGI-2 测试系统能否从少量视觉示例中推断抽象变换，并把规则泛化到新的网格。"}, "task_format": {"en": "Each task shows example input-output grids. The system must produce exactly two candidate outputs for the test input.", "zh": "每个 task 会给出输入和输出网格示例，系统需要为测试输入生成恰好两个候选输出。"}, "scoring": {"metric_name": "Pass@2 task accuracy", "explanation": {"en": "A task is correct when either of the two submitted outputs exactly matches the ground truth. The final score is the fraction of tasks solved this way.", "zh": "如果提交的两个输出中有一个和标准答案完全一致，这道题就算答对。最终分数是答对 task 的比例。"}}, "evaluation_target": "final_output"},
@@ -130,6 +145,23 @@ def model_family(model, organization):
     return slug(f"{organization}-{re.sub(r'\\s*\\([^)]*\\)', '', model)}")
 
 
+def model_release_resource(resources, model):
+    normalized = slug(model)
+    for key, spec in MODEL_RELEASE_RESOURCES.items():
+        if key in normalized:
+            return register_resource(
+                resources,
+                spec["url"],
+                spec["title"],
+                resource_type=spec["resource_type"],
+                publisher=spec["publisher"],
+                authority="primary",
+                scope=("model",),
+                notes="Official release/model resource for the current frontier model panel.",
+            )
+    return None
+
+
 def parse_dates(row):
     evaluation_date = (row.get("Started at") or "")[:10] or None
     model_release_date = row.get("Release date") or None
@@ -229,6 +261,7 @@ def build_benchmark(spec, resources, models):
             )
             model_id = f"model-{slug(model)}"
             family_id = model_family(model, row.get("Organization") or "unknown")
+            release_resource_id = model_release_resource(resources, model)
             is_math_retro = spec["id"] == "math-level-5"
             retrospective = is_math_retro or bool(
                 evaluation_date and model_release_date and evaluation_date > model_release_date
@@ -239,7 +272,7 @@ def build_benchmark(spec, resources, models):
                 "family_id": family_id,
                 "release_date": model_release_date,
                 "organization": row.get("Organization") or "Unknown",
-                "resource_ids": [source_id],
+                "resource_ids": [source_id] + ([release_resource_id] if release_resource_id else []),
                 "roles": ["contemporary_frontier"],
                 "domains": [spec["domain"]],
                 "evaluation_types": [spec["evaluation_type"]],
@@ -279,7 +312,7 @@ def build_benchmark(spec, resources, models):
                 "historical_frontier_eligible": False,
                 "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
                 "contemporaneous": not retrospective,
-                "source_ids": [source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id],
+                "source_ids": ([source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id]) + ([release_resource_id] if release_resource_id else []),
                 "source": source_url,
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })

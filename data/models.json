@@ -1203,7 +1203,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-blog-frontier-code-1-1"
+      "resource-https-cognition-com-blog-frontier-code-1-1",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1224,7 +1225,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cursor-com-cn-cursorbench"
+      "resource-https-cursor-com-cn-cursorbench",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1245,7 +1247,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1266,7 +1269,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1287,7 +1291,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1308,7 +1313,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -1329,7 +1335,8 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+      "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10212,7 +10219,8 @@
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-arxiv-org-abs-2311-12022"
+      "resource-https-arxiv-org-abs-2311-12022",
+      "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
     ],
     "roles": [
       "contemporary_frontier"

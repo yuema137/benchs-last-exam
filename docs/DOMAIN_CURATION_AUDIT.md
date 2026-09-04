@@ -65,3 +65,9 @@ ARC-AGI-1 remains in the queue because the current authoritative source establis
 ## Model-panel implication
 
 The new rows add model-generation probes already present in the curated exports. They do not turn the project into a model catalog. A later panel audit should consolidate near-duplicate model snapshots and assign stable family roles, especially for agent benchmarks where the agent scaffold is part of the measurement protocol.
+
+## Current frontier release-resource audit
+
+- Claude Fable 5.1 is represented where a curated score is available for ARC-AGI-2, FrontierMath Tiers 1–3 (v2), FrontierCode 1.1, CursorBench 3.2, and GDPval-AA v2. Its model records now point to Anthropic's official Claude Fable release page in addition to the score source.
+- GPT-6 Astra is represented where a curated score is available for GPQA Diamond and FrontierMath Tiers 1–3 (v2). Its model records now point to OpenAI's official GPT-6 Astra model page in addition to the score source.
+- No score is synthesized for a benchmark without an authoritative result. The absence of a new-model observation is retained as missing evidence rather than treated as a zero.

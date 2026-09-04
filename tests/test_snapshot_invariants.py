@@ -38,6 +38,29 @@ class SnapshotInvariantTests(unittest.TestCase):
                     release = date.fromisoformat(benchmark["release"])
                     self.assertEqual(item["days"], max(0, (snapshot_date - release).days), benchmark["name"])
 
+    def test_every_benchmark_has_a_resolvable_detail_record(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        resources = {resource["id"] for resource in payload["resources"]}
+        for benchmark in self.benchmarks:
+            self.assertTrue(benchmark["name"], benchmark["id"])
+            self.assertTrue(benchmark["source"], benchmark["id"])
+            self.assertTrue(benchmark["resource_ids"], benchmark["id"])
+            self.assertTrue(set(benchmark["resource_ids"]).issubset(resources), benchmark["id"])
+            self.assertTrue(benchmark["observations"], benchmark["id"])
+
+    def test_recent_frontier_models_have_official_release_resources(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        resources = {resource["id"]: resource["url"] for resource in payload["resources"]}
+        models = [model for model in payload["models"] if any(
+            marker in model["canonical_name"].lower() for marker in ("fable 5.1", "gpt-6-astra")
+        )]
+        self.assertTrue(models)
+        for model in models:
+            self.assertTrue(any(resources.get(resource_id) in {
+                "https://www.anthropic.com/claude/fable",
+                "https://developers.openai.com/api/docs/models/gpt-6-astra",
+            } for resource_id in model["resource_ids"]), model["canonical_name"])
+
 
 if __name__ == "__main__":
     unittest.main()
