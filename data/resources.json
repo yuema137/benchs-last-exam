@@ -566,6 +566,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2505-08775",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "HealthBench source",
+    "url": "https://arxiv.org/abs/2505.08775",
+    "publisher": null,
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2509-07968",
     "resource_scope": [
       "benchmark"
@@ -11616,6 +11633,22 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-openai-com-index-healthbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "HealthBench primary source",
+    "url": "https://openai.com/index/healthbench/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-openai-com-index-introducing-swe-bench-verified",

@@ -12,7 +12,7 @@ source-backed.
 | MMLU-Pro | Important harder successor to MMLU with broad model-report usage | Initial six-point mini-leaderboard series is now included; expand only with matching prompt/protocol evidence | Review trajectory and protocol scope |
 | IFEval | Canonical verifiable instruction-following evaluation | Need a stable version and comparable model-generation results | Human review |
 | SimpleQA | Important frontier factuality benchmark | The available local export is SimpleQA Verified, a distinct 1,000-question object | Added as SimpleQA Verified; keep original SimpleQA separate |
-| HealthBench | High-value physician-rubric health evaluation | Model scores use a model-based grader and variants need explicit separation | Human review |
+| HealthBench | High-value physician-rubric health evaluation | Overall, Consensus, and Hard are separate variants; current core uses the overall score series | Added to core; review variant coverage |
 | GeneBench-Pro | Research-level scientific-agent evaluation | New benchmark with limited longitudinal coverage | Human review |
 | HumanEval | Canonical historical coding benchmark | No clean local model-generation series currently checked in | Human review |
 | BigCodeBench | More realistic code-generation tasks than HumanEval | Protocol/configuration and score series need audit | Human review |
