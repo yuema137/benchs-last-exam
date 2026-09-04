@@ -6737,6 +6737,71 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-fable-5",
+    "canonical_name": "Fable 5",
+    "family_id": "anthropic-fable-5",
+    "release_date": "2026-06-09",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-fable-5-1-claude-fable-5-1",
+    "canonical_name": "Fable 5.1 [claude-fable-5.1]",
+    "family_id": "anthropic-fable-5-1-claude-fable-5-1",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard",
+      "resource-https-www-anthropic-com-claude-fable"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-fable-5-1-high",
+    "canonical_name": "Fable 5.1 (High)",
+    "family_id": "anthropic-fable-5-1",
+    "release_date": "2026-09-01",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard",
+      "resource-https-www-anthropic-com-claude-fable"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-falcon-180b",
     "canonical_name": "Falcon-180B",
     "family_id": "technology-innovation-institute-falcon-180b",
@@ -7619,6 +7684,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-5-flash-on",
+    "canonical_name": "Gemini 2.5 Flash (On)",
+    "family_id": "google-deepmind-gemini-2-5-flash",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-2-5-flash-preview",
     "canonical_name": "Gemini 2.5 Flash (Preview)",
     "family_id": "google-deepmind-gemini-2-5-flash",
@@ -7845,6 +7931,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-on",
+    "canonical_name": "Gemini 2.5 Pro (On)",
+    "family_id": "google-deepmind-gemini-2-5-pro",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -10242,6 +10349,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-thinking",
+    "canonical_name": "GLM 5 (Thinking)",
+    "family_id": "z-ai-zhipu-ai-glm-5",
+    "release_date": "2026-02-11",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -12725,6 +12853,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-4-responses-gpt-5-4",
+    "canonical_name": "GPT 5.4 [responses/gpt-5.4]",
+    "family_id": "openai-gpt-5-4-responses-gpt-5-4",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-4-xhigh",
     "canonical_name": "GPT-5.4 (xHigh)",
     "family_id": "openai-gpt-5-4",
@@ -13371,6 +13520,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-sol-max-pro",
+    "canonical_name": "GPT 5.6 Sol (Max + Pro)",
+    "family_id": "openai-gpt-5-6-sol",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -16435,6 +16605,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-kimi-k2-6-thinking",
+    "canonical_name": "Kimi K2.6 (Thinking)",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-kimi-k2-7",
     "canonical_name": "Kimi K2.7",
     "family_id": "moonshot-kimi-k2-7",
@@ -19084,6 +19275,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-minimax-2-5",
+    "canonical_name": "Minimax-2.5",
+    "family_id": "minimax-minimax-2-5",
+    "release_date": "2026-02-12",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-minimax-m2",
     "canonical_name": "MiniMax M2",
     "family_id": "minimax-minimax-m2",
@@ -20701,6 +20913,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-nemotron-3-ultra-thinking",
+    "canonical_name": "Nemotron 3 Ultra (Thinking)",
+    "family_id": "nvidia-nemotron-3-ultra",
+    "release_date": "2026-06-04",
+    "organization": "NVIDIA",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-nemotron-4-15b",
     "canonical_name": "Nemotron-4 15B",
     "family_id": "nvidia-nemotron-4-15b",
@@ -22255,6 +22488,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-opus-4-5",
+    "canonical_name": "Opus 4.5",
+    "family_id": "anthropic-opus-4-5",
+    "release_date": "2025-11-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-opus-4-5-thinking-16k",
     "canonical_name": "Opus 4.5 (Thinking, 16K)",
     "family_id": "anthropic-opus-4-5",
@@ -22334,6 +22588,111 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-6-high",
+    "canonical_name": "Opus 4.6 (High)",
+    "family_id": "anthropic-opus-4-6",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-6-max",
+    "canonical_name": "Opus 4.6 (Max)",
+    "family_id": "anthropic-opus-4-6",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-7",
+    "canonical_name": "Opus 4.7",
+    "family_id": "anthropic-opus-4-7",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-4-8",
+    "canonical_name": "Opus 4.8",
+    "family_id": "anthropic-opus-4-8",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-opus-5",
+    "canonical_name": "Opus 5",
+    "family_id": "anthropic-opus-5",
+    "release_date": "2026-07-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -23186,6 +23545,27 @@
     "organization": "Alibaba",
     "resource_ids": [
       "resource-https-andonlabs-com-evals-vending-bench-2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-5-thinking",
+    "canonical_name": "Qwen 3.5 (Thinking)",
+    "family_id": "alibaba-qwen-3-5",
+    "release_date": "2026-02-16",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
     ],
     "roles": [
       "contemporary_frontier"
@@ -26134,6 +26514,69 @@
     ],
     "domains": [
       "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-sonnet-4",
+    "canonical_name": "Sonnet 4",
+    "family_id": "anthropic-sonnet-4",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-sonnet-4-6",
+    "canonical_name": "Sonnet 4.6",
+    "family_id": "anthropic-sonnet-4-6",
+    "release_date": "2026-02-17",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-sonnet-5",
+    "canonical_name": "Sonnet 5",
+    "family_id": "anthropic-sonnet-5",
+    "release_date": "2026-06-30",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Agent"
