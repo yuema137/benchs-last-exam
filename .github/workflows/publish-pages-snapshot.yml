@@ -59,6 +59,7 @@ jobs:
         working-directory: personal-site
         run: |
           set -euo pipefail
+          git remote set-url origin git@github.com:yuema137/yuema137.github.io.git
           git checkout -B auto/ble-sync origin/main
           mkdir -p ble
           rsync -a --delete "$RUNNER_TEMP/ble/" ble/
