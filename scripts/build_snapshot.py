@@ -3,12 +3,16 @@
 
 import csv
 import json
+import re
 from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "site" / "data" / "benchmarks.json"
+RESOURCE_OUT = ROOT / "data" / "resources.json"
+OBSERVATION_OUT = ROOT / "data" / "observations.jsonl"
+MODEL_OUT = ROOT / "data" / "models.json"
 
 BENCHMARKS = [
     {"id": "mmlu", "name": "MMLU", "domain": "General knowledge", "file": "mmlu_external.csv", "score": "EM", "release": "2020-09-07", "floor": 0.25, "ceiling": 1.0, "source": "https://arxiv.org/abs/2009.03300", "summary": {"en": "MMLU tests broad knowledge across academic and professional subjects.", "zh": "MMLU 测试模型在多个学术和专业领域里的综合知识。"}, "task_format": {"en": "Each item is a four-choice multiple-choice question. The model selects one answer.", "zh": "每个 task 都是四选一问题，模型需要选出一个答案。"}, "scoring": {"metric_name": "Exact-match accuracy", "explanation": {"en": "A response is correct only when the selected answer matches the answer key. The score is the fraction of questions answered correctly.", "zh": "只有模型选中的答案和标准答案一致，这道题才算答对。分数就是答对题目占全部题目的比例。"}}, "evaluation_target": "final_output"},
@@ -20,14 +24,58 @@ BENCHMARKS = [
 
 REFERENCE_ORGANIZATIONS = {"OpenAI", "Anthropic", "Google", "DeepSeek", "Qwen", "Meta", "xAI"}
 
+for _spec in BENCHMARKS:
+    _spec.setdefault("metric_id", f"{_spec['id']}-metric-v1")
+    _spec.setdefault("protocol_id", f"{_spec['id']}-source-export-v1")
+    _spec.setdefault("protocol", "Source export protocol; row-level protocol details are preserved when available.")
 
-def parse_date(row):
-    started = (row.get("Started at") or "")[:10]
-    release = row.get("Release date") or ""
-    return started or release or None, "evaluation_start" if started else "model_release_date"
+
+def slug(value):
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-") or "unknown"
 
 
-def build_benchmark(spec):
+def register_resource(resources, url, title, *, resource_type="other", publisher=None,
+                      authority="trusted_secondary", scope=("benchmark", "model"),
+                      notes=None):
+    resource_id = f"resource-{slug(url)}"
+    resources.setdefault(resource_id, {
+        "id": resource_id,
+        "resource_scope": list(scope),
+        "entity_id": None,
+        "resource_type": resource_type,
+        "title": title,
+        "url": url,
+        "publisher": publisher,
+        "authority": authority,
+        "active": True,
+        "watch": False,
+        "last_checked_at": None,
+        "notes": notes,
+    })
+    return resource_id
+
+
+def model_family(model, organization):
+    return slug(f"{organization}-{re.sub(r'\\s*\\([^)]*\\)', '', model)}")
+
+
+def parse_dates(row):
+    evaluation_date = (row.get("Started at") or "")[:10] or None
+    model_release_date = row.get("Release date") or None
+    if evaluation_date:
+        plot_date, plot_date_reason = evaluation_date, "evaluation_date (provisional operational view)"
+    elif model_release_date:
+        plot_date, plot_date_reason = model_release_date, "model_release_date (explicit non-historical fallback)"
+    else:
+        plot_date, plot_date_reason = None, "unknown; excluded from operational frontier"
+    return evaluation_date, model_release_date, plot_date, plot_date_reason
+
+
+def build_benchmark(spec, resources, models):
+    benchmark_resource_id = register_resource(
+        resources, spec["source"], f"{spec['name']} primary source", resource_type="paper",
+        publisher="Benchmark authors", authority="primary", scope=("benchmark",),
+    )
     rows = []
     with (RAW / spec["file"]).open(newline="") as handle:
         for row in csv.DictReader(handle):
@@ -35,18 +83,63 @@ def build_benchmark(spec):
                 score = float(row[spec["score"]])
             except (KeyError, TypeError, ValueError):
                 continue
-            event_date, date_kind = parse_date(row)
-            if not event_date:
+            evaluation_date, model_release_date, plot_date, plot_date_reason = parse_dates(row)
+            if not plot_date:
                 continue
             model = row.get("Name") or row.get("Model version") or "Unknown model"
             source_url = row.get("Source link") or row.get("Logs") or spec["source"]
+            source_is_benchmark_primary = source_url == spec["source"]
+            source_id = register_resource(
+                resources, source_url,
+                row.get("Source") or ("Epoch evaluation log" if row.get("Logs") else f"{spec['name']} source"),
+                resource_type="evaluation_log" if row.get("Logs") else "official_leaderboard",
+                publisher="Epoch AI" if row.get("Logs") else row.get("Source"),
+                authority="primary" if source_is_benchmark_primary else "trusted_secondary",
+                scope=("benchmark", "model"),
+                notes="Shared evidence resource; the export does not provide a model-specific source record."
+                if not row.get("Source link") and not row.get("Logs") else None,
+            )
+            model_id = f"model-{slug(model)}"
+            family_id = model_family(model, row.get("Organization") or "unknown")
+            models.setdefault(model_id, {
+                "id": model_id,
+                "canonical_name": model,
+                "family_id": family_id,
+                "release_date": model_release_date,
+                "organization": row.get("Organization") or "Unknown",
+                "resource_ids": [source_id],
+                "roles": ["contemporary_frontier"],
+                "domains": [spec["domain"]],
+                "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+                "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource.",
+            })
             rows.append({
+                "observation_id": f"obs-{spec['id']}-{row.get('id') or slug(model)}",
+                "benchmark_id": spec["id"],
+                "benchmark_version_id": f"{spec['id']}-canonical",
+                "model_id": model_id,
+                "model_family_id": family_id,
                 "model": model,
                 "organization": row.get("Organization") or "Unknown",
                 "score": score,
-                "date": event_date,
-                "date_kind": date_kind,
+                "metric_id": spec["metric_id"],
+                "protocol_id": spec["protocol_id"],
+                "metric": spec["score"],
+                "evaluation_protocol": spec["protocol"],
+                "model_release_date": model_release_date,
+                "evaluation_date": evaluation_date,
+                "result_public_date": None,
+                "source_publication_date": None,
+                "ingested_at": datetime.now().date().isoformat(),
+                "date_precision": "day" if plot_date else None,
+                "date_notes": "Result-public date is not present in the source export.",
+                "date": plot_date,
+                "date_kind": plot_date_reason,
+                "historical_frontier_date": None,
+                "contemporaneous": False,
+                "source_ids": [source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id],
                 "source": source_url,
+                "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })
     rows.sort(key=lambda item: (item["date"], item["score"]))
     frontier = []
@@ -79,13 +172,16 @@ def build_benchmark(spec):
     return {
         **{key: spec[key] for key in ("id", "name", "domain", "release", "floor", "ceiling", "source")},
         "metric": spec["score"],
+        "metric_id": spec["metric_id"],
+        "protocol_id": spec["protocol_id"],
+        "benchmark_version_id": f"{spec['id']}-canonical",
         "summary": spec["summary"],
         "task_format": spec["task_format"],
         "scoring": spec["scoring"],
         "evaluation_target": spec["evaluation_target"],
         "observation_count": len(rows),
         "observations": rows,
-        "frontier": frontier,
+        "frontier": [{**point, "source_ids": point["source_ids"]} for point in frontier],
         "observed_frontier": current["score"] if current else None,
         "current_frontier": current["score"] if current else None,
         "normalized_progress": progress,
@@ -94,14 +190,28 @@ def build_benchmark(spec):
         "velocity_180d": velocity_180d,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATIONS), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
-        "date_policy": "Use evaluation start when available; otherwise model release date. This is a provisional historical ordering policy.",
+        "resource_ids": [benchmark_resource_id],
+        "date_policy": "The displayed pilot curve uses an explicit operational date: evaluation_date when available, otherwise model_release_date. It is not a historical public-result frontier because result_public_date is unavailable.",
+        "historical_frontier_status": "unknown_public_dates",
     }
 
 
 def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"snapshot_id": datetime.now().strftime("%Y-%m-%d"), "source": "Epoch AI benchmark export", "benchmarks": [build_benchmark(spec) for spec in BENCHMARKS]}
+    resources, models = {}, {}
+    benchmarks = [build_benchmark(spec, resources, models) for spec in BENCHMARKS]
+    payload = {
+        "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
+        "source": "Curated benchmark exports; see resource registry for source lineage",
+        "resources": sorted(resources.values(), key=lambda item: item["id"]),
+        "models": sorted(models.values(), key=lambda item: item["id"]),
+        "benchmarks": benchmarks,
+    }
     OUT.write_text(json.dumps(payload, indent=2) + "\n")
+    RESOURCE_OUT.write_text(json.dumps(payload["resources"], indent=2) + "\n")
+    MODEL_OUT.write_text(json.dumps(payload["models"], indent=2) + "\n")
+    observations = [observation for benchmark in benchmarks for observation in benchmark["observations"]]
+    OBSERVATION_OUT.write_text("".join(json.dumps(observation, sort_keys=True) + "\n" for observation in observations))
     print(f"Wrote {OUT} ({len(payload['benchmarks'])} benchmarks)")
 
 

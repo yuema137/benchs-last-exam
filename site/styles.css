@@ -54,4 +54,6 @@ summary { color:var(--text); cursor:pointer; }
 .provenance div { padding:5px 0; border-bottom:1px solid #1e2a3a; }
 a { color:var(--link); }
 .overview { max-width:780px; }.overview h2, #detail > h2 { margin:24px 0 5px; font-size:16px; }.overview p { margin:0 0 14px; color:var(--muted); }
+.resource-list { margin:6px 0 14px; padding-left:20px; color:var(--muted); font-size:13px; }.resource-list li { margin:5px 0; }.resource-list a { color:var(--link); }.provenance .resource-list { margin:5px 0 0; border:0; max-height:none; }.provenance .resource-list li { border:0; padding:0; }
+.overview + .detail-controls { margin-top:24px; }
 @media (max-width:800px) { .shell { padding:28px 14px 60px; } .detail-kpis { grid-template-columns:repeat(3,1fr); } .info { width:100%; margin:0; } }

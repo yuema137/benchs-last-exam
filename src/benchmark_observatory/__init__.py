@@ -9,8 +9,11 @@ from .schema import (
     PanelMembership,
     PanelRole,
     ReferenceModelPanel,
+    Resource,
+    ResourceAuthority,
+    ResourceScope,
+    ResourceType,
     ScoreObservation,
-    SourceProvenance,
 )
 
 __all__ = [
@@ -22,6 +25,9 @@ __all__ = [
     "PanelMembership",
     "PanelRole",
     "ReferenceModelPanel",
+    "Resource",
+    "ResourceAuthority",
+    "ResourceScope",
+    "ResourceType",
     "ScoreObservation",
-    "SourceProvenance",
 ]

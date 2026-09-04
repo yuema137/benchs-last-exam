@@ -26,9 +26,29 @@ class BoundType(StrEnum):
     EMPIRICAL = "empirical"
 
 
-class SourceType(StrEnum):
+class ResourceScope(StrEnum):
+    BENCHMARK = "benchmark"
+    MODEL = "model"
+    GENERAL = "general"
+
+
+class ResourceType(StrEnum):
+    OFFICIAL_SITE = "official_site"
+    PAPER = "paper"
+    OFFICIAL_LEADERBOARD = "official_leaderboard"
+    GITHUB_REPOSITORY = "github_repository"
+    MODEL_CARD = "model_card"
+    SYSTEM_CARD = "system_card"
+    TECHNICAL_REPORT = "technical_report"
+    RELEASE_POST = "release_post"
+    DOCUMENTATION = "documentation"
+    EVALUATION_LOG = "evaluation_log"
+    OTHER = "other"
+
+
+class ResourceAuthority(StrEnum):
     PRIMARY = "primary"
-    TRUSTED_AGGREGATOR = "trusted_aggregator"
+    TRUSTED_SECONDARY = "trusted_secondary"
     SECONDARY = "secondary"
 
 
@@ -82,6 +102,7 @@ class Benchmark:
     modalities: tuple[str, ...] = ()
     description: str = ""
     maintainer: Optional[str] = None
+    resource_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -111,6 +132,7 @@ class Model:
     panel_end: Optional[date] = None
     inclusion_reason: str = ""
     predecessor_id: Optional[str] = None
+    resource_ids: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -144,19 +166,27 @@ class PanelMembership:
 
 
 @dataclass(frozen=True)
-class SourceProvenance:
+class Resource:
+    """A canonical source resource shared by benchmark and model evidence."""
+
     id: str
-    source_type: SourceType
+    resource_scope: tuple[ResourceScope, ...]
+    entity_id: Optional[str]
+    resource_type: ResourceType
+    title: str
     url: str
-    title: Optional[str]
     publisher: Optional[str]
-    publication_date: Optional[date]
-    retrieved_at: datetime
-    source_revision: Optional[str] = None
+    authority: ResourceAuthority
+    active: bool = True
+    watch: bool = False
+    last_checked_at: Optional[date] = None
+    notes: Optional[str] = None
 
     def __post_init__(self) -> None:
-        if not self.id or not self.url:
-            raise ValueError("SourceProvenance id and url are required")
+        if not self.id or not self.title or not self.url:
+            raise ValueError("Resource id, title, and url are required")
+        if not self.resource_scope:
+            raise ValueError("Resource requires at least one scope")
 
 
 @dataclass(frozen=True)
@@ -170,7 +200,15 @@ class ScoreObservation:
     reported_date: Optional[date]
     public_available_date: Optional[date]
     evaluation_protocol: str
-    provenance_ids: tuple[str, ...] = field(default_factory=tuple)
+    source_ids: tuple[str, ...] = field(default_factory=tuple)
+    model_family_id: Optional[str] = None
+    metric_id: Optional[str] = None
+    protocol_id: Optional[str] = None
+    model_release_date: Optional[date] = None
+    result_public_date: Optional[date] = None
+    date_precision: Optional[str] = None
+    date_notes: Optional[str] = None
+    contemporaneous: Optional[bool] = None
     validity_status: ValidityStatus = ValidityStatus.UNVERIFIED
     reported_uncertainty: Optional[tuple[Optional[float], Optional[float], str]] = None
     setting: Optional[str] = None
@@ -183,5 +221,10 @@ class ScoreObservation:
             raise ValueError("observation identity fields are required")
         if not self.score_unit or not self.evaluation_protocol:
             raise ValueError("score_unit and evaluation_protocol are required")
-        if not self.provenance_ids:
-            raise ValueError("every observation requires provenance")
+        if not self.source_ids:
+            raise ValueError("every observation requires at least one source resource")
+
+    @property
+    def provenance_ids(self) -> tuple[str, ...]:
+        """Backward-compatible name for callers using the pre-Resource schema."""
+        return self.source_ids
