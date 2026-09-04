@@ -51,6 +51,7 @@ The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Dia
 - Cognition's FrontierCode 1.1 resource defines a distinct software-quality measurement object rather than a plain unit-test pass rate.
 - Agents' Last Exam's official leaderboard and paper define ALE-V1 pass rate separately from partial-credit score; this snapshot uses the overall pass-rate leaderboard.
 - Terminal-Bench-Science's official 0.1 announcement defines 70 scientific workflow tasks, three independent trials per task, and a continuous future release process; only the fixed 0.1 snapshot is represented here.
+- The latest official 0.1 leaderboard refresh adds GLM 5.3 + Claude Code at 8.1%. It does not yet publish Terminal-Bench-Science results for Claude Fable 5.1 or GPT-6 Astra, so those releases are represented as release-only reference-panel anchors rather than fabricated benchmark observations.
 - TerminalWorld's official Verified leaderboard defines a 200-task manually verified subset evaluated with the standardized Terminus-2 agent framework and Harbor harness.
 - Terminal-Bench's official 2.1 announcement defines a separate revision of 2.0 with 28 task fixes; it is not merged with the existing 2.0 object.
 - Terminal-Bench's v4.0.0 release is represented as a separate tagged object; its official partner leaderboard reports a 66-task resolution-rate setup and warns against comparing scores with earlier versions.
@@ -68,6 +69,8 @@ The new rows add model-generation probes already present in the curated exports.
 
 ## Current frontier release-resource audit
 
+The current frontier release audit covers seven explicit panel anchors across the seven independent frontier organizations in the panel: Claude Fable 5.1, GPT-6 Astra, Gemini 3.8 Flash, DeepSeek-V4-Pro-0813, Qwen3.8-Max, Llama 4 Maverick, and Grok 4.6. Each anchor has a canonical release/model resource in the generated registry; a release-only anchor does not imply that a benchmark score exists. GLM-5.3 remains represented by its Terminal-Bench-Science score resource rather than being added as an eighth panel organization.
+
 - Claude Fable 5.1 is represented where a curated score is available for ARC-AGI-2, FrontierMath Tiers 1–3 (v2), FrontierCode 1.1, CursorBench 3.2, and GDPval-AA v2. Its model records now point to Anthropic's official Claude Fable release page in addition to the score source.
-- GPT-6 Astra is represented where a curated score is available for GPQA Diamond and FrontierMath Tiers 1–3 (v2). Its model records now point to OpenAI's official GPT-6 Astra model page in addition to the score source.
+- GPT-6 Astra is represented where a curated score is available for GPQA Diamond and FrontierMath Tiers 1–3 (v2). Its model records now point to OpenAI's official GPT-6 Astra model page in addition to the score source. A separate release-only panel record is retained for coverage checks until an authoritative score is published.
 - No score is synthesized for a benchmark without an authoritative result. The absence of a new-model observation is retained as missing evidence rather than treated as a zero.

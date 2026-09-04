@@ -291,6 +291,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-ai-meta-com-llama-get-started",
+      "resource_scope": [
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "model_card",
+      "title": "Llama 4 Maverick official model resources",
+      "url": "https://ai.meta.com/llama/get-started/",
+      "publisher": "Meta",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Official release/model resource for the current frontier model panel."
+    },
+    {
       "id": "resource-https-aider-chat-2024-12-21-polyglot-html",
       "resource_scope": [
         "benchmark"
@@ -339,6 +355,22 @@
       "watch": false,
       "last_checked_at": null,
       "notes": null
+    },
+    {
+      "id": "resource-https-api-docs-deepseek-com-news-news260813",
+      "resource_scope": [
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "release_post",
+      "title": "DeepSeek-V4-Pro official release announcement",
+      "url": "https://api-docs.deepseek.com/news/news260813/",
+      "publisher": "DeepSeek",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Official release/model resource for the current frontier model panel."
     },
     {
       "id": "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
@@ -639,6 +671,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash",
+      "resource_scope": [
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "model_card",
+      "title": "Gemini 3.8 Flash official model card",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+      "publisher": "Google DeepMind",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Official release/model resource for the current frontier model panel."
+    },
+    {
       "id": "resource-https-developers-openai-com-api-docs-models-gpt-6-astra",
       "resource_scope": [
         "model"
@@ -648,6 +696,22 @@
       "title": "GPT-6 Astra official model page",
       "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
       "publisher": "OpenAI",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Official release/model resource for the current frontier model panel."
+    },
+    {
+      "id": "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max",
+      "resource_scope": [
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "documentation",
+      "title": "Qwen3.8-Max official model documentation",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max",
+      "publisher": "Alibaba Cloud",
       "authority": "primary",
       "active": true,
       "watch": false,
@@ -9736,6 +9800,22 @@
       "watch": false,
       "last_checked_at": null,
       "notes": null
+    },
+    {
+      "id": "resource-https-x-ai-news-grok-4-6",
+      "resource_scope": [
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "release_post",
+      "title": "Grok 4.6 official release announcement",
+      "url": "https://x.ai/news/grok-4-6",
+      "publisher": "xAI",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Official release/model resource for the current frontier model panel."
     }
   ],
   "models": [
@@ -13842,13 +13922,35 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-deepseek-v4-pro-0813",
+      "canonical_name": "DeepSeek-V4-Pro-0813",
+      "family_id": "deepseek-v4-pro",
+      "release_date": "2026-08-13",
+      "organization": "DeepSeek",
+      "resource_ids": [
+        "resource-https-api-docs-deepseek-com-news-news260813"
+      ],
+      "roles": [
+        "open_weight_frontier"
+      ],
+      "domains": [
+        "Coding"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
+      "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+    },
+    {
       "id": "model-deepseek-v4-pro-0813-high",
       "canonical_name": "DeepSeek V4 Pro 0813 (High)",
       "family_id": "deepseek-deepseek-v4-pro-0813-high",
       "release_date": "2026-08-13",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-api-docs-deepseek-com-news-news260813"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13869,7 +13971,8 @@
       "release_date": "2026-08-13",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-api-docs-deepseek-com-news-news260813"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13890,7 +13993,8 @@
       "release_date": "2026-08-13",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-arxiv-org-abs-2311-12022"
+        "resource-https-arxiv-org-abs-2311-12022",
+        "resource-https-api-docs-deepseek-com-news-news260813"
       ],
       "roles": [
         "contemporary_frontier"
@@ -13911,7 +14015,8 @@
       "release_date": "2026-08-13",
       "organization": "DeepSeek",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-api-docs-deepseek-com-news-news260813"
       ],
       "roles": [
         "contemporary_frontier"
@@ -15711,13 +15816,35 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-gemini-3-8-flash",
+      "canonical_name": "Gemini 3.8 Flash",
+      "family_id": "google-gemini-3-8-flash",
+      "release_date": "2026-09-02",
+      "organization": "Google DeepMind",
+      "resource_ids": [
+        "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
+      "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+    },
+    {
       "id": "model-gemini-3-8-flash-high",
       "canonical_name": "Gemini 3.8 Flash High",
       "family_id": "google-gemini-3-8-flash-high",
       "release_date": "2026-09-02",
       "organization": "Google",
       "resource_ids": [
-        "resource-https-cursor-com-cn-cursorbench"
+        "resource-https-cursor-com-cn-cursorbench",
+        "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
       ],
       "roles": [
         "contemporary_frontier"
@@ -16489,18 +16616,18 @@
     },
     {
       "id": "model-glm-5-3-claude-code",
-      "canonical_name": "GLM-5.3 + Claude Code",
+      "canonical_name": "GLM 5.3 + Claude Code",
       "family_id": "z-ai-glm-5-3-claude-code",
       "release_date": "2026-08-14",
       "organization": "Z.ai",
       "resource_ids": [
-        "resource-https-github-com-harbor-framework-terminal-bench-releases-tag-v4-0-0"
+        "resource-https-www-terminal-bench-science-ai-announcement"
       ],
       "roles": [
         "contemporary_frontier"
       ],
       "domains": [
-        "Terminal / OS"
+        "Science / research"
       ],
       "evaluation_types": [
         "Agent"
@@ -19953,6 +20080,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-gpt-6-astra",
+      "canonical_name": "GPT-6 Astra",
+      "family_id": "openai-gpt-6-astra",
+      "release_date": "2026-09-03",
+      "organization": "OpenAI",
+      "resource_ids": [
+        "resource-https-developers-openai-com-api-docs-models-gpt-6-astra"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
+      "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+    },
+    {
       "id": "model-gpt-6-astra-max",
       "canonical_name": "gpt-6-astra_max",
       "family_id": "openai-gpt-6-astra-max",
@@ -20548,7 +20696,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-cognition-com-blog-frontier-code-1-1"
+        "resource-https-cognition-com-blog-frontier-code-1-1",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20569,7 +20718,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-cursor-com-cn-cursorbench"
+        "resource-https-cursor-com-cn-cursorbench",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20590,7 +20740,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-www-terminal-bench-science-ai-announcement"
+        "resource-https-www-terminal-bench-science-ai-announcement",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20611,7 +20762,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-arxiv-org-abs-2311-12022"
+        "resource-https-arxiv-org-abs-2311-12022",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20632,7 +20784,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20653,7 +20806,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -20674,7 +20828,8 @@
       "release_date": "2026-08-12",
       "organization": "xAI",
       "resource_ids": [
-        "resource-https-arxiv-org-abs-2311-12022"
+        "resource-https-arxiv-org-abs-2311-12022",
+        "resource-https-x-ai-news-grok-4-6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -22312,7 +22467,8 @@
       "release_date": "2025-04-05",
       "organization": "Meta AI",
       "resource_ids": [
-        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+        "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+        "resource-https-ai-meta-com-llama-get-started"
       ],
       "roles": [
         "contemporary_frontier"
@@ -22333,7 +22489,8 @@
       "release_date": "2025-04-05",
       "organization": "Meta AI",
       "resource_ids": [
-        "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
+        "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard",
+        "resource-https-ai-meta-com-llama-get-started"
       ],
       "roles": [
         "contemporary_frontier"
@@ -22354,7 +22511,8 @@
       "release_date": "2025-04-05",
       "organization": "Meta AI",
       "resource_ids": [
-        "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hkjcosgmfq5qxb2cytyu7r-eval"
+        "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hkjcosgmfq5qxb2cytyu7r-eval",
+        "resource-https-ai-meta-com-llama-get-started"
       ],
       "roles": [
         "contemporary_frontier"
@@ -25225,6 +25383,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-qwen-3-8-max",
+      "canonical_name": "Qwen3.8-Max",
+      "family_id": "qwen-3-8-max",
+      "release_date": "2026-08-03",
+      "organization": "Alibaba",
+      "resource_ids": [
+        "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
+      ],
+      "roles": [
+        "open_weight_frontier"
+      ],
+      "domains": [
+        "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
+      "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+    },
+    {
       "id": "model-qwen-3-coder-480b",
       "canonical_name": "Qwen 3 Coder 480B",
       "family_id": "alibaba-qwen-3-coder-480b",
@@ -26890,7 +27069,8 @@
       "release_date": "2026-08-02",
       "organization": "Alibaba",
       "resource_ids": [
-        "resource-https-arxiv-org-abs-2311-12022"
+        "resource-https-arxiv-org-abs-2311-12022",
+        "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
       ],
       "roles": [
         "contemporary_frontier"
@@ -50329,7 +50509,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hkjcosgmfq5qxb2cytyu7r-eval",
-            "resource-https-arxiv-org-abs-2103-03874"
+            "resource-https-arxiv-org-abs-2103-03874",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://epoch-benchmarks-production-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/HkjCosgMFq5QXB2CyTyU7r.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -56285,7 +56466,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-production-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-hkjcosgmfq5qxb2cytyu7r-eval",
-            "resource-https-arxiv-org-abs-2103-03874"
+            "resource-https-arxiv-org-abs-2103-03874",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://epoch-benchmarks-production-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/HkjCosgMFq5QXB2CyTyU7r.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -61513,7 +61695,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -61630,7 +61813,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -61669,7 +61853,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -64467,7 +64652,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -68690,7 +68876,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-lyhy99ubgcqbhoaksqjkif-eval",
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/LyHy99ubGCqBhoaksQjkiF.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -76381,7 +76568,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -76498,7 +76686,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -79296,7 +79485,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": false,
           "source_ids": [
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
           ],
           "source": "https://arxiv.org/abs/2311.12022",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -82206,7 +82396,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-production-public-s3-us-east-2-amazonaws-com-inspect-ai-logs-lyhy99ubgcqbhoaksqjkif-eval",
-            "resource-https-arxiv-org-abs-2311-12022"
+            "resource-https-arxiv-org-abs-2311-12022",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://epoch-benchmarks-production-public.s3.us-east-2.amazonaws.com/inspect_ai_logs/LyHy99ubGCqBhoaksQjkiF.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -91952,7 +92143,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-b6ywmefgsweeig9qzs3nsf-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/b6yWmeFgsWeEiG9Qzs3NSf.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -92072,7 +92264,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zb2akwa942d7dbttcebaba-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Zb2AKwa942D7dBTTcebAba.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -92152,7 +92345,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-abt89ieswgngj4rymduhig-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ABT89ieSWGnGj4RYMduHiG.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -97810,7 +98004,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-b6ywmefgsweeig9qzs3nsf-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/b6yWmeFgsWeEiG9Qzs3NSf.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -97930,7 +98125,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-zb2akwa942d7dbttcebaba-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/Zb2AKwa942D7dBTTcebAba.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -98010,7 +98206,8 @@
           "contemporaneous": false,
           "source_ids": [
             "resource-https-epoch-benchmarks-staging-private-s3-us-east-2-amazonaws-com-inspect-ai-logs-abt89ieswgngj4rymduhig-eval",
-            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3"
+            "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3",
+            "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max"
           ],
           "source": "https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/ABT89ieSWGnGj4RYMduHiG.eval",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -101434,7 +101631,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -101629,7 +101827,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -101863,7 +102062,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -101902,7 +102102,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -102058,7 +102259,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -102175,7 +102377,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -103384,7 +103587,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -107128,7 +107332,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-api-docs-deepseek-com-news-news260813"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -107713,7 +107918,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025"
+            "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -111576,7 +111782,8 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard",
-            "resource-https-aider-chat-2024-12-21-polyglot-html"
+            "resource-https-aider-chat-2024-12-21-polyglot-html",
+            "resource-https-ai-meta-com-llama-get-started"
           ],
           "source": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -115194,6 +115401,7 @@
         "per_task": true,
         "method": "median of reported full-run costs divided by the documented 225-task benchmark size",
         "source_ids": [
+          "resource-https-ai-meta-com-llama-get-started",
           "resource-https-aider-chat-2024-12-21-polyglot-html",
           "resource-https-aider-chat-docs-leaderboards",
           "resource-https-aider-chat-docs-leaderboards-polyglot-leaderboard"
@@ -126338,7 +126546,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cognition-com-blog-frontier-code-1-1"
+            "resource-https-cognition-com-blog-frontier-code-1-1",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cognition.com/blog/frontier-code-1.1",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -129100,7 +129309,7 @@
         }
       },
       "evaluation_target": "environment_outcome",
-      "observation_count": 8,
+      "observation_count": 9,
       "observations": [
         {
           "observation_id": "obs-terminal-bench-science-0-1-claude-opus-5-claude-code",
@@ -129298,6 +129507,45 @@
           "notes": "Operational evaluation timeline only; not a historical public-result date."
         },
         {
+          "observation_id": "obs-terminal-bench-science-0-1-glm-5-3-claude-code",
+          "benchmark_id": "terminal-bench-science-0-1",
+          "benchmark_version_id": "terminal-bench-science-0-1-canonical",
+          "model_id": "model-glm-5-3-claude-code",
+          "model_family_id": "z-ai-glm-5-3-claude-code",
+          "model": "GLM 5.3 + Claude Code",
+          "organization": "Z.ai",
+          "score": 0.081,
+          "reported_cost_per_task": null,
+          "metric_id": "terminal-bench-science-0-1-metric-v1",
+          "protocol_id": "terminal-bench-science-0-1-source-export-v1",
+          "metric": "Resolution rate",
+          "evaluation_protocol": "Source export protocol; row-level protocol details are preserved when available.",
+          "model_release_date": "2026-08-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-08-14",
+          "date_kind": "unknown",
+          "capability_date": "2026-08-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-www-terminal-bench-science-ai-announcement"
+          ],
+          "source": "https://www.terminal-bench-science.ai/announcement",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
           "observation_id": "obs-terminal-bench-science-0-1-kimi-k3-claude-code",
           "benchmark_id": "terminal-bench-science-0-1",
           "benchmark_version_id": "terminal-bench-science-0-1-canonical",
@@ -129370,7 +129618,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-www-terminal-bench-science-ai-announcement"
+            "resource-https-www-terminal-bench-science-ai-announcement",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://www.terminal-bench-science.ai/announcement",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -131841,7 +132090,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-github-com-harbor-framework-terminal-bench-releases-tag-v4-0-0"
+            "resource-https-github-com-harbor-framework-terminal-bench-releases-tag-v4-0-0",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.0.0",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -133326,7 +133576,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -133443,7 +133694,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -133521,7 +133773,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date."
@@ -133605,7 +133858,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
@@ -133739,7 +133993,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
@@ -133873,7 +134128,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-cursor-com-cn-cursorbench"
+            "resource-https-cursor-com-cn-cursorbench",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://cursor.com/cn/cursorbench",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
@@ -133992,7 +134248,9 @@
         "method": "median of reported per-task values in the curated export",
         "source_ids": [
           "resource-https-cursor-com-cn-cursorbench",
-          "resource-https-www-anthropic-com-claude-fable"
+          "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash",
+          "resource-https-www-anthropic-com-claude-fable",
+          "resource-https-x-ai-news-grok-4-6"
         ],
         "notes": "Cost varies by model, harness, and inference settings."
       },
@@ -134245,7 +134503,8 @@
           "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
           "contemporaneous": true,
           "source_ids": [
-            "resource-https-artificialanalysis-ai-evaluations-gdpval-aa"
+            "resource-https-artificialanalysis-ai-evaluations-gdpval-aa",
+            "resource-https-x-ai-news-grok-4-6"
           ],
           "source": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "notes": "Operational evaluation timeline only; not a historical public-result date."

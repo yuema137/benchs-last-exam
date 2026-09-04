@@ -4,6 +4,7 @@ GPT-5.6 Sol + Codex,0.224,2026-07-09,OpenAI,Terminal-Bench-Science leaderboard,h
 Claude Fable 5 + Claude Code,0.214,2026-06-09,Anthropic,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 Claude Opus 4.8 + Claude Code,0.105,2026-05-28,Anthropic,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 GPT-5.6 Terra + Codex,0.086,2026-07-09,OpenAI,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
+GLM 5.3 + Claude Code,0.081,2026-08-14,Z.ai,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 Kimi K3 + Claude Code,0.071,2026-07-16,Moonshot,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 Grok 4.6 + Grok Build,0.071,2026-08-12,xAI,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task
 GPT-5.6 Luna + Codex,0.033,2026-07-09,OpenAI,Terminal-Bench-Science leaderboard,https://www.terminal-bench-science.ai/,0.1 70-task release; three independent trials per task

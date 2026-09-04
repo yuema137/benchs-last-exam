@@ -288,6 +288,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-ai-meta-com-llama-get-started",
+    "resource_scope": [
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "model_card",
+    "title": "Llama 4 Maverick official model resources",
+    "url": "https://ai.meta.com/llama/get-started/",
+    "publisher": "Meta",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
     "id": "resource-https-aider-chat-2024-12-21-polyglot-html",
     "resource_scope": [
       "benchmark"
@@ -336,6 +352,22 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-api-docs-deepseek-com-news-news260813",
+    "resource_scope": [
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "release_post",
+    "title": "DeepSeek-V4-Pro official release announcement",
+    "url": "https://api-docs.deepseek.com/news/news260813/",
+    "publisher": "DeepSeek",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Official release/model resource for the current frontier model panel."
   },
   {
     "id": "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-arc-prize-2025",
@@ -636,6 +668,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-deepmind-google-models-model-cards-gemini-3-8-flash",
+    "resource_scope": [
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "model_card",
+    "title": "Gemini 3.8 Flash official model card",
+    "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+    "publisher": "Google DeepMind",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
     "id": "resource-https-developers-openai-com-api-docs-models-gpt-6-astra",
     "resource_scope": [
       "model"
@@ -645,6 +693,22 @@
     "title": "GPT-6 Astra official model page",
     "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
     "publisher": "OpenAI",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-docs-modelstudio-console-alibabacloud-com-en-model-studio-qwen3-8-max",
+    "resource_scope": [
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "documentation",
+    "title": "Qwen3.8-Max official model documentation",
+    "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max",
+    "publisher": "Alibaba Cloud",
     "authority": "primary",
     "active": true,
     "watch": false,
@@ -9733,5 +9797,21 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-x-ai-news-grok-4-6",
+    "resource_scope": [
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "release_post",
+    "title": "Grok 4.6 official release announcement",
+    "url": "https://x.ai/news/grok-4-6",
+    "publisher": "xAI",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Official release/model resource for the current frontier model panel."
   }
 ]

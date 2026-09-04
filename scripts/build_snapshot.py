@@ -37,7 +37,103 @@ MODEL_RELEASE_RESOURCES = {
         "resource_type": "model_card",
         "publisher": "OpenAI",
     },
+    "gemini-3-8-flash": {
+        "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+        "title": "Gemini 3.8 Flash official model card",
+        "resource_type": "model_card",
+        "publisher": "Google DeepMind",
+    },
+    "deepseek-v4-pro-0813": {
+        "url": "https://api-docs.deepseek.com/news/news260813/",
+        "title": "DeepSeek-V4-Pro official release announcement",
+        "resource_type": "release_post",
+        "publisher": "DeepSeek",
+    },
+    "qwen3-8-max": {
+        "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max",
+        "title": "Qwen3.8-Max official model documentation",
+        "resource_type": "documentation",
+        "publisher": "Alibaba Cloud",
+    },
+    "llama-4-maverick": {
+        "url": "https://ai.meta.com/llama/get-started/",
+        "title": "Llama 4 Maverick official model resources",
+        "resource_type": "model_card",
+        "publisher": "Meta",
+    },
+    "grok-4-6": {
+        "url": "https://x.ai/news/grok-4-6",
+        "title": "Grok 4.6 official release announcement",
+        "resource_type": "release_post",
+        "publisher": "xAI",
+    },
 }
+
+REFERENCE_MODEL_RELEASES = [
+    {
+        "id": "model-claude-fable-5-1",
+        "canonical_name": "Claude Fable 5.1",
+        "family_id": "anthropic-claude-fable-5-1",
+        "release_date": "2026-09-01",
+        "organization": "Anthropic",
+        "role": "contemporary_frontier",
+        "domain": "General knowledge & reasoning",
+    },
+    {
+        "id": "model-gpt-6-astra",
+        "canonical_name": "GPT-6 Astra",
+        "family_id": "openai-gpt-6-astra",
+        "release_date": "2026-09-03",
+        "organization": "OpenAI",
+        "role": "contemporary_frontier",
+        "domain": "General knowledge & reasoning",
+    },
+    {
+        "id": "model-gemini-3-8-flash",
+        "canonical_name": "Gemini 3.8 Flash",
+        "family_id": "google-gemini-3-8-flash",
+        "release_date": "2026-09-02",
+        "organization": "Google DeepMind",
+        "role": "contemporary_frontier",
+        "domain": "General knowledge & reasoning",
+    },
+    {
+        "id": "model-deepseek-v4-pro-0813",
+        "canonical_name": "DeepSeek-V4-Pro-0813",
+        "family_id": "deepseek-v4-pro",
+        "release_date": "2026-08-13",
+        "organization": "DeepSeek",
+        "role": "open_weight_frontier",
+        "domain": "Coding",
+    },
+    {
+        "id": "model-qwen-3-8-max",
+        "canonical_name": "Qwen3.8-Max",
+        "family_id": "qwen-3-8-max",
+        "release_date": "2026-08-03",
+        "organization": "Alibaba",
+        "role": "open_weight_frontier",
+        "domain": "General knowledge & reasoning",
+    },
+    {
+        "id": "model-llama-4-maverick",
+        "canonical_name": "Llama 4 Maverick",
+        "family_id": "meta-llama-4",
+        "release_date": "2025-04-05",
+        "organization": "Meta",
+        "role": "open_weight_frontier",
+        "domain": "Multimodal",
+    },
+    {
+        "id": "model-grok-4-6",
+        "canonical_name": "Grok 4.6",
+        "family_id": "xai-grok-4-6",
+        "release_date": "2026-08-12",
+        "organization": "xAI",
+        "role": "contemporary_frontier",
+        "domain": "General knowledge & reasoning",
+    },
+]
 
 BENCHMARKS.extend([
     {"id": "frontiermath-tiers-1-3-v2", "name": "FrontierMath Tiers 1–3 (v2)", "domain": "Mathematics", "file": "frontiermath_tiers_1_3_v2.csv", "score": "Best score (across scorers)", "release": "2026-06-12", "floor": 0.0, "ceiling": 1.0, "source": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3", "summary": {"en": "FrontierMath Tiers 1–3 tests advanced mathematics problems written by experts and checked by executable verifiers.", "zh": "FrontierMath Tiers 1–3 测试专家编写、由可执行 verifier 检查的高难度数学题。"}, "task_format": {"en": "The model writes a Python answer function for each mathematics problem and can use an isolated Python tool while solving.", "zh": "模型需要为每道数学题编写 Python answer function，解题时可以使用隔离的 Python 工具。"}, "scoring": {"metric_name": "Verified task accuracy", "explanation": {"en": "A task counts as correct when the submitted answer passes the benchmark's verifier. The score is the fraction of verified tasks solved.", "zh": "提交的答案通过 benchmark verifier，这道题才算正确。分数就是通过验证的 task 占全部 task 的比例。"}}, "evaluation_target": "final_output"},
@@ -400,6 +496,21 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     resources, models = {}, {}
     benchmarks = [build_benchmark(spec, resources, models) for spec in BENCHMARKS]
+    for panel_model in REFERENCE_MODEL_RELEASES:
+        release_resource_id = model_release_resource(resources, panel_model["canonical_name"])
+        models.setdefault(panel_model["id"], {
+            "id": panel_model["id"],
+            "canonical_name": panel_model["canonical_name"],
+            "family_id": panel_model["family_id"],
+            "release_date": panel_model["release_date"],
+            "organization": panel_model["organization"],
+            "resource_ids": [release_resource_id] if release_resource_id else [],
+            "roles": [panel_model["role"]],
+            "domains": [panel_model["domain"]],
+            "evaluation_types": ["Model"],
+            "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
+            "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set.",
+        })
     payload = {
         "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
         "source": "Curated benchmark exports; see resource registry for source lineage",
