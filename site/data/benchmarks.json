@@ -12055,6 +12055,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-github-com-mmmu-benchmark-mmmu",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "MMMU primary source",
+      "url": "https://github.com/MMMU-Benchmark/MMMU",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-github-com-openai-mle-bench",
       "resource_scope": [
         "benchmark",
@@ -12122,6 +12138,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-gorilla-cs-berkeley-edu-leaderboard-html",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "BFCL V4 primary source",
+      "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
       "resource_scope": [
         "benchmark",
@@ -12166,6 +12198,22 @@
       "url": "https://hcompany.ai/holo2-235b-a22b-preview",
       "publisher": "Official H Company release post",
       "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
+      "id": "resource-https-huggingface-co-datasets-mmmu-mmmu-pro",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "MMMU-Pro primary source",
+      "url": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
       "active": true,
       "watch": false,
       "last_checked_at": null,
@@ -16763,6 +16811,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-claude-sonnet-4-5-fc",
+      "canonical_name": "Claude Sonnet 4.5 (FC)",
+      "family_id": "anthropic-claude-sonnet-4-5",
+      "release_date": "2025-09-29",
+      "organization": "Anthropic",
+      "resource_ids": [
+        "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Tool use"
+      ],
+      "evaluation_types": [
+        "Agent"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-claude-sonnet-4-5-thinking-16k",
       "canonical_name": "Claude Sonnet 4.5 (Thinking 16K)",
       "family_id": "anthropic-claude-sonnet-4-5",
@@ -19750,6 +19819,48 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-gemini-1-5-pro-0523",
+      "canonical_name": "Gemini 1.5 Pro (0523)",
+      "family_id": "google-gemini-1-5-pro",
+      "release_date": "2024-05-23",
+      "organization": "Google",
+      "resource_ids": [
+        "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-gemini-1-5-pro-0801",
+      "canonical_name": "Gemini 1.5 Pro (0801)",
+      "family_id": "google-gemini-1-5-pro",
+      "release_date": "2024-08-01",
+      "organization": "Google",
+      "resource_ids": [
+        "resource-https-github-com-mmmu-benchmark-mmmu"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-gemini-1-5-pro-feb-2024",
       "canonical_name": "Gemini 1.5 Pro (Feb 2024)",
       "family_id": "google-deepmind-gemini-1-5-pro",
@@ -21307,6 +21418,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-gemini-3-pro-preview-prompt",
+      "canonical_name": "Gemini 3 Pro Preview (Prompt)",
+      "family_id": "google-deepmind-gemini-3-pro-preview",
+      "release_date": "2025-11-18",
+      "organization": "Google DeepMind",
+      "resource_ids": [
+        "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Tool use"
+      ],
+      "evaluation_types": [
+        "Agent"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-gemini-exp-1206",
       "canonical_name": "gemini-exp-1206",
       "family_id": "google-deepmind-google-gemini-exp-1206",
@@ -21320,6 +21452,48 @@
       ],
       "domains": [
         "Coding"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-gemini-pro",
+      "canonical_name": "Gemini Pro",
+      "family_id": "google-gemini-pro",
+      "release_date": "2023-12-06",
+      "organization": "Google",
+      "resource_ids": [
+        "resource-https-github-com-mmmu-benchmark-mmmu"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-gemini-ultra",
+      "canonical_name": "Gemini Ultra",
+      "family_id": "google-gemini-ultra",
+      "release_date": "2024-02-15",
+      "organization": "Google",
+      "resource_ids": [
+        "resource-https-github-com-mmmu-benchmark-mmmu"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
       ],
       "evaluation_types": [
         "Model"
@@ -22882,6 +23056,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-gpt-4-1-mini-fc",
+      "canonical_name": "GPT-4.1-mini (FC)",
+      "family_id": "openai-gpt-4-1-mini",
+      "release_date": "2025-04-14",
+      "organization": "OpenAI",
+      "resource_ids": [
+        "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Tool use"
+      ],
+      "evaluation_types": [
+        "Agent"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-gpt-4-1-nano",
       "canonical_name": "GPT-4.1-Nano",
       "family_id": "openai-gpt-4-1-nano",
@@ -23105,6 +23300,27 @@
       ],
       "domains": [
         "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-gpt-4o-0513",
+      "canonical_name": "GPT-4o (0513)",
+      "family_id": "openai-gpt-4o",
+      "release_date": "2024-05-13",
+      "organization": "OpenAI",
+      "resource_ids": [
+        "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
       ],
       "evaluation_types": [
         "Model"
@@ -228061,6 +228277,1647 @@
       ],
       "resource_ids": [
         "resource-https-openai-com-index-paperbench"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "mmmu",
+      "name": "MMMU",
+      "domain": "Multimodal",
+      "release": "2023-12-04",
+      "floor": 0.25,
+      "ceiling": 1.0,
+      "source": "https://github.com/MMMU-Benchmark/MMMU",
+      "evaluation_type": "Model",
+      "tags": [
+        "vision",
+        "academic",
+        "multi-discipline"
+      ],
+      "metric": "Score",
+      "score_format": "ratio",
+      "metric_id": "mmmu-metric-v1",
+      "protocol_id": "mmmu-source-export-v1",
+      "benchmark_version_id": "mmmu-canonical",
+      "summary": {
+        "en": "MMMU tests multimodal college-level knowledge and reasoning across six disciplines and diverse visual formats.",
+        "zh": "MMMU \u6d4b\u8bd5\u6a21\u578b\u5728\u516d\u4e2a\u5b66\u79d1\u548c\u591a\u79cd\u89c6\u89c9\u6750\u6599\u4e0a\u7684\u5927\u5b66\u6c34\u5e73\u591a\u6a21\u6001\u77e5\u8bc6\u4e0e\u63a8\u7406\u80fd\u529b\u3002"
+      },
+      "task_format": {
+        "en": "The model receives a question with text and an image such as a chart, diagram, map, or chemical structure, then selects or produces the answer.",
+        "zh": "\u6a21\u578b\u4f1a\u6536\u5230\u5e26\u6587\u5b57\u548c\u56fe\u7247\u7684\u95ee\u9898\uff0c\u56fe\u7247\u53ef\u80fd\u662f\u56fe\u8868\u3001\u793a\u610f\u56fe\u3001\u5730\u56fe\u6216\u5316\u5b66\u7ed3\u6784\uff0c\u7136\u540e\u9009\u62e9\u6216\u751f\u6210\u7b54\u6848\u3002"
+      },
+      "scoring": {
+        "metric_name": "Validation accuracy",
+        "explanation": {
+          "en": "The score is the fraction of validation questions answered correctly. The four-choice format makes 25% a random-choice reference floor.",
+          "zh": "\u5206\u6570\u662f validation question \u4e2d\u7b54\u5bf9\u7684\u6bd4\u4f8b\u3002\u7531\u4e8e\u9898\u76ee\u901a\u5e38\u6709\u56db\u4e2a\u9009\u9879\uff0c25% \u662f\u968f\u673a\u9009\u62e9\u7684\u53c2\u8003 floor\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 6,
+      "observations": [
+        {
+          "observation_id": "obs-mmmu-gpt-4v-1",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4v",
+          "model_family_id": "openai-gpt-4v",
+          "model": "GPT-4V",
+          "organization": "OpenAI",
+          "score": 0.568,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "unknown",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-pro-2",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-pro",
+          "model_family_id": "google-gemini-pro",
+          "model": "Gemini Pro",
+          "organization": "Google",
+          "score": 0.479,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2023-12-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-12-06",
+          "date_kind": "unknown",
+          "capability_date": "2023-12-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-ultra-3",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-ultra",
+          "model_family_id": "google-gemini-ultra",
+          "model": "Gemini Ultra",
+          "organization": "Google",
+          "score": 0.594,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "unknown",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-gpt-4o-4",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.691,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-1-5-pro-0801-5",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-1-5-pro-0801",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro (0801)",
+          "organization": "Google",
+          "score": 0.658,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-08-01",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-08-01",
+          "date_kind": "unknown",
+          "capability_date": "2024-08-01",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-claude-3-5-sonnet-6",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.683,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-mmmu-gpt-4v-1",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4v",
+          "model_family_id": "openai-gpt-4v",
+          "model": "GPT-4V",
+          "organization": "OpenAI",
+          "score": 0.568,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4v-1"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-ultra-3",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-ultra",
+          "model_family_id": "google-gemini-ultra",
+          "model": "Gemini Ultra",
+          "organization": "Google",
+          "score": 0.594,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmmu-gemini-ultra-3"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gpt-4o-4",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.691,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4o-4"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-mmmu-gpt-4v-1",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4v",
+          "model_family_id": "openai-gpt-4v",
+          "model": "GPT-4V",
+          "organization": "OpenAI",
+          "score": 0.568,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4v-1"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-ultra-3",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-ultra",
+          "model_family_id": "google-gemini-ultra",
+          "model": "Gemini Ultra",
+          "organization": "Google",
+          "score": 0.594,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmmu-gemini-ultra-3"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gpt-4o-4",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.691,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4o-4"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-mmmu-gpt-4v-1",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4v",
+          "model_family_id": "openai-gpt-4v",
+          "model": "GPT-4V",
+          "organization": "OpenAI",
+          "score": 0.568,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2023-11-06",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-11-06",
+          "date_kind": "model release date",
+          "capability_date": "2023-11-06",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-11-06",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4v-1"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gemini-ultra-3",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gemini-ultra",
+          "model_family_id": "google-gemini-ultra",
+          "model": "Gemini Ultra",
+          "organization": "Google",
+          "score": 0.594,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-02-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-15",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-15",
+          "frontier_observation_ids": [
+            "obs-mmmu-gemini-ultra-3"
+          ]
+        },
+        {
+          "observation_id": "obs-mmmu-gpt-4o-4",
+          "benchmark_id": "mmmu",
+          "benchmark_version_id": "mmmu-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.691,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-metric-v1",
+          "protocol_id": "mmmu-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU original fixed validation series from the official benchmark leaderboard and paper. MMMU-Pro is a separate measurement object and is not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-github-com-mmmu-benchmark-mmmu"
+          ],
+          "source": "https://github.com/MMMU-Benchmark/MMMU",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-gpt-4o-4"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.691,
+      "capability_frontier_value": 0.691,
+      "reported_frontier_value": null,
+      "current_frontier": 0.691,
+      "normalized_progress": 0.588,
+      "normalized_headroom": 0.41200000000000003,
+      "threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 161
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 1004
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 1004
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 161
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 1004
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 1004
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.019810158730158733,
+      "capability_velocity_180d": 0.019810158730158733,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.42857142857142855,
+        "represented_organizations": [
+          "Anthropic",
+          "Google",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "medium"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-github-com-mmmu-benchmark-mmmu"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "mmmu-pro",
+      "name": "MMMU-Pro",
+      "domain": "Multimodal",
+      "release": "2024-09-05",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+      "evaluation_type": "Model",
+      "tags": [
+        "vision-only",
+        "ten-choice",
+        "academic"
+      ],
+      "metric": "Score",
+      "score_format": "ratio",
+      "metric_id": "mmmu-pro-metric-v1",
+      "protocol_id": "mmmu-pro-source-export-v1",
+      "benchmark_version_id": "mmmu-pro-canonical",
+      "summary": {
+        "en": "MMMU-Pro strengthens multimodal academic reasoning by filtering text-solvable items, expanding answer choices, and adding a vision-only setting.",
+        "zh": "MMMU-Pro \u901a\u8fc7\u8fc7\u6ee4\u4ec5\u9760\u6587\u5b57\u53ef\u89e3\u7684\u9898\u76ee\u3001\u589e\u52a0\u9009\u9879\u5e76\u52a0\u5165 vision-only setting\uff0c\u5f3a\u5316\u591a\u6a21\u6001 academic reasoning \u6d4b\u8bd5\u3002"
+      },
+      "task_format": {
+        "en": "The model solves the same broad academic task style under Standard-10 and Vision formats; the Vision format embeds the question and options in the image.",
+        "zh": "\u6a21\u578b\u5728 Standard-10 \u548c Vision \u4e24\u79cd\u683c\u5f0f\u4e0b\u5b8c\u6210 academic task\uff1bVision \u683c\u5f0f\u4f1a\u628a\u95ee\u9898\u548c\u9009\u9879\u76f4\u63a5\u653e\u8fdb\u56fe\u7247\u3002"
+      },
+      "scoring": {
+        "metric_name": "Overall accuracy",
+        "explanation": {
+          "en": "The headline score is the average of accuracy in the Standard-10 and Vision settings. These settings are not mixed with original MMMU accuracy.",
+          "zh": "headline score \u662f Standard-10 \u548c Vision \u4e24\u79cd setting accuracy \u7684\u5e73\u5747\u503c\u3002\u8fd9\u4e24\u4e2a setting \u4e0d\u548c\u539f\u59cb MMMU accuracy \u6df7\u5408\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 4,
+      "observations": [
+        {
+          "observation_id": "obs-mmmu-pro-gpt-4o-0513-1",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gpt-4o-0513",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o (0513)",
+          "organization": "OpenAI",
+          "score": 0.519,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-pro-claude-3-5-sonnet-2",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.515,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-pro-gemini-1-5-pro-0801-3",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro-0801",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro (0801)",
+          "organization": "Google",
+          "score": 0.469,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-08-01",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-08-01",
+          "date_kind": "unknown",
+          "capability_date": "2024-08-01",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-mmmu-pro-gemini-1-5-pro-0523-4",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gemini-1-5-pro-0523",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro (0523)",
+          "organization": "Google",
+          "score": 0.435,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-05-23",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-23",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-23",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-mmmu-pro-gpt-4o-0513-1",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gpt-4o-0513",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o (0513)",
+          "organization": "OpenAI",
+          "score": 0.519,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-pro-gpt-4o-0513-1"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-mmmu-pro-gpt-4o-0513-1",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gpt-4o-0513",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o (0513)",
+          "organization": "OpenAI",
+          "score": 0.519,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-pro-gpt-4o-0513-1"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-mmmu-pro-gpt-4o-0513-1",
+          "benchmark_id": "mmmu-pro",
+          "benchmark_version_id": "mmmu-pro-canonical",
+          "model_id": "model-gpt-4o-0513",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o (0513)",
+          "organization": "OpenAI",
+          "score": 0.519,
+          "reported_cost_per_task": null,
+          "metric_id": "mmmu-pro-metric-v1",
+          "protocol_id": "mmmu-pro-source-export-v1",
+          "metric": "Score",
+          "evaluation_protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+          ],
+          "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-mmmu-pro-gpt-4o-0513-1"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.519,
+      "capability_frontier_value": 0.519,
+      "reported_frontier_value": null,
+      "current_frontier": 0.519,
+      "normalized_progress": 0.519,
+      "normalized_headroom": 0.481,
+      "threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2024-05-13"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 728
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 728
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2024-05-13"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 728
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 728
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": null,
+      "capability_velocity_180d": null,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.42857142857142855,
+        "represented_organizations": [
+          "Anthropic",
+          "Google",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "medium"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "bfcl-v4",
+      "name": "BFCL V4",
+      "domain": "Tool use",
+      "release": "2025-07-17",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+      "evaluation_type": "Agent",
+      "tags": [
+        "function calling",
+        "multi-turn",
+        "agentic"
+      ],
+      "metric": "Overall Accuracy",
+      "score_format": "ratio",
+      "metric_id": "bfcl-v4-metric-v1",
+      "protocol_id": "bfcl-v4-source-export-v1",
+      "benchmark_version_id": "bfcl-v4-canonical",
+      "summary": {
+        "en": "BFCL V4 evaluates accurate function and tool calling, including multi-turn and agentic scenarios with real-world functions.",
+        "zh": "BFCL V4 \u8bc4\u4f30\u6a21\u578b\u51c6\u786e\u8c03\u7528 function \u548c tool \u7684\u80fd\u529b\uff0c\u5305\u542b multi-turn \u53ca\u66f4 agentic \u7684\u771f\u5b9e\u573a\u666f\u3002"
+      },
+      "task_format": {
+        "en": "The model receives a user request and function definitions, then must emit valid calls and arguments; V4 adds multi-turn state, error recovery, and agentic formats.",
+        "zh": "\u6a21\u578b\u4f1a\u6536\u5230\u7528\u6237\u8bf7\u6c42\u548c function \u5b9a\u4e49\uff0c\u9700\u8981\u8f93\u51fa\u6709\u6548\u7684\u8c03\u7528\u53ca\u53c2\u6570\uff1bV4 \u589e\u52a0\u4e86 multi-turn state\u3001\u9519\u8bef\u6062\u590d\u548c agentic format\u3002"
+      },
+      "scoring": {
+        "metric_name": "Overall accuracy",
+        "explanation": {
+          "en": "Overall accuracy is the unweighted average of the BFCL V4 sub-category scores. Native function-calling and prompt-only modes are retained as distinct observations.",
+          "zh": "Overall accuracy \u662f BFCL V4 \u5404\u5b50\u7c7b\u522b\u5206\u6570\u7684\u975e\u52a0\u6743\u5e73\u5747\u3002\u539f\u751f function-calling \u548c prompt-only \u6a21\u5f0f\u4f5c\u4e3a\u4e0d\u540c observation \u4fdd\u7559\u3002"
+        }
+      },
+      "evaluation_target": "process_and_output",
+      "observation_count": 3,
+      "observations": [
+        {
+          "observation_id": "obs-bfcl-v4-gpt-4-1-mini-fc-1",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-gpt-4-1-mini-fc",
+          "model_family_id": "openai-gpt-4-1-mini",
+          "model": "GPT-4.1-mini (FC)",
+          "organization": "OpenAI",
+          "score": 0.5045,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-04-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-04-14",
+          "date_kind": "unknown",
+          "capability_date": "2025-04-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-bfcl-v4-claude-sonnet-4-5-fc-2",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-claude-sonnet-4-5-fc",
+          "model_family_id": "anthropic-claude-sonnet-4-5",
+          "model": "Claude Sonnet 4.5 (FC)",
+          "organization": "Anthropic",
+          "score": 0.7324,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-09-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-09-29",
+          "date_kind": "unknown",
+          "capability_date": "2025-09-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-bfcl-v4-gemini-3-pro-preview-prompt-3",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-gemini-3-pro-preview-prompt",
+          "model_family_id": "google-deepmind-gemini-3-pro-preview",
+          "model": "Gemini 3 Pro Preview (Prompt)",
+          "organization": "Google DeepMind",
+          "score": 0.7251,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-11-18",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-11-18",
+          "date_kind": "unknown",
+          "capability_date": "2025-11-18",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-bfcl-v4-gpt-4-1-mini-fc-1",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-gpt-4-1-mini-fc",
+          "model_family_id": "openai-gpt-4-1-mini",
+          "model": "GPT-4.1-mini (FC)",
+          "organization": "OpenAI",
+          "score": 0.5045,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-04-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-04-14",
+          "date_kind": "model release date",
+          "capability_date": "2025-04-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-04-14",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-gpt-4-1-mini-fc-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bfcl-v4-claude-sonnet-4-5-fc-2",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-claude-sonnet-4-5-fc",
+          "model_family_id": "anthropic-claude-sonnet-4-5",
+          "model": "Claude Sonnet 4.5 (FC)",
+          "organization": "Anthropic",
+          "score": 0.7324,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-09-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-09-29",
+          "date_kind": "model release date",
+          "capability_date": "2025-09-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-09-29",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-claude-sonnet-4-5-fc-2"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-bfcl-v4-gpt-4-1-mini-fc-1",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-gpt-4-1-mini-fc",
+          "model_family_id": "openai-gpt-4-1-mini",
+          "model": "GPT-4.1-mini (FC)",
+          "organization": "OpenAI",
+          "score": 0.5045,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-04-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-04-14",
+          "date_kind": "model release date",
+          "capability_date": "2025-04-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-04-14",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-gpt-4-1-mini-fc-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bfcl-v4-claude-sonnet-4-5-fc-2",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-claude-sonnet-4-5-fc",
+          "model_family_id": "anthropic-claude-sonnet-4-5",
+          "model": "Claude Sonnet 4.5 (FC)",
+          "organization": "Anthropic",
+          "score": 0.7324,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-09-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-09-29",
+          "date_kind": "model release date",
+          "capability_date": "2025-09-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-09-29",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-claude-sonnet-4-5-fc-2"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-bfcl-v4-gpt-4-1-mini-fc-1",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-gpt-4-1-mini-fc",
+          "model_family_id": "openai-gpt-4-1-mini",
+          "model": "GPT-4.1-mini (FC)",
+          "organization": "OpenAI",
+          "score": 0.5045,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-04-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-04-14",
+          "date_kind": "model release date",
+          "capability_date": "2025-04-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-04-14",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-gpt-4-1-mini-fc-1"
+          ]
+        },
+        {
+          "observation_id": "obs-bfcl-v4-claude-sonnet-4-5-fc-2",
+          "benchmark_id": "bfcl-v4",
+          "benchmark_version_id": "bfcl-v4-canonical",
+          "model_id": "model-claude-sonnet-4-5-fc",
+          "model_family_id": "anthropic-claude-sonnet-4-5",
+          "model": "Claude Sonnet 4.5 (FC)",
+          "organization": "Anthropic",
+          "score": 0.7324,
+          "reported_cost_per_task": null,
+          "metric_id": "bfcl-v4-metric-v1",
+          "protocol_id": "bfcl-v4-source-export-v1",
+          "metric": "Overall Accuracy",
+          "evaluation_protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1\u2013V3 or across FC and Prompt modes without preserving the mode in provenance.",
+          "model_release_date": "2025-09-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2025-09-29",
+          "date_kind": "model release date",
+          "capability_date": "2025-09-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+          ],
+          "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2025-09-29",
+          "frontier_observation_ids": [
+            "obs-bfcl-v4-claude-sonnet-4-5-fc-2"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.7324,
+      "capability_frontier_value": 0.7324,
+      "reported_frontier_value": null,
+      "current_frontier": 0.7324,
+      "normalized_progress": 0.7324,
+      "normalized_headroom": 0.26759999999999995,
+      "threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2025-04-14"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 413
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 413
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2025-04-14"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 413
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 413
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": null,
+      "capability_velocity_180d": null,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.2857142857142857,
+        "represented_organizations": [
+          "Anthropic",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "low"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
       ],
       "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
       "historical_frontier_status": "unknown_public_dates",

@@ -3897,6 +3897,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-sonnet-4-5-fc",
+    "canonical_name": "Claude Sonnet 4.5 (FC)",
+    "family_id": "anthropic-claude-sonnet-4-5",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-sonnet-4-5-thinking-16k",
     "canonical_name": "Claude Sonnet 4.5 (Thinking 16K)",
     "family_id": "anthropic-claude-sonnet-4-5",
@@ -6884,6 +6905,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-1-5-pro-0523",
+    "canonical_name": "Gemini 1.5 Pro (0523)",
+    "family_id": "google-gemini-1-5-pro",
+    "release_date": "2024-05-23",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-1-5-pro-0801",
+    "canonical_name": "Gemini 1.5 Pro (0801)",
+    "family_id": "google-gemini-1-5-pro",
+    "release_date": "2024-08-01",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-mmmu-benchmark-mmmu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-5-pro-feb-2024",
     "canonical_name": "Gemini 1.5 Pro (Feb 2024)",
     "family_id": "google-deepmind-gemini-1-5-pro",
@@ -8441,6 +8504,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-pro-preview-prompt",
+    "canonical_name": "Gemini 3 Pro Preview (Prompt)",
+    "family_id": "google-deepmind-gemini-3-pro-preview",
+    "release_date": "2025-11-18",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-exp-1206",
     "canonical_name": "gemini-exp-1206",
     "family_id": "google-deepmind-google-gemini-exp-1206",
@@ -8454,6 +8538,48 @@
     ],
     "domains": [
       "Coding"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-pro",
+    "canonical_name": "Gemini Pro",
+    "family_id": "google-gemini-pro",
+    "release_date": "2023-12-06",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-mmmu-benchmark-mmmu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-ultra",
+    "canonical_name": "Gemini Ultra",
+    "family_id": "google-gemini-ultra",
+    "release_date": "2024-02-15",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-mmmu-benchmark-mmmu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
@@ -10016,6 +10142,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-4-1-mini-fc",
+    "canonical_name": "GPT-4.1-mini (FC)",
+    "family_id": "openai-gpt-4-1-mini",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-4-1-nano",
     "canonical_name": "GPT-4.1-Nano",
     "family_id": "openai-gpt-4-1-nano",
@@ -10239,6 +10386,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4o-0513",
+    "canonical_name": "GPT-4o (0513)",
+    "family_id": "openai-gpt-4o",
+    "release_date": "2024-05-13",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-huggingface-co-datasets-mmmu-mmmu-pro"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"

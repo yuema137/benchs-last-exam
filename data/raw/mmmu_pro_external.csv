@@ -1,0 +1,5 @@
+Model version,Score,Release date,Organization,Name,Source,Notes
+gpt-4o-2024-05-13,0.519,2024-05-13,OpenAI,GPT-4o (0513),https://huggingface.co/datasets/MMMU/MMMU_Pro,Overall MMMU-Pro score: average of Standard-10 and Vision settings.
+claude-3-5-sonnet,0.515,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://huggingface.co/datasets/MMMU/MMMU_Pro,Overall MMMU-Pro score: average of Standard-10 and Vision settings.
+gemini-1-5-pro-0801,0.469,2024-08-01,Google,Gemini 1.5 Pro (0801),https://huggingface.co/datasets/MMMU/MMMU_Pro,Overall MMMU-Pro score: average of Standard-10 and Vision settings.
+gemini-1-5-pro-0523,0.435,2024-05-23,Google,Gemini 1.5 Pro (0523),https://huggingface.co/datasets/MMMU/MMMU_Pro,Overall MMMU-Pro score: average of Standard-10 and Vision settings.

@@ -1,0 +1,7 @@
+Model version,Score,Release date,Organization,Name,Source,Notes
+gpt-4v,0.568,2023-11-06,OpenAI,GPT-4V,https://github.com/MMMU-Benchmark/MMMU,Official MMMU validation result from the benchmark leaderboard/paper.
+gemini-pro,0.479,2023-12-06,Google,Gemini Pro,https://github.com/MMMU-Benchmark/MMMU,Official MMMU validation result from the benchmark leaderboard/paper.
+gemini-ultra,0.594,2024-02-15,Google,Gemini Ultra,https://github.com/MMMU-Benchmark/MMMU,Official MMMU validation result from the benchmark leaderboard/paper.
+gpt-4o-2024-05-13,0.691,2024-05-13,OpenAI,GPT-4o,https://github.com/MMMU-Benchmark/MMMU,MMMU validation result; score is the original benchmark accuracy, not MMMU-Pro.
+gemini-1-5-pro-0801,0.658,2024-08-01,Google,Gemini 1.5 Pro (0801),https://github.com/MMMU-Benchmark/MMMU,Official MMMU validation result.
+claude-3-5-sonnet,0.683,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://github.com/MMMU-Benchmark/MMMU,Official MMMU validation result.

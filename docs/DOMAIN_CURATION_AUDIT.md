@@ -21,12 +21,15 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | ScienceAgentBench | Agent / Science & research | 2024-10-07 | 102 expert-validated scientific discovery tasks; HAL exposes verified accuracy across 16 models and two scaffolds | ADD |
 | MLE-bench | Agent / Science & research | 2024-10-10 | 75 fixed Kaggle-style ML engineering competitions with official AIDE baselines across four model generations | ADD |
 | PaperBench | Agent / Science & research | 2025-04-02 | 20 ICML paper-replication tasks with 8,316 rubric outcomes and an official BasicAgent model series | ADD |
+| MMMU | Model / Multimodal | 2023-12-04 | Canonical college-level multimodal reasoning benchmark with official validation results across major model families | ADD |
+| MMMU-Pro | Model / Multimodal | 2024-09-05 | Fixed harder MMMU variant with Standard-10 and Vision settings; official release table keeps the combined metric explicit | ADD |
+| BFCL V4 | Agent / Tool use | 2025-07-17 | Official fixed evaluator checkpoint, explicit overall-accuracy composition, and distinct FC/Prompt modes | ADD_WITH_PARTIAL_DATA |
 
 The batch adds 11 measurement objects, not 11 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown` or right-censored when the evidence does not support a crossing.
 
 ## Deferred candidates
 
-AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. They should be added when canonical observations and model release dates can be reconciled without hand-entered chart values. BFCL V4 remains deferred until its dynamic leaderboard rows can be captured as a stable model-release-date export; its fixed evaluator checkpoint is documented in the queue.
+AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. They should be added when canonical observations and model release dates can be reconciled without hand-entered chart values. BFCL V4 is now included using a small fixed-checkpoint export; the wider live leaderboard remains outside this snapshot.
 
 ## Curation notes
 

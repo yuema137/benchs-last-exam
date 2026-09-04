@@ -12052,6 +12052,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-mmmu-benchmark-mmmu",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MMMU primary source",
+    "url": "https://github.com/MMMU-Benchmark/MMMU",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-openai-mle-bench",
     "resource_scope": [
       "benchmark",
@@ -12119,6 +12135,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-gorilla-cs-berkeley-edu-leaderboard-html",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BFCL V4 primary source",
+    "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
     "resource_scope": [
       "benchmark",
@@ -12163,6 +12195,22 @@
     "url": "https://hcompany.ai/holo2-235b-a22b-preview",
     "publisher": "Official H Company release post",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-huggingface-co-datasets-mmmu-mmmu-pro",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MMMU-Pro primary source",
+    "url": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

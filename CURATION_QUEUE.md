@@ -14,6 +14,6 @@ Sparse T50/T90 data alone is not a reason to defer. The queue is for unresolved 
 - **HumanEval** — canonical historical coding anchor; add when a clean source-linked model-generation export is curated.
 - **BigCodeBench** — valuable realistic code generation benchmark; keep separate from HumanEval and verify its configuration before adding.
 - **GAIA** — added to the core with the fixed 2023 release and official leaderboard export.
-- **MMMU / MMMU-Pro** — important multimodal objects; keep variants and splits separate and add only with a stable score series.
-- **BFCL V4** — official leaderboard is available, but the dynamic rows need a stable model-release-date export before ingestion.
+- **MMMU / MMMU-Pro** — added as separate fixed measurement objects; original validation and MMMU-Pro overall scores are not merged.
+- **BFCL V4** — added with three source-linked rows from the fixed evaluator checkpoint; the wider live leaderboard remains outside this snapshot.
 - **RULER / LiveBench / LiveCodeBench** — configuration-dependent or rolling measurement objects; they need explicit lifecycle semantics before entering the fixed-target core.
