@@ -161,6 +161,9 @@ th, td { border-bottom-color:var(--line); }
 .coverage.high { color:#9ceadd; background:rgba(41, 133, 120, .2); border-color:rgba(119,225,205,.28); }
 .coverage.medium { color:#f1d495; background:rgba(151, 107, 19, .18); border-color:rgba(237,196,126,.28); }
 .coverage.low { color:#f1aaaa; background:rgba(157, 61, 76, .18); border-color:rgba(240,154,154,.25); }
+:root[data-theme="light"] .coverage.high { color:#075f54; background:#d9f2ed; border-color:#8acfc2; }
+:root[data-theme="light"] .coverage.medium { color:#694700; background:#fff0c9; border-color:#e2bd69; }
+:root[data-theme="light"] .coverage.low { color:#8b2638; background:#fde1e6; border-color:#e7a2ad; }
 .detail-head { padding-top:5px; }
 .detail-chart { padding:20px 20px 18px; }
 .detail-kpis { box-shadow:var(--shadow); }
