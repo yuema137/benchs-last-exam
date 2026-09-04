@@ -473,6 +473,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-alignment-anthropic-com-2026-conceptual-reasoning-index",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "DTBench primary source",
+    "url": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-andonlabs-com-evals-vending-bench-2",
     "resource_scope": [
       "benchmark"
@@ -1190,6 +1206,23 @@
     "title": "https://cognition.com/frontiercode",
     "url": "https://cognition.com/frontiercode",
     "publisher": "https://cognition.com/frontiercode",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-conceptualreasoning-ai-dtbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://conceptualreasoning.ai/dtbench",
+    "url": "https://conceptualreasoning.ai/dtbench",
+    "publisher": "https://conceptualreasoning.ai/dtbench",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,

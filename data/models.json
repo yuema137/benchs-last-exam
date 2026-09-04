@@ -1134,6 +1134,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-3-5-sonnet-jun-24",
+    "canonical_name": "Claude 3.5 Sonnet (Jun '24)",
+    "family_id": "anthropic-claude-3-5-sonnet",
+    "release_date": "2024-06-20",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-5-sonnet-oct-24",
+    "canonical_name": "Claude 3.5 Sonnet (Oct '24)",
+    "family_id": "anthropic-claude-3-5-sonnet",
+    "release_date": "2024-10-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-3-7",
     "canonical_name": "Claude 3.7",
     "family_id": "anthropic-claude-3-7",
@@ -1435,6 +1477,27 @@
     "organization": "Anthropic",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-sonnet",
+    "canonical_name": "Claude 3 Sonnet",
+    "family_id": "anthropic-claude-3-sonnet",
+    "release_date": "2024-02-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4947,6 +5010,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-command-r-aug-24",
+    "canonical_name": "Command R+ (Aug '24)",
+    "family_id": "cohere-cohere-labs-formerly-cohere-for-ai-command-r",
+    "release_date": "2024-08-30",
+    "organization": "Cohere,Cohere Labs (formerly Cohere for AI)",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-command-r-plus",
     "canonical_name": "Command R Plus",
     "family_id": "cohere-cohere-labs-formerly-cohere-for-ai-command-r-plus",
@@ -5325,6 +5409,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-chat-v3-0324",
+    "canonical_name": "DeepSeek Chat V3 (0324)",
+    "family_id": "deepseek-deepseek-chat-v3",
+    "release_date": "2025-03-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-chat-v3-1",
+    "canonical_name": "DeepSeek Chat V3.1",
+    "family_id": "deepseek-deepseek-chat-v3-1",
+    "release_date": "2025-08-21",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-llm-67b-chat",
     "canonical_name": "deepseek-llm-67b-chat",
     "family_id": "deepseek-deepseek-llm-67b-chat",
@@ -5661,6 +5787,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v3-1-terminus",
+    "canonical_name": "DeepSeek V3.1 Terminus",
+    "family_id": "deepseek-deepseek-v3-1-terminus",
+    "release_date": "2025-09-22",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v3-1-terminus-reasoning",
     "canonical_name": "DeepSeek V3.1 Terminus (Reasoning)",
     "family_id": "deepseek-deepseek-v3-1-terminus",
@@ -5803,6 +5950,27 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-flash",
+    "canonical_name": "DeepSeek V4 Flash",
+    "family_id": "deepseek-deepseek-v4-flash",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -6884,6 +7052,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-1-0-pro",
+    "canonical_name": "Gemini 1.0 Pro",
+    "family_id": "google-deepmind-gemini-1-0-pro",
+    "release_date": "2023-12-13",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-0-pro-001",
     "canonical_name": "Gemini 1.0 Pro (001)",
     "family_id": "google-deepmind-gemini-1-0-pro",
@@ -6996,6 +7185,27 @@
     "organization": "Google DeepMind",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-1-5-flash-8b",
+    "canonical_name": "Gemini 1.5 Flash-8B",
+    "family_id": "google-deepmind-gemini-1-5-flash-8b",
+    "release_date": "2024-10-03",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
     ],
     "roles": [
       "contemporary_frontier"
@@ -7304,6 +7514,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-0-flash-lite",
+    "canonical_name": "Gemini 2.0 Flash-Lite",
+    "family_id": "google-deepmind-gemini-2-0-flash-lite",
+    "release_date": "2025-02-05",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-2-0-flash-thinking-exp-01-21",
     "canonical_name": "gemini-2.0-flash-thinking-exp-01-21",
     "family_id": "google-deepmind-google-gemini-2-0-flash-thinking-exp-01-21",
@@ -7359,6 +7590,27 @@
     ],
     "domains": [
       "Long context"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-flash-lite",
+    "canonical_name": "Gemini 2.5 Flash-Lite",
+    "family_id": "google-deepmind-gemini-2-5-flash-lite",
+    "release_date": "2025-06-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -8819,6 +9071,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-2-27b",
+    "canonical_name": "Gemma 2 27B",
+    "family_id": "google-deepmind-gemma-2-27b",
+    "release_date": null,
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-2-27b-it",
     "canonical_name": "gemma-2-27b-it",
     "family_id": "google-deepmind-gemma-2-27b-it",
@@ -8945,6 +9218,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-3-12b",
+    "canonical_name": "Gemma 3 12B",
+    "family_id": "google-deepmind-gemma-3-12b",
+    "release_date": "2025-03-12",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-3-12b-instruct",
     "canonical_name": "Gemma 3 12B Instruct",
     "family_id": "google-deepmind-gemma-3-12b-instruct",
@@ -9008,6 +9302,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-3-27b",
+    "canonical_name": "Gemma 3 27B",
+    "family_id": "google-deepmind-gemma-3-27b",
+    "release_date": "2025-03-12",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-3-27b-instruct",
     "canonical_name": "Gemma 3 27B Instruct",
     "family_id": "google-deepmind-gemma-3-27b-instruct",
@@ -9050,6 +9365,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemma-3-4b",
+    "canonical_name": "Gemma 3 4B",
+    "family_id": "google-deepmind-gemma-3-4b",
+    "release_date": "2025-03-12",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemma-3-4b-it",
     "canonical_name": "gemma-3-4b-it",
     "family_id": "google-deepmind-gemma-3-4b-it",
@@ -9063,6 +9399,27 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemma-4-26b-a4b",
+    "canonical_name": "Gemma 4 26B-A4B",
+    "family_id": "google-deepmind-gemma-4-26b-a4b",
+    "release_date": "2026-04-02",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -9108,6 +9465,27 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemma-4-31b",
+    "canonical_name": "Gemma 4 31B",
+    "family_id": "google-deepmind-gemma-4-31b",
+    "release_date": "2026-04-02",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -12116,6 +12494,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-4-nano",
+    "canonical_name": "GPT-5.4 nano",
+    "family_id": "openai-gpt-5-4-nano",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-4-nano-2026-03-17-high",
     "canonical_name": "gpt-5.4-nano-2026-03-17_high",
     "family_id": "openai-gpt-5-4-nano-2026-03-17-high",
@@ -12549,6 +12948,27 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-pro",
+    "canonical_name": "GPT-5.5 Pro",
+    "family_id": "openai-gpt-5-5-pro",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -13011,6 +13431,27 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-sol-pro",
+    "canonical_name": "GPT-5.6 Sol Pro",
+    "family_id": "openai-gpt-5-6-sol-pro",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -14281,6 +14722,27 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-grok-2",
+    "canonical_name": "Grok 2",
+    "family_id": "xai-grok-2",
+    "release_date": "2024-12-12",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -16687,6 +17149,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama-3-1-70b",
+    "canonical_name": "Llama 3.1 70B",
+    "family_id": "meta-ai-llama-3-1-70b",
+    "release_date": "2024-07-23",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama-3-1-70b-instruct",
     "canonical_name": "Llama-3.1-70B-Instruct",
     "family_id": "meta-ai-llama-3-1-70b-instruct",
@@ -16700,6 +17183,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-3-1-8b",
+    "canonical_name": "Llama 3.1 8B",
+    "family_id": "meta-ai-llama-3-1-8b",
+    "release_date": "2024-07-23",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -16967,6 +17471,27 @@
     "organization": "Meta AI",
     "resource_ids": [
       "resource-https-crfm-stanford-edu-helm-lite-latest-leaderboard-mmlu"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-3-3-70b",
+    "canonical_name": "Llama 3.3 70B",
+    "family_id": "meta-ai-llama-3-3-70b",
+    "release_date": "2024-12-06",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
     ],
     "roles": [
       "contemporary_frontier"
@@ -18118,6 +18643,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-magistral-small-sep-25",
+    "canonical_name": "Magistral Small (Sep '25)",
+    "family_id": "mistral-ai-magistral-small",
+    "release_date": "2025-09-18",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mc-cot-base",
     "canonical_name": "MC-CoT_Base",
     "family_id": "unknown-mc-cot-base",
@@ -18706,6 +19252,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-ministral-3b",
+    "canonical_name": "Ministral 3B",
+    "family_id": "mistral-ai-ministral-3b",
+    "release_date": "2024-10-16",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-ministral-3b-2410",
     "canonical_name": "ministral-3b-2410",
     "family_id": "mistral-ai-ministral-3b-2410",
@@ -18740,6 +19307,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-ministral-8b-oct-24",
+    "canonical_name": "Ministral 8B (Oct '24)",
+    "family_id": "mistral-ai-ministral-8b",
+    "release_date": "2024-10-16",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -18853,6 +19441,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mistral-large-2-jul-24",
+    "canonical_name": "Mistral Large 2 (Jul '24)",
+    "family_id": "mistral-ai-mistral-large-2",
+    "release_date": "2024-07-24",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mistral-large-2402",
     "canonical_name": "Mistral Large (2402)",
     "family_id": "mistral-ai-mistral-large",
@@ -18937,6 +19546,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mistral-large-feb-24",
+    "canonical_name": "Mistral Large (Feb '24)",
+    "family_id": "mistral-ai-mistral-large",
+    "release_date": "2024-02-26",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-large-nov-24",
+    "canonical_name": "Mistral Large (Nov '24)",
+    "family_id": "mistral-ai-mistral-large",
+    "release_date": "2024-11-18",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mistral-medium-2505",
     "canonical_name": "mistral-medium-2505",
     "family_id": "mistral-ai-mistral-medium-2505",
@@ -18995,6 +19646,69 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-medium-3-may-25",
+    "canonical_name": "Mistral Medium 3 (May '25)",
+    "family_id": "mistral-ai-mistral-medium-3",
+    "release_date": "2025-05-07",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-medium-dec-23",
+    "canonical_name": "Mistral Medium (Dec '23)",
+    "family_id": "mistral-ai-mistral-medium",
+    "release_date": "2023-12-11",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-nemo",
+    "canonical_name": "Mistral NeMo",
+    "family_id": "mistral-ai-mistral-nemo",
+    "release_date": "2024-07-18",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -19168,6 +19882,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mistral-small-3-1-mar-25",
+    "canonical_name": "Mistral Small 3.1 (Mar '25)",
+    "family_id": "mistral-ai-mistral-small-3-1",
+    "release_date": "2025-03-17",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mistral-small-3-2",
     "canonical_name": "Mistral Small 3.2",
     "family_id": "mistral-ai-mistral-small-3-2",
@@ -19210,6 +19945,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-mistral-small-3-2-jun-25",
+    "canonical_name": "Mistral Small 3.2 (Jun '25)",
+    "family_id": "mistral-ai-mistral-small-3-2",
+    "release_date": "2025-06-20",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-mistral-small-3-2501",
     "canonical_name": "mistral-small-3-2501",
     "family_id": "mistral-ai-mistral-small-3-2501",
@@ -19223,6 +19979,111 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-small-dec-23",
+    "canonical_name": "Mistral Small (Dec '23)",
+    "family_id": "mistral-ai-mistral-small",
+    "release_date": "2023-12-11",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-small-feb-24",
+    "canonical_name": "Mistral Small (Feb '24)",
+    "family_id": "unknown-mistral-small",
+    "release_date": "2024-02-26",
+    "organization": "Unknown",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-small-mar-26",
+    "canonical_name": "Mistral Small (Mar '26)",
+    "family_id": "mistral-ai-mistral-small",
+    "release_date": "2026-03-16",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-small-sep-24",
+    "canonical_name": "Mistral Small (Sep '24)",
+    "family_id": "mistral-ai-mistral-small",
+    "release_date": "2024-09-17",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-tiny",
+    "canonical_name": "Mistral Tiny",
+    "family_id": "mistral-ai-mistral-tiny",
+    "release_date": "2023-09-27",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -20365,6 +21226,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o3-mini",
+    "canonical_name": "o3-mini",
+    "family_id": "openai-o3-mini",
+    "release_date": "2025-01-31",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o3-mini-2025-01-31-high",
     "canonical_name": "o3-mini-2025-01-31_high",
     "family_id": "openai-o3-mini-2025-01-31-high",
@@ -20491,6 +21373,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o3-pro",
+    "canonical_name": "o3-pro",
+    "family_id": "openai-o3-pro",
+    "release_date": "2025-06-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o3-pro-2025-06-10-high",
     "canonical_name": "o3-pro-2025-06-10_high",
     "family_id": "openai-o3-pro-2025-06-10-high",
@@ -20567,6 +21470,27 @@
     ],
     "domains": [
       "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-o4-mini",
+    "canonical_name": "o4-mini",
+    "family_id": "openai-o4-mini",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
     ],
     "evaluation_types": [
       "Model"
@@ -22612,6 +23536,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen-plus",
+    "canonical_name": "Qwen Plus",
+    "family_id": "alibaba-qwen-plus",
+    "release_date": "2025-04-28",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen-plus-2025-01-25",
     "canonical_name": "qwen-plus-2025-01-25",
     "family_id": "alibaba-qwen-plus-2025-01-25",
@@ -22976,6 +23921,27 @@
     "organization": "Alibaba",
     "resource_ids": [
       "resource-http-arxiv-org-abs-2412-08905"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen2-5-7b",
+    "canonical_name": "Qwen2.5 7B",
+    "family_id": "alibaba-qwen2-5-7b",
+    "release_date": "2024-09-19",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
     ],
     "roles": [
       "contemporary_frontier"
@@ -23515,6 +24481,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-235b-a22b-2507",
+    "canonical_name": "Qwen3 235B-A22B (2507)",
+    "family_id": "alibaba-qwen3-235b-a22b",
+    "release_date": "2025-07-25",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-235b-a22b-2507-reasoning",
     "canonical_name": "Qwen3 235B A22B 2507 (Reasoning)",
     "family_id": "alibaba-qwen3-235b-a22b-2507",
@@ -23851,6 +24838,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-5-122b-a10b",
+    "canonical_name": "Qwen3.5 122B-A10B",
+    "family_id": "alibaba-qwen3-5-122b-a10b",
+    "release_date": "2026-02-24",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-5-122b-a10b-non-reasoning",
     "canonical_name": "Qwen3.5 122B A10B (Non-reasoning)",
     "family_id": "alibaba-qwen3-5-122b-a10b",
@@ -23867,6 +24875,27 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-5-27b",
+    "canonical_name": "Qwen3.5 27B",
+    "family_id": "alibaba-qwen3-5-27b",
+    "release_date": "2026-02-24",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
