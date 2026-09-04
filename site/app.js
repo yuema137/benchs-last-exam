@@ -164,4 +164,5 @@ $("evaluation-type").addEventListener("change",()=>{updateDomainOptions();});
 window.addEventListener("popstate",()=>{if(location.hash==="#leaderboard"||location.hash==="")showLeaderboard();else if(STORY_VIEWS.includes(location.hash.slice(1))){state.view=location.hash.slice(1);renderStory();}});
 window.addEventListener("hashchange",()=>{if(location.hash==="#leaderboard")showLeaderboard();else if(STORY_VIEWS.includes(location.hash.slice(1))){state.view=location.hash.slice(1);renderStory();}});
 $("apply-filters").addEventListener("click",event=>{event.preventDefault();state.sort="current";state.direction=1;renderTable();});
+state.sort="current"; state.direction=1;
 fetch("data/benchmarks.json?v=20260903-5").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));renderTable();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
