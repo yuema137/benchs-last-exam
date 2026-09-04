@@ -179,6 +179,11 @@ a:hover { color:var(--text); }
 .curve { filter:drop-shadow(0 0 4px var(--glow)); }
 .dot { filter:drop-shadow(0 0 3px var(--glow)); }
 .notice { padding:14px 16px; border:1px solid var(--line); border-radius:10px; background:var(--panel-soft); color:var(--muted); }
+.coverage-panel { display:grid; grid-template-columns:repeat(4,minmax(120px,1fr)); gap:8px 14px; margin:8px 0 14px; padding:0; list-style:none; color:var(--muted); font-size:13px; }
+.coverage-panel li { display:flex; align-items:center; gap:7px; }
+.coverage-panel li span { display:inline-grid; place-items:center; width:18px; height:18px; border-radius:50%; font-weight:800; color:var(--accent); background:var(--glow); }
+.coverage-panel li.missing span { color:var(--muted); background:color-mix(in srgb,var(--muted) 10%,transparent); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration:0.01ms !important; animation-duration:0.01ms !important; }
 }
+@media (max-width:600px) { .coverage-panel { grid-template-columns:repeat(2,minmax(120px,1fr)); } }
