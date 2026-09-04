@@ -1083,6 +1083,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-benchcad-com-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BenchCAD \u00b7 Vision2Code primary source",
+    "url": "https://benchcad.com/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-cognition-com-blog-frontier-code-1-1",
     "resource_scope": [
       "benchmark"

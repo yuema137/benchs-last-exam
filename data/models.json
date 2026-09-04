@@ -19987,6 +19987,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-openai-o3",
+    "canonical_name": "OpenAI o3",
+    "family_id": "openai-openai-o3",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-benchcad-com-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-openclip",
     "canonical_name": "OpenCLIP",
     "family_id": "unknown-openclip",
