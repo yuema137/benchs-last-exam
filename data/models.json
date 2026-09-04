@@ -4401,6 +4401,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-code-davinci-001",
+    "canonical_name": "code-davinci-001",
+    "family_id": "openai-code-davinci-001",
+    "release_date": "2022-03-15",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2107-03374"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Coding"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-code-davinci-002",
     "canonical_name": "code-davinci-002",
     "family_id": "openai-code-davinci-002",

@@ -636,6 +636,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-arxiv-org-abs-2107-03374",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "HumanEval primary source",
+      "url": "https://arxiv.org/abs/2107.03374",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-arxiv-org-abs-2110-14168",
       "resource_scope": [
         "benchmark"
@@ -12204,6 +12220,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-huggingface-co-blog-leaderboard-bigcodebench",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "BigCodeBench primary source",
+      "url": "https://huggingface.co/blog/leaderboard-bigcodebench",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-huggingface-co-datasets-mmmu-mmmu-pro",
       "resource_scope": [
         "benchmark"
@@ -12367,6 +12399,23 @@
       "notes": null
     },
     {
+      "id": "resource-https-openai-com-index-hello-gpt-4o",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "https://openai.com/index/hello-gpt-4o/",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "publisher": "https://openai.com/index/hello-gpt-4o/",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+    },
+    {
       "id": "resource-https-openai-com-index-introducing-swe-bench-verified",
       "resource_scope": [
         "benchmark"
@@ -12413,6 +12462,23 @@
       "watch": false,
       "last_checked_at": null,
       "notes": null
+    },
+    {
+      "id": "resource-https-openai-com-research-gpt-4",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "https://openai.com/research/gpt-4",
+      "url": "https://openai.com/research/gpt-4",
+      "publisher": "https://openai.com/research/gpt-4",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
     },
     {
       "id": "resource-https-os-world-github-io",
@@ -12677,6 +12743,23 @@
       "watch": false,
       "last_checked_at": null,
       "notes": "Official release/model resource for the current frontier model panel."
+    },
+    {
+      "id": "resource-https-www-anthropic-com-news-claude-3-family",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "https://www.anthropic.com/news/claude-3-family",
+      "url": "https://www.anthropic.com/news/claude-3-family",
+      "publisher": "https://www.anthropic.com/news/claude-3-family",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": "Shared evidence resource; the export does not provide a model-specific source record."
     },
     {
       "id": "resource-https-www-anthropic-com-news-releasing-claude-instant-1-2",
@@ -17307,6 +17390,27 @@
       ],
       "domains": [
         "Mathematics"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-code-davinci-001",
+      "canonical_name": "code-davinci-001",
+      "family_id": "openai-code-davinci-001",
+      "release_date": "2022-03-15",
+      "organization": "OpenAI",
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2107-03374"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Coding"
       ],
       "evaluation_types": [
         "Model"
@@ -229918,6 +230022,1343 @@
       ],
       "resource_ids": [
         "resource-https-gorilla-cs-berkeley-edu-leaderboard-html"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "humaneval",
+      "name": "HumanEval",
+      "domain": "Coding",
+      "release": "2021-07-07",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://arxiv.org/abs/2107.03374",
+      "evaluation_type": "Model",
+      "tags": [
+        "Python",
+        "function-level",
+        "unit tests"
+      ],
+      "metric": "Pass@1",
+      "score_format": "ratio",
+      "metric_id": "humaneval-metric-v1",
+      "protocol_id": "humaneval-source-export-v1",
+      "benchmark_version_id": "humaneval-canonical",
+      "summary": {
+        "en": "HumanEval is a classic function-level code-generation benchmark with executable unit tests.",
+        "zh": "HumanEval \u662f\u7ecf\u5178\u7684 function-level code-generation benchmark\uff0c\u901a\u8fc7\u53ef\u6267\u884c unit tests \u68c0\u67e5\u4ee3\u7801\u3002"
+      },
+      "task_format": {
+        "en": "The model receives a Python function signature and docstring, then generates an implementation that is run against hidden tests.",
+        "zh": "\u6a21\u578b\u4f1a\u6536\u5230 Python function signature \u548c docstring\uff0c\u7136\u540e\u751f\u6210\u5b9e\u73b0\u5e76\u901a\u8fc7\u9690\u85cf\u6d4b\u8bd5\u8fd0\u884c\u3002"
+      },
+      "scoring": {
+        "metric_name": "Pass@1",
+        "explanation": {
+          "en": "Pass@1 is the probability that one sampled/generated completion passes the hidden tests. This series uses reported single-sample or greedy Pass@1 values and does not mix HumanEval+.",
+          "zh": "Pass@1 \u662f\u4e00\u6b21\u751f\u6210\u7684 completion \u901a\u8fc7\u9690\u85cf\u6d4b\u8bd5\u7684\u6982\u7387\u3002\u672c\u5e8f\u5217\u4f7f\u7528\u516c\u5f00\u7684 single-sample \u6216 greedy Pass@1\uff0c\u4e0d\u6df7\u5165 HumanEval+\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 5,
+      "observations": [
+        {
+          "observation_id": "obs-humaneval-gpt-3-175b-1",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-3-175b",
+          "model_family_id": "openai-gpt-3-175b",
+          "model": "GPT-3 175B",
+          "organization": "OpenAI",
+          "score": 0.116,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2020-06-11",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2020-06-11",
+          "date_kind": "unknown",
+          "capability_date": "2020-06-11",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-humaneval-code-davinci-001-2",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-code-davinci-001",
+          "model_family_id": "openai-code-davinci-001",
+          "model": "code-davinci-001",
+          "organization": "OpenAI",
+          "score": 0.288,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2022-03-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2022-03-15",
+          "date_kind": "unknown",
+          "capability_date": "2022-03-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4-3",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4",
+          "model_family_id": "openai-gpt-4",
+          "model": "GPT-4",
+          "organization": "OpenAI",
+          "score": 0.67,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2023-03-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-03-14",
+          "date_kind": "unknown",
+          "capability_date": "2023-03-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-research-gpt-4",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/research/gpt-4",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-humaneval-claude-3-opus-4",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-claude-3-opus",
+          "model_family_id": "anthropic-claude-3-opus",
+          "model": "Claude 3 Opus",
+          "organization": "Anthropic",
+          "score": 0.849,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-02-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-29",
+          "date_kind": "unknown",
+          "capability_date": "2024-02-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-www-anthropic-com-news-claude-3-family",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://www.anthropic.com/news/claude-3-family",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4o-5",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.906,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-hello-gpt-4o",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/index/hello-gpt-4o/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-humaneval-gpt-3-175b-1",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-3-175b",
+          "model_family_id": "openai-gpt-3-175b",
+          "model": "GPT-3 175B",
+          "organization": "OpenAI",
+          "score": 0.116,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2020-06-11",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2020-06-11",
+          "date_kind": "model release date",
+          "capability_date": "2020-06-11",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2020-06-11",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-3-175b-1"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-code-davinci-001-2",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-code-davinci-001",
+          "model_family_id": "openai-code-davinci-001",
+          "model": "code-davinci-001",
+          "organization": "OpenAI",
+          "score": 0.288,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2022-03-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2022-03-15",
+          "date_kind": "model release date",
+          "capability_date": "2022-03-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2022-03-15",
+          "frontier_observation_ids": [
+            "obs-humaneval-code-davinci-001-2"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4-3",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4",
+          "model_family_id": "openai-gpt-4",
+          "model": "GPT-4",
+          "organization": "OpenAI",
+          "score": 0.67,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2023-03-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-03-14",
+          "date_kind": "model release date",
+          "capability_date": "2023-03-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-research-gpt-4",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/research/gpt-4",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-03-14",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4-3"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-claude-3-opus-4",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-claude-3-opus",
+          "model_family_id": "anthropic-claude-3-opus",
+          "model": "Claude 3 Opus",
+          "organization": "Anthropic",
+          "score": 0.849,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-02-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-29",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-www-anthropic-com-news-claude-3-family",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://www.anthropic.com/news/claude-3-family",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-29",
+          "frontier_observation_ids": [
+            "obs-humaneval-claude-3-opus-4"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4o-5",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.906,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-hello-gpt-4o",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/index/hello-gpt-4o/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4o-5"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-humaneval-gpt-3-175b-1",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-3-175b",
+          "model_family_id": "openai-gpt-3-175b",
+          "model": "GPT-3 175B",
+          "organization": "OpenAI",
+          "score": 0.116,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2020-06-11",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2020-06-11",
+          "date_kind": "model release date",
+          "capability_date": "2020-06-11",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2020-06-11",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-3-175b-1"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-code-davinci-001-2",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-code-davinci-001",
+          "model_family_id": "openai-code-davinci-001",
+          "model": "code-davinci-001",
+          "organization": "OpenAI",
+          "score": 0.288,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2022-03-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2022-03-15",
+          "date_kind": "model release date",
+          "capability_date": "2022-03-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2022-03-15",
+          "frontier_observation_ids": [
+            "obs-humaneval-code-davinci-001-2"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4-3",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4",
+          "model_family_id": "openai-gpt-4",
+          "model": "GPT-4",
+          "organization": "OpenAI",
+          "score": 0.67,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2023-03-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-03-14",
+          "date_kind": "model release date",
+          "capability_date": "2023-03-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-research-gpt-4",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/research/gpt-4",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-03-14",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4-3"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-claude-3-opus-4",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-claude-3-opus",
+          "model_family_id": "anthropic-claude-3-opus",
+          "model": "Claude 3 Opus",
+          "organization": "Anthropic",
+          "score": 0.849,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-02-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-29",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-www-anthropic-com-news-claude-3-family",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://www.anthropic.com/news/claude-3-family",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-29",
+          "frontier_observation_ids": [
+            "obs-humaneval-claude-3-opus-4"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4o-5",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.906,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-hello-gpt-4o",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/index/hello-gpt-4o/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4o-5"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-humaneval-gpt-3-175b-1",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-3-175b",
+          "model_family_id": "openai-gpt-3-175b",
+          "model": "GPT-3 175B",
+          "organization": "OpenAI",
+          "score": 0.116,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2020-06-11",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2020-06-11",
+          "date_kind": "model release date",
+          "capability_date": "2020-06-11",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2020-06-11",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-3-175b-1"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-code-davinci-001-2",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-code-davinci-001",
+          "model_family_id": "openai-code-davinci-001",
+          "model": "code-davinci-001",
+          "organization": "OpenAI",
+          "score": 0.288,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2022-03-15",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2022-03-15",
+          "date_kind": "model release date",
+          "capability_date": "2022-03-15",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://arxiv.org/abs/2107.03374",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2022-03-15",
+          "frontier_observation_ids": [
+            "obs-humaneval-code-davinci-001-2"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4-3",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4",
+          "model_family_id": "openai-gpt-4",
+          "model": "GPT-4",
+          "organization": "OpenAI",
+          "score": 0.67,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2023-03-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2023-03-14",
+          "date_kind": "model release date",
+          "capability_date": "2023-03-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-research-gpt-4",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/research/gpt-4",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2023-03-14",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4-3"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-claude-3-opus-4",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-claude-3-opus",
+          "model_family_id": "anthropic-claude-3-opus",
+          "model": "Claude 3 Opus",
+          "organization": "Anthropic",
+          "score": 0.849,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-02-29",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-02-29",
+          "date_kind": "model release date",
+          "capability_date": "2024-02-29",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-www-anthropic-com-news-claude-3-family",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://www.anthropic.com/news/claude-3-family",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-02-29",
+          "frontier_observation_ids": [
+            "obs-humaneval-claude-3-opus-4"
+          ]
+        },
+        {
+          "observation_id": "obs-humaneval-gpt-4o-5",
+          "benchmark_id": "humaneval",
+          "benchmark_version_id": "humaneval-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.906,
+          "reported_cost_per_task": null,
+          "metric_id": "humaneval-metric-v1",
+          "protocol_id": "humaneval-source-export-v1",
+          "metric": "Pass@1",
+          "evaluation_protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-openai-com-index-hello-gpt-4o",
+            "resource-https-arxiv-org-abs-2107-03374"
+          ],
+          "source": "https://openai.com/index/hello-gpt-4o/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-humaneval-gpt-4o-5"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.906,
+      "capability_frontier_value": 0.906,
+      "reported_frontier_value": null,
+      "current_frontier": 0.906,
+      "normalized_progress": 0.906,
+      "normalized_headroom": 0.09399999999999997,
+      "threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 615
+        },
+        "T80": {
+          "status": "reached",
+          "days": 967
+        },
+        "T90": {
+          "status": "reached",
+          "days": 1041
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 615
+        },
+        "T80": {
+          "status": "reached",
+          "days": 967
+        },
+        "T90": {
+          "status": "reached",
+          "days": 1041
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.016863474178403757,
+      "capability_velocity_180d": 0.016863474178403757,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.2857142857142857,
+        "represented_organizations": [
+          "Anthropic",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "low"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2107-03374"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "bigcodebench",
+      "name": "BigCodeBench",
+      "domain": "Coding",
+      "release": "2024-06-18",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+      "evaluation_type": "Model",
+      "tags": [
+        "libraries",
+        "function calls",
+        "calibrated Pass@1"
+      ],
+      "metric": "Complete Pass@1",
+      "score_format": "ratio",
+      "metric_id": "bigcodebench-metric-v1",
+      "protocol_id": "bigcodebench-source-export-v1",
+      "benchmark_version_id": "bigcodebench-canonical",
+      "summary": {
+        "en": "BigCodeBench evaluates practical code generation with complex instructions, multiple function calls, and diverse libraries.",
+        "zh": "BigCodeBench \u901a\u8fc7\u590d\u6742\u6307\u4ee4\u3001\u591a\u6b21 function call \u548c\u591a\u79cd library\uff0c\u8bc4\u4f30\u66f4\u8d34\u8fd1\u5b9e\u9645\u7684 code generation\u3002"
+      },
+      "task_format": {
+        "en": "In the Complete setting, the model fills in a function implementation from a detailed docstring and is evaluated on curated executable tests across 139 libraries.",
+        "zh": "\u5728 Complete setting \u4e2d\uff0c\u6a21\u578b\u6839\u636e\u8be6\u7ec6 docstring \u8865\u5168 function implementation\uff0c\u518d\u901a\u8fc7\u8986\u76d6 139 \u4e2a library \u7684\u53ef\u6267\u884c\u6d4b\u8bd5\u8bc4\u4f30\u3002"
+      },
+      "scoring": {
+        "metric_name": "Calibrated Pass@1",
+        "explanation": {
+          "en": "Calibrated Pass@1 measures the share of tasks passed after the benchmark's prescribed completion calibration. Complete and Instruct are separate measurement variants; this series uses Complete.",
+          "zh": "Calibrated Pass@1 \u662f\u6309\u7167 benchmark \u89c4\u5b9a\u7684 completion calibration \u540e\u901a\u8fc7\u7684 task \u5360\u6bd4\u3002Complete \u548c Instruct \u662f\u4e0d\u540c measurement variant\uff1b\u672c\u5e8f\u5217\u4f7f\u7528 Complete\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 3,
+      "observations": [
+        {
+          "observation_id": "obs-bigcodebench-gpt-4o-1",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.611,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-bigcodebench-claude-3-5-sonnet-2",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-claude-3-5-sonnet",
+          "model_family_id": "anthropic-claude-3-5-sonnet",
+          "model": "Claude 3.5 Sonnet",
+          "organization": "Anthropic",
+          "score": 0.586,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-06-20",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-06-20",
+          "date_kind": "unknown",
+          "capability_date": "2024-06-20",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-bigcodebench-gemini-1-5-pro-3",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-gemini-1-5-pro",
+          "model_family_id": "google-gemini-1-5-pro",
+          "model": "Gemini 1.5 Pro",
+          "organization": "Google",
+          "score": 0.575,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-05-14",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-14",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-14",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-bigcodebench-gpt-4o-1",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.611,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bigcodebench-gpt-4o-1"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-bigcodebench-gpt-4o-1",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.611,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bigcodebench-gpt-4o-1"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-bigcodebench-gpt-4o-1",
+          "benchmark_id": "bigcodebench",
+          "benchmark_version_id": "bigcodebench-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.611,
+          "reported_cost_per_task": null,
+          "metric_id": "bigcodebench-metric-v1",
+          "protocol_id": "bigcodebench-source-export-v1",
+          "metric": "Complete Pass@1",
+          "evaluation_protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
+          ],
+          "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-bigcodebench-gpt-4o-1"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.611,
+      "capability_frontier_value": 0.611,
+      "reported_frontier_value": null,
+      "current_frontier": 0.611,
+      "normalized_progress": 0.611,
+      "normalized_headroom": 0.389,
+      "threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2024-05-13"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 807
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 807
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "at_release",
+          "days": 0,
+          "qualifying_model_release_date": "2024-05-13"
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 807
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 807
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": null,
+      "capability_velocity_180d": null,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.42857142857142855,
+        "represented_organizations": [
+          "Anthropic",
+          "Google",
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "medium"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-huggingface-co-blog-leaderboard-bigcodebench"
       ],
       "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
       "historical_frontier_status": "unknown_public_dates",

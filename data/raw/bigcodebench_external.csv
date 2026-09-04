@@ -1,0 +1,4 @@
+Model version,Complete Pass@1,Release date,Organization,Name,Source,Notes
+gpt-4o-2024-05-13,0.611,2024-05-13,OpenAI,GPT-4o,https://huggingface.co/blog/leaderboard-bigcodebench,Calibrated Pass@1 on BigCodeBench-Complete; Instruct is a separate variant.
+claude-3-5-sonnet,0.586,2024-06-20,Anthropic,Claude 3.5 Sonnet,https://huggingface.co/blog/leaderboard-bigcodebench,Calibrated Pass@1 on BigCodeBench-Complete; Instruct is a separate variant.
+gemini-1-5-pro-0514,0.575,2024-05-14,Google,Gemini 1.5 Pro,https://huggingface.co/blog/leaderboard-bigcodebench,Calibrated Pass@1 on BigCodeBench-Complete; Instruct is a separate variant.

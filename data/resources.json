@@ -633,6 +633,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2107-03374",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "HumanEval primary source",
+    "url": "https://arxiv.org/abs/2107.03374",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2110-14168",
     "resource_scope": [
       "benchmark"
@@ -12201,6 +12217,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-huggingface-co-blog-leaderboard-bigcodebench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BigCodeBench primary source",
+    "url": "https://huggingface.co/blog/leaderboard-bigcodebench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-huggingface-co-datasets-mmmu-mmmu-pro",
     "resource_scope": [
       "benchmark"
@@ -12364,6 +12396,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-openai-com-index-hello-gpt-4o",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://openai.com/index/hello-gpt-4o/",
+    "url": "https://openai.com/index/hello-gpt-4o/",
+    "publisher": "https://openai.com/index/hello-gpt-4o/",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-openai-com-index-introducing-swe-bench-verified",
     "resource_scope": [
       "benchmark"
@@ -12410,6 +12459,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-research-gpt-4",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://openai.com/research/gpt-4",
+    "url": "https://openai.com/research/gpt-4",
+    "publisher": "https://openai.com/research/gpt-4",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-os-world-github-io",
@@ -12674,6 +12740,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-www-anthropic-com-news-claude-3-family",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://www.anthropic.com/news/claude-3-family",
+    "url": "https://www.anthropic.com/news/claude-3-family",
+    "publisher": "https://www.anthropic.com/news/claude-3-family",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-www-anthropic-com-news-releasing-claude-instant-1-2",

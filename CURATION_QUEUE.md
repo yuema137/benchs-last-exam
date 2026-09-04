@@ -11,8 +11,8 @@ Sparse T50/T90 data alone is not a reason to defer. The queue is for unresolved 
 ## Previously identified candidates
 
 - **GeneBench-Pro** — important scientific-agent candidate, but new and currently too sparse for a trustworthy longitudinal series.
-- **HumanEval** — canonical historical coding anchor; add when a clean source-linked model-generation export is curated.
-- **BigCodeBench** — valuable realistic code generation benchmark; keep separate from HumanEval and verify its configuration before adding.
+- **HumanEval** — added as the original fixed 164-problem Pass@1 measurement; HumanEval+ remains separate.
+- **BigCodeBench** — added using the fixed Complete calibrated Pass@1 series; Instruct and Hard remain separate.
 - **GAIA** — added to the core with the fixed 2023 release and official leaderboard export.
 - **MMMU / MMMU-Pro** — added as separate fixed measurement objects; original validation and MMMU-Pro overall scores are not merged.
 - **BFCL V4** — added with three source-linked rows from the fixed evaluator checkpoint; the wider live leaderboard remains outside this snapshot.

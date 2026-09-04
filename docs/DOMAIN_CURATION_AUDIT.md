@@ -24,6 +24,8 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | MMMU | Model / Multimodal | 2023-12-04 | Canonical college-level multimodal reasoning benchmark with official validation results across major model families | ADD |
 | MMMU-Pro | Model / Multimodal | 2024-09-05 | Fixed harder MMMU variant with Standard-10 and Vision settings; official release table keeps the combined metric explicit | ADD |
 | BFCL V4 | Agent / Tool use | 2025-07-17 | Official fixed evaluator checkpoint, explicit overall-accuracy composition, and distinct FC/Prompt modes | ADD_WITH_PARTIAL_DATA |
+| HumanEval | Model / Coding | 2021-07-07 | Canonical function-level code generation benchmark with executable hidden tests and a long model-generation history | ADD |
+| BigCodeBench | Model / Coding | 2024-06-18 | 1,140 practical function tasks across diverse libraries; official Complete calibrated Pass@1 leaderboard | ADD |
 
 The batch adds 11 measurement objects, not 11 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown` or right-censored when the evidence does not support a crossing.
 
