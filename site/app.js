@@ -113,5 +113,5 @@ $("lang-en").onclick=()=>setLang("en");$("lang-zh").onclick=()=>setLang("zh");$(
 $("evaluation-type").addEventListener("change",()=>{updateDomainOptions();});
 window.addEventListener("popstate",()=>{if(location.hash==="#leaderboard"||location.hash==="")showLeaderboard();});
 window.addEventListener("hashchange",()=>{if(location.hash==="#leaderboard")showLeaderboard();});
-$("apply-filters").addEventListener("click",event=>{event.preventDefault();renderTable();});
+$("apply-filters").addEventListener("click",event=>{event.preventDefault();state.sort="current";state.direction=1;renderTable();});
 fetch("data/benchmarks.json?v=20260903-5").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));renderTable();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
