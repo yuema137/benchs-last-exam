@@ -23,7 +23,7 @@
   {
     "id": "model-ada-350m",
     "canonical_name": "ada (350M)",
-    "family_id": "openai-ada-350m",
+    "family_id": "openai-ada",
     "release_date": null,
     "organization": "OpenAI",
     "resource_ids": [
@@ -65,7 +65,7 @@
   {
     "id": "model-alpaca-7b",
     "canonical_name": "Alpaca (7B)",
-    "family_id": "unknown-alpaca-7b",
+    "family_id": "unknown-alpaca",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -149,7 +149,7 @@
   {
     "id": "model-anthropic-lm-v4-s3-52b",
     "canonical_name": "Anthropic-LM v4-s3 (52B)",
-    "family_id": "unknown-anthropic-lm-v4-s3-52b",
+    "family_id": "unknown-anthropic-lm-v4-s3",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -233,7 +233,7 @@
   {
     "id": "model-babbage-1-3b",
     "canonical_name": "babbage (1.3B)",
-    "family_id": "openai-babbage-1-3b",
+    "family_id": "openai-babbage",
     "release_date": "2020-06-22",
     "organization": "OpenAI",
     "resource_ids": [
@@ -443,7 +443,7 @@
   {
     "id": "model-baichuan2-chat-13b-8-shot",
     "canonical_name": "Baichuan2-Chat 13B (8-shot)",
-    "family_id": "unknown-baichuan2-chat-13b-8-shot",
+    "family_id": "unknown-baichuan2-chat-13b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -464,7 +464,7 @@
   {
     "id": "model-baichuan2-chat-7b-8-shot",
     "canonical_name": "Baichuan2-Chat 7B (8-shot)",
-    "family_id": "unknown-baichuan2-chat-7b-8-shot",
+    "family_id": "unknown-baichuan2-chat-7b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -485,7 +485,7 @@
   {
     "id": "model-bloom-176b",
     "canonical_name": "BLOOM (176B)",
-    "family_id": "hugging-face-bigscience-bloom-176b",
+    "family_id": "hugging-face-bigscience-bloom",
     "release_date": "2022-07-06",
     "organization": "Hugging Face,BigScience",
     "resource_ids": [
@@ -611,7 +611,7 @@
   {
     "id": "model-chatglm-2-6b-base",
     "canonical_name": "ChatGLM 2-6B (base)*",
-    "family_id": "unknown-chatglm-2-6b-base",
+    "family_id": "unknown-chatglm-2-6b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -653,7 +653,7 @@
   {
     "id": "model-chatglm2-6b-8-shot",
     "canonical_name": "ChatGLM2 6B (8-shot)",
-    "family_id": "unknown-chatglm2-6b-8-shot",
+    "family_id": "unknown-chatglm2-6b",
     "release_date": "2023-06-24",
     "organization": "Unknown",
     "resource_ids": [
@@ -842,7 +842,7 @@
   {
     "id": "model-claude-3-5-haiku-20241022",
     "canonical_name": "Claude 3.5 Haiku (20241022)",
-    "family_id": "anthropic-claude-3-5-haiku-20241022",
+    "family_id": "anthropic-claude-3-5-haiku",
     "release_date": "2024-10-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -884,7 +884,7 @@
   {
     "id": "model-claude-3-5-sonnet-20240620",
     "canonical_name": "Claude 3.5 Sonnet (20240620)",
-    "family_id": "anthropic-claude-3-5-sonnet-20240620",
+    "family_id": "anthropic-claude-3-5-sonnet",
     "release_date": "2024-06-20",
     "organization": "Anthropic",
     "resource_ids": [
@@ -905,7 +905,7 @@
   {
     "id": "model-claude-3-5-sonnet-20241022",
     "canonical_name": "Claude 3.5 Sonnet (20241022)",
-    "family_id": "anthropic-claude-3-5-sonnet-20241022",
+    "family_id": "anthropic-claude-3-5-sonnet",
     "release_date": "2024-10-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -947,7 +947,7 @@
   {
     "id": "model-claude-3-7-16k",
     "canonical_name": "Claude 3.7 (16K)",
-    "family_id": "anthropic-claude-3-7-16k",
+    "family_id": "anthropic-claude-3-7",
     "release_date": "2025-02-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -968,7 +968,7 @@
   {
     "id": "model-claude-3-7-1k",
     "canonical_name": "Claude 3.7 (1K)",
-    "family_id": "anthropic-claude-3-7-1k",
+    "family_id": "anthropic-claude-3-7",
     "release_date": "2025-02-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -989,7 +989,7 @@
   {
     "id": "model-claude-3-7-8k",
     "canonical_name": "Claude 3.7 (8K)",
-    "family_id": "anthropic-claude-3-7-8k",
+    "family_id": "anthropic-claude-3-7",
     "release_date": "2025-02-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1094,7 +1094,7 @@
   {
     "id": "model-claude-3-haiku-20240307",
     "canonical_name": "Claude 3 Haiku (20240307)",
-    "family_id": "anthropic-claude-3-haiku-20240307",
+    "family_id": "anthropic-claude-3-haiku",
     "release_date": "2024-03-07",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1136,7 +1136,7 @@
   {
     "id": "model-claude-3-opus-20240229",
     "canonical_name": "Claude 3 Opus (20240229)",
-    "family_id": "anthropic-claude-3-opus-20240229",
+    "family_id": "anthropic-claude-3-opus",
     "release_date": "2024-02-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1157,7 +1157,7 @@
   {
     "id": "model-claude-3-sonnet-20240229",
     "canonical_name": "Claude 3 Sonnet (20240229)",
-    "family_id": "anthropic-claude-3-sonnet-20240229",
+    "family_id": "anthropic-claude-3-sonnet",
     "release_date": "2024-02-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1220,7 +1220,7 @@
   {
     "id": "model-claude-4-7-high",
     "canonical_name": "Claude 4.7 (High)",
-    "family_id": "anthropic-claude-4-7-high",
+    "family_id": "anthropic-claude-4-7",
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1241,7 +1241,7 @@
   {
     "id": "model-claude-4-7-low",
     "canonical_name": "Claude 4.7 (Low)",
-    "family_id": "anthropic-claude-4-7-low",
+    "family_id": "anthropic-claude-4-7",
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1262,7 +1262,7 @@
   {
     "id": "model-claude-4-7-max",
     "canonical_name": "Claude 4.7 (Max)",
-    "family_id": "anthropic-claude-4-7-max",
+    "family_id": "anthropic-claude-4-7",
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1283,7 +1283,7 @@
   {
     "id": "model-claude-4-7-medium",
     "canonical_name": "Claude 4.7 (Medium)",
-    "family_id": "anthropic-claude-4-7-medium",
+    "family_id": "anthropic-claude-4-7",
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1369,7 +1369,7 @@
   {
     "id": "model-claude-fable-5-1-high",
     "canonical_name": "Claude Fable 5.1 (High)",
-    "family_id": "anthropic-claude-fable-5-1-high",
+    "family_id": "anthropic-claude-fable-5-1",
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1391,7 +1391,7 @@
   {
     "id": "model-claude-fable-5-1-low",
     "canonical_name": "Claude Fable 5.1 (Low)",
-    "family_id": "anthropic-claude-fable-5-1-low",
+    "family_id": "anthropic-claude-fable-5-1",
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1435,7 +1435,7 @@
   {
     "id": "model-claude-fable-5-1-medium",
     "canonical_name": "Claude Fable 5.1 (Medium)",
-    "family_id": "anthropic-claude-fable-5-1-medium",
+    "family_id": "anthropic-claude-fable-5-1",
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1457,7 +1457,7 @@
   {
     "id": "model-claude-fable-5-1-xhigh",
     "canonical_name": "Claude Fable 5.1 (XHigh)",
-    "family_id": "anthropic-claude-fable-5-1-xhigh",
+    "family_id": "anthropic-claude-fable-5-1",
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1563,7 +1563,7 @@
   {
     "id": "model-claude-fable-5-medium",
     "canonical_name": "Claude Fable 5 (Medium)",
-    "family_id": "anthropic-claude-fable-5-medium",
+    "family_id": "anthropic-claude-fable-5",
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1668,7 +1668,7 @@
   {
     "id": "model-claude-haiku-4-5-thinking-16k",
     "canonical_name": "Claude Haiku 4.5 (Thinking 16K)",
-    "family_id": "anthropic-claude-haiku-4-5-thinking-16k",
+    "family_id": "anthropic-claude-haiku-4-5",
     "release_date": "2025-10-15",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1689,7 +1689,7 @@
   {
     "id": "model-claude-haiku-4-5-thinking-1k",
     "canonical_name": "Claude Haiku 4.5 (Thinking 1K)",
-    "family_id": "anthropic-claude-haiku-4-5-thinking-1k",
+    "family_id": "anthropic-claude-haiku-4-5",
     "release_date": "2025-10-15",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1710,7 +1710,7 @@
   {
     "id": "model-claude-haiku-4-5-thinking-32k",
     "canonical_name": "Claude Haiku 4.5 (Thinking 32K)",
-    "family_id": "anthropic-claude-haiku-4-5-thinking-32k",
+    "family_id": "anthropic-claude-haiku-4-5",
     "release_date": "2025-10-15",
     "organization": "Anthropic",
     "resource_ids": [
@@ -1731,7 +1731,7 @@
   {
     "id": "model-claude-haiku-4-5-thinking-8k",
     "canonical_name": "Claude Haiku 4.5 (Thinking 8K)",
-    "family_id": "anthropic-claude-haiku-4-5-thinking-8k",
+    "family_id": "anthropic-claude-haiku-4-5",
     "release_date": "2025-10-15",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2130,7 +2130,7 @@
   {
     "id": "model-claude-opus-4-6-120k-high",
     "canonical_name": "Claude Opus 4.6 (120K, High)",
-    "family_id": "anthropic-claude-opus-4-6-120k-high",
+    "family_id": "anthropic-claude-opus-4-6",
     "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2151,7 +2151,7 @@
   {
     "id": "model-claude-opus-4-6-120k-low",
     "canonical_name": "Claude Opus 4.6 (120K, Low)",
-    "family_id": "anthropic-claude-opus-4-6-120k-low",
+    "family_id": "anthropic-claude-opus-4-6",
     "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2172,7 +2172,7 @@
   {
     "id": "model-claude-opus-4-6-120k-max",
     "canonical_name": "Claude Opus 4.6 (120K, Max)",
-    "family_id": "anthropic-claude-opus-4-6-120k-max",
+    "family_id": "anthropic-claude-opus-4-6",
     "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2193,7 +2193,7 @@
   {
     "id": "model-claude-opus-4-6-120k-medium",
     "canonical_name": "Claude Opus 4.6 (120K, Medium)",
-    "family_id": "anthropic-claude-opus-4-6-120k-medium",
+    "family_id": "anthropic-claude-opus-4-6",
     "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2340,7 +2340,7 @@
   {
     "id": "model-claude-opus-4-7-high",
     "canonical_name": "Claude Opus 4.7 (High)",
-    "family_id": "anthropic-claude-opus-4-7-high",
+    "family_id": "anthropic-claude-opus-4-7",
     "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2445,7 +2445,7 @@
   {
     "id": "model-claude-opus-4-8-high",
     "canonical_name": "Claude Opus 4.8 (High)",
-    "family_id": "anthropic-claude-opus-4-8-high",
+    "family_id": "anthropic-claude-opus-4-8",
     "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2508,7 +2508,7 @@
   {
     "id": "model-claude-opus-4-8-medium",
     "canonical_name": "Claude Opus 4.8 (Medium)",
-    "family_id": "anthropic-claude-opus-4-8-medium",
+    "family_id": "anthropic-claude-opus-4-8",
     "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2550,7 +2550,7 @@
   {
     "id": "model-claude-opus-4-thinking-16k",
     "canonical_name": "Claude Opus 4 (Thinking 16K)",
-    "family_id": "anthropic-claude-opus-4-thinking-16k",
+    "family_id": "anthropic-claude-opus-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2571,7 +2571,7 @@
   {
     "id": "model-claude-opus-4-thinking-1k",
     "canonical_name": "Claude Opus 4 (Thinking 1K)",
-    "family_id": "anthropic-claude-opus-4-thinking-1k",
+    "family_id": "anthropic-claude-opus-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2592,7 +2592,7 @@
   {
     "id": "model-claude-opus-4-thinking-8k",
     "canonical_name": "Claude Opus 4 (Thinking 8K)",
-    "family_id": "anthropic-claude-opus-4-thinking-8k",
+    "family_id": "anthropic-claude-opus-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2655,7 +2655,7 @@
   {
     "id": "model-claude-opus-5-high",
     "canonical_name": "Claude Opus 5 (High)",
-    "family_id": "anthropic-claude-opus-5-high",
+    "family_id": "anthropic-claude-opus-5",
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2718,7 +2718,7 @@
   {
     "id": "model-claude-opus-5-medium",
     "canonical_name": "Claude Opus 5 (medium)",
-    "family_id": "anthropic-claude-opus-5-medium",
+    "family_id": "anthropic-claude-opus-5",
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2739,7 +2739,7 @@
   {
     "id": "model-claude-opus-5-xhigh",
     "canonical_name": "Claude Opus 5 (xhigh)",
-    "family_id": "anthropic-claude-opus-5-xhigh",
+    "family_id": "anthropic-claude-opus-5",
     "release_date": "2026-07-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2970,7 +2970,7 @@
   {
     "id": "model-claude-sonnet-4-5-thinking-16k",
     "canonical_name": "Claude Sonnet 4.5 (Thinking 16K)",
-    "family_id": "anthropic-claude-sonnet-4-5-thinking-16k",
+    "family_id": "anthropic-claude-sonnet-4-5",
     "release_date": "2025-09-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -2991,7 +2991,7 @@
   {
     "id": "model-claude-sonnet-4-5-thinking-1k",
     "canonical_name": "Claude Sonnet 4.5 (Thinking 1K)",
-    "family_id": "anthropic-claude-sonnet-4-5-thinking-1k",
+    "family_id": "anthropic-claude-sonnet-4-5",
     "release_date": "2025-09-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3012,7 +3012,7 @@
   {
     "id": "model-claude-sonnet-4-5-thinking-32k",
     "canonical_name": "Claude Sonnet 4.5 (Thinking 32K)",
-    "family_id": "anthropic-claude-sonnet-4-5-thinking-32k",
+    "family_id": "anthropic-claude-sonnet-4-5",
     "release_date": "2025-09-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3033,7 +3033,7 @@
   {
     "id": "model-claude-sonnet-4-5-thinking-8k",
     "canonical_name": "Claude Sonnet 4.5 (Thinking 8K)",
-    "family_id": "anthropic-claude-sonnet-4-5-thinking-8k",
+    "family_id": "anthropic-claude-sonnet-4-5",
     "release_date": "2025-09-29",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3159,7 +3159,7 @@
   {
     "id": "model-claude-sonnet-4-thinking-16k",
     "canonical_name": "Claude Sonnet 4 (Thinking 16K)",
-    "family_id": "anthropic-claude-sonnet-4-thinking-16k",
+    "family_id": "anthropic-claude-sonnet-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3180,7 +3180,7 @@
   {
     "id": "model-claude-sonnet-4-thinking-1k",
     "canonical_name": "Claude Sonnet 4 (Thinking 1K)",
-    "family_id": "anthropic-claude-sonnet-4-thinking-1k",
+    "family_id": "anthropic-claude-sonnet-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3201,7 +3201,7 @@
   {
     "id": "model-claude-sonnet-4-thinking-8k",
     "canonical_name": "Claude Sonnet 4 (Thinking 8K)",
-    "family_id": "anthropic-claude-sonnet-4-thinking-8k",
+    "family_id": "anthropic-claude-sonnet-4",
     "release_date": "2025-05-22",
     "organization": "Anthropic",
     "resource_ids": [
@@ -3285,7 +3285,7 @@
   {
     "id": "model-code-cushman-001-12b",
     "canonical_name": "code-cushman-001 (12B)",
-    "family_id": "unknown-code-cushman-001-12b",
+    "family_id": "unknown-code-cushman-001",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3369,7 +3369,7 @@
   {
     "id": "model-codex-mini-latest",
     "canonical_name": "Codex Mini (Latest)",
-    "family_id": "unknown-codex-mini-latest",
+    "family_id": "unknown-codex-mini",
     "release_date": "2025-05-16",
     "organization": "Unknown",
     "resource_ids": [
@@ -3390,7 +3390,7 @@
   {
     "id": "model-cohere-command-beta-52-4b",
     "canonical_name": "Cohere Command beta (52.4B)",
-    "family_id": "unknown-cohere-command-beta-52-4b",
+    "family_id": "unknown-cohere-command-beta",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3411,7 +3411,7 @@
   {
     "id": "model-cohere-command-beta-6-1b",
     "canonical_name": "Cohere Command beta (6.1B)",
-    "family_id": "unknown-cohere-command-beta-6-1b",
+    "family_id": "unknown-cohere-command-beta",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3432,7 +3432,7 @@
   {
     "id": "model-cohere-large-v20220720-13-1b",
     "canonical_name": "Cohere large v20220720 (13.1B)",
-    "family_id": "unknown-cohere-large-v20220720-13-1b",
+    "family_id": "unknown-cohere-large-v20220720",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3453,7 +3453,7 @@
   {
     "id": "model-cohere-medium-v20220720-6-1b",
     "canonical_name": "Cohere medium v20220720 (6.1B)",
-    "family_id": "unknown-cohere-medium-v20220720-6-1b",
+    "family_id": "unknown-cohere-medium-v20220720",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3474,7 +3474,7 @@
   {
     "id": "model-cohere-medium-v20221108-6-1b",
     "canonical_name": "Cohere medium v20221108 (6.1B)",
-    "family_id": "unknown-cohere-medium-v20221108-6-1b",
+    "family_id": "unknown-cohere-medium-v20221108",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3495,7 +3495,7 @@
   {
     "id": "model-cohere-small-v20220720-410m",
     "canonical_name": "Cohere small v20220720 (410M)",
-    "family_id": "unknown-cohere-small-v20220720-410m",
+    "family_id": "unknown-cohere-small-v20220720",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3516,7 +3516,7 @@
   {
     "id": "model-cohere-xlarge-v20220609-52-4b",
     "canonical_name": "Cohere xlarge v20220609 (52.4B)",
-    "family_id": "unknown-cohere-xlarge-v20220609-52-4b",
+    "family_id": "unknown-cohere-xlarge-v20220609",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3537,7 +3537,7 @@
   {
     "id": "model-cohere-xlarge-v20221108-52-4b",
     "canonical_name": "Cohere xlarge v20221108 (52.4B)",
-    "family_id": "unknown-cohere-xlarge-v20221108-52-4b",
+    "family_id": "unknown-cohere-xlarge-v20221108",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3621,7 +3621,7 @@
   {
     "id": "model-curie-6-7b",
     "canonical_name": "curie (6.7B)",
-    "family_id": "openai-curie-6-7b",
+    "family_id": "openai-curie",
     "release_date": null,
     "organization": "OpenAI",
     "resource_ids": [
@@ -3642,7 +3642,7 @@
   {
     "id": "model-davinci-175b",
     "canonical_name": "davinci (175B)",
-    "family_id": "openai-davinci-175b",
+    "family_id": "openai-davinci",
     "release_date": null,
     "organization": "OpenAI",
     "resource_ids": [
@@ -3747,7 +3747,7 @@
   {
     "id": "model-deepseek-llm-chat-67b",
     "canonical_name": "DeepSeek LLM Chat (67B)",
-    "family_id": "unknown-deepseek-llm-chat-67b",
+    "family_id": "unknown-deepseek-llm-chat",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -3789,7 +3789,7 @@
   {
     "id": "model-deepseek-r1-05-28",
     "canonical_name": "Deepseek R1 (05/28)",
-    "family_id": "deepseek-deepseek-r1-05-28",
+    "family_id": "deepseek-deepseek-r1",
     "release_date": "2025-05-28",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4146,7 +4146,7 @@
   {
     "id": "model-deepseek-v4-flash-0731-high",
     "canonical_name": "DeepSeek V4 Flash 0731 (High)",
-    "family_id": "deepseek-deepseek-v4-flash-0731-high",
+    "family_id": "deepseek-deepseek-v4-flash-0731",
     "release_date": "2026-07-31",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4167,7 +4167,7 @@
   {
     "id": "model-deepseek-v4-flash-0731-low",
     "canonical_name": "DeepSeek V4 Flash 0731 (Low)",
-    "family_id": "deepseek-deepseek-v4-flash-0731-low",
+    "family_id": "deepseek-deepseek-v4-flash-0731",
     "release_date": "2026-07-31",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4209,7 +4209,7 @@
   {
     "id": "model-deepseek-v4-flash-0731-none",
     "canonical_name": "DeepSeek V4 Flash 0731 (None)",
-    "family_id": "deepseek-deepseek-v4-flash-0731-none",
+    "family_id": "deepseek-deepseek-v4-flash-0731",
     "release_date": "2026-07-31",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4272,7 +4272,7 @@
   {
     "id": "model-deepseek-v4-pro-0813-high",
     "canonical_name": "DeepSeek V4 Pro 0813 (High)",
-    "family_id": "deepseek-deepseek-v4-pro-0813-high",
+    "family_id": "deepseek-deepseek-v4-pro-0813",
     "release_date": "2026-08-13",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4294,7 +4294,7 @@
   {
     "id": "model-deepseek-v4-pro-0813-low",
     "canonical_name": "DeepSeek V4 Pro 0813 (Low)",
-    "family_id": "deepseek-deepseek-v4-pro-0813-low",
+    "family_id": "deepseek-deepseek-v4-pro-0813",
     "release_date": "2026-08-13",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4338,7 +4338,7 @@
   {
     "id": "model-deepseek-v4-pro-0813-none",
     "canonical_name": "DeepSeek V4 Pro 0813 (None)",
-    "family_id": "deepseek-deepseek-v4-pro-0813-none",
+    "family_id": "deepseek-deepseek-v4-pro-0813",
     "release_date": "2026-08-13",
     "organization": "DeepSeek",
     "resource_ids": [
@@ -4675,7 +4675,7 @@
   {
     "id": "model-falcon-instruct-40b",
     "canonical_name": "Falcon-Instruct (40B)",
-    "family_id": "technology-innovation-institute-falcon-instruct-40b",
+    "family_id": "technology-innovation-institute-falcon-instruct",
     "release_date": "2023-05-25",
     "organization": "Technology Innovation Institute",
     "resource_ids": [
@@ -4696,7 +4696,7 @@
   {
     "id": "model-falcon-instruct-7b",
     "canonical_name": "Falcon-Instruct (7B)",
-    "family_id": "unknown-falcon-instruct-7b",
+    "family_id": "unknown-falcon-instruct",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -4843,7 +4843,7 @@
   {
     "id": "model-gemini-1-0-pro-001",
     "canonical_name": "Gemini 1.0 Pro (001)",
-    "family_id": "google-deepmind-gemini-1-0-pro-001",
+    "family_id": "google-deepmind-gemini-1-0-pro",
     "release_date": "2023-12-13",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -4885,7 +4885,7 @@
   {
     "id": "model-gemini-1-5-flash-001",
     "canonical_name": "Gemini 1.5 Flash (001)",
-    "family_id": "google-deepmind-gemini-1-5-flash-001",
+    "family_id": "google-deepmind-gemini-1-5-flash",
     "release_date": "2024-05-23",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -4906,7 +4906,7 @@
   {
     "id": "model-gemini-1-5-flash-002",
     "canonical_name": "Gemini 1.5 Flash (002)",
-    "family_id": "google-deepmind-gemini-1-5-flash-002",
+    "family_id": "google-deepmind-gemini-1-5-flash",
     "release_date": "2024-09-24",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -4927,7 +4927,7 @@
   {
     "id": "model-gemini-1-5-flash-0514-preview",
     "canonical_name": "Gemini 1.5 Flash (0514 preview)",
-    "family_id": "google-deepmind-gemini-1-5-flash-0514-preview",
+    "family_id": "google-deepmind-gemini-1-5-flash",
     "release_date": "2024-05-14",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -4990,7 +4990,7 @@
   {
     "id": "model-gemini-1-5-pro-001",
     "canonical_name": "Gemini 1.5 Pro (001)",
-    "family_id": "google-deepmind-gemini-1-5-pro-001",
+    "family_id": "google-deepmind-gemini-1-5-pro",
     "release_date": "2024-02-15",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5011,7 +5011,7 @@
   {
     "id": "model-gemini-1-5-pro-002",
     "canonical_name": "Gemini 1.5 Pro (002)",
-    "family_id": "google-deepmind-gemini-1-5-pro-002",
+    "family_id": "google-deepmind-gemini-1-5-pro",
     "release_date": "2024-09-24",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5032,7 +5032,7 @@
   {
     "id": "model-gemini-1-5-pro-0409-preview",
     "canonical_name": "Gemini 1.5 Pro (0409 preview)",
-    "family_id": "unknown-gemini-1-5-pro-0409-preview",
+    "family_id": "unknown-gemini-1-5-pro",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -5053,7 +5053,7 @@
   {
     "id": "model-gemini-1-5-pro-feb-2024",
     "canonical_name": "Gemini 1.5 Pro (Feb 2024)",
-    "family_id": "google-deepmind-gemini-1-5-pro-feb-2024",
+    "family_id": "google-deepmind-gemini-1-5-pro",
     "release_date": "2024-02-15",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5074,7 +5074,7 @@
   {
     "id": "model-gemini-1-5-pro-may-2024",
     "canonical_name": "Gemini 1.5 Pro (May 2024)",
-    "family_id": "google-deepmind-gemini-1-5-pro-may-2024",
+    "family_id": "google-deepmind-gemini-1-5-pro",
     "release_date": "2024-05-14",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5158,7 +5158,7 @@
   {
     "id": "model-gemini-2-0-flash-experimental",
     "canonical_name": "Gemini 2.0 Flash (Experimental)",
-    "family_id": "google-deepmind-google-gemini-2-0-flash-experimental",
+    "family_id": "google-deepmind-google-gemini-2-0-flash",
     "release_date": "2024-12-11",
     "organization": "Google DeepMind,Google",
     "resource_ids": [
@@ -5242,7 +5242,7 @@
   {
     "id": "model-gemini-2-5-flash-preview",
     "canonical_name": "Gemini 2.5 Flash (Preview)",
-    "family_id": "google-deepmind-gemini-2-5-flash-preview",
+    "family_id": "google-deepmind-gemini-2-5-flash",
     "release_date": "2025-05-20",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5347,7 +5347,7 @@
   {
     "id": "model-gemini-2-5-flash-preview-thinking-16k",
     "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 16K)",
-    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-16k",
+    "family_id": "google-deepmind-gemini-2-5-flash",
     "release_date": "2025-05-20",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5368,7 +5368,7 @@
   {
     "id": "model-gemini-2-5-flash-preview-thinking-1k",
     "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 1K)",
-    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-1k",
+    "family_id": "google-deepmind-gemini-2-5-flash",
     "release_date": "2025-05-20",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5389,7 +5389,7 @@
   {
     "id": "model-gemini-2-5-flash-preview-thinking-24k",
     "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 24K)",
-    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-24k",
+    "family_id": "google-deepmind-gemini-2-5-flash",
     "release_date": "2025-05-20",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5410,7 +5410,7 @@
   {
     "id": "model-gemini-2-5-flash-preview-thinking-8k",
     "canonical_name": "Gemini 2.5 Flash (Preview) (Thinking 8K)",
-    "family_id": "google-deepmind-gemini-2-5-flash-preview-thinking-8k",
+    "family_id": "google-deepmind-gemini-2-5-flash",
     "release_date": "2025-05-20",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5557,7 +5557,7 @@
   {
     "id": "model-gemini-2-5-pro-thinking-16k",
     "canonical_name": "Gemini 2.5 Pro (Thinking 16K)",
-    "family_id": "google-deepmind-gemini-2-5-pro-thinking-16k",
+    "family_id": "google-deepmind-gemini-2-5-pro",
     "release_date": "2025-06-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5578,7 +5578,7 @@
   {
     "id": "model-gemini-2-5-pro-thinking-1k",
     "canonical_name": "Gemini 2.5 Pro (Thinking 1K)",
-    "family_id": "google-deepmind-gemini-2-5-pro-thinking-1k",
+    "family_id": "google-deepmind-gemini-2-5-pro",
     "release_date": "2025-06-05",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5599,7 +5599,7 @@
   {
     "id": "model-gemini-2-5-pro-thinking-32k",
     "canonical_name": "Gemini 2.5 Pro (Thinking 32K)",
-    "family_id": "google-deepmind-gemini-2-5-pro-thinking-32k",
+    "family_id": "google-deepmind-gemini-2-5-pro",
     "release_date": "2025-06-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5620,7 +5620,7 @@
   {
     "id": "model-gemini-2-5-pro-thinking-8k",
     "canonical_name": "Gemini 2.5 Pro (Thinking 8K)",
-    "family_id": "google-deepmind-gemini-2-5-pro-thinking-8k",
+    "family_id": "google-deepmind-gemini-2-5-pro",
     "release_date": "2025-06-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -5914,7 +5914,7 @@
   {
     "id": "model-gemini-3-5-flash-lite-medium",
     "canonical_name": "Gemini 3.5 Flash-Lite (Medium)",
-    "family_id": "google-deepmind-gemini-3-5-flash-lite-medium",
+    "family_id": "google-deepmind-gemini-3-5-flash-lite",
     "release_date": "2026-07-21",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6061,7 +6061,7 @@
   {
     "id": "model-gemini-3-6-flash-medium",
     "canonical_name": "Gemini 3.6 Flash (Medium)",
-    "family_id": "google-deepmind-gemini-3-6-flash-medium",
+    "family_id": "google-deepmind-gemini-3-6-flash",
     "release_date": "2026-07-21",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6145,7 +6145,7 @@
   {
     "id": "model-gemini-3-7-flash-low",
     "canonical_name": "Gemini 3.7 Flash (Low)",
-    "family_id": "google-deepmind-gemini-3-7-flash-low",
+    "family_id": "google-deepmind-gemini-3-7-flash",
     "release_date": "2026-08-13",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6166,7 +6166,7 @@
   {
     "id": "model-gemini-3-7-flash-medium",
     "canonical_name": "Gemini 3.7 Flash (Medium)",
-    "family_id": "google-deepmind-gemini-3-7-flash-medium",
+    "family_id": "google-deepmind-gemini-3-7-flash",
     "release_date": "2026-08-13",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6230,7 +6230,7 @@
   {
     "id": "model-gemini-3-deep-think-2-26",
     "canonical_name": "Gemini 3 Deep Think (2/26)",
-    "family_id": "unknown-gemini-3-deep-think-2-26",
+    "family_id": "unknown-gemini-3-deep-think",
     "release_date": "2026-02-12",
     "organization": "Unknown",
     "resource_ids": [
@@ -6251,7 +6251,7 @@
   {
     "id": "model-gemini-3-deep-think-preview",
     "canonical_name": "Gemini 3 Deep Think (Preview) \u00b2",
-    "family_id": "unknown-gemini-3-deep-think-preview",
+    "family_id": "unknown-gemini-3-deep-think",
     "release_date": "2026-02-12",
     "organization": "Unknown",
     "resource_ids": [
@@ -6335,7 +6335,7 @@
   {
     "id": "model-gemini-3-flash-preview-low",
     "canonical_name": "Gemini 3 Flash Preview (Low)",
-    "family_id": "google-deepmind-gemini-3-flash-preview-low",
+    "family_id": "google-deepmind-gemini-3-flash-preview",
     "release_date": "2025-12-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6356,7 +6356,7 @@
   {
     "id": "model-gemini-3-flash-preview-medium",
     "canonical_name": "Gemini 3 Flash Preview (Medium)",
-    "family_id": "google-deepmind-gemini-3-flash-preview-medium",
+    "family_id": "google-deepmind-gemini-3-flash-preview",
     "release_date": "2025-12-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6377,7 +6377,7 @@
   {
     "id": "model-gemini-3-flash-preview-minimal",
     "canonical_name": "Gemini 3 Flash Preview (Minimal)",
-    "family_id": "google-deepmind-gemini-3-flash-preview-minimal",
+    "family_id": "google-deepmind-gemini-3-flash-preview",
     "release_date": "2025-12-17",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6524,7 +6524,7 @@
   {
     "id": "model-gemma-2-instruct-27b",
     "canonical_name": "Gemma 2 Instruct (27B)",
-    "family_id": "google-deepmind-gemma-2-instruct-27b",
+    "family_id": "google-deepmind-gemma-2-instruct",
     "release_date": "2024-06-24",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6545,7 +6545,7 @@
   {
     "id": "model-gemma-2-instruct-9b",
     "canonical_name": "Gemma 2 Instruct (9B)",
-    "family_id": "google-deepmind-gemma-2-instruct-9b",
+    "family_id": "google-deepmind-gemma-2-instruct",
     "release_date": "2024-06-24",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6734,7 +6734,7 @@
   {
     "id": "model-gemma-7b",
     "canonical_name": "Gemma (7B)",
-    "family_id": "google-deepmind-gemma-7b",
+    "family_id": "google-deepmind-gemma",
     "release_date": "2024-02-21",
     "organization": "Google DeepMind",
     "resource_ids": [
@@ -6755,7 +6755,7 @@
   {
     "id": "model-glm-130b",
     "canonical_name": "GLM (130B)",
-    "family_id": "unknown-glm-130b",
+    "family_id": "unknown-glm",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -7196,7 +7196,7 @@
   {
     "id": "model-gpt-3-5-8-shot",
     "canonical_name": "GPT-3.5 (8-shot)",
-    "family_id": "unknown-gpt-3-5-8-shot",
+    "family_id": "unknown-gpt-3-5",
     "release_date": "2022-11-28",
     "organization": "Unknown",
     "resource_ids": [
@@ -7238,7 +7238,7 @@
   {
     "id": "model-gpt-3-5-turbo-0125",
     "canonical_name": "GPT-3.5 Turbo (0125)",
-    "family_id": "openai-gpt-3-5-turbo-0125",
+    "family_id": "openai-gpt-3-5-turbo",
     "release_date": "2024-01-25",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7280,7 +7280,7 @@
   {
     "id": "model-gpt-3-5-turbo-0613",
     "canonical_name": "GPT-3.5 Turbo (0613)",
-    "family_id": "openai-gpt-3-5-turbo-0613",
+    "family_id": "openai-gpt-3-5-turbo",
     "release_date": "2023-06-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7406,7 +7406,7 @@
   {
     "id": "model-gpt-4-0613",
     "canonical_name": "GPT-4 (0613)",
-    "family_id": "openai-gpt-4-0613",
+    "family_id": "openai-gpt-4",
     "release_date": "2023-06-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7616,7 +7616,7 @@
   {
     "id": "model-gpt-4-8-shot",
     "canonical_name": "GPT-4 (8-shot)",
-    "family_id": "unknown-gpt-4-8-shot",
+    "family_id": "unknown-gpt-4",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -7637,7 +7637,7 @@
   {
     "id": "model-gpt-4-initial-release",
     "canonical_name": "GPT-4 (initial release)",
-    "family_id": "openai-gpt-4-initial-release",
+    "family_id": "openai-gpt-4",
     "release_date": "2023-03-14",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7679,7 +7679,7 @@
   {
     "id": "model-gpt-4-turbo-1106-preview",
     "canonical_name": "GPT-4 Turbo (1106 preview)",
-    "family_id": "openai-gpt-4-turbo-1106-preview",
+    "family_id": "openai-gpt-4-turbo",
     "release_date": "2023-11-06",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7700,7 +7700,7 @@
   {
     "id": "model-gpt-4-turbo-2024-04-09",
     "canonical_name": "GPT-4 Turbo (2024-04-09)",
-    "family_id": "openai-gpt-4-turbo-2024-04-09",
+    "family_id": "openai-gpt-4-turbo",
     "release_date": "2024-04-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7742,7 +7742,7 @@
   {
     "id": "model-gpt-4o-2024-05-13",
     "canonical_name": "GPT-4o (2024-05-13)",
-    "family_id": "openai-gpt-4o-2024-05-13",
+    "family_id": "openai-gpt-4o",
     "release_date": "2024-05-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7763,7 +7763,7 @@
   {
     "id": "model-gpt-4o-2024-08-06",
     "canonical_name": "GPT-4o (2024-08-06)",
-    "family_id": "openai-gpt-4o-2024-08-06",
+    "family_id": "openai-gpt-4o",
     "release_date": "2024-08-06",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7826,7 +7826,7 @@
   {
     "id": "model-gpt-4o-mini-2024-07-18",
     "canonical_name": "GPT-4o mini (2024-07-18)",
-    "family_id": "openai-gpt-4o-mini-2024-07-18",
+    "family_id": "openai-gpt-4o-mini",
     "release_date": "2024-07-18",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7847,7 +7847,7 @@
   {
     "id": "model-gpt-4o-no-browsing",
     "canonical_name": "GPT-4o (no browsing)",
-    "family_id": "openai-gpt-4o-no-browsing",
+    "family_id": "openai-gpt-4o",
     "release_date": "2024-05-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -7868,7 +7868,7 @@
   {
     "id": "model-gpt-4o-with-browsing",
     "canonical_name": "GPT-4o (with browsing)",
-    "family_id": "openai-gpt-4o-with-browsing",
+    "family_id": "openai-gpt-4o",
     "release_date": "2024-05-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8099,7 +8099,7 @@
   {
     "id": "model-gpt-5-1-thinking-high",
     "canonical_name": "GPT-5.1 (Thinking, High)",
-    "family_id": "openai-gpt-5-1-thinking-high",
+    "family_id": "openai-gpt-5-1",
     "release_date": "2025-11-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8120,7 +8120,7 @@
   {
     "id": "model-gpt-5-1-thinking-low",
     "canonical_name": "GPT-5.1 (Thinking, Low)",
-    "family_id": "openai-gpt-5-1-thinking-low",
+    "family_id": "openai-gpt-5-1",
     "release_date": "2025-11-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8141,7 +8141,7 @@
   {
     "id": "model-gpt-5-1-thinking-medium",
     "canonical_name": "GPT-5.1 (Thinking, Medium)",
-    "family_id": "openai-gpt-5-1-thinking-medium",
+    "family_id": "openai-gpt-5-1",
     "release_date": "2025-11-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8162,7 +8162,7 @@
   {
     "id": "model-gpt-5-1-thinking-none",
     "canonical_name": "GPT-5.1 (Thinking, None)",
-    "family_id": "openai-gpt-5-1-thinking-none",
+    "family_id": "openai-gpt-5-1",
     "release_date": "2025-11-13",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8330,7 +8330,7 @@
   {
     "id": "model-gpt-5-2-high",
     "canonical_name": "GPT-5.2 (High)",
-    "family_id": "openai-gpt-5-2-high",
+    "family_id": "openai-gpt-5-2",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8351,7 +8351,7 @@
   {
     "id": "model-gpt-5-2-low",
     "canonical_name": "GPT-5.2 (Low)",
-    "family_id": "openai-gpt-5-2-low",
+    "family_id": "openai-gpt-5-2",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8372,7 +8372,7 @@
   {
     "id": "model-gpt-5-2-medium",
     "canonical_name": "GPT-5.2 (Medium)",
-    "family_id": "openai-gpt-5-2-medium",
+    "family_id": "openai-gpt-5-2",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8414,7 +8414,7 @@
   {
     "id": "model-gpt-5-2-pro-high",
     "canonical_name": "GPT-5.2 Pro (High)",
-    "family_id": "openai-gpt-5-2-pro-high",
+    "family_id": "openai-gpt-5-2-pro",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8435,7 +8435,7 @@
   {
     "id": "model-gpt-5-2-pro-medium",
     "canonical_name": "GPT-5.2 Pro (Medium)",
-    "family_id": "openai-gpt-5-2-pro-medium",
+    "family_id": "openai-gpt-5-2-pro",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8456,7 +8456,7 @@
   {
     "id": "model-gpt-5-2-x-high",
     "canonical_name": "GPT-5.2 (X-High)",
-    "family_id": "openai-gpt-5-2-x-high",
+    "family_id": "openai-gpt-5-2",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8477,7 +8477,7 @@
   {
     "id": "model-gpt-5-2-xhigh",
     "canonical_name": "GPT-5.2 (xHigh)",
-    "family_id": "openai-gpt-5-2-xhigh",
+    "family_id": "openai-gpt-5-2",
     "release_date": "2025-12-11",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8813,7 +8813,7 @@
   {
     "id": "model-gpt-5-4-high",
     "canonical_name": "GPT-5.4 (High)",
-    "family_id": "openai-gpt-5-4-high",
+    "family_id": "openai-gpt-5-4",
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8834,7 +8834,7 @@
   {
     "id": "model-gpt-5-4-low",
     "canonical_name": "GPT-5.4 (Low)",
-    "family_id": "openai-gpt-5-4-low",
+    "family_id": "openai-gpt-5-4",
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
@@ -8855,7 +8855,7 @@
   {
     "id": "model-gpt-5-4-medium",
     "canonical_name": "GPT-5.4 (Medium)",
-    "family_id": "openai-gpt-5-4-medium",
+    "family_id": "openai-gpt-5-4",
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9002,7 +9002,7 @@
   {
     "id": "model-gpt-5-4-mini-high",
     "canonical_name": "GPT-5.4 Mini (High)",
-    "family_id": "openai-gpt-5-4-mini-high",
+    "family_id": "openai-gpt-5-4-mini",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9023,7 +9023,7 @@
   {
     "id": "model-gpt-5-4-mini-low",
     "canonical_name": "GPT-5.4 Mini (Low)",
-    "family_id": "openai-gpt-5-4-mini-low",
+    "family_id": "openai-gpt-5-4-mini",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9044,7 +9044,7 @@
   {
     "id": "model-gpt-5-4-mini-medium",
     "canonical_name": "GPT-5.4 Mini (Medium)",
-    "family_id": "openai-gpt-5-4-mini-medium",
+    "family_id": "openai-gpt-5-4-mini",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9065,7 +9065,7 @@
   {
     "id": "model-gpt-5-4-mini-xhigh",
     "canonical_name": "GPT-5.4 Mini (xHigh)",
-    "family_id": "openai-gpt-5-4-mini-xhigh",
+    "family_id": "openai-gpt-5-4-mini",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9149,7 +9149,7 @@
   {
     "id": "model-gpt-5-4-nano-high",
     "canonical_name": "GPT-5.4 Nano (High)",
-    "family_id": "openai-gpt-5-4-nano-high",
+    "family_id": "openai-gpt-5-4-nano",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9170,7 +9170,7 @@
   {
     "id": "model-gpt-5-4-nano-low",
     "canonical_name": "GPT-5.4 Nano (Low)",
-    "family_id": "openai-gpt-5-4-nano-low",
+    "family_id": "openai-gpt-5-4-nano",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9191,7 +9191,7 @@
   {
     "id": "model-gpt-5-4-nano-medium",
     "canonical_name": "GPT-5.4 Nano (Medium)",
-    "family_id": "openai-gpt-5-4-nano-medium",
+    "family_id": "openai-gpt-5-4-nano",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9212,7 +9212,7 @@
   {
     "id": "model-gpt-5-4-nano-xhigh",
     "canonical_name": "GPT-5.4 Nano (xHigh)",
-    "family_id": "openai-gpt-5-4-nano-xhigh",
+    "family_id": "openai-gpt-5-4-nano",
     "release_date": "2026-03-17",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9275,7 +9275,7 @@
   {
     "id": "model-gpt-5-4-pro-xhigh",
     "canonical_name": "GPT-5.4 Pro (xHigh)",
-    "family_id": "openai-gpt-5-4-pro-xhigh",
+    "family_id": "openai-gpt-5-4-pro",
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9296,7 +9296,7 @@
   {
     "id": "model-gpt-5-4-xhigh",
     "canonical_name": "GPT-5.4 (xHigh)",
-    "family_id": "openai-gpt-5-4-xhigh",
+    "family_id": "openai-gpt-5-4",
     "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9338,7 +9338,7 @@
   {
     "id": "model-gpt-5-5-high",
     "canonical_name": "GPT-5.5 (High)",
-    "family_id": "openai-gpt-5-5-high",
+    "family_id": "openai-gpt-5-5",
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9401,7 +9401,7 @@
   {
     "id": "model-gpt-5-5-medium",
     "canonical_name": "GPT-5.5 (Medium)",
-    "family_id": "openai-gpt-5-5-medium",
+    "family_id": "openai-gpt-5-5",
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9464,7 +9464,7 @@
   {
     "id": "model-gpt-5-5-pro-high",
     "canonical_name": "GPT-5.5 Pro (High)",
-    "family_id": "openai-gpt-5-5-pro-high",
+    "family_id": "openai-gpt-5-5-pro",
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9590,7 +9590,7 @@
   {
     "id": "model-gpt-5-6-luna-high",
     "canonical_name": "GPT-5.6 Luna (High)",
-    "family_id": "openai-gpt-5-6-luna-high",
+    "family_id": "openai-gpt-5-6-luna",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9653,7 +9653,7 @@
   {
     "id": "model-gpt-5-6-luna-medium",
     "canonical_name": "GPT-5.6 Luna (Medium)",
-    "family_id": "openai-gpt-5-6-luna-medium",
+    "family_id": "openai-gpt-5-6-luna",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9695,7 +9695,7 @@
   {
     "id": "model-gpt-5-6-luna-xhigh",
     "canonical_name": "GPT-5.6 Luna (xHigh)",
-    "family_id": "openai-gpt-5-6-luna-xhigh",
+    "family_id": "openai-gpt-5-6-luna",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9758,7 +9758,7 @@
   {
     "id": "model-gpt-5-6-sol-high",
     "canonical_name": "GPT-5.6 Sol (High)",
-    "family_id": "openai-gpt-5-6-sol-high",
+    "family_id": "openai-gpt-5-6-sol",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9821,7 +9821,7 @@
   {
     "id": "model-gpt-5-6-sol-medium",
     "canonical_name": "GPT-5.6 Sol (Medium)",
-    "family_id": "openai-gpt-5-6-sol-medium",
+    "family_id": "openai-gpt-5-6-sol",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9884,7 +9884,7 @@
   {
     "id": "model-gpt-5-6-sol-xhigh",
     "canonical_name": "GPT-5.6 Sol (xHigh)",
-    "family_id": "openai-gpt-5-6-sol-xhigh",
+    "family_id": "openai-gpt-5-6-sol",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -9947,7 +9947,7 @@
   {
     "id": "model-gpt-5-6-terra-high",
     "canonical_name": "GPT-5.6 Terra (High)",
-    "family_id": "openai-gpt-5-6-terra-high",
+    "family_id": "openai-gpt-5-6-terra",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10010,7 +10010,7 @@
   {
     "id": "model-gpt-5-6-terra-medium",
     "canonical_name": "GPT-5.6 Terra (Medium)",
-    "family_id": "openai-gpt-5-6-terra-medium",
+    "family_id": "openai-gpt-5-6-terra",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10052,7 +10052,7 @@
   {
     "id": "model-gpt-5-6-terra-xhigh",
     "canonical_name": "GPT-5.6 Terra (xHigh)",
-    "family_id": "openai-gpt-5-6-terra-xhigh",
+    "family_id": "openai-gpt-5-6-terra",
     "release_date": "2026-07-09",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10094,7 +10094,7 @@
   {
     "id": "model-gpt-5-high",
     "canonical_name": "GPT-5 (High)",
-    "family_id": "openai-gpt-5-high",
+    "family_id": "openai-gpt-5",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10115,7 +10115,7 @@
   {
     "id": "model-gpt-5-low",
     "canonical_name": "GPT-5 (Low)",
-    "family_id": "openai-gpt-5-low",
+    "family_id": "openai-gpt-5",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10136,7 +10136,7 @@
   {
     "id": "model-gpt-5-medium",
     "canonical_name": "GPT-5 (Medium)",
-    "family_id": "openai-gpt-5-medium",
+    "family_id": "openai-gpt-5",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10262,7 +10262,7 @@
   {
     "id": "model-gpt-5-mini-high",
     "canonical_name": "GPT-5 Mini (High)",
-    "family_id": "openai-gpt-5-mini-high",
+    "family_id": "openai-gpt-5-mini",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10283,7 +10283,7 @@
   {
     "id": "model-gpt-5-mini-low",
     "canonical_name": "GPT-5 Mini (Low)",
-    "family_id": "openai-gpt-5-mini-low",
+    "family_id": "openai-gpt-5-mini",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10304,7 +10304,7 @@
   {
     "id": "model-gpt-5-mini-medium",
     "canonical_name": "GPT-5 Mini (Medium)",
-    "family_id": "openai-gpt-5-mini-medium",
+    "family_id": "openai-gpt-5-mini",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10325,7 +10325,7 @@
   {
     "id": "model-gpt-5-mini-minimal",
     "canonical_name": "GPT-5 Mini (Minimal)",
-    "family_id": "openai-gpt-5-mini-minimal",
+    "family_id": "openai-gpt-5-mini",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10346,7 +10346,7 @@
   {
     "id": "model-gpt-5-minimal",
     "canonical_name": "GPT-5 (Minimal)",
-    "family_id": "openai-gpt-5-minimal",
+    "family_id": "openai-gpt-5",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10472,7 +10472,7 @@
   {
     "id": "model-gpt-5-nano-high",
     "canonical_name": "GPT-5 Nano (High)",
-    "family_id": "openai-gpt-5-nano-high",
+    "family_id": "openai-gpt-5-nano",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10493,7 +10493,7 @@
   {
     "id": "model-gpt-5-nano-low",
     "canonical_name": "GPT-5 Nano (Low)",
-    "family_id": "openai-gpt-5-nano-low",
+    "family_id": "openai-gpt-5-nano",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10514,7 +10514,7 @@
   {
     "id": "model-gpt-5-nano-medium",
     "canonical_name": "GPT-5 Nano (Medium)",
-    "family_id": "openai-gpt-5-nano-medium",
+    "family_id": "openai-gpt-5-nano",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -10535,7 +10535,7 @@
   {
     "id": "model-gpt-5-nano-minimal",
     "canonical_name": "GPT-5 Nano (Minimal)",
-    "family_id": "openai-gpt-5-nano-minimal",
+    "family_id": "openai-gpt-5-nano",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
@@ -11088,7 +11088,7 @@
   {
     "id": "model-grok-3-mini-low",
     "canonical_name": "Grok 3 Mini (Low)",
-    "family_id": "xai-grok-3-mini-low",
+    "family_id": "xai-grok-3-mini",
     "release_date": "2025-06-24",
     "organization": "xAI",
     "resource_ids": [
@@ -11193,7 +11193,7 @@
   {
     "id": "model-grok-4-20-reasoning",
     "canonical_name": "Grok 4.20 (Reasoning)",
-    "family_id": "xai-grok-4-20-reasoning",
+    "family_id": "xai-grok-4-20",
     "release_date": "2026-02-17",
     "organization": "xAI",
     "resource_ids": [
@@ -11277,7 +11277,7 @@
   {
     "id": "model-grok-4-5-low",
     "canonical_name": "Grok 4.5 (Low)",
-    "family_id": "xai-grok-4-5-low",
+    "family_id": "xai-grok-4-5",
     "release_date": "2026-07-08",
     "organization": "xAI",
     "resource_ids": [
@@ -11298,7 +11298,7 @@
   {
     "id": "model-grok-4-5-medium",
     "canonical_name": "Grok 4.5 (Medium)",
-    "family_id": "xai-grok-4-5-medium",
+    "family_id": "xai-grok-4-5",
     "release_date": "2026-07-08",
     "organization": "xAI",
     "resource_ids": [
@@ -11407,7 +11407,7 @@
   {
     "id": "model-grok-4-6-low",
     "canonical_name": "Grok 4.6 (Low)",
-    "family_id": "xai-grok-4-6-low",
+    "family_id": "xai-grok-4-6",
     "release_date": "2026-08-12",
     "organization": "xAI",
     "resource_ids": [
@@ -11429,7 +11429,7 @@
   {
     "id": "model-grok-4-6-medium",
     "canonical_name": "Grok 4.6 (Medium)",
-    "family_id": "xai-grok-4-6-medium",
+    "family_id": "xai-grok-4-6",
     "release_date": "2026-08-12",
     "organization": "xAI",
     "resource_ids": [
@@ -11473,7 +11473,7 @@
   {
     "id": "model-grok-4-fast-reasoning",
     "canonical_name": "Grok 4 (Fast Reasoning)",
-    "family_id": "xai-grok-4-fast-reasoning",
+    "family_id": "xai-grok-4",
     "release_date": "2025-09-19",
     "organization": "xAI",
     "resource_ids": [
@@ -11494,7 +11494,7 @@
   {
     "id": "model-grok-4-thinking",
     "canonical_name": "Grok 4 (Thinking)",
-    "family_id": "xai-grok-4-thinking",
+    "family_id": "xai-grok-4",
     "release_date": "2025-07-09",
     "organization": "xAI",
     "resource_ids": [
@@ -11620,7 +11620,7 @@
   {
     "id": "model-inkling-small-high",
     "canonical_name": "Inkling Small (High)",
-    "family_id": "thinking-machines-inkling-small-high",
+    "family_id": "thinking-machines-inkling-small",
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
@@ -11641,7 +11641,7 @@
   {
     "id": "model-inkling-small-low",
     "canonical_name": "Inkling Small (Low)",
-    "family_id": "thinking-machines-inkling-small-low",
+    "family_id": "thinking-machines-inkling-small",
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
@@ -11662,7 +11662,7 @@
   {
     "id": "model-inkling-small-medium",
     "canonical_name": "Inkling Small (Medium)",
-    "family_id": "thinking-machines-inkling-small-medium",
+    "family_id": "thinking-machines-inkling-small",
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
@@ -11683,7 +11683,7 @@
   {
     "id": "model-inkling-small-minimal",
     "canonical_name": "Inkling Small (Minimal)",
-    "family_id": "thinking-machines-inkling-small-minimal",
+    "family_id": "thinking-machines-inkling-small",
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
@@ -11704,7 +11704,7 @@
   {
     "id": "model-inkling-small-none",
     "canonical_name": "Inkling Small (None)",
-    "family_id": "thinking-machines-inkling-small-none",
+    "family_id": "thinking-machines-inkling-small",
     "release_date": "2026-07-15",
     "organization": "Thinking Machines",
     "resource_ids": [
@@ -11767,7 +11767,7 @@
   {
     "id": "model-instructpalmyra-30b",
     "canonical_name": "InstructPalmyra (30B)",
-    "family_id": "unknown-instructpalmyra-30b",
+    "family_id": "unknown-instructpalmyra",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -11809,7 +11809,7 @@
   {
     "id": "model-internlm-104b",
     "canonical_name": "InternLM (104B)",
-    "family_id": "unknown-internlm-104b",
+    "family_id": "unknown-internlm",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -11893,7 +11893,7 @@
   {
     "id": "model-internlm-chat-7b-8-shot",
     "canonical_name": "InternLM-Chat 7B (8-shot)",
-    "family_id": "unknown-internlm-chat-7b-8-shot",
+    "family_id": "unknown-internlm-chat-7b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -11977,7 +11977,7 @@
   {
     "id": "model-j1-grande-v1-17b",
     "canonical_name": "J1-Grande v1 (17B)",
-    "family_id": "unknown-j1-grande-v1-17b",
+    "family_id": "unknown-j1-grande-v1",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -11998,7 +11998,7 @@
   {
     "id": "model-j1-grande-v2-beta-17b",
     "canonical_name": "J1-Grande v2 beta (17B)",
-    "family_id": "unknown-j1-grande-v2-beta-17b",
+    "family_id": "unknown-j1-grande-v2-beta",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12019,7 +12019,7 @@
   {
     "id": "model-j1-jumbo-v1-178b",
     "canonical_name": "J1-Jumbo v1 (178B)",
-    "family_id": "unknown-j1-jumbo-v1-178b",
+    "family_id": "unknown-j1-jumbo-v1",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12040,7 +12040,7 @@
   {
     "id": "model-j1-large-v1-7-5b",
     "canonical_name": "J1-Large v1 (7.5B)",
-    "family_id": "unknown-j1-large-v1-7-5b",
+    "family_id": "unknown-j1-large-v1",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12124,7 +12124,7 @@
   {
     "id": "model-jurassic-2-grande-17b",
     "canonical_name": "Jurassic-2 Grande (17B)",
-    "family_id": "unknown-jurassic-2-grande-17b",
+    "family_id": "unknown-jurassic-2-grande",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12145,7 +12145,7 @@
   {
     "id": "model-jurassic-2-jumbo-178b",
     "canonical_name": "Jurassic-2 Jumbo (178B)",
-    "family_id": "unknown-jurassic-2-jumbo-178b",
+    "family_id": "unknown-jurassic-2-jumbo",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12166,7 +12166,7 @@
   {
     "id": "model-jurassic-2-large-7-5b",
     "canonical_name": "Jurassic-2 Large (7.5B)",
-    "family_id": "unknown-jurassic-2-large-7-5b",
+    "family_id": "unknown-jurassic-2-large",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12208,7 +12208,7 @@
   {
     "id": "model-kimi-2-6-enabled",
     "canonical_name": "Kimi 2.6 (enabled)",
-    "family_id": "moonshot-kimi-2-6-enabled",
+    "family_id": "moonshot-kimi-2-6",
     "release_date": "2026-04-20",
     "organization": "Moonshot",
     "resource_ids": [
@@ -12628,7 +12628,7 @@
   {
     "id": "model-llama-2-13b",
     "canonical_name": "Llama 2 (13B)",
-    "family_id": "meta-ai-llama-2-13b",
+    "family_id": "meta-ai-llama-2",
     "release_date": "2023-07-18",
     "organization": "Meta AI",
     "resource_ids": [
@@ -12670,7 +12670,7 @@
   {
     "id": "model-llama-2-70b",
     "canonical_name": "Llama 2 (70B)",
-    "family_id": "meta-ai-llama-2-70b",
+    "family_id": "meta-ai-llama-2",
     "release_date": "2023-07-18",
     "organization": "Meta AI",
     "resource_ids": [
@@ -12712,7 +12712,7 @@
   {
     "id": "model-llama-2-7b",
     "canonical_name": "Llama 2 (7B)",
-    "family_id": "meta-ai-llama-2-7b",
+    "family_id": "meta-ai-llama-2",
     "release_date": "2023-07-18",
     "organization": "Meta AI",
     "resource_ids": [
@@ -12733,7 +12733,7 @@
   {
     "id": "model-llama-2-chat-13b-8-shot",
     "canonical_name": "LLAMA 2-CHAT 13B (8-shot)",
-    "family_id": "unknown-llama-2-chat-13b-8-shot",
+    "family_id": "unknown-llama-2-chat-13b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12754,7 +12754,7 @@
   {
     "id": "model-llama-2-chat-70b-8-shot",
     "canonical_name": "LLAMA 2-CHAT 70B (8-shot)",
-    "family_id": "unknown-llama-2-chat-70b-8-shot",
+    "family_id": "unknown-llama-2-chat-70b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12775,7 +12775,7 @@
   {
     "id": "model-llama-2-chat-7b-8-shot",
     "canonical_name": "LLAMA 2-CHAT 7B (8-shot)",
-    "family_id": "unknown-llama-2-chat-7b-8-shot",
+    "family_id": "unknown-llama-2-chat-7b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -12901,7 +12901,7 @@
   {
     "id": "model-llama-3-1-instruct-turbo-405b",
     "canonical_name": "Llama 3.1 Instruct Turbo (405B)",
-    "family_id": "meta-ai-llama-3-1-instruct-turbo-405b",
+    "family_id": "meta-ai-llama-3-1-instruct-turbo",
     "release_date": "2024-07-23",
     "organization": "Meta AI",
     "resource_ids": [
@@ -12922,7 +12922,7 @@
   {
     "id": "model-llama-3-1-instruct-turbo-70b",
     "canonical_name": "Llama 3.1 Instruct Turbo (70B)",
-    "family_id": "meta-ai-llama-3-1-instruct-turbo-70b",
+    "family_id": "meta-ai-llama-3-1-instruct-turbo",
     "release_date": "2024-07-23",
     "organization": "Meta AI",
     "resource_ids": [
@@ -12943,7 +12943,7 @@
   {
     "id": "model-llama-3-1-instruct-turbo-8b",
     "canonical_name": "Llama 3.1 Instruct Turbo (8B)",
-    "family_id": "meta-ai-llama-3-1-instruct-turbo-8b",
+    "family_id": "meta-ai-llama-3-1-instruct-turbo",
     "release_date": "2024-07-23",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13027,7 +13027,7 @@
   {
     "id": "model-llama-3-2-vision-instruct-turbo-11b",
     "canonical_name": "Llama 3.2 Vision Instruct Turbo (11B)",
-    "family_id": "meta-ai-llama-3-2-vision-instruct-turbo-11b",
+    "family_id": "meta-ai-llama-3-2-vision-instruct-turbo",
     "release_date": "2024-09-24",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13048,7 +13048,7 @@
   {
     "id": "model-llama-3-2-vision-instruct-turbo-90b",
     "canonical_name": "Llama 3.2 Vision Instruct Turbo (90B)",
-    "family_id": "meta-ai-llama-3-2-vision-instruct-turbo-90b",
+    "family_id": "meta-ai-llama-3-2-vision-instruct-turbo",
     "release_date": "2024-09-24",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13090,7 +13090,7 @@
   {
     "id": "model-llama-3-3-instruct-turbo-70b",
     "canonical_name": "Llama 3.3 Instruct Turbo (70B)",
-    "family_id": "meta-ai-llama-3-3-instruct-turbo-70b",
+    "family_id": "meta-ai-llama-3-3-instruct-turbo",
     "release_date": "2024-12-06",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13111,7 +13111,7 @@
   {
     "id": "model-llama-3-70b",
     "canonical_name": "Llama 3 (70B)",
-    "family_id": "meta-ai-llama-3-70b",
+    "family_id": "meta-ai-llama-3",
     "release_date": "2024-04-18",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13132,7 +13132,7 @@
   {
     "id": "model-llama-3-8b",
     "canonical_name": "Llama 3 (8B)",
-    "family_id": "meta-ai-llama-3-8b",
+    "family_id": "meta-ai-llama-3",
     "release_date": "2024-04-18",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13174,7 +13174,7 @@
   {
     "id": "model-llama-30b",
     "canonical_name": "LLaMA (30B)",
-    "family_id": "meta-ai-llama-30b",
+    "family_id": "meta-ai-llama",
     "release_date": "2023-02-24",
     "organization": "Meta AI",
     "resource_ids": [
@@ -13534,7 +13534,7 @@
   {
     "id": "model-luminous-base-13b",
     "canonical_name": "Luminous Base (13B)",
-    "family_id": "unknown-luminous-base-13b",
+    "family_id": "unknown-luminous-base",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -13555,7 +13555,7 @@
   {
     "id": "model-luminous-extended-30b",
     "canonical_name": "Luminous Extended (30B)",
-    "family_id": "unknown-luminous-extended-30b",
+    "family_id": "unknown-luminous-extended",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -13576,7 +13576,7 @@
   {
     "id": "model-luminous-supreme-70b",
     "canonical_name": "Luminous Supreme (70B)",
-    "family_id": "unknown-luminous-supreme-70b",
+    "family_id": "unknown-luminous-supreme",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -13618,7 +13618,7 @@
   {
     "id": "model-magistral-medium-thinking",
     "canonical_name": "Magistral Medium (Thinking)",
-    "family_id": "mistral-ai-magistral-medium-thinking",
+    "family_id": "mistral-ai-magistral-medium",
     "release_date": "2025-06-10",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -13975,7 +13975,7 @@
   {
     "id": "model-minimax-m3-enabled",
     "canonical_name": "MiniMax M3 (enabled)",
-    "family_id": "minimax-minimax-m3-enabled",
+    "family_id": "minimax-minimax-m3",
     "release_date": "2026-06-01",
     "organization": "MiniMax",
     "resource_ids": [
@@ -14122,7 +14122,7 @@
   {
     "id": "model-mistral-instruct-v0-3-7b",
     "canonical_name": "Mistral Instruct v0.3 (7B)",
-    "family_id": "mistral-ai-mistral-instruct-v0-3-7b",
+    "family_id": "mistral-ai-mistral-instruct-v0-3",
     "release_date": "2024-05-27",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -14143,7 +14143,7 @@
   {
     "id": "model-mistral-large-2-2407",
     "canonical_name": "Mistral Large 2 (2407)",
-    "family_id": "mistral-ai-mistral-large-2-2407",
+    "family_id": "mistral-ai-mistral-large-2",
     "release_date": "2024-07-24",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -14164,7 +14164,7 @@
   {
     "id": "model-mistral-large-2402",
     "canonical_name": "Mistral Large (2402)",
-    "family_id": "mistral-ai-mistral-large-2402",
+    "family_id": "mistral-ai-mistral-large",
     "release_date": "2024-02-26",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -14269,7 +14269,7 @@
   {
     "id": "model-mistral-nemo-2402",
     "canonical_name": "Mistral NeMo (2402)",
-    "family_id": "unknown-mistral-nemo-2402",
+    "family_id": "unknown-mistral-nemo",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -14290,7 +14290,7 @@
   {
     "id": "model-mistral-small-2402",
     "canonical_name": "Mistral Small (2402)",
-    "family_id": "unknown-mistral-small-2402",
+    "family_id": "unknown-mistral-small",
     "release_date": "2024-02-26",
     "organization": "Unknown",
     "resource_ids": [
@@ -14416,7 +14416,7 @@
   {
     "id": "model-mistral-v0-1-7b",
     "canonical_name": "Mistral v0.1 (7B)",
-    "family_id": "mistral-ai-mistral-v0-1-7b",
+    "family_id": "mistral-ai-mistral-v0-1",
     "release_date": "2023-09-27",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -14437,7 +14437,7 @@
   {
     "id": "model-mixtral-8x22b",
     "canonical_name": "Mixtral (8x22B)",
-    "family_id": "mistral-ai-mixtral-8x22b",
+    "family_id": "mistral-ai-mixtral",
     "release_date": "2024-04-17",
     "organization": "Mistral AI",
     "resource_ids": [
@@ -14479,7 +14479,7 @@
   {
     "id": "model-mixtral-8x7b-32k-seqlen",
     "canonical_name": "Mixtral (8x7B 32K seqlen)",
-    "family_id": "unknown-mixtral-8x7b-32k-seqlen",
+    "family_id": "unknown-mixtral",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -14605,7 +14605,7 @@
   {
     "id": "model-mpt-instruct-30b",
     "canonical_name": "MPT-Instruct (30B)",
-    "family_id": "mosaicml-mpt-instruct-30b",
+    "family_id": "mosaicml-mpt-instruct",
     "release_date": "2023-06-22",
     "organization": "MosaicML",
     "resource_ids": [
@@ -14815,7 +14815,7 @@
   {
     "id": "model-o1-medium",
     "canonical_name": "o1 (medium)",
-    "family_id": "openai-o1-medium",
+    "family_id": "openai-o1",
     "release_date": "2024-09-12",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15067,7 +15067,7 @@
   {
     "id": "model-o3-high",
     "canonical_name": "o3 (High)",
-    "family_id": "openai-o3-high",
+    "family_id": "openai-o3",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15088,7 +15088,7 @@
   {
     "id": "model-o3-low",
     "canonical_name": "o3 (Low)",
-    "family_id": "openai-o3-low",
+    "family_id": "openai-o3",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15109,7 +15109,7 @@
   {
     "id": "model-o3-medium",
     "canonical_name": "o3 (Medium)",
-    "family_id": "openai-o3-medium",
+    "family_id": "openai-o3",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15193,7 +15193,7 @@
   {
     "id": "model-o3-mini-high",
     "canonical_name": "o3-mini (High)",
-    "family_id": "openai-o3-mini-high",
+    "family_id": "openai-o3-mini",
     "release_date": "2025-01-31",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15214,7 +15214,7 @@
   {
     "id": "model-o3-mini-low",
     "canonical_name": "o3-mini (Low)",
-    "family_id": "openai-o3-mini-low",
+    "family_id": "openai-o3-mini",
     "release_date": "2025-01-31",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15235,7 +15235,7 @@
   {
     "id": "model-o3-mini-medium",
     "canonical_name": "o3-mini (Medium)",
-    "family_id": "openai-o3-mini-medium",
+    "family_id": "openai-o3-mini",
     "release_date": "2025-01-31",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15277,7 +15277,7 @@
   {
     "id": "model-o3-pro-high",
     "canonical_name": "o3-Pro (High)",
-    "family_id": "openai-o3-pro-high",
+    "family_id": "openai-o3-pro",
     "release_date": "2025-06-10",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15298,7 +15298,7 @@
   {
     "id": "model-o3-pro-low",
     "canonical_name": "o3-Pro (Low)",
-    "family_id": "openai-o3-pro-low",
+    "family_id": "openai-o3-pro",
     "release_date": "2025-06-10",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15319,7 +15319,7 @@
   {
     "id": "model-o3-pro-medium",
     "canonical_name": "o3-Pro (Medium)",
-    "family_id": "openai-o3-pro-medium",
+    "family_id": "openai-o3-pro",
     "release_date": "2025-06-10",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15403,7 +15403,7 @@
   {
     "id": "model-o4-mini-high",
     "canonical_name": "o4-mini (High)",
-    "family_id": "openai-o4-mini-high",
+    "family_id": "openai-o4-mini",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15424,7 +15424,7 @@
   {
     "id": "model-o4-mini-low",
     "canonical_name": "o4-mini (Low)",
-    "family_id": "openai-o4-mini-low",
+    "family_id": "openai-o4-mini",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15445,7 +15445,7 @@
   {
     "id": "model-o4-mini-medium",
     "canonical_name": "o4-mini (Medium)",
-    "family_id": "openai-o4-mini-medium",
+    "family_id": "openai-o4-mini",
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
@@ -15466,7 +15466,7 @@
   {
     "id": "model-olmo-1-7-7b",
     "canonical_name": "OLMo 1.7 (7B)",
-    "family_id": "unknown-olmo-1-7-7b",
+    "family_id": "unknown-olmo-1-7",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -15487,7 +15487,7 @@
   {
     "id": "model-olmo-7b",
     "canonical_name": "OLMo (7B)",
-    "family_id": "unknown-olmo-7b",
+    "family_id": "unknown-olmo",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -15697,7 +15697,7 @@
   {
     "id": "model-opt-175b",
     "canonical_name": "OPT (175B)",
-    "family_id": "meta-ai-opt-175b",
+    "family_id": "meta-ai-opt",
     "release_date": "2022-05-02",
     "organization": "Meta AI",
     "resource_ids": [
@@ -15718,7 +15718,7 @@
   {
     "id": "model-opt-66b",
     "canonical_name": "OPT (66B)",
-    "family_id": "meta-ai-opt-66b",
+    "family_id": "meta-ai-opt",
     "release_date": "2022-05-03",
     "organization": "Meta AI",
     "resource_ids": [
@@ -15739,7 +15739,7 @@
   {
     "id": "model-opus-4-5-thinking-16k",
     "canonical_name": "Opus 4.5 (Thinking, 16K)",
-    "family_id": "anthropic-opus-4-5-thinking-16k",
+    "family_id": "anthropic-opus-4-5",
     "release_date": "2025-11-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -15760,7 +15760,7 @@
   {
     "id": "model-opus-4-5-thinking-64k",
     "canonical_name": "Opus 4.5 (Thinking, 64K)",
-    "family_id": "anthropic-opus-4-5-thinking-64k",
+    "family_id": "anthropic-opus-4-5",
     "release_date": "2025-11-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -15781,7 +15781,7 @@
   {
     "id": "model-opus-4-5-thinking-8k",
     "canonical_name": "Opus 4.5 (Thinking, 8K)",
-    "family_id": "anthropic-opus-4-5-thinking-8k",
+    "family_id": "anthropic-opus-4-5",
     "release_date": "2025-11-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -15802,7 +15802,7 @@
   {
     "id": "model-opus-4-5-thinking-none",
     "canonical_name": "Opus 4.5 (Thinking, None)",
-    "family_id": "anthropic-opus-4-5-thinking-none",
+    "family_id": "anthropic-opus-4-5",
     "release_date": "2025-11-24",
     "organization": "Anthropic",
     "resource_ids": [
@@ -15865,7 +15865,7 @@
   {
     "id": "model-palm-2-bison",
     "canonical_name": "PaLM-2 (Bison)",
-    "family_id": "unknown-palm-2-bison",
+    "family_id": "unknown-palm-2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -15886,7 +15886,7 @@
   {
     "id": "model-palm-2-unicorn",
     "canonical_name": "PaLM-2 (Unicorn)",
-    "family_id": "unknown-palm-2-unicorn",
+    "family_id": "unknown-palm-2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -15991,7 +15991,7 @@
   {
     "id": "model-palmyra-x-43b",
     "canonical_name": "Palmyra X (43B)",
-    "family_id": "unknown-palmyra-x-43b",
+    "family_id": "unknown-palmyra-x",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16012,7 +16012,7 @@
   {
     "id": "model-palmyra-x-v2-33b",
     "canonical_name": "Palmyra X V2 (33B)",
-    "family_id": "unknown-palmyra-x-v2-33b",
+    "family_id": "unknown-palmyra-x-v2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16033,7 +16033,7 @@
   {
     "id": "model-palmyra-x-v3-72b",
     "canonical_name": "Palmyra X V3 (72B)",
-    "family_id": "unknown-palmyra-x-v3-72b",
+    "family_id": "unknown-palmyra-x-v3",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16096,7 +16096,7 @@
   {
     "id": "model-phi-3-14b",
     "canonical_name": "Phi-3 (14B)",
-    "family_id": "microsoft-phi-3-14b",
+    "family_id": "microsoft-phi-3",
     "release_date": "2024-04-23",
     "organization": "Microsoft",
     "resource_ids": [
@@ -16159,7 +16159,7 @@
   {
     "id": "model-phi-3-7b",
     "canonical_name": "Phi-3 (7B)",
-    "family_id": "unknown-phi-3-7b",
+    "family_id": "unknown-phi-3",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16306,7 +16306,7 @@
   {
     "id": "model-pythia-12b",
     "canonical_name": "Pythia (12B)",
-    "family_id": "unknown-pythia-12b",
+    "family_id": "unknown-pythia",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16327,7 +16327,7 @@
   {
     "id": "model-pythia-6-9b",
     "canonical_name": "Pythia (6.9B)",
-    "family_id": "unknown-pythia-6-9b",
+    "family_id": "unknown-pythia",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16432,7 +16432,7 @@
   {
     "id": "model-qwen-3-7-plus-thinking",
     "canonical_name": "Qwen 3.7-Plus (thinking)",
-    "family_id": "alibaba-qwen-3-7-plus-thinking",
+    "family_id": "alibaba-qwen-3-7-plus",
     "release_date": "2026-06-02",
     "organization": "Alibaba",
     "resource_ids": [
@@ -16537,7 +16537,7 @@
   {
     "id": "model-qwen-chat-1-8b-0-shot",
     "canonical_name": "QWEN-CHAT 1.8B (0-shot)",
-    "family_id": "unknown-qwen-chat-1-8b-0-shot",
+    "family_id": "unknown-qwen-chat-1-8b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16558,7 +16558,7 @@
   {
     "id": "model-qwen-chat-1-8b-8-shot",
     "canonical_name": "QWEN-CHAT 1.8B (8-shot)",
-    "family_id": "unknown-qwen-chat-1-8b-8-shot",
+    "family_id": "unknown-qwen-chat-1-8b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16600,7 +16600,7 @@
   {
     "id": "model-qwen-chat-14b-0-shot",
     "canonical_name": "QWEN-CHAT 14B (0-shot)",
-    "family_id": "unknown-qwen-chat-14b-0-shot",
+    "family_id": "unknown-qwen-chat-14b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16621,7 +16621,7 @@
   {
     "id": "model-qwen-chat-14b-8-shot",
     "canonical_name": "QWEN-CHAT 14B (8-shot)",
-    "family_id": "unknown-qwen-chat-14b-8-shot",
+    "family_id": "unknown-qwen-chat-14b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16642,7 +16642,7 @@
   {
     "id": "model-qwen-chat-7b-0-shot",
     "canonical_name": "QWEN-CHAT 7B (0-shot)",
-    "family_id": "unknown-qwen-chat-7b-0-shot",
+    "family_id": "unknown-qwen-chat-7b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16663,7 +16663,7 @@
   {
     "id": "model-qwen-chat-7b-8-shot",
     "canonical_name": "QWEN-CHAT 7B (8-shot)",
-    "family_id": "unknown-qwen-chat-7b-8-shot",
+    "family_id": "unknown-qwen-chat-7b",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16810,7 +16810,7 @@
   {
     "id": "model-qwen1-5-14b",
     "canonical_name": "Qwen1.5 (14B)",
-    "family_id": "alibaba-qwen1-5-14b",
+    "family_id": "alibaba-qwen1-5",
     "release_date": "2024-02-04",
     "organization": "Alibaba",
     "resource_ids": [
@@ -16831,7 +16831,7 @@
   {
     "id": "model-qwen1-5-32b",
     "canonical_name": "Qwen1.5 (32B)",
-    "family_id": "alibaba-qwen1-5-32b",
+    "family_id": "alibaba-qwen1-5",
     "release_date": "2024-02-04",
     "organization": "Alibaba",
     "resource_ids": [
@@ -16873,7 +16873,7 @@
   {
     "id": "model-qwen1-5-72b",
     "canonical_name": "Qwen1.5 (72B)",
-    "family_id": "unknown-qwen1-5-72b",
+    "family_id": "unknown-qwen1-5",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -16915,7 +16915,7 @@
   {
     "id": "model-qwen1-5-7b",
     "canonical_name": "Qwen1.5 (7B)",
-    "family_id": "alibaba-qwen1-5-7b",
+    "family_id": "alibaba-qwen1-5",
     "release_date": "2024-02-04",
     "organization": "Alibaba",
     "resource_ids": [
@@ -16936,7 +16936,7 @@
   {
     "id": "model-qwen1-5-chat-110b",
     "canonical_name": "Qwen1.5 Chat (110B)",
-    "family_id": "unknown-qwen1-5-chat-110b",
+    "family_id": "unknown-qwen1-5-chat",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -17293,7 +17293,7 @@
   {
     "id": "model-qwen2-5-instruct-turbo-72b",
     "canonical_name": "Qwen2.5 Instruct Turbo (72B)",
-    "family_id": "alibaba-qwen2-5-instruct-turbo-72b",
+    "family_id": "alibaba-qwen2-5-instruct-turbo",
     "release_date": "2024-09-19",
     "organization": "Alibaba",
     "resource_ids": [
@@ -17314,7 +17314,7 @@
   {
     "id": "model-qwen2-5-instruct-turbo-7b",
     "canonical_name": "Qwen2.5 Instruct Turbo (7B)",
-    "family_id": "alibaba-qwen2-5-instruct-turbo-7b",
+    "family_id": "alibaba-qwen2-5-instruct-turbo",
     "release_date": "2024-09-19",
     "organization": "Alibaba",
     "resource_ids": [
@@ -17356,7 +17356,7 @@
   {
     "id": "model-qwen2-instruct-72b",
     "canonical_name": "Qwen2 Instruct (72B)",
-    "family_id": "alibaba-qwen2-instruct-72b",
+    "family_id": "alibaba-qwen2-instruct",
     "release_date": "2024-06-07",
     "organization": "Alibaba",
     "resource_ids": [
@@ -17524,7 +17524,7 @@
   {
     "id": "model-qwen3-235b-a22b-instruct-25-07",
     "canonical_name": "Qwen3-235b-a22b Instruct (25/07)",
-    "family_id": "alibaba-qwen3-235b-a22b-instruct-25-07",
+    "family_id": "alibaba-qwen3-235b-a22b-instruct",
     "release_date": "2025-07-25",
     "organization": "Alibaba",
     "resource_ids": [
@@ -18449,7 +18449,7 @@
   {
     "id": "model-redpajama-incite-base-7b",
     "canonical_name": "RedPajama-INCITE-Base (7B)",
-    "family_id": "unknown-redpajama-incite-base-7b",
+    "family_id": "unknown-redpajama-incite-base",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18470,7 +18470,7 @@
   {
     "id": "model-redpajama-incite-base-v1-3b",
     "canonical_name": "RedPajama-INCITE-Base-v1 (3B)",
-    "family_id": "unknown-redpajama-incite-base-v1-3b",
+    "family_id": "unknown-redpajama-incite-base-v1",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18491,7 +18491,7 @@
   {
     "id": "model-redpajama-incite-instruct-7b",
     "canonical_name": "RedPajama-INCITE-Instruct (7B)",
-    "family_id": "unknown-redpajama-incite-instruct-7b",
+    "family_id": "unknown-redpajama-incite-instruct",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18512,7 +18512,7 @@
   {
     "id": "model-redpajama-incite-instruct-v1-3b",
     "canonical_name": "RedPajama-INCITE-Instruct-v1 (3B)",
-    "family_id": "unknown-redpajama-incite-instruct-v1-3b",
+    "family_id": "unknown-redpajama-incite-instruct-v1",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18827,7 +18827,7 @@
   {
     "id": "model-t0pp-11b",
     "canonical_name": "T0pp (11B)",
-    "family_id": "unknown-t0pp-11b",
+    "family_id": "unknown-t0pp",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18848,7 +18848,7 @@
   {
     "id": "model-t5-11b",
     "canonical_name": "T5 (11B)",
-    "family_id": "unknown-t5-11b",
+    "family_id": "unknown-t5",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -18995,7 +18995,7 @@
   {
     "id": "model-tiny-recursion-model-trm",
     "canonical_name": "Tiny Recursion Model (TRM)",
-    "family_id": "unknown-tiny-recursion-model-trm",
+    "family_id": "unknown-tiny-recursion-model",
     "release_date": "2025-10-06",
     "organization": "Unknown",
     "resource_ids": [
@@ -19016,7 +19016,7 @@
   {
     "id": "model-tnlg-v2-530b",
     "canonical_name": "TNLG v2 (530B)",
-    "family_id": "unknown-tnlg-v2-530b",
+    "family_id": "unknown-tnlg-v2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -19037,7 +19037,7 @@
   {
     "id": "model-tnlg-v2-6-7b",
     "canonical_name": "TNLG v2 (6.7B)",
-    "family_id": "unknown-tnlg-v2-6-7b",
+    "family_id": "unknown-tnlg-v2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -19079,7 +19079,7 @@
   {
     "id": "model-ul2-20b",
     "canonical_name": "UL2 (20B)",
-    "family_id": "unknown-ul2-20b",
+    "family_id": "unknown-ul2",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -19142,7 +19142,7 @@
   {
     "id": "model-vicuna-v1-3-13b",
     "canonical_name": "Vicuna v1.3 (13B)",
-    "family_id": "large-model-systems-organization-university-of-california-uc-berkeley-vicuna-v1-3-13b",
+    "family_id": "large-model-systems-organization-university-of-california-uc-berkeley-vicuna-v1-3",
     "release_date": "2023-06-18",
     "organization": "Large Model Systems Organization,University of California (UC) Berkeley",
     "resource_ids": [
@@ -19163,7 +19163,7 @@
   {
     "id": "model-vicuna-v1-3-7b",
     "canonical_name": "Vicuna v1.3 (7B)",
-    "family_id": "unknown-vicuna-v1-3-7b",
+    "family_id": "unknown-vicuna-v1-3",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -19478,7 +19478,7 @@
   {
     "id": "model-yalm-100b",
     "canonical_name": "YaLM (100B)",
-    "family_id": "unknown-yalm-100b",
+    "family_id": "unknown-yalm",
     "release_date": null,
     "organization": "Unknown",
     "resource_ids": [
@@ -19520,7 +19520,7 @@
   {
     "id": "model-yi-34b",
     "canonical_name": "Yi (34B)",
-    "family_id": "01-ai-yi-34b",
+    "family_id": "01-ai-yi",
     "release_date": "2023-11-02",
     "organization": "01.AI",
     "resource_ids": [
@@ -19562,7 +19562,7 @@
   {
     "id": "model-yi-6b",
     "canonical_name": "Yi (6B)",
-    "family_id": "01-ai-yi-6b",
+    "family_id": "01-ai-yi",
     "release_date": "2023-11-02",
     "organization": "01.AI",
     "resource_ids": [
@@ -19646,7 +19646,7 @@
   {
     "id": "model-yi-large-preview",
     "canonical_name": "Yi Large (Preview)",
-    "family_id": "01-ai-yi-large-preview",
+    "family_id": "01-ai-yi-large",
     "release_date": "2024-05-13",
     "organization": "01.AI",
     "resource_ids": [

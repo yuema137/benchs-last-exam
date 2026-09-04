@@ -258,7 +258,8 @@ def register_resource(resources, url, title, *, resource_type="other", publisher
 
 
 def model_family(model, organization):
-    return slug(f"{organization}-{re.sub(r'\\s*\\([^)]*\\)', '', model)}")
+    cleaned_model = re.sub(r"\s*\([^)]*\)", "", model)
+    return slug(f"{organization}-{cleaned_model}")
 
 
 def model_release_resource(resources, model):
