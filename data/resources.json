@@ -451,6 +451,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2410-23218",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ScreenSpot-Pro paper",
+    "url": "https://arxiv.org/abs/2410.23218",
+    "publisher": "ScreenSpot-Pro paper",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2412-01152",
     "resource_scope": [
       "benchmark",
@@ -9423,6 +9440,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ScreenSpot-Pro primary source",
+    "url": "https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-zapier-automationbench",
     "resource_scope": [
       "benchmark"
@@ -9433,6 +9466,40 @@
     "url": "https://github.com/zapier/AutomationBench",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ScreenSpot-Pro official leaderboard",
+    "url": "https://gui-agent.github.io/grounding-leaderboard/",
+    "publisher": "ScreenSpot-Pro official leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "Official H Company release post",
+    "url": "https://hcompany.ai/holo2-235b-a22b-preview",
+    "publisher": "Official H Company release post",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

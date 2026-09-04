@@ -11025,6 +11025,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-holo2-235b-a22b",
+    "canonical_name": "Holo2-235B-A22B",
+    "family_id": "h-company-holo2-235b-a22b",
+    "release_date": "2026-02-03",
+    "organization": "H Company",
+    "resource_ids": [
+      "resource-https-hcompany-ai-holo2-235b-a22b-preview"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-inflection-1",
     "canonical_name": "Inflection 1",
     "family_id": "inflection-ai-inflection-1",
@@ -14847,6 +14868,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-os-atlas-7b",
+    "canonical_name": "OS-Atlas-7B",
+    "family_id": "os-copilot-os-atlas-7b",
+    "release_date": "2024-10-30",
+    "organization": "OS-Copilot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2410-23218"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-palm-2-bison",
     "canonical_name": "PaLM-2 (Bison)",
     "family_id": "unknown-palm-2-bison",
@@ -16225,6 +16267,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen2-vl-72b-instruct",
+    "canonical_name": "Qwen2-VL-72B-Instruct",
+    "family_id": "alibaba-qwen2-vl-72b-instruct",
+    "release_date": "2024-09-18",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-gui-agent-github-io-grounding-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"

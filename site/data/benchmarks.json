@@ -454,6 +454,23 @@
       "notes": null
     },
     {
+      "id": "resource-https-arxiv-org-abs-2410-23218",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "ScreenSpot-Pro paper",
+      "url": "https://arxiv.org/abs/2410.23218",
+      "publisher": "ScreenSpot-Pro paper",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-arxiv-org-abs-2412-01152",
       "resource_scope": [
         "benchmark",
@@ -9426,6 +9443,22 @@
       "notes": null
     },
     {
+      "id": "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding",
+      "resource_scope": [
+        "benchmark"
+      ],
+      "entity_id": null,
+      "resource_type": "paper",
+      "title": "ScreenSpot-Pro primary source",
+      "url": "https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding",
+      "publisher": "Benchmark authors",
+      "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
       "id": "resource-https-github-com-zapier-automationbench",
       "resource_scope": [
         "benchmark"
@@ -9436,6 +9469,40 @@
       "url": "https://github.com/zapier/AutomationBench",
       "publisher": "Benchmark authors",
       "authority": "primary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
+      "id": "resource-https-gui-agent-github-io-grounding-leaderboard",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "ScreenSpot-Pro official leaderboard",
+      "url": "https://gui-agent.github.io/grounding-leaderboard/",
+      "publisher": "ScreenSpot-Pro official leaderboard",
+      "authority": "trusted_secondary",
+      "active": true,
+      "watch": false,
+      "last_checked_at": null,
+      "notes": null
+    },
+    {
+      "id": "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+      "resource_scope": [
+        "benchmark",
+        "model"
+      ],
+      "entity_id": null,
+      "resource_type": "official_leaderboard",
+      "title": "Official H Company release post",
+      "url": "https://hcompany.ai/holo2-235b-a22b-preview",
+      "publisher": "Official H Company release post",
+      "authority": "trusted_secondary",
       "active": true,
       "watch": false,
       "last_checked_at": null,
@@ -20666,6 +20733,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-holo2-235b-a22b",
+      "canonical_name": "Holo2-235B-A22B",
+      "family_id": "h-company-holo2-235b-a22b",
+      "release_date": "2026-02-03",
+      "organization": "H Company",
+      "resource_ids": [
+        "resource-https-hcompany-ai-holo2-235b-a22b-preview"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-inflection-1",
       "canonical_name": "Inflection 1",
       "family_id": "inflection-ai-inflection-1",
@@ -24488,6 +24576,27 @@
       "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
     },
     {
+      "id": "model-os-atlas-7b",
+      "canonical_name": "OS-Atlas-7B",
+      "family_id": "os-copilot-os-atlas-7b",
+      "release_date": "2024-10-30",
+      "organization": "OS-Copilot",
+      "resource_ids": [
+        "resource-https-arxiv-org-abs-2410-23218"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
       "id": "model-palm-2-bison",
       "canonical_name": "PaLM-2 (Bison)",
       "family_id": "unknown-palm-2-bison",
@@ -25866,6 +25975,27 @@
       ],
       "domains": [
         "General knowledge & reasoning"
+      ],
+      "evaluation_types": [
+        "Model"
+      ],
+      "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+      "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+    },
+    {
+      "id": "model-qwen2-vl-72b-instruct",
+      "canonical_name": "Qwen2-VL-72B-Instruct",
+      "family_id": "alibaba-qwen2-vl-72b-instruct",
+      "release_date": "2024-09-18",
+      "organization": "Alibaba",
+      "resource_ids": [
+        "resource-https-gui-agent-github-io-grounding-leaderboard"
+      ],
+      "roles": [
+        "contemporary_frontier"
+      ],
+      "domains": [
+        "Multimodal"
       ],
       "evaluation_types": [
         "Model"
@@ -135418,6 +135548,811 @@
       ],
       "resource_ids": [
         "resource-https-github-com-zapier-automationbench"
+      ],
+      "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+      "historical_frontier_status": "unknown_public_dates",
+      "timeline_default": "capability"
+    },
+    {
+      "id": "screenspot-pro",
+      "name": "ScreenSpot-Pro",
+      "domain": "Multimodal",
+      "release": "2025-01-04",
+      "floor": 0.0,
+      "ceiling": 1.0,
+      "source": "https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding",
+      "evaluation_type": "Model",
+      "tags": [
+        "GUI grounding",
+        "high resolution",
+        "static screenshot"
+      ],
+      "metric": "Accuracy",
+      "score_format": "ratio",
+      "metric_id": "screenspot-pro-metric-v1",
+      "protocol_id": "screenspot-pro-source-export-v1",
+      "benchmark_version_id": "screenspot-pro-canonical",
+      "summary": {
+        "en": "ScreenSpot-Pro tests whether a multimodal system can locate the precise UI element described in a natural-language instruction on a high-resolution professional screenshot.",
+        "zh": "ScreenSpot-Pro \u6d4b\u8bd5 multimodal system \u80fd\u4e0d\u80fd\u6839\u636e\u81ea\u7136\u8bed\u8a00\u6307\u4ee4\uff0c\u5728\u9ad8\u5206\u8fa8\u7387\u7684\u4e13\u4e1a\u8f6f\u4ef6\u622a\u56fe\u4e2d\u51c6\u786e\u627e\u5230\u76ee\u6807 UI \u5143\u7d20\u3002"
+      },
+      "task_format": {
+        "en": "Each item provides a screenshot and an instruction. The system predicts a point or bounding-box location for the requested icon or text element; the benchmark uses static screenshots rather than a full interactive desktop environment.",
+        "zh": "\u6bcf\u4e2a task \u4f1a\u63d0\u4f9b\u4e00\u5f20\u622a\u56fe\u548c\u4e00\u6761\u6307\u4ee4\u3002\u7cfb\u7edf\u9700\u8981\u9884\u6d4b\u6307\u5b9a icon \u6216\u6587\u5b57\u5143\u7d20\u7684\u4f4d\u7f6e\uff1b\u8fd9\u4e2a benchmark \u4f7f\u7528\u9759\u6001\u622a\u56fe\uff0c\u4e0d\u662f\u5b8c\u6574\u7684\u53ef\u4ea4\u4e92\u684c\u9762\u73af\u5883\u3002"
+      },
+      "scoring": {
+        "metric_name": "Grounding accuracy",
+        "explanation": {
+          "en": "A prediction is correct when the predicted point falls inside the target element's ground-truth bounding box. The reported score is the micro-average accuracy over the benchmark instructions.",
+          "zh": "\u5982\u679c\u9884\u6d4b\u70b9\u843d\u5728\u76ee\u6807\u5143\u7d20\u7684\u6807\u51c6 bounding box \u5185\uff0c\u5c31\u7b97\u7b54\u5bf9\u3002\u62a5\u544a\u5206\u6570\u662f\u6240\u6709 benchmark instruction \u7684 micro-average accuracy\u3002"
+        }
+      },
+      "evaluation_target": "final_output",
+      "observation_count": 4,
+      "observations": [
+        {
+          "observation_id": "obs-screenspot-pro-sspro-gpt4o",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.008,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "unknown",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-qwen2vl72b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-qwen2-vl-72b-instruct",
+          "model_family_id": "alibaba-qwen2-vl-72b-instruct",
+          "model": "Qwen2-VL-72B-Instruct",
+          "organization": "Alibaba",
+          "score": 0.01,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-09-18",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-18",
+          "date_kind": "unknown",
+          "capability_date": "2024-09-18",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-osatlas7b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-os-atlas-7b",
+          "model_family_id": "os-copilot-os-atlas-7b",
+          "model": "OS-Atlas-7B",
+          "organization": "OS-Copilot",
+          "score": 0.189,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-10-30",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-10-30",
+          "date_kind": "unknown",
+          "capability_date": "2024-10-30",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2410-23218",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://arxiv.org/abs/2410.23218",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-holo2-235b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-holo2-235b-a22b",
+          "model_family_id": "h-company-holo2-235b-a22b",
+          "model": "Holo2-235B-A22B",
+          "organization": "H Company",
+          "score": 0.706,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2026-02-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-02-03",
+          "date_kind": "unknown",
+          "capability_date": "2026-02-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://hcompany.ai/holo2-235b-a22b-preview",
+          "notes": "Operational evaluation timeline only; not a historical public-result date."
+        }
+      ],
+      "frontier": [
+        {
+          "observation_id": "obs-screenspot-pro-sspro-gpt4o",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.008,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-gpt4o"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-qwen2vl72b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-qwen2-vl-72b-instruct",
+          "model_family_id": "alibaba-qwen2-vl-72b-instruct",
+          "model": "Qwen2-VL-72B-Instruct",
+          "organization": "Alibaba",
+          "score": 0.01,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-09-18",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-18",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-18",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-18",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-qwen2vl72b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-osatlas7b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-os-atlas-7b",
+          "model_family_id": "os-copilot-os-atlas-7b",
+          "model": "OS-Atlas-7B",
+          "organization": "OS-Copilot",
+          "score": 0.189,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-10-30",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-10-30",
+          "date_kind": "model release date",
+          "capability_date": "2024-10-30",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2410-23218",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://arxiv.org/abs/2410.23218",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-10-30",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-osatlas7b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-holo2-235b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-holo2-235b-a22b",
+          "model_family_id": "h-company-holo2-235b-a22b",
+          "model": "Holo2-235B-A22B",
+          "organization": "H Company",
+          "score": 0.706,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2026-02-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-02-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-02-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://hcompany.ai/holo2-235b-a22b-preview",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-02-03",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-holo2-235b"
+          ]
+        }
+      ],
+      "frontier_events": [
+        {
+          "observation_id": "obs-screenspot-pro-sspro-gpt4o",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.008,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-gpt4o"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-qwen2vl72b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-qwen2-vl-72b-instruct",
+          "model_family_id": "alibaba-qwen2-vl-72b-instruct",
+          "model": "Qwen2-VL-72B-Instruct",
+          "organization": "Alibaba",
+          "score": 0.01,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-09-18",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-18",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-18",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-18",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-qwen2vl72b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-osatlas7b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-os-atlas-7b",
+          "model_family_id": "os-copilot-os-atlas-7b",
+          "model": "OS-Atlas-7B",
+          "organization": "OS-Copilot",
+          "score": 0.189,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-10-30",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-10-30",
+          "date_kind": "model release date",
+          "capability_date": "2024-10-30",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2410-23218",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://arxiv.org/abs/2410.23218",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-10-30",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-osatlas7b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-holo2-235b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-holo2-235b-a22b",
+          "model_family_id": "h-company-holo2-235b-a22b",
+          "model": "Holo2-235B-A22B",
+          "organization": "H Company",
+          "score": 0.706,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2026-02-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-02-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-02-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://hcompany.ai/holo2-235b-a22b-preview",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-02-03",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-holo2-235b"
+          ]
+        }
+      ],
+      "capability_frontier": [
+        {
+          "observation_id": "obs-screenspot-pro-sspro-gpt4o",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-gpt-4o",
+          "model_family_id": "openai-gpt-4o",
+          "model": "GPT-4o",
+          "organization": "OpenAI",
+          "score": 0.008,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-05-13",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-05-13",
+          "date_kind": "model release date",
+          "capability_date": "2024-05-13",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-05-13",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-gpt4o"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-qwen2vl72b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-qwen2-vl-72b-instruct",
+          "model_family_id": "alibaba-qwen2-vl-72b-instruct",
+          "model": "Qwen2-VL-72B-Instruct",
+          "organization": "Alibaba",
+          "score": 0.01,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-09-18",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-09-18",
+          "date_kind": "model release date",
+          "capability_date": "2024-09-18",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-gui-agent-github-io-grounding-leaderboard",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://gui-agent.github.io/grounding-leaderboard/",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-09-18",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-qwen2vl72b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-osatlas7b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-os-atlas-7b",
+          "model_family_id": "os-copilot-os-atlas-7b",
+          "model": "OS-Atlas-7B",
+          "organization": "OS-Copilot",
+          "score": 0.189,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2024-10-30",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2024-10-30",
+          "date_kind": "model release date",
+          "capability_date": "2024-10-30",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-arxiv-org-abs-2410-23218",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://arxiv.org/abs/2410.23218",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2024-10-30",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-osatlas7b"
+          ]
+        },
+        {
+          "observation_id": "obs-screenspot-pro-sspro-holo2-235b",
+          "benchmark_id": "screenspot-pro",
+          "benchmark_version_id": "screenspot-pro-canonical",
+          "model_id": "model-holo2-235b-a22b",
+          "model_family_id": "h-company-holo2-235b-a22b",
+          "model": "Holo2-235B-A22B",
+          "organization": "H Company",
+          "score": 0.706,
+          "reported_cost_per_task": null,
+          "metric_id": "screenspot-pro-metric-v1",
+          "protocol_id": "screenspot-pro-source-export-v1",
+          "metric": "Accuracy",
+          "evaluation_protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+          "model_release_date": "2026-02-03",
+          "evaluation_date": null,
+          "result_public_date": null,
+          "source_publication_date": null,
+          "ingested_at": "2026-09-03",
+          "date_precision": "day",
+          "date_notes": "Result-public date is not present in the source export.",
+          "date": "2026-02-03",
+          "date_kind": "model release date",
+          "capability_date": "2026-02-03",
+          "capability_date_meaning": "model_release_date",
+          "reported_date_meaning": "result_public_date",
+          "historical_frontier_date": null,
+          "temporal_class": "historical_or_unknown",
+          "retrospective": false,
+          "capability_frontier_eligible": true,
+          "historical_frontier_eligible": false,
+          "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+          "contemporaneous": true,
+          "source_ids": [
+            "resource-https-hcompany-ai-holo2-235b-a22b-preview",
+            "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
+          ],
+          "source": "https://hcompany.ai/holo2-235b-a22b-preview",
+          "notes": "Operational evaluation timeline only; not a historical public-result date.",
+          "plot_date": "2026-02-03",
+          "frontier_observation_ids": [
+            "obs-screenspot-pro-sspro-holo2-235b"
+          ]
+        }
+      ],
+      "reported_frontier": [],
+      "historical_frontier": [],
+      "retrospective_observations": [],
+      "observed_frontier": 0.706,
+      "capability_frontier_value": 0.706,
+      "reported_frontier_value": null,
+      "current_frontier": 0.706,
+      "normalized_progress": 0.706,
+      "normalized_headroom": 0.29400000000000004,
+      "threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 395
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 607
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 607
+        }
+      },
+      "capability_threshold_days": {
+        "T50": {
+          "status": "reached",
+          "days": 395
+        },
+        "T80": {
+          "status": "right_censored",
+          "days": 607
+        },
+        "T90": {
+          "status": "right_censored",
+          "days": 607
+        }
+      },
+      "reported_threshold_days": {
+        "T50": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T80": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        },
+        "T90": {
+          "status": "unknown",
+          "reason": "No dated observations are available on this timeline."
+        }
+      },
+      "velocity_180d": 0.03413770065075922,
+      "capability_velocity_180d": 0.03413770065075922,
+      "reported_velocity_180d": null,
+      "cost_per_task": null,
+      "coverage": {
+        "value": 0.14285714285714285,
+        "represented_organizations": [
+          "OpenAI"
+        ],
+        "panel_size": 7,
+        "status": "low"
+      },
+      "unavailable": [
+        "T80: not included in the first vertical slice"
+      ],
+      "resource_ids": [
+        "resource-https-github-com-likaixin2000-screenspot-pro-gui-grounding"
       ],
       "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
       "historical_frontier_status": "unknown_public_dates",

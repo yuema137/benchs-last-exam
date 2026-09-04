@@ -23,8 +23,9 @@ This audit treats benchmark selection as curation, not catalog construction. A c
 | CursorBench 3.2 | Software engineering | 3.2, 2026-07-08 | Real Cursor-session coding tasks with ambiguous multi-file work and explicit cost reporting | Task score; floor 0.0; ceiling 1.0 | 8 representative agent observations | CORE |
 | GDPval-AA v2 | General agent tasks | v2, 2026-04-18 | Agentic evaluation of professional deliverables across occupations and industries | Elo anchored to human baseline 1,000; no fixed floor/ceiling | 8 representative model-generation observations | CORE; threshold metrics N/A |
 | AutomationBench | General agent tasks | Initial public release, 2026-04-20 | Programmatically verified cross-application business workflows across simulated SaaS tools | Strict task pass rate; floor 0.0; ceiling 1.0 | 7 representative agent observations | CORE |
+| ScreenSpot-Pro | Multimodal | Initial release, 2025-01-04 | High-resolution professional GUI grounding with expert-annotated screenshots across multiple applications and operating systems | Grounding accuracy; floor 0.0; ceiling 1.0 | 4 direct-grounding observations; agentic/zoom-assisted results excluded from this protocol | CORE |
 
-The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. Together with the versioned additions above, the local curated set now contains twenty benchmark objects without silently merging related versions.
+The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. FrontierCode 1.1 was already part of the core set and was not duplicated. Together with the versioned additions above, the local curated set now contains twenty-one benchmark objects without silently merging related versions.
 
 ## Candidate audit
 
@@ -57,6 +58,7 @@ The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Dia
 - Cursor's official CursorBench page dates the 3.2 task release to 2026-07-08 and reports score, token, step, and cost columns; costs are retained as source-context observations.
 - Artificial Analysis defines GDPval-AA v2 as an agentic, pairwise-judged Elo evaluation; because Elo has no fixed floor/ceiling, normalized progress and threshold timings are not computed.
 - Zapier's AutomationBench repository distinguishes its public 600-task set from the official held-out private leaderboard; this snapshot uses the reproducible public set and labels that choice in observation notes.
+- ScreenSpot-Pro's official leaderboard documents greedy decoding and micro-average reporting; the curated direct-grounding series excludes agentic multi-step and zoom-assisted variants so the capability frontier does not mix materially different setups.
 
 ARC-AGI-1 remains in the queue because the current authoritative source establishes a 2019 origin but not a precise day-level release date suitable for the present schema.
 
