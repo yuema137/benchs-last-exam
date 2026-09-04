@@ -85,3 +85,22 @@ The style applies to conversational explanations and explicitly selected explana
 - Preserve right-censored benchmarks for later survival analysis.
 - Every benchmark addition must satisfy the Benchmark Integration Contract in `docs/BENCHMARK_INTEGRATION.md` and pass `python3 scripts/validate_benchmark_integration.py` before it is considered complete. This applies to partial-core benchmarks with truthful `Unknown`, `N/A`, or `—` values as well as fully measured benchmarks.
 - Every benchmark or observation update must regenerate and validate all four lifecycle story views together: `Test of Time`, `Still Frontier`, `Fastest Solved`, and `Recently Saturated`. Their membership is generated from canonical lifecycle metrics in one build; never maintain or update one tab independently.
+
+## Card-update synchronization invariant
+
+Any change to a benchmark/card is also a lifecycle-impacting change unless proven otherwise. This includes changes to observations, scores, model release dates, benchmark release/version metadata, protocol eligibility, frontier events, coverage, or cost.
+
+After any such change, the agent must:
+
+1. rebuild the canonical snapshot;
+2. recompute the benchmark's capability frontier and lifecycle metrics;
+3. check the benchmark against **every** lifecycle selector, including both membership and non-membership:
+   - `Test of Time`
+   - `Still Frontier`
+   - `Fastest Solved`
+   - `Recently Saturated`
+4. confirm that any newly qualifying or disqualified card is reflected automatically in the generated membership lists;
+5. verify the Leaderboard row, detail page, filters, card metrics, sparklines, and provenance all resolve to the updated canonical data;
+6. run `python3 scripts/validate_benchmark_integration.py`, provenance validation, and the test suite before reporting completion.
+
+Do not update only the visible benchmark card and assume the story tabs remain correct. Do not manually patch a tab to compensate for stale derived data. If a lifecycle result changes, the generated snapshot and its source data must be included in the same change.
