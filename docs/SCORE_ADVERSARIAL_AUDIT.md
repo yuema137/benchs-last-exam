@@ -16,6 +16,18 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 
 ## Low ratio observations (<1%)
 
+- **arc-agi-2** — 33 observations. ARC Prize reports pure LLMs near zero and public reasoning systems in single digits under pass@2.
+- **browsecomp** — 2 observations. OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.
+- **chemm-bench-acl2026** — 2 observations. The pinned ACL table reports zero/near-zero exact molecular-structure task performance.
+- **critpt** — 62 observations. The official 70-challenge, five-run leaderboard reports several 0–0.9% accuracies.
+- **frontiermath-tier-4-v2** — 3 observations. The research-level Tier 4 set explicitly contains zero-score model runs.
+- **frontiermath-tiers-1-3-v2** — 4 observations. The fixed hard-math set permits zero and one/few-item successes.
+- **gsm8k** — 8 observations. HELM exact-match results for early models genuinely include zero and sub-1% accuracy.
+- **gso** — 1 observations. The official Opt@1 export includes a zero-task-success GPT-4o run.
+- **screenspot-pro** — 1 observations. The official micro-average leaderboard reports GPT-4o at 0.8%.
+
+### Observation sample
+
 - gsm8k / babbage (1.3B) / 0.007
 - gsm8k / ada (350M) / 0.006
 - gsm8k / text-curie-001 / 0.006
@@ -79,6 +91,12 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - …and 56 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
+
+- **gdpval-aa-v2** — 8 observations. Unbounded Elo-like rating, not percent.
+- **metr-time-horizon-1-1** — 19 observations. Human-equivalent task duration in minutes, not percent.
+- **vending-bench-2** — 52 observations. Simulated business outcome denominated in dollars, not percent.
+
+### Observation sample
 
 - vending-bench-2 / Claude Opus 5 / 11181.9
 - vending-bench-2 / Claude Opus 4.7 / 10936.8

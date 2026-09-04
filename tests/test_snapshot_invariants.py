@@ -3,6 +3,11 @@ import unittest
 from datetime import date
 from pathlib import Path
 
+from scripts.validate_score_semantics import (
+    REVIEWED_LARGE_NUMERIC_BENCHMARKS,
+    REVIEWED_LOW_RATIO_BENCHMARKS,
+)
+
 
 SNAPSHOT = Path(__file__).resolve().parents[1] / "site" / "data" / "benchmarks.json"
 
@@ -185,6 +190,18 @@ class SnapshotInvariantTests(unittest.TestCase):
             for observation in benchmark["observations"]:
                 self.assertGreaterEqual(observation["score"], 0.0, observation["observation_id"])
                 self.assertLessEqual(observation["score"], 1.0, observation["observation_id"])
+
+    def test_every_extreme_score_group_has_explicit_adversarial_review(self):
+        low_ratio_ids = set()
+        large_numeric_ids = set()
+        for benchmark in self.benchmarks:
+            for observation in benchmark["observations"]:
+                if benchmark["score_format"] == "ratio" and observation["score"] < 0.01:
+                    low_ratio_ids.add(benchmark["id"])
+                if benchmark["score_format"] == "number" and observation["score"] > 100:
+                    large_numeric_ids.add(benchmark["id"])
+        self.assertEqual(low_ratio_ids, set(REVIEWED_LOW_RATIO_BENCHMARKS))
+        self.assertEqual(large_numeric_ids, set(REVIEWED_LARGE_NUMERIC_BENCHMARKS))
 
     def test_normalization_floor_is_not_treated_as_a_hard_score_bound(self):
         mmlu = next(item for item in self.benchmarks if item["id"] == "mmlu")
