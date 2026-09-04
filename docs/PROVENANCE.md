@@ -24,16 +24,19 @@ python3 scripts/validate_provenance.py
 
 Observations preserve benchmark release date, model release date, evaluation
 date, result-public date, source-publication date, and ingestion date as
-separate fields. The current pilot export does not provide result-public dates.
-Its displayed curve is explicitly labelled as an operational evaluation
-timeline and must not be interpreted as a historical public-result frontier.
+separate fields. The primary capability timeline uses model release date on a
+protocol-compatible observation series. Evaluation and result-public dates
+remain provenance fields; they are not silently substituted into the
+capability timeline.
 
 ## Update channels prepared by the model
 
 In a future manual refresh, benchmark-scoped resources can be checked for new
 model results, while resources attached to reference models can be checked for
 new benchmark results. `watch` and `last_checked_at` are present for that
-purpose. No scheduler, crawler, or automatic update job is part of this layer.
+purpose. The required inventory and reconciliation procedure is documented in
+[`MODEL_RELEASE_UPDATE_PROTOCOL.md`](MODEL_RELEASE_UPDATE_PROTOCOL.md). No
+scheduler, crawler, or automatic update job is part of this layer.
 
 ## Known gaps
 
