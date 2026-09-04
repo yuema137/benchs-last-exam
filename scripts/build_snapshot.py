@@ -101,6 +101,10 @@ def build_benchmark(spec, resources, models):
             )
             model_id = f"model-{slug(model)}"
             family_id = model_family(model, row.get("Organization") or "unknown")
+            is_math_retro = spec["id"] == "math-level-5"
+            retrospective = is_math_retro or bool(
+                evaluation_date and model_release_date and evaluation_date > model_release_date
+            )
             models.setdefault(model_id, {
                 "id": model_id,
                 "canonical_name": model,
@@ -136,7 +140,11 @@ def build_benchmark(spec, resources, models):
                 "date": plot_date,
                 "date_kind": plot_date_reason,
                 "historical_frontier_date": None,
-                "contemporaneous": False,
+                "temporal_class": "retrospective_evaluation" if retrospective else "historical_or_unknown",
+                "retrospective": retrospective,
+                "historical_frontier_eligible": False,
+                "eligibility_reason": "No defensible result_public_date and comparable public protocol in the source export.",
+                "contemporaneous": not retrospective,
                 "source_ids": [source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id],
                 "source": source_url,
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
@@ -155,12 +163,19 @@ def build_benchmark(spec, resources, models):
         progress = max(0.0, min(1.0, progress))
     release = date.fromisoformat(spec["release"])
     threshold_days = {}
+    lifecycle_rows = rows if spec["id"] != "math-level-5" else []
+    lifecycle_frontier = frontier if spec["id"] != "math-level-5" else []
     for label, target in (("T50", 0.5), ("T90", 0.9)):
-        crossing = next((p for p in frontier if (p["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"]) >= target), None)
-        threshold_days[label] = {"status": "reached", "days": (date.fromisoformat(crossing["date"]) - release).days} if crossing else {"status": "right_censored", "days": (date.fromisoformat(rows[-1]["date"]) - release).days}
+        crossing = next((p for p in lifecycle_frontier if (p["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"]) >= target), None)
+        if spec["id"] == "math-level-5":
+            threshold_days[label] = {"status": "unknown", "reason": "No comparable historical public-result observations are available."}
+        elif crossing:
+            threshold_days[label] = {"status": "reached", "days": (date.fromisoformat(crossing["date"]) - release).days}
+        else:
+            threshold_days[label] = {"status": "right_censored", "days": (date.fromisoformat(lifecycle_rows[-1]["date"]) - release).days}
     latest_frontier = frontier[-1] if frontier else None
     velocity_180d = None
-    if latest_frontier:
+    if latest_frontier and spec["id"] != "math-level-5":
         latest_date = date.fromisoformat(latest_frontier["date"])
         prior = next((p for p in reversed(frontier[:-1]) if (latest_date - date.fromisoformat(p["date"])).days >= 180), None)
         if prior:
@@ -182,6 +197,8 @@ def build_benchmark(spec, resources, models):
         "observation_count": len(rows),
         "observations": rows,
         "frontier": [{**point, "source_ids": point["source_ids"]} for point in frontier],
+        "historical_frontier": [{**point, "source_ids": point["source_ids"]} for point in lifecycle_frontier],
+        "retrospective_observations": [row for row in rows if row["retrospective"]],
         "observed_frontier": current["score"] if current else None,
         "current_frontier": current["score"] if current else None,
         "normalized_progress": progress,
@@ -192,7 +209,7 @@ def build_benchmark(spec, resources, models):
         "unavailable": ["T80: not included in the first vertical slice"],
         "resource_ids": [benchmark_resource_id],
         "date_policy": "The displayed pilot curve uses an explicit operational date: evaluation_date when available, otherwise model_release_date. It is not a historical public-result frontier because result_public_date is unavailable.",
-        "historical_frontier_status": "unknown_public_dates",
+        "historical_frontier_status": "unknown_public_dates" if spec["id"] == "math-level-5" else "not_classified",
     }
 
 
