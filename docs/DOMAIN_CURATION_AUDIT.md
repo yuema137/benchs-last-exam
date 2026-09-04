@@ -14,6 +14,10 @@ This audit treats benchmark selection as curation, not catalog construction. A c
 | OSWorld 2.0 | Agents / computer use | 2026-06-26 | A materially revised real-computer benchmark with an explicit version boundary; distinct from static QA and useful for agent evaluation burden | Binary task success rate; floor 0.0; ceiling 1.0 | 16 observations with release dates | CORE |
 | Terminal-Bench 2.0 | Agents / computer use | 2025-11-07 | A versioned terminal-agent benchmark with a documented official harness and executable task outcomes | Task success rate; floor 0.0; ceiling 1.0 | 202 observations with model release dates | CORE |
 | FrontierCode 1.1 | Coding / software engineering | 2026-02-05 | Adds maintainer-defined quality and regression-safety criteria beyond a simple test-pass rate | Main score; 0.0–1.0 scale; fixed protocol details remain attached to observations | 34 observations with model release dates | CORE |
+| Agents' Last Exam (ALE-V1) | General agent tasks | ALE-V1, 2026-06-03 | Long-horizon professional workflows with verifiable outcomes across many industries | Pass rate; floor 0.0; ceiling 1.0 | 8 representative leaderboard observations | CORE |
+| Terminal-Bench-Science 0.1 | Science / research | 0.1, 2026-05-20 | Expert-curated scientific workflows executed in terminal environments | Resolution rate; floor 0.0; ceiling 1.0 | 8 representative leaderboard observations; later releases are continuous | CORE for fixed 0.1 snapshot |
+| TerminalWorld Verified | Terminal / OS | Verified subset, 2026-05-21 | Real-world terminal workflows derived from developer recordings and manually verified | Verified task pass rate; floor 0.0; ceiling 1.0 | 8 representative leaderboard observations | CORE |
+| Terminal-Bench 2.1 | Terminal / OS | 2.1, 2026-05-06 | A separately versioned revision fixing 28 tasks from Terminal-Bench 2.0 | Mean task accuracy; floor 0.0; ceiling 1.0 | 8 representative agent-model observations | CORE as a separate versioned object |
 
 The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. This produces a ten-benchmark core without treating related versions as silently interchangeable.
 
@@ -39,6 +43,10 @@ The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Dia
 - The OSWorld official site dates OSWorld 2.0 to 2026-06-26 and describes it as a new version with official unified evaluations.
 - Terminal-Bench's official announcement dates version 2.0 to 2025-11-07 and documents the versioned benchmark and Harbor harness.
 - Cognition's FrontierCode 1.1 resource defines a distinct software-quality measurement object rather than a plain unit-test pass rate.
+- Agents' Last Exam's official leaderboard and paper define ALE-V1 pass rate separately from partial-credit score; this snapshot uses the overall pass-rate leaderboard.
+- Terminal-Bench-Science's official 0.1 announcement defines 70 scientific workflow tasks, three independent trials per task, and a continuous future release process; only the fixed 0.1 snapshot is represented here.
+- TerminalWorld's official Verified leaderboard defines a 200-task manually verified subset evaluated with the standardized Terminus-2 agent framework and Harbor harness.
+- Terminal-Bench's official 2.1 announcement defines a separate revision of 2.0 with 28 task fixes; it is not merged with the existing 2.0 object.
 
 ARC-AGI-1 remains in the queue because the current authoritative source establishes a 2019 origin but not a precise day-level release date suitable for the present schema.
 

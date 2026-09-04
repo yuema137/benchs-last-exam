@@ -49,6 +49,13 @@ BENCHMARKS.extend([
 # precise benchmark release date.
 BENCHMARKS = [spec for spec in BENCHMARKS if spec["id"] != "arc-agi-1"]
 
+BENCHMARKS.extend([
+    {"id": "agents-last-exam", "name": "Agents' Last Exam (ALE-V1)", "domain": "General agent tasks", "file": "agents_last_exam_external.csv", "score": "Pass Rate", "release": "2026-06-03", "floor": 0.0, "ceiling": 1.0, "source": "https://agents-last-exam.org/leaderboard", "summary": {"en": "Agents' Last Exam evaluates agents on long-horizon, economically valuable professional workflows with verifiable outcomes.", "zh": "Agents' Last Exam 评估 agent 能不能完成有明确验证结果、耗时较长且贴近真实工作的专业任务。"}, "task_format": {"en": "An agent works through a real digital-work task using the required tools and environment, then submits an outcome that can be checked.", "zh": "agent 会在指定工具和环境中完成真实的数字工作任务，最后提交一个可以被验证的结果。"}, "scoring": {"metric_name": "Pass rate", "explanation": {"en": "Pass rate is the share of task runs that earn a perfect score. The leaderboard also reports an average partial-credit score separately.", "zh": "Pass rate 是拿到满分的 task run 占比。leaderboard 还会单独报告包含部分得分的平均 score。"}}, "evaluation_target": "environment_outcome"},
+    {"id": "terminal-bench-science-0-1", "name": "Terminal-Bench-Science 0.1", "domain": "Science / research", "file": "terminal_bench_science_external.csv", "score": "Resolution rate", "release": "2026-05-20", "floor": 0.0, "ceiling": 1.0, "source": "https://www.terminal-bench-science.ai/announcement", "summary": {"en": "Terminal-Bench-Science evaluates agents on expert-curated research workflows across five scientific domains.", "zh": "Terminal-Bench-Science 评估 agent 能不能在五个科学领域完成专家挑选的真实研究工作流。"}, "task_format": {"en": "The agent works in a terminal environment on a scientific workflow and produces an analysis, simulation, proof, code, or data artifact.", "zh": "agent 会在 terminal 环境中完成科学工作流，产出分析、simulation、证明、代码或数据结果。"}, "scoring": {"metric_name": "Resolution rate", "explanation": {"en": "A task is resolved when its task-specific evaluator accepts the required scientific artifact or outcome. The reported rate averages three independent trials per task.", "zh": "当 task 专用 evaluator 接受所需的科学产物或最终结果时，task 才算解决。报告的 resolution rate 基于每个 task 的三次独立尝试。"}}, "evaluation_target": "environment_outcome"},
+    {"id": "terminalworld-verified", "name": "TerminalWorld Verified", "domain": "Terminal / OS", "file": "terminalworld_verified_external.csv", "score": "Score", "release": "2026-05-21", "floor": 0.0, "ceiling": 1.0, "source": "https://terminalworld.ai/leaderboard/", "summary": {"en": "TerminalWorld Verified evaluates agents on real-world terminal workflows derived from developer recordings and manually verified.", "zh": "TerminalWorld Verified 评估 agent 能不能完成来自真实开发者操作记录、并经过人工核验的 terminal 工作流。"}, "task_format": {"en": "The agent operates inside an isolated Docker terminal environment and must reach the task's required final system state.", "zh": "agent 会在隔离的 Docker terminal 环境中操作，必须让系统达到 task 要求的最终状态。"}, "scoring": {"metric_name": "Verified task pass rate", "explanation": {"en": "The score is the fraction of the 200 human-verified tasks completed successfully. Results use the standardized Terminus-2 agent framework and Harbor harness.", "zh": "分数是 200 个经过人工核验的 task 中成功完成的比例。结果使用统一的 Terminus-2 agent framework 和 Harbor harness。"}}, "evaluation_target": "environment_outcome"},
+    {"id": "terminal-bench-2-1", "name": "Terminal-Bench 2.1", "domain": "Terminal / OS", "file": "terminal_bench_2_1_external.csv", "score": "Accuracy mean", "release": "2026-05-06", "floor": 0.0, "ceiling": 1.0, "source": "https://www.tbench.ai/news/terminal-bench-2-1", "summary": {"en": "Terminal-Bench 2.1 measures agents on difficult, reproducible terminal tasks after fixing issues in 28 tasks from version 2.0.", "zh": "Terminal-Bench 2.1 评估 agent 完成高难度、可复现 terminal task 的能力，并修复了 2.0 版本中 28 个 task 的问题。"}, "task_format": {"en": "The agent receives an instruction and a containerized terminal task with tests, then must leave the environment in a passing state.", "zh": "agent 会收到指令和带测试的容器化 terminal task，最后必须让环境通过检查。"}, "scoring": {"metric_name": "Mean task accuracy", "explanation": {"en": "The reported accuracy is the mean task success rate under the listed agent-model setup. Different harnesses are kept as separate observations.", "zh": "报告的 accuracy 是指定 agent-model setup 下的平均 task 成功率。不同 harness 会作为不同 observation 保留。"}}, "evaluation_target": "environment_outcome"},
+])
+
 # Keep the taxonomy intentionally small and stable. Evaluation type describes
 # the benchmark's task setup; domain describes what the task is about.
 TAXONOMY = {
@@ -63,6 +70,10 @@ TAXONOMY = {
     "osworld-2": ("Agent", "Computer use", ["desktop", "web", "environment"]),
     "terminal-bench-2": ("Agent", "Terminal / OS", ["terminal", "container"]),
     "frontiercode-1-1": ("Agent", "Software engineering", ["code quality", "regression safety"]),
+    "agents-last-exam": ("Agent", "General agent tasks", ["long-horizon", "professional work", "verifiable"]),
+    "terminal-bench-science-0-1": ("Agent", "Science / research", ["scientific workflows", "terminal", "continuous benchmark"]),
+    "terminalworld-verified": ("Agent", "Terminal / OS", ["real-world workflows", "verified subset", "terminal"]),
+    "terminal-bench-2-1": ("Agent", "Terminal / OS", ["container", "reproducible", "revision"]),
 }
 
 for _spec in BENCHMARKS:
@@ -138,19 +149,20 @@ def build_frontier(rows, date_field, date_meaning):
     return frontier
 
 
-def threshold_metrics(frontier, release, floor, ceiling):
+def threshold_metrics(frontier, release, floor, ceiling, as_of=None):
     result = {}
     if floor is None or ceiling is None or ceiling == floor:
         for label in ("T50", "T80", "T90"):
             result[label] = {"status": "not_applicable", "reason": "No defensible fixed floor and ceiling."}
         return result
+    censor_date = as_of or (date.fromisoformat(frontier[-1]["plot_date"]) if frontier else release)
     for label, target in (("T50", 0.5), ("T80", 0.8), ("T90", 0.9)):
         crossing = next((point for point in frontier if (point["score"] - floor) / (ceiling - floor) >= target), None)
         if crossing:
             days = (date.fromisoformat(crossing["plot_date"]) - release).days
             result[label] = {"status": "at_release", "days": 0, "qualifying_model_release_date": crossing["plot_date"]} if days <= 0 else {"status": "reached", "days": days}
         elif frontier:
-            result[label] = {"status": "right_censored", "days": max(0, (date.fromisoformat(frontier[-1]["plot_date"]) - release).days)}
+            result[label] = {"status": "right_censored", "days": max(0, (censor_date - release).days)}
         else:
             result[label] = {"status": "unknown", "reason": "No dated observations are available on this timeline."}
     finite = {label: item["days"] for label, item in result.items()
@@ -269,8 +281,9 @@ def build_benchmark(spec, resources, models):
         progress = (current["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"])
         progress = max(0.0, min(1.0, progress))
     release = date.fromisoformat(spec["release"])
-    threshold_days = threshold_metrics(capability_frontier, release, spec["floor"], spec["ceiling"])
-    reported_threshold_days = threshold_metrics(reported_frontier, release, spec["floor"], spec["ceiling"])
+    snapshot_date = date.today()
+    threshold_days = threshold_metrics(capability_frontier, release, spec["floor"], spec["ceiling"], snapshot_date)
+    reported_threshold_days = threshold_metrics(reported_frontier, release, spec["floor"], spec["ceiling"], snapshot_date)
     velocity_180d = frontier_velocity(capability_frontier)
     reported_velocity_180d = frontier_velocity(reported_frontier)
     cost_values = []

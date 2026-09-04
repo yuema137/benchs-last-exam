@@ -1,5 +1,6 @@
 import json
 import unittest
+from datetime import date
 from pathlib import Path
 
 
@@ -27,6 +28,15 @@ class SnapshotInvariantTests(unittest.TestCase):
             }
             if all(name in finite for name in ("T50", "T90")):
                 self.assertGreaterEqual(finite["T90"], finite["T50"], benchmark["name"])
+
+    def test_right_censored_thresholds_use_snapshot_age(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        snapshot_date = date.fromisoformat(payload["snapshot_id"])
+        for benchmark in self.benchmarks:
+            for item in benchmark["threshold_days"].values():
+                if item.get("status") == "right_censored":
+                    release = date.fromisoformat(benchmark["release"])
+                    self.assertEqual(item["days"], max(0, (snapshot_date - release).days), benchmark["name"])
 
 
 if __name__ == "__main__":

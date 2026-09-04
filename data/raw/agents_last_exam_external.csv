@@ -1,0 +1,9 @@
+Name,Pass Rate,Release date,Organization,Source,Source Link,Notes
+gpt-5-6-sol,0.306,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+gpt-5-6-luna,0.296,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+Kimi K3,0.283,2026-07-16,Moonshot,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+gpt-5-6-terra,0.280,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+qwen-3-8,0.270,2026-04-22,Alibaba,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+Grok 4.5,0.270,2026-07-08,xAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+Claude Opus 4.8,0.270,2026-05-28,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+Claude Fable 5,0.257,2026-06-09,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate

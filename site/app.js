@@ -35,9 +35,9 @@ I18N.en.evaluation_type = "Evaluation type"; I18N.zh.evaluation_type = "Evaluati
 I18N.en.model_type = "Model"; I18N.zh.model_type = "Model";
 I18N.en.agent_type = "Agent"; I18N.zh.agent_type = "Agent";
 const t = key => I18N[state.lang][key] || key;
-const DOMAIN_LABELS = {"General knowledge & reasoning":"综合知识与推理", Mathematics:"数学", Science:"科学", Coding:"Coding", "Abstract reasoning":"抽象推理", Multimodal:"多模态", "Long context":"长上下文", "General agent tasks":"通用 agent 任务", "Software engineering":"软件工程", "Computer use":"Computer use", "Terminal / OS":"Terminal / OS", "Web / tool use":"Web / tool use"};
+const DOMAIN_LABELS = {"General knowledge & reasoning":"综合知识与推理", Mathematics:"数学", Science:"科学", Coding:"Coding", "Abstract reasoning":"抽象推理", Multimodal:"多模态", "Long context":"长上下文", "General agent tasks":"通用 agent 任务", "Software engineering":"软件工程", "Computer use":"Computer use", "Terminal / OS":"Terminal / OS", "Web / tool use":"Web / tool use", "Science / research":"科学 / research"};
 const MODEL_DOMAINS = ["General knowledge & reasoning", "Mathematics", "Science", "Coding", "Abstract reasoning", "Multimodal", "Long context"];
-const AGENT_DOMAINS = ["General agent tasks", "Software engineering", "Computer use", "Terminal / OS", "Web / tool use"];
+const AGENT_DOMAINS = ["General agent tasks", "Software engineering", "Computer use", "Terminal / OS", "Web / tool use", "Science / research"];
 const domainLabel = value => state.lang === "zh" ? (DOMAIN_LABELS[value] || value) : value;
 const score = v => v == null ? "N/A" : `${(v * 100).toFixed(1)}%`;
 const months = d => ((new Date(state.data.snapshot_id) - new Date(d)) / 86400000 / 30.44).toFixed(0);

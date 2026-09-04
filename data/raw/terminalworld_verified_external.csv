@@ -1,0 +1,9 @@
+Name,Score,Release date,Organization,Source,Source Link,Notes
+Claude Opus 4.7,0.625,2026-04-16,Anthropic,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+Kimi K2.6,0.575,2026-03-01,Moonshot,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+GLM 5.1,0.570,2026-03-15,Z.ai,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+Gemini 3.1 Pro,0.550,2026-02-19,Google,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+Qwen3.6-Max-Preview,0.540,2026-04-20,Alibaba,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+GPT-5.5,0.535,2026-04-23,OpenAI,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+DeepSeek-V4-Pro,0.500,2026-04-24,DeepSeek,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup
+MiniMax M2.7,0.490,2026-03-18,MiniMax,TerminalWorld Verified leaderboard,https://terminalworld.ai/leaderboard/,Verified subset; standardized Terminus-2 and Harbor setup

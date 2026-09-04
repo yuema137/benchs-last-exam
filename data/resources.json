@@ -272,6 +272,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-agents-last-exam-org-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Agents' Last Exam (ALE-V1) primary source",
+    "url": "https://agents-last-exam.org/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-aider-chat-2024-12-21-polyglot-html",
     "resource_scope": [
       "benchmark"
@@ -9442,6 +9458,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-terminalworld-ai-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "TerminalWorld Verified primary source",
+    "url": "https://terminalworld.ai/leaderboard/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-anthropic-com-news-releasing-claude-instant-1-2",
     "resource_scope": [
       "benchmark",
@@ -9484,6 +9516,38 @@
     "resource_type": "paper",
     "title": "Terminal-Bench 2.0 primary source",
     "url": "https://www.tbench.ai/news/announcement-2-0",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-tbench-ai-news-terminal-bench-2-1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Terminal-Bench 2.1 primary source",
+    "url": "https://www.tbench.ai/news/terminal-bench-2-1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-terminal-bench-science-ai-announcement",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Terminal-Bench-Science 0.1 primary source",
+    "url": "https://www.terminal-bench-science.ai/announcement",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,

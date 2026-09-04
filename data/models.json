@@ -1323,6 +1323,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-fable-5-claude-code",
+    "canonical_name": "Claude Fable 5 + Claude Code",
+    "family_id": "anthropic-claude-fable-5-claude-code",
+    "release_date": "2026-06-09",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-fable-5-high",
     "canonical_name": "claude-fable-5_high",
     "family_id": "anthropic-claude-fable-5-high",
@@ -2079,6 +2100,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-6-claude-code",
+    "canonical_name": "Claude Opus 4.6 + Claude Code",
+    "family_id": "anthropic-claude-opus-4-6-claude-code",
+    "release_date": "2026-03-12",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-6-max",
     "canonical_name": "claude-opus-4-6_max",
     "family_id": "anthropic-claude-opus-4-6-max",
@@ -2095,6 +2137,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-6-terminus-2",
+    "canonical_name": "Claude Opus 4.6 + Terminus 2",
+    "family_id": "anthropic-claude-opus-4-6-terminus-2",
+    "release_date": "2026-03-12",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -2197,6 +2260,27 @@
     ],
     "domains": [
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-8-claude-code",
+    "canonical_name": "Claude Opus 4.8 + Claude Code",
+    "family_id": "anthropic-claude-opus-4-8-claude-code",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -2389,6 +2473,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-claude-code",
+    "canonical_name": "Claude Opus 5 + Claude Code",
+    "family_id": "anthropic-claude-opus-5-claude-code",
+    "release_date": "2026-07-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -5376,6 +5481,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-1-pro-gemini-cli",
+    "canonical_name": "Gemini 3.1 Pro + Gemini CLI",
+    "family_id": "google-gemini-3-1-pro-gemini-cli",
+    "release_date": "2026-02-19",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-1-pro-preview",
     "canonical_name": "gemini-3.1-pro-preview",
     "family_id": "google-deepmind-gemini-3-1-pro-preview",
@@ -5434,6 +5560,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-1-pro-terminus-2",
+    "canonical_name": "Gemini 3.1 Pro + Terminus 2",
+    "family_id": "google-gemini-3-1-pro-terminus-2",
+    "release_date": "2026-02-19",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -7980,6 +8127,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-3-codex-codex-cli",
+    "canonical_name": "GPT-5.3-Codex + Codex CLI",
+    "family_id": "openai-gpt-5-3-codex-codex-cli",
+    "release_date": "2026-03-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-3-codex-high",
     "canonical_name": "gpt-5.3-codex_high",
     "family_id": "openai-gpt-5-3-codex-high",
@@ -7993,6 +8161,27 @@
     ],
     "domains": [
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-3-codex-terminus-2",
+    "canonical_name": "GPT-5.3-Codex + Terminus 2",
+    "family_id": "openai-gpt-5-3-codex-terminus-2",
+    "release_date": "2026-03-10",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
     ],
     "evaluation_types": [
       "Agent"
@@ -8122,6 +8311,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-codex-cli",
+    "canonical_name": "GPT-5.4 + Codex CLI",
+    "family_id": "openai-gpt-5-4-codex-cli",
+    "release_date": "2026-03-24",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8290,6 +8500,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-codex-cli",
+    "canonical_name": "GPT-5.4 mini + Codex CLI",
+    "family_id": "openai-gpt-5-4-mini-codex-cli",
+    "release_date": "2026-03-24",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -8841,6 +9072,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-luna-codex",
+    "canonical_name": "GPT-5.6 Luna + Codex",
+    "family_id": "openai-gpt-5-6-luna-codex",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-luna-high",
     "canonical_name": "GPT-5.6 Luna (High)",
     "family_id": "openai-gpt-5-6-luna-high",
@@ -8988,6 +9240,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-6-sol-codex",
+    "canonical_name": "GPT-5.6 Sol + Codex",
+    "family_id": "openai-gpt-5-6-sol-codex",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-sol-high",
     "canonical_name": "GPT-5.6 Sol (High)",
     "family_id": "openai-gpt-5-6-sol-high",
@@ -9127,6 +9400,27 @@
     ],
     "domains": [
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-terra-codex",
+    "canonical_name": "GPT-5.6 Terra + Codex",
+    "family_id": "openai-gpt-5-6-terra-codex",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -10395,6 +10689,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-grok-4-6-grok-build",
+    "canonical_name": "Grok 4.6 + Grok Build",
+    "family_id": "xai-grok-4-6-grok-build",
+    "release_date": "2026-08-12",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-6-high",
     "canonical_name": "grok-4.6_high",
     "family_id": "xai-grok-4-6-high",
@@ -11290,6 +11605,27 @@
     ],
     "domains": [
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-claude-code",
+    "canonical_name": "Kimi K3 + Claude Code",
+    "family_id": "moonshot-kimi-k3-claude-code",
+    "release_date": "2026-07-16",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-terminal-bench-science-ai-announcement"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -14923,6 +15259,27 @@
     ],
     "domains": [
       "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-8",
+    "canonical_name": "qwen-3-8",
+    "family_id": "alibaba-qwen-3-8",
+    "release_date": "2026-04-22",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-agents-last-exam-org-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Agent"
