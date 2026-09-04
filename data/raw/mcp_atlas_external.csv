@@ -1,0 +1,5 @@
+Model version,Pass rate,Release date,Organization,Name,Source,Notes
+Claude Opus 4.7,0.791,2026-04-16,Anthropic,Claude Opus 4.7,https://labs.scale.com/leaderboard/mcp_atlas,Updated MCP-Atlas leaderboard; all-task pass rate.
+Gemini 3.1 Pro,0.782,2026-02-19,Google,Gemini 3.1 Pro,https://labs.scale.com/leaderboard/mcp_atlas,Updated MCP-Atlas leaderboard; all-task pass rate.
+GPT-5.5,0.753,2026-04-23,OpenAI,GPT-5.5,https://labs.scale.com/leaderboard/mcp_atlas,Updated MCP-Atlas leaderboard; all-task pass rate.
+Claude Sonnet 4.6,0.695,2026-02-17,Anthropic,Claude Sonnet 4.6,https://labs.scale.com/leaderboard/mcp_atlas,Updated MCP-Atlas leaderboard; all-task pass rate.

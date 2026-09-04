@@ -1,0 +1,6 @@
+Model version,Pass@1,Release date,Organization,Name,Source,Notes
+Kimi K3,0.765,2026-07-16,Moonshot,Kimi K3,https://toolathlon.xyz/docs/leaderboard,Toolathlon-Verified official leaderboard; default agent configuration.
+Claude Opus 4.8,0.762,2026-06-30,Anthropic,Claude Opus 4.8,https://toolathlon.xyz/docs/leaderboard,Toolathlon-Verified official leaderboard; default agent configuration.
+GPT-5.5,0.735,2026-06-30,OpenAI,GPT-5.5,https://toolathlon.xyz/docs/leaderboard,Toolathlon-Verified official leaderboard; default agent configuration.
+Claude Sonnet 5,0.716,2026-07-01,Anthropic,Claude Sonnet 5,https://toolathlon.xyz/docs/leaderboard,Toolathlon-Verified official leaderboard; default agent configuration.
+Gemini 3.5 Flash,0.673,2026-06-30,Google,Gemini 3.5 Flash,https://toolathlon.xyz/docs/leaderboard,Toolathlon-Verified official leaderboard; default agent configuration.

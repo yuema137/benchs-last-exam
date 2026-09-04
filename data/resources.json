@@ -12152,6 +12152,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-labs-scale-com-leaderboard-mcp-atlas",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MCP-Atlas primary source",
+    "url": "https://labs.scale.com/leaderboard/mcp_atlas",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-mathvista-github-io",
     "resource_scope": [
       "benchmark"
@@ -12425,6 +12441,22 @@
     "resource_type": "paper",
     "title": "TerminalWorld Verified primary source",
     "url": "https://terminalworld.ai/leaderboard/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-toolathlon-xyz-docs-leaderboard",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Toolathlon-Verified primary source",
+    "url": "https://toolathlon.xyz/docs/leaderboard",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
