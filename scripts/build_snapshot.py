@@ -165,7 +165,7 @@ BENCHMARKS.extend([
     {"id": "bixbench", "name": "BixBench", "domain": "Life Science", "file": "bixbench_external.csv", "score": "Open-answer accuracy", "release": "2025-03-01", "floor": 0.0, "ceiling": 1.0, "source": "https://arxiv.org/abs/2503.00096", "summary": {"en": "BixBench evaluates agents on open-ended computational-biology analyses built from real-world research notebooks and datasets.", "zh": "BixBench 评估 agent 完成开放式 computational biology 分析的能力，任务来自真实 research notebook 和数据集。"}, "task_format": {"en": "The agent explores biological data, writes and executes Python, R, or Bash analysis code in a notebook environment, and submits answers to research questions.", "zh": "agent 需要在 notebook environment 中探索生物数据、编写并执行 Python、R 或 Bash 分析代码，再回答 research question。"}, "scoring": {"metric_name": "Open-answer accuracy", "explanation": {"en": "The headline series uses binary correctness of answers across the fixed open-answer questions and repeated trajectories. The paper reports approximately 17% for Claude 3.5 Sonnet and 9% for GPT-4o; MCQ, refusal-option, and majority-vote results are separate variants.", "zh": "headline series 使用固定 open-answer question 和重复 trajectory 上的 binary correctness。论文报告 Claude 3.5 Sonnet 约 17%、GPT-4o 约 9%；MCQ、带 refusal option 和 majority-vote 结果属于独立 variant。"}}, "evaluation_target": "process_and_output", "protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged."},
     {"id": "chembench", "name": "ChemBench", "domain": "Chemistry", "file": "chembench_external.csv", "score": "Overall", "release": "2024-04-01", "floor": 0.0, "ceiling": 1.0, "source": "https://chembench.lamalab.org/", "summary": {"en": "ChemBench evaluates chemical knowledge and reasoning across a broad set of chemistry topics and question types.", "zh": "ChemBench 在多个化学主题和题型上评估模型的化学知识与推理能力。"}, "task_format": {"en": "The model answers chemistry questions spanning analytical, inorganic, organic, physical, materials, and safety topics under the benchmark's evaluation interface.", "zh": "模型需要按照 benchmark evaluation interface 回答涵盖分析、无机、有机、物理、材料和安全等主题的化学问题。"}, "scoring": {"metric_name": "Overall accuracy", "explanation": {"en": "Overall is the official aggregate accuracy across the ChemBench question set. Topic-level scores remain separate and are not substituted for the headline series.", "zh": "Overall 是 ChemBench question set 上的官方 aggregate accuracy。各 topic 分数保持独立，不替代 headline series。"}}, "evaluation_target": "final_output", "protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged."},
     {"id": "msqa", "name": "MSQA", "domain": "Materials Science", "file": "msqa_external.csv", "score": "Overall accuracy", "release": "2025-05-29", "floor": 0.0, "ceiling": 1.0, "source": "https://arxiv.org/abs/2505.23982", "summary": {"en": "MSQA evaluates graduate-level materials-science knowledge and multi-step reasoning across seven materials subfields.", "zh": "MSQA 评估模型在七个材料科学子领域中的研究生级知识和多步推理能力。"}, "task_format": {"en": "The benchmark contains graduate-level materials questions in long-answer and binary-answer formats; this card uses the fixed overall accuracy series reported by the unified ScienceEval panel.", "zh": "benchmark 包含 graduate-level materials question，分为 long-answer 和 binary-answer format；本卡使用统一 ScienceEval panel 报告的 fixed overall accuracy series。"}, "scoring": {"metric_name": "Overall accuracy", "explanation": {"en": "The score is the fraction of MSQA questions answered correctly under the selected fixed evaluation format. Long-answer, binary-answer, retrieval-augmented, and domain-specific variants are not silently merged.", "zh": "分数是在选定 fixed evaluation format 下答对 MSQA question 的比例。long-answer、binary-answer、retrieval-augmented 和 domain-specific variant 不会被静默合并。"}}, "evaluation_target": "final_output", "protocol": "MSQA fixed benchmark scored through the public ScienceEval overall panel; scores are normalized from percentage values. The paper's long-answer and binary-answer modes remain a documented protocol caveat."},
-    {"id": "cybench", "name": "CyBench", "domain": "Cybersecurity", "file": "cybench_external.csv", "score": "Unguided % Solved", "release": "2024-08-01", "floor": 0.0, "ceiling": 1.0, "source": "https://cybench.github.io/", "summary": {"en": "CyBench tests agents on realistic cybersecurity tasks that require investigation and technical action.", "zh": "CyBench 测试 agent 完成真实网络安全任务时的调查和技术操作能力。"}, "task_format": {"en": "The agent works in a cybersecurity environment, using available tools to investigate a challenge and produce a successful solution.", "zh": "agent 会在网络安全环境中使用工具调查 challenge，并完成可验证的解决方案。"}, "scoring": {"metric_name": "Unguided task success rate", "explanation": {"en": "A task is solved when the agent completes the challenge without task-specific guidance. The score is the fraction solved. CyBench exports this field as a ratio (for example, 0.93 means 93%), so no additional percentage conversion is applied.", "zh": "agent 在没有 task-specific guidance 的情况下完成 challenge 才算解决。分数是解决 task 的比例。CyBench 导出的字段本身就是比例（例如 0.93 代表 93%），所以不会再次做百分比转换。"}}, "evaluation_target": "environment_outcome", "protocol": "CyBench official 40-task CTF benchmark. Current leaderboard also includes clearly labeled subset/pass@1 results from model system cards; those protocol caveats remain in observation notes."},
+    {"id": "cybench", "name": "CyBench", "domain": "Cybersecurity", "file": "cybench_external.csv", "score": "Unguided % Solved", "release": "2024-08-01", "floor": 0.0, "ceiling": 1.0, "source": "https://cybench.github.io/", "summary": {"en": "CyBench tests agents on realistic cybersecurity tasks that require investigation and technical action.", "zh": "CyBench 测试 agent 完成真实网络安全任务时的调查和技术操作能力。"}, "task_format": {"en": "The agent works in a cybersecurity environment, using available tools to investigate a challenge and produce a successful solution.", "zh": "agent 会在网络安全环境中使用工具调查 challenge，并完成可验证的解决方案。"}, "scoring": {"metric_name": "Unguided task success rate", "explanation": {"en": "A task is solved when the agent completes the challenge without task-specific guidance. The score is the fraction solved. CyBench exports this field as a ratio (for example, 0.93 means 93%), so no additional percentage conversion is applied.", "zh": "agent 在没有 task-specific guidance 的情况下完成 challenge 才算解决。分数是解决 task 的比例。CyBench 导出的字段本身就是比例（例如 0.93 代表 93%），所以不会再次做百分比转换。"}}, "evaluation_target": "environment_outcome", "protocol": "CyBench official 40-task CTF benchmark. Results from 35-task, 37-task, or unverified task-set variants remain canonical provenance observations but are excluded from the primary capability frontier."},
     {"id": "deepresearch-bench", "name": "DeepResearch Bench", "domain": "General agent tasks", "file": "deepresearchbench_external.csv", "score": "Average score", "release": "2025-06-13", "floor": 0.0, "ceiling": 1.0, "source": "https://arxiv.org/abs/2506.11763", "summary": {"en": "DeepResearch Bench tests research agents on expert-written questions that require web research, synthesis, and grounded reporting.", "zh": "DeepResearch Bench 测试 research agent 完成专家问题、网页检索、信息综合和有依据写作的能力。"}, "task_format": {"en": "The agent receives a research question, searches for evidence, and produces a long-form report with supporting citations.", "zh": "agent 会收到研究问题，检索证据，并提交带有引用的长篇报告。"}, "scoring": {"metric_name": "RACE/FACT aggregate score", "explanation": {"en": "The reported score combines report quality and citation-grounding evaluation under the benchmark's documented framework.", "zh": "报告分数按照 benchmark 的 framework 综合报告质量和引用 grounding 结果。"}}, "evaluation_target": "process_and_output"},
     {"id": "scicode", "name": "SciCode", "domain": "Science", "file": "scicode_external.csv", "score": "Score", "release": "2024-07-18", "floor": 0.0, "ceiling": 1.0, "source": "https://arxiv.org/abs/2407.13168", "summary": {"en": "SciCode tests whether models can write executable code for research problems curated by scientists.", "zh": "SciCode 测试模型能不能为科学家挑选的研究问题编写可执行代码。"}, "task_format": {"en": "The model solves scientific programming subproblems and submits code that is checked against scientist-authored solutions and tests.", "zh": "模型需要解决科学编程 subproblem，提交的代码会和科学家编写的 solution 及测试进行核验。"}, "scoring": {"metric_name": "Execution-verified success rate", "explanation": {"en": "A problem is solved when the generated code produces the expected result under the benchmark tests. The score is the fraction solved.", "zh": "生成的代码通过 benchmark tests 并得到预期结果时，这道题才算解决。分数是解决题目的比例。"}}, "evaluation_target": "environment_outcome"},
     {"id": "spatialviz-bench", "name": "SpatialViz-Bench", "domain": "Multimodal", "file": "spatialviz_bench_external.csv", "score": "Overall score", "release": "2024-09-19", "floor": 0.0, "ceiling": 1.0, "source": "https://arxiv.org/abs/2409.13253", "summary": {"en": "SpatialViz-Bench tests visual-spatial reasoning, including mental rotation, folding, penetration, and animation.", "zh": "SpatialViz-Bench 测试视觉空间推理，包括心理旋转、折叠、穿透和运动想象。"}, "task_format": {"en": "The model receives visual-spatial questions and selects or predicts the answer under the benchmark's visual reasoning protocol.", "zh": "模型会收到视觉空间问题，并按照 benchmark 的视觉推理 protocol 选择或预测答案。"}, "scoring": {"metric_name": "Overall accuracy", "explanation": {"en": "The overall score aggregates accuracy across the benchmark's four spatial reasoning subskills.", "zh": "overall score 汇总 benchmark 四类空间推理能力上的 accuracy。"}}, "evaluation_target": "final_output"},
@@ -370,6 +370,36 @@ for _spec in BENCHMARKS:
     _spec.setdefault("metric_id", f"{_spec['id']}-metric-v1")
     _spec.setdefault("protocol_id", f"{_spec['id']}-source-export-v1")
     _spec.setdefault("protocol", "Source export protocol; row-level protocol details are preserved when available.")
+    _score_format = _spec.get("score_format", "ratio")
+    _spec.setdefault(
+        "input_unit",
+        "number" if _score_format == "number" else
+        "percentage_points" if _spec.get("score_multiplier") == 0.01 else
+        "fraction",
+    )
+    _spec.setdefault("hard_min", _spec.get("floor") if _score_format == "number" else 0.0)
+    _spec.setdefault("hard_max", _spec.get("ceiling") if _score_format == "number" else 1.0)
+    _spec.setdefault("progress_baseline", _spec.get("floor"))
+    _spec.setdefault("progress_target", _spec.get("ceiling"))
+
+# MMMU mixes multiple-choice and open-answer items, so a single 25% random
+# baseline is not defensible for the aggregate score. Zero remains the
+# conservative progress baseline for the fixed aggregate accuracy metric.
+next(item for item in BENCHMARKS if item["id"] == "mmmu")["progress_baseline"] = 0.0
+
+# CyBench source rows currently span the original 40-task suite, a 37-task
+# subset, a 35-task subset, and system-card results whose task set is not
+# sufficiently pinned. Preserve all of them, but only the original fixed suite
+# may establish the canonical capability frontier.
+next(item for item in BENCHMARKS if item["id"] == "cybench")["frontier_exclude_ids"] = {
+    "recWoHNahp8uxAsGZ", "recJjYw1K1NV8Z47n", "recbFGPB81lSzLlEv",
+    "recpAkk0ysXYhjhJu", "rec77oHCMurVWgzvd", "recCu9LKRKI8DDSPv",
+    "recd57Ck0JOqmhCSh", "recHS1d8FpTudBN0R", "recrjRfouZg28oDuU",
+    "recJ2fztLtK3WB0yS", "cybench-mythos-preview", "cybench-opus-4-7",
+}
+next(item for item in BENCHMARKS if item["id"] == "cybench")["frontier_exclude_models"] = {
+    "claude-mythos-preview", "claude-opus-4-7-20260416",
+}
 
 # Numeric metrics need enough precision to remain interpretable in the table,
 # tooltip, and chart. Spearman rho uses zero correlation as the practical
@@ -379,7 +409,10 @@ for _spec in BENCHMARKS:
     if _spec["id"] == "engibench-v2-level3":
         _spec["score_decimals"] = 2
     elif _spec["id"] == "pg-llm-proteingym":
-        _spec["floor"] = 0.0
+        _spec["hard_min"] = -1.0
+        _spec["hard_max"] = 1.0
+        _spec["progress_baseline"] = 0.0
+        _spec["progress_target"] = 1.0
         _spec["score_decimals"] = 3
 
 
@@ -540,9 +573,22 @@ def build_benchmark(spec, resources, models):
     with (RAW / spec["file"]).open(newline="") as handle:
         for row_number, row in enumerate(csv.DictReader(handle), start=1):
             try:
-                score = float(row[spec["score"]]) * spec.get("score_multiplier", 1.0)
+                input_score = float(row[spec["score"]])
             except (KeyError, TypeError, ValueError):
                 continue
+            input_unit = spec["input_unit"]
+            if input_unit == "fraction":
+                if not 0 <= input_score <= 1:
+                    raise ValueError(f"{spec['id']} row {row_number}: fraction input outside [0, 1]")
+                score = input_score
+            elif input_unit == "percentage_points":
+                if not 0 <= input_score <= 100:
+                    raise ValueError(f"{spec['id']} row {row_number}: percentage input outside [0, 100]")
+                score = input_score / 100
+            elif input_unit == "number":
+                score = input_score
+            else:
+                raise ValueError(f"{spec['id']}: unsupported input unit {input_unit!r}")
             evaluation_date, model_release_date = parse_dates(row)
             model = row.get("Name") or row.get("Model version") or "Unknown model"
             source_url = row.get("Source link") or row.get("Source Link") or row.get("Source URL") or row.get("Logs") or row.get("Source") or spec["source"]
@@ -577,6 +623,17 @@ def build_benchmark(spec, resources, models):
                 "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
                 "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource.",
             })
+            source_row_id = row.get("id")
+            capability_eligible = (
+                bool(model_release_date)
+                and source_row_id not in spec.get("frontier_exclude_ids", set())
+                and model not in spec.get("frontier_exclude_models", set())
+            )
+            task_set_id = f"{spec['id']}-canonical"
+            protocol_id = spec["protocol_id"]
+            if spec["id"] == "cybench" and not capability_eligible:
+                task_set_id = "cybench-subset-or-unverified"
+                protocol_id = "cybench-noncanonical-subset-or-unverified"
             rows.append({
                 # Some exports repeat a model name or omit a stable row ID.
                 # The row suffix keeps every canonical observation addressable.
@@ -588,9 +645,12 @@ def build_benchmark(spec, resources, models):
                 "model": model,
                 "organization": row.get("Organization") or "Unknown",
                 "score": score,
+                "input_score": input_score,
+                "input_unit": input_unit,
                 "reported_cost_per_task": row.get(spec.get("cost_column", "")) if spec.get("cost_column") else None,
                 "metric_id": spec["metric_id"],
-                "protocol_id": spec["protocol_id"],
+                "protocol_id": protocol_id,
+                "task_set_id": task_set_id,
                 "metric": spec["score"],
                 "evaluation_protocol": spec["protocol"],
                 "model_release_date": model_release_date,
@@ -608,16 +668,20 @@ def build_benchmark(spec, resources, models):
                 "historical_frontier_date": None,
                 "temporal_class": "retrospective_evaluation" if retrospective else "historical_or_unknown",
                 "retrospective": retrospective,
-                "capability_frontier_eligible": bool(model_release_date),
+                "capability_frontier_eligible": capability_eligible,
                 "historical_frontier_eligible": False,
-                "eligibility_reason": "Capability eligibility uses the model release date and the curated protocol; reported-result eligibility requires result_public_date.",
+                "eligibility_reason": (
+                    "Excluded from the canonical CyBench frontier because the source uses a 35/37-task subset or does not pin the task set."
+                    if spec["id"] == "cybench" and not capability_eligible else
+                    "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date."
+                ),
                 "contemporaneous": not retrospective,
                 "source_ids": ([source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id]) + ([release_resource_id] if release_resource_id else []),
                 "source": source_url,
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })
     capability_frontier = build_frontier(
-        rows,
+        [row for row in rows if row["capability_frontier_eligible"]],
         "capability_date",
         "model release date",
         minimum_date=spec["release"],
@@ -630,13 +694,15 @@ def build_benchmark(spec, resources, models):
     current = capability_frontier[-1] if capability_frontier else None
     reported_current = reported_frontier[-1] if reported_frontier else None
     progress = None
-    if current and spec["ceiling"] != spec["floor"]:
-        progress = (current["score"] - spec["floor"]) / (spec["ceiling"] - spec["floor"])
+    progress_baseline = spec.get("progress_baseline")
+    progress_target = spec.get("progress_target")
+    if current and progress_baseline is not None and progress_target is not None and progress_target != progress_baseline:
+        progress = (current["score"] - progress_baseline) / (progress_target - progress_baseline)
         progress = max(0.0, min(1.0, progress))
     release = date.fromisoformat(spec["release"])
     snapshot_date = date.today()
-    threshold_days = threshold_metrics(capability_frontier, release, spec["floor"], spec["ceiling"], snapshot_date)
-    reported_threshold_days = threshold_metrics(reported_frontier, release, spec["floor"], spec["ceiling"], snapshot_date)
+    threshold_days = threshold_metrics(capability_frontier, release, progress_baseline, progress_target, snapshot_date)
+    reported_threshold_days = threshold_metrics(reported_frontier, release, progress_baseline, progress_target, snapshot_date)
     velocity_180d = frontier_velocity(capability_frontier)
     reported_velocity_180d = frontier_velocity(reported_frontier)
     cost_values = []
@@ -659,7 +725,14 @@ def build_benchmark(spec, resources, models):
     coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
     return {
-        **{key: spec[key] for key in ("id", "name", "domain", "release", "floor", "ceiling", "source")},
+        **{key: spec[key] for key in ("id", "name", "domain", "release", "source")},
+        "floor": progress_baseline,
+        "ceiling": progress_target,
+        "hard_min": spec.get("hard_min"),
+        "hard_max": spec.get("hard_max"),
+        "progress_baseline": progress_baseline,
+        "progress_target": progress_target,
+        "input_unit": spec["input_unit"],
         "evaluation_type": spec["evaluation_type"],
         "tags": spec["tags"],
         "metric": spec["score"],

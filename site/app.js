@@ -59,7 +59,7 @@ const score = v => v == null ? "N/A" : `${(v * 100).toFixed(1)}%`;
 const metricValue = (b, v) => v == null ? "N/A" : b.score_format === "number" ? Number(v).toFixed(b.score_decimals ?? (Math.abs(Number(v)) < 10 ? 2 : 0)) : score(v);
 const months = d => ((new Date(state.data.snapshot_id) - new Date(d)) / 86400000 / 30.44).toFixed(0);
 const threshold = item => item.status === "reached" ? `${(item.days / 30.44).toFixed(1)} mo` : item.status === "at_release" ? t("at_release") : item.status === "right_censored" ? `≥ ${(item.days / 30.44).toFixed(0)} mo` : item.status === "not_applicable" ? t("na") : t("unknown");
-const progress = (b, s) => b.floor == null || b.ceiling == null ? null : Math.max(0, Math.min(1, (s - b.floor) / (b.ceiling - b.floor)));
+const progress = (b, s) => { const floor=b.progress_baseline??b.floor, ceiling=b.progress_target??b.ceiling; return floor==null||ceiling==null||ceiling===floor?null:Math.max(0,Math.min(1,(s-floor)/(ceiling-floor))); };
 function frontierValue(b) { return b.capability_frontier_value ?? b.observed_frontier ?? b.current_frontier; }
 function resourcesById() { return Object.fromEntries((state.data.resources || []).map(r=>[r.id,r])); }
 function resourceList(ids) { const resources=resourcesById(); return [...new Set(ids || [])].map(id=>resources[id]).filter(Boolean); }
@@ -84,14 +84,14 @@ numericChart = function(b) {
   const pts=timeline==="capability"?(b.capability_frontier||b.frontier_events||[]):(b.reported_frontier||[]);
   const W=760,H=340,L=58,R=18,T=22,B=92,plotBottom=H-B,plotRight=W-R;
   const min=new Date(`${b.release}T00:00:00Z`),max=new Date(`${state.data.snapshot_id}T00:00:00Z`);
-  const normalized=state.detailY==="normalized" && b.floor!=null && b.ceiling!=null && b.ceiling!==b.floor;
+  const normalized=state.detailY==="normalized" && (b.progress_baseline??b.floor)!=null && (b.progress_target??b.ceiling)!=null && (b.progress_target??b.ceiling)!==(b.progress_baseline??b.floor);
   const value=p=>normalized?progress(b,p.score):p.score;
   const values=pts.map(value).filter(v=>v!=null);
   const rawMin=values.length?Math.min(...values):0,rawMax=values.length?Math.max(...values):1;
-  const bounded=!normalized && b.floor!=null && b.ceiling!=null;
+  const bounded=!normalized && b.hard_min!=null && b.hard_max!=null;
   const span=Math.max(0.001,rawMax-rawMin),padding=Math.max(0.01,span*.12);
-  const yMin=normalized?0:bounded?b.floor:rawMin-padding;
-  const yMax=normalized?1:bounded?b.ceiling:rawMax+padding;
+  const yMin=normalized?0:bounded?b.hard_min:rawMin-padding;
+  const yMax=normalized?1:bounded?b.hard_max:rawMax+padding;
   const xDate=d=>L+((new Date(d)-min)/(max-min||1))*(plotRight-L);
   const yValue=v=>T+(yMax-v)/(yMax-yMin||1)*(plotBottom-T);
   const rawTicks=state.detailX==="age"?Array.from({length:Math.ceil((max-min)/86400000/niceElapsedInterval((max-min)/86400000))+1},(_,i)=>{const days=Math.min(i*niceElapsedInterval((max-min)/86400000),(max-min)/86400000);return{date:new Date(min.getTime()+days*86400000),label:elapsedLabel(days)}}):calendarTicks(min,max);
