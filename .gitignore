@@ -17,3 +17,14 @@ data/raw/*
 !data/raw/gpqa_diamond.csv
 !data/raw/swe_bench_verified.csv
 !data/raw/math_level_5.csv
+!data/raw/bbh_external.csv
+!data/raw/science_qa_external.csv
+!data/raw/hella_swag_external.csv
+!data/raw/piqa_external.csv
+!data/raw/trivia_qa_external.csv
+!data/raw/superglue_external.csv
+!data/raw/cybench_external.csv
+!data/raw/deepresearchbench_external.csv
+!data/raw/scicode_external.csv
+!data/raw/spatialviz_bench_external.csv
+!data/raw/vending_bench_2_external.csv
