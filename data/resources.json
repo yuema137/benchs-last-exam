@@ -1282,6 +1282,22 @@
     "notes": "Official release/model resource for the current frontier model panel."
   },
   {
+    "id": "resource-https-deepswe-datacurve-ai",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "DeepSWE v1.1 primary source",
+    "url": "https://deepswe.datacurve.ai/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-developers-openai-com-api-docs-models-gpt-6-astra",
     "resource_scope": [
       "model"
@@ -12036,6 +12052,40 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-openai-mle-bench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://github.com/openai/mle-bench",
+    "url": "https://github.com/openai/mle-bench",
+    "publisher": "https://github.com/openai/mle-bench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-github-com-openai-preparedness-tree-main-project-paperbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "url": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "publisher": "https://github.com/openai/preparedness/tree/main/project/paperbench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
     "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
     "resource_scope": [
       "benchmark",
@@ -12080,6 +12130,22 @@
     "url": "https://gui-agent.github.io/grounding-leaderboard/",
     "publisher": "ScreenSpot-Pro official leaderboard",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-hal-cs-princeton-edu-scienceagentbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ScienceAgentBench primary source",
+    "url": "https://hal.cs.princeton.edu/scienceagentbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12258,6 +12324,38 @@
     "resource_type": "paper",
     "title": "SWE-bench Verified primary source",
     "url": "https://openai.com/index/introducing-swe-bench-verified/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-mle-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MLE-bench primary source",
+    "url": "https://openai.com/index/mle-bench/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-paperbench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PaperBench primary source",
+    "url": "https://openai.com/index/paperbench/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12449,6 +12547,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-the-agent-company-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "TheAgentCompany primary source",
+    "url": "https://the-agent-company.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-toolathlon-xyz-docs-leaderboard",
     "resource_scope": [
       "benchmark"
@@ -12559,6 +12673,22 @@
     "url": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf",
     "publisher": "Model Card and Evaluations for Claude Models",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-frontierswe-com",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierSWE V2 primary source",
+    "url": "https://www.frontierswe.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12678,6 +12808,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-theagentcompany-experiment-results-github",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "TheAgentCompany experiment results github",
+    "url": "TheAgentCompany experiment results github",
+    "publisher": "TheAgentCompany experiment results github",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-theagentcompany-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "TheAgentCompany leaderboard",
+    "url": "TheAgentCompany leaderboard",
+    "publisher": "TheAgentCompany leaderboard",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-video-mme-leaderboard",

@@ -15,12 +15,18 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | SciCode | Agent / Science & research | 2024-07-18 | SciEval card and arXiv 2407.13168; executable scientist-curated coding tasks | ADD |
 | SpatialViz-Bench | Model / Multimodal | 2024-09-19 | Four stable visual-spatial subskills and a multi-model raw export | ADD_WITH_PARTIAL_DATA |
 | Vending-Bench 2 | Agent / General agent tasks | 2025-05-01 | Long-horizon simulated business outcome; useful but sparse evidence | ADD_WITH_PARTIAL_DATA |
+| TheAgentCompany | Agent / General agent tasks | 2024-10-01 | Simulated software-company workflows with browser, office, communication, and coding tools; 50-row public export across multiple model families | ADD |
+| DeepSWE v1.1 | Agent / Software engineering | 2026-04-01 | Repository-level long-horizon coding evaluation with a fixed mini-SWE-agent export, multiple families, and reported cost | ADD |
+| FrontierSWE V2 | Agent / Software engineering | 2026-07-01 | 34-task Mean@5 composite benchmark with separate implementation, performance, and research-quality dimensions | ADD |
+| ScienceAgentBench | Agent / Science & research | 2024-10-07 | 102 expert-validated scientific discovery tasks; HAL exposes verified accuracy across 16 models and two scaffolds | ADD |
+| MLE-bench | Agent / Science & research | 2024-10-10 | 75 fixed Kaggle-style ML engineering competitions with official AIDE baselines across four model generations | ADD |
+| PaperBench | Agent / Science & research | 2025-04-02 | 20 ICML paper-replication tasks with 8,316 rubric outcomes and an official BasicAgent model series | ADD |
 
 The batch adds 11 measurement objects, not 11 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown` or right-censored when the evidence does not support a crossing.
 
 ## Deferred candidates
 
-AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, MLE-bench, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. They should be added when canonical observations and model release dates can be reconciled without hand-entered chart values.
+AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. They should be added when canonical observations and model release dates can be reconciled without hand-entered chart values. BFCL V4 remains deferred until its dynamic leaderboard rows can be captured as a stable model-release-date export; its fixed evaluator checkpoint is documented in the queue.
 
 ## Curation notes
 

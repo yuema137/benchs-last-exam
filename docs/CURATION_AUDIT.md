@@ -26,7 +26,7 @@ Five benchmarks are enough to exercise the intended lifecycle views without manu
 
 ## Data and date policy
 
-The current export provides model release dates and, for some internal runs, evaluation start dates. The generated snapshot uses evaluation start when available and model release date otherwise. This is explicitly provisional and is shown in the card caveat. A future curated observation may replace this with an earliest-public-availability date when the source supports it.
+The primary capability timeline uses the model/system release date on a comparable protocol series. Evaluation and result-publication dates remain separate provenance fields and are never silently substituted into capability metrics. The generated snapshot preserves the source's run/evaluation date where available, while the chart and T50/T90 use the explicit capability date.
 
 No score is added merely because it exists. The curated slice retains rows that can be linked to a source and placed on a defensible historical timeline; missing dates and incompatible protocol details remain validation concerns.
 

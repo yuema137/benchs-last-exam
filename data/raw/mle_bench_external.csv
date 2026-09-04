@@ -1,0 +1,5 @@
+Model version,All (%),Release date,Organization,Name,Source,Notes
+llama-3-1-405b,0.030,2024-07-23,Meta AI,Llama 3.1 405B,https://github.com/openai/mle-bench,Original MLE-bench AIDE baseline; any-medal rate across the 75-competition benchmark.
+claude-3-5-sonnet,0.076,2024-10-22,Anthropic,Claude 3.5 Sonnet,https://github.com/openai/mle-bench,Original MLE-bench AIDE baseline; any-medal rate across the 75-competition benchmark.
+gpt-4o-2024-08-06,0.087,2024-08-06,OpenAI,GPT-4o,https://github.com/openai/mle-bench,Original MLE-bench AIDE baseline; any-medal rate across the 75-competition benchmark.
+o1-preview,0.169,2024-09-12,OpenAI,o1-preview,https://github.com/openai/mle-bench,Original MLE-bench AIDE baseline; any-medal rate across the 75-competition benchmark.
