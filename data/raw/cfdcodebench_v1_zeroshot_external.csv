@@ -1,0 +1,7 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id
+Gemma-2-9B-IT,0.04,2024-06-27,Google,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-gemma2
+Claude-3.5-Sonnet,0.07,2024-06-20,Anthropic,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-sonnet35
+GPT-4o,0.11,2024-05-13,OpenAI,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-gpt4o
+Claude-3.5-Haiku,0.14,2024-10-22,Anthropic,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-haiku35
+o3-mini,0.14,2025-01-31,OpenAI,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-o3mini
+Gemini-2.5-Flash,0.14,2025-04-17,Google,2026-04-26,CFDCodeBench paper Figure 4,https://arxiv.org/html/2509.20374,cfdcode-gemini25

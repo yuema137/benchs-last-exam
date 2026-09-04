@@ -1,0 +1,11 @@
+Name,Function correctness,Release date,Organization,Result public date,Source,Source link,id
+Llama-4-Scout,0.182,2025-04-05,Meta,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-llama4-scout
+Llama-4-Maverick,0.485,2025-04-05,Meta,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-llama4-maverick
+Gemini-2.5-Pro,0.788,2025-06-17,Google,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-gemini25
+Qwen3-Coder,0.636,2025-07-23,Qwen,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-qwen3coder
+GPT-5,0.667,2025-08-07,OpenAI,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-gpt5
+GPT-5-Mini,0.758,2025-08-07,OpenAI,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-gpt5mini
+Qwen3-Next,0.485,2025-09-12,Qwen,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-qwen3next
+Claude-Haiku-4.5,0.576,2025-10-15,Anthropic,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-haiku45
+Gemini-3-Pro-Preview,0.879,2025-11-18,Google,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-gemini3pro
+Claude-Opus-4.5,0.848,2025-11-24,Anthropic,2026-05-29,FEM-Bench paper Table 3,https://arxiv.org/html/2512.20732,fembench-opus45

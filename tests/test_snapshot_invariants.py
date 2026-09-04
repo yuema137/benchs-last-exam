@@ -127,6 +127,43 @@ class SnapshotInvariantTests(unittest.TestCase):
             self.assertTrue(benchmark["summary"]["en"], benchmark_id)
             self.assertTrue(benchmark["summary"]["zh"], benchmark_id)
 
+    def test_multidomain_science_engineering_expansion_is_end_to_end(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        by_id = {item["id"]: item for item in payload["benchmarks"]}
+        expected = {
+            "apbench-gamma", "cadreview-human-feedback", "controlbench",
+            "circuitsense-synthetic-analysis", "pceval-physical-circuit",
+            "verilogeval-v2-spec-to-rtl", "openeqa-em-eqa-v0",
+            "embodiedbench-manipulation-v3", "ost-bench-v2-multiround",
+            "macbench-v1", "pse-bench-v3", "chemm-bench-acl2026",
+            "physbench-seq", "olympic-arena-physics", "jeebench-physics",
+            "openxrd-closedbook", "matcha-v1-zeroshot", "omnimatbench-v2-vanilla",
+            "formationeval-v0-1", "cladbench-v1", "enviroexam-zeroshot",
+            "medxpertqa-text-v3", "gmai-mmbench-v7-test", "lab-bench-v1-protocolqa",
+            "earthse-earth-silver-mc", "geonatureagent-v5",
+            "nuclearqav2-v1-aggregate", "thermoqa-v0-4-composite",
+            "medagentbench-v1-overall-sr", "medcalc-bench-paper1047",
+            "mediconfusion-v2-mc", "fdm-bench-v1-gcode-deterministic",
+            "isafetybench-2025-single-avg", "fle-neurips-2025-planning",
+            "feabench-gold-modelspecs-oneshot", "cfdcodebench-v1-zeroshot",
+            "fem-bench-2025-first-run",
+            "gs-powerflow-100-proctext",
+            "climaqa-gold-mcq-default",
+            "tps-calcbench-v1-core-exact",
+        }
+        self.assertTrue(expected.issubset(by_id))
+        for benchmark_id in expected:
+            benchmark = by_id[benchmark_id]
+            self.assertGreaterEqual(
+                len(benchmark["coverage"]["represented_organizations"]), 2, benchmark_id
+            )
+            self.assertTrue(benchmark["observations"], benchmark_id)
+            self.assertTrue(benchmark["frontier_events"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["en"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["zh"], benchmark_id)
+            for view_ids in payload["lifecycle_views"].values():
+                self.assertIsInstance(benchmark_id in view_ids, bool)
+
     def test_new_story_membership_is_recomputed_from_metrics(self):
         payload = json.loads(SNAPSHOT.read_text())
         views = payload["lifecycle_views"]

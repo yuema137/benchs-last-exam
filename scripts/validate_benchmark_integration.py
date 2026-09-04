@@ -3,6 +3,7 @@
 
 import json
 import re
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -10,6 +11,31 @@ SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 APP = ROOT / "site" / "app.js"
 
 REQUIRED_STORY_VIEWS = ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")
+MONTH_DAYS = 30.44
+
+
+def expected_lifecycle_views(benchmarks, snapshot_date):
+    """Independently recompute memberships so stale generated tabs fail CI."""
+    views = {name: set() for name in REQUIRED_STORY_VIEWS}
+    for benchmark in benchmarks:
+        t50 = benchmark["threshold_days"].get("T50", {})
+        t90 = benchmark["threshold_days"].get("T90", {})
+        t50_days, t90_days = t50.get("days"), t90.get("days")
+        progress = benchmark.get("normalized_progress")
+        if ((t50_days is not None and t50_days >= 12 * MONTH_DAYS)
+                or (t90_days is not None and t90_days >= 24 * MONTH_DAYS)):
+            views["test-of-time"].add(benchmark["id"])
+        if (t50.get("status") == "right_censored" and progress is not None
+                and progress < 0.5 and benchmark["coverage"].get("status") != "low"):
+            views["still-frontier"].add(benchmark["id"])
+        if t90.get("status") == "reached" and t90_days is not None and t90_days < 6 * MONTH_DAYS:
+            views["fastest-solved"].add(benchmark["id"])
+        if t90.get("status") in {"reached", "at_release"} and t90_days is not None:
+            release = date.fromisoformat(benchmark["release"])
+            crossing_age = (snapshot_date - release).days - t90_days
+            if 0 <= crossing_age <= 3 * MONTH_DAYS:
+                views["recently-saturated"].add(benchmark["id"])
+    return views
 
 
 def validate_benchmark(benchmark, resources, models):
@@ -77,6 +103,14 @@ def main():
                 errors.append(f"{view}: unresolved benchmark IDs {sorted(unknown)}")
             if len(members) != len(set(members)):
                 errors.append(f"{view}: duplicate benchmark IDs")
+        expected = expected_lifecycle_views(benchmarks, date.fromisoformat(payload["snapshot_id"]))
+        for view in REQUIRED_STORY_VIEWS:
+            actual = set(lifecycle_views.get(view, []))
+            if actual != expected[view]:
+                errors.append(
+                    f"{view}: stale derived membership; missing={sorted(expected[view] - actual)}, "
+                    f"unexpected={sorted(actual - expected[view])}"
+                )
     app = APP.read_text()
     for view in REQUIRED_STORY_VIEWS:
         if view not in app:

@@ -1,0 +1,6 @@
+Name,Composite,Release date,Organization,Result public date,Source,Source link,id
+DeepSeek-R1,0.874,2025-01-20,DeepSeek,2026-03-25,ThermoQA paper Table 2 and v0.4 leaderboard,https://github.com/olivenet-iot/ThermoQA,thermoqa-deepseek-r1
+Grok-4,0.873,2025-07-09,xAI,2026-03-25,ThermoQA paper Table 2 and v0.4 leaderboard,https://github.com/olivenet-iot/ThermoQA,thermoqa-grok4
+Claude-Opus-4.6,0.941,2026-02-05,Anthropic,2026-03-25,ThermoQA paper Table 2 and v0.4 leaderboard,https://github.com/olivenet-iot/ThermoQA,thermoqa-opus46
+Gemini-3.1-Pro,0.925,2026-02-19,Google,2026-03-25,ThermoQA paper Table 2 and v0.4 leaderboard,https://github.com/olivenet-iot/ThermoQA,thermoqa-gemini31
+GPT-5.4,0.931,2026-03-05,OpenAI,2026-03-25,ThermoQA paper Table 2 and v0.4 leaderboard,https://github.com/olivenet-iot/ThermoQA,thermoqa-gpt54

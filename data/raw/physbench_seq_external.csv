@@ -1,0 +1,6 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+GPT-4V,0.4126,2023-09-25,OpenAI,2024-09-23,PhysBench official leaderboard,https://physbench.github.io/,physbench-gpt4v
+GPT-4o-mini,0.4315,2024-07-18,OpenAI,2024-09-23,PhysBench official leaderboard,https://physbench.github.io/,physbench-gpt4o-mini
+Gemini-1.5-Flash,0.4607,2024-05-14,Google,2024-09-23,PhysBench official leaderboard,https://physbench.github.io/,physbench-gemini15-flash
+Gemini-1.5-Pro,0.4911,2024-02-15,Google,2024-09-23,PhysBench official leaderboard,https://physbench.github.io/,physbench-gemini15-pro
+GPT-4o,0.4949,2024-05-13,OpenAI,2024-09-23,PhysBench official leaderboard,https://physbench.github.io/,physbench-gpt4o

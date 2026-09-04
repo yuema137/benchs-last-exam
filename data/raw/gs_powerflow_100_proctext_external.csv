@@ -1,0 +1,4 @@
+Name,Within 5%,Release date,Organization,Started at,Result public date,Source,Source link,id
+GPT-3.5-Turbo,0.01,2023-03-01,OpenAI,2026-01,2026-05-18,GS-PowerFlow-100 paper procedural-text table,https://arxiv.org/html/2605.18642,gspower-gpt35
+Gemini-2.5-Pro-Preview-03-25,0.53,2025-03-25,Google,2026-01,2026-05-18,GS-PowerFlow-100 paper procedural-text table,https://arxiv.org/html/2605.18642,gspower-gemini25
+Claude-Sonnet-4.5,0.37,2025-09-29,Anthropic,2026-01,2026-05-18,GS-PowerFlow-100 paper procedural-text table,https://arxiv.org/html/2605.18642,gspower-sonnet45

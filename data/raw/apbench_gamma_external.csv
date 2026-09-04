@@ -1,0 +1,7 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+gpt-4-turbo-2024-04-09,0.492,2024-04-09,OpenAI,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-gpt4-turbo
+Qwen2.5-Math-72B-Instruct 4-bit,0.522,2024-09-19,Qwen,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-qwen25-math
+gpt-4o-2024-08-06,0.548,2024-08-06,OpenAI,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-gpt4o
+Claude 3.5 Sonnet,0.575,2024-06-20,Anthropic,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-claude35
+o1-mini-2024-09-12,0.594,2024-09-12,OpenAI,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-o1-mini
+o1-preview-2024-09-12,0.666,2024-09-12,OpenAI,2025-03-07,APBench version-of-record,https://www.nature.com/articles/s41598-025-91150-5,apbench-o1-preview

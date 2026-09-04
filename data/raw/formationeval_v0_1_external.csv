@@ -1,0 +1,8 @@
+Name,Accuracy,Release date,Organization,Result public date,Source,Source link,id
+Llama-4-Scout,0.931,2025-04-05,Meta,2026-01-05,FormationEval paper,https://arxiv.org/pdf/2601.02158,formationeval-llama4
+Qwen3-235B-A22B-2507,0.931,2025-07-22,Qwen,2026-01-05,FormationEval official leaderboard,https://www.formationeval.no/,formationeval-qwen3
+DeepSeek-R1,0.962,2025-01-20,DeepSeek,2026-01-05,FormationEval paper,https://arxiv.org/pdf/2601.02158,formationeval-deepseek-r1
+Claude-Opus-4.5,0.970,2025-11-24,Anthropic,2026-01-05,FormationEval paper,https://arxiv.org/pdf/2601.02158,formationeval-opus45
+GPT-5.2-Chat-Medium,0.974,2025-12-11,OpenAI,2026-01-05,FormationEval paper,https://arxiv.org/pdf/2601.02158,formationeval-gpt52
+Grok-4.1-Fast,0.976,2025-11-17,xAI,2026-01-05,FormationEval official leaderboard,https://www.formationeval.no/,formationeval-grok41
+Gemini-3-Pro-Preview,0.998,2025-11-18,Google,2026-01-05,FormationEval paper,https://arxiv.org/pdf/2601.02158,formationeval-gemini3

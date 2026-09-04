@@ -1,0 +1,7 @@
+Name,Planning success,Release date,Organization,Result public date,Source,Source link,id
+GPT-4o-mini,0.042,2024-07-18,OpenAI,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-gpt4omini
+Llama-3.3-70B-Instruct,0.052,2024-12-06,Meta,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-llama33
+Gemini-2.0-Flash,0.130,2025-02-05,Google,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-gemini20
+DeepSeek-V3,0.151,2024-12-26,DeepSeek,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-deepseekv3
+GPT-4o,0.166,2024-05-13,OpenAI,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-gpt4o
+Claude-3.5-Sonnet-v2,0.219,2024-10-22,Anthropic,2025-03-06,FLE NeurIPS 2025 Table 1,https://papers.neurips.cc/paper_files/paper/2025/file/75f3a62e55187bc3e5e5961fa2a46bcf-Paper-Datasets_and_Benchmarks_Track.pdf,fle-sonnet35v2

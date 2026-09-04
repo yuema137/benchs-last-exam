@@ -1,0 +1,8 @@
+Name,Exact accuracy,Release date,Organization,Result public date,Source,Source link,id
+DeepSeek-V3.1,0.431,2025-08-21,DeepSeek,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-deepseek31
+Claude-Sonnet-4.5,0.336,2025-09-29,Anthropic,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-sonnet45
+Claude-Haiku-4.5,0.243,2025-10-15,Anthropic,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-haiku45
+GPT-5.1,0.481,2025-11-12,OpenAI,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-gpt51
+Claude-Opus-4.5,0.419,2025-11-24,Anthropic,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-opus45
+GPT-5.2,0.519,2025-12-11,OpenAI,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-gpt52
+Gemini-3-Flash-Preview,0.098,2025-12-17,Google,2026-04-20,TPS-CalcBench paper Table 8,https://arxiv.org/html/2604.17966,tps-gemini3flash

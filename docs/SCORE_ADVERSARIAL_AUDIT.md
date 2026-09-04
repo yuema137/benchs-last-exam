@@ -1,13 +1,13 @@
 # Adversarial Score-Semantics Audit
 
 Snapshot: `2026-09-04`  
-Benchmarks: 89
+Benchmarks: 129
 
 ## Gate result
 
 - Ratio observations outside `[0, 1]`: **0**
-- Ratio observations below `1%`: **114**
-- Observations below a normalization/reference floor: **21**
+- Ratio observations below `1%`: **116**
+- Observations below a normalization/reference floor: **27**
 - Unbounded numeric observations above `100`: **79**
 
 `progress_baseline` is treated as a chance/reference baseline for normalized progress, not as a hard observation bound. Accordingly, a model may score below the floor without the canonical observation being invalid.
@@ -76,7 +76,7 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - critpt / Claude 4 Sonnet (Reasoning) / 0.00285714
 - critpt / Qwen3 32B (Reasoning) / 0.00285714
 - critpt / Magistral Medium 1.2 / 0.00285714
-- …and 54 more canonical low-score observations.
+- …and 56 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
 

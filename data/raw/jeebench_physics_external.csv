@@ -1,0 +1,4 @@
+Name,Partial-credit mean,Release date,Organization,Result public date,Source,Source link,id
+PaLM-2-text-bison-001,0.146,2023-05-10,Google,2023-10-11,JEEBench EMNLP paper,https://aclanthology.org/2023.emnlp-main.468.pdf,jeebench-palm2
+GPT-3.5-Turbo,0.173,2022-11-30,OpenAI,2023-10-11,JEEBench EMNLP paper,https://aclanthology.org/2023.emnlp-main.468.pdf,jeebench-gpt35
+GPT-4-0314,0.352,2023-03-14,OpenAI,2023-10-11,JEEBench EMNLP paper,https://aclanthology.org/2023.emnlp-main.468.pdf,jeebench-gpt4

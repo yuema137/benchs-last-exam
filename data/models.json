@@ -1029,6 +1029,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-3-5",
+    "canonical_name": "Claude 3.5",
+    "family_id": "anthropic-claude-3-5",
+    "release_date": "2024-06-20",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2505-22304"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-3-5-haiku",
     "canonical_name": "Claude 3.5 Haiku",
     "family_id": "anthropic-claude-3-5-haiku",
@@ -1155,6 +1176,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-3-5-sonnet-latest",
+    "canonical_name": "Claude-3.5-Sonnet-latest",
+    "family_id": "anthropic-claude-3-5-sonnet-latest",
+    "release_date": "2024-06-20",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-github-com-internrobotics-ost-bench-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-3-5-sonnet-oct-24",
     "canonical_name": "Claude 3.5 Sonnet (Oct '24)",
     "family_id": "anthropic-claude-3-5-sonnet",
@@ -1171,6 +1213,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-5-sonnet-v2",
+    "canonical_name": "Claude-3.5-Sonnet-v2",
+    "family_id": "anthropic-claude-3-5-sonnet-v2",
+    "release_date": "2024-10-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-pdf-2501-14654"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Biomedical Engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -1483,6 +1546,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-3-opus-20-frames",
+    "canonical_name": "Claude 3 Opus 20 frames",
+    "family_id": "anthropic-claude-3-opus-20-frames",
+    "release_date": "2024-03-04",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-open-eqa-github-io-assets-pdfs-paper-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
     ],
     "evaluation_types": [
       "Model"
@@ -4716,6 +4800,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude3-opus",
+    "canonical_name": "Claude3-Opus",
+    "family_id": "anthropic-claude3-opus",
+    "release_date": "2024-03-04",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-03361v7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Life Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-code-cushman-001-12b",
     "canonical_name": "code-cushman-001 (12B)",
     "family_id": "unknown-code-cushman-001",
@@ -4771,6 +4876,48 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-codegemma-7b",
+    "canonical_name": "CodeGemma-7B",
+    "family_id": "google-codegemma-7b",
+    "release_date": "2024-04-09",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-codegemma-7b-it",
+    "canonical_name": "CodeGemma-7B-IT",
+    "family_id": "google-codegemma-7b-it",
+    "release_date": "2024-04-09",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2504-06260"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computational Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -5493,6 +5640,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-deepseek-67b-chat",
+    "canonical_name": "DeepSeek-67B-Chat",
+    "family_id": "deepseek-deepseek-67b-chat",
+    "release_date": "2023-11-29",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-github-com-enviroscientist-enviroexam"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-chat",
     "canonical_name": "deepseek-chat",
     "family_id": "deepseek-deepseek-chat",
@@ -5548,6 +5716,69 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-coder-33b",
+    "canonical_name": "DeepSeek-Coder-33B",
+    "family_id": "deepseek-deepseek-coder-33b",
+    "release_date": "2023-11-29",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-coder-6-7b",
+    "canonical_name": "DeepSeek-Coder-6.7B",
+    "family_id": "deepseek-deepseek-coder-6-7b",
+    "release_date": "2023-11-29",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-coder-v2-16b",
+    "canonical_name": "DeepSeek-Coder-V2-16B",
+    "family_id": "deepseek-deepseek-coder-v2-16b",
+    "release_date": "2024-06-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2601-02404"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -5884,6 +6115,27 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v3-1",
+    "canonical_name": "DeepSeek-V3.1",
+    "family_id": "deepseek-deepseek-v3-1",
+    "release_date": "2025-08-21",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2604-17966"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -6540,6 +6792,27 @@
     ],
     "domains": [
       "Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-vl2",
+    "canonical_name": "DeepSeek-VL2",
+    "family_id": "deepseek-deepseek-vl2",
+    "release_date": "2024-12-13",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-pdf-2409-15477"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Biomedical Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -7348,6 +7621,69 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-1-0-pro-vision-15-frames",
+    "canonical_name": "Gemini 1.0 Pro Vision 15 frames",
+    "family_id": "google-gemini-1-0-pro-vision-15-frames",
+    "release_date": "2023-12-06",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-open-eqa-github-io-assets-pdfs-paper-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-1-0-ultra",
+    "canonical_name": "Gemini 1.0 Ultra",
+    "family_id": "google-gemini-1-0-ultra",
+    "release_date": "2023-12-06",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2404-03647"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-1-5",
+    "canonical_name": "Gemini 1.5",
+    "family_id": "google-gemini-1-5",
+    "release_date": "2024-02-15",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-03361v7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Life Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-1-5-flash",
     "canonical_name": "Gemini-1.5 Flash",
     "family_id": "google-deepmind-gemini-1-5-flash",
@@ -7663,6 +7999,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gemini-2-0",
+    "canonical_name": "Gemini 2.0",
+    "family_id": "google-gemini-2-0",
+    "release_date": "2024-12-11",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2505-22304"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gemini-2-0-flash",
     "canonical_name": "Gemini 2.0 Flash",
     "family_id": "google-deepmind-google-gemini-2-0-flash",
@@ -7760,6 +8117,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-0-flash-thinking",
+    "canonical_name": "Gemini-2.0-Flash-Thinking",
+    "family_id": "google-gemini-2-0-flash-thinking",
+    "release_date": "2024-12-19",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-github-com-internrobotics-ost-bench-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
     ],
     "evaluation_types": [
       "Model"
@@ -8243,6 +8621,27 @@
     ],
     "domains": [
       "Coding"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-2-5-pro-preview-0605",
+    "canonical_name": "Gemini-2.5-Pro-preview-0605",
+    "family_id": "google-gemini-2-5-pro-preview-0605",
+    "release_date": "2025-06-05",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-arxiv-org-pdf-2509-22339"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -11635,6 +12034,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-gpt-4v-50-frames",
+    "canonical_name": "GPT-4V 50 frames",
+    "family_id": "openai-gpt-4v-50-frames",
+    "release_date": "2023-09-25",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-open-eqa-github-io-assets-pdfs-paper-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-gpt-4vopenai",
     "canonical_name": "GPT-4VOpenAI",
     "family_id": "openai-gpt-4vopenai",
@@ -12089,6 +12509,27 @@
     ],
     "domains": [
       "Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-2-chat-medium",
+    "canonical_name": "GPT-5.2-Chat-Medium",
+    "family_id": "openai-gpt-5-2-chat-medium",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-pdf-2601-02158"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
     ],
     "evaluation_types": [
       "Model"
@@ -14889,6 +15330,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-o3",
+    "canonical_name": "GPT-o3",
+    "family_id": "openai-gpt-o3",
+    "release_date": "2025-04-16",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-aclanthology-org-2026-findings-acl-1341-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Chemistry"
     ],
     "evaluation_types": [
       "Model"
@@ -17886,6 +18348,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama-3-2-11b-vision-lora-cadreview",
+    "canonical_name": "Llama-3.2-11B Vision LoRA CADReview",
+    "family_id": "meta-llama-3-2-11b-vision-lora-cadreview",
+    "release_date": "2024-09-25",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2505-22304"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama-3-2-1b-instruct",
     "canonical_name": "Llama-3.2-1B-Instruct",
     "family_id": "meta-ai-llama-3-2-1b-instruct",
@@ -18033,6 +18516,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama-3-3-70b-instruct-turbo",
+    "canonical_name": "Llama-3.3-70B-Instruct-Turbo",
+    "family_id": "meta-llama-3-3-70b-instruct-turbo",
+    "release_date": "2024-12-06",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-github-com-cladbrain-cladbench-blob-main-docs-results-tables-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-3-3-70b-versatile",
+    "canonical_name": "Llama-3.3-70B-Versatile",
+    "family_id": "meta-llama-3-3-70b-versatile",
+    "release_date": "2024-12-06",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-github-com-sombsuk-pse-bench-blob-main-pse-bench-summary-xlsx"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Chemistry"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama-3-3-instruct-70b",
     "canonical_name": "Llama 3.3 Instruct 70B",
     "family_id": "meta-ai-llama-3-3-instruct-70b",
@@ -18096,6 +18621,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama-3-70b-instruct",
+    "canonical_name": "Llama-3-70B-Instruct",
+    "family_id": "meta-llama-3-70b-instruct",
+    "release_date": "2024-04-18",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-github-com-enviroscientist-enviroexam"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama-3-8b",
     "canonical_name": "Llama 3 (8B)",
     "family_id": "meta-ai-llama-3",
@@ -18109,6 +18655,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama-3-8b-instruct",
+    "canonical_name": "Llama-3-8B-Instruct",
+    "family_id": "meta-llama-3-8b-instruct",
+    "release_date": "2024-04-18",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-27047"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Nuclear Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -18456,6 +19023,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama2-70b",
+    "canonical_name": "Llama2-70B",
+    "family_id": "meta-llama2-70b",
+    "release_date": "2023-07-18",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama2-7b",
     "canonical_name": "Llama2-7B",
     "family_id": "meta-ai-llama2-7b",
@@ -18519,6 +19107,69 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-llama3-1-405b",
+    "canonical_name": "Llama3.1-405B",
+    "family_id": "meta-llama3-1-405b",
+    "release_date": "2024-07-23",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama3-1-70b",
+    "canonical_name": "Llama3.1-70B",
+    "family_id": "meta-llama3-1-70b",
+    "release_date": "2024-07-23",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama3-1-8b",
+    "canonical_name": "Llama3.1-8B",
+    "family_id": "meta-llama3-1-8b",
+    "release_date": "2024-07-23",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-llama3-3-70b-instruct",
     "canonical_name": "Llama3.3 70b instruct",
     "family_id": "meta-ai-llama3-3-70b-instruct",
@@ -18532,6 +19183,27 @@
     ],
     "domains": [
       "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-llama3-70b",
+    "canonical_name": "Llama3-70B",
+    "family_id": "meta-llama3-70b",
+    "release_date": "2024-04-18",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2408-11053v2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Electrical Engineering"
     ],
     "evaluation_types": [
       "Model"
@@ -21522,6 +22194,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-o1-mini-2024-09-12",
+    "canonical_name": "o1-mini-2024-09-12",
+    "family_id": "openai-o1-mini-2024-09-12",
+    "release_date": "2024-09-12",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-nature-com-articles-s41598-025-91150-5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-o1-mini-2024-09-12-high",
     "canonical_name": "o1-mini-2024-09-12_high",
     "family_id": "openai-o1-mini-2024-09-12-high",
@@ -23181,6 +23874,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-palm-2-text-bison-001",
+    "canonical_name": "PaLM-2-text-bison-001",
+    "family_id": "google-palm-2-text-bison-001",
+    "release_date": "2023-05-10",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-aclanthology-org-2023-emnlp-main-468-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-palm-2-unicorn",
     "canonical_name": "PaLM-2 (Unicorn)",
     "family_id": "unknown-palm-2",
@@ -23979,6 +24693,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen-2-5-7b-instruct-turbo",
+    "canonical_name": "Qwen-2.5-7B-Instruct-Turbo",
+    "family_id": "qwen-qwen-2-5-7b-instruct-turbo",
+    "release_date": "2024-09-19",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-cladbrain-cladbench-blob-main-docs-results-tables-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-2-5-vl-3b",
+    "canonical_name": "Qwen-2.5-VL-3B",
+    "family_id": "qwen-qwen-2-5-vl-3b",
+    "release_date": "2025-02-19",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-aclanthology-org-2026-findings-acl-1341-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Chemistry"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen-3-5-27b",
     "canonical_name": "Qwen 3.5 27B",
     "family_id": "alibaba-qwen-3-5-27b",
@@ -24567,6 +25323,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen1-5-14b-chat",
+    "canonical_name": "Qwen1.5-14B-Chat",
+    "family_id": "qwen-qwen1-5-14b-chat",
+    "release_date": "2024-02-05",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-enviroscientist-enviroexam"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Energy & Infrastructure"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen1-5-32b",
     "canonical_name": "Qwen1.5 (32B)",
     "family_id": "alibaba-qwen1-5",
@@ -25092,6 +25869,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen2-5-math-72b-instruct-4-bit",
+    "canonical_name": "Qwen2.5-Math-72B-Instruct 4-bit",
+    "family_id": "qwen-qwen2-5-math-72b-instruct-4-bit",
+    "release_date": "2024-09-19",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-www-nature-com-articles-s41598-025-91150-5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mechanical & Aerospace Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen2-5-vl-32b",
+    "canonical_name": "Qwen2.5-VL-32B",
+    "family_id": "qwen-qwen2-5-vl-32b",
+    "release_date": "2025-03-24",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-arxiv-org-pdf-2509-09307"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Materials Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen2-5-vl-72b-instruct",
     "canonical_name": "Qwen2.5-VL-72B-Instruct",
     "family_id": "alibaba-qwen2-5-vl-72b-instruct",
@@ -25105,6 +25924,27 @@
     ],
     "domains": [
       "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen2-5-vl-7b-instruct",
+    "canonical_name": "Qwen2.5-VL-7B-Instruct",
+    "family_id": "qwen-qwen2-5-vl-7b-instruct",
+    "release_date": "2025-01-28",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-isafetybench-data"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Manufacturing"
     ],
     "evaluation_types": [
       "Model"
@@ -26564,6 +27404,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-qwen3-coder",
+    "canonical_name": "Qwen3-Coder",
+    "family_id": "qwen-qwen3-coder",
+    "release_date": "2025-07-23",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2512-20732"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computational Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-coder-480b-a35b-instruct",
     "canonical_name": "Qwen3-Coder-480B-A35B-Instruct",
     "family_id": "alibaba-qwen3-coder-480b-a35b-instruct",
@@ -26640,6 +27501,69 @@
     ],
     "domains": [
       "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-next",
+    "canonical_name": "Qwen3-Next",
+    "family_id": "qwen-qwen3-next",
+    "release_date": "2025-09-12",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-arxiv-org-html-2512-20732"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computational Engineering"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-next-80b-a3b-instruct",
+    "canonical_name": "Qwen3-Next-80B-A3B-Instruct",
+    "family_id": "qwen-qwen3-next-80b-a3b-instruct",
+    "release_date": "2025-09-10",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-pubs-rsc-org-en-content-articlehtml-2026-dd-d5dd00519a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Materials Science"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-qwenvl-2-5-32b",
+    "canonical_name": "QwenVL-2.5-32B",
+    "family_id": "qwen-qwenvl-2-5-32b",
+    "release_date": "2025-03-24",
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-github-com-internrobotics-ost-bench-blob-main-readme-md"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Robotics"
     ],
     "evaluation_types": [
       "Model"

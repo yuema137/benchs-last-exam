@@ -1,0 +1,5 @@
+Name,Composite I,Release date,Organization,Result public date,Source,Source link,id
+DeepSeek-67B-Chat,0.4317,2023-11-29,DeepSeek,2024-05-18,EnviroExam official zero-shot table,https://github.com/EnviroScientist/enviroexam,enviroexam-deepseek67
+Gemma-7B,0.5944,2024-02-21,Google,2024-05-18,EnviroExam official zero-shot table,https://github.com/EnviroScientist/enviroexam,enviroexam-gemma7
+Qwen1.5-14B-Chat,0.7066,2024-02-05,Qwen,2024-05-18,EnviroExam official zero-shot table,https://github.com/EnviroScientist/enviroexam,enviroexam-qwen15
+Llama-3-70B-Instruct,0.8047,2024-04-18,Meta,2024-05-18,EnviroExam official zero-shot table,https://github.com/EnviroScientist/enviroexam,enviroexam-llama3

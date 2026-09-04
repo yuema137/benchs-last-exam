@@ -1,0 +1,7 @@
+Name,Overall score,Release date,Organization,Result public date,Source,Source link,id
+QwenVL-2.5-32B,0.4686,2025-03-24,Qwen,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-qwen25
+Claude-3.5-Sonnet-latest,0.4777,2024-06-20,Anthropic,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-claude35
+GPT-4o,0.4872,2024-05-13,OpenAI,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-gpt4o
+Gemini-2.0-Flash,0.4954,2024-12-11,Google,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-gemini20
+GPT-4.1,0.5340,2025-04-14,OpenAI,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-gpt41
+Gemini-2.0-Flash-Thinking,0.5425,2024-12-19,Google,2025-10-14,OST-Bench official multi-round leaderboard,https://github.com/InternRobotics/OST-Bench/blob/main/README.md,ost-gemini-thinking

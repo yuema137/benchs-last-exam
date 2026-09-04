@@ -1,0 +1,7 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id
+Llama-4-Scout,0.269,2025-04-05,Meta,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-llama4
+Qwen3-235B-A22B,0.412,2025-04-29,Qwen,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-qwen3
+Claude-Sonnet-4,0.608,2025-05-22,Anthropic,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-sonnet4
+Gemini-2.5-Pro,0.480,2025-06-17,Google,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-gemini25
+gpt-oss-120B,0.341,2025-08-05,OpenAI,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-gptoss
+DeepSeek-V3.2,0.563,2025-12-01,DeepSeek,2026-06-11,GeoNatureAgent paper v1,https://arxiv.org/html/2606.12821v1,geonature-deepseek32
