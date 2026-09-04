@@ -13,6 +13,7 @@ This audit treats benchmark selection as curation, not catalog construction. A c
 | Aider Polyglot | Coding / software engineering | 2024-12-21 | A historically visible coding-editing benchmark with a fixed 225-exercise, six-language set and a clear frontier-era starting point | Correct edit rate; floor 0.0; ceiling 1.0 | 72 observations with model release dates | CORE |
 | OSWorld 2.0 | Agents / computer use | 2026-06-26 | A materially revised real-computer benchmark with an explicit version boundary; distinct from static QA and useful for agent evaluation burden | Binary task success rate; floor 0.0; ceiling 1.0 | 16 observations with release dates | CORE |
 | Terminal-Bench 2.0 | Agents / computer use | 2025-11-07 | A versioned terminal-agent benchmark with a documented official harness and executable task outcomes | Task success rate; floor 0.0; ceiling 1.0 | 202 observations with model release dates | CORE |
+| FrontierCode 1.1 | Coding / software engineering | 2026-02-05 | Adds maintainer-defined quality and regression-safety criteria beyond a simple test-pass rate | Main score; 0.0–1.0 scale; fixed protocol details remain attached to observations | 34 observations with model release dates | CORE |
 
 The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Diamond, and SWE-bench Verified. This produces a ten-benchmark core without treating related versions as silently interchangeable.
 
@@ -37,8 +38,10 @@ The existing five benchmarks remain in core: MMLU, GSM8K, MATH Level 5, GPQA Dia
 - Aider's official announcement dates the Polyglot benchmark to 2024-12-21 and defines its fixed 225-exercise, six-language set.
 - The OSWorld official site dates OSWorld 2.0 to 2026-06-26 and describes it as a new version with official unified evaluations.
 - Terminal-Bench's official announcement dates version 2.0 to 2025-11-07 and documents the versioned benchmark and Harbor harness.
+- Cognition's FrontierCode 1.1 resource defines a distinct software-quality measurement object rather than a plain unit-test pass rate.
+
+ARC-AGI-1 remains in the queue because the current authoritative source establishes a 2019 origin but not a precise day-level release date suitable for the present schema.
 
 ## Model-panel implication
 
 The new rows add model-generation probes already present in the curated exports. They do not turn the project into a model catalog. A later panel audit should consolidate near-duplicate model snapshots and assign stable family roles, especially for agent benchmarks where the agent scaffold is part of the measurement protocol.
-

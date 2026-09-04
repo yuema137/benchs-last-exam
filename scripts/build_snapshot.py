@@ -32,7 +32,44 @@ BENCHMARKS.extend([
     {"id": "terminal-bench-2", "name": "Terminal-Bench 2.0", "domain": "Agents / computer use", "file": "terminalbench_external.csv", "score": "Accuracy mean", "release": "2025-11-07", "floor": 0.0, "ceiling": 1.0, "source": "https://www.tbench.ai/news/announcement-2-0", "summary": {"en": "Terminal-Bench 2.0 tests whether agents can solve realistic tasks inside terminal environments.", "zh": "Terminal-Bench 2.0 测试 agent 能不能在 terminal 环境中完成真实的软件和系统任务。"}, "task_format": {"en": "The agent receives a task in a containerized terminal environment and can use shell tools before submitting the final environment state.", "zh": "agent 会在容器化 terminal 环境中收到 task，可以使用 shell 工具，最后提交环境状态。"}, "scoring": {"metric_name": "Task success rate", "explanation": {"en": "A task counts as solved when its evaluator accepts the resulting environment or artifact. The score is the fraction of tasks solved.", "zh": "如果 evaluator 接受最终环境状态或产物，这个 task 就算解决。分数是解决 task 的比例。"}}, "evaluation_target": "environment_outcome"},
 ])
 
+# ARC-AGI-1 has strong source support but only a year-level origin date in the
+# current audit; keep it queued until a defensible release date is curated.
+BENCHMARKS = [spec for spec in BENCHMARKS if spec["id"] != "arc-agi-1"]
+for spec in BENCHMARKS:
+    if spec["id"] == "aider-polyglot":
+        spec["cost_column"] = "Cost"
+        spec["cost_divisor"] = 225
+
+BENCHMARKS.extend([
+    {"id": "frontiercode-1-1", "name": "FrontierCode 1.1", "domain": "Coding / software engineering", "file": "frontiercode_external.csv", "score": "Main score", "release": "2026-02-05", "floor": 0.0, "ceiling": 1.0, "source": "https://cognition.com/blog/frontier-code-1.1", "summary": {"en": "FrontierCode 1.1 evaluates whether coding systems produce maintainable, regression-safe solutions under a maintainer-defined rubric.", "zh": "FrontierCode 1.1 评估 coding systems 能不能按照 maintainer 定义的标准，产出可维护且不会引入回归问题的解决方案。"}, "task_format": {"en": "The system works on software-engineering tasks and submits code changes evaluated with tests and rubric-based checks.", "zh": "系统需要完成 software-engineering task 并提交代码修改，结果会通过测试和 rubric 检查。"}, "scoring": {"metric_name": "Main score", "explanation": {"en": "The reported main score aggregates the benchmark's task-level quality and correctness criteria. It is not simply a raw unit-test pass rate.", "zh": "报告中的 main score 汇总了 benchmark 对 task 质量和正确性的多项判断，不只是原始的测试通过率。"}}, "evaluation_target": "process_and_output"},
+    {"id": "arc-agi-1", "name": "ARC-AGI-1", "domain": "Abstract / novel reasoning", "file": "arc_agi_external.csv", "score": "Score", "release": "2019-11-01", "floor": 0.0, "ceiling": 1.0, "source": "https://arcprize.org/", "summary": {"en": "ARC-AGI-1 tests abstract visual reasoning: infer a transformation from a few example grids and apply it to a new grid.", "zh": "ARC-AGI-1 测试抽象视觉推理：模型需要从少量网格示例中推断变换规则，再应用到新网格。"}, "task_format": {"en": "Each task contains a few input-output grid examples. The system must generate the exact output grid for a new input.", "zh": "每个 task 包含几组输入输出网格示例，系统需要为新的输入生成完全一致的输出网格。"}, "scoring": {"metric_name": "Exact task accuracy", "explanation": {"en": "A task is correct only when the predicted grid exactly matches the target grid. The score is the fraction of tasks solved.", "zh": "只有预测网格和目标网格完全一致，这个 task 才算答对。分数是解决 task 的比例。"}}, "evaluation_target": "final_output", "cost_column": "Cost per task"},
+])
+
+# ARC-AGI-1 remains queued until its year-level origin date is curated as a
+# precise benchmark release date.
+BENCHMARKS = [spec for spec in BENCHMARKS if spec["id"] != "arc-agi-1"]
+
+# Keep the taxonomy intentionally small and stable. Evaluation type describes
+# the benchmark's task setup; domain describes what the task is about.
+TAXONOMY = {
+    "mmlu": ("Model", "General knowledge & reasoning", ["multiple-choice", "academic"]),
+    "gsm8k": ("Model", "Mathematics", ["multi-step", "word problems"]),
+    "math-level-5": ("Model", "Mathematics", ["competition math"]),
+    "gpqa-diamond": ("Model", "Science", ["expert", "multiple-choice", "reasoning"]),
+    "swe-bench-verified": ("Agent", "Software engineering", ["repository", "test-based"]),
+    "frontiermath-tiers-1-3-v2": ("Model", "Mathematics", ["expert", "verifiable"]),
+    "arc-agi-2": ("Model", "Abstract reasoning", ["visual", "novel reasoning"]),
+    "aider-polyglot": ("Model", "Coding", ["code editing", "multi-language"]),
+    "osworld-2": ("Agent", "Computer use", ["desktop", "web", "environment"]),
+    "terminal-bench-2": ("Agent", "Terminal / OS", ["terminal", "container"]),
+    "frontiercode-1-1": ("Agent", "Software engineering", ["code quality", "regression safety"]),
+}
+
 for _spec in BENCHMARKS:
+    try:
+        _spec["evaluation_type"], _spec["domain"], _spec["tags"] = TAXONOMY[_spec["id"]]
+    except KeyError as error:
+        raise ValueError(f"No curated taxonomy entry for benchmark {_spec['id']}") from error
     _spec.setdefault("metric_id", f"{_spec['id']}-metric-v1")
     _spec.setdefault("protocol_id", f"{_spec['id']}-source-export-v1")
     _spec.setdefault("protocol", "Source export protocol; row-level protocol details are preserved when available.")
@@ -110,11 +147,17 @@ def threshold_metrics(frontier, release, floor, ceiling):
     for label, target in (("T50", 0.5), ("T80", 0.8), ("T90", 0.9)):
         crossing = next((point for point in frontier if (point["score"] - floor) / (ceiling - floor) >= target), None)
         if crossing:
-            result[label] = {"status": "reached", "days": (date.fromisoformat(crossing["plot_date"]) - release).days}
+            days = (date.fromisoformat(crossing["plot_date"]) - release).days
+            result[label] = {"status": "at_release", "days": 0, "qualifying_model_release_date": crossing["plot_date"]} if days <= 0 else {"status": "reached", "days": days}
         elif frontier:
-            result[label] = {"status": "right_censored", "days": (date.fromisoformat(frontier[-1]["plot_date"]) - release).days}
+            result[label] = {"status": "right_censored", "days": max(0, (date.fromisoformat(frontier[-1]["plot_date"]) - release).days)}
         else:
             result[label] = {"status": "unknown", "reason": "No dated observations are available on this timeline."}
+    finite = {label: item["days"] for label, item in result.items()
+              if item.get("status") in {"at_release", "reached"}}
+    for lower, higher in (("T50", "T80"), ("T80", "T90"), ("T50", "T90")):
+        if lower in finite and higher in finite and finite[higher] < finite[lower]:
+            raise ValueError(f"Threshold ordering violated: {higher}={finite[higher]} < {lower}={finite[lower]}")
     return result
 
 
@@ -172,6 +215,7 @@ def build_benchmark(spec, resources, models):
                 "resource_ids": [source_id],
                 "roles": ["contemporary_frontier"],
                 "domains": [spec["domain"]],
+                "evaluation_types": [spec["evaluation_type"]],
                 "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
                 "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource.",
             })
@@ -184,6 +228,7 @@ def build_benchmark(spec, resources, models):
                 "model": model,
                 "organization": row.get("Organization") or "Unknown",
                 "score": score,
+                "reported_cost_per_task": row.get(spec.get("cost_column", "")) if spec.get("cost_column") else None,
                 "metric_id": spec["metric_id"],
                 "protocol_id": spec["protocol_id"],
                 "metric": spec["score"],
@@ -228,11 +273,29 @@ def build_benchmark(spec, resources, models):
     reported_threshold_days = threshold_metrics(reported_frontier, release, spec["floor"], spec["ceiling"])
     velocity_180d = frontier_velocity(capability_frontier)
     reported_velocity_180d = frontier_velocity(reported_frontier)
+    cost_values = []
+    if spec.get("cost_column"):
+        for row in rows:
+            try:
+                cost = float(row.get("reported_cost_per_task", ""))
+            except (TypeError, ValueError):
+                continue
+            if cost >= 0:
+                cost_values.append(cost)
+    cost = None
+    if cost_values:
+        divisor = spec.get("cost_divisor", 1)
+        method = "median of reported per-task values in the curated export"
+        if divisor != 1:
+            method = f"median of reported full-run costs divided by the documented {divisor}-task benchmark size"
+        cost = {"value": sorted(cost_values)[len(cost_values) // 2] / divisor, "currency": "USD", "per_task": True, "method": method, "source_ids": sorted({source_id for row in rows for source_id in row["source_ids"]}), "notes": "Cost varies by model, harness, and inference settings."}
     organizations = {row["organization"] for row in rows}
     coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
     return {
         **{key: spec[key] for key in ("id", "name", "domain", "release", "floor", "ceiling", "source")},
+        "evaluation_type": spec["evaluation_type"],
+        "tags": spec["tags"],
         "metric": spec["score"],
         "metric_id": spec["metric_id"],
         "protocol_id": spec["protocol_id"],
@@ -261,6 +324,7 @@ def build_benchmark(spec, resources, models):
         "velocity_180d": velocity_180d,
         "capability_velocity_180d": velocity_180d,
         "reported_velocity_180d": reported_velocity_180d,
+        "cost_per_task": cost,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATIONS), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
         "resource_ids": [benchmark_resource_id],

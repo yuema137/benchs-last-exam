@@ -16,6 +16,14 @@ def main():
     errors = []
     gaps = []
     for benchmark in payload["benchmarks"]:
+        threshold_days = benchmark.get("threshold_days", {})
+        finite_thresholds = {
+            name: item.get("days") for name, item in threshold_days.items()
+            if item.get("status") in {"at_release", "reached"} and item.get("days") is not None
+        }
+        for lower, higher in (("T50", "T80"), ("T80", "T90"), ("T50", "T90")):
+            if lower in finite_thresholds and higher in finite_thresholds and finite_thresholds[higher] < finite_thresholds[lower]:
+                errors.append(f"{benchmark['id']}: {higher} ({finite_thresholds[higher]}) precedes {lower} ({finite_thresholds[lower]})")
         for resource_id in benchmark.get("resource_ids", []):
             if resource_id not in resources:
                 errors.append(f"{benchmark['id']}: missing benchmark resource {resource_id}")

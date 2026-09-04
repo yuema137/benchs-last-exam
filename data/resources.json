@@ -521,6 +521,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-cognition-com-blog-frontier-code-1-1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierCode 1.1 primary source",
+    "url": "https://cognition.com/blog/frontier-code-1.1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-crfm-stanford-edu-helm-classic-latest-groups-gsm",
     "resource_scope": [
       "benchmark",
