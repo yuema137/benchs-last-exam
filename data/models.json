@@ -14293,6 +14293,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-h2ogpte-agent-v1-6-27",
+    "canonical_name": "h2oGPTe Agent v1.6.27",
+    "family_id": "h2o-ai-h2ogpte-agent-v1-6-27",
+    "release_date": "2025-03-20",
+    "organization": "h2o.ai",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-hermes-2-theta-llama-3-70b",
     "canonical_name": "Hermes-2-Theta-Llama-3-70B",
     "family_id": "nous-research-arcee-ai-hermes-2-theta-llama-3-70b",
@@ -14393,6 +14414,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-hugging-face-agents-gpt-4o",
+    "canonical_name": "Hugging Face Agents + GPT-4o",
+    "family_id": "hugging-face-hugging-face-agents-gpt-4o",
+    "release_date": "2024-06-27",
+    "organization": "Hugging Face",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -17173,6 +17215,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-magentic-1-o1",
+    "canonical_name": "Magentic-1 (o1)",
+    "family_id": "msr-ai-frontiers-magentic-1",
+    "release_date": "2024-10-19",
+    "organization": "MSR AI Frontiers",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-magistral-medium",
     "canonical_name": "Magistral Medium",
     "family_id": "mistral-ai-magistral-medium",
@@ -18722,6 +18785,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-multi-agent-experiment-v0-1",
+    "canonical_name": "Multi-Agent Experiment v0.1",
+    "family_id": "msr-ai-frontiers-multi-agent-experiment-v0-1",
+    "release_date": "2024-03-01",
+    "organization": "MSR AI Frontiers",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -24294,6 +24378,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-tapeagents-browsergym",
+    "canonical_name": "TapeAgents & BrowserGym",
+    "family_id": "servicenow-research-tapeagents-browsergym",
+    "release_date": "2025-03-05",
+    "organization": "ServiceNow Research",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-text-ada-001",
     "canonical_name": "text-ada-001",
     "family_id": "openai-text-ada-001",
@@ -24520,6 +24625,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-trase-agent-v0-3",
+    "canonical_name": "Trase Agent v0.3",
+    "family_id": "trase-systems-trase-agent-v0-3",
+    "release_date": "2025-02-19",
+    "organization": "Trase Systems",
+    "resource_ids": [
+      "resource-https-huggingface-co-spaces-gaia-benchmark-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
