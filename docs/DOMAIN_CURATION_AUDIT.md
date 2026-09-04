@@ -30,8 +30,10 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | BALROG | Agent / General agent tasks | 2024-11-20 | ICLR 2025 benchmark spanning six interactive game environments; official leaderboard provides a multi-generation Average progress series | ADD |
 | GSO | Agent / Software engineering | 2025-05-29 | Fixed repository-level performance-optimization tasks with precise runtime tests and expert targets; official leaderboard export provides comparable Opt@1 rows | ADD_WITH_PARTIAL_DATA |
 | METR Time Horizon 1.1 | Agent / Science & research | 2026-01-29 | Standardized long-horizon software/research task suite with a 50% human-equivalent time-horizon metric; percentage lifecycle thresholds are explicitly N/A | ADD_WITH_PARTIAL_DATA |
+| ExploitBench | Agent / Cybersecurity | 2026-05-18 | Capability-ladder cybersecurity benchmark with a fixed public snapshot and separate base-harness / AutoNudge results; this batch keeps only base-harness rows | ADD_WITH_PARTIAL_DATA |
+| ProofBench v1.1 | Model / Mathematics | 2026-08-14 | Formal theorem proving with Lean 4 kernel verification; Vals AI's v1.1 re-grade is modeled separately from v1.0-era results | ADD_WITH_PARTIAL_DATA |
 
-This expansion adds 14 measurement objects across the current batches, not 14 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
+This expansion adds 16 measurement objects across the current batches, not 16 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
 
 ## Deferred candidates
 

@@ -12052,6 +12052,22 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-exploitbench-ai",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ExploitBench primary source",
+    "url": "https://exploitbench.ai/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
@@ -13049,6 +13065,22 @@
     "resource_type": "paper",
     "title": "Terminal-Bench-Science 0.1 primary source",
     "url": "https://www.terminal-bench-science.ai/announcement",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-vals-ai-benchmarks-proof-bench",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ProofBench v1.1 primary source",
+    "url": "https://www.vals.ai/benchmarks/proof_bench",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,

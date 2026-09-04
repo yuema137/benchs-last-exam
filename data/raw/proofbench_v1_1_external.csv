@@ -1,0 +1,12 @@
+Model version,Accuracy,Release date,Organization,Name,Source,Notes
+claude-fable-5-1,1.0,2026-09-01,Anthropic,Claude Fable 5.1,https://www.vals.ai/benchmarks/proof_bench,Current v1.1 leaderboard result; the v1.1 re-grade is the canonical series.
+claude-opus-5,0.99,2026-07-24,Anthropic,Claude Opus 5,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+claude-fable-5,0.95,2026-06-09,Anthropic,Claude Fable 5,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+kimi-k3,0.87,2026-07-16,Moonshot,Kimi K3,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+gpt-5-6-sol,0.83,2026-07-09,OpenAI,GPT-5.6 Sol,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+claude-sonnet-5,0.77,2026-06-30,Anthropic,Claude Sonnet 5,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+gpt-5-6-luna,0.60,2026-07-09,OpenAI,GPT-5.6 Luna,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+grok-4-5,0.31,2026-07-08,xAI,Grok 4.5,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+gemini-3-5-flash,0.31,2026-05-19,Google DeepMind,Gemini 3.5 Flash,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+minimax-m3,0.18,2026-06-01,MiniMax,MiniMax M3,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.
+mistral-medium-3-5,0.09,2026-04-28,Mistral AI,Mistral Medium 3.5,https://www.vals.ai/benchmarks/proof_bench,ProofBench v1.1 re-grade published by Vals AI on 2026-08-14.

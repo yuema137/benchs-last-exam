@@ -2364,6 +2364,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-mythos-preview",
+    "canonical_name": "Claude Mythos Preview",
+    "family_id": "anthropic-claude-mythos-preview",
+    "release_date": "2026-04-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-exploitbench-ai"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-mythos-preview-early",
     "canonical_name": "claude-mythos-preview-early",
     "family_id": "anthropic-claude-mythos-preview-early",
@@ -12339,6 +12360,27 @@
     ],
     "domains": [
       "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-codex",
+    "canonical_name": "GPT 5.5 (Codex)",
+    "family_id": "openai-gpt-5-5",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-exploitbench-ai"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent"
