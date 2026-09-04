@@ -12,6 +12,13 @@ These are strong candidates or unresolved choices. They are intentionally outsid
 | SimpleQA Verified | Factuality is an important measurement target | Grading/abstention semantics and short history | Revisit after stable grader metadata is available |
 | FrontierMath | Valuable hard-math frontier probe | Private-test semantics and fixed ceiling are not yet suitable for normalized thresholds | Keep as non-normalized candidate |
 | SWE-bench original vs Verified | Both have historical relevance | They are related versions, not automatically separate homepage objects | Keep Verified in core; represent original as version lineage unless lifecycle value differs |
+| MMLU-Pro | Strong successor to MMLU with a clearer reasoning emphasis | No local longitudinal score series yet; must not merge with MMLU | Source a clean versioned series before adding |
+| Humanity's Last Exam | Important current academic frontier benchmark | Short history and limited comparable model-generation coverage | Add only after a focused source/protocol audit |
+| ARC-AGI-1 | Long-lived and historically meaningful abstraction benchmark | Canonical release object and evaluation-set date need clarification | Review alongside ARC-AGI-2 before adding |
+| GAIA | Important tool-using general assistant benchmark | Scaffold and historical protocol comparability need checking | Strong candidate for a later agent batch |
+| MMMU / MMMU-Pro | Canonical multimodal reasoning family | Variants, splits, and local longitudinal data are not yet curated | Choose one or both after source audit |
+| HumanEval | Canonical saturated coding anchor | Current repository lacks a clean historical observation file | Add after sourcing authoritative model reports |
+| OSWorld original / Verified | Important version lineage for computer-use agents | Do not merge with OSWorld 2.0; original release and Verified semantics need registry work | Review as a separate version decision |
 
 ## Tier C: do not include for now
 
