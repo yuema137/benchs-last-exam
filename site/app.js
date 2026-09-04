@@ -89,6 +89,7 @@ function showLeaderboard(event) {
   event?.preventDefault();
   if (!state.data) return;
   state.view="leaderboard"; state.sort="current"; state.direction=1;
+  document.querySelectorAll(".story-tab").forEach(tab=>tab.classList.toggle("active",tab.dataset.view==="leaderboard"));
   ["search","evaluation-type","domain","year","coverage"].forEach(id=>{if($(id))$(id).value="";});
   $("controls").hidden=false;
   $("leaderboard").hidden=false;
