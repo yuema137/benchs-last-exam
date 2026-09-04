@@ -1099,6 +1099,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-assistantbench-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "AssistantBench primary source",
+    "url": "https://assistantbench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-benchcad-com-leaderboard",
     "resource_scope": [
       "benchmark"
@@ -12182,6 +12198,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-hal-cs-princeton-edu-assistantbench",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "https://hal.cs.princeton.edu/assistantbench",
+    "url": "https://hal.cs.princeton.edu/assistantbench",
+    "publisher": "https://hal.cs.princeton.edu/assistantbench",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-hal-cs-princeton-edu-scienceagentbench",

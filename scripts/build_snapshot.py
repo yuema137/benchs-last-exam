@@ -221,6 +221,13 @@ BENCHMARKS.extend([
     {"id": "bigcodebench", "name": "BigCodeBench", "domain": "Coding", "file": "bigcodebench_external.csv", "score": "Complete Pass@1", "release": "2024-06-18", "floor": 0.0, "ceiling": 1.0, "source": "https://huggingface.co/blog/leaderboard-bigcodebench", "summary": {"en": "BigCodeBench evaluates practical code generation with complex instructions, multiple function calls, and diverse libraries.", "zh": "BigCodeBench 通过复杂指令、多次 function call 和多种 library，评估更贴近实际的 code generation。"}, "task_format": {"en": "In the Complete setting, the model fills in a function implementation from a detailed docstring and is evaluated on curated executable tests across 139 libraries.", "zh": "在 Complete setting 中，模型根据详细 docstring 补全 function implementation，再通过覆盖 139 个 library 的可执行测试评估。"}, "scoring": {"metric_name": "Calibrated Pass@1", "explanation": {"en": "Calibrated Pass@1 measures the share of tasks passed after the benchmark's prescribed completion calibration. Complete and Instruct are separate measurement variants; this series uses Complete.", "zh": "Calibrated Pass@1 是按照 benchmark 规定的 completion calibration 后通过的 task 占比。Complete 和 Instruct 是不同 measurement variant；本序列使用 Complete。"}}, "evaluation_target": "final_output", "protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged."},
 ])
 
+# AssistantBench uses a fixed 214-task set and a published Browser-Use result
+# export. Its leaderboard reports full-run cost, so no benchmark-level cost is
+# inferred here from totals or from an unrelated serving configuration.
+BENCHMARKS.extend([
+    {"id": "assistantbench", "name": "AssistantBench", "domain": "General agent tasks", "file": "assistantbench_external.csv", "score": "Accuracy", "release": "2024-07-23", "floor": 0.0, "ceiling": 1.0, "source": "https://assistantbench.github.io/", "summary": {"en": "AssistantBench evaluates web-capable assistants on realistic, time-consuming tasks that require multi-step research across the internet.", "zh": "AssistantBench 评估具备网页能力的 assistant 完成真实、耗时且需要多步互联网 research 的 task 的能力。"}, "task_format": {"en": "The agent receives a real-world question and must browse across websites, gather evidence, reason over it, and submit a final answer.", "zh": "agent 会收到一个真实世界问题，需要跨网站浏览、收集证据、进行推理，并提交最终答案。"}, "scoring": {"metric_name": "Task accuracy", "explanation": {"en": "Accuracy is the fraction of the fixed 214 tasks answered correctly under the published Browser-Use evaluation export. Full-run costs shown by the source are not treated as per-task cost.", "zh": "Accuracy 是在公开 Browser-Use evaluation export 中答对固定 214 个 task 的比例。来源展示的 full-run cost 不会被当作 per-task cost。"}}, "evaluation_target": "environment_outcome", "protocol": "AssistantBench fixed 214-task release; this series uses one result per underlying model from the HAL Browser-Use verified export. Scaffold, model configuration, and full-run cost remain in observation notes; no configurations are silently merged."},
+])
+
 # Keep the taxonomy intentionally small and stable. Evaluation type describes
 # the benchmark's task setup; domain describes what the task is about.
 TAXONOMY = {
@@ -270,6 +277,7 @@ TAXONOMY = {
     "bfcl-v4": ("Agent", "Tool use", ["function calling", "multi-turn", "agentic"]),
     "humaneval": ("Model", "Coding", ["Python", "function-level", "unit tests"]),
     "bigcodebench": ("Model", "Coding", ["libraries", "function calls", "calibrated Pass@1"]),
+    "assistantbench": ("Agent", "General agent tasks", ["browsing", "multi-step", "web", "research"]),
     "big-bench-hard": ("Model", "General knowledge & reasoning", ["reasoning", "multi-task", "few-shot"]),
     "scienceqa": ("Model", "Science", ["multimodal", "multiple-choice", "explanation"]),
     "hellaswag": ("Model", "General knowledge & reasoning", ["commonsense", "multiple-choice"]),

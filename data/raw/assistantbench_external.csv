@@ -1,0 +1,9 @@
+Model version,Accuracy,Release date,Organization,Name,Source,Notes
+o3-medium,0.3881,2025-04-16,OpenAI,o3 Medium,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set.
+gpt-5-medium,0.3523,2025-08-07,OpenAI,GPT-5 Medium,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set.
+o4-mini-low,0.2805,2025-04-16,OpenAI,o4-mini Low,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set; low reasoning configuration is retained in the model name.
+gpt-4-1,0.1739,2025-04-14,OpenAI,GPT-4.1,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set.
+claude-3-7-sonnet,0.1669,2025-02-24,Anthropic,Claude 3.7 Sonnet,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set.
+claude-opus-4-1,0.1375,2025-08-05,Anthropic,Claude Opus 4.1,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set; highest listed reasoning configuration is retained.
+claude-sonnet-4-5,0.1180,2025-09-29,Anthropic,Claude Sonnet 4.5,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set; highest listed reasoning configuration is retained.
+gemini-2-0-flash,0.0262,2024-12-11,Google,Gemini 2.0 Flash,https://hal.cs.princeton.edu/assistantbench,HAL Browser-Use verified accuracy on the fixed 214-task AssistantBench set.

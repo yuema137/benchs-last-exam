@@ -26,6 +26,7 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | BFCL V4 | Agent / Tool use | 2025-07-17 | Official fixed evaluator checkpoint, explicit overall-accuracy composition, and distinct FC/Prompt modes | ADD_WITH_PARTIAL_DATA |
 | HumanEval | Model / Coding | 2021-07-07 | Canonical function-level code generation benchmark with executable hidden tests and a long model-generation history | ADD |
 | BigCodeBench | Model / Coding | 2024-06-18 | 1,140 practical function tasks across diverse libraries; official Complete calibrated Pass@1 leaderboard | ADD |
+| AssistantBench | Agent / General agent tasks | 2024-07-23 | Fixed 214-task web research benchmark; the HAL Browser-Use verified export provides eight dated results across OpenAI, Anthropic, and Google. Official resources: [project page](https://assistantbench.github.io/) and [HAL leaderboard](https://hal.cs.princeton.edu/assistantbench) | ADD_WITH_PARTIAL_DATA |
 
 The batch adds 11 measurement objects, not 11 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown` or right-censored when the evidence does not support a crossing.
 
