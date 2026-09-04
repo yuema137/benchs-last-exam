@@ -105,7 +105,7 @@ function storyMembers(view) {
   const snapshot=new Date(`${state.data.snapshot_id}T00:00:00Z`), monthDays=30.44, monthMs=monthDays*86400000;
   return state.data.benchmarks.filter(b=>{
     const t50=b.threshold_days?.T50, t90=b.threshold_days?.T90, p=b.normalized_progress;
-    if(view==="test-of-time") return (thresholdDays(b,"T50")!=null && thresholdDays(b,"T50")>=12*monthDays) || (thresholdDays(b,"T90")!=null && thresholdDays(b,"T90")>=24*monthDays);
+    if(view==="test-of-time") return (t50?.status==="right_censored" && thresholdDays(b,"T50")>=12*monthDays) || (t90?.status==="right_censored" && thresholdDays(b,"T90")>=24*monthDays);
     if(view==="still-frontier") return t50?.status==="right_censored" && p!=null && p<.5 && b.coverage?.status!=="low";
     if(view==="fastest-solved") return t90?.status==="reached" && thresholdDays(b,"T90")<6*monthDays;
     if(view==="recently-saturated") { const crossingAge=(snapshot-new Date(`${b.release}T00:00:00Z`))-thresholdDays(b,"T90")*86400000; return reached(b,"T90") && thresholdDays(b,"T90")!=null && crossingAge>=0 && crossingAge<=3*monthMs; }
