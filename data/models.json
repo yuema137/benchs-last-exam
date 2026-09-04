@@ -1407,6 +1407,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-3-7-sonnet-thinking",
+    "canonical_name": "Claude 3.7 Sonnet Thinking",
+    "family_id": "anthropic-claude-3-7-sonnet-thinking",
+    "release_date": "2025-02-24",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-openreview-net-pdf-7bb9d9e3eab17e0fc815f8ee8ea8b11c983eef7d-pdf"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-3-haiku",
     "canonical_name": "Claude 3 haiku         ",
     "family_id": "anthropic-claude-3-haiku",
@@ -1722,6 +1743,48 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-claude-4-sonnet-thinking",
+    "canonical_name": "Claude 4 Sonnet Thinking",
+    "family_id": "anthropic-claude-4-sonnet-thinking",
+    "release_date": "2025-05-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-phybench-cn-leaderboard"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-claude-code-claude-opus-4-6",
+    "canonical_name": "Claude Code (Claude Opus 4.6)",
+    "family_id": "anthropic-claude-code",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-biorxiv-org-content-10-64898-2026-04-06-716850v2-full"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Life Science"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-claude-fable-5",
     "canonical_name": "Claude Fable 5",
     "family_id": "anthropic-claude-fable-5",
@@ -1749,14 +1812,14 @@
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-frontiercode",
+      "resource-https-www-eebench-org",
       "resource-https-www-anthropic-com-claude-fable"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Software engineering"
+      "Engineering"
     ],
     "evaluation_types": [
       "Agent"
@@ -4758,6 +4821,27 @@
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
   },
   {
+    "id": "model-codex-cli-gpt-5-4",
+    "canonical_name": "Codex CLI (GPT-5.4)",
+    "family_id": "openai-codex-cli",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-www-biorxiv-org-content-10-64898-2026-04-06-716850v2-full"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Life Science"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
     "id": "model-codex-mini-latest",
     "canonical_name": "Codex Mini (Latest)",
     "family_id": "unknown-codex-mini",
@@ -6118,6 +6202,27 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-flash-max",
+    "canonical_name": "DeepSeek V4 Flash (max)",
+    "family_id": "deepseek-deepseek-v4-flash",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-swescience-github-io"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
@@ -9170,6 +9275,27 @@
     ],
     "domains": [
       "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-cli-gemini-3-1-pro",
+    "canonical_name": "Gemini CLI (Gemini 3.1 Pro)",
+    "family_id": "google-gemini-cli",
+    "release_date": "2026-02-19",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-www-biorxiv-org-content-10-64898-2026-04-06-716850v2-full"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Life Science"
     ],
     "evaluation_types": [
       "Agent"
@@ -21843,16 +21969,16 @@
     "release_date": "2025-04-16",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-conceptualreasoning-ai-dtbench"
+      "resource-https-openreview-net-pdf-7bb9d9e3eab17e0fc815f8ee8ea8b11c983eef7d-pdf"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General knowledge & reasoning"
+      "Engineering"
     ],
     "evaluation_types": [
-      "Model"
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource."

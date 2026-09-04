@@ -1,0 +1,6 @@
+Model version,Score (%),Release date,Organization,Country,Name,Cost / task,Source,Source link,id,Evaluation date
+claude-opus-5,61.6,2026-07-24,Anthropic,United States of America,Claude Opus 5,2.38,EEBench,https://www.eebench.org/,eebench-claude-opus-5,2026-09-01
+grok-4-6,57.1,2026-08-12,xAI,United States of America,Grok 4.6,2.11,EEBench,https://www.eebench.org/,eebench-grok-4-6,2026-09-01
+claude-fable-5-1,56.4,2026-09-01,Anthropic,United States of America,Claude Fable 5.1,2.92,EEBench,https://www.eebench.org/,eebench-claude-fable-5-1,2026-09-01
+gpt-5-5,42.3,2026-04-23,OpenAI,United States of America,GPT-5.5,3.19,EEBench,https://www.eebench.org/,eebench-gpt-5-5,2026-09-01
+gemini-3-1-pro,46.3,2026-02-19,Google,United States of America,Gemini 3.1 Pro,0.84,EEBench,https://www.eebench.org/,eebench-gemini-3-1-pro,2026-09-01

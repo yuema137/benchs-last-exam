@@ -95,9 +95,19 @@ class SnapshotInvariantTests(unittest.TestCase):
     def test_cybench_ratio_scores_are_not_double_converted(self):
         benchmark = next(item for item in self.benchmarks if item["id"] == "cybench")
         self.assertEqual(benchmark["observation_count"], 24)
+        self.assertEqual(benchmark["score_format"], "ratio")
         self.assertEqual(benchmark["observed_frontier"], 1.0)
         self.assertEqual(benchmark["frontier_events"][-1]["score"], 1.0)
         self.assertEqual(benchmark["frontier_events"][-1]["model"], "claude-mythos-preview")
+
+    def test_unbounded_metrics_are_not_rendered_as_percentage_scores(self):
+        by_id = {item["id"]: item for item in self.benchmarks}
+        for benchmark_id in ("metr-time-horizon-1-1", "gdpval-aa-v2", "vending-bench-2"):
+            benchmark = by_id[benchmark_id]
+            self.assertEqual(benchmark["score_format"], "number", benchmark_id)
+            self.assertIsNone(benchmark["floor"], benchmark_id)
+            self.assertIsNone(benchmark["ceiling"], benchmark_id)
+            self.assertIsNone(benchmark["normalized_progress"], benchmark_id)
 
 
 if __name__ == "__main__":

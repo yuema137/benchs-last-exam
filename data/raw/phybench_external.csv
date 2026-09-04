@@ -1,0 +1,5 @@
+Model version,Accuracy,Release date,Organization,Country,Name,Notes,Source,Source link,id,Evaluation date
+gemini-2-5-pro,0.369,2025-03-25,Google,United States of America,Gemini 2.5 Pro,"PHYBench paper accuracy; fixed 500-problem physics set. EED score is a separate metric.",PHYBench,https://arxiv.org/abs/2504.16074,phybench-gemini-2-5-pro,2025-04-22
+gpt-5,0.5107,2025-08-07,OpenAI,United States of America,GPT-5,"PHYBench official leaderboard accuracy; fixed physics problem set. EED score excluded.",PHYBench,https://www.phybench.cn/leaderboard,phybench-gpt-5,2025-09-01
+gemini-3-pro-preview,0.6139,2025-11-18,Google,United States of America,Gemini 3 Pro Preview,"PHYBench official leaderboard accuracy; fixed physics problem set. EED score excluded.",PHYBench,https://www.phybench.cn/leaderboard,phybench-gemini-3-pro,2025-11-20
+claude-sonnet-4-thinking,0.3083,2025-05-22,Anthropic,United States of America,Claude 4 Sonnet Thinking,"PHYBench official leaderboard accuracy; fixed physics problem set. EED score excluded.",PHYBench,https://www.phybench.cn/leaderboard,phybench-claude-sonnet-4,2025-06-01
