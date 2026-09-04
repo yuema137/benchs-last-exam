@@ -45,6 +45,6 @@ Known evidence gaps:
 - obs-mmlu-recUe3PPejBJft24I-39: result_public_date is unknown
 - obs-mmlu-reciHYY3MaHRp7o7O-40: result_public_date is unknown
 
-...and 3557 more.
+...and 3786 more.
 
 These gaps are preserved as unknown values; no source or date is fabricated.

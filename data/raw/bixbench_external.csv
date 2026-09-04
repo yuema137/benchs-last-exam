@@ -1,0 +1,3 @@
+Model version,Open-answer accuracy,Release date,Organization,Country,Name,Notes,Source,Source link,id
+gpt-4o-2024-05-13,0.09,2024-05-13,OpenAI,United States of America,GPT-4o,"Original paper open-answer agent evaluation; approximately 9% overall accuracy across repeated trajectories.",BixBench paper,https://arxiv.org/abs/2503.00096,bixbench-gpt-4o
+claude-3-5-sonnet-20240620,0.17,2024-06-20,Anthropic,United States of America,Claude 3.5 Sonnet,"Original paper open-answer agent evaluation; approximately 17% overall accuracy across repeated trajectories.",BixBench paper,https://arxiv.org/abs/2503.00096,bixbench-claude-3-5-sonnet

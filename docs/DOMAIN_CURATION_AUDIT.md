@@ -36,12 +36,20 @@ Checked 2026-09-03. This batch favors established benchmarks with curated raw sc
 | APEX-Agents | Agent / General agent tasks | 2026-01-20 | Fixed 480-task professional-work benchmark across banking, consulting, and legal workflows; the public leaderboard reports Pass@1 across multiple agent/model generations | ADD_WITH_PARTIAL_DATA |
 | OpenBookQA | Model / Science | 2018-09-07 | Canonical fixed four-choice open-book science QA with a long model-generation record; the open-book facts and commonsense requirement are kept explicit | ADD |
 | BoolQ | Model / General knowledge & reasoning | 2019-05-24 | Canonical fixed yes/no reading-comprehension benchmark with supporting passages and a large longitudinal score export | ADD |
+| EEBench | Agent / Engineering | 2026-08-01 | Official electrical-engineering agent leaderboard with fixed Score (%) semantics, model/harness context, and reported cost/task; current snapshot has five dated results across four reference organizations | ADD_WITH_PARTIAL_DATA |
+| PHYBench | Model / Physics | 2025-04-22 | Fixed 500-problem physics benchmark with separate Accuracy and EED metrics; this card keeps Accuracy and has a multi-family public trajectory | ADD |
+| PHYSICS | Model / Physics | 2025-03-26 | Fixed 1,297 university-physics problems with automatic verification and a standardized ScienceEval cross-model panel | ADD |
+| CompBioBench v1 | Agent / Life Science | 2026-04-09 | Fixed 100 computational-biology tool/code tasks with results from Codex CLI, Gemini CLI, and Claude Code; system-level setup remains explicit | ADD_WITH_PARTIAL_DATA |
+| LLM-MSE-MCQs | Model / Materials Science | 2024-09-22 | Fixed 113-question materials multiple-choice subset with ScienceEval's standardized eight-sample pass@1 panel; other LLM-MSE datasets are excluded | ADD |
+| EngDesign-Open | Agent / Engineering | 2025-07-01 | Fixed 67-task open engineering-design subset with simulation/rubric evaluation; headline Average Score is kept separate from iterative Average Pass Rate | ADD |
+| SWE-bench Science | Agent / Engineering | 2026-08-20 | Fixed 119-task scientific-software repository benchmark with official Overall Pass@1 leaderboard and harness provenance | ADD_WITH_PARTIAL_DATA |
+| RoboBench | Model / Engineering | 2025-10-23 | Official Perception Reasoning average provides a distinct robotics/embodied reasoning series; other dimensions remain separate | ADD_WITH_PARTIAL_DATA |
 
-This expansion adds 20 measurement objects across the current batches, not 20 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
+The current expansion batches add 27 measurement objects, not 27 model variants. Scores remain linked to their canonical observation/resource records, and thresholds remain `Unknown`, right-censored, or N/A when the evidence or metric does not support a crossing.
 
 ## Deferred candidates
 
-AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. They should be added when canonical observations and model release dates can be reconciled without hand-entered chart values. BFCL V4 is now included using a small fixed-checkpoint export; the wider live leaderboard remains outside this snapshot.
+AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and AndroidWorld remain in the queue for a subsequent pass. Their SciEval cards are useful discovery evidence, but this repository does not yet have a sufficiently clean, source-linked score export for each candidate. HiPhO, Qiskit HumanEval, MaterialBENCH, TUA-Bench, and Material Discovery Bench remain deferred because their fixed version or headline protocol is not yet cleanly separable. EEBench remains partial because its first public benchmark date is not explicit on the current official page; the current snapshot records the official leaderboard snapshot date as a documented release proxy. They should be revisited when canonical dates and model release metadata can be reconciled without hand-entered chart values. BFCL V4 is now included using a small fixed-checkpoint export; the wider live leaderboard remains outside this snapshot.
 
 ## Curation notes
 

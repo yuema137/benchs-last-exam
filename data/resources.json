@@ -878,6 +878,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2409-14572",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "LLM-MSE-MCQs primary source",
+    "url": "https://arxiv.org/abs/2409.14572",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2410-23218",
     "resource_scope": [
       "benchmark",
@@ -912,6 +928,54 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2503-00096",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BixBench primary source",
+    "url": "https://arxiv.org/abs/2503.00096",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2503-21821",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PHYSICS primary source",
+    "url": "https://arxiv.org/abs/2503.21821",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2504-16074",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "PHYBench primary source",
+    "url": "https://arxiv.org/abs/2504.16074",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2505-08775",
     "resource_scope": [
       "benchmark",
@@ -923,6 +987,22 @@
     "url": "https://arxiv.org/abs/2505.08775",
     "publisher": null,
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2505-23982",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MSQA primary source",
+    "url": "https://arxiv.org/abs/2505.23982",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -1256,6 +1336,22 @@
     "resource_type": "paper",
     "title": "BenchCAD \u00b7 Vision2Code primary source",
     "url": "https://benchcad.com/leaderboard",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-chembench-lamalab-org",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ChemBench primary source",
+    "url": "https://chembench.lamalab.org/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -12202,6 +12298,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-critpt-benchmark-critpt",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CritPt primary source",
+    "url": "https://github.com/CritPt-Benchmark/CritPt",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-envcommons-longbench-v2-blob-main-readme-md",
     "resource_scope": [
       "benchmark"
@@ -12331,6 +12443,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-github-com-scienceone-ai-scienceeval",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ScienceEval",
+    "url": "https://github.com/ScienceOne-AI/ScienceEval",
+    "publisher": "ScienceEval",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-github-com-tiger-ai-lab-mmlu-pro",
@@ -12776,6 +12905,22 @@
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
+    "id": "resource-https-openreview-net-pdf-7bb9d9e3eab17e0fc815f8ee8ea8b11c983eef7d-pdf",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EngDesign-Open primary source",
+    "url": "https://openreview.net/pdf/7bb9d9e3eab17e0fc815f8ee8ea8b11c983eef7d.pdf",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-os-world-github-io",
     "resource_scope": [
       "benchmark"
@@ -12837,6 +12982,22 @@
     "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/81a60d18e010b27b36cd465c6604b915-Paper-Conference.pdf",
     "publisher": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-robo-bench-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "RoboBench primary source",
+    "url": "https://robo-bench.github.io/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -12935,6 +13096,22 @@
     "resource_type": "paper",
     "title": "SuperGLUE primary source",
     "url": "https://super.gluebenchmark.com/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-swescience-github-io",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SWE-bench Science primary source",
+    "url": "https://swescience.github.io/",
     "publisher": "Benchmark authors",
     "authority": "primary",
     "active": true,
@@ -13074,6 +13251,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-biorxiv-org-content-10-64898-2026-04-06-716850v2-full",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CompBioBench v1 primary source",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.04.06.716850v2.full",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-cdn-anthropic-com-0dd865075ad3132672ee0ab40b05a53f14cf5288-pdf",
     "resource_scope": [
       "benchmark",
@@ -13102,6 +13295,22 @@
     "url": "https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/claude-2-model-card.pdf",
     "publisher": "Model Card and Evaluations for Claude Models",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-eebench-org",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "EEBench primary source",
+    "url": "https://www.eebench.org/",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -13151,6 +13360,23 @@
     "url": "https://www.mercor.com/apex/apex-agents-leaderboard/",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-phybench-cn-leaderboard",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "PHYBench",
+    "url": "https://www.phybench.cn/leaderboard",
+    "publisher": "PHYBench",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

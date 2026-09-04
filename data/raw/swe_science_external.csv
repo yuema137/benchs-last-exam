@@ -1,0 +1,7 @@
+Model version,Overall,Release date,Organization,Country,Name,Notes,Source,Source link,id,Evaluation date
+claude-opus-5,0.479,2026-07-24,Anthropic,United States of America,Claude Opus 5 (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Claude Code max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-claude-opus-5,2026-09-01
+deepseek-v4-pro,0.4202,2026-04-24,DeepSeek,China,DeepSeek V4 Pro (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Claude Code max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-deepseek-v4-pro,2026-09-01
+gpt-5-6-sol,0.4034,2026-07-09,OpenAI,United States of America,GPT-5.6 Sol (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Codex max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-gpt-5-6-sol,2026-09-01
+kimi-k3,0.3529,2026-07-16,Moonshot AI,China,Kimi K3 (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Kimi Code max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-kimi-k3,2026-09-01
+glm-5-2,0.3193,2026-06-16,Z.ai,China,GLM-5.2 (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Codex max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-glm-5-2,2026-09-01
+deepseek-v4-flash,0.2353,2026-04-24,DeepSeek,China,DeepSeek V4 Flash (max),"SWE-bench Science fixed 119-task set; Overall Pass@1 with Claude Code max harness.",SWE-bench Science,https://swescience.github.io/,swe-science-deepseek-v4-flash,2026-09-01

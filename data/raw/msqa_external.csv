@@ -1,0 +1,7 @@
+Model version,Overall accuracy,Release date,Organization,Country,Name,Notes,Source,Source link,id
+gemini-2-5-pro-20250617,0.7123,2025-06-17,Google DeepMind,United States of America,Gemini 2.5 Pro,"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-gemini-2-5-pro
+claude-sonnet-4-20250522,0.7018,2025-05-22,Anthropic,United States of America,Claude Sonnet 4,"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-claude-sonnet-4
+o3-high-2025-04-16,0.825,2025-04-16,OpenAI,United States of America,o3 (high),"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-o3-high
+deepseek-r1-0528,0.7764,2025-05-28,DeepSeek,China,DeepSeek R1 0528,"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-deepseek-r1-0528
+qwen3-235b-20250428,0.7525,2025-04-28,Alibaba/Qwen,China,Qwen3 235B,"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-qwen3-235b
+doubao-1-6-thinking,0.7923,2025-05-20,ByteDance,China,Doubao 1.6 Thinking,"ScienceEval public overall MSQA panel; percentage normalized to ratio.",ScienceEval,https://github.com/ScienceOne-AI/ScienceEval,msqa-doubao-1-6-thinking
