@@ -27,6 +27,9 @@ def main():
     for name in ("index.html", "app.js", "styles.css"):
         shutil.copy2(generated / name, output / name)
     shutil.copytree(generated / "data", output / "data")
+    assets = generated / "assets"
+    if assets.exists():
+        shutil.copytree(assets, output / "assets")
 
     benchmarks = json.loads((output / "data" / "benchmarks.json").read_text())
     manifest = {
