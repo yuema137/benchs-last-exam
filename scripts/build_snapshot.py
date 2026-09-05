@@ -675,28 +675,41 @@ def frontier_velocity(frontier, window_days=180):
     return (latest["score"] - prior["score"]) / elapsed * 30.44
 
 
-def lifecycle_view_ids(benchmarks, snapshot_date):
-    """Derive all story-tab membership from the same generated benchmark data."""
+def lifecycle_eligibility(benchmark, snapshot_date):
+    """Return explicit, auditable hard-rule decisions for every story view."""
     month_days = 30.44
+    t50 = benchmark["threshold_days"].get("T50", {})
+    t90 = benchmark["threshold_days"].get("T90", {})
+    t50_days, t90_days = t50.get("days"), t90.get("days")
+    progress = benchmark.get("normalized_progress")
+    test_of_time = ((t50_days is not None and t50_days >= 12 * month_days)
+                    or (t90_days is not None and t90_days >= 24 * month_days))
+    still_frontier = (t50.get("status") == "right_censored" and progress is not None
+                      and progress < 0.5 and benchmark["coverage"].get("status") != "low")
+    fastest_solved = (t90.get("status") == "reached" and t90_days is not None
+                      and t90_days < 6 * month_days)
+    recently_saturated = False
+    if t90.get("status") in {"reached", "at_release"} and t90_days is not None:
+        release = date.fromisoformat(benchmark["release"])
+        crossing_age = (snapshot_date - release).days - t90_days
+        recently_saturated = 0 <= crossing_age <= 3 * month_days
+    return {
+        "test-of-time": {"eligible": test_of_time, "rule": "T50 >= 12 months OR T90 >= 24 months, including censoring"},
+        "still-frontier": {"eligible": still_frontier, "rule": "right-censored T50 AND normalized progress < 50% AND coverage not low"},
+        "fastest-solved": {"eligible": fastest_solved, "rule": "known reached T90 < 6 months"},
+        "recently-saturated": {"eligible": recently_saturated, "rule": "T90 crossing within 3 months of snapshot"},
+    }
+
+
+def lifecycle_view_ids(benchmarks, snapshot_date):
+    """Derive all story-tab membership from explicit hard-rule decisions."""
     views = {name: [] for name in ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")}
     for benchmark in benchmarks:
-        t50 = benchmark["threshold_days"].get("T50", {})
-        t90 = benchmark["threshold_days"].get("T90", {})
-        t50_days, t90_days = t50.get("days"), t90.get("days")
-        progress = benchmark.get("normalized_progress")
-        if ((t50_days is not None and t50_days >= 12 * month_days)
-                or (t90_days is not None and t90_days >= 24 * month_days)):
-            views["test-of-time"].append(benchmark["id"])
-        if (t50.get("status") == "right_censored" and progress is not None
-                and progress < 0.5 and benchmark["coverage"].get("status") != "low"):
-            views["still-frontier"].append(benchmark["id"])
-        if t90.get("status") == "reached" and t90_days is not None and t90_days < 6 * month_days:
-            views["fastest-solved"].append(benchmark["id"])
-        if t90.get("status") in {"reached", "at_release"} and t90_days is not None:
-            release = date.fromisoformat(benchmark["release"])
-            crossing_age = (snapshot_date - release).days - t90_days
-            if 0 <= crossing_age <= 3 * month_days:
-                views["recently-saturated"].append(benchmark["id"])
+        decisions = lifecycle_eligibility(benchmark, snapshot_date)
+        benchmark["lifecycle_eligibility"] = decisions
+        for view, decision in decisions.items():
+            if decision["eligible"]:
+                views[view].append(benchmark["id"])
     return views
 
 
@@ -770,6 +783,9 @@ def build_benchmark(spec, resources, models):
             if spec["id"] == "cybench" and not capability_eligible:
                 task_set_id = "cybench-subset-or-unverified"
                 protocol_id = "cybench-noncanonical-subset-or-unverified"
+            score_role = "canonical" if protocol_id == spec["protocol_id"] else "auxiliary"
+            score_series_id = (f"{spec['id']}-canonical-score" if score_role == "canonical"
+                               else f"{spec['id']}-auxiliary-{slug(protocol_id)}")
             rows.append({
                 # Some exports repeat a model name or omit a stable row ID.
                 # The row suffix keeps every canonical observation addressable.
@@ -788,6 +804,8 @@ def build_benchmark(spec, resources, models):
                 "protocol_id": protocol_id,
                 "task_set_id": task_set_id,
                 "metric": spec["score"],
+                "score_role": score_role,
+                "score_series_id": score_series_id,
                 "evaluation_protocol": spec["protocol"],
                 "model_release_date": model_release_date,
                 "evaluation_date": evaluation_date,
@@ -817,13 +835,13 @@ def build_benchmark(spec, resources, models):
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })
     capability_frontier = build_frontier(
-        [row for row in rows if row["capability_frontier_eligible"]],
+        [row for row in rows if row["score_role"] == "canonical" and row["capability_frontier_eligible"]],
         "capability_date",
         "model release date",
         minimum_date=spec["release"],
     )
     reported_frontier = build_frontier(
-        [row for row in rows if row.get("result_public_date")],
+        [row for row in rows if row["score_role"] == "canonical" and row.get("result_public_date")],
         "result_public_date",
         "result first-public date",
     )
@@ -860,6 +878,30 @@ def build_benchmark(spec, resources, models):
     organizations = {row["organization"] for row in rows}
     coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
+    auxiliary_score_series = []
+    auxiliary_series_ids = sorted({row["score_series_id"] for row in rows if row["score_role"] == "auxiliary"})
+    for series_id in auxiliary_series_ids:
+        series_rows = [row for row in rows if row["score_series_id"] == series_id]
+        series_frontier = build_frontier(
+            [row for row in series_rows if row.get("capability_date")],
+            "capability_date", "model release date", minimum_date=spec["release"],
+        )
+        auxiliary_score_series.append({
+            "series_id": series_id,
+            "role": "auxiliary",
+            "label": "Auxiliary / non-canonical protocol",
+            "metric_id": spec["metric_id"],
+            "metric_name": spec["score"],
+            "protocol_id": series_rows[0]["protocol_id"],
+            "task_set_id": series_rows[0]["task_set_id"],
+            "lifecycle_eligible": False,
+            "explanation": {
+                "en": "Preserved for comparison, but excluded from leaderboard sorting and lifecycle metrics because its task set or protocol differs from the canonical score.",
+                "zh": "该序列保留用于比较，但因 task set 或 protocol 与 canonical score 不同，不参与排行榜排序和 lifecycle 指标。",
+            },
+            "observation_ids": [row["observation_id"] for row in series_rows],
+            "frontier_events": series_frontier,
+        })
     return {
         **{key: spec[key] for key in ("id", "name", "domain", "release", "source")},
         "floor": progress_baseline,
@@ -876,6 +918,21 @@ def build_benchmark(spec, resources, models):
         "score_decimals": spec.get("score_decimals"),
         "metric_id": spec["metric_id"],
         "protocol_id": spec["protocol_id"],
+        "canonical_score": {
+            "series_id": f"{spec['id']}-canonical-score",
+            "role": "canonical",
+            "metric_id": spec["metric_id"],
+            "metric_name": spec["score"],
+            "protocol_id": spec["protocol_id"],
+            "task_set_id": f"{spec['id']}-canonical",
+            "direction": "higher_is_better",
+            "score_format": spec.get("score_format", "ratio"),
+            "input_unit": spec["input_unit"],
+            "progress_baseline": progress_baseline,
+            "progress_target": progress_target,
+            "lifecycle_eligible": True,
+        },
+        "auxiliary_score_series": auxiliary_score_series,
         "benchmark_version_id": f"{spec['id']}-canonical",
         "summary": spec["summary"],
         "task_format": spec["task_format"],

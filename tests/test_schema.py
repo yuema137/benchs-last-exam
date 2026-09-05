@@ -5,6 +5,8 @@ from benchmark_observatory.schema import (
     Direction,
     MetricDefinition,
     ScoreObservation,
+    ScoreSeriesDefinition,
+    ScoreSeriesRole,
     Resource,
     ResourceAuthority,
     ResourceScope,
@@ -56,6 +58,13 @@ class SchemaTests(unittest.TestCase):
     def test_panel_membership_requires_reason_and_nonnegative_weight(self):
         with self.assertRaises(ValueError):
             PanelMembership("panel-1", "model-1", PanelRole.CONTEMPORARY_FRONTIER, "Org", -1, None, None, "")
+
+    def test_auxiliary_score_series_cannot_drive_lifecycle_metrics(self):
+        with self.assertRaises(ValueError):
+            ScoreSeriesDefinition(
+                "aux-1", ScoreSeriesRole.AUXILIARY, "metric-1", "protocol-2",
+                "task-set-2", True,
+            )
 
 
 if __name__ == "__main__":

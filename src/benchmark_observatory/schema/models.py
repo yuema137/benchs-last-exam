@@ -16,6 +16,11 @@ class Direction(StrEnum):
     LOWER_IS_BETTER = "lower_is_better"
 
 
+class ScoreSeriesRole(StrEnum):
+    CANONICAL = "canonical"
+    AUXILIARY = "auxiliary"
+
+
 class BoundType(StrEnum):
     ZERO = "zero"
     RANDOM_CHANCE = "random_chance"
@@ -91,6 +96,24 @@ class MetricDefinition:
             raise ValueError("bounded metrics require both floor and ceiling")
         if self.floor and self.ceiling and self.floor.value == self.ceiling.value:
             raise ValueError("floor and ceiling must differ")
+
+
+@dataclass(frozen=True)
+class ScoreSeriesDefinition:
+    id: str
+    role: ScoreSeriesRole
+    metric_id: str
+    protocol_id: str
+    task_set_id: str
+    lifecycle_eligible: bool
+    label: str = ""
+    notes: Optional[str] = None
+
+    def __post_init__(self) -> None:
+        if not self.id or not self.metric_id or not self.protocol_id or not self.task_set_id:
+            raise ValueError("score series identity, metric, protocol, and task set are required")
+        if self.role is ScoreSeriesRole.AUXILIARY and self.lifecycle_eligible:
+            raise ValueError("auxiliary score series cannot be lifecycle eligible")
 
 
 @dataclass(frozen=True)
@@ -215,6 +238,8 @@ class ScoreObservation:
     notes: Optional[str] = None
     ingested_at: Optional[datetime] = None
     parser_version: str = "manual"
+    score_series_id: Optional[str] = None
+    score_role: ScoreSeriesRole = ScoreSeriesRole.CANONICAL
 
     def __post_init__(self) -> None:
         if not self.id or not self.benchmark_version_id or not self.model_id:
