@@ -1,4 +1,5 @@
 import unittest
+import json
 from datetime import date
 from pathlib import Path
 
@@ -65,6 +66,65 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn('url.searchParams.set("benchmark",benchmarkId)', app)
         self.assertIn("storyDescription.hidden=true", app)
         self.assertIn("[hidden] { display:none !important; }", styles)
+
+    def test_still_frontier_members_and_cards_use_normalized_progress(self):
+        payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
+        by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}
+        members = payload["lifecycle_views"]["still-frontier"]
+        for benchmark_id in members:
+            benchmark = by_id[benchmark_id]
+            self.assertLess(benchmark["normalized_progress"], 0.5, benchmark_id)
+            self.assertEqual(benchmark["threshold_days"]["T50"]["status"], "right_censored")
+            self.assertNotEqual(benchmark["coverage"]["status"], "low")
+
+        fdm = by_id["fdm-bench-v1-gcode-deterministic"]
+        self.assertGreater(fdm["capability_frontier_value"], 0.5)
+        self.assertLess(fdm["normalized_progress"], 0.5)
+        self.assertIn(fdm["id"], members)
+
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn('if(view==="still-frontier") return [t("story_frontier"),score(b.normalized_progress)', app)
+
+    def test_all_generated_story_tabs_match_their_hard_rules(self):
+        payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
+        snapshot = date.fromisoformat(payload["snapshot_id"])
+        expected = {view: set() for view in payload["lifecycle_views"]}
+        for benchmark in payload["benchmarks"]:
+            t50 = benchmark["threshold_days"]["T50"]
+            t90 = benchmark["threshold_days"]["T90"]
+            if ((t50.get("days") is not None and t50["days"] >= 12 * MONTH)
+                    or (t90.get("days") is not None and t90["days"] >= 24 * MONTH)):
+                expected["test-of-time"].add(benchmark["id"])
+            if (t50["status"] == "right_censored"
+                    and benchmark.get("normalized_progress") is not None
+                    and benchmark["normalized_progress"] < 0.5
+                    and benchmark["coverage"]["status"] != "low"):
+                expected["still-frontier"].add(benchmark["id"])
+            if t90["status"] == "reached" and t90.get("days") is not None and t90["days"] < 6 * MONTH:
+                expected["fastest-solved"].add(benchmark["id"])
+            if t90["status"] in {"reached", "at_release"} and t90.get("days") is not None:
+                age = (snapshot - date.fromisoformat(benchmark["release"])).days
+                if 0 <= age - t90["days"] <= 3 * MONTH:
+                    expected["recently-saturated"].add(benchmark["id"])
+        for view, members in payload["lifecycle_views"].items():
+            self.assertEqual(set(members), expected[view], view)
+
+    def test_only_canonical_score_series_drive_cross_benchmark_metrics(self):
+        payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
+        for benchmark in payload["benchmarks"]:
+            canonical = benchmark["canonical_score"]
+            self.assertTrue(canonical["lifecycle_eligible"], benchmark["id"])
+            observations = {item["observation_id"]: item for item in benchmark["observations"]}
+            for point in benchmark["frontier_events"]:
+                self.assertEqual(observations[point["observation_id"]]["score_role"], "canonical")
+            for series in benchmark["auxiliary_score_series"]:
+                self.assertFalse(series["lifecycle_eligible"])
+                for observation_id in series["observation_ids"]:
+                    self.assertEqual(observations[observation_id]["score_role"], "auxiliary")
+
+        cybench = next(item for item in payload["benchmarks"] if item["id"] == "cybench")
+        self.assertEqual(len(cybench["auxiliary_score_series"]), 1)
+        self.assertTrue(cybench["auxiliary_score_series"][0]["frontier_events"])
 
 
 if __name__ == "__main__":

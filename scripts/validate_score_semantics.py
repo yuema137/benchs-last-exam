@@ -101,7 +101,7 @@ def main():
     lines = [
         "# Adversarial Score-Semantics Audit",
         "",
-        f"Snapshot: `{payload['snapshot_id']}`  ",
+        f"Snapshot: `{payload['snapshot_id']}`",
         f"Benchmarks: {len(payload['benchmarks'])}",
         "",
         "## Gate result",

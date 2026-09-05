@@ -16,6 +16,8 @@ from .models import (
     ResourceScope,
     ResourceType,
     ScoreObservation,
+    ScoreSeriesDefinition,
+    ScoreSeriesRole,
     ValidityStatus,
 )
 
@@ -35,5 +37,7 @@ __all__ = [
     "ResourceScope",
     "ResourceType",
     "ScoreObservation",
+    "ScoreSeriesDefinition",
+    "ScoreSeriesRole",
     "ValidityStatus",
 ]

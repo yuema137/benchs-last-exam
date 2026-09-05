@@ -105,8 +105,23 @@ After any such change, the agent must:
 
 The integration validator independently recomputes all four lifecycle memberships and compares them with the generated snapshot. A stale or partially updated tab is a hard failure, even when the benchmark card itself renders correctly.
 
+Lifecycle-card hero metrics must use the same score semantics as their selector. In particular, `Still Frontier` is selected by normalized progress below 50%, so its hero value and explanatory copy must show normalized progress—not the raw benchmark score. If both are useful, raw frontier may appear only as a clearly labeled supporting metric.
+
 Score updates must additionally run `python3 scripts/validate_score_semantics.py`. Ratio metrics must remain in `[0, 1]`; unbounded numeric metrics such as minutes, Elo, or business outcomes must never be auto-converted to percentages. A normalization `floor` may be a chance/reference baseline rather than a hard lower bound, so a genuine below-floor observation is preserved and investigated instead of silently clamped or deleted.
 
 Extreme values require explicit adversarial review. Any benchmark group introducing a ratio observation below `1%` or an unbounded numeric observation above `100` must be checked against its primary measurement source and documented in `REVIEWED_LOW_RATIO_BENCHMARKS` or `REVIEWED_LARGE_NUMERIC_BENCHMARKS` in `scripts/validate_score_semantics.py`. An unreviewed extreme-score group is a hard validation failure; never fix it by silently clamping, rescaling, or deleting the observation.
 
 Do not update only the visible benchmark card and assume the story tabs remain correct. Do not manually patch a tab to compensate for stale derived data. If a lifecycle result changes, the generated snapshot and its source data must be included in the same change.
+
+## Canonical score invariant
+
+Every benchmark/version must declare exactly one canonical score series. Only canonical-series observations may determine:
+
+- the capability frontier and current frontier;
+- normalized progress, headroom, T50/T80/T90, and velocity;
+- leaderboard values and sorting;
+- membership and ordering in every lifecycle story tab.
+
+Other metrics, task-set variants, protocol variants, or supporting evaluations must be preserved as explicitly labeled `auxiliary_score_series`. Auxiliary series may appear only on the benchmark detail page, with a visually distinct line/point style, an explanation of the metric/protocol difference, and canonical observation/source lineage. They must have `lifecycle_eligible: false` and must never affect leaderboard sorting, lifecycle thresholds, story-tab membership, or the canonical frontier.
+
+Changing the canonical score is a benchmark-version methodology change, not a cosmetic edit. It requires source review, an explicit rationale, snapshot regeneration, all lifecycle selectors to be recomputed, and the full integration/score-semantics test suite. Never choose whichever available score is highest, newest, or easiest to extract as the canonical score.
