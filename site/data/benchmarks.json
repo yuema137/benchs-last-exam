@@ -1,6 +1,64 @@
 {
   "snapshot_id": "2026-09-05",
   "source": "Curated benchmark exports; see resource registry for source lineage",
+  "reference_organizations": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "aliases": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "aliases": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "aliases": [
+        "Google",
+        "Google DeepMind",
+        "DeepMind",
+        "Google Research"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "aliases": [
+        "DeepSeek"
+      ]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "aliases": [
+        "Qwen",
+        "Alibaba",
+        "Alibaba/Qwen",
+        "Qwen/Alibaba"
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "aliases": [
+        "Meta",
+        "Meta AI"
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "aliases": [
+        "xAI"
+      ]
+    }
+  ],
   "resources": [
     {
       "id": "resource-aider-llm-leaderboards",
@@ -57704,14 +57762,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.8571428571428571,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -69186,14 +69247,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.8571428571428571,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -80871,15 +80935,18 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -109955,12 +110022,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -114598,14 +114667,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -115379,10 +115450,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
-          "Anthropic",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -117360,10 +117431,10 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen"
         ],
         "panel_size": 7,
@@ -120106,13 +120177,15 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Google",
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -121247,11 +121320,12 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI"
+          "Qwen"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -121985,9 +122059,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -129685,15 +129759,18 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -139657,12 +139734,13 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
@@ -151633,15 +151711,18 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -156361,15 +156442,18 @@
         "notes": "Cost varies by model, harness, and inference settings."
       },
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -157918,13 +158002,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -168634,15 +168719,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -173551,13 +173638,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -179131,13 +179221,15 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Google",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -186415,14 +186507,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.7142857142857143,
         "represented_organizations": [
-          "DeepSeek",
+          "OpenAI",
           "Google",
-          "OpenAI"
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -193922,13 +194016,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -200453,15 +200550,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.8571428571428571,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -201210,8 +201309,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Google",
-          "OpenAI"
+          "OpenAI",
+          "Google"
         ],
         "panel_size": 7,
         "status": "low"
@@ -209833,12 +209932,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -210231,8 +210332,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Anthropic",
-          "OpenAI"
+          "OpenAI",
+          "Anthropic"
         ],
         "panel_size": 7,
         "status": "low"
@@ -210952,8 +211053,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Anthropic",
-          "OpenAI"
+          "OpenAI",
+          "Anthropic"
         ],
         "panel_size": 7,
         "status": "low"
@@ -211540,14 +211641,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -213391,14 +213494,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -216461,10 +216566,10 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "xAI"
         ],
         "panel_size": 7,
@@ -226009,12 +226114,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -226977,13 +227084,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Google",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -227000,7 +227110,7 @@
           "rule": "T50 >= 12 months OR T90 >= 24 months, including censoring"
         },
         "still-frontier": {
-          "eligible": false,
+          "eligible": true,
           "rule": "right-censored T50 AND normalized progress < 50% AND coverage not low"
         },
         "fastest-solved": {
@@ -230604,15 +230714,18 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -231151,9 +231264,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "xAI"
         ],
         "panel_size": 7,
@@ -231681,15 +231794,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek",
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -232460,9 +232574,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -232988,15 +233102,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek",
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -233436,9 +233551,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -234302,10 +234417,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -234885,9 +235000,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -235648,9 +235763,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -238217,15 +238332,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -243594,15 +243711,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -244950,10 +245069,11 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.5714285714285714,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
@@ -246306,8 +246426,8 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
           "xAI"
         ],
         "panel_size": 7,
@@ -246981,15 +247101,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek",
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -247661,9 +247782,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -248546,8 +248667,8 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
           "xAI"
         ],
         "panel_size": 7,
@@ -249684,10 +249805,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -250658,9 +250779,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "xAI"
         ],
         "panel_size": 7,
@@ -251609,8 +251730,8 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
           "xAI"
         ],
         "panel_size": 7,
@@ -252703,9 +252824,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -253535,9 +253656,10 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.14285714285714285,
+        "value": 0.2857142857142857,
         "represented_organizations": [
-          "OpenAI"
+          "OpenAI",
+          "Qwen"
         ],
         "panel_size": 7,
         "status": "low"
@@ -254205,9 +254327,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "xAI"
         ],
         "panel_size": 7,
@@ -256112,9 +256234,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -256787,9 +256909,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -258564,14 +258686,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.8571428571428571,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
+          "Google",
           "DeepSeek",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -262513,14 +262638,17 @@
         "notes": "Cost varies by model, harness, and inference settings."
       },
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -263373,14 +263501,17 @@
         "notes": "Cost varies by model, harness, and inference settings."
       },
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -264508,10 +264639,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -264998,13 +265129,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -265021,7 +265153,7 @@
           "rule": "T50 >= 12 months OR T90 >= 24 months, including censoring"
         },
         "still-frontier": {
-          "eligible": false,
+          "eligible": true,
           "rule": "right-censored T50 AND normalized progress < 50% AND coverage not low"
         },
         "fastest-solved": {
@@ -265539,11 +265671,12 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
-          "OpenAI"
+          "Google",
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -266397,9 +266530,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -266886,9 +267019,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -267464,13 +267597,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -268575,8 +268709,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Anthropic",
-          "OpenAI"
+          "OpenAI",
+          "Anthropic"
         ],
         "panel_size": 7,
         "status": "low"
@@ -269013,9 +269147,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -270123,9 +270257,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -272635,15 +272769,18 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -275710,13 +275847,15 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "OpenAI"
+          "Google",
+          "Qwen"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -275733,7 +275872,7 @@
           "rule": "T50 >= 12 months OR T90 >= 24 months, including censoring"
         },
         "still-frontier": {
-          "eligible": false,
+          "eligible": true,
           "rule": "right-censored T50 AND normalized progress < 50% AND coverage not low"
         },
         "fastest-solved": {
@@ -278668,15 +278807,17 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
           "xAI"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -279443,9 +279584,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -280409,10 +280550,11 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.5714285714285714,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
+          "Google",
           "xAI"
         ],
         "panel_size": 7,
@@ -288439,12 +288581,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -292379,12 +292523,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.7142857142857143,
+        "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -297108,13 +297254,14 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Google",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -307444,13 +307591,15 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.2857142857142857,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Google",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "low"
+        "status": "medium"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -308073,10 +308222,10 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen"
         ],
         "panel_size": 7,
@@ -308747,9 +308896,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -309281,9 +309430,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "DeepSeek",
+          "OpenAI",
           "Google",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -309674,8 +309823,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Google",
-          "OpenAI"
+          "OpenAI",
+          "Google"
         ],
         "panel_size": 7,
         "status": "low"
@@ -310304,12 +310453,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -310751,9 +310900,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -311334,12 +311483,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -311824,9 +311973,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Google",
+          "DeepSeek",
           "Qwen"
         ],
         "panel_size": 7,
@@ -312267,9 +312416,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -312810,9 +312959,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -313510,12 +313659,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -314163,10 +314312,10 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen"
         ],
         "panel_size": 7,
@@ -314765,10 +314914,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -315458,8 +315607,8 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "Anthropic",
           "OpenAI",
+          "Anthropic",
           "Qwen"
         ],
         "panel_size": 7,
@@ -316011,9 +316160,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -316614,10 +316763,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -317168,9 +317317,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -317868,11 +318017,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
-          "Qwen"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -318570,9 +318719,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -319174,10 +319323,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -320053,11 +320202,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -320805,9 +320954,9 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen",
           "xAI"
         ],
@@ -321447,8 +321596,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Google",
-          "OpenAI"
+          "OpenAI",
+          "Google"
         ],
         "panel_size": 7,
         "status": "low"
@@ -322270,9 +322419,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -322821,8 +322970,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Google",
-          "OpenAI"
+          "OpenAI",
+          "Google"
         ],
         "panel_size": 7,
         "status": "low"
@@ -323420,9 +323569,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -324071,11 +324220,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -325026,10 +325175,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
-          "DeepSeek",
+          "OpenAI",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -325774,12 +325923,12 @@
       "coverage": {
         "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -326429,11 +326578,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
-          "Qwen"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -327132,11 +327281,11 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
           "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -327892,12 +328041,12 @@
       "coverage": {
         "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -328652,11 +328801,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
-          "Qwen"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -329251,10 +329400,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
-          "DeepSeek",
           "Google",
-          "Meta",
-          "Qwen"
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -329990,12 +330139,12 @@
       "coverage": {
         "value": 1.0,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "Qwen",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -330686,12 +330835,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -331381,8 +331530,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Meta",
-          "OpenAI"
+          "OpenAI",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "low"
@@ -332029,10 +332178,10 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
           "xAI"
         ],
         "panel_size": 7,
@@ -332733,12 +332882,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -333339,8 +333488,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Meta",
-          "OpenAI"
+          "OpenAI",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "low"
@@ -334367,11 +334516,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -334969,9 +335118,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -336161,11 +336310,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -336866,9 +337015,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -337566,9 +337715,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -338471,11 +338620,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
-          "Qwen"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -339151,9 +339300,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -339855,9 +340004,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -340596,10 +340745,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -341647,11 +341796,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "DeepSeek",
           "Google",
-          "Meta",
-          "OpenAI"
+          "DeepSeek",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -342191,8 +342340,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "Google",
-          "OpenAI"
+          "OpenAI",
+          "Google"
         ],
         "panel_size": 7,
         "status": "low"
@@ -342840,9 +342989,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -343825,11 +343974,11 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -344960,11 +345109,11 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -345764,11 +345913,11 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Meta",
           "xAI"
         ],
         "panel_size": 7,
@@ -346603,11 +346752,11 @@
       "coverage": {
         "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI",
-          "Qwen"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -347505,8 +347654,8 @@
       "coverage": {
         "value": 0.2857142857142857,
         "represented_organizations": [
-          "DeepSeek",
-          "OpenAI"
+          "OpenAI",
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "low"
@@ -348245,10 +348394,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "DeepSeek",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -348836,9 +348985,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -349672,12 +349821,12 @@
       "coverage": {
         "value": 0.8571428571428571,
         "represented_organizations": [
-          "Anthropic",
-          "DeepSeek",
-          "Google",
-          "Meta",
           "OpenAI",
-          "Qwen"
+          "Anthropic",
+          "Google",
+          "DeepSeek",
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
         "status": "high"
@@ -350269,9 +350418,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
-          "DeepSeek",
+          "OpenAI",
           "Google",
-          "OpenAI"
+          "DeepSeek"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -351018,15 +351167,16 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.5714285714285714,
+        "value": 0.7142857142857143,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Qwen",
+          "Meta"
         ],
         "panel_size": 7,
-        "status": "medium"
+        "status": "high"
       },
       "unavailable": [
         "T80: not included in the first vertical slice"
@@ -351621,9 +351771,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -352674,10 +352824,10 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -353328,9 +353478,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "xAI"
         ],
         "panel_size": 7,
@@ -353970,11 +354120,12 @@
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
-        "value": 0.42857142857142855,
+        "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI"
+          "Qwen"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -354575,9 +354726,9 @@
       "coverage": {
         "value": 0.5714285714285714,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
           "Google",
-          "OpenAI",
           "Qwen"
         ],
         "panel_size": 7,
@@ -355998,9 +356149,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Meta",
-          "OpenAI"
+          "Meta"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -356546,9 +356697,9 @@
       "coverage": {
         "value": 0.42857142857142855,
         "represented_organizations": [
+          "OpenAI",
           "Anthropic",
-          "Google",
-          "OpenAI"
+          "Google"
         ],
         "panel_size": 7,
         "status": "medium"
@@ -357350,13 +357501,16 @@
     "still-frontier": [
       "critpt",
       "cybench",
+      "spatialviz-bench",
       "swe-bench-science",
       "automationbench",
       "benchcad-vision2code",
       "the-agent-company",
       "scienceagentbench",
+      "mle-bench",
       "paperbench",
       "assistantbench",
+      "gso",
       "apex-agents",
       "olympiadbench-physics",
       "eee-bench-v2",

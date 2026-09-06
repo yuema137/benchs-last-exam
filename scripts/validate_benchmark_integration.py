@@ -9,9 +9,40 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 APP = ROOT / "site" / "app.js"
+ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 
 REQUIRED_STORY_VIEWS = ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")
 MONTH_DAYS = 30.44
+
+
+def load_reference_organizations():
+    payload = json.loads(ORGANIZATION_REGISTRY.read_text())
+    organizations = payload.get("reference_organizations", [])
+    names = [item.get("name") for item in organizations]
+    aliases = {}
+    errors = []
+    if len(names) != 7 or len(names) != len(set(names)):
+        errors.append("organization registry must contain seven unique reference organizations")
+    for item in organizations:
+        if not item.get("id") or not item.get("name") or not item.get("aliases"):
+            errors.append(f"invalid reference organization record: {item}")
+            continue
+        for alias in item["aliases"]:
+            key = alias.strip().casefold()
+            if key in aliases and aliases[key] != item["name"]:
+                errors.append(f"organization alias {alias!r} maps to multiple reference organizations")
+            aliases[key] = item["name"]
+    return organizations, aliases, errors
+
+
+def represented_reference_organizations(observations, organizations, aliases):
+    represented = set()
+    for observation in observations:
+        for label in (observation.get("organization") or "").split(","):
+            canonical = aliases.get(label.strip().casefold())
+            if canonical:
+                represented.add(canonical)
+    return [item["name"] for item in organizations if item["name"] in represented]
 
 
 def expected_lifecycle_decisions(benchmark, snapshot_date):
@@ -124,15 +155,27 @@ def validate_benchmark(benchmark, resources, models):
 
 def main():
     payload = json.loads(SNAPSHOT.read_text())
+    organizations, organization_aliases, organization_errors = load_reference_organizations()
     benchmarks = payload.get("benchmarks", [])
     resources = {item["id"]: item for item in payload.get("resources", [])}
     models = {item["id"]: item for item in payload.get("models", [])}
-    errors = []
+    errors = list(organization_errors)
+    if payload.get("reference_organizations") != organizations:
+        errors.append("generated reference organization panel is stale")
     ids = [item.get("id") for item in benchmarks]
     if len(ids) != len(set(ids)):
         errors.append("duplicate active benchmark IDs")
     for benchmark in benchmarks:
         errors.extend(validate_benchmark(benchmark, resources, models))
+        expected_organizations = represented_reference_organizations(
+            benchmark.get("observations", []), organizations, organization_aliases
+        )
+        coverage = benchmark.get("coverage", {})
+        if coverage.get("represented_organizations") != expected_organizations:
+            errors.append(f"{benchmark.get('id')}: stale normalized coverage organizations")
+        expected_value = len(expected_organizations) / len(organizations)
+        if coverage.get("value") != expected_value:
+            errors.append(f"{benchmark.get('id')}: stale normalized coverage value")
     lifecycle_views = payload.get("lifecycle_views")
     if not isinstance(lifecycle_views, dict):
         errors.append("generated lifecycle_views missing")

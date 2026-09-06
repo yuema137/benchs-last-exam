@@ -13,6 +13,7 @@ OUT = ROOT / "site" / "data" / "benchmarks.json"
 RESOURCE_OUT = ROOT / "data" / "resources.json"
 OBSERVATION_OUT = ROOT / "data" / "observations.jsonl"
 MODEL_OUT = ROOT / "data" / "models.json"
+ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 
 BENCHMARKS = [
     {"id": "mmlu", "name": "MMLU", "domain": "General knowledge", "file": "mmlu_external.csv", "score": "EM", "release": "2020-09-07", "floor": 0.25, "ceiling": 1.0, "source": "https://arxiv.org/abs/2009.03300", "summary": {"en": "MMLU tests broad knowledge across academic and professional subjects.", "zh": "MMLU 测试模型在多个学术和专业领域里的综合知识。"}, "task_format": {"en": "Each item is a four-choice multiple-choice question. The model selects one answer.", "zh": "每个 task 都是四选一问题，模型需要选出一个答案。"}, "scoring": {"metric_name": "Exact-match accuracy", "explanation": {"en": "A response is correct only when the selected answer matches the answer key. The score is the fraction of questions answered correctly.", "zh": "只有模型选中的答案和标准答案一致，这道题才算答对。分数就是答对题目占全部题目的比例。"}}, "evaluation_target": "final_output"},
@@ -22,7 +23,14 @@ BENCHMARKS = [
     {"id": "swe-bench-verified", "name": "SWE-bench Verified", "domain": "Coding / agents", "file": "swe_bench_verified.csv", "score": "Best score (across scorers)", "release": "2024-08-13", "floor": 0.0, "ceiling": 1.0, "source": "https://openai.com/index/introducing-swe-bench-verified/", "summary": {"en": "SWE-bench Verified tests whether a coding agent can resolve real GitHub issues in a repository.", "zh": "SWE-bench Verified 测试 coding agent 能不能在真实代码仓库里修复 GitHub issue。"}, "task_format": {"en": "The agent receives a repository and issue description, edits files in an environment, and submits a patch. This is not a one-shot answer task.", "zh": "agent 会收到一个代码仓库和 issue 描述，在环境里修改文件并提交 patch。这不是只回答一次文本的问题。"}, "scoring": {"metric_name": "Issue resolution rate", "explanation": {"en": "A task counts as solved when the submitted patch passes the task's required tests. The score is the percentage of issues resolved.", "zh": "如果提交的 patch 通过这个 task 要求的测试，这个 task 才算解决。分数就是解决 issue 占全部 issue 的比例。"}}, "evaluation_target": "environment_outcome"},
 ]
 
-REFERENCE_ORGANIZATIONS = {"OpenAI", "Anthropic", "Google", "DeepSeek", "Qwen", "Meta", "xAI"}
+_organization_payload = json.loads(ORGANIZATION_REGISTRY.read_text())
+REFERENCE_ORGANIZATIONS = tuple(_organization_payload["reference_organizations"])
+REFERENCE_ORGANIZATION_NAMES = tuple(item["name"] for item in REFERENCE_ORGANIZATIONS)
+REFERENCE_ORGANIZATION_ALIASES = {
+    alias.casefold(): item["name"]
+    for item in REFERENCE_ORGANIZATIONS
+    for alias in item["aliases"]
+}
 
 MODEL_RELEASE_RESOURCES = {
     "fable-5-1": {
@@ -554,6 +562,21 @@ def slug(value):
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-") or "unknown"
 
 
+def canonical_reference_organizations(value):
+    """Resolve source-specific organization labels to the seven panel names.
+
+    Source exports sometimes use a research-lab name (Google DeepMind), a
+    parent-company name (Alibaba), or comma-separated affiliations. Preserve
+    the source label on the observation, but use this registry for Coverage.
+    """
+    represented = set()
+    for label in (value or "").split(","):
+        canonical = REFERENCE_ORGANIZATION_ALIASES.get(label.strip().casefold())
+        if canonical:
+            represented.add(canonical)
+    return represented
+
+
 def register_resource(resources, url, title, *, resource_type="other", publisher=None,
                       authority="trusted_secondary", scope=("benchmark", "model"),
                       notes=None):
@@ -875,9 +898,11 @@ def build_benchmark(spec, resources, models):
         if divisor != 1:
             method = f"median of reported full-run costs divided by the documented {divisor}-task benchmark size"
         cost = {"value": sorted(cost_values)[len(cost_values) // 2] / divisor, "currency": "USD", "per_task": True, "method": method, "source_ids": sorted({source_id for row in rows for source_id in row["source_ids"]}), "notes": "Cost varies by model, harness, and inference settings."}
-    organizations = {row["organization"] for row in rows}
-    coverage_orgs = sorted(organizations & REFERENCE_ORGANIZATIONS)
-    coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATIONS)
+    coverage_orgs = [
+        name for name in REFERENCE_ORGANIZATION_NAMES
+        if any(name in canonical_reference_organizations(row["organization"]) for row in rows)
+    ]
+    coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATION_NAMES)
     auxiliary_score_series = []
     auxiliary_series_ids = sorted({row["score_series_id"] for row in rows if row["score_role"] == "auxiliary"})
     for series_id in auxiliary_series_ids:
@@ -959,7 +984,7 @@ def build_benchmark(spec, resources, models):
         "capability_velocity_180d": velocity_180d,
         "reported_velocity_180d": reported_velocity_180d,
         "cost_per_task": cost,
-        "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATIONS), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
+        "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATION_NAMES), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
         "resource_ids": [benchmark_resource_id],
         "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
@@ -991,6 +1016,7 @@ def main():
     payload = {
         "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
         "source": "Curated benchmark exports; see resource registry for source lineage",
+        "reference_organizations": list(REFERENCE_ORGANIZATIONS),
         "resources": sorted(resources.values(), key=lambda item: item["id"]),
         "models": sorted(models.values(), key=lambda item: item["id"]),
         "benchmarks": benchmarks,

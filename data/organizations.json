@@ -1,0 +1,39 @@
+{
+  "reference_organizations": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "aliases": ["OpenAI"]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "aliases": ["Anthropic"]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "aliases": ["Google", "Google DeepMind", "DeepMind", "Google Research"]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "aliases": ["DeepSeek"]
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "aliases": ["Qwen", "Alibaba", "Alibaba/Qwen", "Qwen/Alibaba"]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "aliases": ["Meta", "Meta AI"]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "aliases": ["xAI"]
+    }
+  ]
+}
