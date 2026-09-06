@@ -15,7 +15,15 @@ SNAPSHOT = Path(__file__).resolve().parents[1] / "site" / "data" / "benchmarks.j
 class SnapshotInvariantTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.benchmarks = json.loads(SNAPSHOT.read_text())["benchmarks"]
+        cls.payload = json.loads(SNAPSHOT.read_text())
+        cls.benchmarks = cls.payload["benchmarks"]
+
+    def test_snapshot_uses_canonical_measurement_schema_v2(self):
+        self.assertEqual(self.payload["schema_version"], 2)
+
+    def test_every_resource_has_a_navigable_url(self):
+        for resource in self.payload["resources"]:
+            self.assertIn("://", resource["url"], resource["id"])
 
     def test_benchmarks_use_the_two_level_taxonomy(self):
         allowed_types = {"Model", "Agent"}
@@ -72,10 +80,10 @@ class SnapshotInvariantTests(unittest.TestCase):
         expected = {
             "Claude Fable 5.1": "https://www.anthropic.com/claude/fable",
             "GPT-6 Astra": "https://developers.openai.com/api/docs/models/gpt-6-astra",
-            "Gemini 3.8 Flash": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
-            "DeepSeek-V4-Pro-0813": "https://api-docs.deepseek.com/news/news260813/",
+            "Gemini 3.8 Flash": "https://deepmind.google/models/model-cards/gemini-3-8-flash",
+            "DeepSeek-V4-Pro-0813": "https://api-docs.deepseek.com/news/news260813",
             "Qwen3.8-Max": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max",
-            "Llama 4 Maverick": "https://ai.meta.com/llama/get-started/",
+            "Llama 4 Maverick": "https://ai.meta.com/llama/get-started",
             "Grok 4.6": "https://x.ai/news/grok-4-6",
         }
         anchors = {name: next((model for model in payload["models"] if model["canonical_name"] == name), None) for name in expected}

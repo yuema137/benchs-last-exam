@@ -2,16 +2,19 @@
 """Build the small static benchmark snapshot used by the local site."""
 
 import csv
+import hashlib
 import json
 import re
 from datetime import date, datetime
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "site" / "data" / "benchmarks.json"
 RESOURCE_OUT = ROOT / "data" / "resources.json"
 OBSERVATION_OUT = ROOT / "data" / "observations.jsonl"
+EVIDENCE_OUT = ROOT / "data" / "evidence.jsonl"
 MODEL_OUT = ROOT / "data" / "models.json"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 
@@ -562,6 +565,35 @@ def slug(value):
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-") or "unknown"
 
 
+def stable_id(prefix, *parts):
+    """Return a compact ID derived from semantic identity, never row position."""
+    identity = "\x1f".join(str(part).strip() for part in parts)
+    digest = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:16]
+    label = slug(parts[-1])[:48] if parts else "record"
+    return f"{prefix}-{label}-{digest}"
+
+
+def canonical_url(value):
+    """Normalize equivalent evidence URLs without erasing source versions."""
+    value = (value or "").strip()
+    if not value or "://" not in value:
+        return value
+    parsed = urlsplit(value)
+    scheme = "https" if parsed.scheme in {"http", "https"} else parsed.scheme.lower()
+    host = parsed.netloc.casefold()
+    path = re.sub(r"/{2,}", "/", parsed.path)
+    if host in {"arxiv.org", "www.arxiv.org"}:
+        host = "arxiv.org"
+        match = re.match(r"/(?:abs|pdf|html)/([^/?#]+?)(?:\.pdf)?$", path)
+        if match:
+            path = f"/abs/{match.group(1)}"
+    elif path != "/":
+        path = path.rstrip("/")
+    query = urlencode([(key, val) for key, val in parse_qsl(parsed.query, keep_blank_values=True)
+                       if not key.casefold().startswith("utm_")])
+    return urlunsplit((scheme, host, path, query, ""))
+
+
 def canonical_reference_organizations(value):
     """Resolve source-specific organization labels to the seven panel names.
 
@@ -577,10 +609,16 @@ def canonical_reference_organizations(value):
     return represented
 
 
+def organization_identity(value):
+    canonical = sorted(canonical_reference_organizations(value))
+    return "|".join(name.casefold() for name in canonical) if canonical else slug(value or "Unknown")
+
+
 def register_resource(resources, url, title, *, resource_type="other", publisher=None,
                       authority="trusted_secondary", scope=("benchmark", "model"),
                       notes=None):
-    resource_id = f"resource-{slug(url)}"
+    url = canonical_url(url)
+    resource_id = stable_id("resource", url)
     resources.setdefault(resource_id, {
         "id": resource_id,
         "resource_scope": list(scope),
@@ -596,6 +634,37 @@ def register_resource(resources, url, title, *, resource_type="other", publisher
         "notes": notes,
     })
     return resource_id
+
+
+def model_identity(row, display_model):
+    """Use the source's model/config identifier before its mutable display name."""
+    configuration = (row.get("Model version") or display_model).strip()
+    organization = (row.get("Organization") or "Unknown").strip()
+    identity_organization = organization_identity(organization)
+    return stable_id("model", identity_organization, slug(configuration)), configuration, identity_organization
+
+
+def evidence_identity(spec, row, row_number):
+    source_row_id = (row.get("id") or "").strip()
+    if source_row_id:
+        return stable_id("evidence", spec["id"], source_row_id)
+    normalized_row = json.dumps({key: value for key, value in row.items() if key is not None and value not in (None, "")},
+                                sort_keys=True, separators=(",", ":"))
+    # row_number is diagnostic only. Content determines identity when exports lack IDs.
+    return stable_id("evidence", spec["id"], spec["file"], normalized_row)
+
+
+def measurement_identity(row):
+    return stable_id(
+        "obs",
+        row["benchmark_version_id"],
+        row["model_id"],
+        row["model_label_id"],
+        row["score_series_id"],
+        row["protocol_id"],
+        row["task_set_id"],
+        format(row["score"], ".15g"),
+    )
 
 
 def model_family(model, organization):
@@ -689,6 +758,112 @@ def parse_dates(row):
     }
 
 
+def register_model(models, *, model_id, canonical_name, configuration, identity_organization,
+                   family_id, release_date,
+                   organization, resource_ids, domain, evaluation_type):
+    model = models.setdefault(model_id, {
+        "id": model_id,
+        "canonical_name": canonical_name,
+        "aliases": [],
+        "configuration_id": configuration,
+        "identity_organization": identity_organization,
+        "family_id": family_id,
+        "release_date": release_date,
+        "organization": organization,
+        "resource_ids": [],
+        "roles": ["contemporary_frontier"],
+        "domains": [],
+        "evaluation_types": [],
+        "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+        "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource.",
+    })
+    if canonical_name != model["canonical_name"] and canonical_name not in model["aliases"]:
+        model["aliases"].append(canonical_name)
+    if release_date and (not model["release_date"] or release_date < model["release_date"]):
+        model["release_date"] = release_date
+    for resource_id in resource_ids:
+        if resource_id and resource_id not in model["resource_ids"]:
+            model["resource_ids"].append(resource_id)
+    if domain not in model["domains"]:
+        model["domains"].append(domain)
+    if evaluation_type not in model["evaluation_types"]:
+        model["evaluation_types"].append(evaluation_type)
+    return model
+
+
+def _earliest(values):
+    return min((value for value in values if value), default=None)
+
+
+def merge_measurements(rows):
+    """Collapse duplicate source rows into one canonical measured score.
+
+    Equality is intentionally strict: benchmark version, model configuration,
+    score series, protocol, task set, and exact normalized score must all match.
+    Every source row remains addressable through evidence_ids and evidence.jsonl.
+    """
+    groups = {}
+    for row in rows:
+        row["observation_id"] = measurement_identity(row)
+        groups.setdefault(row["observation_id"], []).append(row)
+
+    merged = []
+    for observation_id, evidence_rows in groups.items():
+        evidence_rows = sorted(evidence_rows, key=lambda item: item["evidence_id"])
+        base = dict(evidence_rows[0])
+        evaluation_date = _earliest(item.get("evaluation_date") for item in evidence_rows)
+        model_release_date = _earliest(item.get("model_release_date") for item in evidence_rows)
+        result_public_date = _earliest(item.get("result_public_date") for item in evidence_rows)
+        observation_date = _earliest((evaluation_date, model_release_date, result_public_date))
+        selected_date_sources = []
+        for item in evidence_rows:
+            if item.get("observation_date") == observation_date:
+                selected_date_sources.extend(item.get("observation_date_sources", []))
+        selected_date_sources = list({
+            json.dumps(source, sort_keys=True): source for source in selected_date_sources
+        }.values())
+        observation_precision = (
+            "month" if selected_date_sources and all(source.get("precision") == "month" for source in selected_date_sources)
+            else "day" if selected_date_sources else None
+        )
+        source_ids = sorted({source_id for item in evidence_rows for source_id in item["source_ids"]})
+        score_source_ids = sorted({source_id for item in evidence_rows for source_id in item["score_source_ids"]})
+        date_source_ids = sorted({
+            source_id for source in selected_date_sources for source_id in source.get("resource_ids", [])
+        })
+        base.update({
+            "observation_id": observation_id,
+            "evidence_ids": [item["evidence_id"] for item in evidence_rows],
+            "evidence_count": len(evidence_rows),
+            "source_row_ids": sorted({item["source_row_id"] for item in evidence_rows if item.get("source_row_id")}),
+            "source_ids": source_ids,
+            "score_source_ids": score_source_ids,
+            "source": base["source"] if base["score_source_ids"] else None,
+            "evaluation_date": evaluation_date,
+            "model_release_date": model_release_date,
+            "result_public_date": result_public_date,
+            "source_publication_date": _earliest(item.get("source_publication_date") for item in evidence_rows),
+            "observation_date": observation_date,
+            "observation_date_precision": observation_precision,
+            "observation_date_sources": selected_date_sources,
+            "observation_date_source_ids": date_source_ids,
+            "evaluation_date_sources": [source for item in evidence_rows for source in item.get("evaluation_date_sources", [])],
+            "score_publication_date_sources": [source for item in evidence_rows for source in item.get("score_publication_date_sources", [])],
+            "date": observation_date,
+            "date_precision": observation_precision,
+            "date_notes": None if result_public_date else "A score-publication date is not present in the source export.",
+            "capability_date": observation_date,
+            "retrospective": any(item["retrospective"] for item in evidence_rows),
+            "contemporaneous": all(item["contemporaneous"] for item in evidence_rows),
+            "historical_frontier_eligible": bool(result_public_date),
+        })
+        base["temporal_class"] = "retrospective_evaluation" if base["retrospective"] else "historical_or_unknown"
+        base.pop("evidence_id", None)
+        base.pop("source_row_id", None)
+        merged.append(base)
+    return merged
+
+
 def build_frontier(rows, date_field, date_meaning, minimum_date=None):
     """Build a deterministic, step-function frontier from canonical observations.
 
@@ -709,7 +884,13 @@ def build_frontier(rows, date_field, date_meaning, minimum_date=None):
     frontier = []
     best_score = None
     for event_date in sorted(cohorts):
-        cohort = sorted(cohorts[event_date], key=lambda item: (item["score"], item["observation_id"]))
+        cohort = sorted(
+            cohorts[event_date],
+            key=lambda item: (
+                item["score"], item.get("model_label_id") or slug(item.get("model", "unknown")),
+                item["observation_id"],
+            ),
+        )
         winner = cohort[-1]
         if best_score is None or winner["score"] > best_score:
             event = {**winner}
@@ -797,7 +978,7 @@ def lifecycle_view_ids(benchmarks, snapshot_date):
     return views
 
 
-def build_benchmark(spec, resources, models):
+def build_benchmark(spec, resources, models, evidence_records):
     benchmark_resource_id = register_resource(
         resources, spec["source"], f"{spec['name']} primary source", resource_type="paper",
         publisher="Benchmark authors", authority="primary", scope=("benchmark",),
@@ -828,9 +1009,13 @@ def build_benchmark(spec, resources, models):
             result_public_date = dates["result_public_date"]
             source_publication_date = dates["source_publication_date"]
             observation_date = dates["observation_date"]
-            model = row.get("Name") or row.get("Model version") or "Unknown model"
-            source_url = row.get("Source link") or row.get("Source Link") or row.get("Source URL") or row.get("Logs") or row.get("Source") or spec["source"]
-            source_is_benchmark_primary = source_url == spec["source"]
+            model = (row.get("Name") or row.get("Model version") or "Unknown model").strip()
+            source_candidate = (
+                row.get("Source link") or row.get("Source Link") or row.get("Source URL")
+                or row.get("Logs") or row.get("Source") or ""
+            ).strip()
+            source_url = source_candidate if "://" in source_candidate else spec["source"]
+            source_is_benchmark_primary = canonical_url(source_url) == canonical_url(spec["source"])
             source_id = register_resource(
                 resources, source_url,
                 row.get("Source") or ("Epoch evaluation log" if row.get("Logs") else f"{spec['name']} source"),
@@ -841,7 +1026,7 @@ def build_benchmark(spec, resources, models):
                 notes="Shared evidence resource; the export does not provide a model-specific source record."
                 if not row.get("Source link") and not row.get("Logs") else None,
             )
-            model_id = f"model-{slug(model)}"
+            model_id, model_configuration, model_identity_organization = model_identity(row, model)
             family_id = model_family(model, row.get("Organization") or "unknown")
             release_resource_id = model_release_resource(resources, model)
             observation_date_sources = []
@@ -857,19 +1042,19 @@ def build_benchmark(spec, resources, models):
             retrospective = is_math_retro or bool(
                 evaluation_date and model_release_date and evaluation_date > model_release_date
             )
-            models.setdefault(model_id, {
-                "id": model_id,
-                "canonical_name": model,
-                "family_id": family_id,
-                "release_date": model_release_date,
-                "organization": row.get("Organization") or "Unknown",
-                "resource_ids": [source_id] + ([release_resource_id] if release_resource_id else []),
-                "roles": ["contemporary_frontier"],
-                "domains": [spec["domain"]],
-                "evaluation_types": [spec["evaluation_type"]],
-                "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
-                "provenance_note": "The current export provides evaluation evidence but not a model-specific official resource.",
-            })
+            register_model(
+                models,
+                model_id=model_id,
+                canonical_name=model,
+                configuration=model_configuration,
+                identity_organization=model_identity_organization,
+                family_id=family_id,
+                release_date=model_release_date,
+                organization=row.get("Organization") or "Unknown",
+                resource_ids=[source_id, release_resource_id],
+                domain=spec["domain"],
+                evaluation_type=spec["evaluation_type"],
+            )
             source_row_id = row.get("id")
             capability_eligible = (
                 bool(observation_date)
@@ -884,13 +1069,34 @@ def build_benchmark(spec, resources, models):
             score_role = "canonical" if protocol_id == spec["protocol_id"] else "auxiliary"
             score_series_id = (f"{spec['id']}-canonical-score" if score_role == "canonical"
                                else f"{spec['id']}-auxiliary-{slug(protocol_id)}")
+            evidence_id = evidence_identity(spec, row, row_number)
+            evidence_records.append({
+                "evidence_id": evidence_id,
+                "benchmark_id": spec["id"],
+                "source_file": spec["file"],
+                "source_row_id": source_row_id,
+                "source_row_number": row_number,
+                "model_id": model_id,
+                "model": model,
+                "model_configuration": model_configuration,
+                "model_identity_organization": model_identity_organization,
+                "score": score,
+                "input_score": input_score,
+                "input_unit": input_unit,
+                "source_ids": [source_id],
+                "dates": dates,
+                "raw_fields": {key: value for key, value in row.items() if key is not None and value not in (None, "")},
+            })
             rows.append({
-                # Some exports repeat a model name or omit a stable row ID.
-                # The row suffix keeps every canonical observation addressable.
-                "observation_id": f"obs-{spec['id']}-{row.get('id') or slug(model)}-{row_number}",
+                "observation_id": None,
+                "evidence_id": evidence_id,
+                "source_row_id": source_row_id,
                 "benchmark_id": spec["id"],
                 "benchmark_version_id": f"{spec['id']}-canonical",
                 "model_id": model_id,
+                "model_configuration": model_configuration,
+                "model_identity_organization": model_identity_organization,
+                "model_label_id": slug(model),
                 "model_family_id": family_id,
                 "model": model,
                 "organization": row.get("Organization") or "Unknown",
@@ -939,9 +1145,11 @@ def build_benchmark(spec, resources, models):
                 ),
                 "contemporaneous": not retrospective,
                 "source_ids": ([source_id, benchmark_resource_id] if source_id != benchmark_resource_id else [source_id]) + ([release_resource_id] if release_resource_id else []),
-                "source": source_url,
+                "score_source_ids": [source_id],
+                "source": resources[source_id]["url"],
                 "notes": "Operational evaluation timeline only; not a historical public-result date.",
             })
+    rows = merge_measurements(rows)
     capability_frontier = build_frontier(
         [row for row in rows if row["score_role"] == "canonical" and row["capability_frontier_eligible"]],
         "capability_date",
@@ -1049,6 +1257,7 @@ def build_benchmark(spec, resources, models):
         "scoring": spec["scoring"],
         "evaluation_target": spec["evaluation_target"],
         "observation_count": len(rows),
+        "evidence_record_count": sum(row["evidence_count"] for row in rows),
         "observations": rows,
         "frontier": [{**point, "source_ids": point["source_ids"]} for point in capability_frontier],
         "frontier_events": [{**point, "source_ids": point["source_ids"]} for point in capability_frontier],
@@ -1081,12 +1290,18 @@ def build_benchmark(spec, resources, models):
 def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     resources, models = {}, {}
-    benchmarks = [build_benchmark(spec, resources, models) for spec in BENCHMARKS]
+    evidence_records = []
+    benchmarks = [build_benchmark(spec, resources, models, evidence_records) for spec in BENCHMARKS]
     for panel_model in REFERENCE_MODEL_RELEASES:
         release_resource_id = model_release_resource(resources, panel_model["canonical_name"])
-        models.setdefault(panel_model["id"], {
-            "id": panel_model["id"],
+        panel_identity_organization = organization_identity(panel_model["organization"])
+        panel_id = stable_id("model", panel_identity_organization, slug(panel_model["canonical_name"]))
+        model = models.setdefault(panel_id, {
+            "id": panel_id,
             "canonical_name": panel_model["canonical_name"],
+            "aliases": [],
+            "configuration_id": panel_model["canonical_name"],
+            "identity_organization": panel_identity_organization,
             "family_id": panel_model["family_id"],
             "release_date": panel_model["release_date"],
             "organization": panel_model["organization"],
@@ -1097,8 +1312,13 @@ def main():
             "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
             "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set.",
         })
+        if panel_model["role"] not in model["roles"]:
+            model["roles"].append(panel_model["role"])
+        if release_resource_id and release_resource_id not in model["resource_ids"]:
+            model["resource_ids"].append(release_resource_id)
     snapshot_date = date.today()
     payload = {
+        "schema_version": 2,
         "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
         "source": "Curated benchmark exports; see resource registry for source lineage",
         "reference_organizations": list(REFERENCE_ORGANIZATIONS),
@@ -1112,6 +1332,7 @@ def main():
     MODEL_OUT.write_text(json.dumps(payload["models"], indent=2) + "\n")
     observations = [observation for benchmark in benchmarks for observation in benchmark["observations"]]
     OBSERVATION_OUT.write_text("".join(json.dumps(observation, sort_keys=True) + "\n" for observation in observations))
+    EVIDENCE_OUT.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in evidence_records))
     print(f"Wrote {OUT} ({len(payload['benchmarks'])} benchmarks)")
 
 

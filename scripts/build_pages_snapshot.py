@@ -39,7 +39,7 @@ def main():
         "built_at": datetime.now(timezone.utc).isoformat(),
         "snapshot_date": benchmarks["snapshot_id"],
         "benchmark_count": len(benchmarks["benchmarks"]),
-        "schema_version": 1,
+        "schema_version": benchmarks["schema_version"],
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(f"Built BLE snapshot at {output} ({manifest['benchmark_count']} benchmarks)")
