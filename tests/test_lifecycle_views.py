@@ -67,6 +67,12 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn("storyDescription.hidden=true", app)
         self.assertIn("[hidden] { display:none !important; }", styles)
 
+    def test_selecting_text_does_not_trigger_container_navigation(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("function shouldIgnoreContainerNavigation", app)
+        self.assertIn("selection&&!selection.isCollapsed&&selection.toString().trim()", app)
+        self.assertIn("if(!shouldIgnoreContainerNavigation(event))routeToDetail", app)
+
     def test_still_frontier_members_and_cards_use_normalized_progress(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
         by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}
@@ -84,6 +90,33 @@ class LifecycleViewRuleTests(unittest.TestCase):
 
         app = Path("site/app.js").read_text(encoding="utf-8")
         self.assertIn('if(view==="still-frontier") return [t("story_frontier"),score(b.normalized_progress)', app)
+
+    def test_frontend_consumes_generated_story_membership(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertNotIn("function storyEligible", app)
+        self.assertIn("filter(b=>members.has(b.id))", app)
+
+    def test_test_of_time_hero_compares_days_to_days(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("t90?.days>=24*30.44?t90:t50", app)
+        self.assertNotIn("24*30.44*86400000", app)
+
+    def test_recently_saturated_orders_by_crossing_date(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn('crossingTimestamp(b,"T90")-crossingTimestamp(a,"T90")', app)
+
+    def test_default_frontier_sort_matches_the_visible_canonical_score_and_keeps_null_last(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("current: frontierValue(b)", app)
+        self.assertIn("if(av==null)return 1;if(bv==null)return -1", app)
+
+    def test_coverage_uses_canonical_reference_organization_names(self):
+        payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
+        names = [item["name"] for item in payload["reference_organizations"]]
+        self.assertEqual(names, ["OpenAI", "Anthropic", "Google", "DeepSeek", "Qwen", "Meta", "xAI"])
+        video_mme = next(item for item in payload["benchmarks"] if item["id"] == "video-mme")
+        self.assertIn("Google", video_mme["coverage"]["represented_organizations"])
+        self.assertIn("Qwen", video_mme["coverage"]["represented_organizations"])
 
     def test_all_generated_story_tabs_match_their_hard_rules(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
