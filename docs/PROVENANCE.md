@@ -24,10 +24,16 @@ python3 scripts/validate_provenance.py
 
 Observations preserve benchmark release date, model release date, evaluation
 date, result-public date, source-publication date, and ingestion date as
-separate fields. The primary capability timeline uses model release date on a
-protocol-compatible observation series. Evaluation and result-public dates
-remain provenance fields; they are not silently substituted into the
-capability timeline.
+separate fields. For one canonical measurement, `observation_date` is the
+earliest available evaluation/run date, model release date, or score-publication
+date. A publication date is eligible only when that source version actually
+contains the score. Multiple sources remain attached to the observation even
+when only the earliest date drives the timeline.
+
+The lifecycle plot uses `max(benchmark_release_date, observation_date)`. A
+pre-release observation therefore appears as `At release` with zero elapsed
+time; its original date remains unchanged in provenance. Negative T50/T80/T90
+durations are forbidden.
 
 ## Update channels prepared by the model
 

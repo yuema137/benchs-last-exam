@@ -228,7 +228,7 @@ BENCHMARKS.extend([
 ])
 
 BENCHMARKS.extend([
-    {"id": "the-agent-company", "name": "TheAgentCompany", "domain": "General agent tasks", "file": "the_agent_company_external.csv", "score": "% Resolved", "release": "2024-10-01", "floor": 0.0, "ceiling": 1.0, "source": "https://the-agent-company.com/", "summary": {"en": "TheAgentCompany evaluates agents on multi-step knowledge-work tasks inside a simulated software company.", "zh": "TheAgentCompany 在模拟的软件公司环境中评估 agent 完成多步知识工作的能力。"}, "task_format": {"en": "An agent works across browser, office, communication, and coding tools to complete a workplace task; success is checked against the resulting state and deliverable.", "zh": "agent 需要跨浏览器、办公、沟通和 coding 工具完成 workplace task，结果通过最终状态和交付物检查。"}, "scoring": {"metric_name": "Task resolution rate", "explanation": {"en": "The score is the share of tasks resolved under the benchmark's task-specific checks. Partial progress is reported separately from the resolved-task rate.", "zh": "分数是按照 task 专用检查成功完成的 task 占比。部分完成进度和 resolved-task rate 分开报告。"}}, "evaluation_target": "environment_outcome", "protocol": "TheAgentCompany v1 evaluation export; OpenHands scaffold and model identity are retained in each observation. The benchmark release date is the public v1 launch month; model release dates drive the capability timeline."},
+    {"id": "the-agent-company", "name": "TheAgentCompany", "domain": "General agent tasks", "file": "the_agent_company_external.csv", "score": "% Resolved", "release": "2024-10-01", "floor": 0.0, "ceiling": 1.0, "source": "https://the-agent-company.com/", "summary": {"en": "TheAgentCompany evaluates agents on multi-step knowledge-work tasks inside a simulated software company.", "zh": "TheAgentCompany 在模拟的软件公司环境中评估 agent 完成多步知识工作的能力。"}, "task_format": {"en": "An agent works across browser, office, communication, and coding tools to complete a workplace task; success is checked against the resulting state and deliverable.", "zh": "agent 需要跨浏览器、办公、沟通和 coding 工具完成 workplace task，结果通过最终状态和交付物检查。"}, "scoring": {"metric_name": "Task resolution rate", "explanation": {"en": "The score is the share of tasks resolved under the benchmark's task-specific checks. Partial progress is reported separately from the resolved-task rate.", "zh": "分数是按照 task 专用检查成功完成的 task 占比。部分完成进度和 resolved-task rate 分开报告。"}}, "evaluation_target": "environment_outcome", "protocol": "TheAgentCompany v1 evaluation export; OpenHands scaffold and model identity are retained in each observation. The benchmark release date is the public v1 launch month; the shared observation-time policy drives the lifecycle timeline."},
     {"id": "deepswe-v1-1", "name": "DeepSWE v1.1", "domain": "Software engineering", "file": "deepswe_external.csv", "score": "Pass@1", "release": "2026-04-01", "floor": 0.0, "ceiling": 1.0, "source": "https://deepswe.datacurve.ai/", "cost_column": "Mean cost (USD)", "summary": {"en": "DeepSWE v1.1 measures long-horizon software-engineering agents on repository-level tasks under a fixed mini-SWE-agent setup.", "zh": "DeepSWE v1.1 在固定的 mini-SWE-agent 设置下，评估 agent 完成 repository-level、长链 software-engineering task 的能力。"}, "task_format": {"en": "The agent inspects a repository, plans and edits multiple files, runs tests, and submits a patch for an issue-level task.", "zh": "agent 需要检查代码仓库、规划并修改多个文件、运行测试，然后为 issue-level task 提交 patch。"}, "scoring": {"metric_name": "Pass@1", "explanation": {"en": "Pass@1 is the fraction of repository tasks whose submitted patch is accepted by the benchmark grader in one run. Pass@4 is retained as a separate field and is not mixed into the headline metric.", "zh": "Pass@1 是一次运行中提交的 patch 被 benchmark grader 接受的 repository task 占比。Pass@4 作为独立字段保留，不和 headline metric 混合。"}}, "evaluation_target": "environment_outcome", "protocol": "DeepSWE leaderboard export; only Pass@1 rows are used for the capability frontier. Harness and reasoning effort remain part of observation provenance."},
     {"id": "frontierswe-v2", "name": "FrontierSWE V2", "domain": "Software engineering", "file": "frontierswe_v2_curated.csv", "score": "Score", "release": "2026-07-01", "floor": 0.0, "ceiling": 1.0, "source": "https://www.frontierswe.com/", "cost_column": "Average cost (USD)", "summary": {"en": "FrontierSWE V2 evaluates coding agents on difficult software tasks using separate implementation, performance, and research-quality dimensions.", "zh": "FrontierSWE V2 从 implementation、performance 和 research quality 等维度评估 agent 完成高难度软件任务的能力。"}, "task_format": {"en": "The agent works on repository-level engineering tasks and submits changes evaluated across implementation correctness, performance, and research-oriented quality criteria.", "zh": "agent 需要完成 repository-level engineering task 并提交修改，结果会从实现正确性、性能和 research quality 等维度评估。"}, "scoring": {"metric_name": "Mean@5 composite score", "explanation": {"en": "The headline score is the mean across five runs of the benchmark's composite score; the implementation, performance, and research components are preserved as supporting evidence.", "zh": "headline score 是五次运行中 composite score 的均值；implementation、performance 和 research 分项作为 supporting evidence 保留。"}}, "evaluation_target": "environment_outcome", "protocol": "FrontierSWE V2 public leaderboard export; Mean@5 rows using the proximus harness are kept together, while Best@5 and Worst@5 are not substituted for the headline metric."},
     {"id": "scienceagentbench", "name": "ScienceAgentBench", "domain": "Science / research", "file": "scienceagentbench_external.csv", "score": "Accuracy", "release": "2024-10-07", "floor": 0.0, "ceiling": 1.0, "source": "https://hal.cs.princeton.edu/scienceagentbench", "summary": {"en": "ScienceAgentBench evaluates language agents on reproducible, data-driven scientific discovery tasks sourced from peer-reviewed publications.", "zh": "ScienceAgentBench 评估 language agent 在可复现、来自同行评审论文的 data-driven scientific discovery task 上的表现。"}, "task_format": {"en": "The agent must produce a self-contained Python program that analyzes scientific data and generates the required result in a reproducible environment.", "zh": "agent 需要生成一个 self-contained Python program，在可复现环境中分析科学数据并产出要求的结果。"}, "scoring": {"metric_name": "Scientific task accuracy", "explanation": {"en": "Accuracy is the fraction of benchmark tasks for which the generated program and its executed result satisfy the task evaluator. The leaderboard also reports total API cost separately.", "zh": "Accuracy 是生成的程序及其执行结果满足 task evaluator 的 benchmark task 占比。leaderboard 还会单独报告总 API cost。"}}, "evaluation_target": "environment_outcome", "protocol": "ScienceAgentBench 102-task release with the HAL leaderboard's verified accuracy results. SAB Self-Debug and HAL Generalist Agent are retained as distinct scaffolds; no cost total is treated as per-task cost."},
@@ -620,12 +620,73 @@ def model_release_resource(resources, model):
     return None
 
 
+def normalize_date(value):
+    """Return an ISO date plus source precision for supported export formats."""
+    value = (value or "").strip()
+    if not value:
+        return None, None
+    value = value[:10]
+    for fmt, precision in (("%Y-%m-%d", "day"), ("%m/%d/%Y", "day"), ("%Y-%m", "month")):
+        try:
+            parsed = datetime.strptime(value, fmt).date()
+            return parsed.isoformat(), precision
+        except ValueError:
+            pass
+    raise ValueError(f"Unsupported date value {value!r}")
+
+
+def earliest_row_date(row, columns):
+    candidates = []
+    for column in columns:
+        value, precision = normalize_date(row.get(column))
+        if value:
+            candidates.append({"date": value, "kind": column, "precision": precision})
+    if not candidates:
+        return None, None, []
+    earliest = min(item["date"] for item in candidates)
+    sources = [item for item in candidates if item["date"] == earliest]
+    precision = "month" if all(item["precision"] == "month" for item in sources) else "day"
+    return earliest, precision, sources
+
+
 def parse_dates(row):
-    evaluation_date = (row.get("Started at") or "")[:10] or None
-    model_release_date = row.get("Release date") or None
-    result_public_date = row.get("Result public date") or None
-    source_publication_date = row.get("Source publication date") or result_public_date
-    return evaluation_date, model_release_date, result_public_date, source_publication_date
+    evaluation_date, evaluation_precision, evaluation_sources = earliest_row_date(
+        row, ("Started at", "Evaluation date", "Date of evaluation", "Run date")
+    )
+    model_release_date, model_release_precision = normalize_date(row.get("Release date"))
+    result_public_date, result_public_precision, publication_sources = earliest_row_date(
+        row, ("Result public date", "Source publication date", "Date added", "Last updated")
+    )
+    source_publication_date, _ = normalize_date(
+        row.get("Source publication date") or row.get("Result public date")
+    )
+    candidates = []
+    if evaluation_date:
+        candidates.append({"date": evaluation_date, "kind": "evaluation_date", "precision": evaluation_precision})
+    if model_release_date:
+        candidates.append({"date": model_release_date, "kind": "model_release_date", "precision": model_release_precision})
+    if result_public_date:
+        candidates.append({"date": result_public_date, "kind": "score_publication_date", "precision": result_public_precision})
+    observation_date = min((item["date"] for item in candidates), default=None)
+    selected = [item for item in candidates if item["date"] == observation_date]
+    observation_precision = (
+        "month" if selected and all(item["precision"] == "month" for item in selected) else
+        "day" if selected else None
+    )
+    return {
+        "evaluation_date": evaluation_date,
+        "evaluation_date_precision": evaluation_precision,
+        "evaluation_date_sources": evaluation_sources,
+        "model_release_date": model_release_date,
+        "model_release_date_precision": model_release_precision,
+        "result_public_date": result_public_date,
+        "result_public_date_precision": result_public_precision,
+        "score_publication_date_sources": publication_sources,
+        "source_publication_date": source_publication_date,
+        "observation_date": observation_date,
+        "observation_date_precision": observation_precision,
+        "observation_date_sources": selected,
+    }
 
 
 def build_frontier(rows, date_field, date_meaning, minimum_date=None):
@@ -654,7 +715,7 @@ def build_frontier(rows, date_field, date_meaning, minimum_date=None):
             event = {**winner}
             event["plot_date"] = event_date
             event["date"] = event_date
-            event["date_kind"] = date_meaning
+            event["date_kind"] = event.get(f"{date_field}_meaning", date_meaning)
             event["frontier_observation_ids"] = [item["observation_id"] for item in cohort]
             frontier.append(event)
             best_score = winner["score"]
@@ -672,7 +733,7 @@ def threshold_metrics(frontier, release, floor, ceiling, as_of=None):
         crossing = next((point for point in frontier if (point["score"] - floor) / (ceiling - floor) >= target), None)
         if crossing:
             days = (date.fromisoformat(crossing["plot_date"]) - release).days
-            result[label] = {"status": "at_release", "days": 0, "qualifying_model_release_date": crossing["plot_date"]} if days <= 0 else {"status": "reached", "days": days}
+            result[label] = {"status": "at_release", "days": 0, "qualifying_observation_date": crossing["plot_date"]} if days <= 0 else {"status": "reached", "days": days, "qualifying_observation_date": crossing["plot_date"]}
         elif frontier:
             result[label] = {"status": "right_censored", "days": max(0, (censor_date - release).days)}
         else:
@@ -761,7 +822,12 @@ def build_benchmark(spec, resources, models):
                 score = input_score
             else:
                 raise ValueError(f"{spec['id']}: unsupported input unit {input_unit!r}")
-            evaluation_date, model_release_date, result_public_date, source_publication_date = parse_dates(row)
+            dates = parse_dates(row)
+            evaluation_date = dates["evaluation_date"]
+            model_release_date = dates["model_release_date"]
+            result_public_date = dates["result_public_date"]
+            source_publication_date = dates["source_publication_date"]
+            observation_date = dates["observation_date"]
             model = row.get("Name") or row.get("Model version") or "Unknown model"
             source_url = row.get("Source link") or row.get("Source Link") or row.get("Source URL") or row.get("Logs") or row.get("Source") or spec["source"]
             source_is_benchmark_primary = source_url == spec["source"]
@@ -778,6 +844,15 @@ def build_benchmark(spec, resources, models):
             model_id = f"model-{slug(model)}"
             family_id = model_family(model, row.get("Organization") or "unknown")
             release_resource_id = model_release_resource(resources, model)
+            observation_date_sources = []
+            for date_source in dates["observation_date_sources"]:
+                evidence_resource_ids = [source_id]
+                if date_source["kind"] == "model_release_date" and release_resource_id:
+                    evidence_resource_ids.insert(0, release_resource_id)
+                observation_date_sources.append({
+                    **date_source,
+                    "resource_ids": evidence_resource_ids,
+                })
             is_math_retro = spec["id"] == "math-level-5"
             retrospective = is_math_retro or bool(
                 evaluation_date and model_release_date and evaluation_date > model_release_date
@@ -797,7 +872,7 @@ def build_benchmark(spec, resources, models):
             })
             source_row_id = row.get("id")
             capability_eligible = (
-                bool(model_release_date)
+                bool(observation_date)
                 and source_row_id not in spec.get("frontier_exclude_ids", set())
                 and model not in spec.get("frontier_exclude_models", set())
             )
@@ -834,13 +909,23 @@ def build_benchmark(spec, resources, models):
                 "evaluation_date": evaluation_date,
                 "result_public_date": result_public_date,
                 "source_publication_date": source_publication_date,
+                "observation_date": observation_date,
+                "observation_date_precision": dates["observation_date_precision"],
+                "observation_date_sources": observation_date_sources,
+                "observation_date_source_ids": sorted({
+                    resource_id
+                    for item in observation_date_sources
+                    for resource_id in item["resource_ids"]
+                }),
+                "evaluation_date_sources": dates["evaluation_date_sources"],
+                "score_publication_date_sources": dates["score_publication_date_sources"],
                 "ingested_at": datetime.now().date().isoformat(),
-                "date_precision": "day" if evaluation_date or result_public_date or model_release_date else None,
-                "date_notes": None if result_public_date else "Result-public date is not present in the source export.",
-                "date": evaluation_date or result_public_date or model_release_date,
-                "date_kind": "evaluation_date" if evaluation_date else "result_public_date" if result_public_date else "model_release_date" if model_release_date else "unknown",
-                "capability_date": model_release_date,
-                "capability_date_meaning": "model_release_date",
+                "date_precision": dates["observation_date_precision"],
+                "date_notes": None if result_public_date else "A score-publication date is not present in the source export.",
+                "date": observation_date,
+                "date_kind": "earliest_observation_evidence_date" if observation_date else "unknown",
+                "capability_date": observation_date,
+                "capability_date_meaning": "earliest_observation_evidence_date",
                 "reported_date_meaning": "result_public_date",
                 "historical_frontier_date": result_public_date,
                 "temporal_class": "retrospective_evaluation" if retrospective else "historical_or_unknown",
@@ -860,7 +945,7 @@ def build_benchmark(spec, resources, models):
     capability_frontier = build_frontier(
         [row for row in rows if row["score_role"] == "canonical" and row["capability_frontier_eligible"]],
         "capability_date",
-        "model release date",
+        "earliest observation evidence date",
         minimum_date=spec["release"],
     )
     reported_frontier = build_frontier(
@@ -909,7 +994,7 @@ def build_benchmark(spec, resources, models):
         series_rows = [row for row in rows if row["score_series_id"] == series_id]
         series_frontier = build_frontier(
             [row for row in series_rows if row.get("capability_date")],
-            "capability_date", "model release date", minimum_date=spec["release"],
+            "capability_date", "earliest observation evidence date", minimum_date=spec["release"],
         )
         auxiliary_score_series.append({
             "series_id": series_id,
@@ -987,7 +1072,7 @@ def build_benchmark(spec, resources, models):
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATION_NAMES), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
         "unavailable": ["T80: not included in the first vertical slice"],
         "resource_ids": [benchmark_resource_id],
-        "date_policy": "Primary capability lifecycle metrics use model_release_date on protocol-compatible curated observations. Evaluation and result-public dates are preserved for provenance; they are not silently substituted into the capability timeline.",
+        "date_policy": "Primary lifecycle time uses the earliest available date among evaluation/run time, model release time, and the earliest recorded score-publication time for the same observation. Plot dates and T50/T80/T90 are clipped at benchmark release, so lifecycle durations are never negative; original dates remain preserved for provenance.",
         "historical_frontier_status": "unknown_public_dates" if not reported_frontier else "available",
         "timeline_default": "capability",
     }

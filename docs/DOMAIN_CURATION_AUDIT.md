@@ -53,7 +53,7 @@ AgentBench, WebArena, Mind2Web, WebShop, ALFWorld, InterCode, AppWorld, and Andr
 
 ## Curation notes
 
-Benchmark-family variants remain separate measurement objects only when their task set or scoring protocol is materially different. A family version is not counted as independent domain coverage. Rolling benchmarks remain deferred because their target changes over time and therefore do not fit the fixed benchmark-release → model-release capability timeline without another methodology.
+Benchmark-family variants remain separate measurement objects only when their task set or scoring protocol is materially different. A family version is not counted as independent domain coverage. Rolling benchmarks remain deferred because their target changes over time and therefore do not fit the fixed benchmark-release → earliest-observation-evidence lifecycle without another methodology.
 
 Citation counts are not hard-coded into the leaderboard. When used for a future admission decision, record the count, index/source, and `checked_at` date next to the candidate. New benchmarks may instead qualify through repeated official adoption by major model developers.
 # Science and engineering expansion audit — 2026-09-04
