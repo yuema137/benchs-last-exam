@@ -99,9 +99,9 @@ class LifecycleViewRuleTests(unittest.TestCase):
         app = Path("site/app.js").read_text(encoding="utf-8")
         self.assertIn('crossingTimestamp(b,"T90")-crossingTimestamp(a,"T90")', app)
 
-    def test_default_frontier_sort_uses_normalized_progress_and_null_last(self):
+    def test_default_frontier_sort_matches_the_visible_canonical_score_and_keeps_null_last(self):
         app = Path("site/app.js").read_text(encoding="utf-8")
-        self.assertIn("current: b.normalized_progress", app)
+        self.assertIn("current: frontierValue(b)", app)
         self.assertIn("if(av==null)return 1;if(bv==null)return -1", app)
 
     def test_coverage_uses_canonical_reference_organization_names(self):
