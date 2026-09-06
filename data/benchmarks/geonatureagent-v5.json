@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Earth Science",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "geonatureagent_v5_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "geonatureagent-v5",
+  "input_unit": "fraction",
+  "metric_id": "geonatureagent-v5-metric-v1",
+  "name": "GeoNatureAgent v5",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "GeoNatureAgent v5 fixed 93 tasks, prompt v3, 16 tools, max_turns=10, temperature=1, strict all-check success.",
+  "protocol_id": "geonatureagent-v5-source-export-v1",
+  "registry_order": 114,
+  "release": "2026-06-11",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task passes only when every required deterministic check succeeds.",
+      "zh": "只有所有必需的 deterministic check 都通过，task 才算成功。"
+    },
+    "metric_name": "Strict task success rate"
+  },
+  "source": "https://arxiv.org/html/2606.12821v1",
+  "summary": {
+    "en": "GeoNatureAgent evaluates tool-using agents on reproducible geoscience and natural-environment workflows.",
+    "zh": "GeoNatureAgent 评估 tool-using agent 完成可复现地球科学与自然环境 workflow 的能力。"
+  },
+  "tags": [
+    "geoscience",
+    "tools",
+    "environment"
+  ],
+  "task_format": {
+    "en": "The agent solves 93 tasks with 16 pinned tools under a ten-turn limit.",
+    "zh": "agent 使用 16 个固定工具，在最多十轮内完成 93 个 task。"
+  }
+}

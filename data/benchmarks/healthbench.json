@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Health",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "healthbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "healthbench",
+  "input_unit": "fraction",
+  "metric_id": "healthbench-metric-v1",
+  "name": "HealthBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "HealthBench overall score; HealthBench Consensus and HealthBench Hard are separate variants and are not merged.",
+  "protocol_id": "healthbench-source-export-v1",
+  "registry_order": 6,
+  "release": "2025-05-12",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A model-based grader checks physician-written criteria for each conversation. The score is the weighted proportion of criteria the response satisfies.",
+      "zh": "model-based grader 会检查每段对话对应的医生标准。分数是回答满足这些标准的加权比例。"
+    },
+    "metric_name": "Physician-rubric score"
+  },
+  "source": "https://openai.com/index/healthbench/",
+  "summary": {
+    "en": "HealthBench tests whether models give useful and safe answers in realistic health conversations judged against physician-written criteria.",
+    "zh": "HealthBench 测试模型能不能在真实健康对话中给出有用、安全的回答，并按照医生写的标准进行评分。"
+  },
+  "tags": [
+    "medical",
+    "physician rubric",
+    "safety"
+  ],
+  "task_format": {
+    "en": "The model receives a multi-turn conversation between a person and a health assistant, then writes the best response to the user's last message.",
+    "zh": "模型会收到一段用户和 health assistant 的多轮对话，然后回答用户最后一条消息。"
+  }
+}

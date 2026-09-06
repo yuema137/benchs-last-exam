@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "lab_bench_v1_protocolqa_external.csv",
+  "floor": 0.2,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "lab-bench-v1-protocolqa",
+  "input_unit": "fraction",
+  "metric_id": "lab-bench-v1-protocolqa-metric-v1",
+  "name": "LAB-Bench ProtocolQA",
+  "progress_baseline": 0.2,
+  "progress_target": 1.0,
+  "protocol": "Original LAB-Bench ProtocolQA full 135-item public/private set, zero-shot CoT, no tools, choices permuted, three-run mean accuracy. Precision and selective coverage are excluded.",
+  "protocol_id": "lab-bench-v1-protocolqa-source-export-v1",
+  "registry_order": 91,
+  "release": "2024-07-17",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the fraction of all 135 ProtocolQA questions answered correctly, averaged across three runs; abstention counts as incorrect.",
+      "zh": "Accuracy 是 135 道 ProtocolQA 题目的正确比例，对三次运行取平均；abstention 计为错误。"
+    },
+    "metric_name": "Three-run full-set accuracy"
+  },
+  "source": "https://arxiv.org/abs/2407.10362",
+  "summary": {
+    "en": "LAB-Bench ProtocolQA tests whether models can diagnose and repair errors introduced into real biological laboratory protocols.",
+    "zh": "LAB-Bench ProtocolQA 测试模型能否发现真实生物实验 protocol 中被引入的错误，并选择正确的修复步骤。"
+  },
+  "tags": [
+    "wet lab",
+    "protocol",
+    "troubleshooting"
+  ],
+  "task_format": {
+    "en": "The model reads a modified biological protocol and experimental failure, then selects the corrective action from four choices plus abstention.",
+    "zh": "模型阅读被修改的生物实验 protocol 和实验失败现象，再从四个修复选项及 abstention 中选择答案。"
+  }
+}

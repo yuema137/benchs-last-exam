@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "scicode_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "scicode",
+  "input_unit": "fraction",
+  "metric_id": "scicode-metric-v1",
+  "name": "SciCode",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "scicode-source-export-v1",
+  "registry_order": 30,
+  "release": "2024-07-18",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A problem is solved when the generated code produces the expected result under the benchmark tests. The score is the fraction solved.",
+      "zh": "生成的代码通过 benchmark tests 并得到预期结果时，这道题才算解决。分数是解决题目的比例。"
+    },
+    "metric_name": "Execution-verified success rate"
+  },
+  "source": "https://arxiv.org/abs/2407.13168",
+  "summary": {
+    "en": "SciCode tests whether models can write executable code for research problems curated by scientists.",
+    "zh": "SciCode 测试模型能不能为科学家挑选的研究问题编写可执行代码。"
+  },
+  "tags": [
+    "scientific coding",
+    "execution",
+    "research"
+  ],
+  "task_format": {
+    "en": "The model solves scientific programming subproblems and submits code that is checked against scientist-authored solutions and tests.",
+    "zh": "模型需要解决科学编程 subproblem，提交的代码会和科学家编写的 solution 及测试进行核验。"
+  }
+}

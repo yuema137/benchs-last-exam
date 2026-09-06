@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "Abstract reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "arc_agi_2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "arc-agi-2",
+  "input_unit": "fraction",
+  "metric_id": "arc-agi-2-metric-v1",
+  "name": "ARC-AGI-2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "arc-agi-2-source-export-v1",
+  "registry_order": 14,
+  "release": "2025-03-24",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A task is correct when either of the two submitted outputs exactly matches the ground truth. The final score is the fraction of tasks solved this way.",
+      "zh": "如果提交的两个输出中有一个和标准答案完全一致，这道题就算答对。最终分数是答对 task 的比例。"
+    },
+    "metric_name": "Pass@2 task accuracy"
+  },
+  "source": "https://arcprize.org/blog/announcing-arc-agi-2-and-arc-prize-2025",
+  "summary": {
+    "en": "ARC-AGI-2 tests whether a system can infer abstract transformations from a few visual examples and generalize them to new grids.",
+    "zh": "ARC-AGI-2 测试系统能否从少量视觉示例中推断抽象变换，并把规则泛化到新的网格。"
+  },
+  "tags": [
+    "visual",
+    "novel reasoning"
+  ],
+  "task_format": {
+    "en": "Each task shows example input-output grids. The system must produce exactly two candidate outputs for the test input.",
+    "zh": "每个 task 会给出输入和输出网格示例，系统需要为测试输入生成恰好两个候选输出。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "labbench2_tableqa_pdf_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "labbench2-tableqa-pdf",
+  "input_unit": "fraction",
+  "metric_id": "labbench2-tableqa-pdf-metric-v1",
+  "name": "LABBench2 — TableQA2 PDF",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "LABBench2 TableQA2-PDF fixed 100-task track, full PDF as file, native provider runner, tools enabled, high reasoning, official HybridEvaluator. Other tracks and modes are excluded.",
+  "protocol_id": "labbench2-tableqa-pdf-source-export-v1",
+  "registry_order": 87,
+  "release": "2026-02-04",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Each of the fixed 100 TableQA2-PDF tasks receives a binary score from the official HybridEvaluator; accuracy is the mean. Other LABBench2 task families and delivery modes are separate measurements.",
+      "zh": "固定 100 个 TableQA2-PDF task 由官方 HybridEvaluator 给出 binary score，accuracy 是其平均值。其他 LABBench2 task family 和 delivery mode 属于独立 measurement。"
+    },
+    "metric_name": "Hybrid-evaluator accuracy"
+  },
+  "source": "https://github.com/EdisonScientific/labbench2",
+  "summary": {
+    "en": "LABBench2 TableQA2 PDF evaluates biology research question answering from complete scientific source PDFs.",
+    "zh": "LABBench2 TableQA2 PDF 评估模型根据完整 scientific source PDF 回答生物研究问题的能力。"
+  },
+  "tags": [
+    "biology",
+    "PDF",
+    "tools",
+    "research"
+  ],
+  "task_format": {
+    "en": "The agent receives a question and the complete source PDF, may use web-search and code-execution tools, and submits one answer.",
+    "zh": "agent 会收到问题和完整 source PDF，可以使用 web-search 与 code-execution tool，并提交一个答案。"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "trivia_qa_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "triviaqa",
+  "input_unit": "fraction",
+  "metric_id": "triviaqa-metric-v1",
+  "name": "TriviaQA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "triviaqa-source-export-v1",
+  "registry_order": 22,
+  "release": "2017-05-09",
+  "score": "EM",
+  "scoring": {
+    "explanation": {
+      "en": "Exact match counts an answer when its normalized text matches an accepted reference answer.",
+      "zh": "经过规范化后，答案文字和可接受的标准答案一致时算 exact match。"
+    },
+    "metric_name": "Exact match"
+  },
+  "source": "https://arxiv.org/abs/1705.03551",
+  "summary": {
+    "en": "TriviaQA tests open-domain question answering against noisy evidence from the web and documents.",
+    "zh": "TriviaQA 测试模型根据开放领域问题和网页、文档证据回答事实问题的能力。"
+  },
+  "tags": [
+    "open-domain QA",
+    "evidence"
+  ],
+  "task_format": {
+    "en": "The model receives a question and may use an associated evidence document to produce a short answer.",
+    "zh": "模型会收到问题以及相关证据文档，并需要给出简短答案。"
+  }
+}

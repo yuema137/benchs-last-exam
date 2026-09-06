@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "automationbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "automationbench",
+  "input_unit": "fraction",
+  "metric_id": "automationbench-metric-v1",
+  "name": "AutomationBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "automationbench-source-export-v1",
+  "registry_order": 52,
+  "release": "2026-04-20",
+  "score": "Pass Rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task passes only when every required assertion about the final environment state is satisfied. Partial credit is reported separately and is not the headline score.",
+      "zh": "只有最终环境状态的所有 required assertion 都满足，task 才算通过。partial credit 会单独报告，不是 headline score。"
+    },
+    "metric_name": "Strict task pass rate"
+  },
+  "source": "https://github.com/zapier/AutomationBench",
+  "summary": {
+    "en": "AutomationBench tests whether agents can complete realistic business workflows across simulated SaaS tools.",
+    "zh": "AutomationBench 测试 agent 能不能在模拟的 SaaS 工具之间完成真实的 business workflow。"
+  },
+  "tags": [
+    "business workflows",
+    "API",
+    "end-state grading"
+  ],
+  "task_format": {
+    "en": "The agent uses APIs or tool calls across simulated CRM, inbox, calendar, and other business applications, then must leave the correct final state.",
+    "zh": "agent 会通过 API 或 tool calls 操作模拟的 CRM、收件箱、日历和其他 business application，最后必须留下正确的最终状态。"
+  }
+}

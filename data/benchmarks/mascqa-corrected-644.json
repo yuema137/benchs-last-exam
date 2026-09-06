@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mascqa_corrected_644_external.csv",
+  "floor": 0.163,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mascqa-corrected-644",
+  "input_unit": "percentage_points",
+  "metric_id": "mascqa-corrected-644-metric-v1",
+  "name": "MaScQA — Corrected 644",
+  "progress_baseline": 0.163,
+  "progress_target": 1.0,
+  "protocol": "Corrected 644-question MaScQA evaluation, temperature zero, three runs, refined GPT-4o-based judge, Table 5 overall; original 650-question results excluded.",
+  "protocol_id": "mascqa-corrected-644-source-export-v1",
+  "registry_order": 147,
+  "release": "2023-08-17",
+  "score": "Accuracy",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy over the corrected 644-question set, averaged across three temperature-zero runs with a refined judge.",
+      "zh": "在修正后的 644 题上，以 refined judge 汇总三次 temperature-zero 运行的准确率。"
+    },
+    "metric_name": "Corrected-set overall accuracy"
+  },
+  "source": "https://github.com/Lambard-ML-Team/LLM_comparison_4MS",
+  "summary": {
+    "en": "MaScQA evaluates materials-science and metallurgical-engineering knowledge and reasoning.",
+    "zh": "MaScQA 评估材料科学与冶金工程知识和推理能力。"
+  },
+  "tags": [
+    "metallurgy",
+    "knowledge",
+    "reasoning"
+  ],
+  "task_format": {
+    "en": "Solve matching, multiple-choice, multi-select or numerical-choice, and numerical problems.",
+    "zh": "解决匹配、单选、多选或数值选项以及数值计算题。"
+  }
+}

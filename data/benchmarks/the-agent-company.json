@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "the_agent_company_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "the-agent-company",
+  "input_unit": "fraction",
+  "metric_id": "the-agent-company-metric-v1",
+  "name": "TheAgentCompany",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "TheAgentCompany v1 evaluation export; OpenHands scaffold and model identity are retained in each observation. The benchmark release date is the public v1 launch month; the shared observation-time policy drives the lifecycle timeline.",
+  "protocol_id": "the-agent-company-source-export-v1",
+  "registry_order": 58,
+  "release": "2024-10-01",
+  "score": "% Resolved",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the share of tasks resolved under the benchmark's task-specific checks. Partial progress is reported separately from the resolved-task rate.",
+      "zh": "分数是按照 task 专用检查成功完成的 task 占比。部分完成进度和 resolved-task rate 分开报告。"
+    },
+    "metric_name": "Task resolution rate"
+  },
+  "source": "https://the-agent-company.com/",
+  "summary": {
+    "en": "TheAgentCompany evaluates agents on multi-step knowledge-work tasks inside a simulated software company.",
+    "zh": "TheAgentCompany 在模拟的软件公司环境中评估 agent 完成多步知识工作的能力。"
+  },
+  "tags": [
+    "workplace",
+    "multi-step",
+    "browser",
+    "coding"
+  ],
+  "task_format": {
+    "en": "An agent works across browser, office, communication, and coding tools to complete a workplace task; success is checked against the resulting state and deliverable.",
+    "zh": "agent 需要跨浏览器、办公、沟通和 coding 工具完成 workplace task，结果通过最终状态和交付物检查。"
+  }
+}

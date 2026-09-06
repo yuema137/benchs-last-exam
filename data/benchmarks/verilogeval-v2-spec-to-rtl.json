@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "verilogeval_v2_spec_to_rtl_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "verilogeval-v2-spec-to-rtl",
+  "input_unit": "fraction",
+  "metric_id": "verilogeval-v2-spec-to-rtl-metric-v1",
+  "name": "VerilogEval v2 — Spec-to-RTL",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "VerilogEval v2 corrected 156-task human set, Specification-to-RTL, zero-shot, temperature 0, top-p 0.01, n=1, official extraction and Icarus Verilog v12 simulation. Completion, one-shot, stochastic, v1, and MachineEval rows are excluded.",
+  "protocol_id": "verilogeval-v2-spec-to-rtl-source-export-v1",
+  "registry_order": 106,
+  "release": "2025-02-03",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of 156 corrected v2 tasks whose single zero-shot RTL response compiles and passes Icarus Verilog functional simulation.",
+      "zh": "分数是 156 个修订后 v2 task 中，单次 zero-shot RTL 回答能够编译并通过 Icarus Verilog 功能仿真的比例。"
+    },
+    "metric_name": "Simulator-verified Pass@1"
+  },
+  "source": "https://github.com/NVlabs/verilog-eval",
+  "summary": {
+    "en": "VerilogEval v2 measures whether models can translate digital-hardware specifications into functionally correct SystemVerilog RTL modules.",
+    "zh": "VerilogEval v2 测试模型能否把数字电路自然语言规格转换成功能正确的 SystemVerilog RTL 模块。"
+  },
+  "tags": [
+    "RTL",
+    "SystemVerilog",
+    "simulation"
+  ],
+  "task_format": {
+    "en": "The model receives a natural-language hardware specification and port interface, then generates one complete SystemVerilog TopModule.",
+    "zh": "模型会收到自然语言硬件规格和端口接口，再生成一个完整的 SystemVerilog TopModule。"
+  }
+}

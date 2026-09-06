@@ -4,6 +4,7 @@
 import json
 import hashlib
 import re
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -12,6 +13,11 @@ SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 APP = ROOT / "site" / "app.js"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 EVIDENCE = ROOT / "data" / "evidence.jsonl"
+BENCHMARK_REGISTRY = ROOT / "data" / "benchmarks"
+RAW = ROOT / "data" / "raw"
+sys.path.insert(0, str(ROOT / "src"))
+
+from benchmark_observatory.registry import load_benchmark_specs
 
 REQUIRED_STORY_VIEWS = ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")
 MONTH_DAYS = 30.44
@@ -104,6 +110,15 @@ def expected_lifecycle_views(benchmarks, snapshot_date):
             if eligible:
                 views[view].add(benchmark["id"])
     return views
+
+
+def validate_registry_alignment(registry_specs, generated_benchmarks):
+    """Require every source record to resolve to one generated card, in order."""
+    registry_ids = [spec.id for spec in registry_specs]
+    generated_ids = [benchmark.get("id") for benchmark in generated_benchmarks]
+    if registry_ids != generated_ids:
+        return ["generated leaderboard/detail benchmark IDs are stale against data/benchmarks"]
+    return []
 
 
 def validate_benchmark(benchmark, resources, models):
@@ -233,6 +248,7 @@ def validate_benchmark(benchmark, resources, models):
 
 
 def main():
+    registry_specs = load_benchmark_specs(BENCHMARK_REGISTRY, RAW)
     payload = json.loads(SNAPSHOT.read_text())
     evidence_records = [json.loads(line) for line in EVIDENCE.read_text().splitlines() if line]
     organizations, organization_aliases, organization_errors = load_reference_organizations()
@@ -265,6 +281,7 @@ def main():
     ids = [item.get("id") for item in benchmarks]
     if len(ids) != len(set(ids)):
         errors.append("duplicate active benchmark IDs")
+    errors.extend(validate_registry_alignment(registry_specs, benchmarks))
     for benchmark in benchmarks:
         errors.extend(validate_benchmark(benchmark, resources, models))
         expected_organizations = represented_reference_organizations(

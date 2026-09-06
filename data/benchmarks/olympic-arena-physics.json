@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "olympic_arena_physics_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "olympic-arena-physics",
+  "input_unit": "fraction",
+  "metric_id": "olympic-arena-physics-metric-v1",
+  "name": "OlympicArena Physics",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "OlympicArena official test split, Physics subject, LMM setting with original images, official zero-shot prompts, temperature 0 and answer extraction. Validation, combined-paper, caption, and text-only rows are excluded.",
+  "protocol_id": "olympic-arena-physics-source-export-v1",
+  "registry_order": 102,
+  "release": "2024-06-18",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Fixed-answer outputs are rule-matched and heterogeneous other answers use the pinned GPT-4V judge; the score is Physics test accuracy.",
+      "zh": "固定答案由规则匹配，其他复杂答案使用固定 GPT-4V judge；分数是 Physics test accuracy。"
+    },
+    "metric_name": "Physics test answer accuracy"
+  },
+  "source": "https://gair-nlp.github.io/OlympicArena/",
+  "summary": {
+    "en": "OlympicArena Physics evaluates bilingual, multimodal olympiad physics problem solving on the official test split.",
+    "zh": "OlympicArena Physics 在官方 test split 上评估双语、多模态奥赛物理题解能力。"
+  },
+  "tags": [
+    "olympiad",
+    "bilingual",
+    "multimodal"
+  ],
+  "task_format": {
+    "en": "The model solves English or Chinese olympiad physics questions with original visual inputs and returns an answer in the prescribed type-specific format.",
+    "zh": "模型解决带原始视觉输入的中英文奥赛物理题，并按答案类型规定的格式返回结果。"
+  }
+}

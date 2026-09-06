@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Biomedical Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "medagentbench_v1_overall_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "medagentbench-v1-overall-sr",
+  "input_unit": "fraction",
+  "metric_id": "medagentbench-v1-overall-sr-metric-v1",
+  "name": "MedAgentBench v1 — Overall",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MedAgentBench paper-v2 fixed 300 tasks, simple orchestrator, nine FHIR functions, eight-round limit, pass@1.",
+  "protocol_id": "medagentbench-v1-overall-sr-source-export-v1",
+  "registry_order": 117,
+  "release": "2025-01-24",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of 300 tasks passing the fixed reference-answer or rule-based action checks.",
+      "zh": "分数是 300 个 task 中通过固定参考答案或规则化 action check 的比例。"
+    },
+    "metric_name": "Overall task success rate"
+  },
+  "source": "https://github.com/stanfordmlgroup/MedAgentBench",
+  "summary": {
+    "en": "MedAgentBench evaluates agents on physician-authored workflows in a simulated FHIR electronic-health-record environment.",
+    "zh": "MedAgentBench 在模拟 FHIR 电子病历环境中评估 agent 完成医生编写 workflow 的能力。"
+  },
+  "tags": [
+    "FHIR",
+    "EHR",
+    "clinical workflow"
+  ],
+  "task_format": {
+    "en": "The agent completes 300 retrieval, documentation, ordering, and conditional-action tasks using nine FHIR functions in at most eight rounds.",
+    "zh": "agent 使用九个 FHIR function，在最多八轮内完成 300 个检索、记录、医嘱和条件操作 task。"
+  }
+}

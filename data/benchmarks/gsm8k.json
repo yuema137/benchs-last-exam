@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mathematics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "gsm8k_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gsm8k",
+  "input_unit": "fraction",
+  "metric_id": "gsm8k-metric-v1",
+  "name": "GSM8K",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "gsm8k-source-export-v1",
+  "registry_order": 1,
+  "release": "2021-10-27",
+  "score": "EM",
+  "scoring": {
+    "explanation": {
+      "en": "The final numerical answer must match the reference answer. The score is the percentage of problems answered correctly.",
+      "zh": "最后的数字答案必须和标准答案一致。分数就是答对题目占全部题目的比例。"
+    },
+    "metric_name": "Exact-match accuracy"
+  },
+  "source": "https://arxiv.org/abs/2110.14168",
+  "summary": {
+    "en": "GSM8K tests whether a model can solve multi-step grade-school math word problems.",
+    "zh": "GSM8K 测试模型能不能解决需要多步推理的小学数学应用题。"
+  },
+  "tags": [
+    "multi-step",
+    "word problems"
+  ],
+  "task_format": {
+    "en": "The model receives a natural-language math word problem and produces a solution with a final numerical answer.",
+    "zh": "模型会收到一道自然语言数学应用题，需要给出解题过程和最后的数字答案。"
+  }
+}

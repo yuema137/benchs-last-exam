@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Earth Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "earthse_earth_silver_mc_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "earthse-earth-silver-mc",
+  "input_unit": "fraction",
+  "metric_id": "earthse-earth-silver-mc-metric-v1",
+  "name": "EarthSE — Earth-Silver MC",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "EarthSE paper v3 Earth-Silver fixed 250-item multiple-choice series; other EarthSE tiers and generation tasks are excluded.",
+  "protocol_id": "earthse-earth-silver-mc-source-export-v1",
+  "registry_order": 113,
+  "release": "2025-05-30",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of Earth-Silver questions whose selected option matches the answer key.",
+      "zh": "分数是 Earth-Silver 中所选选项与答案一致的题目比例。"
+    },
+    "metric_name": "Exact-choice accuracy"
+  },
+  "source": "https://arxiv.org/html/2505.17139",
+  "summary": {
+    "en": "EarthSE tests specialist Earth-science reasoning on expert-reviewed multiple-choice questions.",
+    "zh": "EarthSE 使用专家审核的选择题测试专业地球科学推理能力。"
+  },
+  "tags": [
+    "geoscience",
+    "multiple-choice",
+    "expert reviewed"
+  ],
+  "task_format": {
+    "en": "The model answers the fixed 250-item Earth-Silver four-choice set.",
+    "zh": "模型回答固定的 250 道 Earth-Silver 四选一题。"
+  }
+}

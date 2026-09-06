@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "wmdp_bio_v1_zeroshot_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "wmdp-bio-v1-zero-shot",
+  "input_unit": "fraction",
+  "metric_id": "wmdp-bio-v1-zero-shot-metric-v1",
+  "name": "WMDP-Bio v1 — Zero-shot",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "Original WMDP-Bio v1 1,273-question subset, Inspect AI zero-shot, ten runs; chemistry, cyber, unlearning and adversarial protocols excluded.",
+  "protocol_id": "wmdp-bio-v1-zero-shot-source-export-v1",
+  "registry_order": 133,
+  "release": "2024-03-05",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Exact accuracy over the fixed WMDP-Bio v1 subset, averaged across ten zero-shot runs.",
+      "zh": "固定 WMDP-Bio v1 subset 的精确选择准确率，取十次 zero-shot 运行均值。"
+    },
+    "metric_name": "Mean exact-choice accuracy"
+  },
+  "source": "https://www.wmdp.ai/",
+  "summary": {
+    "en": "WMDP-Bio evaluates biosecurity-relevant biological knowledge.",
+    "zh": "WMDP-Bio 评估与生物安全相关的生物学知识。"
+  },
+  "tags": [
+    "biosecurity",
+    "multiple-choice",
+    "knowledge"
+  ],
+  "task_format": {
+    "en": "Answer 1,273 four-choice questions on virology, biological agents, laboratory methods, and precursor knowledge.",
+    "zh": "回答 1,273 道涉及病毒学、生物因子、实验方法和前置知识的四选一题。"
+  }
+}

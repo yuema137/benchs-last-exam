@@ -2,7 +2,17 @@
 
 Adding a benchmark is an end-to-end repository transaction, not a data-file edit.
 
-The canonical active benchmark registry in `scripts/build_snapshot.py` is the source of truth. A complete addition provides:
+The canonical active benchmark registry is the set of typed records under:
+
+```text
+data/benchmarks/<benchmark-id>.json
+```
+
+There is exactly one source record per active benchmark/version. The filename must equal the benchmark ID. `src/benchmark_observatory/registry.py` validates every record before any snapshot computation begins; `scripts/build_snapshot.py` contains computation only and must not contain benchmark/card declarations. There is no separate handwritten leaderboard or lifecycle-tab inclusion list.
+
+`registry_order` is a unique contiguous integer used to preserve deterministic ingestion and tie-breaking. New records use the next integer. It does not control story-tab membership or leaderboard sorting.
+
+A complete addition provides:
 
 1. canonical identity, version, release date, Evaluation Type, and Domain;
 2. concise English and Chinese summary, task format, scoring explanation, and evaluation target;
@@ -71,3 +81,12 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 The integration validator checks that every generated story-view list exists, contains unique IDs, and resolves to active benchmarks. A benchmark may legitimately be absent from a view; it may not be unresolved or omitted because only another tab was refreshed.
 
 Selection evidence such as citation counts belongs in curation documentation, with its source and check date. It is not a leaderboard metric. Missing longitudinal data is not by itself a reason to defer an important benchmark; unclear identity, version, metric, or incompatible measurement objects are.
+
+## Add or edit one benchmark
+
+1. Create or edit only its `data/benchmarks/<id>.json` declaration for identity, taxonomy, bilingual copy, canonical score, protocol, normalization, and source-file binding.
+2. Add or update the corresponding `data/raw/<file>.csv` evidence rows.
+3. Do not edit `site/data/benchmarks.json`, leaderboard rows, detail-page objects, or lifecycle memberships by hand.
+4. Run the acceptance sequence above. The build discovers every registry file, produces its leaderboard/detail representation, and derives all story views from canonical metrics.
+
+The typed loader rejects missing EN/ZH copy, unsupported types/units, unknown fields, duplicate IDs or measurement identities, missing raw files, non-HTTP sources, and non-contiguous registry order. The integration validator requires the generated benchmark IDs to match the registry IDs in the same deterministic order.

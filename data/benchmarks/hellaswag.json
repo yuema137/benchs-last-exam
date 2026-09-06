@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "hella_swag_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "hellaswag",
+  "input_unit": "fraction",
+  "metric_id": "hellaswag-metric-v1",
+  "name": "HellaSwag",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "hellaswag-source-export-v1",
+  "registry_order": 20,
+  "release": "2019-05-20",
+  "score": "Overall accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A question is correct when the selected continuation matches the human-written reference. The score is the percentage correct.",
+      "zh": "选择的后续和人工标准答案一致时算答对。分数就是答对题目的百分比。"
+    },
+    "metric_name": "Accuracy"
+  },
+  "source": "https://arxiv.org/abs/1905.07830",
+  "summary": {
+    "en": "HellaSwag tests whether a model can choose the most plausible continuation of an everyday situation.",
+    "zh": "HellaSwag 测试模型能不能从日常场景的多个选项中选出最合理的后续情节。"
+  },
+  "tags": [
+    "commonsense",
+    "multiple-choice"
+  ],
+  "task_format": {
+    "en": "The model reads a short situation and chooses one continuation from several candidates.",
+    "zh": "模型会读到一段简短场景，并从多个候选后续中选出一个。"
+  }
+}

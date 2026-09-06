@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mollangbench_v1_generation_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mollangbench-v1-generation-pass1",
+  "input_unit": "fraction",
+  "metric_id": "mollangbench-v1-generation-pass1-metric-v1",
+  "name": "MolLangBench v1 — Generation",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MolLangBench arXiv-v1 molecule-generation task, 200 examples, zero-shot CoT structured prompt, first-attempt structural accuracy; validity excluded.",
+  "protocol_id": "mollangbench-v1-generation-pass1-source-export-v1",
+  "registry_order": 136,
+  "release": "2025-05-21",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A response is correct only when the valid SMILES has the required molecular structure; validity alone is insufficient.",
+      "zh": "只有有效 SMILES 对应所需分子结构才计为正确；仅语法有效不计分。"
+    },
+    "metric_name": "First-attempt generation accuracy"
+  },
+  "source": "https://github.com/TheLuoFengLab/MolLangBench",
+  "summary": {
+    "en": "MolLangBench tests exact molecular reconstruction from expert-written text descriptions.",
+    "zh": "MolLangBench 测试根据专家编写的文本描述精确重建分子。"
+  },
+  "tags": [
+    "SMILES",
+    "molecule generation",
+    "exact structure"
+  ],
+  "task_format": {
+    "en": "Generate a SMILES string for the uniquely specified molecular structure in each of 200 prompts.",
+    "zh": "为 200 条无歧义描述中的唯一分子结构生成 SMILES。"
+  }
+}

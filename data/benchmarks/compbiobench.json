@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "compbiobench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "compbiobench",
+  "input_unit": "fraction",
+  "metric_id": "compbiobench-metric-v1",
+  "name": "CompBioBench v1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CompBioBench v1 fixed 100-task agent-system evaluation; Codex CLI, Gemini CLI, and Claude Code configurations remain system-level observations and are not treated as bare-model scores.",
+  "protocol_id": "compbiobench-source-export-v1",
+  "registry_order": 37,
+  "release": "2026-04-09",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of the fixed 100 tasks solved by the complete agent system. CLI scaffold, tool permissions, and model configuration are part of the protocol.",
+      "zh": "分数是完整 agent system 成功解决固定 100 个 task 的比例。CLI scaffold、tool permission 和 model configuration 都属于 protocol 的一部分。"
+    },
+    "metric_name": "Task success rate"
+  },
+  "source": "https://www.biorxiv.org/content/10.64898/2026.04.06.716850v2.full",
+  "summary": {
+    "en": "CompBioBench evaluates agent systems on multi-step computational-biology tasks requiring tools, code execution, and analysis.",
+    "zh": "CompBioBench 评估 agent system 完成需要工具、代码执行和分析的多步 computational biology task 的能力。"
+  },
+  "tags": [
+    "computational biology",
+    "tools",
+    "code execution",
+    "long-horizon"
+  ],
+  "task_format": {
+    "en": "The agent works through 100 computational-biology tasks, using analysis tools and executable code before submitting a result.",
+    "zh": "agent 需要完成 100 个 computational biology task，使用分析工具并执行代码后提交结果。"
+  }
+}

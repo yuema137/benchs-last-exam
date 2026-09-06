@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "pceval_physical_circuit_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "pceval-physical-circuit",
+  "input_unit": "fraction",
+  "metric_id": "pceval-physical-circuit-metric-v1",
+  "name": "PCEval — Physical Circuit",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PCEval v1 fixed 50-project D,C-to-P track, five trials per project, baseline standardized prompt, Wokwi functional tests plus physical implementability checks. Self-improvement and CoT interventions are excluded.",
+  "protocol_id": "pceval-physical-circuit-source-export-v1",
+  "registry_order": 105,
+  "release": "2025-12-31",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "The score averages 250 binary trials; a layout passes only when the Wokwi scenario succeeds and physical pin/connectivity constraints are satisfied.",
+      "zh": "分数是 250 次二元试验的平均值；布局必须通过 Wokwi scenario，并满足物理引脚与连接约束才算成功。"
+    },
+    "metric_name": "Physical-circuit success rate"
+  },
+  "source": "https://github.com/Null99-Dog/PCEval-Dataset",
+  "summary": {
+    "en": "PCEval tests whether models can turn an Arduino project description and program into a functional, physically buildable breadboard layout.",
+    "zh": "PCEval 测试模型能否把 Arduino 项目描述和程序转换成功能正确、实际可搭建的面包板电路布局。"
+  },
+  "tags": [
+    "Arduino",
+    "breadboard",
+    "simulation"
+  ],
+  "task_format": {
+    "en": "Given a project description and reference Arduino code, the model generates a structured physical breadboard circuit for Wokwi execution.",
+    "zh": "模型根据项目描述和参考 Arduino code，生成用于 Wokwi 执行的结构化物理面包板电路。"
+  }
+}

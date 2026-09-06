@@ -1,0 +1,44 @@
+{
+  "ceiling": 1.0,
+  "cost_column": "Cost",
+  "cost_divisor": 225,
+  "domain": "Coding",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "aider_polyglot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "aider-polyglot",
+  "input_unit": "percentage_points",
+  "metric_id": "aider-polyglot-metric-v1",
+  "name": "Aider Polyglot",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "aider-polyglot-source-export-v1",
+  "registry_order": 15,
+  "release": "2024-12-21",
+  "score": "Percent correct",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "A task counts as correct when the resulting code passes the benchmark checks. The score is the percentage of exercises completed correctly.",
+      "zh": "修改后的代码通过 benchmark 检查，这道题才算正确。分数就是正确完成 exercise 的比例。"
+    },
+    "metric_name": "Correct edit rate"
+  },
+  "source": "https://aider.chat/2024/12/21/polyglot.html",
+  "summary": {
+    "en": "Aider Polyglot tests whether a model can edit code correctly across six programming languages.",
+    "zh": "Aider Polyglot 测试模型能不能在六种编程语言中正确修改代码。"
+  },
+  "tags": [
+    "code editing",
+    "multi-language"
+  ],
+  "task_format": {
+    "en": "The model receives an Exercism coding exercise and must make the requested repository edit using Aider's editing format.",
+    "zh": "模型会收到一个 Exercism 编程题，需要用 Aider 要求的编辑格式修改代码仓库。"
+  }
+}

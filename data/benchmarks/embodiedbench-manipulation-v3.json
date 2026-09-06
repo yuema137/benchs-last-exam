@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "embodiedbench_manipulation_v3_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "embodiedbench-manipulation-v3",
+  "input_unit": "fraction",
+  "metric_id": "embodiedbench-manipulation-v3-metric-v1",
+  "name": "EmbodiedBench — Manipulation v3",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EmbodiedBench v3 EB-Manipulation fixed 228-instance default protocol, detection boxes enabled, task-specific demonstrations, 15-step limit, temperature 0. Other EmbodiedBench environments are excluded.",
+  "protocol_id": "embodiedbench-manipulation-v3-source-export-v1",
+  "registry_order": 96,
+  "release": "2025-06-05",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "Each episode receives binary credit from its simulator-defined goal condition; the score is the percentage of 228 successful episodes.",
+      "zh": "每个 episode 按 simulator 定义的目标条件获得二元分数，最终得分是 228 个 episode 的成功比例。"
+    },
+    "metric_name": "Task success rate"
+  },
+  "source": "https://github.com/EmbodiedBench/EmbodiedBench",
+  "summary": {
+    "en": "EmbodiedBench Manipulation measures whether a vision-language agent can complete simulated robot-arm manipulation through closed-loop actions.",
+    "zh": "EmbodiedBench Manipulation 测试视觉语言 agent 能否通过闭环动作完成模拟机械臂操作任务。"
+  },
+  "tags": [
+    "manipulation",
+    "simulation",
+    "closed loop"
+  ],
+  "task_format": {
+    "en": "The agent observes 500x500 simulator images and issues up to 15 seven-dimensional Franka-arm actions to complete one of 228 tasks.",
+    "zh": "agent 观察 500×500 simulator 图像，并发出最多 15 个七维 Franka 机械臂动作来完成 228 个 task 之一。"
+  }
+}

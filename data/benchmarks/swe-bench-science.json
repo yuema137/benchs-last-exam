@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "swe_science_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "swe-bench-science",
+  "input_unit": "fraction",
+  "metric_id": "swe-bench-science-metric-v1",
+  "name": "SWE-bench Science",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "SWE-bench Science fixed 119-task set; Overall Pass@1 rows retain the reported harness (Claude Code, Codex, or Kimi Code) and are not treated as bare-model results.",
+  "protocol_id": "swe-bench-science-source-export-v1",
+  "registry_order": 39,
+  "release": "2026-08-20",
+  "score": "Overall",
+  "scoring": {
+    "explanation": {
+      "en": "Overall is the fraction of the fixed 119 tasks solved by one agent trajectory. Public, private, fail-to-pass, and task-paradigm slices remain separate columns.",
+      "zh": "Overall 是一次 agent trajectory 成功解决固定 119 个 task 的比例。Public、private、fail-to-pass 和 task-paradigm slice 保持为独立列。"
+    },
+    "metric_name": "Overall Pass@1"
+  },
+  "source": "https://swescience.github.io/",
+  "summary": {
+    "en": "SWE-bench Science measures whether coding agents can repair scientific software while preserving its scientific contracts.",
+    "zh": "SWE-bench Science 衡量 coding agent 能不能修复 scientific software，同时保持其 scientific contract。"
+  },
+  "tags": [
+    "scientific software",
+    "repository",
+    "pass@1",
+    "test-based"
+  ],
+  "task_format": {
+    "en": "The agent edits repository-level scientific software in an execution environment and must pass the benchmark's software and scientific correctness checks.",
+    "zh": "agent 需要在 execution environment 中修改 repository-level scientific software，并通过 software 和 scientific correctness checks。"
+  }
+}

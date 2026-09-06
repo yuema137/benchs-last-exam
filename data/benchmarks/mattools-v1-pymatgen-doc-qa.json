@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mattools_v1_pymatgen_doc_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mattools-v1-pymatgen-doc-qa",
+  "input_unit": "percentage_points",
+  "metric_id": "mattools-v1-pymatgen-doc-qa-metric-v1",
+  "name": "MatTools v1 — pymatgen Doc QA",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "MatTools v1 pymatgen_doc_qa 34,604-question track, no tools/RAG, exact-choice accuracy; code and tool-execution tracks excluded.",
+  "protocol_id": "mattools-v1-pymatgen-doc-qa-source-export-v1",
+  "registry_order": 149,
+  "release": "2025-05-16",
+  "score": "Accuracy",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Exact A/B/C/D accuracy; malformed answer formatting is counted incorrect.",
+      "zh": "计算 A/B/C/D 精确准确率；答案格式不合规计为错误。"
+    },
+    "metric_name": "Documentation-QA exact accuracy"
+  },
+  "source": "https://github.com/Grenzlinie/MatTools",
+  "summary": {
+    "en": "MatTools Doc QA measures knowledge of pymatgen documentation and API behavior.",
+    "zh": "MatTools Doc QA 测试模型对 pymatgen 文档和 API 行为的理解。"
+  },
+  "tags": [
+    "pymatgen",
+    "documentation",
+    "multiple-choice"
+  ],
+  "task_format": {
+    "en": "Answer 34,604 four-choice questions derived from pymatgen documentation without tools or RAG.",
+    "zh": "不使用工具或 RAG，回答 34,604 道由 pymatgen 文档生成的四选一问题。"
+  }
+}

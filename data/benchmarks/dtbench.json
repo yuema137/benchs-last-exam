@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "dtbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "dtbench",
+  "input_unit": "fraction",
+  "metric_id": "dtbench-metric-v1",
+  "name": "DTBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "DTBench capabilities fixed 407-question series reported with the Conceptual Reasoning Index. Full DTBench attitude questions and CRI aggregate scores are not merged.",
+  "protocol_id": "dtbench-source-export-v1",
+  "registry_order": 75,
+  "release": "2026-08-12",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of the 407 DTBench capabilities questions answered correctly. The additional attitude questions and the aggregate CRI are separate measurement objects.",
+      "zh": "分数是 407 道 DTBench capabilities question 中答对的比例。额外的 attitude questions 和 aggregate CRI 属于独立 measurement object。"
+    },
+    "metric_name": "Question accuracy"
+  },
+  "source": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+  "summary": {
+    "en": "DTBench measures decision-theoretic reasoning about a model's own behavior and interactions with copies or near-copies.",
+    "zh": "DTBench 衡量模型在 decision theory 场景下推理自身行为，以及和自身或近似副本互动的能力。"
+  },
+  "tags": [
+    "decision theory",
+    "multiple-choice",
+    "conceptual reasoning"
+  ],
+  "task_format": {
+    "en": "The model answers 407 handcrafted multiple-choice questions about decision-theoretic situations, including prediction and interaction with near-copies.",
+    "zh": "模型需要回答 407 道人工设计的 multiple-choice decision theory 问题，内容包括行为预测以及和近似副本互动。"
+  }
+}

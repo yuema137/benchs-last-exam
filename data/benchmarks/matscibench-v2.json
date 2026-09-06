@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "matscibench_v2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "matscibench-v2",
+  "input_unit": "fraction",
+  "metric_id": "matscibench-v2-metric-v1",
+  "name": "MatSciBench v2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MatSciBench v2 fixed 1,340-question text-only direct/basic-CoT evaluation. Image questions and tool/RAG/self-correction settings are excluded.",
+  "protocol_id": "matscibench-v2-source-export-v1",
+  "registry_order": 83,
+  "release": "2026-06-08",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of the fixed v2 text questions answered correctly under the direct/basic-CoT protocol. Image, RAG, and self-correction tracks remain separate.",
+      "zh": "分数是在固定 v2 text question 上，按照 direct/basic-CoT protocol 答对的比例。image、RAG 和 self-correction track 保持独立。"
+    },
+    "metric_name": "Answer accuracy"
+  },
+  "source": "https://github.com/Jun-Kai-Zhang/MatSciBench",
+  "summary": {
+    "en": "MatSciBench v2 evaluates materials-science knowledge and reasoning on a corrected 1,340-question release.",
+    "zh": "MatSciBench v2 在修订后的 1,340-question release 上评估材料科学知识与推理能力。"
+  },
+  "tags": [
+    "materials",
+    "reasoning",
+    "text-only"
+  ],
+  "task_format": {
+    "en": "The model answers text-only materials-science questions directly or with a basic chain of thought, without retrieval, tools, or self-correction.",
+    "zh": "模型回答 text-only 材料科学问题，可以直接作答或使用基础 chain of thought，但不使用 retrieval、tool 或 self-correction。"
+  }
+}

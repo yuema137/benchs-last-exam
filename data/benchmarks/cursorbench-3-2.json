@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "cost_column": "Cost",
+  "domain": "Software engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "cursorbench_3_2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cursorbench-3-2",
+  "input_unit": "fraction",
+  "metric_id": "cursorbench-3-2-metric-v1",
+  "name": "CursorBench 3.2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "cursorbench-3-2-source-export-v1",
+  "registry_order": 50,
+  "release": "2026-07-08",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the percentage of tasks completed successfully under Cursor's task grader. Reported cost is estimated from token usage and published model pricing.",
+      "zh": "分数是按照 Cursor task grader 成功完成的 task 比例。报告的 cost 根据 token 用量和公开 model 定价估算。"
+    },
+    "metric_name": "Task score"
+  },
+  "source": "https://cursor.com/cn/cursorbench",
+  "summary": {
+    "en": "CursorBench 3.2 evaluates agents on ambiguous, multi-file software tasks drawn from real Cursor sessions.",
+    "zh": "CursorBench 3.2 评估 agent 能不能完成来自真实 Cursor session、含糊且涉及多个文件的软件任务。"
+  },
+  "tags": [
+    "multi-file",
+    "coding",
+    "tool use"
+  ],
+  "task_format": {
+    "en": "The agent receives a multi-file coding task and uses an editing environment and tools to modify the codebase.",
+    "zh": "agent 会收到一个涉及多个文件的 coding task，并使用编辑环境和工具修改 codebase。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "aerocopilotbench_tier2_v1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "aerocopilotbench-tier2-v1-safety-gated-sr",
+  "input_unit": "fraction",
+  "metric_id": "aerocopilotbench-tier2-v1-safety-gated-sr-metric-v1",
+  "name": "AeroCopilotBench Tier 2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Tier 2 frozen 73 tasks, three trials, native tools, high reasoning, 48 turns, task-balanced safety-gated SR; auxiliary metrics excluded.",
+  "protocol_id": "aerocopilotbench-tier2-v1-safety-gated-sr-source-export-v1",
+  "registry_order": 140,
+  "release": "2026-08-17",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "A trial succeeds only when every goal is met with no hard safety violation; tasks are macro-averaged over three trials.",
+      "zh": "只有完成全部目标且无硬性安全违规时才成功；每题三次后进行任务等权平均。"
+    },
+    "metric_name": "Safety-gated success rate"
+  },
+  "source": "https://arxiv.org/html/2608.16349",
+  "summary": {
+    "en": "AeroCopilotBench evaluates safe emergency procedures in a deterministic virtual cockpit.",
+    "zh": "AeroCopilotBench 评估 agent 在确定性虚拟驾驶舱中安全执行紧急程序。"
+  },
+  "tags": [
+    "aviation",
+    "cockpit",
+    "safety"
+  ],
+  "task_format": {
+    "en": "Diagnose cockpit state and use twelve tools to complete 73 emergency or abnormal procedures.",
+    "zh": "诊断驾驶舱状态并使用 12 类工具完成 73 个紧急或异常程序。"
+  }
+}

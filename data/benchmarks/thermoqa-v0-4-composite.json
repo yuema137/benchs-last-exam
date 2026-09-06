@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Nuclear Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "thermoqa_v0_4_composite_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "thermoqa-v0-4-composite",
+  "input_unit": "fraction",
+  "metric_id": "thermoqa-v0-4-composite-metric-v1",
+  "name": "ThermoQA v0.4 — Composite",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ThermoQA v0.4 fixed 293-question zero-shot, single-query, no-tool protocol; three runs and published tolerance rules.",
+  "protocol_id": "thermoqa-v0-4-composite-source-export-v1",
+  "registry_order": 116,
+  "release": "2026-03-25",
+  "score": "Composite",
+  "scoring": {
+    "explanation": {
+      "en": "Tier 1 property accuracy and weighted Tier 2–3 step accuracy are combined using their question counts.",
+      "zh": "Tier 1 物性准确率与 Tier 2–3 加权步骤准确率按各层题量合并。"
+    },
+    "metric_name": "Question-count-weighted composite"
+  },
+  "source": "https://github.com/olivenet-iot/ThermoQA",
+  "summary": {
+    "en": "ThermoQA measures open numerical thermodynamics, thermofluids, and power-cycle reasoning.",
+    "zh": "ThermoQA 衡量开放式工程热力学、热流体和动力循环数值推理能力。"
+  },
+  "tags": [
+    "thermodynamics",
+    "power cycles",
+    "open answer"
+  ],
+  "task_format": {
+    "en": "The model solves 293 property, component, and cycle-analysis problems without tools.",
+    "zh": "模型在不使用工具的情况下解决 293 道物性、部件和循环分析问题。"
+  }
+}

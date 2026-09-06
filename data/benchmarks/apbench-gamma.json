@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "apbench_gamma_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "apbench-gamma",
+  "input_unit": "fraction",
+  "metric_id": "apbench-gamma-metric-v1",
+  "name": "APBench-γ",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Open APBench-gamma full 299-question progressive zero-shot evaluation. Numeric tolerance and GPT-4o/embedding text grading are pinned to the version-of-record protocol.",
+  "protocol_id": "apbench-gamma-source-export-v1",
+  "registry_order": 92,
+  "release": "2025-03-07",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of 299 answers accepted by the published numeric-tolerance rule or the pinned judge-and-embedding rule for analytical text.",
+      "zh": "分数是 299 道答案中，通过论文规定的数值误差规则，或固定 judge 与 embedding 规则的比例。"
+    },
+    "metric_name": "APBench-gamma answer accuracy"
+  },
+  "source": "https://www.nature.com/articles/s41598-025-91150-5",
+  "summary": {
+    "en": "APBench-gamma tests numerical and analytical astrodynamics problems used to train space-engineering specialists.",
+    "zh": "APBench-γ 测试模型解决航天工程人才训练中使用的数值与解析轨道动力学问题的能力。"
+  },
+  "tags": [
+    "astrodynamics",
+    "spaceflight",
+    "open-answer"
+  ],
+  "task_format": {
+    "en": "The model answers 299 progressive open-ended astrodynamics questions; earlier solved questions and solutions become context for later questions in a set.",
+    "zh": "模型回答 299 道递进式开放轨道动力学题；同一题组中已经答对的问题及解答会成为后续问题的 context。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Computational Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "feabench_gold_modelspecs_oneshot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "feabench-gold-modelspecs-oneshot",
+  "input_unit": "fraction",
+  "metric_id": "feabench-gold-modelspecs-oneshot-metric-v1",
+  "name": "FEABench Gold — Executability",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "FEABench Gold 15 tasks, ModelSpecs input, one-shot prompting, paper-v1 executability metric; Valid Target and other prompt variants are excluded.",
+  "protocol_id": "feabench-gold-modelspecs-oneshot-source-export-v1",
+  "registry_order": 123,
+  "release": "2025-04-08",
+  "score": "Executability",
+  "scoring": {
+    "explanation": {
+      "en": "Each task scores the fraction of parsed API statements that execute correctly, averaged over the Gold set.",
+      "zh": "每题按解析出的 API 语句中可正确执行的比例计分，再在 Gold set 上取平均。"
+    },
+    "metric_name": "Mean statement executability"
+  },
+  "source": "https://github.com/google/feabench",
+  "summary": {
+    "en": "FEABench tests generation of executable COMSOL finite-element simulation models from engineering specifications.",
+    "zh": "FEABench 测试模型根据工程规格生成可执行 COMSOL 有限元仿真模型的能力。"
+  },
+  "tags": [
+    "finite element",
+    "COMSOL",
+    "code generation"
+  ],
+  "task_format": {
+    "en": "For 15 verified problems, the model receives complete model specifications and one example, then writes COMSOL Java API calls.",
+    "zh": "对 15 个验证任务，模型获得完整建模规格和一个示例，再生成 COMSOL Java API 调用。"
+  }
+}

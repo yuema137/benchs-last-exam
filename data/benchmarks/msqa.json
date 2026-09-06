@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "msqa_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "msqa",
+  "input_unit": "fraction",
+  "metric_id": "msqa-metric-v1",
+  "name": "MSQA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MSQA fixed benchmark scored through the public ScienceEval overall panel; scores are normalized from percentage values. The paper's long-answer and binary-answer modes remain a documented protocol caveat.",
+  "protocol_id": "msqa-source-export-v1",
+  "registry_order": 27,
+  "release": "2025-05-29",
+  "score": "Overall accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of MSQA questions answered correctly under the selected fixed evaluation format. Long-answer, binary-answer, retrieval-augmented, and domain-specific variants are not silently merged.",
+      "zh": "分数是在选定 fixed evaluation format 下答对 MSQA question 的比例。long-answer、binary-answer、retrieval-augmented 和 domain-specific variant 不会被静默合并。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://arxiv.org/abs/2505.23982",
+  "summary": {
+    "en": "MSQA evaluates graduate-level materials-science knowledge and multi-step reasoning across seven materials subfields.",
+    "zh": "MSQA 评估模型在七个材料科学子领域中的研究生级知识和多步推理能力。"
+  },
+  "tags": [
+    "materials",
+    "graduate-level",
+    "reasoning"
+  ],
+  "task_format": {
+    "en": "The benchmark contains graduate-level materials questions in long-answer and binary-answer formats; this card uses the fixed overall accuracy series reported by the unified ScienceEval panel.",
+    "zh": "benchmark 包含 graduate-level materials question，分为 long-answer 和 binary-answer format；本卡使用统一 ScienceEval panel 报告的 fixed overall accuracy series。"
+  }
+}

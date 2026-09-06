@@ -1,0 +1,45 @@
+{
+  "ceiling": 1.0,
+  "cost_column": "Cost / task",
+  "domain": "Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "eebench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "eebench",
+  "input_unit": "percentage_points",
+  "metric_id": "eebench-metric-v1",
+  "name": "EEBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EEBench official leaderboard snapshot; Score (%) is kept as the headline metric and each model/harness configuration remains a separate observation. Cost/task is preserved as reported context, not treated as a benchmark constant.",
+  "protocol_id": "eebench-source-export-v1",
+  "registry_order": 33,
+  "release": "2026-08-01",
+  "score": "Score (%)",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "The headline score is the official percentage score on the fixed EEBench evaluation. The official leaderboard also reports cost per task, but score and cost vary with the model and harness.",
+      "zh": "headline score 是固定 EEBench evaluation 上的官方百分比得分。官方 leaderboard 同时报告 cost/task，但 score 和 cost 会随 model 与 harness 改变。"
+    },
+    "metric_name": "Task success score"
+  },
+  "source": "https://www.eebench.org/",
+  "summary": {
+    "en": "EEBench evaluates coding agents on practical electrical-engineering tasks with executable checks and real tool workflows.",
+    "zh": "EEBench 评估 coding agent 完成带有可执行检查和真实工具流程的实际 electrical-engineering task 的能力。"
+  },
+  "tags": [
+    "electrical engineering",
+    "coding",
+    "simulation",
+    "tool use"
+  ],
+  "task_format": {
+    "en": "The agent works through an electrical-engineering task using the benchmark's supported coding and engineering-tool setup, then submits an artifact evaluated against task-specific checks.",
+    "zh": "agent 需要在 benchmark 支持的 coding 和 engineering-tool setup 中完成 electrical-engineering task，再提交由 task-specific checks 检查的 artifact。"
+  }
+}

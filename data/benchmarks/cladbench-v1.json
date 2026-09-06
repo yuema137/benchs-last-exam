@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Energy & Infrastructure",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "cladbench_v1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cladbench-v1",
+  "input_unit": "fraction",
+  "metric_id": "cladbench-v1-metric-v1",
+  "name": "CladBench v1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CladBench v1 public 536-question split, dataset hash e4695eb32bcbab13, harness 2.0.0, frozen 2026-08-13 results. Private holdout is excluded.",
+  "protocol_id": "cladbench-v1-source-export-v1",
+  "registry_order": 111,
+  "release": "2026-08-13",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "Each item is normalized to 0-1 by its deterministic or rubric scorer, and the headline score is the question-count-weighted mean.",
+      "zh": "每题由固定 deterministic 或 rubric scorer 归一化到 0–1，headline score 是按题目数加权的平均值。"
+    },
+    "metric_name": "Weighted normalized score"
+  },
+  "source": "https://github.com/cladbrain/cladbench",
+  "summary": {
+    "en": "CladBench evaluates professional built-environment work across regulation, energy, BIM, retrofit, building systems, carbon, and net-zero planning.",
+    "zh": "CladBench 评估建筑规范、能源、BIM、改造、建筑系统、碳排放和净零规划等建成环境专业能力。"
+  },
+  "tags": [
+    "built environment",
+    "regulation",
+    "net zero"
+  ],
+  "task_format": {
+    "en": "The model completes 536 public questions spanning multiple choice, short answer, rationale, open answer, and ranking formats.",
+    "zh": "模型完成 536 道公开题目，题型包括选择、短答、理由说明、开放回答和排序。"
+  }
+}

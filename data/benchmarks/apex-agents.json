@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "apex_agents_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "apex-agents",
+  "input_unit": "fraction",
+  "metric_id": "apex-agents-metric-v1",
+  "name": "APEX-Agents",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "APEX-Agents fixed 480-task release; the curated series uses Pass@1 rows from the public leaderboard. Mean Score, Loop, ReAct, and job-specific slices are not mixed into the headline metric.",
+  "protocol_id": "apex-agents-source-export-v1",
+  "registry_order": 76,
+  "release": "2026-01-20",
+  "score": "Pass@1 score",
+  "scoring": {
+    "explanation": {
+      "en": "Pass@1 is the share of tasks solved by one agent trajectory. This series uses the benchmark's overall 480-task evaluation and keeps reasoning effort and harness variants in observation provenance.",
+      "zh": "Pass@1 是一次 agent trajectory 成功解决的 task 占比。本序列使用 benchmark overall 480-task evaluation，并在 observation provenance 中保留 reasoning effort 和 harness variant。"
+    },
+    "metric_name": "Pass@1"
+  },
+  "source": "https://www.mercor.com/apex/apex-agents-leaderboard/",
+  "summary": {
+    "en": "APEX-Agents evaluates agents on long-horizon, cross-application professional work for investment banking, consulting, and legal roles.",
+    "zh": "APEX-Agents 评估 agent 在投资银行、咨询和法律等职业场景中完成跨应用长链专业工作的能力。"
+  },
+  "tags": [
+    "professional work",
+    "cross-application",
+    "long-horizon",
+    "Pass@1"
+  ],
+  "task_format": {
+    "en": "The agent works through realistic files and software applications over a multi-step professional task, then is graded against task-specific rubrics and gold outputs.",
+    "zh": "agent 需要在真实的文件和软件应用中完成多步专业 task，再按照 task 专属 rubric 和 gold output 评分。"
+  }
+}

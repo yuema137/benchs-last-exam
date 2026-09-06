@@ -1,0 +1,40 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mathematics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "math_level_5.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "math-level-5",
+  "input_unit": "fraction",
+  "metric_id": "math-level-5-metric-v1",
+  "name": "MATH Level 5",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "math-level-5-source-export-v1",
+  "registry_order": 2,
+  "release": "2021-03-05",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "A problem counts as correct when the reported answer matches the reference answer under the benchmark scorer. The score is the fraction of correct problems.",
+      "zh": "按照 benchmark scorer 的规则，模型答案和标准答案一致时，这道题才算答对。分数就是答对题目占全部题目的比例。"
+    },
+    "metric_name": "Answer accuracy"
+  },
+  "source": "https://arxiv.org/abs/2103.03874",
+  "summary": {
+    "en": "MATH Level 5 is the hardest level of a competition-math dataset, intended to test difficult mathematical problem solving.",
+    "zh": "MATH Level 5 是竞赛数学数据集里最难的一档，用来测试模型解决高难度数学题的能力。"
+  },
+  "tags": [
+    "competition math"
+  ],
+  "task_format": {
+    "en": "The model receives a competition-style math problem and must produce a solution and final answer.",
+    "zh": "模型会收到一道竞赛数学题，需要给出解答和最后答案。"
+  }
+}

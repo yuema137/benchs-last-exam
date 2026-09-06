@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Terminal / OS",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "terminal_bench_4_0_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "terminal-bench-4-0",
+  "input_unit": "fraction",
+  "metric_id": "terminal-bench-4-0-metric-v1",
+  "name": "Terminal-Bench 4.0",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "terminal-bench-4-0-source-export-v1",
+  "registry_order": 48,
+  "release": "2026-08-26",
+  "score": "Resolution rate",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of benchmark trials whose final environment passes the task verifier. Version 4.0 has a separate task set and is not comparable with earlier versions by default.",
+      "zh": "分数是最终环境通过 task verifier 的 benchmark trial 占比。4.0 使用独立的 task set，默认不能和早期版本直接比较。"
+    },
+    "metric_name": "Resolution rate"
+  },
+  "source": "https://github.com/harbor-framework/terminal-bench/releases/tag/v4.0.0",
+  "summary": {
+    "en": "Terminal-Bench 4.0 measures agents on hard command-line tasks in reproducible container environments.",
+    "zh": "Terminal-Bench 4.0 评估 agent 能不能在可复现的容器 terminal 环境中完成高难度命令行任务。"
+  },
+  "tags": [
+    "container",
+    "command line",
+    "versioned"
+  ],
+  "task_format": {
+    "en": "The agent works inside a container, runs commands, and must leave the environment in a state accepted by task-specific verification tests.",
+    "zh": "agent 会在容器里运行命令，最后必须让环境达到 task 专用 verification tests 接受的状态。"
+  }
+}

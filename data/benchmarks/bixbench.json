@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "bixbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "bixbench",
+  "input_unit": "fraction",
+  "metric_id": "bixbench-metric-v1",
+  "name": "BixBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BixBench original paper open-answer agent evaluation; custom notebook agent scaffold with repeated trajectories. Later v1.5/MCQ configurations are not merged.",
+  "protocol_id": "bixbench-source-export-v1",
+  "registry_order": 25,
+  "release": "2025-03-01",
+  "score": "Open-answer accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The headline series uses binary correctness of answers across the fixed open-answer questions and repeated trajectories. The paper reports approximately 17% for Claude 3.5 Sonnet and 9% for GPT-4o; MCQ, refusal-option, and majority-vote results are separate variants.",
+      "zh": "headline series 使用固定 open-answer question 和重复 trajectory 上的 binary correctness。论文报告 Claude 3.5 Sonnet 约 17%、GPT-4o 约 9%；MCQ、带 refusal option 和 majority-vote 结果属于独立 variant。"
+    },
+    "metric_name": "Open-answer accuracy"
+  },
+  "source": "https://arxiv.org/abs/2503.00096",
+  "summary": {
+    "en": "BixBench evaluates agents on open-ended computational-biology analyses built from real-world research notebooks and datasets.",
+    "zh": "BixBench 评估 agent 完成开放式 computational biology 分析的能力，任务来自真实 research notebook 和数据集。"
+  },
+  "tags": [
+    "bioinformatics",
+    "notebook",
+    "long-horizon",
+    "open-answer"
+  ],
+  "task_format": {
+    "en": "The agent explores biological data, writes and executes Python, R, or Bash analysis code in a notebook environment, and submits answers to research questions.",
+    "zh": "agent 需要在 notebook environment 中探索生物数据、编写并执行 Python、R 或 Bash 分析代码，再回答 research question。"
+  }
+}

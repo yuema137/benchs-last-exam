@@ -24,10 +24,28 @@ The project does not currently aim to provide a backend, database, public API, a
 
 The local frontend lives under `site/` and is driven by generated JSON. Metric logic belongs in Python scripts, not in frontend components.
 
+Each active benchmark/version is maintained independently in
+`data/benchmarks/<benchmark-id>.json`; its source observations live in the
+referenced `data/raw/*.csv` file. The typed registry loader discovers these
+records automatically, and the build derives the leaderboard, detail cards,
+frontiers, metrics, and all lifecycle tabs from them.
+
+Run the complete integration gate after changing any benchmark or observation:
+
+```bash
+python3 scripts/build_snapshot.py
+python3 scripts/validate_score_semantics.py
+python3 scripts/validate_benchmark_integration.py
+python3 scripts/audit_observation_dates.py
+python3 scripts/audit_canonical_identity.py
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+```
+
 ## Documentation
 
 - [Design synthesis](docs/design-synthesis.md)
 - [Vertical slice plan](docs/vertical-slice-plan.md)
 - [Repository constitution](AGENT.md)
+- [Benchmark integration contract](docs/BENCHMARK_INTEGRATION.md)
 - [Explanation style](EXPLANATION_STYLE.md)
 - [Chinese design mirror](zh/docs/design-synthesis.md)

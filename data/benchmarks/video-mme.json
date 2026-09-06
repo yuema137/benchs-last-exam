@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "video_mme_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "video-mme",
+  "input_unit": "fraction",
+  "metric_id": "video-mme-metric-v1",
+  "name": "Video-MME",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Video-MME original benchmark, overall no-subtitles score; Video-MME-v2 is a separate benchmark object.",
+  "protocol_id": "video-mme-source-export-v1",
+  "registry_order": 9,
+  "release": "2024-06-03",
+  "score": "Overall (no subtitles)",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of video questions answered correctly under the official no-subtitles setting. Subtitle and duration-specific scores are separate metrics.",
+      "zh": "分数是在官方 no-subtitles 设置下答对视频问题的比例。带字幕和不同视频时长的分数属于其他独立 metric。"
+    },
+    "metric_name": "Overall accuracy without subtitles"
+  },
+  "source": "https://video-mme.github.io/home_page.html",
+  "summary": {
+    "en": "Video-MME tests multimodal models on questions about short, medium, and long videos across diverse visual domains.",
+    "zh": "Video-MME 测试 multimodal model 理解短、中、长视频的能力，覆盖多个视觉领域。"
+  },
+  "tags": [
+    "video",
+    "temporal reasoning",
+    "no subtitles"
+  ],
+  "task_format": {
+    "en": "Each item provides a video and a multiple-choice question. The model answers questions that may require visual, audio, subtitle, and temporal understanding; this card uses the no-subtitles overall score.",
+    "zh": "每个 task 会提供一段视频和一道选择题。模型需要结合视觉、音频、字幕和时间信息回答问题；本卡使用 no-subtitles overall score。"
+  }
+}

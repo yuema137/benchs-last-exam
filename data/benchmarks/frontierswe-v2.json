@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "cost_column": "Average cost (USD)",
+  "domain": "Software engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "frontierswe_v2_curated.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "frontierswe-v2",
+  "input_unit": "fraction",
+  "metric_id": "frontierswe-v2-metric-v1",
+  "name": "FrontierSWE V2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "FrontierSWE V2 public leaderboard export; Mean@5 rows using the proximus harness are kept together, while Best@5 and Worst@5 are not substituted for the headline metric.",
+  "protocol_id": "frontierswe-v2-source-export-v1",
+  "registry_order": 60,
+  "release": "2026-07-01",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The headline score is the mean across five runs of the benchmark's composite score; the implementation, performance, and research components are preserved as supporting evidence.",
+      "zh": "headline score 是五次运行中 composite score 的均值；implementation、performance 和 research 分项作为 supporting evidence 保留。"
+    },
+    "metric_name": "Mean@5 composite score"
+  },
+  "source": "https://www.frontierswe.com/",
+  "summary": {
+    "en": "FrontierSWE V2 evaluates coding agents on difficult software tasks using separate implementation, performance, and research-quality dimensions.",
+    "zh": "FrontierSWE V2 从 implementation、performance 和 research quality 等维度评估 agent 完成高难度软件任务的能力。"
+  },
+  "tags": [
+    "repository",
+    "quality",
+    "multi-run"
+  ],
+  "task_format": {
+    "en": "The agent works on repository-level engineering tasks and submits changes evaluated across implementation correctness, performance, and research-oriented quality criteria.",
+    "zh": "agent 需要完成 repository-level engineering task 并提交修改，结果会从实现正确性、性能和 research quality 等维度评估。"
+  }
+}

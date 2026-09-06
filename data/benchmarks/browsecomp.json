@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "browsecomp_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "browsecomp",
+  "input_unit": "fraction",
+  "metric_id": "browsecomp-metric-v1",
+  "name": "BrowseComp",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BrowseComp official 1,266-task benchmark; browsing availability and agent scaffold remain part of each observation's setup.",
+  "protocol_id": "browsecomp-source-export-v1",
+  "registry_order": 7,
+  "release": "2025-04-10",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A response is correct when it matches the reference answer under the benchmark grader. The score is the fraction of the 1,266 questions answered correctly.",
+      "zh": "按照 benchmark grader 的规则，答案和标准答案匹配才算正确。分数就是答对 1,266 道题的比例。"
+    },
+    "metric_name": "Answer accuracy"
+  },
+  "source": "https://openai.com/index/browsecomp/",
+  "summary": {
+    "en": "BrowseComp tests whether a browsing agent can find hard-to-locate facts that require persistent, multi-step web research.",
+    "zh": "BrowseComp 测试 browsing agent 能不能通过持续、多步的网页研究找到很难定位的事实。"
+  },
+  "tags": [
+    "browsing",
+    "research",
+    "multi-hop"
+  ],
+  "task_format": {
+    "en": "The agent receives a short fact-seeking question and must search the web, combine evidence, and submit a concise answer.",
+    "zh": "agent 会收到一个简短的事实问题，需要搜索网页、组合证据，再提交简短答案。"
+  }
+}

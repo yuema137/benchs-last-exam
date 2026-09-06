@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "Terminal / OS",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "terminalbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "terminal-bench-2",
+  "input_unit": "fraction",
+  "metric_id": "terminal-bench-2-metric-v1",
+  "name": "Terminal-Bench 2.0",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "terminal-bench-2-source-export-v1",
+  "registry_order": 17,
+  "release": "2025-11-07",
+  "score": "Accuracy mean",
+  "scoring": {
+    "explanation": {
+      "en": "A task counts as solved when its evaluator accepts the resulting environment or artifact. The score is the fraction of tasks solved.",
+      "zh": "如果 evaluator 接受最终环境状态或产物，这个 task 就算解决。分数是解决 task 的比例。"
+    },
+    "metric_name": "Task success rate"
+  },
+  "source": "https://www.tbench.ai/news/announcement-2-0",
+  "summary": {
+    "en": "Terminal-Bench 2.0 tests whether agents can solve realistic tasks inside terminal environments.",
+    "zh": "Terminal-Bench 2.0 测试 agent 能不能在 terminal 环境中完成真实的软件和系统任务。"
+  },
+  "tags": [
+    "terminal",
+    "container"
+  ],
+  "task_format": {
+    "en": "The agent receives a task in a containerized terminal environment and can use shell tools before submitting the final environment state.",
+    "zh": "agent 会在容器化 terminal 环境中收到 task，可以使用 shell 工具，最后提交环境状态。"
+  }
+}

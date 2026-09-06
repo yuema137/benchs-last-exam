@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mathematics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "frontiermath_tier_4_v2.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "frontiermath-tier-4-v2",
+  "input_unit": "fraction",
+  "metric_id": "frontiermath-tier-4-v2-metric-v1",
+  "name": "FrontierMath Tier 4 (v2)",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "frontiermath-tier-4-v2-source-export-v1",
+  "registry_order": 42,
+  "release": "2026-06-12",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "A task earns one point when the submitted answer passes the verifier. The score is the fraction of Tier 4 problems solved.",
+      "zh": "提交的答案通过 verifier 才得一分。分数是解决的 Tier 4 题目占全部题目的比例。"
+    },
+    "metric_name": "Verified task accuracy"
+  },
+  "source": "https://epoch.ai/benchmarks/frontiermath-tier-4-v2",
+  "summary": {
+    "en": "FrontierMath Tier 4 tests research-level mathematics problems written and vetted by expert mathematicians.",
+    "zh": "FrontierMath Tier 4 测试由数学专家编写和核验的 research-level 数学题。"
+  },
+  "tags": [
+    "research-level",
+    "expert",
+    "verifiable"
+  ],
+  "task_format": {
+    "en": "The model reasons about a difficult mathematics problem and submits a Python answer function that is checked by an executable verifier.",
+    "zh": "模型需要解决高难度数学题，并提交由可执行 verifier 检查的 Python answer function。"
+  }
+}

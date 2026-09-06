@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Computational Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "cfdcodebench_v1_zeroshot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cfdcodebench-v1-zeroshot",
+  "input_unit": "fraction",
+  "metric_id": "cfdcodebench-v1-zeroshot-metric-v1",
+  "name": "CFDCodeBench — Zero-shot",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CFDCodeBench fixed 24 tasks, standard zero-shot, 60-second sandbox timeout, strict execution/accuracy/convergence success.",
+  "protocol_id": "cfdcodebench-v1-zeroshot-source-export-v1",
+  "registry_order": 124,
+  "release": "2025-09-19",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task passes only if code executes, normalized MSE is at most 10%, and error falls under spatial and temporal refinement.",
+      "zh": "只有代码可执行、归一化 MSE 不超过 10%，且空间和时间网格加密后误差下降，task 才通过。"
+    },
+    "metric_name": "Strict solver success rate"
+  },
+  "source": "https://github.com/NLR-Theseus/cfdllmbench",
+  "summary": {
+    "en": "CFDCodeBench evaluates generation of executable, numerically accurate, convergent CFD and PDE solvers.",
+    "zh": "CFDCodeBench 评估模型生成可执行、数值准确且具备收敛性的 CFD 与 PDE solver 的能力。"
+  },
+  "tags": [
+    "CFD",
+    "PDE",
+    "solver generation"
+  ],
+  "task_format": {
+    "en": "Given a structured PDE specification, the model writes a complete Python solver for each of 24 tasks.",
+    "zh": "模型根据结构化 PDE 规格，为 24 个 task 分别生成完整 Python solver。"
+  }
+}

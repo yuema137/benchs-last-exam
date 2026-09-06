@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "llm_mse_mcqs_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "llm-mse-mcqs",
+  "input_unit": "fraction",
+  "metric_id": "llm-mse-mcqs-metric-v1",
+  "name": "LLM-MSE-MCQs",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "LLM-MSE-MCQs fixed 113-question multiple-choice subset; ScienceEval standardized panel with eight samples per question. LLM-MSE steel-yield and band-gap prediction datasets, expert prompts, and few-shot variants are not merged.",
+  "protocol_id": "llm-mse-mcqs-source-export-v1",
+  "registry_order": 34,
+  "release": "2024-09-22",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of fixed LLM-MSE-MCQs questions answered correctly under the standardized ScienceEval panel. Other LLM-MSE datasets and prompting variants are separate measurement objects.",
+      "zh": "分数是在标准化 ScienceEval panel 下答对固定 LLM-MSE-MCQs 题目的比例。LLM-MSE 的其他 dataset 和 prompting variant 属于独立 measurement object。"
+    },
+    "metric_name": "Pass@1 accuracy"
+  },
+  "source": "https://arxiv.org/abs/2409.14572",
+  "summary": {
+    "en": "LLM-MSE-MCQs is the fixed multiple-choice materials-science subset of LLM-MSE, testing undergraduate materials knowledge and reasoning.",
+    "zh": "LLM-MSE-MCQs 是 LLM-MSE 中固定的材料科学 multiple-choice 子集，测试模型的本科材料知识和推理能力。"
+  },
+  "tags": [
+    "materials",
+    "multiple-choice",
+    "pass@1",
+    "ScienceEval"
+  ],
+  "task_format": {
+    "en": "The model answers a fixed 113-question multiple-choice subset covering undergraduate materials science. ScienceEval's comparable panel samples eight responses per question for pass@1 estimation.",
+    "zh": "模型回答固定的 113 道本科材料科学 multiple-choice question。ScienceEval 的可比 panel 对每道题采样八次，用于估计 pass@1。"
+  }
+}

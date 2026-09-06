@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "controlbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "controlbench",
+  "input_unit": "fraction",
+  "metric_id": "controlbench-metric-v1",
+  "name": "ControlBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ControlBench original 147-problem open-ended set, zero-shot initial response, no tools, expert binary grading. ACC-s self-check and ControlBench-C are excluded.",
+  "protocol_id": "controlbench-source-export-v1",
+  "registry_order": 93,
+  "release": "2024-04-04",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "ACC is the fraction of the fixed 147 initial responses that control experts judge to solve the problem correctly.",
+      "zh": "ACC 是固定 147 个初始回答中，被控制工程专家判定为正确解决问题的比例。"
+    },
+    "metric_name": "Initial-answer accuracy"
+  },
+  "source": "https://arxiv.org/abs/2404.03647",
+  "summary": {
+    "en": "ControlBench measures open-ended classical-control analysis and design competence, including stability, feedback, and plot interpretation.",
+    "zh": "ControlBench 测试模型在稳定性、反馈控制和控制图表解读等经典控制分析与设计任务上的能力。"
+  },
+  "tags": [
+    "control systems",
+    "open-ended",
+    "expert graded"
+  ],
+  "task_format": {
+    "en": "The model receives one of 147 undergraduate control-engineering problems and produces a zero-shot worked solution for expert review.",
+    "zh": "模型会收到 147 道本科控制工程题中的一道，并生成由领域专家审核的 zero-shot 完整解答。"
+  }
+}

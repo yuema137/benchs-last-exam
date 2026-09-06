@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Manufacturing",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "fle_neurips2025_planning_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "fle-neurips-2025-planning",
+  "input_unit": "fraction",
+  "metric_id": "fle-neurips-2025-planning-metric-v1",
+  "name": "Factorio Learning Environment — Planning",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "NeurIPS 2025 FLE Lab-Play Planning, Factorio 1.1.110, 24 products, 128 interactions, eight runs, temperature 0.5.",
+  "protocol_id": "fle-neurips-2025-planning-source-export-v1",
+  "registry_order": 122,
+  "release": "2025-03-06",
+  "score": "Planning success",
+  "scoring": {
+    "explanation": {
+      "en": "The score is task completion averaged over eight runs per product using the published throughput holdout.",
+      "zh": "分数按每种产品八次运行的 task 完成率计算，并使用论文规定的产量 holdout。"
+    },
+    "metric_name": "Repeated-run planning success"
+  },
+  "source": "https://github.com/JackHopkins/factorio-learning-environment",
+  "summary": {
+    "en": "FLE Planning evaluates long-horizon factory design, production logistics, and resource optimization in Factorio.",
+    "zh": "FLE Planning 在 Factorio 中评估长链工厂设计、生产物流与资源优化能力。"
+  },
+  "tags": [
+    "factory",
+    "planning",
+    "logistics"
+  ],
+  "task_format": {
+    "en": "Using a stateful Python REPL and fixed API, the agent builds automatic factories for 24 products under a 128-interaction horizon.",
+    "zh": "agent 通过有状态 Python REPL 和固定 API，在 128 次 interaction 内为 24 种产品建设自动工厂。"
+  }
+}

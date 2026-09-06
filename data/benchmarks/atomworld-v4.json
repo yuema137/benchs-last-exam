@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "atomworld_v4_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "atomworld-v4",
+  "input_unit": "fraction",
+  "metric_id": "atomworld-v4-metric-v1",
+  "name": "AtomWorld v4",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "AtomWorld v4 / AtomMotor-2K fixed 2,500-case full suite, CIF output, official StructureMatcher with 0.5 Å site tolerance. Diagnostic subset results are not merged.",
+  "protocol_id": "atomworld-v4-source-export-v1",
+  "registry_order": 84,
+  "release": "2026-05-28",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task succeeds when the submitted crystal matches the target under the official StructureMatcher tolerance. This card uses the fixed 2,500-case full-suite result; diagnostic subsets are excluded.",
+      "zh": "提交的 crystal 在官方 StructureMatcher tolerance 下与目标匹配时，task 才算成功。本卡使用固定 2,500-case full-suite 结果，不纳入 diagnostic subset。"
+    },
+    "metric_name": "Structure success rate"
+  },
+  "source": "https://github.com/theAfish/AtomWorldBench",
+  "summary": {
+    "en": "AtomWorld v4 evaluates whether models can manipulate crystalline structures correctly rather than only answer materials-science questions.",
+    "zh": "AtomWorld v4 评估模型能不能正确操作晶体结构，而不只是回答材料科学知识题。"
+  },
+  "tags": [
+    "crystal structure",
+    "spatial reasoning",
+    "CIF"
+  ],
+  "task_format": {
+    "en": "The model follows an atomic-structure editing instruction and returns a modified CIF crystal structure.",
+    "zh": "模型需要遵循原子结构编辑指令，并返回修改后的 CIF 晶体结构。"
+  }
+}

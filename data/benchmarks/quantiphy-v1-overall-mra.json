@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "quantiphy_v1_overall_mra_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "quantiphy-v1-overall-mra",
+  "input_unit": "percentage_points",
+  "metric_id": "quantiphy-v1-overall-mra-metric-v1",
+  "name": "QuantiPhy — Overall MRA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "QuantiPhy v1 full 3,355-question video-plus-one-prior setting, overall MRA; prior-only, counterfactual and CoT ablations excluded.",
+  "protocol_id": "quantiphy-v1-overall-mra-source-export-v1",
+  "registry_order": 144,
+  "release": "2025-12-22",
+  "score": "MRA",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "MRA averages ten relative-error tolerances over valid parsed answers, then macro-averages four kinematic categories; parse failures are reported separately.",
+      "zh": "MRA 只在可解析的有效数值答案上按十个相对误差阈值汇总，再对四类运动学任务等权平均；解析失败率另行报告。"
+    },
+    "metric_name": "Overall Mean Relative Accuracy"
+  },
+  "source": "https://quantiphy.stanford.edu/",
+  "summary": {
+    "en": "QuantiPhy evaluates quantitative physical estimation from valid parsed answers to real-world video.",
+    "zh": "QuantiPhy 评估模型从真实视频中估算物理量的能力。"
+  },
+  "tags": [
+    "video",
+    "physical estimation",
+    "numerical"
+  ],
+  "task_format": {
+    "en": "Given a video and one physical prior, estimate object size, velocity, or acceleration with units.",
+    "zh": "给定视频和一个已知物理量，估算物体尺寸、速度或加速度并附单位。"
+  }
+}

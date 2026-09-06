@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "gpqa_diamond.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gpqa-diamond",
+  "input_unit": "fraction",
+  "metric_id": "gpqa-diamond-metric-v1",
+  "name": "GPQA Diamond",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "gpqa-diamond-source-export-v1",
+  "registry_order": 3,
+  "release": "2023-11-20",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the percentage of questions for which the selected option is correct. Four choices make 25% the random-choice reference point.",
+      "zh": "分数就是选项正确的题目占全部题目的比例。因为每题有四个选项，25% 是随机选择的参考 floor。"
+    },
+    "metric_name": "Accuracy"
+  },
+  "source": "https://arxiv.org/abs/2311.12022",
+  "summary": {
+    "en": "GPQA Diamond tests difficult science reasoning questions written and checked by domain experts.",
+    "zh": "GPQA Diamond 测试由领域专家编写和核验的高难度科学推理题。"
+  },
+  "tags": [
+    "expert",
+    "multiple-choice",
+    "reasoning"
+  ],
+  "task_format": {
+    "en": "Each item is a four-choice science question. The model selects one answer, usually without access to external tools in the reported score.",
+    "zh": "每个 task 都是四选一科学问题，模型需要选一个答案；公开分数通常不包含外部工具使用。"
+  }
+}

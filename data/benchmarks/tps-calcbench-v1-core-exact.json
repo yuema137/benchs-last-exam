@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "tps_calcbench_v1_core_exact_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "tps-calcbench-v1-core-exact",
+  "input_unit": "fraction",
+  "metric_id": "tps-calcbench-v1-core-exact-metric-v1",
+  "name": "TPS-CalcBench — Core Exact",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "TPS-CalcBench arXiv-v1 420-item high-confidence core, Track A, zero-shot standardized prompt, no tools/RAG/fine-tuning, exact <1% accuracy.",
+  "protocol_id": "tps-calcbench-v1-core-exact-source-export-v1",
+  "registry_order": 128,
+  "release": "2026-04-20",
+  "score": "Exact accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A response is exact when its extracted numerical result has under 1% relative error; missing outputs remain wrong over the full 420-item denominator.",
+      "zh": "提取数值的相对误差低于 1% 时计为 Exact；缺失输出按错误处理，分母始终是完整 420 题。"
+    },
+    "metric_name": "Core exact outcome accuracy"
+  },
+  "source": "https://arxiv.org/html/2604.17966",
+  "summary": {
+    "en": "TPS-CalcBench evaluates analytical calculations for hypersonic thermal-protection systems and high-temperature gas dynamics.",
+    "zh": "TPS-CalcBench 评估高超声速热防护系统和高温气体动力学解析工程计算能力。"
+  },
+  "tags": [
+    "hypersonics",
+    "thermal protection",
+    "numerical"
+  ],
+  "task_format": {
+    "en": "The model solves 420 core engineering problems, shows calculation steps, and returns a final numerical answer with units.",
+    "zh": "模型解决 420 道核心工程计算题，展示计算步骤，并给出带单位的最终数值答案。"
+  }
+}

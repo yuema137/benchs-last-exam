@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "physbench_seq_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "physbench-seq",
+  "input_unit": "fraction",
+  "metric_id": "physbench-seq-metric-v1",
+  "name": "PhysBench — Seq",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "PhysBench fixed 10,002-item full test set, Seq input protocol, zero-shot exact-choice accuracy. Merge inputs, reduced subsets, and tool-assisted PhysAgent results are excluded.",
+  "protocol_id": "physbench-seq-source-export-v1",
+  "registry_order": 101,
+  "release": "2024-09-23",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is exact-answer accuracy across all 10,002 PhysBench test items under the Seq input protocol.",
+      "zh": "分数是在 Seq input protocol 下，全部 10,002 道 PhysBench test item 的 exact-answer accuracy。"
+    },
+    "metric_name": "Full-test exact accuracy"
+  },
+  "source": "https://physbench.github.io/",
+  "summary": {
+    "en": "PhysBench tests physical properties, relationships, scenes, and dynamics using text with image or sequential video-frame inputs.",
+    "zh": "PhysBench 使用文本、图像和按顺序输入的视频帧，测试物理属性、关系、场景和动态理解能力。"
+  },
+  "tags": [
+    "multimodal",
+    "video",
+    "physical world"
+  ],
+  "task_format": {
+    "en": "The model receives text plus images or sequentially sampled video frames and selects one of four answers on the fixed full test set.",
+    "zh": "模型会收到文本与图像或按顺序采样的视频帧，并在固定 full test set 上回答四选一问题。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "terminal_bench_science_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "terminal-bench-science-0-1",
+  "input_unit": "fraction",
+  "metric_id": "terminal-bench-science-0-1-metric-v1",
+  "name": "Terminal-Bench-Science 0.1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "terminal-bench-science-0-1-source-export-v1",
+  "registry_order": 45,
+  "release": "2026-05-20",
+  "score": "Resolution rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task is resolved when its task-specific evaluator accepts the required scientific artifact or outcome. The reported rate averages three independent trials per task.",
+      "zh": "当 task 专用 evaluator 接受所需的科学产物或最终结果时，task 才算解决。报告的 resolution rate 基于每个 task 的三次独立尝试。"
+    },
+    "metric_name": "Resolution rate"
+  },
+  "source": "https://www.terminal-bench-science.ai/announcement",
+  "summary": {
+    "en": "Terminal-Bench-Science evaluates agents on expert-curated research workflows across five scientific domains.",
+    "zh": "Terminal-Bench-Science 评估 agent 能不能在五个科学领域完成专家挑选的真实研究工作流。"
+  },
+  "tags": [
+    "scientific workflows",
+    "terminal",
+    "continuous benchmark"
+  ],
+  "task_format": {
+    "en": "The agent works in a terminal environment on a scientific workflow and produces an analysis, simulation, proof, code, or data artifact.",
+    "zh": "agent 会在 terminal 环境中完成科学工作流，产出分析、simulation、证明、代码或数据结果。"
+  }
+}

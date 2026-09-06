@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Tool use",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "toolathlon_verified_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "toolathlon-verified",
+  "input_unit": "fraction",
+  "metric_id": "toolathlon-verified-metric-v1",
+  "name": "Toolathlon-Verified",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Toolathlon-Verified fixed release; the official page identifies it as a new score series with revised task specifications, evaluators, initial states, and infrastructure. Earlier Toolathlon results are not merged.",
+  "protocol_id": "toolathlon-verified-source-export-v1",
+  "registry_order": 57,
+  "release": "2026-06-30",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Pass@1 is the share of tasks solved by the single submitted trajectory. The verified release also reports Pass@3 and Pass^3, but they are kept separate from the headline metric.",
+      "zh": "Pass@1 是只提交一次 trajectory 时成功解决的 task 比例。verified 版本还报告 Pass@3 和 Pass^3，但这些 metric 不和 headline metric 混合。"
+    },
+    "metric_name": "Pass@1"
+  },
+  "source": "https://toolathlon.xyz/docs/leaderboard",
+  "summary": {
+    "en": "Toolathlon-Verified tests models and agents on diverse tool-use tasks that require multi-step planning and execution.",
+    "zh": "Toolathlon-Verified 测试模型和 agent 在多种 tool-use task 中进行多步规划和执行的能力。"
+  },
+  "tags": [
+    "MCP",
+    "multi-step",
+    "Pass@1",
+    "tool calls"
+  ],
+  "task_format": {
+    "en": "The system receives a task and access to a fixed set of MCP servers or local toolkits, then must complete the requested workflow through tool calls.",
+    "zh": "系统会收到一个 task，并获得固定 MCP server 或 local toolkit 的访问权限，然后需要通过 tool calls 完成指定 workflow。"
+  }
+}

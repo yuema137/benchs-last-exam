@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Terminal / OS",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "terminal_bench_2_1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "terminal-bench-2-1",
+  "input_unit": "fraction",
+  "metric_id": "terminal-bench-2-1-metric-v1",
+  "name": "Terminal-Bench 2.1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "terminal-bench-2-1-source-export-v1",
+  "registry_order": 47,
+  "release": "2026-05-06",
+  "score": "Accuracy mean",
+  "scoring": {
+    "explanation": {
+      "en": "The reported accuracy is the mean task success rate under the listed agent-model setup. Different harnesses are kept as separate observations.",
+      "zh": "报告的 accuracy 是指定 agent-model setup 下的平均 task 成功率。不同 harness 会作为不同 observation 保留。"
+    },
+    "metric_name": "Mean task accuracy"
+  },
+  "source": "https://www.tbench.ai/news/terminal-bench-2-1",
+  "summary": {
+    "en": "Terminal-Bench 2.1 measures agents on difficult, reproducible terminal tasks after fixing issues in 28 tasks from version 2.0.",
+    "zh": "Terminal-Bench 2.1 评估 agent 完成高难度、可复现 terminal task 的能力，并修复了 2.0 版本中 28 个 task 的问题。"
+  },
+  "tags": [
+    "container",
+    "reproducible",
+    "revision"
+  ],
+  "task_format": {
+    "en": "The agent receives an instruction and a containerized terminal task with tests, then must leave the environment in a passing state.",
+    "zh": "agent 会收到指令和带测试的容器化 terminal task，最后必须让环境通过检查。"
+  }
+}

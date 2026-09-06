@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Earth Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "climaqa_gold_mcq_default_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "climaqa-gold-mcq-default",
+  "input_unit": "fraction",
+  "metric_id": "climaqa-gold-mcq-default-metric-v1",
+  "name": "ClimaQA-Gold — Default MCQ",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "ClimaQA-Gold pinned 245 validated MCQs, default no-context prompt, top output token, three trials; invalid, Silver, freeform, RAG, and adaptation variants are excluded.",
+  "protocol_id": "climaqa-gold-mcq-default-source-export-v1",
+  "registry_order": 127,
+  "release": "2024-10-22",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is mean exact-choice accuracy over three full trials on rows with Validation=True.",
+      "zh": "分数是在 Validation=True 的题目上完成三次完整试验后的平均选项准确率。"
+    },
+    "metric_name": "Three-trial exact accuracy"
+  },
+  "source": "https://github.com/Rose-STL-Lab/genie-climaqa",
+  "summary": {
+    "en": "ClimaQA-Gold evaluates graduate-level climate-science knowledge and reasoning on expert-validated questions.",
+    "zh": "ClimaQA-Gold 使用专家验证题目评估研究生层级气候科学知识与推理能力。"
+  },
+  "tags": [
+    "climate",
+    "multiple-choice",
+    "graduate-level"
+  ],
+  "task_format": {
+    "en": "The model selects one of four answers for 245 validated Base, Reasoning, and Hypothetical climate questions.",
+    "zh": "模型回答 245 道通过验证的四选一气候题，覆盖 Base、Reasoning 和 Hypothetical。"
+  }
+}

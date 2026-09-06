@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "cadbench_wild_v1_criteria_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cadbench-wild-v1-criteria-score",
+  "input_unit": "fraction",
+  "metric_id": "cadbench-wild-v1-criteria-score-metric-v1",
+  "name": "CADBench-Wild — Criteria Score",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CADBench-Wild 200 prompts, common one-shot context, executable bpy scripts, paper Table 2 Avg criteria; Sim split and syntax metrics excluded.",
+  "protocol_id": "cadbench-wild-v1-criteria-score-source-export-v1",
+  "registry_order": 139,
+  "release": "2024-12-16",
+  "score": "Average criteria",
+  "scoring": {
+    "explanation": {
+      "en": "A verified rubric judge checks the executed script and four rendered views against binary criteria.",
+      "zh": "经人工核验的 rubric judge 根据脚本和四个视角渲染检查二元 criteria。"
+    },
+    "metric_name": "Average criteria satisfaction"
+  },
+  "source": "https://arxiv.org/html/2412.14203",
+  "summary": {
+    "en": "CADBench-Wild evaluates executable Blender modeling from real-world 3D design requests.",
+    "zh": "CADBench-Wild 评估根据真实三维设计需求生成可执行 Blender 模型的能力。"
+  },
+  "tags": [
+    "CAD",
+    "Blender",
+    "code generation"
+  ],
+  "task_format": {
+    "en": "Generate a Blender Python script for each of 200 natural-language modeling requests.",
+    "zh": "为 200 条自然语言建模需求生成 Blender Python 脚本。"
+  }
+}

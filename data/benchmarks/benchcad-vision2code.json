@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "benchcad_vision2code_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "benchcad-vision2code",
+  "input_unit": "fraction",
+  "metric_id": "benchcad-vision2code-metric-v1",
+  "name": "BenchCAD · Vision2Code",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BenchCAD Vision2Code public leaderboard task; execution-grounded IoU-score. The curated series uses comparable non-tool IoU-score rows only; IoU · tools and other BenchCAD tasks remain separate measurements.",
+  "protocol_id": "benchcad-vision2code-source-export-v1",
+  "registry_order": 54,
+  "release": "2026-05-11",
+  "score": "IoU-score",
+  "scoring": {
+    "explanation": {
+      "en": "The generated program is executed and scored by voxel intersection-over-union, with non-executing outputs receiving zero. The score is the average IoU-score across tasks; it is not an LLM-judge rating.",
+      "zh": "生成的程序会被执行，并按 voxel intersection-over-union 评分；无法执行的输出得分为零。最终分数是所有 task 的平均 IoU-score，不是 LLM judge 评分。"
+    },
+    "metric_name": "Execution-grounded IoU-score"
+  },
+  "source": "https://benchcad.com/leaderboard",
+  "summary": {
+    "en": "BenchCAD Vision2Code tests whether a multimodal model can turn orthographic views of an industrial part into executable parametric CAD code.",
+    "zh": "BenchCAD Vision2Code 测试 multimodal model 能不能把工业零件的多视图转换成可执行的参数化 CAD 代码。"
+  },
+  "tags": [
+    "programmatic CAD",
+    "vision-to-code",
+    "execution-grounded"
+  ],
+  "task_format": {
+    "en": "The model receives four rendered views of a part and must produce a CadQuery program. The program is executed to create a solid and compared with the reference geometry.",
+    "zh": "模型会收到一个零件的四张渲染视图，需要生成 CadQuery 程序。程序会被执行生成实体，再和标准几何结果比较。"
+  }
+}

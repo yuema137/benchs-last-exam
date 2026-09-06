@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Terminal / OS",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "terminalworld_verified_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "terminalworld-verified",
+  "input_unit": "fraction",
+  "metric_id": "terminalworld-verified-metric-v1",
+  "name": "TerminalWorld Verified",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "terminalworld-verified-source-export-v1",
+  "registry_order": 46,
+  "release": "2026-05-21",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of the 200 human-verified tasks completed successfully. Results use the standardized Terminus-2 agent framework and Harbor harness.",
+      "zh": "分数是 200 个经过人工核验的 task 中成功完成的比例。结果使用统一的 Terminus-2 agent framework 和 Harbor harness。"
+    },
+    "metric_name": "Verified task pass rate"
+  },
+  "source": "https://terminalworld.ai/leaderboard/",
+  "summary": {
+    "en": "TerminalWorld Verified evaluates agents on real-world terminal workflows derived from developer recordings and manually verified.",
+    "zh": "TerminalWorld Verified 评估 agent 能不能完成来自真实开发者操作记录、并经过人工核验的 terminal 工作流。"
+  },
+  "tags": [
+    "real-world workflows",
+    "verified subset",
+    "terminal"
+  ],
+  "task_format": {
+    "en": "The agent operates inside an isolated Docker terminal environment and must reach the task's required final system state.",
+    "zh": "agent 会在隔离的 Docker terminal 环境中操作，必须让系统达到 task 要求的最终状态。"
+  }
+}

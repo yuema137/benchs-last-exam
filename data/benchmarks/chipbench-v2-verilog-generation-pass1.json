@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "chipbench_v2_verilog_pass1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chipbench-v2-verilog-generation-pass1",
+  "input_unit": "fraction",
+  "metric_id": "chipbench-v2-verilog-generation-pass1-metric-v1",
+  "name": "ChipBench v2 — Verilog Pass@1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ChipBench arXiv-v2 fixed 44 Verilog-generation modules, single model, temperature 0.85, top-p 0.95, paper Average Pass@1; debugging, MAGE and Pass@k are excluded.",
+  "protocol_id": "chipbench-v2-verilog-generation-pass1-source-export-v1",
+  "registry_order": 129,
+  "release": "2026-01-29",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Pass@1 estimates one-sample compile-and-test success; the headline is the unweighted mean across CPU-IP, hierarchical, and self-contained categories.",
+      "zh": "Pass@1 估计单次生成通过编译和全部测试的概率；headline 是 CPU-IP、层次模块和独立模块三个类别的非加权平均。"
+    },
+    "metric_name": "Macro-average Verilog generation Pass@1"
+  },
+  "source": "https://github.com/zhongkaiyu/ChipBench",
+  "summary": {
+    "en": "ChipBench evaluates generation of structurally complex, simulation-verified Verilog hardware modules.",
+    "zh": "ChipBench 评估模型生成结构复杂、通过仿真验证的 Verilog 硬件模块的能力。"
+  },
+  "tags": [
+    "Verilog",
+    "hardware",
+    "simulation"
+  ],
+  "task_format": {
+    "en": "Given a hardware specification and supplied interfaces, the model writes a complete implementation for one of 44 modules.",
+    "zh": "模型根据硬件规格和提供的接口，为 44 个模块之一生成完整实现。"
+  }
+}

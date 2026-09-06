@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "robobench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "robobench",
+  "input_unit": "fraction",
+  "metric_id": "robobench-metric-v1",
+  "name": "RoboBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "RoboBench official leaderboard Perception Reasoning average snapshot; other dimensions and model/harness settings are not silently merged.",
+  "protocol_id": "robobench-source-export-v1",
+  "registry_order": 40,
+  "release": "2025-10-23",
+  "score": "Perception Reasoning Avg",
+  "scoring": {
+    "explanation": {
+      "en": "This card uses only the official Perception Reasoning average. Planning, affordance, and other RoboBench dimensions are separate measurement objects.",
+      "zh": "本卡只使用官方 Perception Reasoning average。Planning、affordance 和 RoboBench 的其他 dimension 属于独立 measurement object。"
+    },
+    "metric_name": "Perception Reasoning average"
+  },
+  "source": "https://robo-bench.github.io/",
+  "summary": {
+    "en": "RoboBench evaluates multimodal models on embodied-robotics reasoning across perception, planning, and interaction tasks.",
+    "zh": "RoboBench 评估多模态模型在 embodied robotics 中完成 perception、planning 和 interaction task 的能力。"
+  },
+  "tags": [
+    "robotics",
+    "embodied",
+    "multimodal",
+    "perception"
+  ],
+  "task_format": {
+    "en": "The model receives visual and task context for robotics scenarios and answers under the benchmark's multimodal reasoning protocol.",
+    "zh": "模型会收到 robotics 场景中的视觉和 task context，并按照 benchmark 的 multimodal reasoning protocol 作答。"
+  }
+}

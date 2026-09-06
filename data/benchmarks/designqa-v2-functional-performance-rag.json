@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "designqa_v2_functional_rag_external.csv",
+  "floor": 0.5,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "designqa-v2-functional-performance-rag",
+  "input_unit": "fraction",
+  "metric_id": "designqa-v2-functional-performance-rag-metric-v1",
+  "name": "DesignQA v2 — Functional Performance RAG",
+  "progress_baseline": 0.5,
+  "progress_target": 1.0,
+  "protocol": "DesignQA v2 Functional Performance 16-question subset, simple LlamaIndex RAG, temperature 0.1; AllRules and GuaranteedRAG excluded.",
+  "protocol_id": "designqa-v2-functional-performance-rag-source-export-v1",
+  "registry_order": 138,
+  "release": "2024-04-11",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Exact yes/no accuracy over the fixed 16-question subset under the simple-RAG setup.",
+      "zh": "在 simple-RAG 设置下计算固定 16 题 subset 的 yes/no 准确率。"
+    },
+    "metric_name": "Functional Performance accuracy"
+  },
+  "source": "https://arxiv.org/html/2404.07917",
+  "summary": {
+    "en": "DesignQA evaluates applying Formula SAE requirements to engineering-design evidence.",
+    "zh": "DesignQA 评估把 Formula SAE 规范应用到工程设计证据的能力。"
+  },
+  "tags": [
+    "design",
+    "Formula SAE",
+    "RAG"
+  ],
+  "task_format": {
+    "en": "Use retrieved rulebook context and visual evidence to make 16 binary functional-compliance decisions.",
+    "zh": "结合检索到的规则文本和视觉证据，完成 16 道二元功能合规判断。"
+  }
+}

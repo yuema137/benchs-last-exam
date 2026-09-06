@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mathvista_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mathvista",
+  "input_unit": "fraction",
+  "metric_id": "mathvista-metric-v1",
+  "name": "MathVista",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MathVista official project-page score series; test/testmini and materially different subsets are not silently merged.",
+  "protocol_id": "mathvista-source-export-v1",
+  "registry_order": 10,
+  "release": "2023-10-03",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A response counts as correct when it matches the reference answer under the MathVista evaluator. The score is the fraction of visual-math questions answered correctly.",
+      "zh": "按照 MathVista evaluator 的规则，答案和标准答案匹配时算正确。分数就是答对视觉数学题的比例。"
+    },
+    "metric_name": "Answer accuracy"
+  },
+  "source": "https://mathvista.github.io/",
+  "summary": {
+    "en": "MathVista tests mathematical reasoning in visual contexts, combining charts, diagrams, geometry, and other visual materials with math questions.",
+    "zh": "MathVista 测试模型在视觉材料中进行数学推理的能力，题目包含图表、示意图、几何图形等内容。"
+  },
+  "tags": [
+    "visual math",
+    "charts",
+    "diagrams"
+  ],
+  "task_format": {
+    "en": "The model receives an image or visual context and a mathematics question, then produces an answer under the benchmark's answer protocol.",
+    "zh": "模型会收到图片或其他视觉材料以及一道数学问题，然后按照 benchmark 的 answer protocol 给出答案。"
+  }
+}

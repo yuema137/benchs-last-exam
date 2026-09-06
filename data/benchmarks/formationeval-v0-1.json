@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Energy & Infrastructure",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "formationeval_v0_1_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "formationeval-v0-1",
+  "input_unit": "fraction",
+  "metric_id": "formationeval-v0-1-metric-v1",
+  "name": "FormationEval v0.1",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "FormationEval v0.1 fixed 505-item English MCQ set, zero-shot, direct A-D answer, one published run and official extraction. Later DISKOS-QA and SPE extensions are excluded.",
+  "protocol_id": "formationeval-v0-1-source-export-v1",
+  "registry_order": 110,
+  "release": "2026-01-05",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is correct answers divided by 505; failed answer extraction counts as incorrect.",
+      "zh": "分数是答对题数除以 505；无法提取答案时按错误计分。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://www.formationeval.no/",
+  "summary": {
+    "en": "FormationEval measures petroleum geoscience and subsurface-engineering knowledge across reservoir, drilling, production, and petrophysics topics.",
+    "zh": "FormationEval 测试模型在油气地球科学、储层、钻井、生产和岩石物理等地下工程主题上的知识。"
+  },
+  "tags": [
+    "petroleum",
+    "subsurface",
+    "geoscience"
+  ],
+  "task_format": {
+    "en": "The model answers all 505 English four-choice questions zero-shot and returns one final option letter.",
+    "zh": "模型以 zero-shot 方式回答全部 505 道英文四选一题，并返回一个最终选项字母。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "scienceagentbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "scienceagentbench",
+  "input_unit": "fraction",
+  "metric_id": "scienceagentbench-metric-v1",
+  "name": "ScienceAgentBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ScienceAgentBench 102-task release with the HAL leaderboard's verified accuracy results. SAB Self-Debug and HAL Generalist Agent are retained as distinct scaffolds; no cost total is treated as per-task cost.",
+  "protocol_id": "scienceagentbench-source-export-v1",
+  "registry_order": 61,
+  "release": "2024-10-07",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the fraction of benchmark tasks for which the generated program and its executed result satisfy the task evaluator. The leaderboard also reports total API cost separately.",
+      "zh": "Accuracy 是生成的程序及其执行结果满足 task evaluator 的 benchmark task 占比。leaderboard 还会单独报告总 API cost。"
+    },
+    "metric_name": "Scientific task accuracy"
+  },
+  "source": "https://hal.cs.princeton.edu/scienceagentbench",
+  "summary": {
+    "en": "ScienceAgentBench evaluates language agents on reproducible, data-driven scientific discovery tasks sourced from peer-reviewed publications.",
+    "zh": "ScienceAgentBench 评估 language agent 在可复现、来自同行评审论文的 data-driven scientific discovery task 上的表现。"
+  },
+  "tags": [
+    "scientific discovery",
+    "Python",
+    "verified"
+  ],
+  "task_format": {
+    "en": "The agent must produce a self-contained Python program that analyzes scientific data and generates the required result in a reproducible environment.",
+    "zh": "agent 需要生成一个 self-contained Python program，在可复现环境中分析科学数据并产出要求的结果。"
+  }
+}

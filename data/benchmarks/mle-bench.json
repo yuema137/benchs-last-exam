@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "mle_bench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mle-bench",
+  "input_unit": "fraction",
+  "metric_id": "mle-bench-metric-v1",
+  "name": "MLE-bench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Original MLE-bench AIDE baseline series across 75 fixed competitions. Pass@1/Pass@10 and complexity slices are not mixed into the All any-medal metric.",
+  "protocol_id": "mle-bench-source-export-v1",
+  "registry_order": 62,
+  "release": "2024-10-10",
+  "score": "All (%)",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the share of competitions where the agent reaches at least a Kaggle bronze-medal threshold. Low, medium, high, and all-complexity slices are reported separately; this series uses All.",
+      "zh": "分数是 agent 至少达到 Kaggle bronze medal 门槛的竞赛占比。low、medium、high 和 all-complexity slice 分开报告；本序列使用 All。"
+    },
+    "metric_name": "Any-medal rate"
+  },
+  "source": "https://openai.com/index/mle-bench/",
+  "summary": {
+    "en": "MLE-bench evaluates agents on real machine-learning engineering competitions derived from Kaggle tasks.",
+    "zh": "MLE-bench 使用来自 Kaggle 的真实机器学习竞赛任务，评估 agent 的 machine-learning engineering 能力。"
+  },
+  "tags": [
+    "ML engineering",
+    "Kaggle",
+    "long-horizon"
+  ],
+  "task_format": {
+    "en": "The agent prepares data, trains models, runs experiments, and submits a solution for one of 75 curated ML competitions.",
+    "zh": "agent 需要准备数据、训练模型、运行实验，并为 75 个精选 ML 竞赛之一提交解决方案。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Nuclear Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "nuclearqav2_v1_aggregate_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "nuclearqav2-v1-aggregate",
+  "input_unit": "fraction",
+  "metric_id": "nuclearqav2-v1-aggregate-metric-v1",
+  "name": "NuclearQAv2 — Aggregate",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "NuclearQAv2 arXiv-v1 1,239-question snapshot: Boolean v2, Numeric v0, Verbal v0; three runs per model and task-count-weighted aggregate.",
+  "protocol_id": "nuclearqav2-v1-aggregate-source-export-v1",
+  "registry_order": 115,
+  "release": "2026-06-25",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Boolean exact match, 15%-tolerance numeric accuracy, and fixed GPT-J semantic verbal judgments are weighted by task counts.",
+      "zh": "判断题精确匹配、允许 15% 误差的数值题和固定 GPT-J 语义裁判的概念题按题量加权。"
+    },
+    "metric_name": "Question-count-weighted aggregate accuracy"
+  },
+  "source": "https://arxiv.org/abs/2606.27047",
+  "summary": {
+    "en": "NuclearQAv2 evaluates factual, numerical, and conceptual nuclear-engineering reasoning.",
+    "zh": "NuclearQAv2 评估核工程事实知识、数值计算和概念推理能力。"
+  },
+  "tags": [
+    "nuclear",
+    "numerical",
+    "conceptual"
+  ],
+  "task_format": {
+    "en": "The model answers 1,239 Boolean, numerical, and short verbal nuclear-engineering questions.",
+    "zh": "模型回答 1,239 道核工程判断、数值和简短概念题。"
+  }
+}
