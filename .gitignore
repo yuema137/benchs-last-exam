@@ -9,6 +9,9 @@ env/
 dist/
 build/
 *.egg-info/
+site/data/index.json
+site/data/resources.json
+site/data/benchmarks/
 data/snapshots/generated/
 data/raw/*
 !data/raw/README.md

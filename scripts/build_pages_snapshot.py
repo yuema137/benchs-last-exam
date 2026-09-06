@@ -26,12 +26,20 @@ def main():
     output.mkdir(parents=True)
     for name in ("index.html", "app.js", "styles.css"):
         shutil.copy2(generated / name, output / name)
-    shutil.copytree(generated / "data", output / "data")
+    public_data = output / "data"
+    public_data.mkdir()
+    shutil.copy2(generated / "data" / "index.json", public_data / "index.json")
+    shutil.copy2(generated / "data" / "resources.json", public_data / "resources.json")
+    shutil.copytree(generated / "data" / "benchmarks", public_data / "benchmarks")
+    # The destination repository currently validates this historical filename.
+    # Keep it as a small index alias; the 25 MB monolithic detail payload is not
+    # published and the frontend never fetches this compatibility file.
+    shutil.copy2(generated / "data" / "index.json", public_data / "benchmarks.json")
     assets = generated / "assets"
     if assets.exists():
         shutil.copytree(assets, output / "assets")
 
-    benchmarks = json.loads((output / "data" / "benchmarks.json").read_text())
+    benchmarks = json.loads((output / "data" / "index.json").read_text())
     manifest = {
         "project": "BLE",
         "source_repository": "https://github.com/yuema137/benchs-last-exam",

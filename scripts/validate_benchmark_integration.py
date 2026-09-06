@@ -10,6 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
+PUBLIC_INDEX = ROOT / "site" / "data" / "index.json"
+PUBLIC_DETAILS = ROOT / "site" / "data" / "benchmarks"
+PUBLIC_RESOURCES = ROOT / "site" / "data" / "resources.json"
 APP = ROOT / "site" / "app.js"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 EVIDENCE = ROOT / "data" / "evidence.jsonl"
@@ -119,6 +122,91 @@ def validate_registry_alignment(registry_specs, generated_benchmarks):
     if registry_ids != generated_ids:
         return ["generated leaderboard/detail benchmark IDs are stale against data/benchmarks"]
     return []
+
+
+def collect_resource_ids(value):
+    found = set()
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if key in {"resource_ids", "source_ids", "score_source_ids", "observation_date_source_ids"} and isinstance(item, list):
+                found.update(entry for entry in item if isinstance(entry, str))
+            else:
+                found.update(collect_resource_ids(item))
+    elif isinstance(value, list):
+        for item in value:
+            found.update(collect_resource_ids(item))
+    return found
+
+
+def validate_public_bundles(payload):
+    """Prove the lightweight index and every lazy detail match the full build."""
+    errors = []
+    try:
+        index = json.loads(PUBLIC_INDEX.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        return [f"public index cannot be read: {error}"]
+    if index.get("bundle_kind") != "benchmark_index":
+        errors.append("public index has the wrong bundle_kind")
+    if index.get("snapshot_id") != payload.get("snapshot_id"):
+        errors.append("public index snapshot is stale")
+    if index.get("reference_organizations") != payload.get("reference_organizations"):
+        errors.append("public index reference organization panel is stale")
+    if index.get("lifecycle_views") != payload.get("lifecycle_views"):
+        errors.append("public index lifecycle views are stale")
+    full_by_id = {item["id"]: item for item in payload.get("benchmarks", [])}
+    index_by_id = {item.get("id"): item for item in index.get("benchmarks", [])}
+    if list(index_by_id) != list(full_by_id):
+        errors.append("public index benchmark IDs/order do not match the canonical snapshot")
+    forbidden_index_fields = {
+        "observations", "frontier", "frontier_events", "capability_frontier",
+        "reported_frontier", "historical_frontier", "retrospective_observations",
+        "auxiliary_score_series", "resource_ids", "summary", "task_format", "scoring",
+    }
+    for benchmark_id, summary in index_by_id.items():
+        leaked = forbidden_index_fields & set(summary)
+        if leaked:
+            errors.append(f"{benchmark_id}: heavy detail fields leaked into public index: {sorted(leaked)}")
+        if summary.get("detail_path") != f"benchmarks/{benchmark_id}.json":
+            errors.append(f"{benchmark_id}: invalid public detail path")
+
+    expected_paths = {PUBLIC_DETAILS / f"{benchmark_id}.json" for benchmark_id in full_by_id}
+    actual_paths = set(PUBLIC_DETAILS.glob("*.json")) if PUBLIC_DETAILS.is_dir() else set()
+    if actual_paths != expected_paths:
+        errors.append(
+            f"public detail files are stale: missing={len(expected_paths-actual_paths)}, "
+            f"unexpected={len(actual_paths-expected_paths)}"
+        )
+    full_resources = {item["id"]: item for item in payload.get("resources", [])}
+    try:
+        resource_bundle = json.loads(PUBLIC_RESOURCES.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        errors.append(f"public resource registry cannot be read: {error}")
+        resource_bundle = {}
+    if resource_bundle.get("bundle_kind") != "resource_registry":
+        errors.append("public resource registry has the wrong bundle_kind")
+    published_resources = {item.get("id"): item for item in resource_bundle.get("resources", [])}
+    if published_resources != full_resources:
+        errors.append("public resource registry is stale")
+    for benchmark_id, benchmark in full_by_id.items():
+        path = PUBLIC_DETAILS / f"{benchmark_id}.json"
+        if not path.is_file():
+            continue
+        try:
+            detail = json.loads(path.read_text())
+        except json.JSONDecodeError as error:
+            errors.append(f"{benchmark_id}: detail JSON does not parse: {error}")
+            continue
+        if detail.get("bundle_kind") != "benchmark_detail":
+            errors.append(f"{benchmark_id}: detail has the wrong bundle_kind")
+        if detail.get("benchmark") != benchmark:
+            errors.append(f"{benchmark_id}: lazy detail differs from canonical benchmark record")
+        expected_resource_ids = collect_resource_ids(benchmark)
+        expected_resource_ids &= set(full_resources)
+        if not expected_resource_ids.issubset(published_resources):
+            errors.append(f"{benchmark_id}: lazy detail resource lineage is unresolved")
+    if PUBLIC_INDEX.stat().st_size >= SNAPSHOT.stat().st_size / 10:
+        errors.append("public index is not lightweight relative to the canonical detail snapshot")
+    return errors
 
 
 def validate_benchmark(benchmark, resources, models):
@@ -256,6 +344,7 @@ def main():
     resources = {item["id"]: item for item in payload.get("resources", [])}
     models = {item["id"]: item for item in payload.get("models", [])}
     errors = list(organization_errors)
+    errors.extend(validate_public_bundles(payload))
     if payload.get("schema_version") != 2:
         errors.append("generated snapshot must use schema_version 2")
     resource_ids = [item.get("id") for item in payload.get("resources", [])]

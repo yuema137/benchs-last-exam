@@ -11,8 +11,12 @@ resource titles or URLs.
 - `data/models.json` is the generated reference-model evidence registry.
 - `data/observations.jsonl` contains one canonical score observation per line.
 - `data/evidence.jsonl` contains every accepted source row before exact-measurement merging.
-- `site/data/benchmarks.json` is the frontend snapshot, including derived
-  frontier points that retain `observation_id` and `source_ids`.
+- `site/data/benchmarks.json` is the canonical full-build validation snapshot.
+- `site/data/index.json` is the lightweight initial frontend index.
+- `site/data/benchmarks/<id>.json` is the complete lazy-loaded benchmark dossier,
+  including derived frontier points that retain `observation_id` and `source_ids`.
+- `site/data/resources.json` is the lazy-loaded public resource registry used by
+  detail-page provenance links.
 
 Snapshot schema version 2 separates immutable source evidence records from
 deduplicated canonical measurements and uses semantic IDs for resources,

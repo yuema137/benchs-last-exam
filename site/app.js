@@ -1,4 +1,4 @@
-const state = { data: null, lang: localStorage.getItem("bo-lang") || "en", theme: localStorage.getItem("bo-theme") || "dark", view: "leaderboard", sort: "release", direction: 1, detailX: "age", detailY: "raw", detailTimeline: "capability" };
+const state = { data: null, resources: null, resourceRequest: null, activeDetail: null, detailCache: new Map(), detailRequest: 0, lang: localStorage.getItem("bo-lang") || "en", theme: localStorage.getItem("bo-theme") || "dark", view: "leaderboard", sort: "release", direction: 1, detailX: "age", detailY: "raw", detailTimeline: "capability" };
 const $ = id => document.getElementById(id);
 const githubLink = document.createElement("a"); githubLink.className="github-link"; githubLink.href="https://github.com/yuema137/benchs-last-exam"; githubLink.target="_blank"; githubLink.rel="noreferrer"; githubLink.setAttribute("aria-label","GitHub repository"); githubLink.title="GitHub repository"; githubLink.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.22-3.37-1.22-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.9 1.58 2.35 1.12 2.92.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.15 9.15 0 0 1 12 7.95c.85 0 1.7.12 2.5.36 1.91-1.33 2.75-1.05 2.75-1.05.54 1.41.2 2.45.1 2.71.63.72 1.02 1.63 1.02 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 .27-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/></svg>'; document.querySelector(".utility")?.append(githubLink);
 const I18N = { en: { title:"Leaderboard of Benchmarks", lede:"Models are probes. The benchmark is the object we compare.", domain:"Domain", year:"Release year", filter:"Filter", coverage:"Coverage", all:"All", coverage_note:"ⓘ Coverage reflects representative frontier probes.", search:"Search benchmarks...", benchmark:"Benchmark", age:"Age", frontier:"Observed frontier", t50:"T50", t90:"T90", headroom:"Headroom", back:"← Back to leaderboard", released:"Released", metric:"Metric", observations:"source-linked observations", since:"Since release", calendar:"Calendar date", raw:"Raw score", normalized:"Normalized progress", what:"What it tests", task:"Task format", scoring:"How the score is calculated", target:"What the score measures", reference:"Reference-model coverage", history:"Historical frontier", resources:"Resources", benchmark_resources:"Benchmark resources", evidence_resources:"Model/evaluation resources used here", sources:"Sources and caveats", final:"final answer", environment:"environment outcome", process:"process and output", not_reached:"Not reached", unknown:"Unknown", na:"N/A", xaxis:"X axis", yaxis:"Y axis", plot_date:"Date used on this plot", date_meaning:"Date meaning", retrospective:"Retrospective evaluation; not a contemporaneous public result." }, zh: { title:"Leaderboard of Benchmarks", lede:"模型是测量探针，我们比较的是 benchmark 本身。", domain:"领域", year:"发布年份", filter:"筛选", coverage:"覆盖情况", all:"全部", coverage_note:"ⓘ Coverage 表示代表性 frontier models 是否测过这个 benchmark。", search:"搜索 benchmark...", benchmark:"Benchmark", age:"年龄", frontier:"已观测 frontier", t50:"T50", t90:"T90", headroom:"剩余 headroom", back:"← 返回 leaderboard", released:"发布于", metric:"Metric", observations:"条有来源的 observation", since:"发布后时间", calendar:"日历时间", raw:"原始分数", normalized:"Normalized progress", what:"这个 benchmark 测什么", task:"Task format", scoring:"评分方式", target:"分数测量什么", reference:"Reference-model coverage", history:"历史 frontier", resources:"资源", benchmark_resources:"Benchmark 资源", evidence_resources:"本页使用的模型/评测资源", sources:"来源和注意事项", final:"最终答案", environment:"环境结果", process:"过程和结果", not_reached:"尚未达到", unknown:"未知", na:"N/A", xaxis:"X 轴", yaxis:"Y 轴", plot_date:"本图使用的日期", date_meaning:"日期含义", retrospective:"回溯性评测；不代表当时已经公开的结果。" } };
@@ -50,6 +50,8 @@ I18N.en.story_empty = "No benchmarks currently meet this definition."; I18N.zh.s
 I18N.en.canonical_score = "Canonical score"; I18N.zh.canonical_score = "Canonical score";
 I18N.en.auxiliary_score = "Auxiliary score"; I18N.zh.auxiliary_score = "辅助 score";
 I18N.en.auxiliary_event = "Auxiliary score series; excluded from ranking and lifecycle metrics"; I18N.zh.auxiliary_event = "辅助 score 序列；不参与排序和 lifecycle 指标";
+I18N.en.loading = "Loading benchmark dossier…"; I18N.zh.loading = "正在加载 benchmark dossier…";
+I18N.en.load_failed = "This benchmark dossier could not be loaded."; I18N.zh.load_failed = "无法加载这个 benchmark dossier。";
 const t = key => I18N[state.lang][key] || key;
 const STORY_VIEWS = ["test-of-time", "still-frontier", "fastest-solved", "recently-saturated"];
 const storyNav = document.createElement("nav"); storyNav.className = "story-tabs"; storyNav.setAttribute("aria-label", "Primary views");
@@ -64,7 +66,7 @@ const months = d => ((new Date(state.data.snapshot_id) - new Date(d)) / 86400000
 const threshold = item => item.status === "reached" ? `${(item.days / 30.44).toFixed(1)} mo` : item.status === "at_release" ? t("at_release") : item.status === "right_censored" ? `≥ ${(item.days / 30.44).toFixed(0)} mo` : item.status === "not_applicable" ? t("na") : t("unknown");
 const progress = (b, s) => { const floor=b.progress_baseline??b.floor, ceiling=b.progress_target??b.ceiling; return floor==null||ceiling==null||ceiling===floor?null:Math.max(0,Math.min(1,(s-floor)/(ceiling-floor))); };
 function frontierValue(b) { return b.capability_frontier_value ?? b.observed_frontier ?? b.current_frontier; }
-function resourcesById() { return Object.fromEntries((state.data.resources || []).map(r=>[r.id,r])); }
+function resourcesById() { return Object.fromEntries((state.resources || []).map(r=>[r.id,r])); }
 function resourceList(ids) { const resources=resourcesById(); return [...new Set(ids || [])].map(id=>resources[id]).filter(Boolean); }
 function resourceMarkup(resources) { return resources.length ? `<ul class="resource-list">${resources.map(r=>`<li><a href="${r.url}" target="_blank" rel="noreferrer">${r.title}</a><span class="small"> · ${r.publisher || r.authority}</span></li>`).join("")}</ul>` : `<p class="small">${t("unknown")}</p>`; }
 function shouldIgnoreContainerNavigation(event) { const selection=window.getSelection?.(); return event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||Boolean(selection&&!selection.isCollapsed&&selection.toString().trim())||Boolean(event.target.closest("a,button,input,select,textarea,summary,[contenteditable='true']")); }
@@ -135,6 +137,7 @@ chart=function(b){const svg=canonicalScoreChart(b),auxiliary=auxiliaryChartLayer
 function showLeaderboard(event) {
   event?.preventDefault();
   if (!state.data) return;
+  state.detailRequest += 1; state.activeDetail = null;
   state.view="leaderboard"; state.sort="current"; state.direction=1;
   document.querySelectorAll(".story-tab").forEach(tab=>tab.classList.toggle("active",tab.dataset.view==="leaderboard"));
   ["search","evaluation-type","domain","year","coverage"].forEach(id=>{if($(id))$(id).value="";});
@@ -184,12 +187,11 @@ function storyHero(b,view) { const t90=b.threshold_days.T90, t50=b.threshold_day
   const item=t90?.days>=24*30.44?t90:t50; return [item===t90?t("t90"):t("t50"),threshold(item),item?.status==="right_censored"?t("story_survived"):t("story_took")];
 }
 function storyCard(b,view) { const [hero,value,statement]=storyHero(b,view); const longevity=view==="test-of-time"?`<span>${t("t50")} <b>${threshold(b.threshold_days.T50)}</b></span><span>${t("t90")} <b>${threshold(b.threshold_days.T90)}</b></span>`:""; return `<article class="story-card" data-id="${b.id}"><div class="story-card-head"><div><h2>${b.name}</h2><p class="domain">${b.evaluation_type} · ${domainLabel(b.domain)}</p></div><span class="coverage ${b.coverage.status}">${b.coverage.status}</span></div><div class="story-hero"><span>${hero}</span><strong>${value}</strong><p>${statement}</p></div><div class="story-support">${longevity}<span>${t("age")} <b>${months(b.release)} mo</b></span><span>${t("frontier")} <b>${metricValue(b,frontierValue(b))}</b></span><span>${t("coverage")} <b>${Math.round((b.coverage.value||0)*100)}%</b></span></div></article>`; }
-function renderStory() { const view=state.view, [title,description]=I18N[state.lang].story[view]; storyDescription.hidden=false; storyDescription.innerHTML=`<h2>${title}</h2><p>${description}</p>`; $("controls").hidden=true; $("leaderboard").hidden=false; $("detail").hidden=true; $("leaderboard").className="story-grid"; const rows=storyMembers(view); $("leaderboard").innerHTML=rows.length?rows.map(b=>storyCard(b,view)).join(""):`<p class="notice">${t("story_empty")}</p>`; document.querySelectorAll(".story-card").forEach(card=>card.onclick=event=>{if(!shouldIgnoreContainerNavigation(event))routeToDetail(card.dataset.id,event)}); document.querySelectorAll(".story-tab").forEach(tab=>tab.classList.toggle("active",tab.dataset.view===view)); }
+function renderStory() { state.detailRequest += 1; state.activeDetail = null; const view=state.view, [title,description]=I18N[state.lang].story[view]; storyDescription.hidden=false; storyDescription.innerHTML=`<h2>${title}</h2><p>${description}</p>`; $("controls").hidden=true; $("leaderboard").hidden=false; $("detail").hidden=true; $("leaderboard").className="story-grid"; const rows=storyMembers(view); $("leaderboard").innerHTML=rows.length?rows.map(b=>storyCard(b,view)).join(""):`<p class="notice">${t("story_empty")}</p>`; document.querySelectorAll(".story-card").forEach(card=>card.onclick=event=>{if(!shouldIgnoreContainerNavigation(event))routeToDetail(card.dataset.id,event)}); document.querySelectorAll(".story-tab").forEach(tab=>tab.classList.toggle("active",tab.dataset.view===view)); }
 function renderCurrentView() { if(state.view==="leaderboard") renderTable(); else renderStory(); }
 function scoreSeriesMarkup(b) { const auxiliary=b.auxiliary_score_series||[]; const legend=`<div class="chart-legend"><span><i class="canonical-swatch"></i>${t("canonical_score")}</span>${auxiliary.length?`<span><i class="auxiliary-swatch"></i>${t("auxiliary_score")}</span>`:""}</div>`; if(!auxiliary.length)return legend; return `${legend}<details class="score-series-notes"><summary>${t("auxiliary_score")} (${auxiliary.length})</summary>${auxiliary.map(series=>`<p><strong>${series.label}</strong> · ${series.metric_name}<br><span class="small">${series.explanation[state.lang]}</span></p>`).join("")}</details>`; }
 function bindChartInteractions(b) { const wrapper=document.querySelector(".detail-chart"); const svg=wrapper?.querySelector("svg"); const tooltip=wrapper?.querySelector(".chart-tooltip"); if(!svg||!tooltip)return; const points=[...(svg.querySelectorAll(".frontier-hit"))]; const show=(hit,event)=>{ points.forEach(item=>item.parentElement.classList.toggle("is-hovered",item===hit)); const auxiliary=(b.auxiliary_score_series||[]).flatMap(item=>item.frontier_events||[]); const point=(b.capability_frontier||[]).find(item=>item.observation_id===hit.dataset.observationId)||(b.reported_frontier||[]).find(item=>item.observation_id===hit.dataset.observationId)||auxiliary.find(item=>item.observation_id===hit.dataset.observationId); if(!point)return; tooltip.innerHTML=tooltipMarkup(b,point,state.detailTimeline); tooltip.hidden=false; const rect=wrapper.getBoundingClientRect(),svgRect=svg.getBoundingClientRect(),sx=svgRect.width/760,sy=svgRect.height/340,px=svgRect.left-rect.left+Number(hit.getAttribute("cx"))*sx,py=svgRect.top-rect.top+Number(hit.getAttribute("cy"))*sy; const tw=tooltip.offsetWidth,th=tooltip.offsetHeight; const left=Math.max(8,Math.min(wrapper.clientWidth-tw-8,px+18)); const top=py-th-14>=8?py-th-14:Math.min(wrapper.clientHeight-th-8,py+18); tooltip.style.left=`${left}px`;tooltip.style.top=`${Math.max(8,top)}px`; }; points.forEach(hit=>{hit.addEventListener("mouseenter",event=>show(hit,event));hit.addEventListener("focus",event=>show(hit,event));hit.addEventListener("mouseleave",()=>{hit.parentElement.classList.remove("is-hovered");tooltip.hidden=true});hit.addEventListener("blur",()=>{hit.parentElement.classList.remove("is-hovered");tooltip.hidden=true});}); }
-function showDetail(id) {
-  const b=state.data.benchmarks.find(x=>x.id===id);
+function renderDetail(b) {
   storyDescription.hidden=true;
   if(!b){
     $("controls").hidden=true;$("leaderboard").hidden=true;$("detail").hidden=false;
@@ -213,13 +215,51 @@ function showDetail(id) {
   const costKpi=document.createElement("div"); costKpi.innerHTML=`<span>${t("cost")}</span><strong>${b.cost_per_task?`$${b.cost_per_task.value.toFixed(2)}`:"—"}</strong>`; $("detail").querySelector(".detail-kpis")?.appendChild(costKpi);
   if(b.cost_per_task){ const costNote=document.createElement("p"); costNote.className="caveat"; costNote.textContent=`${t("cost_note")} ${b.cost_per_task.method}.`; $("detail").querySelector(".detail-kpis")?.after(costNote); }
   const referenceOrganizations=state.data.reference_organizations.map(item=>item.name); const coverageExplanation=document.createElement("section"); coverageExplanation.className="coverage-explanation"; coverageExplanation.innerHTML=`<h2>${t("coverage_definition")}</h2><p class="small">${t("coverage_formula")}</p><h3>${t("coverage_organizations")}</h3><ul class="coverage-panel">${referenceOrganizations.map(org=>{const represented=b.coverage.represented_organizations.includes(org);return`<li class="${represented?"represented":"missing"}"><span aria-hidden="true">${represented?"✓":"—"}</span>${org}</li>`}).join("")}</ul><details class="coverage-models"><summary>${t("evaluated_models")} (${representedModels.length})</summary><p class="small">${representedModels.map(item=>item.model).join(", ")||t("unknown")}</p></details>`; $("detail").insertBefore(coverageExplanation,$("detail").querySelector(".detail-controls"));
-  $("detail-timeline").value=state.detailTimeline;$("detail-x").value=state.detailX;$("detail-y").value=state.detailY;$("detail-timeline").onchange=e=>{state.detailTimeline=e.target.value;showDetail(id)};$("detail-x").onchange=e=>{state.detailX=e.target.value;showDetail(id)};$("detail-y").onchange=e=>{state.detailY=e.target.value;showDetail(id)};bindChartInteractions(b);
+  $("detail-timeline").value=state.detailTimeline;$("detail-x").value=state.detailX;$("detail-y").value=state.detailY;$("detail-timeline").onchange=e=>{state.detailTimeline=e.target.value;showDetail(b.id)};$("detail-x").onchange=e=>{state.detailX=e.target.value;showDetail(b.id)};$("detail-y").onchange=e=>{state.detailY=e.target.value;showDetail(b.id)};bindChartInteractions(b);
   $("back-link").onclick=routeBackFromDetail;
+}
+function renderDetailFailure(message) {
+  storyDescription.hidden=true; $("controls").hidden=true; $("leaderboard").hidden=true; $("detail").hidden=false;
+  $("page-title").textContent=t("unknown");
+  $("page-lede").innerHTML=`<a href="#leaderboard" id="back-link">${detailBackLabel()}</a>`;
+  $("detail").innerHTML=`<p class="notice">${message}</p>`;
+  $("back-link").onclick=routeBackFromDetail;
+}
+function loadResources() {
+  if(state.resources)return Promise.resolve(state.resources);
+  if(!state.resourceRequest)state.resourceRequest=fetch("data/resources.json?v=20260906-3").then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json();}).then(payload=>{if(payload.bundle_kind!=="resource_registry")throw new Error("resource registry identity mismatch");state.resources=payload.resources;return state.resources;}).catch(error=>{state.resourceRequest=null;throw error;});
+  return state.resourceRequest;
+}
+async function showDetail(id) {
+  // Every navigation, including a cache hit or invalid ID, invalidates any
+  // older in-flight detail request before it can replace the current view.
+  const request=++state.detailRequest;
+  const summary=state.data?.benchmarks.find(item=>item.id===id);
+  if(!summary){renderDetailFailure(t("unknown"));return;}
+  const cached=state.detailCache.get(id);
+  if(cached){state.activeDetail=cached;renderDetail(cached.benchmark);return;}
+  storyDescription.hidden=true; $("controls").hidden=true; $("leaderboard").hidden=true; $("detail").hidden=false;
+  $("page-title").textContent=summary.name;
+  $("page-lede").innerHTML=`<a href="#leaderboard" id="back-link">${detailBackLabel()}</a> · ${domainLabel(summary.domain)} · ${t("released")} ${summary.release} · Age ${months(summary.release)} mo`;
+  $("detail").innerHTML=`<p class="notice">${t("loading")}</p>`;
+  $("back-link").onclick=routeBackFromDetail;
+  try {
+    const [response]=await Promise.all([fetch(`data/${summary.detail_path}?v=20260906-3`),loadResources()]);
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    const detail=await response.json();
+    if(detail.bundle_kind!=="benchmark_detail"||detail.benchmark?.id!==id)throw new Error("detail identity mismatch");
+    state.detailCache.set(id,detail);
+    if(request!==state.detailRequest)return;
+    state.activeDetail=detail;renderDetail(detail.benchmark);
+  } catch(error) {
+    if(request!==state.detailRequest)return;
+    console.error(error);renderDetailFailure(t("load_failed"));
+  }
 }
 const renderLeaderboardTable = renderTable;
 renderTable = function(){ if(state.view!=="leaderboard") return renderStory(); $("story-description").hidden=true; $("leaderboard").className="table-wrap"; return renderLeaderboardTable(); };
 storyNav.addEventListener("click", event=>{const tab=event.target.closest(".story-tab");if(!tab||!state.data)return;state.view=tab.dataset.view;if(state.view==="leaderboard")routeToLeaderboard(event);else{history.pushState({page:state.view},"",routeUrl(state.view));$("controls").hidden=true;$("detail").hidden=true;renderStory();window.scrollTo({top:0,behavior:"instant"});}});
-function setLang(lang){state.lang=lang;localStorage.setItem("bo-lang",lang);applyChrome();if($("detail").hidden)renderTable();else{const id=state.data.benchmarks.find(b=>b.name===$("page-title").textContent)?.id;if(id)showDetail(id);}}
+function setLang(lang){state.lang=lang;localStorage.setItem("bo-lang",lang);applyChrome();if($("detail").hidden)renderTable();else{const id=state.activeDetail?.benchmark?.id||state.data.benchmarks.find(b=>b.name===$("page-title").textContent)?.id;if(id)showDetail(id);}}
 function setTheme(theme){state.theme=theme;localStorage.setItem("bo-theme",theme);applyChrome();}
 $("lang-en").onclick=()=>setLang("en");$("lang-zh").onclick=()=>setLang("zh");$("theme-light").onclick=()=>setTheme("light");$("theme-dark").onclick=()=>setTheme("dark");
 $("evaluation-type").addEventListener("change",()=>{updateDomainOptions();});
@@ -227,4 +267,4 @@ window.addEventListener("popstate",routeFromLocation);
 window.addEventListener("hashchange",routeFromLocation);
 $("apply-filters").addEventListener("click",event=>{event.preventDefault();state.sort="current";state.direction=1;renderTable();});
 state.sort="current"; state.direction=1;
-fetch("data/benchmarks.json?v=20260906-2").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));routeFromLocation();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
+fetch("data/index.json?v=20260906-3").then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));routeFromLocation();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
