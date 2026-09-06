@@ -6,7 +6,8 @@ is a generated static snapshot, not a second editable source tree.
 On every relevant merge to BLE `main`, the source workflow:
 
 1. runs provenance validation, unit tests, and JavaScript syntax checks;
-2. builds `index.html`, `app.js`, `styles.css`, generated `data/`, and `manifest.json`;
+2. builds `index.html`, `app.js`, `styles.css`, a lightweight benchmark index,
+   one lazy detail JSON per benchmark, the resource registry, and `manifest.json`;
 3. validates that the bundle has no symlinks or development Markdown files;
 4. updates only `auto/ble-sync` in the personal-site repository.
 
@@ -23,3 +24,10 @@ from the recorded source SHA.
 The source workflow expects the personal-site repository to have a dedicated
 `BLE_PERSONAL_SITE_DEPLOY_KEY` secret with write access to that repository.
 No key or credential belongs in this repository.
+
+The deployed runtime does not include the 25 MB monolithic validation snapshot.
+Its initial request loads `data/index.json`; a benchmark click loads only
+`data/benchmarks/<id>.json` plus the shared resource registry on first use. A
+small `data/benchmarks.json` compatibility alias currently mirrors the index so
+the destination repository's existing deterministic boundary check remains
+backward compatible.

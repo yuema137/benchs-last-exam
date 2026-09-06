@@ -13,6 +13,9 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "site" / "data" / "benchmarks.json"
+INDEX_OUT = ROOT / "site" / "data" / "index.json"
+DETAIL_OUT = ROOT / "site" / "data" / "benchmarks"
+PUBLIC_RESOURCE_OUT = ROOT / "site" / "data" / "resources.json"
 RESOURCE_OUT = ROOT / "data" / "resources.json"
 OBSERVATION_OUT = ROOT / "data" / "observations.jsonl"
 EVIDENCE_OUT = ROOT / "data" / "evidence.jsonl"
@@ -26,6 +29,13 @@ from benchmark_observatory.registry import load_benchmark_specs
 
 
 BENCHMARKS = load_benchmark_specs(BENCHMARK_REGISTRY, RAW)
+
+INDEX_BENCHMARK_FIELDS = (
+    "id", "name", "domain", "release", "evaluation_type", "tags",
+    "score_format", "score_decimals", "capability_frontier_value",
+    "normalized_progress", "normalized_headroom", "threshold_days",
+    "velocity_180d", "coverage", "cost_per_task", "lifecycle_eligibility",
+)
 
 _organization_payload = json.loads(ORGANIZATION_REGISTRY.read_text())
 REFERENCE_ORGANIZATIONS = tuple(_organization_payload["reference_organizations"])
@@ -157,6 +167,51 @@ def stable_id(prefix, *parts):
     digest = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:16]
     label = slug(parts[-1])[:48] if parts else "record"
     return f"{prefix}-{label}-{digest}"
+
+
+def write_public_data_bundles(payload):
+    """Write a small index plus one independently loadable detail record."""
+    index_benchmarks = []
+    resources = {item["id"]: item for item in payload["resources"]}
+    DETAIL_OUT.mkdir(parents=True, exist_ok=True)
+    expected_detail_paths = set()
+    for benchmark in payload["benchmarks"]:
+        detail_path = f"benchmarks/{benchmark['id']}.json"
+        index_benchmark = {key: benchmark[key] for key in INDEX_BENCHMARK_FIELDS}
+        index_benchmark["detail_path"] = detail_path
+        index_benchmarks.append(index_benchmark)
+
+        detail_payload = {
+            "schema_version": payload["schema_version"],
+            "bundle_kind": "benchmark_detail",
+            "snapshot_id": payload["snapshot_id"],
+            "reference_organizations": payload["reference_organizations"],
+            "benchmark": benchmark,
+        }
+        path = DETAIL_OUT / f"{benchmark['id']}.json"
+        path.write_text(json.dumps(detail_payload, indent=2) + "\n")
+        expected_detail_paths.add(path)
+
+    for stale_path in DETAIL_OUT.glob("*.json"):
+        if stale_path not in expected_detail_paths:
+            stale_path.unlink()
+
+    index_payload = {
+        "schema_version": payload["schema_version"],
+        "bundle_kind": "benchmark_index",
+        "snapshot_id": payload["snapshot_id"],
+        "source": payload["source"],
+        "reference_organizations": payload["reference_organizations"],
+        "benchmarks": index_benchmarks,
+        "lifecycle_views": payload["lifecycle_views"],
+    }
+    INDEX_OUT.write_text(json.dumps(index_payload, indent=2) + "\n")
+    PUBLIC_RESOURCE_OUT.write_text(json.dumps({
+        "schema_version": payload["schema_version"],
+        "bundle_kind": "resource_registry",
+        "snapshot_id": payload["snapshot_id"],
+        "resources": [resources[key] for key in sorted(resources)],
+    }, indent=2) + "\n")
 
 
 def canonical_url(value):
@@ -914,6 +969,7 @@ def main():
         "lifecycle_views": lifecycle_view_ids(benchmarks, snapshot_date),
     }
     OUT.write_text(json.dumps(payload, indent=2) + "\n")
+    write_public_data_bundles(payload)
     RESOURCE_OUT.write_text(json.dumps(payload["resources"], indent=2) + "\n")
     MODEL_OUT.write_text(json.dumps(payload["models"], indent=2) + "\n")
     observations = [observation for benchmark in benchmarks for observation in benchmark["observations"]]

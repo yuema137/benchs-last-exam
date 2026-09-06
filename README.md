@@ -24,6 +24,10 @@ The project does not currently aim to provide a backend, database, public API, a
 
 The local frontend lives under `site/` and is driven by generated JSON. Metric logic belongs in Python scripts, not in frontend components.
 
+The runtime loads a small `site/data/index.json` for the leaderboard and story
+views. Complete benchmark dossiers are split under
+`site/data/benchmarks/<benchmark-id>.json` and fetched only when opened.
+
 Each active benchmark/version is maintained independently in
 `data/benchmarks/<benchmark-id>.json`; its source observations live in the
 referenced `data/raw/*.csv` file. The typed registry loader discovers these

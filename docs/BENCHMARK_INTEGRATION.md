@@ -86,7 +86,24 @@ Selection evidence such as citation counts belongs in curation documentation, wi
 
 1. Create or edit only its `data/benchmarks/<id>.json` declaration for identity, taxonomy, bilingual copy, canonical score, protocol, normalization, and source-file binding.
 2. Add or update the corresponding `data/raw/<file>.csv` evidence rows.
-3. Do not edit `site/data/benchmarks.json`, leaderboard rows, detail-page objects, or lifecycle memberships by hand.
+3. Do not edit generated `site/data/index.json`, `site/data/benchmarks/<id>.json`, leaderboard rows, detail-page objects, or lifecycle memberships by hand. `site/data/benchmarks.json` remains a canonical full-build validation artifact and is not fetched or published as the runtime detail payload.
 4. Run the acceptance sequence above. The build discovers every registry file, produces its leaderboard/detail representation, and derives all story views from canonical metrics.
 
 The typed loader rejects missing EN/ZH copy, unsupported types/units, unknown fields, duplicate IDs or measurement identities, missing raw files, non-HTTP sources, and non-contiguous registry order. The integration validator requires the generated benchmark IDs to match the registry IDs in the same deterministic order.
+
+## Generated runtime boundary
+
+The browser first loads `site/data/index.json`, which contains only fields needed for filters, sorting, leaderboard rows, lifecycle membership, and story cards. Opening a card loads exactly one `site/data/benchmarks/<id>.json` dossier. The shared `site/data/resources.json` registry is fetched lazily on the first detail view and then cached.
+
+These split runtime files are generated and gitignored. CI and the publication workflow rebuild them from the tracked per-benchmark source registry and canonical observations; they are never reviewed or edited as source files.
+
+The integration validator requires:
+
+```text
+active registry IDs
+= canonical full snapshot IDs
+= lightweight index IDs
+= per-benchmark detail filenames and embedded IDs
+```
+
+It also rejects heavy observations/frontiers/prose leaking into the index, stale lifecycle lists, incomplete resource lineage, extra detail files, and detail records that differ from the canonical build. The public bundle keeps a small `data/benchmarks.json` alias of the index temporarily for destination-workflow compatibility; it never contains or replaces the full detail records.
