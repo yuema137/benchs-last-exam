@@ -225,4 +225,4 @@ window.addEventListener("popstate",routeFromLocation);
 window.addEventListener("hashchange",routeFromLocation);
 $("apply-filters").addEventListener("click",event=>{event.preventDefault();state.sort="current";state.direction=1;renderTable();});
 state.sort="current"; state.direction=1;
-fetch("data/benchmarks.json?v=20260905-1").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));routeFromLocation();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
+fetch("data/benchmarks.json?v=20260905-2").then(r=>r.json()).then(data=>{state.data=data;applyChrome();[...new Set(data.benchmarks.map(b=>b.release.slice(0,4)))].sort().forEach(y=>$("year").insertAdjacentHTML("beforeend",`<option>${y}</option>`));routeFromLocation();}).catch(e=>$("leaderboard").innerHTML=`<p class="notice">${e}</p>`);
