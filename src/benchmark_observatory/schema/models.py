@@ -8,7 +8,7 @@ coupling the scientific core to an ingestion source.
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from enum import StrEnum
-from typing import Optional
+from typing import Any, Mapping, Optional
 
 
 class Direction(StrEnum):
@@ -144,6 +144,9 @@ class BenchmarkVersion:
 class Model:
     id: str
     canonical_name: str
+    aliases: tuple[str, ...] = ()
+    configuration_id: Optional[str] = None
+    identity_organization: Optional[str] = None
     family_id: Optional[str] = None
     release_date: Optional[date] = None
     provider: Optional[str] = None
@@ -245,6 +248,12 @@ class ScoreObservation:
     parser_version: str = "manual"
     score_series_id: Optional[str] = None
     score_role: ScoreSeriesRole = ScoreSeriesRole.CANONICAL
+    model_configuration: Optional[str] = None
+    model_identity_organization: Optional[str] = None
+    model_label_id: Optional[str] = None
+    evidence_ids: tuple[str, ...] = field(default_factory=tuple)
+    evidence_count: int = 1
+    score_source_ids: tuple[str, ...] = field(default_factory=tuple)
 
     def __post_init__(self) -> None:
         if not self.id or not self.benchmark_version_id or not self.model_id:
@@ -258,3 +267,26 @@ class ScoreObservation:
     def provenance_ids(self) -> tuple[str, ...]:
         """Backward-compatible name for callers using the pre-Resource schema."""
         return self.source_ids
+
+
+@dataclass(frozen=True)
+class EvidenceRecord:
+    """One immutable source row supporting a canonical score observation."""
+
+    id: str
+    benchmark_id: str
+    source_file: str
+    model_id: str
+    score: float
+    input_score: float
+    input_unit: str
+    source_ids: tuple[str, ...]
+    source_row_id: Optional[str] = None
+    source_row_number: Optional[int] = None
+    raw_fields: Mapping[str, Any] = field(default_factory=dict)
+
+    def __post_init__(self) -> None:
+        if not self.id or not self.benchmark_id or not self.source_file or not self.model_id:
+            raise ValueError("evidence identity fields are required")
+        if not self.source_ids:
+            raise ValueError("every evidence record requires a source")

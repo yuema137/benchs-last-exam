@@ -92,6 +92,8 @@ Any change to a benchmark/card is also a lifecycle-impacting change unless prove
 
 Lifecycle dates use one uniform observation-time rule. For the same canonical measurement, collect every available evaluation/run date, model release date, and score-publication date, then use the earliest candidate as `observation_date`. When several publication resources contain the same score, use the earliest source version that actually contains that score, not merely the first version of the paper or page. The lifecycle `plot_date` is `max(benchmark_release_date, observation_date)`, and T50/T80/T90 are clipped at zero and displayed as `At release`; original pre-release dates remain unchanged in provenance. Never emit a negative lifecycle duration.
 
+Raw source rows and canonical measurements are separate layers. Every accepted source row must have a stable, row-order-independent evidence ID. Merge rows into one canonical observation only when benchmark version, model configuration, normalized model label, canonical/auxiliary score series, protocol, task set, and exact normalized score all agree. The canonical observation ID is derived from those semantic fields, never a CSV row number. Merging must preserve every evidence ID and score resource; differing settings remain separate observations. `data/evidence.jsonl` and canonical observation lineage must reconcile exactly.
+
 After any such change, the agent must:
 
 1. rebuild the canonical snapshot;

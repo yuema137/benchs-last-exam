@@ -9,11 +9,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 REPORT = ROOT / "docs" / "OBSERVATION_DATE_AUDIT.md"
+EVIDENCE = ROOT / "data" / "evidence.jsonl"
 
 
 def main():
     payload = json.loads(SNAPSHOT.read_text())
     observations = [item for benchmark in payload["benchmarks"] for item in benchmark["observations"]]
+    evidence_records = [json.loads(line) for line in EVIDENCE.read_text().splitlines() if line]
     selected_kinds = Counter(
         "+".join(source["kind"] for source in item.get("observation_date_sources", [])) or "unknown"
         for item in observations
@@ -30,7 +32,9 @@ def main():
         "",
         "The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.",
         "",
-        f"- Observations: **{len(observations)}**",
+        f"- Canonical measurements: **{len(observations)}**",
+        f"- Source evidence records: **{len(evidence_records)}**",
+        f"- Exact duplicate evidence rows merged: **{len(evidence_records) - len(observations)}**",
         f"- Observations without any candidate date: **{selected_kinds['unknown']}**",
         f"- Observations selected before benchmark release and plotted as `At release`: **{pre_release}**",
         "",

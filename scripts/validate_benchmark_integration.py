@@ -2,6 +2,7 @@
 """Validate that every active benchmark is fully connected to generated data."""
 
 import json
+import hashlib
 import re
 from datetime import date
 from pathlib import Path
@@ -10,9 +11,38 @@ ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 APP = ROOT / "site" / "app.js"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
+EVIDENCE = ROOT / "data" / "evidence.jsonl"
 
 REQUIRED_STORY_VIEWS = ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")
 MONTH_DAYS = 30.44
+
+
+def slug(value):
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-") or "unknown"
+
+
+def stable_id(prefix, *parts):
+    identity = "\x1f".join(str(part).strip() for part in parts)
+    digest = hashlib.sha256(identity.encode("utf-8")).hexdigest()[:16]
+    label = slug(parts[-1])[:48] if parts else "record"
+    return f"{prefix}-{label}-{digest}"
+
+
+def expected_measurement_id(observation):
+    fields = ("benchmark_version_id", "model_id", "model_label_id", "score_series_id",
+              "protocol_id", "task_set_id", "score")
+    if any(observation.get(field) is None for field in fields):
+        return None
+    return stable_id(
+        "obs",
+        observation["benchmark_version_id"],
+        observation["model_id"],
+        observation["model_label_id"],
+        observation["score_series_id"],
+        observation["protocol_id"],
+        observation["task_set_id"],
+        format(observation["score"], ".15g"),
+    )
 
 
 def load_reference_organizations():
@@ -97,6 +127,13 @@ def validate_benchmark(benchmark, resources, models):
             errors.append(f"{benchmark['id']}: unresolved benchmark resource {resource_id}")
     observation_ids = set()
     observations_by_id = {}
+    if benchmark.get("observation_count") != len(benchmark.get("observations", [])):
+        errors.append(f"{benchmark.get('id')}: observation_count does not match canonical measurements")
+    expected_evidence_count = sum(
+        len(observation.get("evidence_ids", [])) for observation in benchmark.get("observations", [])
+    )
+    if benchmark.get("evidence_record_count") != expected_evidence_count:
+        errors.append(f"{benchmark.get('id')}: evidence_record_count does not match observation lineage")
     canonical = benchmark.get("canonical_score", {})
     if canonical.get("role") != "canonical" or not canonical.get("lifecycle_eligible"):
         errors.append(f"{benchmark.get('id')}: canonical_score must be the sole lifecycle-eligible series")
@@ -109,6 +146,27 @@ def validate_benchmark(benchmark, resources, models):
             errors.append(f"{benchmark['id']}: missing or duplicate observation_id {observation_id}")
         observation_ids.add(observation_id)
         observations_by_id[observation_id] = observation
+        expected_id = expected_measurement_id(observation)
+        if expected_id and observation_id != expected_id:
+            errors.append(f"{observation_id}: ID is not derived from canonical measurement identity")
+        if not observation.get("model_configuration"):
+            errors.append(f"{observation_id}: missing model_configuration")
+        if observation.get("model_label_id") != slug(observation.get("model") or "unknown"):
+            errors.append(f"{observation_id}: model_label_id does not match display label")
+        expected_model_id = stable_id(
+            "model", observation.get("model_identity_organization") or "unknown",
+            slug(observation.get("model_configuration") or "unknown")
+        )
+        if observation.get("model_id") != expected_model_id:
+            errors.append(f"{observation_id}: model_id is not derived from model/config identity")
+        if not observation.get("evidence_ids") or observation.get("evidence_count") != len(observation.get("evidence_ids", [])):
+            errors.append(f"{observation_id}: invalid evidence lineage")
+        if len(observation.get("evidence_ids", [])) != len(set(observation.get("evidence_ids", []))):
+            errors.append(f"{observation_id}: duplicate evidence IDs")
+        if not observation.get("score_source_ids"):
+            errors.append(f"{observation_id}: no score_source_ids")
+        if not set(observation.get("score_source_ids", [])).issubset(observation.get("source_ids", [])):
+            errors.append(f"{observation_id}: score sources are absent from full source lineage")
         if observation.get("score_role") not in {"canonical", "auxiliary"}:
             errors.append(f"{observation_id}: invalid score_role")
         if not observation.get("score_series_id"):
@@ -176,11 +234,32 @@ def validate_benchmark(benchmark, resources, models):
 
 def main():
     payload = json.loads(SNAPSHOT.read_text())
+    evidence_records = [json.loads(line) for line in EVIDENCE.read_text().splitlines() if line]
     organizations, organization_aliases, organization_errors = load_reference_organizations()
     benchmarks = payload.get("benchmarks", [])
     resources = {item["id"]: item for item in payload.get("resources", [])}
     models = {item["id"]: item for item in payload.get("models", [])}
     errors = list(organization_errors)
+    if payload.get("schema_version") != 2:
+        errors.append("generated snapshot must use schema_version 2")
+    resource_ids = [item.get("id") for item in payload.get("resources", [])]
+    model_ids = [item.get("id") for item in payload.get("models", [])]
+    if len(resource_ids) != len(set(resource_ids)):
+        errors.append("duplicate canonical resource IDs")
+    if len(model_ids) != len(set(model_ids)):
+        errors.append("duplicate canonical model IDs")
+    for model in payload.get("models", []):
+        expected_model_id = stable_id(
+            "model", model.get("identity_organization") or "unknown",
+            slug(model.get("configuration_id") or "unknown")
+        )
+        if model.get("id") != expected_model_id:
+            errors.append(f"{model.get('id')}: model ID is not derived from model/config identity")
+    for resource in payload.get("resources", []):
+        if "://" not in resource.get("url", ""):
+            errors.append(f"{resource.get('id')}: resource URL is not navigable")
+        if resource.get("id") != stable_id("resource", resource.get("url", "")):
+            errors.append(f"{resource.get('id')}: resource ID is not derived from canonical URL")
     if payload.get("reference_organizations") != organizations:
         errors.append("generated reference organization panel is stale")
     ids = [item.get("id") for item in benchmarks]
@@ -197,6 +276,39 @@ def main():
         expected_value = len(expected_organizations) / len(organizations)
         if coverage.get("value") != expected_value:
             errors.append(f"{benchmark.get('id')}: stale normalized coverage value")
+    evidence_by_id = {}
+    for record in evidence_records:
+        evidence_id = record.get("evidence_id")
+        if not evidence_id or evidence_id in evidence_by_id:
+            errors.append(f"missing or duplicate evidence ID {evidence_id}")
+        evidence_by_id[evidence_id] = record
+        if record.get("model_id") not in models:
+            errors.append(f"{evidence_id}: unresolved evidence model")
+        for source_id in record.get("source_ids", []):
+            if source_id not in resources:
+                errors.append(f"{evidence_id}: unresolved evidence source {source_id}")
+    linked_evidence = []
+    for benchmark in benchmarks:
+        for observation in benchmark.get("observations", []):
+            for evidence_id in observation.get("evidence_ids", []):
+                linked_evidence.append(evidence_id)
+                record = evidence_by_id.get(evidence_id)
+                if not record:
+                    errors.append(f"{observation['observation_id']}: unresolved evidence {evidence_id}")
+                    continue
+                if record.get("benchmark_id") != benchmark["id"]:
+                    errors.append(f"{evidence_id}: benchmark lineage mismatch")
+                if record.get("model_id") != observation.get("model_id"):
+                    errors.append(f"{evidence_id}: model lineage mismatch")
+                if not set(record.get("source_ids", [])).issubset(observation.get("score_source_ids", [])):
+                    errors.append(f"{evidence_id}: source lineage missing from canonical measurement")
+    if len(linked_evidence) != len(set(linked_evidence)):
+        errors.append("one evidence record is linked to multiple canonical measurements")
+    if set(linked_evidence) != set(evidence_by_id):
+        errors.append(
+            f"evidence reconciliation mismatch: unlinked={len(set(evidence_by_id)-set(linked_evidence))}, "
+            f"missing={len(set(linked_evidence)-set(evidence_by_id))}"
+        )
     lifecycle_views = payload.get("lifecycle_views")
     if not isinstance(lifecycle_views, dict):
         errors.append("generated lifecycle_views missing")
@@ -251,7 +363,8 @@ def main():
         errors.append("manual lifecycle membership found in frontend")
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"Validated integration for {len(benchmarks)} active benchmarks, {len(models)} models, {len(resources)} resources.")
+    print(f"Validated integration for {len(benchmarks)} active benchmarks, {len(models)} models, "
+          f"{len(resources)} resources, and {len(evidence_records)} evidence records.")
 
 
 if __name__ == "__main__":

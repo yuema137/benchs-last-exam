@@ -10,8 +10,13 @@ resource titles or URLs.
 - `data/resources.json` is the generated resource registry.
 - `data/models.json` is the generated reference-model evidence registry.
 - `data/observations.jsonl` contains one canonical score observation per line.
+- `data/evidence.jsonl` contains every accepted source row before exact-measurement merging.
 - `site/data/benchmarks.json` is the frontend snapshot, including derived
   frontier points that retain `observation_id` and `source_ids`.
+
+Snapshot schema version 2 separates immutable source evidence records from
+deduplicated canonical measurements and uses semantic IDs for resources,
+models, and observations.
 
 Run:
 
@@ -34,6 +39,12 @@ The lifecycle plot uses `max(benchmark_release_date, observation_date)`. A
 pre-release observation therefore appears as `At release` with zero elapsed
 time; its original date remains unchanged in provenance. Negative T50/T80/T90
 durations are forbidden.
+
+Raw source rows remain in `data/evidence.jsonl`. Canonical observations merge
+only exact measurement identities and retain `evidence_ids`, `evidence_count`,
+and every score source. Observation, model, and resource IDs are generated from
+semantic identity rather than row position. This makes source reordering safe
+while keeping all original evidence auditable.
 
 ## Update channels prepared by the model
 

@@ -4,18 +4,23 @@ Snapshot: `2026-09-05`
 
 The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.
 
-- Observations: **4231**
-- Observations without any candidate date: **361**
-- Observations selected before benchmark release and plotted as `At release`: **1125**
+- Canonical measurements: **4090**
+- Source evidence records: **4231**
+- Exact duplicate evidence rows merged: **141**
+- Observations without any candidate date: **354**
+- Observations selected before benchmark release and plotted as `At release`: **1110**
 
 ## Selected earliest-date evidence
 
 | Selected source kind(s) | Observations |
 |---|---:|
-| `model_release_date` | 3765 |
-| `unknown` | 361 |
+| `model_release_date` | 3547 |
+| `unknown` | 354 |
 | `evaluation_date+model_release_date` | 83 |
+| `model_release_date+model_release_date` | 67 |
 | `evaluation_date` | 21 |
+| `model_release_date+model_release_date+model_release_date` | 13 |
+| `model_release_date+model_release_date+model_release_date+model_release_date` | 4 |
 | `score_publication_date` | 1 |
 
 ## Benchmark coverage
@@ -27,7 +32,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | Aider Polyglot | 77 | 72 | 14 | 7 |
 | APBench-γ | 6 | 6 | 6 | 1 |
 | APEX-Agents | 64 | 64 | 29 | 6 |
-| ARC-AGI-2 | 221 | 221 | 14 | 13 |
+| ARC-AGI-2 | 210 | 210 | 14 | 13 |
 | ARC-AGI-3 | 1 | 1 | 0 | 1 |
 | AssistantBench | 8 | 8 | 0 | 4 |
 | AtomWorld v4 | 3 | 3 | 3 | 1 |
@@ -35,10 +40,10 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | BALROG | 36 | 36 | 17 | 5 |
 | BenchCAD · Vision2Code | 8 | 8 | 6 | 1 |
 | BFCL V4 | 3 | 3 | 1 | 2 |
-| BIG-Bench Hard | 92 | 88 | 0 | 4 |
+| BIG-Bench Hard | 79 | 75 | 0 | 4 |
 | BigCodeBench | 3 | 3 | 2 | 1 |
 | BixBench | 2 | 2 | 2 | 1 |
-| BoolQ | 206 | 123 | 0 | 6 |
+| BoolQ | 186 | 107 | 0 | 6 |
 | BrowseComp | 5 | 5 | 4 | 1 |
 | CADBench-Wild — Criteria Score | 9 | 9 | 8 | 1 |
 | CADReview — Human Feedback | 4 | 4 | 4 | 1 |
@@ -85,10 +90,10 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | GMAI-MMBench v7 Test | 5 | 5 | 5 | 1 |
 | GPQA Diamond | 312 | 312 | 7 | 19 |
 | GS-PowerFlow-100 — Procedural Text | 3 | 3 | 3 | 1 |
-| GSM8K | 235 | 162 | 1 | 5 |
+| GSM8K | 215 | 142 | 1 | 5 |
 | GSO | 38 | 38 | 12 | 8 |
 | HealthBench | 3 | 3 | 3 | 1 |
-| HellaSwag | 135 | 107 | 0 | 7 |
+| HellaSwag | 129 | 101 | 0 | 7 |
 | HumanEval | 5 | 5 | 1 | 5 |
 | Humanity's Last Exam | 9 | 9 | 0 | 4 |
 | IFEval | 4 | 4 | 0 | 3 |
@@ -113,7 +118,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | MedXpertQA Text v3 | 6 | 6 | 6 | 1 |
 | METR Time Horizon 1.1 | 50 | 49 | 43 | 3 |
 | MLE-bench | 4 | 4 | 3 | 1 |
-| MMLU | 249 | 215 | 0 | 8 |
+| MMLU | 237 | 203 | 0 | 8 |
 | MMLU-Pro | 6 | 6 | 5 | 2 |
 | MMMU | 6 | 6 | 1 | 3 |
 | MMMU-Pro | 4 | 4 | 4 | 1 |
@@ -124,7 +129,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | OlympiadBench Physics | 5 | 5 | 3 | 2 |
 | OlympicArena Physics | 4 | 4 | 3 | 2 |
 | OmniMatBench v2 — Vanilla | 6 | 6 | 6 | 1 |
-| OpenBookQA | 71 | 70 | 0 | 9 |
+| OpenBookQA | 69 | 68 | 0 | 9 |
 | OpenEQA EM-EQA v0 | 3 | 3 | 3 | 1 |
 | OPENXRD — Closed Book | 7 | 7 | 7 | 1 |
 | OST-Bench v2 — Multi-round | 6 | 6 | 6 | 1 |
@@ -137,14 +142,14 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | PHYSICS | 5 | 5 | 0 | 1 |
 | PhysReason | 7 | 7 | 6 | 1 |
 | PICBench — Baseline Functional Pass@1 | 5 | 5 | 5 | 1 |
-| PIQA | 140 | 112 | 1 | 7 |
+| PIQA | 116 | 91 | 1 | 7 |
 | ProofBench v1.1 | 11 | 11 | 10 | 2 |
 | PSE-Bench v3 | 5 | 5 | 5 | 1 |
 | PubMedQA — PQA-L Test 500 | 6 | 6 | 0 | 3 |
 | QCalEval — April 2026 Zero-shot | 4 | 4 | 4 | 1 |
 | QuantiPhy — Overall MRA | 5 | 5 | 5 | 1 |
 | RoboBench | 7 | 7 | 3 | 2 |
-| SciCode | 162 | 158 | 0 | 14 |
+| SciCode | 159 | 155 | 0 | 14 |
 | ScienceAgentBench | 9 | 9 | 0 | 4 |
 | ScienceQA | 104 | 26 | 2 | 5 |
 | ScreenSpot-Pro | 5 | 5 | 3 | 3 |
@@ -156,7 +161,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | SuperGLUE | 10 | 1 | 0 | 1 |
 | SWE-bench Science | 6 | 6 | 6 | 1 |
 | SWE-bench Verified | 35 | 35 | 0 | 9 |
-| Terminal-Bench 2.0 | 204 | 204 | 111 | 7 |
+| Terminal-Bench 2.0 | 183 | 183 | 96 | 7 |
 | Terminal-Bench 2.1 | 8 | 8 | 8 | 1 |
 | Terminal-Bench 4.0 | 9 | 9 | 8 | 2 |
 | Terminal-Bench-Science 0.1 | 10 | 10 | 0 | 5 |
@@ -166,7 +171,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | TOMG-Bench v1 — wAcc | 9 | 9 | 9 | 1 |
 | Toolathlon-Verified | 5 | 5 | 0 | 2 |
 | TPS-CalcBench — Core Exact | 7 | 7 | 7 | 1 |
-| TriviaQA | 115 | 113 | 0 | 7 |
+| TriviaQA | 106 | 104 | 0 | 7 |
 | Vending-Bench 2 | 59 | 59 | 0 | 6 |
 | VerilogEval v2 — Spec-to-RTL | 11 | 11 | 11 | 1 |
 | Video-MME | 50 | 50 | 15 | 2 |

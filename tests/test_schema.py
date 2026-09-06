@@ -3,6 +3,7 @@ from benchmark_observatory.schema import (
     Bound,
     BoundType,
     Direction,
+    EvidenceRecord,
     MetricDefinition,
     ScoreObservation,
     ScoreSeriesDefinition,
@@ -54,6 +55,12 @@ class SchemaTests(unittest.TestCase):
             metric_id="accuracy", protocol_id="mmlu-5-shot-v1",
         )
         self.assertEqual(observation.provenance_ids, ("resource-1",))
+
+    def test_evidence_record_requires_source_lineage(self):
+        with self.assertRaises(ValueError):
+            EvidenceRecord(
+                "evidence-1", "mmlu", "mmlu.csv", "model-1", 0.5, 0.5, "fraction", ()
+            )
 
     def test_panel_membership_requires_reason_and_nonnegative_weight(self):
         with self.assertRaises(ValueError):

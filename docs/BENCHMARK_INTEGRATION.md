@@ -30,6 +30,31 @@ Any additional score belongs in `auxiliary_score_series`, even when it shares th
 
 The generated snapshot, integration validator, frontend defensive selector, and regression tests all enforce this boundary. A benchmark with no auxiliary data still emits an empty `auxiliary_score_series` list so the contract is explicit.
 
+## Evidence and canonical measurement identity
+
+One imported source row is an immutable evidence record, not automatically a
+new scientific measurement. Evidence IDs are based on a source row ID when one
+exists, otherwise on normalized row content; CSV position is never identity.
+
+Evidence rows may merge into one canonical observation only when all of these
+match exactly:
+
+```text
+benchmark version
+model configuration
+normalized model/display setting
+score series and role
+protocol
+task set
+normalized score
+```
+
+This deliberately keeps different prompting labels, harnesses, task subsets,
+and metrics separate. A merged observation retains every evidence ID and score
+resource. The generated `data/evidence.jsonl` must reconcile one-to-one with
+the evidence IDs referenced by canonical observations: no evidence may be
+orphaned or linked to multiple measurements.
+
 Leaderboard rows and lifecycle cards are generated views. No benchmark may be manually assigned to a story tab, and no chart-only score is allowed. Active benchmark IDs must be represented by generated leaderboard and detail data.
 
 Run the acceptance check after every benchmark addition or observation update:
@@ -39,6 +64,7 @@ python3 scripts/build_snapshot.py
 python3 scripts/validate_score_semantics.py
 python3 scripts/validate_benchmark_integration.py
 python3 scripts/audit_observation_dates.py
+python3 scripts/audit_canonical_identity.py
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
