@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "jeebench_physics_external.csv",
+  "floor": 0.103,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "jeebench-physics",
+  "input_unit": "fraction",
+  "metric_id": "jeebench-physics-metric-v1",
+  "name": "JEEBench Physics",
+  "progress_baseline": 0.103,
+  "progress_target": 1.0,
+  "protocol": "JEEBench EMNLP 2023 fixed 123-question Physics slice, vanilla zero-shot, temperature 0, no CoT/few-shot/tools/self-consistency, published partial-credit metric.",
+  "protocol_id": "jeebench-physics-source-export-v1",
+  "registry_order": 103,
+  "release": "2023-05-24",
+  "score": "Partial-credit mean",
+  "scoring": {
+    "explanation": {
+      "en": "Single and integer answers use exact match, numeric answers use 0.01 tolerance, and multi-select answers receive the published partial-credit rule before averaging.",
+      "zh": "单选和整数题严格匹配，数值题允许 0.01 误差，多选题按论文规则给部分分，再对 123 道题取平均。"
+    },
+    "metric_name": "Physics partial-credit mean"
+  },
+  "source": "https://aclanthology.org/2023.emnlp-main.468/",
+  "summary": {
+    "en": "JEEBench Physics measures text-only quantitative reasoning on fixed JEE Advanced physics questions with heterogeneous answer types.",
+    "zh": "JEEBench Physics 使用固定 JEE Advanced 物理题，测试模型在多种答案类型下的纯文本定量推理能力。"
+  },
+  "tags": [
+    "engineering exam",
+    "partial credit",
+    "quantitative"
+  ],
+  "task_format": {
+    "en": "The model solves 123 text-only Physics questions and returns single-choice, multiple-choice, integer, or numeric answers.",
+    "zh": "模型解决 123 道纯文本 Physics 题，并返回单选、多选、整数或数值答案。"
+  }
+}

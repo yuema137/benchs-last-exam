@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "physics_university_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "physics-university",
+  "input_unit": "fraction",
+  "metric_id": "physics-university-metric-v1",
+  "name": "PHYSICS",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PHYSICS fixed university-physics accuracy series from the standardized ScienceEval panel; other prompts and subject-specific slices are not merged.",
+  "protocol_id": "physics-university-source-export-v1",
+  "registry_order": 36,
+  "release": "2025-03-26",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of the fixed PHYSICS problems answered correctly. The ScienceEval panel provides a standardized cross-model series.",
+      "zh": "分数是固定 PHYSICS 题目中答对的比例。ScienceEval panel 提供统一的跨模型 series。"
+    },
+    "metric_name": "Accuracy"
+  },
+  "source": "https://arxiv.org/abs/2503.21821",
+  "summary": {
+    "en": "PHYSICS evaluates broad university-level physics understanding across six subfields with automatically verified answers.",
+    "zh": "PHYSICS 评估模型在六个物理子领域中的大学阶段知识和推理能力，并自动验证答案。"
+  },
+  "tags": [
+    "physics",
+    "university",
+    "automatic verification"
+  ],
+  "task_format": {
+    "en": "The model answers a fixed 1,297-problem university-physics set spanning six domains, using the benchmark's automatic answer verification.",
+    "zh": "模型回答固定的 1,297 道大学物理题，覆盖六个领域，并使用 benchmark 的自动答案验证。"
+  }
+}

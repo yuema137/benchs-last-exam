@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "tomg_bench_v1_wacc_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "tomg-bench-v1-wacc",
+  "input_unit": "fraction",
+  "metric_id": "tomg-bench-v1-wacc-metric-v1",
+  "name": "TOMG-Bench v1 — wAcc",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Original TOMG-Bench v1 fixed 45,000-example test set and official weighted average accuracy; unweighted and S2 revisions excluded.",
+  "protocol_id": "tomg-bench-v1-wacc-source-export-v1",
+  "registry_order": 135,
+  "release": "2024-12-19",
+  "score": "wAcc",
+  "scoring": {
+    "explanation": {
+      "en": "Official wAcc combines task correctness with novelty or molecular-similarity weighting over the fixed test set.",
+      "zh": "官方 wAcc 在固定测试集上结合任务正确性与新颖性或分子相似度权重。"
+    },
+    "metric_name": "Weighted average accuracy"
+  },
+  "source": "https://github.com/phenixace/tomg-bench",
+  "summary": {
+    "en": "TOMG-Bench evaluates open-domain text-guided molecule generation, editing, and optimization.",
+    "zh": "TOMG-Bench 评估开放式文本引导的分子生成、编辑和优化。"
+  },
+  "tags": [
+    "molecule generation",
+    "editing",
+    "optimization"
+  ],
+  "task_format": {
+    "en": "Generate molecular structures satisfying natural-language requirements across nine fixed subtasks.",
+    "zh": "在九个固定子任务中生成满足自然语言要求的分子结构。"
+  }
+}

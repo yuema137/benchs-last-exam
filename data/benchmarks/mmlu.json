@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mmlu_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mmlu",
+  "input_unit": "fraction",
+  "metric_id": "mmlu-metric-v1",
+  "name": "MMLU",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "mmlu-source-export-v1",
+  "registry_order": 0,
+  "release": "2020-09-07",
+  "score": "EM",
+  "scoring": {
+    "explanation": {
+      "en": "A response is correct only when the selected answer matches the answer key. The score is the fraction of questions answered correctly.",
+      "zh": "只有模型选中的答案和标准答案一致，这道题才算答对。分数就是答对题目占全部题目的比例。"
+    },
+    "metric_name": "Exact-match accuracy"
+  },
+  "source": "https://arxiv.org/abs/2009.03300",
+  "summary": {
+    "en": "MMLU tests broad knowledge across academic and professional subjects.",
+    "zh": "MMLU 测试模型在多个学术和专业领域里的综合知识。"
+  },
+  "tags": [
+    "multiple-choice",
+    "academic"
+  ],
+  "task_format": {
+    "en": "Each item is a four-choice multiple-choice question. The model selects one answer.",
+    "zh": "每个 task 都是四选一问题，模型需要选出一个答案。"
+  }
+}

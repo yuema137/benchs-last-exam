@@ -12,6 +12,17 @@ SPEC.loader.exec_module(MODULE)
 
 
 class BenchmarkIntegrationTests(unittest.TestCase):
+    def test_registry_card_missing_from_generated_snapshot_is_rejected(self):
+        class Spec:
+            def __init__(self, benchmark_id):
+                self.id = benchmark_id
+
+        errors = MODULE.validate_registry_alignment(
+            [Spec("benchmark-a"), Spec("benchmark-b")],
+            [{"id": "benchmark-a"}],
+        )
+        self.assertTrue(any("stale against data/benchmarks" in error for error in errors))
+
     def test_missing_chinese_summary_is_rejected(self):
         benchmark = {
             "id": "demo", "name": "Demo", "benchmark_version_id": "demo-v1",

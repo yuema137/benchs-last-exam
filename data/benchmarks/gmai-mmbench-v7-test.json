@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "gmai_mmbench_v7_test_external.csv",
+  "floor": 0.2594,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gmai-mmbench-v7-test",
+  "input_unit": "fraction",
+  "metric_id": "gmai-mmbench-v7-test-metric-v1",
+  "name": "GMAI-MMBench v7 Test",
+  "progress_baseline": 0.2594,
+  "progress_target": 1.0,
+  "protocol": "GMAI-MMBench arXiv v7 fixed 21,281-question single-choice test split, zero-shot VLMEvalKit protocol. Validation and multi-label metrics are excluded.",
+  "protocol_id": "gmai-mmbench-v7-test-source-export-v1",
+  "registry_order": 90,
+  "release": "2024-10-21",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is macro-averaged accuracy on the fixed 21,281-question v7 single-choice test set.",
+      "zh": "分数是固定 21,281 道 v7 single-choice test set 上的 macro-averaged accuracy。"
+    },
+    "metric_name": "Macro-averaged single-choice accuracy"
+  },
+  "source": "https://arxiv.org/abs/2408.03361",
+  "summary": {
+    "en": "GMAI-MMBench measures broad medical-image understanding across clinical tasks, departments, modalities, and perceptual granularities.",
+    "zh": "GMAI-MMBench 测试模型跨临床任务、科室、影像模态和感知粒度理解医学图像的能力。"
+  },
+  "tags": [
+    "medical imaging",
+    "multimodal",
+    "VQA"
+  ],
+  "task_format": {
+    "en": "The model receives a medical image and a variable-choice single-answer question, then returns one option without demonstrations.",
+    "zh": "模型会收到一张医学图像和一道选项数量不固定的 single-answer question，并在无 demonstration 的条件下返回一个选项。"
+  }
+}

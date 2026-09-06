@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mathematics",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "proofbench_v1_1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "proofbench-v1-1",
+  "input_unit": "fraction",
+  "metric_id": "proofbench-v1-1-metric-v1",
+  "name": "ProofBench v1.1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ProofBench v1.1 re-grade published by Vals AI; corrected Lean formalizations and hardened grading are treated as a new fixed measurement object.",
+  "protocol_id": "proofbench-v1-1-source-export-v1",
+  "registry_order": 74,
+  "release": "2026-08-14",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the share of theorem instances for which the generated proof is accepted by the Lean checker. This card uses the v1.1 re-graded series; v1.0-era scores are not mixed.",
+      "zh": "Accuracy 是生成的 proof 被 Lean checker 接受的 theorem instance 占比。本卡使用 v1.1 re-grade series，不混入 v1.0 时代的分数。"
+    },
+    "metric_name": "Formal proof accuracy"
+  },
+  "source": "https://www.vals.ai/benchmarks/proof_bench",
+  "summary": {
+    "en": "ProofBench v1.1 evaluates whether models can produce formally checked Lean 4 proofs for mathematical statements.",
+    "zh": "ProofBench v1.1 评估模型能不能为数学命题生成经过 Lean 4 formal checker 验证的 proof。"
+  },
+  "tags": [
+    "formal proof",
+    "Lean 4",
+    "theorem proving",
+    "verified"
+  ],
+  "task_format": {
+    "en": "The model receives a natural-language theorem paired with a Lean 4 formalization and must generate a proof accepted by the Lean kernel.",
+    "zh": "模型会收到自然语言 theorem 及其 Lean 4 formalization，需要生成一个被 Lean kernel 接受的 proof。"
+  }
+}

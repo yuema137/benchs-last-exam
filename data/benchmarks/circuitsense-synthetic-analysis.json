@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "circuitsense_synthetic_analysis_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "circuitsense-synthetic-analysis",
+  "input_unit": "fraction",
+  "metric_id": "circuitsense-synthetic-analysis-metric-v1",
+  "name": "CircuitSense — Synthetic Analysis",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CircuitSense ICLR 2026 / arXiv v2 fixed 5,020-question synthetic Analysis partition, temperature 0.1, top-p 0.95, one response, official symbolic/numeric equivalence checker. Curated and Perception/Design tasks are excluded.",
+  "protocol_id": "circuitsense-synthetic-analysis-source-export-v1",
+  "registry_order": 104,
+  "release": "2026-02-28",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A response is correct when SymPy simplification or evaluation at 100 complex-frequency points proves it equivalent to the generated ground truth.",
+      "zh": "当 SymPy 化简或 100 个复频率点数值验证证明答案与生成标准答案等价时，该题算正确。"
+    },
+    "metric_name": "Symbolic-equation accuracy"
+  },
+  "source": "https://circuitsense-benchmark.github.io/",
+  "summary": {
+    "en": "CircuitSense tests whether multimodal models can derive equivalent symbolic equations from unseen circuit schematics and system block diagrams.",
+    "zh": "CircuitSense 测试多模态模型能否从未见过的电路原理图和系统框图中推导出等价符号方程。"
+  },
+  "tags": [
+    "circuits",
+    "symbolic",
+    "multimodal"
+  ],
+  "task_format": {
+    "en": "The model receives one of 5,020 generated circuit or block diagrams and returns a symbolic nodal equation or transfer function.",
+    "zh": "模型会收到 5,020 个生成电路图或系统框图中的一个，并返回符号节点方程或传递函数。"
+  }
+}

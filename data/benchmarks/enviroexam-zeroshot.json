@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Energy & Infrastructure",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "enviroexam_zeroshot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "enviroexam-zeroshot",
+  "input_unit": "fraction",
+  "metric_id": "enviroexam-zeroshot-metric-v1",
+  "name": "EnviroExam — Zero-shot",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EnviroExam initial fixed 726-item test split, OpenCompass 2.1.0, zero-shot, max output 100, temperature 0.7, top-p 0.95, composite I. Five-shot and CoT variants are excluded.",
+  "protocol_id": "enviroexam-zeroshot-source-export-v1",
+  "registry_order": 112,
+  "release": "2024-05-18",
+  "score": "Composite I",
+  "scoring": {
+    "explanation": {
+      "en": "The score is I=M(1-CV), combining mean accuracy across 42 courses with a penalty for cross-course dispersion.",
+      "zh": "分数为 I=M(1-CV)，将 42 门课程的平均正确率与跨课程波动惩罚结合起来。"
+    },
+    "metric_name": "Course-balanced composite I"
+  },
+  "source": "https://github.com/EnviroScientist/enviroexam",
+  "summary": {
+    "en": "EnviroExam evaluates Chinese environmental science and engineering knowledge across 42 university courses.",
+    "zh": "EnviroExam 评估模型在 42 门大学环境科学与工程课程中的中文专业知识。"
+  },
+  "tags": [
+    "environmental science",
+    "Chinese",
+    "course balanced"
+  ],
+  "task_format": {
+    "en": "The model answers 726 Chinese four-choice test questions without examples under the OpenCompass protocol.",
+    "zh": "模型按照 OpenCompass protocol，在无示例条件下回答 726 道中文四选一测试题。"
+  }
+}

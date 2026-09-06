@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "assistantbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "assistantbench",
+  "input_unit": "fraction",
+  "metric_id": "assistantbench-metric-v1",
+  "name": "AssistantBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "AssistantBench fixed 214-task release; this series uses one result per underlying model from the HAL Browser-Use verified export. Scaffold, model configuration, and full-run cost remain in observation notes; no configurations are silently merged.",
+  "protocol_id": "assistantbench-source-export-v1",
+  "registry_order": 69,
+  "release": "2024-07-23",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the fraction of the fixed 214 tasks answered correctly under the published Browser-Use evaluation export. Full-run costs shown by the source are not treated as per-task cost.",
+      "zh": "Accuracy 是在公开 Browser-Use evaluation export 中答对固定 214 个 task 的比例。来源展示的 full-run cost 不会被当作 per-task cost。"
+    },
+    "metric_name": "Task accuracy"
+  },
+  "source": "https://assistantbench.github.io/",
+  "summary": {
+    "en": "AssistantBench evaluates web-capable assistants on realistic, time-consuming tasks that require multi-step research across the internet.",
+    "zh": "AssistantBench 评估具备网页能力的 assistant 完成真实、耗时且需要多步互联网 research 的 task 的能力。"
+  },
+  "tags": [
+    "browsing",
+    "multi-step",
+    "web",
+    "research"
+  ],
+  "task_format": {
+    "en": "The agent receives a real-world question and must browse across websites, gather evidence, reason over it, and submit a final answer.",
+    "zh": "agent 会收到一个真实世界问题，需要跨网站浏览、收集证据、进行推理，并提交最终答案。"
+  }
+}

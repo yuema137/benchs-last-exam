@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "spatialviz_bench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "spatialviz-bench",
+  "input_unit": "fraction",
+  "metric_id": "spatialviz-bench-metric-v1",
+  "name": "SpatialViz-Bench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "spatialviz-bench-source-export-v1",
+  "registry_order": 31,
+  "release": "2024-09-19",
+  "score": "Overall score",
+  "scoring": {
+    "explanation": {
+      "en": "The overall score aggregates accuracy across the benchmark's four spatial reasoning subskills.",
+      "zh": "overall score 汇总 benchmark 四类空间推理能力上的 accuracy。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://arxiv.org/abs/2409.13253",
+  "summary": {
+    "en": "SpatialViz-Bench tests visual-spatial reasoning, including mental rotation, folding, penetration, and animation.",
+    "zh": "SpatialViz-Bench 测试视觉空间推理，包括心理旋转、折叠、穿透和运动想象。"
+  },
+  "tags": [
+    "spatial reasoning",
+    "visual",
+    "geometry"
+  ],
+  "task_format": {
+    "en": "The model receives visual-spatial questions and selects or predicts the answer under the benchmark's visual reasoning protocol.",
+    "zh": "模型会收到视觉空间问题，并按照 benchmark 的视觉推理 protocol 选择或预测答案。"
+  }
+}

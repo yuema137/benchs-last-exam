@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "medxpertqa_text_v3_external.csv",
+  "floor": 0.1,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "medxpertqa-text-v3",
+  "input_unit": "fraction",
+  "metric_id": "medxpertqa-text-v3-metric-v1",
+  "name": "MedXpertQA Text v3",
+  "progress_baseline": 0.1,
+  "progress_target": 1.0,
+  "protocol": "MedXpertQA v3 Text full 2,450-question test split, official zero-shot CoT and answer cleansing, no retrieval or tools. Seeded 10% sample results and the multimodal track are excluded.",
+  "protocol_id": "medxpertqa-text-v3-source-export-v1",
+  "registry_order": 89,
+  "release": "2025-06-06",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the fraction of the complete 2,450-question Text test set whose extracted option matches the gold label.",
+      "zh": "Accuracy 是完整 2,450 道 Text test question 中，模型提取选项与标准答案一致的比例。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://arxiv.org/abs/2501.18362",
+  "summary": {
+    "en": "MedXpertQA Text tests expert medical knowledge and clinical reasoning with difficult ten-option questions across specialized practice.",
+    "zh": "MedXpertQA Text 通过高难度十选一医学题，测试模型在多个专科中的医学知识和临床推理能力。"
+  },
+  "tags": [
+    "medicine",
+    "clinical reasoning",
+    "ten-choice"
+  ],
+  "task_format": {
+    "en": "The model answers one of ten options for each text-only medical question under the official zero-shot chain-of-thought prompt, without retrieval or tools.",
+    "zh": "模型按照官方 zero-shot chain-of-thought prompt 回答 text-only 医学十选一题，不使用 retrieval 或 tool。"
+  }
+}

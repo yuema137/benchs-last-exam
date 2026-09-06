@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "balrog_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "balrog",
+  "input_unit": "fraction",
+  "metric_id": "balrog-metric-v1",
+  "name": "BALROG",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BALROG fixed six-environment evaluation; the curated series uses official leaderboard Average progress rows and keeps language/vision setup and environment-level scores in row provenance.",
+  "protocol_id": "balrog-source-export-v1",
+  "registry_order": 70,
+  "release": "2024-11-20",
+  "score": "Average progress",
+  "scoring": {
+    "explanation": {
+      "en": "Average progress aggregates normalized progress across six game environments. It is a progress measure rather than a simple exact-answer accuracy, and the environment-level scores remain available in the observation source.",
+      "zh": "Average progress 汇总六个游戏环境中的 normalized progress。它是 progress metric，不是简单的 exact-answer accuracy；各环境分数仍保留在 observation source 中。"
+    },
+    "metric_name": "Average progress"
+  },
+  "source": "https://balrogai.com/",
+  "summary": {
+    "en": "BALROG evaluates language and vision-language agents on long-horizon interactive tasks across challenging game environments.",
+    "zh": "BALROG 在多个高难度游戏环境中评估 language agent 和 vision-language agent 完成长链交互任务的能力。"
+  },
+  "tags": [
+    "games",
+    "interactive",
+    "long-horizon",
+    "vision"
+  ],
+  "task_format": {
+    "en": "The agent observes a game environment, chooses actions over many steps, and must make progress toward the environment's goal while adapting to feedback.",
+    "zh": "agent 会观察游戏环境，在很多 step 中持续选择动作，并根据反馈适应，逐步完成环境目标。"
+  }
+}

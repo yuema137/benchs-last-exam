@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "bool_q_external.csv",
+  "floor": 0.5,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "boolq",
+  "input_unit": "fraction",
+  "metric_id": "boolq-metric-v1",
+  "name": "BoolQ",
+  "progress_baseline": 0.5,
+  "progress_target": 1.0,
+  "protocol": "BoolQ fixed dataset and binary yes/no accuracy; the paired passage is provided as part of each instance. Other QA datasets and explanation variants are not merged.",
+  "protocol_id": "boolq-source-export-v1",
+  "registry_order": 78,
+  "release": "2019-05-24",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A prediction is correct when its yes/no answer matches the annotated label. The score is the fraction of correctly answered questions, with 50% as the balanced binary reference floor.",
+      "zh": "当预测的 yes/no 答案和标注 label 一致时算正确。分数是答对问题的比例，50% 是 balanced binary task 的参考 floor。"
+    },
+    "metric_name": "Binary accuracy"
+  },
+  "source": "https://github.com/google-research-datasets/boolean-questions",
+  "summary": {
+    "en": "BoolQ evaluates reading comprehension on naturally occurring yes/no questions paired with supporting passages.",
+    "zh": "BoolQ 评估模型根据支持性 passage 理解自然产生的 yes/no question 的能力。"
+  },
+  "tags": [
+    "reading comprehension",
+    "binary",
+    "passage"
+  ],
+  "task_format": {
+    "en": "The model receives a naturally occurring question and a passage, then answers yes or no.",
+    "zh": "模型会收到一个自然产生的问题和一段 passage，然后回答 yes 或 no。"
+  }
+}

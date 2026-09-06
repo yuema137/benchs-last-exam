@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "seephys_pro_l4_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "seephys-pro-level4-full",
+  "input_unit": "percentage_points",
+  "metric_id": "seephys-pro-level4-full-metric-v1",
+  "name": "SeePhys Pro — Level 4 Full",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "SeePhys Pro Level 4 full 800-problem test only; testmini, cross-level average and consistency metrics excluded.",
+  "protocol_id": "seephys-pro-level4-full-source-export-v1",
+  "registry_order": 145,
+  "release": "2026-05-13",
+  "score": "Accuracy",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy on 800 fixed Level-4 problems under deterministic checks plus a fixed judge for unresolved answers.",
+      "zh": "在 800 道固定 Level-4 问题上，以确定性规则及固定 judge 处理未决答案后计算准确率。"
+    },
+    "metric_name": "Level 4 full-test accuracy"
+  },
+  "source": "https://seephyspro.github.io/",
+  "summary": {
+    "en": "SeePhys Pro evaluates physics problem solving from complete handwritten visual statements.",
+    "zh": "SeePhys Pro 评估模型根据完整手写视觉题面解决物理问题的能力。"
+  },
+  "tags": [
+    "handwriting",
+    "vision",
+    "problem solving"
+  ],
+  "task_format": {
+    "en": "Read a single image containing the statement, formulas, variables, and diagram, then return the final answer.",
+    "zh": "读取一张包含题干、公式、变量和示意图的图片，再返回最终答案。"
+  }
+}

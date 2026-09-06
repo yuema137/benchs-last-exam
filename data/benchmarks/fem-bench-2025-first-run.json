@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Computational Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "fem_bench_2025_first_run_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "fem-bench-2025-first-run",
+  "input_unit": "fraction",
+  "metric_id": "fem-bench-2025-first-run-metric-v1",
+  "name": "FEM-Bench 2025 — First Run",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "FEM-Bench 2025 fixed 33 tasks, first run only, temperature 0.1, first parsed function, all hidden checks required.",
+  "protocol_id": "fem-bench-2025-first-run-source-export-v1",
+  "registry_order": 125,
+  "release": "2025-12-23",
+  "score": "Function correctness",
+  "scoring": {
+    "explanation": {
+      "en": "A task passes only if the first function parses, executes, uses allowed imports, and passes every hidden numerical check.",
+      "zh": "只有首次生成的函数可解析、可执行、仅用允许的 import，并通过全部隐藏数值检查，task 才通过。"
+    },
+    "metric_name": "First-run function correctness"
+  },
+  "source": "https://github.com/elejeune11/FEM-bench",
+  "summary": {
+    "en": "FEM-Bench tests first-attempt scientific Python implementations for finite-element and structural-analysis tasks.",
+    "zh": "FEM-Bench 测试模型首次生成有限元与结构分析 scientific Python 实现的能力。"
+  },
+  "tags": [
+    "finite element",
+    "structural mechanics",
+    "Python"
+  ],
+  "task_format": {
+    "en": "The model completes one numerical function for each of 33 FEM and structural-analysis tasks.",
+    "zh": "模型为 33 个有限元与结构分析 task 分别补全一个数值函数。"
+  }
+}

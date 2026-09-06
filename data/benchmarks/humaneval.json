@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Coding",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "humaneval_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "humaneval",
+  "input_unit": "fraction",
+  "metric_id": "humaneval-metric-v1",
+  "name": "HumanEval",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "HumanEval original 164-problem fixed task set; executable Python unit-test scoring. Sampling temperature and sample-count differences are retained in row notes.",
+  "protocol_id": "humaneval-source-export-v1",
+  "registry_order": 67,
+  "release": "2021-07-07",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Pass@1 is the probability that one sampled/generated completion passes the hidden tests. This series uses reported single-sample or greedy Pass@1 values and does not mix HumanEval+.",
+      "zh": "Pass@1 是一次生成的 completion 通过隐藏测试的概率。本序列使用公开的 single-sample 或 greedy Pass@1，不混入 HumanEval+。"
+    },
+    "metric_name": "Pass@1"
+  },
+  "source": "https://arxiv.org/abs/2107.03374",
+  "summary": {
+    "en": "HumanEval is a classic function-level code-generation benchmark with executable unit tests.",
+    "zh": "HumanEval 是经典的 function-level code-generation benchmark，通过可执行 unit tests 检查代码。"
+  },
+  "tags": [
+    "Python",
+    "function-level",
+    "unit tests"
+  ],
+  "task_format": {
+    "en": "The model receives a Python function signature and docstring, then generates an implementation that is run against hidden tests.",
+    "zh": "模型会收到 Python function signature 和 docstring，然后生成实现并通过隐藏测试运行。"
+  }
+}

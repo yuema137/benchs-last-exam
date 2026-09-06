@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Manufacturing",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "isafetybench_2025_single_avg_external.csv",
+  "floor": 0.0625,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "isafetybench-2025-single-avg",
+  "input_unit": "fraction",
+  "metric_id": "isafetybench-2025-single-avg-metric-v1",
+  "name": "iSafetyBench — Single Accuracy",
+  "progress_baseline": 0.0625,
+  "progress_target": 1.0,
+  "protocol": "iSafetyBench 2025 fixed 1,100-video zero-shot single-label protocol; multi-label metrics are excluded.",
+  "protocol_id": "isafetybench-2025-single-avg-source-export-v1",
+  "registry_order": 121,
+  "release": "2025-08-01",
+  "score": "Average accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the unweighted mean of exact single-label accuracy on 680 normal and 420 hazard clips.",
+      "zh": "分数是 680 个正常视频与 420 个危险视频的精确单标签准确率的等权平均。"
+    },
+    "metric_name": "Normal/hazard mean single-label accuracy"
+  },
+  "source": "https://github.com/iSafetyBench/data",
+  "summary": {
+    "en": "iSafetyBench evaluates action recognition in routine and hazardous industrial videos.",
+    "zh": "iSafetyBench 评估模型识别正常与危险工业视频中动作的能力。"
+  },
+  "tags": [
+    "industrial safety",
+    "video",
+    "action recognition"
+  ],
+  "task_format": {
+    "en": "The model watches a 4–8 second industrial clip and selects the correct action from 16 options.",
+    "zh": "模型观看 4–8 秒工业视频，并从 16 个选项中选择正确动作。"
+  }
+}

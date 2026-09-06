@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "eai_v3_virtualhome_as_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "eai-v3-virtualhome-action-sequencing-task-sr",
+  "input_unit": "fraction",
+  "metric_id": "eai-v3-virtualhome-action-sequencing-task-sr-metric-v1",
+  "name": "Embodied Agent Interface v3 — Action Sequencing",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EAI arXiv-v3 VirtualHome Action Sequencing, revised MotionPlanner, temperature zero, one-shot full plan, Table 12 task SR; replanning excluded.",
+  "protocol_id": "eai-v3-virtualhome-action-sequencing-task-sr-source-export-v1",
+  "registry_order": 143,
+  "release": "2024-10-09",
+  "score": "Task SR",
+  "scoring": {
+    "explanation": {
+      "en": "A plan succeeds only when the revised MotionPlanner executes it and reaches the task goal.",
+      "zh": "只有 revised MotionPlanner 能执行计划并达到任务目标时才算成功。"
+    },
+    "metric_name": "Task success rate"
+  },
+  "source": "https://embodied-agent-interface.github.io/",
+  "summary": {
+    "en": "EAI tests one-shot household action sequencing in the VirtualHome environment.",
+    "zh": "EAI 测试 VirtualHome 环境中的一次性家务动作序列生成。"
+  },
+  "tags": [
+    "embodied",
+    "planning",
+    "VirtualHome"
+  ],
+  "task_format": {
+    "en": "Given symbolic state, goal, actions, and rules, generate a complete action sequence for 338 instructions.",
+    "zh": "给定符号状态、目标、动作和规则，为 338 条指令生成完整动作序列。"
+  }
+}

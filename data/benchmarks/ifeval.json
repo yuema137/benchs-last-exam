@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Instruction following",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "ifeval_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "ifeval",
+  "input_unit": "fraction",
+  "metric_id": "ifeval-metric-v1",
+  "name": "IFEval",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "IFEval English prompt-level accuracy; the stricter prompt-level metric is kept separate from instruction-level accuracy and from multilingual variants.",
+  "protocol_id": "ifeval-source-export-v1",
+  "registry_order": 5,
+  "release": "2023-11-14",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A prompt is counted as correct only when the response satisfies all of its verifiable instructions. The score is the fraction of prompts fully satisfied.",
+      "zh": "只有当回答满足一道 prompt 的全部可验证指令时，这道题才算正确。分数就是完整满足的 prompt 占全部 prompt 的比例。"
+    },
+    "metric_name": "Prompt-level accuracy"
+  },
+  "source": "https://arxiv.org/abs/2311.07911",
+  "summary": {
+    "en": "IFEval tests whether a language model follows concrete, automatically checkable instructions in a prompt.",
+    "zh": "IFEval 测试语言模型能不能遵守 prompt 里具体、可以自动检查的指令。"
+  },
+  "tags": [
+    "verifiable",
+    "constraints",
+    "format"
+  ],
+  "task_format": {
+    "en": "Each prompt includes one or more constraints, such as an exact format, word limit, or required phrase. The model writes a response that must satisfy those constraints.",
+    "zh": "每个 prompt 都带有一个或多个约束，比如固定格式、字数限制或必须出现某个短语。模型需要写出满足这些约束的回答。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "screenspot_pro_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "screenspot-pro",
+  "input_unit": "fraction",
+  "metric_id": "screenspot-pro-metric-v1",
+  "name": "ScreenSpot-Pro",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Comparable direct-grounding results only: greedy decoding with a single predicted location. Agentic multi-step or zoom-assisted results are not mixed into this capability frontier.",
+  "protocol_id": "screenspot-pro-source-export-v1",
+  "registry_order": 53,
+  "release": "2025-01-04",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A prediction is correct when the predicted point falls inside the target element's ground-truth bounding box. The reported score is the micro-average accuracy over the benchmark instructions.",
+      "zh": "如果预测点落在目标元素的标准 bounding box 内，就算答对。报告分数是所有 benchmark instruction 的 micro-average accuracy。"
+    },
+    "metric_name": "Grounding accuracy"
+  },
+  "source": "https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding",
+  "summary": {
+    "en": "ScreenSpot-Pro tests whether a multimodal system can locate the precise UI element described in a natural-language instruction on a high-resolution professional screenshot.",
+    "zh": "ScreenSpot-Pro 测试 multimodal system 能不能根据自然语言指令，在高分辨率的专业软件截图中准确找到目标 UI 元素。"
+  },
+  "tags": [
+    "GUI grounding",
+    "high resolution",
+    "static screenshot"
+  ],
+  "task_format": {
+    "en": "Each item provides a screenshot and an instruction. The system predicts a point or bounding-box location for the requested icon or text element; the benchmark uses static screenshots rather than a full interactive desktop environment.",
+    "zh": "每个 task 会提供一张截图和一条指令。系统需要预测指定 icon 或文字元素的位置；这个 benchmark 使用静态截图，不是完整的可交互桌面环境。"
+  }
+}

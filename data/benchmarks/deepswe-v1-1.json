@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "cost_column": "Mean cost (USD)",
+  "domain": "Software engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "deepswe_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "deepswe-v1-1",
+  "input_unit": "fraction",
+  "metric_id": "deepswe-v1-1-metric-v1",
+  "name": "DeepSWE v1.1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "DeepSWE leaderboard export; only Pass@1 rows are used for the capability frontier. Harness and reasoning effort remain part of observation provenance.",
+  "protocol_id": "deepswe-v1-1-source-export-v1",
+  "registry_order": 59,
+  "release": "2026-04-01",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Pass@1 is the fraction of repository tasks whose submitted patch is accepted by the benchmark grader in one run. Pass@4 is retained as a separate field and is not mixed into the headline metric.",
+      "zh": "Pass@1 是一次运行中提交的 patch 被 benchmark grader 接受的 repository task 占比。Pass@4 作为独立字段保留，不和 headline metric 混合。"
+    },
+    "metric_name": "Pass@1"
+  },
+  "source": "https://deepswe.datacurve.ai/",
+  "summary": {
+    "en": "DeepSWE v1.1 measures long-horizon software-engineering agents on repository-level tasks under a fixed mini-SWE-agent setup.",
+    "zh": "DeepSWE v1.1 在固定的 mini-SWE-agent 设置下，评估 agent 完成 repository-level、长链 software-engineering task 的能力。"
+  },
+  "tags": [
+    "repository",
+    "long-horizon",
+    "cost"
+  ],
+  "task_format": {
+    "en": "The agent inspects a repository, plans and edits multiple files, runs tests, and submits a patch for an issue-level task.",
+    "zh": "agent 需要检查代码仓库、规划并修改多个文件、运行测试，然后为 issue-level task 提交 patch。"
+  }
+}

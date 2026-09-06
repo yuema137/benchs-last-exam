@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "circuit_v1_zeroshot_global_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "circuit-v1-zeroshot-global",
+  "input_unit": "fraction",
+  "metric_id": "circuit-v1-zeroshot-global-metric-v1",
+  "name": "CIRCUIT — Zero-shot Global",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CIRCUIT v1 fixed 510 questions, plain zero-shot with diagrams, no netlist, global <0.001 absolute-error accuracy; one-shot and template-pass metrics are excluded.",
+  "protocol_id": "circuit-v1-zeroshot-global-source-export-v1",
+  "registry_order": 130,
+  "release": "2025-02-11",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of 510 questions whose parsed answer differs from ground truth by less than 0.001.",
+      "zh": "分数是 510 道题中，解析答案与标准答案绝对误差小于 0.001 的比例。"
+    },
+    "metric_name": "Global numerical-answer accuracy"
+  },
+  "source": "https://arxiv.org/html/2502.07980",
+  "summary": {
+    "en": "CIRCUIT evaluates numerical reasoning over basic, analog, power, and RF circuit problems.",
+    "zh": "CIRCUIT 评估模型解决基础、模拟、电力和射频电路数值问题的能力。"
+  },
+  "tags": [
+    "circuits",
+    "numerical",
+    "multimodal"
+  ],
+  "task_format": {
+    "en": "The model inspects a circuit problem and diagram, then returns a numerical answer to six decimal places.",
+    "zh": "模型阅读电路题和电路图，再给出保留六位小数的数值答案。"
+  }
+}

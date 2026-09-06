@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Tool use",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "bfcl_v4_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "bfcl-v4",
+  "input_unit": "fraction",
+  "metric_id": "bfcl-v4-metric-v1",
+  "name": "BFCL V4",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BFCL V4 fixed evaluator checkpoint (commit f7cf735 / bfcl-eval 2025.12.17). Scores are not mixed with BFCL V1–V3 or across FC and Prompt modes without preserving the mode in provenance.",
+  "protocol_id": "bfcl-v4-source-export-v1",
+  "registry_order": 66,
+  "release": "2025-07-17",
+  "score": "Overall Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Overall accuracy is the unweighted average of the BFCL V4 sub-category scores. Native function-calling and prompt-only modes are retained as distinct observations.",
+      "zh": "Overall accuracy 是 BFCL V4 各子类别分数的非加权平均。原生 function-calling 和 prompt-only 模式作为不同 observation 保留。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+  "summary": {
+    "en": "BFCL V4 evaluates accurate function and tool calling, including multi-turn and agentic scenarios with real-world functions.",
+    "zh": "BFCL V4 评估模型准确调用 function 和 tool 的能力，包含 multi-turn 及更 agentic 的真实场景。"
+  },
+  "tags": [
+    "function calling",
+    "multi-turn",
+    "agentic"
+  ],
+  "task_format": {
+    "en": "The model receives a user request and function definitions, then must emit valid calls and arguments; V4 adds multi-turn state, error recovery, and agentic formats.",
+    "zh": "模型会收到用户请求和 function 定义，需要输出有效的调用及参数；V4 增加了 multi-turn state、错误恢复和 agentic format。"
+  }
+}

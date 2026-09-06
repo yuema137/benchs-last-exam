@@ -1,0 +1,44 @@
+{
+  "ceiling": null,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "metr_time_horizons_external.csv",
+  "floor": null,
+  "hard_max": null,
+  "hard_min": null,
+  "id": "metr-time-horizon-1-1",
+  "input_unit": "number",
+  "metric_id": "metr-time-horizon-1-1-metric-v1",
+  "name": "METR Time Horizon 1.1",
+  "progress_baseline": null,
+  "progress_target": null,
+  "protocol": "METR Time Horizon 1.1 methodology and task suite; the headline metric is the estimated 50% time horizon in human-equivalent minutes. TH1.0 and TH1.1 are separate measurement versions and are not merged.",
+  "protocol_id": "metr-time-horizon-1-1-source-export-v1",
+  "registry_order": 72,
+  "release": "2026-01-29",
+  "score": "Time horizon",
+  "score_format": "number",
+  "scoring": {
+    "explanation": {
+      "en": "The time horizon is the estimated human-equivalent task duration at which the agent has a 50% probability of success. It is measured in minutes and is not a bounded 0–100% score, so percentage lifecycle thresholds are not applicable.",
+      "zh": "time horizon 是 agent 以 50% 概率成功时对应的人类等效 task 时长，单位为分钟。它不是 0–100% bounded score，因此不适用百分比 lifecycle threshold。"
+    },
+    "metric_name": "50% task-completion time horizon"
+  },
+  "source": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
+  "summary": {
+    "en": "METR Time Horizon 1.1 estimates how long an AI agent can complete software and research tasks with a target probability of success.",
+    "zh": "METR Time Horizon 1.1 估计 AI agent 能以目标成功概率完成多长的人类工作量级 software 和 research task。"
+  },
+  "tags": [
+    "long-horizon",
+    "software",
+    "research",
+    "time horizon"
+  ],
+  "task_format": {
+    "en": "The agent attempts a suite of software and research tasks whose human-equivalent completion times vary substantially, using a standardized evaluation scaffold.",
+    "zh": "agent 会在标准化 evaluation scaffold 下完成一组 software 和 research task，这些 task 对人类而言所需的等效完成时间差异很大。"
+  }
+}

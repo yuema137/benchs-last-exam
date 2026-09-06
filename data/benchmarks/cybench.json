@@ -1,0 +1,60 @@
+{
+  "ceiling": 1.0,
+  "domain": "Cybersecurity",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "cybench_external.csv",
+  "floor": 0.0,
+  "frontier_exclude_ids": [
+    "cybench-mythos-preview",
+    "cybench-opus-4-7",
+    "rec77oHCMurVWgzvd",
+    "recCu9LKRKI8DDSPv",
+    "recHS1d8FpTudBN0R",
+    "recJ2fztLtK3WB0yS",
+    "recJjYw1K1NV8Z47n",
+    "recWoHNahp8uxAsGZ",
+    "recbFGPB81lSzLlEv",
+    "recd57Ck0JOqmhCSh",
+    "recpAkk0ysXYhjhJu",
+    "recrjRfouZg28oDuU"
+  ],
+  "frontier_exclude_models": [
+    "claude-mythos-preview",
+    "claude-opus-4-7-20260416"
+  ],
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cybench",
+  "input_unit": "fraction",
+  "metric_id": "cybench-metric-v1",
+  "name": "CyBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CyBench official 40-task CTF benchmark. Results from 35-task, 37-task, or unverified task-set variants remain canonical provenance observations but are excluded from the primary capability frontier.",
+  "protocol_id": "cybench-source-export-v1",
+  "registry_order": 28,
+  "release": "2024-08-01",
+  "score": "Unguided % Solved",
+  "scoring": {
+    "explanation": {
+      "en": "A task is solved when the agent completes the challenge without task-specific guidance. The score is the fraction solved. CyBench exports this field as a ratio (for example, 0.93 means 93%), so no additional percentage conversion is applied.",
+      "zh": "agent 在没有 task-specific guidance 的情况下完成 challenge 才算解决。分数是解决 task 的比例。CyBench 导出的字段本身就是比例（例如 0.93 代表 93%），所以不会再次做百分比转换。"
+    },
+    "metric_name": "Unguided task success rate"
+  },
+  "source": "https://cybench.github.io/",
+  "summary": {
+    "en": "CyBench tests agents on realistic cybersecurity tasks that require investigation and technical action.",
+    "zh": "CyBench 测试 agent 完成真实网络安全任务时的调查和技术操作能力。"
+  },
+  "tags": [
+    "cybersecurity",
+    "terminal",
+    "environment"
+  ],
+  "task_format": {
+    "en": "The agent works in a cybersecurity environment, using available tools to investigate a challenge and produce a successful solution.",
+    "zh": "agent 会在网络安全环境中使用工具调查 challenge，并完成可验证的解决方案。"
+  }
+}

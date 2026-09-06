@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "spatial457_v4_l5_external.csv",
+  "floor": 0.2,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "spatial457-v4-l5-6d-spatial-accuracy",
+  "input_unit": "fraction",
+  "metric_id": "spatial457-v4-l5-6d-spatial-accuracy-metric-v1",
+  "name": "Spatial457 v4 — L5 6D Spatial",
+  "progress_baseline": 0.2,
+  "progress_target": 1.0,
+  "protocol": "Spatial457 arXiv-v4 L5 6D Spatial 1,837-question subset, VLMEvalKit exact accuracy; other levels excluded.",
+  "protocol_id": "spatial457-v4-l5-6d-spatial-accuracy-source-export-v1",
+  "registry_order": 142,
+  "release": "2025-02-12",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Exact-choice accuracy on the fixed Level-5 6D Spatial subset through VLMEvalKit.",
+      "zh": "通过 VLMEvalKit 在固定 Level-5 6D Spatial subset 上计算精确选择准确率。"
+    },
+    "metric_name": "L5 exact-choice accuracy"
+  },
+  "source": "https://github.com/XingruiWang/Spatial457",
+  "summary": {
+    "en": "Spatial457 L5 evaluates six-dimensional spatial reasoning over synthetic 3D scenes.",
+    "zh": "Spatial457 L5 使用合成三维场景评估六维空间推理。"
+  },
+  "tags": [
+    "spatial reasoning",
+    "3D",
+    "vision"
+  ],
+  "task_format": {
+    "en": "Answer 1,837 five-choice questions grounded in 1,000 synthetic 3D scenes.",
+    "zh": "回答基于 1,000 个合成三维场景的 1,837 道五选一问题。"
+  }
+}

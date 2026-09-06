@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mv_robobench_v2_zeroshot_external.csv",
+  "floor": 0.2,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mv-robobench-v2-unified-zeroshot-avg",
+  "input_unit": "fraction",
+  "metric_id": "mv-robobench-v2-unified-zeroshot-avg-metric-v1",
+  "name": "MV-RoboBench v2 — Zero-shot Average",
+  "progress_baseline": 0.2,
+  "progress_target": 1.0,
+  "protocol": "MV-RoboBench v2 fixed multiview set, zero-shot A-E choice, published unified average; per-task and alternative prompting excluded.",
+  "protocol_id": "mv-robobench-v2-unified-zeroshot-avg-source-export-v1",
+  "registry_order": 141,
+  "release": "2025-10-22",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Published average exact-choice accuracy across the fixed v2 evaluation set.",
+      "zh": "固定 v2 evaluation set 上发布的平均精确选择准确率。"
+    },
+    "metric_name": "Unified zero-shot average accuracy"
+  },
+  "source": "https://aaronfengzy.github.io/MV-RoboBench-Webpage/",
+  "summary": {
+    "en": "MV-RoboBench evaluates multiview perception and reasoning over real robot demonstrations.",
+    "zh": "MV-RoboBench 评估模型对真实机器人演示的多视角感知与推理。"
+  },
+  "tags": [
+    "multiview",
+    "robotics",
+    "vision"
+  ],
+  "task_format": {
+    "en": "Answer five-choice questions spanning eight subtasks using synchronized multiview robot images.",
+    "zh": "使用同步多视角机器人图像回答覆盖八个子任务的五选一问题。"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "chemebench_2025_zeroshot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chemebench-2025-zero-shot-overall",
+  "input_unit": "percentage_points",
+  "metric_id": "chemebench-2025-zero-shot-overall-metric-v1",
+  "name": "ChemEBench 2025 — Zero-shot Overall",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ChemEBench 2025 Table 9 zero-shot Overall only; three-shot rows and component metrics excluded.",
+  "protocol_id": "chemebench-2025-zero-shot-overall-source-export-v1",
+  "registry_order": 137,
+  "release": "2025-06-12",
+  "score": "Overall",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Table 9 overall aggregates bounded objective and rubric-scored tasks under the zero-shot setting.",
+      "zh": "Table 9 overall 在 zero-shot 设置下汇总有界的客观题和 rubric 评分任务。"
+    },
+    "metric_name": "Zero-shot overall score"
+  },
+  "source": "https://www.cjcatal.com/CN/10.1016/S1872-2067(25)64725-5",
+  "summary": {
+    "en": "ChemEBench evaluates broad chemical-engineering competence from fundamentals through industrial processes.",
+    "zh": "ChemEBench 综合评估从基础知识到工业过程的化学工程能力。"
+  },
+  "tags": [
+    "chemical engineering",
+    "process",
+    "rubric"
+  ],
+  "task_format": {
+    "en": "Solve heterogeneous knowledge, molecular, equipment, reactor, separation, safety, simulation, and economics tasks.",
+    "zh": "完成知识、分子、设备、反应器、分离、安全、模拟和经济等多类任务。"
+  }
+}

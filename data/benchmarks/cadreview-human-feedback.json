@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "cadreview_human_feedback_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "cadreview-human-feedback",
+  "input_unit": "fraction",
+  "metric_id": "cadreview-human-feedback-metric-v1",
+  "name": "CADReview — Human Feedback",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CADReview arXiv v1 human-written-program test stratum, zero-shot feedback Acc. Machine-written programs, one-shot prompting, text metrics, and corrected-geometry metrics are excluded.",
+  "protocol_id": "cadreview-human-feedback-source-export-v1",
+  "registry_order": 94,
+  "release": "2025-05-28",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A sample is correct only when feedback identifies both the ground-truth erroneous code block and error class; the score is mean binary accuracy on the human-written stratum.",
+      "zh": "只有反馈同时命中标准错误代码块和错误类型时样本才算正确，分数是 human-written stratum 上的平均二元准确率。"
+    },
+    "metric_name": "Human-program feedback accuracy"
+  },
+  "source": "https://arxiv.org/abs/2505.22304",
+  "summary": {
+    "en": "CADReview measures whether a multimodal model can locate and classify errors in an OpenSCAD program against intended multiview geometry.",
+    "zh": "CADReview 测试多模态模型能否根据目标多视图几何，定位并判断 OpenSCAD 程序中的错误。"
+  },
+  "tags": [
+    "CAD",
+    "multimodal",
+    "debugging"
+  ],
+  "task_format": {
+    "en": "The model sees correct reference renders, an erroneous block-labeled OpenSCAD program, and its render, then identifies the error block and class.",
+    "zh": "模型会看到正确参考渲染、带 block label 的错误 OpenSCAD 程序及其渲染图，然后定位错误 block 并判断错误类型。"
+  }
+}

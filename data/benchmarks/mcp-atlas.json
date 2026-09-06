@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Tool use",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "mcp_atlas_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mcp-atlas",
+  "input_unit": "fraction",
+  "metric_id": "mcp-atlas-metric-v1",
+  "name": "MCP-Atlas",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MCP-Atlas updated evaluation methodology: 1,000 tasks, 36 MCP servers, 220 tools, up to 100 tool calls per task, Gemini-2.5-Pro claim judge. Earlier MCP-Atlas series is not merged.",
+  "protocol_id": "mcp-atlas-source-export-v1",
+  "registry_order": 56,
+  "release": "2025-10-01",
+  "score": "Pass rate",
+  "scoring": {
+    "explanation": {
+      "en": "Claims in the final answer receive 0, 0.5, or 1 credit. A task passes when mean claim coverage is at least 75%; the headline score is the percentage of passed tasks.",
+      "zh": "最终答案中的 claims 得分为 0、0.5 或 1。当一个 task 的平均 claim coverage 至少达到 75% 时才算通过；headline score 是通过 task 的比例。"
+    },
+    "metric_name": "Task pass rate"
+  },
+  "source": "https://labs.scale.com/leaderboard/mcp_atlas",
+  "summary": {
+    "en": "MCP-Atlas tests whether agents can discover and use real Model Context Protocol tools across multi-step workflows.",
+    "zh": "MCP-Atlas 测试 agent 能不能在多步 workflow 中发现并正确使用真实的 Model Context Protocol 工具。"
+  },
+  "tags": [
+    "MCP",
+    "multi-step",
+    "real tools",
+    "claim grading"
+  ],
+  "task_format": {
+    "en": "Each task exposes a controlled set of real MCP servers and distractor tools. The agent must call tools, recover from errors, and synthesize a correct final answer.",
+    "zh": "每个 task 会提供一组受控的真实 MCP server 和干扰工具。agent 需要调用工具、处理错误，并综合出正确的最终答案。"
+  }
+}

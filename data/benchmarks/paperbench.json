@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "paperbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "paperbench",
+  "input_unit": "fraction",
+  "metric_id": "paperbench-metric-v1",
+  "name": "PaperBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PaperBench BasicAgent full-replication series from the official leaderboard. The benchmark's LLM judge and paper-specific rubrics are part of the measurement object.",
+  "protocol_id": "paperbench-source-export-v1",
+  "registry_order": 63,
+  "release": "2025-04-02",
+  "score": "Score (%)",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the average fraction of rubric outcomes satisfied across 20 ICML 2024 papers. BasicAgent results are used here; IterativeAgent and Code-Dev are separate series.",
+      "zh": "分数是 20 篇 ICML 2024 论文中满足 rubric outcome 的平均比例。本序列使用 BasicAgent；IterativeAgent 和 Code-Dev 是独立序列。"
+    },
+    "metric_name": "Mean replication score"
+  },
+  "source": "https://openai.com/index/paperbench/",
+  "summary": {
+    "en": "PaperBench evaluates agents on reproducing machine-learning research papers from scratch.",
+    "zh": "PaperBench 评估 agent 能不能从头复现机器学习 research paper。"
+  },
+  "tags": [
+    "research replication",
+    "experiments",
+    "rubric"
+  ],
+  "task_format": {
+    "en": "The agent reads a paper, builds a codebase, executes experiments in a fresh environment, and is graded against a paper-specific rubric.",
+    "zh": "agent 需要阅读论文、构建 codebase、在全新环境中运行实验，再按照每篇论文专属 rubric 评分。"
+  }
+}

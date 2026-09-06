@@ -1,0 +1,44 @@
+{
+  "ceiling": 10.0,
+  "domain": "Engineering",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "engibench_v2_level3_external.csv",
+  "floor": 0.0,
+  "hard_max": 10.0,
+  "hard_min": 0.0,
+  "id": "engibench-v2-level3",
+  "input_unit": "number",
+  "metric_id": "engibench-v2-level3-metric-v1",
+  "name": "EngiBench v2 — Level 3",
+  "progress_baseline": 0.0,
+  "progress_target": 10.0,
+  "protocol": "EngiBench v2 Level 3 Original, fixed 43 open-ended problems, average 0–10 rubric score. Perturbed variants and Levels 1–2 are excluded.",
+  "protocol_id": "engibench-v2-level3-source-export-v1",
+  "registry_order": 85,
+  "release": "2026-05-02",
+  "score": "Rubric score",
+  "score_decimals": 2,
+  "score_format": "number",
+  "scoring": {
+    "explanation": {
+      "en": "Expert rubrics score the original Level 3 responses from 0 to 10 and the benchmark reports their average. Perturbed prompts and Levels 1–2 are separate objects.",
+      "zh": "expert rubric 会把 original Level 3 response 按 0–10 分评分，benchmark 报告其平均值。perturbed prompt 和 Level 1–2 属于其他 measurement object。"
+    },
+    "metric_name": "Average rubric score (0–10)"
+  },
+  "source": "https://github.com/AI4Engi/EngiBench",
+  "summary": {
+    "en": "EngiBench v2 Level 3 evaluates open-ended engineering modeling and design across 43 problems.",
+    "zh": "EngiBench v2 Level 3 使用 43 道开放式问题评估 engineering modeling 和 design 能力。"
+  },
+  "tags": [
+    "modeling",
+    "open-ended",
+    "rubric"
+  ],
+  "task_format": {
+    "en": "The model receives an open-ended engineering scenario and develops a mathematical model, assumptions, analysis, and recommendation.",
+    "zh": "模型会收到一个开放式工程场景，需要建立数学模型、说明假设、完成分析并给出建议。"
+  }
+}

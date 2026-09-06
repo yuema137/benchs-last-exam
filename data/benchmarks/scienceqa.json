@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "science_qa_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "scienceqa",
+  "input_unit": "fraction",
+  "metric_id": "scienceqa-metric-v1",
+  "name": "ScienceQA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "scienceqa-source-export-v1",
+  "registry_order": 19,
+  "release": "2022-09-19",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of questions for which the selected option matches the reference answer.",
+      "zh": "分数就是模型选项和标准答案一致的题目占全部题目的比例。"
+    },
+    "metric_name": "Multiple-choice accuracy"
+  },
+  "source": "https://scienceqa.github.io/",
+  "summary": {
+    "en": "ScienceQA tests multimodal science question answering with text, diagrams, and explanations.",
+    "zh": "ScienceQA 测试模型结合文字、图表等材料回答科学问题的能力。"
+  },
+  "tags": [
+    "multimodal",
+    "multiple-choice",
+    "explanation"
+  ],
+  "task_format": {
+    "en": "Each item is a multiple-choice science question with a short context that may include an image or diagram. The model selects an answer.",
+    "zh": "每道题都是科学选择题，题目可能附带图片或示意图。模型需要选出答案。"
+  }
+}

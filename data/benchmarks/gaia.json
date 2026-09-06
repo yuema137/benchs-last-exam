@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "gaia_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gaia",
+  "input_unit": "fraction",
+  "metric_id": "gaia-metric-v1",
+  "name": "GAIA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "GAIA 2023 fixed benchmark release; official leaderboard average score across levels. Public leaderboard submission dates are preserved only as evidence metadata and are not substituted for a defensible agent/system release date, so lifecycle metrics remain Unknown until such dates are curated.",
+  "protocol_id": "gaia-source-export-v1",
+  "registry_order": 55,
+  "release": "2023-11-21",
+  "score": "Average score",
+  "scoring": {
+    "explanation": {
+      "en": "A task is correct when the final answer matches the reference answer under the official scorer. The overall score is the fraction of tasks solved, with level-specific scores reported separately.",
+      "zh": "按照官方 scorer，最终答案和标准答案匹配时 task 才算正确。overall score 是解决 task 占全部 task 的比例，各难度等级还会分别报告分数。"
+    },
+    "metric_name": "Exact-answer task success rate"
+  },
+  "source": "https://huggingface.co/spaces/gaia-benchmark/leaderboard",
+  "summary": {
+    "en": "GAIA tests general-purpose assistants on real-world questions that require reasoning, multimodal understanding, web browsing, and tool use.",
+    "zh": "GAIA 测试通用 assistant 解决真实世界问题的能力，这些问题可能需要推理、多模态理解、网页浏览和工具使用。"
+  },
+  "tags": [
+    "browsing",
+    "multimodal",
+    "tool use",
+    "long-horizon"
+  ],
+  "task_format": {
+    "en": "The agent receives a real-world question, sometimes with an attached file, and must research, reason, use tools, and submit one final answer. The benchmark has three difficulty levels and separate public validation and private test sets.",
+    "zh": "agent 会收到一个真实世界问题，有时还会附带文件，需要检索、推理、使用工具，并提交一个最终答案。benchmark 分为三个难度等级，并有公开 validation set 和答案保密的 test set。"
+  }
+}

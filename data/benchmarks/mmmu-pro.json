@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mmmu_pro_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mmmu-pro",
+  "input_unit": "fraction",
+  "metric_id": "mmmu-pro-metric-v1",
+  "name": "MMMU-Pro",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MMMU-Pro fixed release; overall score is the official average of Standard-10 and Vision settings. Original MMMU and later dynamic leaderboard configurations remain separate.",
+  "protocol_id": "mmmu-pro-source-export-v1",
+  "registry_order": 65,
+  "release": "2024-09-05",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The headline score is the average of accuracy in the Standard-10 and Vision settings. These settings are not mixed with original MMMU accuracy.",
+      "zh": "headline score 是 Standard-10 和 Vision 两种 setting accuracy 的平均值。这两个 setting 不和原始 MMMU accuracy 混合。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://huggingface.co/datasets/MMMU/MMMU_Pro",
+  "summary": {
+    "en": "MMMU-Pro strengthens multimodal academic reasoning by filtering text-solvable items, expanding answer choices, and adding a vision-only setting.",
+    "zh": "MMMU-Pro 通过过滤仅靠文字可解的题目、增加选项并加入 vision-only setting，强化多模态 academic reasoning 测试。"
+  },
+  "tags": [
+    "vision-only",
+    "ten-choice",
+    "academic"
+  ],
+  "task_format": {
+    "en": "The model solves the same broad academic task style under Standard-10 and Vision formats; the Vision format embeds the question and options in the image.",
+    "zh": "模型在 Standard-10 和 Vision 两种格式下完成 academic task；Vision 格式会把问题和选项直接放进图片。"
+  }
+}

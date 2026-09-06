@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "phybench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "phybench",
+  "input_unit": "fraction",
+  "metric_id": "phybench-metric-v1",
+  "name": "PHYBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PHYBench fixed 500-problem accuracy series. EED Score, prompting variants, and materially different leaderboard settings remain separate measurement objects.",
+  "protocol_id": "phybench-source-export-v1",
+  "registry_order": 35,
+  "release": "2025-04-22",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Accuracy is the fraction of the fixed PHYBench problems answered correctly. The benchmark also reports an EED score, but EED is a separate metric and is not merged here.",
+      "zh": "Accuracy 是固定 PHYBench 题目中答对的比例。benchmark 还报告 EED score，但 EED 是独立 metric，本卡不将它合并。"
+    },
+    "metric_name": "Accuracy"
+  },
+  "source": "https://arxiv.org/abs/2504.16074",
+  "summary": {
+    "en": "PHYBench evaluates models on original physics problems spanning physical perception and multi-step reasoning.",
+    "zh": "PHYBench 评估模型解决原创物理问题、进行物理感知和多步推理的能力。"
+  },
+  "tags": [
+    "physics",
+    "multi-step",
+    "verifiable",
+    "accuracy"
+  ],
+  "task_format": {
+    "en": "The model solves a fixed set of 500 original physics problems and submits answers checked by the benchmark's verification procedure.",
+    "zh": "模型需要解决固定的 500 道原创物理题，并提交由 benchmark verification procedure 检查的答案。"
+  }
+}

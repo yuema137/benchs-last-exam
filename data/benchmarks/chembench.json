@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "chembench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chembench",
+  "input_unit": "fraction",
+  "metric_id": "chembench-metric-v1",
+  "name": "ChemBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ChemBench official leaderboard overall score; the fixed question set and topic aggregation are retained, while user scores and topic-specific variants are not merged.",
+  "protocol_id": "chembench-source-export-v1",
+  "registry_order": 26,
+  "release": "2024-04-01",
+  "score": "Overall",
+  "scoring": {
+    "explanation": {
+      "en": "Overall is the official aggregate accuracy across the ChemBench question set. Topic-level scores remain separate and are not substituted for the headline series.",
+      "zh": "Overall 是 ChemBench question set 上的官方 aggregate accuracy。各 topic 分数保持独立，不替代 headline series。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://chembench.lamalab.org/",
+  "summary": {
+    "en": "ChemBench evaluates chemical knowledge and reasoning across a broad set of chemistry topics and question types.",
+    "zh": "ChemBench 在多个化学主题和题型上评估模型的化学知识与推理能力。"
+  },
+  "tags": [
+    "chemical reasoning",
+    "multi-topic",
+    "accuracy"
+  ],
+  "task_format": {
+    "en": "The model answers chemistry questions spanning analytical, inorganic, organic, physical, materials, and safety topics under the benchmark's evaluation interface.",
+    "zh": "模型需要按照 benchmark evaluation interface 回答涵盖分析、无机、有机、物理、材料和安全等主题的化学问题。"
+  }
+}

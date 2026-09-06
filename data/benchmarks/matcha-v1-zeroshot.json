@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "matcha_v1_zeroshot_external.csv",
+  "floor": 0.2473,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "matcha-v1-zeroshot",
+  "input_unit": "fraction",
+  "metric_id": "matcha-v1-zeroshot-metric-v1",
+  "name": "MatCha v1 — Zero-shot",
+  "progress_baseline": 0.2473,
+  "progress_target": 1.0,
+  "protocol": "MatCha v1 fixed 1,500-item full suite, generic zero-shot, direct option only, max 32 new tokens, Table 1 MatCha All. Few-shot, CoT, no-image, and subset columns are excluded.",
+  "protocol_id": "matcha-v1-zeroshot-source-export-v1",
+  "registry_order": 108,
+  "release": "2025-09-11",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is exact-choice accuracy across all 1,500 MatCha v1 questions in the zero-shot setting.",
+      "zh": "分数是 zero-shot 设置下全部 1,500 道 MatCha v1 题目的选项精确正确率。"
+    },
+    "metric_name": "Full-suite exact accuracy"
+  },
+  "source": "https://arxiv.org/abs/2509.09307v1",
+  "summary": {
+    "en": "MatCha evaluates expert materials-characterization image understanding across processing, morphology, structure, and property analysis.",
+    "zh": "MatCha 评估模型在加工关联、形貌、结构和性能分析中的专家级材料表征图像理解能力。"
+  },
+  "tags": [
+    "characterization",
+    "multimodal",
+    "zero-shot"
+  ],
+  "task_format": {
+    "en": "The model sees a materials-characterization image and expert multiple-choice question, then returns only the option letter.",
+    "zh": "模型会看到材料表征图像和专家级选择题，并只返回选项字母。"
+  }
+}

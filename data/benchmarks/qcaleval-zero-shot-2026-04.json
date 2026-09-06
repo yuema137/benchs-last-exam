@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "qcaleval_2026_04_zeroshot_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "qcaleval-zero-shot-2026-04",
+  "input_unit": "percentage_points",
+  "metric_id": "qcaleval-zero-shot-2026-04-metric-v1",
+  "name": "QCalEval — April 2026 Zero-shot",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "QCalEval April-2026 snapshot, 243 samples, zero-shot single-query plot, Table 3 six-axis mean; MM-ICL and tuned variants excluded.",
+  "protocol_id": "qcaleval-zero-shot-2026-04-source-export-v1",
+  "registry_order": 146,
+  "release": "2026-04-28",
+  "score": "Mean",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Four axes are programmatically scored and two use two fixed judges; the six scores are equally averaged.",
+      "zh": "四个维度程序化判分，两个维度使用两个固定 judge，最终对六项等权平均。"
+    },
+    "metric_name": "Zero-shot six-axis mean"
+  },
+  "source": "https://github.com/NVIDIA/QCalEval",
+  "summary": {
+    "en": "QCalEval evaluates reasoning over quantum-computing calibration plots.",
+    "zh": "QCalEval 评估模型对量子计算 calibration plots 的综合推理能力。"
+  },
+  "tags": [
+    "quantum computing",
+    "charts",
+    "calibration"
+  ],
+  "task_format": {
+    "en": "Inspect each plot and answer six questions on description, outcome, interpretation, fit, parameters, and diagnosis.",
+    "zh": "检查每张图并回答关于描述、结论、解释、拟合、参数和诊断的六类问题。"
+  }
+}

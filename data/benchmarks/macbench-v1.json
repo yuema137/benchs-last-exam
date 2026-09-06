@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "macbench_v1_external.csv",
+  "floor": 0.21,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "macbench-v1",
+  "input_unit": "fraction",
+  "metric_id": "macbench-v1-metric-v1",
+  "name": "MaCBench v1",
+  "progress_baseline": 0.21,
+  "progress_target": 1.0,
+  "protocol": "MaCBench dataset v1.0.0 / results v1.0.1 fixed 1,155-question main set, official parser and retry behavior, five-run mean accuracy. Ablations are excluded.",
+  "protocol_id": "macbench-v1-source-export-v1",
+  "registry_order": 98,
+  "release": "2025-02-28",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Each item is binary under exact-choice or curated numeric tolerance rules; the score is accuracy over 1,155 main questions averaged across five complete runs.",
+      "zh": "每题按严格选项匹配或人工设定的数值误差规则进行二元计分；总分是在 1,155 道主测试题上五次完整运行的平均正确率。"
+    },
+    "metric_name": "Five-run overall accuracy"
+  },
+  "source": "https://github.com/lamalab-org/macbench",
+  "summary": {
+    "en": "MaCBench measures whether vision-language models can extract, apply, and interpret visual information in chemistry and materials-science workflows.",
+    "zh": "MaCBench 测试视觉语言模型能否在化学与材料科研流程中提取、运用并解释视觉信息。"
+  },
+  "tags": [
+    "multimodal",
+    "scientific workflow",
+    "plots"
+  ],
+  "task_format": {
+    "en": "The model answers multiple-choice or numerical questions paired with scientific plots, spectra, apparatus images, tables, and structures.",
+    "zh": "模型回答与科研图表、光谱、实验装置图、数据表和结构图配套的选择题或数值题。"
+  }
+}

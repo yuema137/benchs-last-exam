@@ -1,0 +1,43 @@
+{
+  "ceiling": null,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "vending_bench_2_external.csv",
+  "floor": null,
+  "hard_max": null,
+  "hard_min": null,
+  "id": "vending-bench-2",
+  "input_unit": "number",
+  "metric_id": "vending-bench-2-metric-v1",
+  "name": "Vending-Bench 2",
+  "progress_baseline": null,
+  "progress_target": null,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "vending-bench-2-source-export-v1",
+  "registry_order": 32,
+  "release": "2025-05-01",
+  "score": "Score",
+  "score_format": "number",
+  "scoring": {
+    "explanation": {
+      "en": "The score reflects the final simulated business outcome under the benchmark run, rather than answer accuracy on individual questions.",
+      "zh": "分数反映一次 benchmark run 最终的模拟 business outcome，而不是单道题的 answer accuracy。"
+    },
+    "metric_name": "Final business outcome"
+  },
+  "source": "https://andonlabs.com/evals/vending-bench-2",
+  "summary": {
+    "en": "Vending-Bench 2 evaluates whether an agent can operate a simulated business over an extended period.",
+    "zh": "Vending-Bench 2 评估 agent 能不能在较长时间内经营一个模拟 business。"
+  },
+  "tags": [
+    "simulation",
+    "long-horizon",
+    "business"
+  ],
+  "task_format": {
+    "en": "The agent makes repeated decisions in a simulated vending-business environment and is evaluated on the resulting business outcome.",
+    "zh": "agent 会在模拟 vending business 环境中持续做决策，最后根据 business outcome 评分。"
+  }
+}

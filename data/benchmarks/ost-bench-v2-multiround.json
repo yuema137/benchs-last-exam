@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "ost_bench_v2_multiround_external.csv",
+  "floor": 0.3573,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "ost-bench-v2-multiround",
+  "input_unit": "fraction",
+  "metric_id": "ost-bench-v2-multiround-metric-v1",
+  "name": "OST-Bench v2 — Multi-round",
+  "progress_baseline": 0.3573,
+  "progress_target": 1.0,
+  "protocol": "OST-Bench v2 pinned multi-round zero-shot protocol and official leaderboard overall score. Interleaved and VLMEvalKit variants are excluded.",
+  "protocol_id": "ost-bench-v2-multiround-source-export-v1",
+  "registry_order": 97,
+  "release": "2025-10-14",
+  "score": "Overall score",
+  "scoring": {
+    "explanation": {
+      "en": "Option accuracy, exact match, and mean relative accuracy are aggregated into the official 0-100 multi-round overall score.",
+      "zh": "option accuracy、exact match 和 mean relative accuracy 按官方规则汇总为 0–100 的 multi-round overall score。"
+    },
+    "metric_name": "Multi-round overall score"
+  },
+  "source": "https://github.com/InternRobotics/OST-Bench",
+  "summary": {
+    "en": "OST-Bench tests whether a multimodal model can update online spatial memory as first-person observations arrive without seeing future frames.",
+    "zh": "OST-Bench 测试多模态模型能否随着第一人称观察到达而更新在线空间记忆，同时不能偷看未来画面。"
+  },
+  "tags": [
+    "spatial memory",
+    "egocentric",
+    "multi-round"
+  ],
+  "task_format": {
+    "en": "Each dialogue round appends four or five chronological egocentric frames, and the model answers a question about the scene state at that time.",
+    "zh": "每轮对话追加四到五张按时间排列的第一人称图像，模型需要回答该时刻场景状态相关的问题。"
+  }
+}

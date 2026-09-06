@@ -1,0 +1,45 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "pg_llm_proteingym_external.csv",
+  "floor": -1.0,
+  "hard_max": 1.0,
+  "hard_min": -1.0,
+  "id": "pg-llm-proteingym",
+  "input_unit": "number",
+  "metric_id": "pg-llm-proteingym-metric-v1",
+  "name": "PG-LLM — ProteinGym",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PG-LLM ProteinGym v1.3 primary track: 217 assays, N=50 variants, fixed seeds 1–3, no tools/MSA/structure, nested-macro Spearman rho. The 59-assay recent holdout is excluded.",
+  "protocol_id": "pg-llm-proteingym-source-export-v1",
+  "registry_order": 88,
+  "release": "2026-07-27",
+  "score": "Spearman rho",
+  "score_decimals": 3,
+  "score_format": "number",
+  "scoring": {
+    "explanation": {
+      "en": "Within-assay Spearman correlations are aggregated equally across protein/function cells and five functional categories, then averaged over three fixed draws. The recent-assay holdout is separate.",
+      "zh": "先计算 within-assay Spearman correlation，再按 protein/function cell 和五个 functional category 等权汇总，最后对三个固定 draw 取平均。recent-assay holdout 保持独立。"
+    },
+    "metric_name": "Nested-macro Spearman rho"
+  },
+  "source": "https://www.proteingymllm.com/",
+  "summary": {
+    "en": "PG-LLM evaluates whether language models can rank protein variants by experimental fitness from sequence and assay context.",
+    "zh": "PG-LLM 评估 language model 能否根据 protein sequence 和 assay context，按实验 fitness 对 variant 排序。"
+  },
+  "tags": [
+    "protein",
+    "ranking",
+    "fitness",
+    "Spearman"
+  ],
+  "task_format": {
+    "en": "For each assay, the model receives the wild-type sequence and assay context, then returns a JSON ranking of 50 shuffled full-length mutant sequences.",
+    "zh": "对于每个 assay，模型会收到 wild-type sequence 和 assay context，再以 JSON 返回 50 个打乱顺序的 full-length mutant sequence 排名。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "deepresearchbench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "deepresearch-bench",
+  "input_unit": "fraction",
+  "metric_id": "deepresearch-bench-metric-v1",
+  "name": "DeepResearch Bench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "deepresearch-bench-source-export-v1",
+  "registry_order": 29,
+  "release": "2025-06-13",
+  "score": "Average score",
+  "scoring": {
+    "explanation": {
+      "en": "The reported score combines report quality and citation-grounding evaluation under the benchmark's documented framework.",
+      "zh": "报告分数按照 benchmark 的 framework 综合报告质量和引用 grounding 结果。"
+    },
+    "metric_name": "RACE/FACT aggregate score"
+  },
+  "source": "https://arxiv.org/abs/2506.11763",
+  "summary": {
+    "en": "DeepResearch Bench tests research agents on expert-written questions that require web research, synthesis, and grounded reporting.",
+    "zh": "DeepResearch Bench 测试 research agent 完成专家问题、网页检索、信息综合和有依据写作的能力。"
+  },
+  "tags": [
+    "research",
+    "browsing",
+    "citation"
+  ],
+  "task_format": {
+    "en": "The agent receives a research question, searches for evidence, and produces a long-form report with supporting citations.",
+    "zh": "agent 会收到研究问题，检索证据，并提交带有引用的长篇报告。"
+  }
+}

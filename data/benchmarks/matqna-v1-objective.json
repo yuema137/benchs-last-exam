@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Materials Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "matqna_v1_objective_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "matqna-v1-objective",
+  "input_unit": "percentage_points",
+  "metric_id": "matqna-v1-objective-metric-v1",
+  "name": "MatQnA v1 — Objective",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MatQnA v1 fixed 2,219-question objective subset, Table 2 Overall accuracy; subjective questions excluded.",
+  "protocol_id": "matqna-v1-objective-source-export-v1",
+  "registry_order": 148,
+  "release": "2025-09-14",
+  "score": "Accuracy",
+  "score_multiplier": 0.01,
+  "scoring": {
+    "explanation": {
+      "en": "Exact-answer accuracy across the fixed objective-only subset.",
+      "zh": "固定 objective-only subset 上的精确答案准确率。"
+    },
+    "metric_name": "Objective overall accuracy"
+  },
+  "source": "https://arxiv.org/abs/2509.11335",
+  "summary": {
+    "en": "MatQnA evaluates interpretation of ten common materials-characterization techniques.",
+    "zh": "MatQnA 评估模型理解十种常见材料表征技术的能力。"
+  },
+  "tags": [
+    "characterization",
+    "multimodal",
+    "multiple-choice"
+  ],
+  "task_format": {
+    "en": "Answer 2,219 objective questions about characterization methods, results, and applications.",
+    "zh": "回答 2,219 道关于表征方法、实验结果和应用的客观题。"
+  }
+}

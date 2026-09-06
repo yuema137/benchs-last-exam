@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Robotics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "openeqa_em_eqa_v0_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "openeqa-em-eqa-v0",
+  "input_unit": "fraction",
+  "metric_id": "openeqa-em-eqa-v0-metric-v1",
+  "name": "OpenEQA EM-EQA v0",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "OpenEQA v0 fixed 1,636-question EM-EQA split with source-specific published frame budgets and official GPT-4-1106-preview LLM-Match judge. Active A-EQA is excluded.",
+  "protocol_id": "openeqa-em-eqa-v0-source-export-v1",
+  "registry_order": 95,
+  "release": "2024-04-11",
+  "score": "LLM-Match",
+  "scoring": {
+    "explanation": {
+      "en": "A pinned GPT-4 judge rates each answer from 1 to 5; ratings are linearly normalized to 0-100 and averaged over 1,636 questions.",
+      "zh": "固定 GPT-4 judge 将每个答案评为 1–5 分，再线性归一化到 0–100，并在 1,636 道题上取平均。"
+    },
+    "metric_name": "Normalized LLM-Match"
+  },
+  "source": "https://open-eqa.github.io/",
+  "summary": {
+    "en": "OpenEQA EM-EQA measures whether a multimodal model can remember and reason about a previously observed 3D environment.",
+    "zh": "OpenEQA EM-EQA 测试多模态模型能否记住并推理先前观察过的三维环境。"
+  },
+  "tags": [
+    "embodied QA",
+    "spatial memory",
+    "multimodal"
+  ],
+  "task_format": {
+    "en": "The model receives an open-ended embodied question and sampled frames from a prerecorded egocentric environment history.",
+    "zh": "模型会收到一道开放式具身问题，以及从预录第一人称环境历史中采样的图像帧。"
+  }
+}

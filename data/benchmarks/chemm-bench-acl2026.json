@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "chemm_bench_acl2026_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chemm-bench-acl2026",
+  "input_unit": "fraction",
+  "metric_id": "chemm-bench-acl2026-metric-v1",
+  "name": "CheMM-Bench ACL 2026",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "CheMM-Bench Findings ACL 2026 fixed 3,504-case test split, official answer-field extraction, Table 2 Overall ACC. F1, fuzzy matching, and joint answer-plus-SMILES metrics are excluded.",
+  "protocol_id": "chemm-bench-acl2026-source-export-v1",
+  "registry_order": 100,
+  "release": "2026-07-15",
+  "score": "Overall ACC",
+  "scoring": {
+    "explanation": {
+      "en": "Overall ACC is exact final-answer accuracy micro-aggregated over the fixed 3,504-case test split; F1 and fuzzy or joint-SMILES variants remain separate.",
+      "zh": "Overall ACC 是固定 3,504-case test split 上微平均的最终答案精确匹配率；F1、模糊匹配和 joint-SMILES 指标保持独立。"
+    },
+    "metric_name": "Micro-averaged exact accuracy"
+  },
+  "source": "https://aclanthology.org/2026.findings-acl.1341/",
+  "summary": {
+    "en": "CheMM-Bench tests molecular reconstruction, nomenclature, molecular weight, and spectroscopy interpretation from chemical diagrams and spectra.",
+    "zh": "CheMM-Bench 测试模型根据化学结构图和光谱完成分子重建、命名、分子量计算及光谱解释的能力。"
+  },
+  "tags": [
+    "spectroscopy",
+    "molecular structure",
+    "multimodal"
+  ],
+  "task_format": {
+    "en": "The model receives a 2D molecule diagram or up to five spectroscopy panels and returns a structured final answer.",
+    "zh": "模型会收到二维分子图或最多五个光谱 panel，并返回结构化最终答案。"
+  }
+}

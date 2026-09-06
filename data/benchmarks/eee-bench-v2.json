@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "eee_bench_v2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "eee-bench-v2",
+  "input_unit": "fraction",
+  "metric_id": "eee-bench-v2-metric-v1",
+  "name": "EEE-Bench v2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EEE-Bench v2 fixed 2,860-problem multimodal set, zero-shot, two-run mean overall exact-answer accuracy using the paper's GPT-4o-mini answer extractor.",
+  "protocol_id": "eee-bench-v2-source-export-v1",
+  "registry_order": 86,
+  "release": "2025-02-27",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the overall fraction of v2 questions answered correctly, averaged across two zero-shot runs under the paper's extraction procedure.",
+      "zh": "分数是 v2 question 的 overall correct fraction，按照论文的 answer extraction procedure 对两次 zero-shot run 取平均。"
+    },
+    "metric_name": "Overall exact-answer accuracy"
+  },
+  "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_EEE-Bench_A_Comprehensive_Multimodal_Electrical_And_Electronics_Engineering_Benchmark_CVPR_2025_paper.pdf",
+  "summary": {
+    "en": "EEE-Bench v2 evaluates multimodal electrical and electronics engineering across 2,860 problems.",
+    "zh": "EEE-Bench v2 使用 2,860 道题评估多模态 electrical and electronics engineering 能力。"
+  },
+  "tags": [
+    "electrical engineering",
+    "multimodal",
+    "exact-answer"
+  ],
+  "task_format": {
+    "en": "The model receives an engineering question with text and, when needed, a technical diagram, then returns a concise final answer.",
+    "zh": "模型会收到带文字并可能包含技术图表的工程问题，然后给出简洁的最终答案。"
+  }
+}

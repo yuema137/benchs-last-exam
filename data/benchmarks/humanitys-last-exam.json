@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "humanitys_last_exam_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "humanitys-last-exam",
+  "input_unit": "fraction",
+  "metric_id": "humanitys-last-exam-metric-v1",
+  "name": "Humanity's Last Exam",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "humanitys-last-exam-source-export-v1",
+  "registry_order": 49,
+  "release": "2025-04-03",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the percentage of questions answered correctly under the benchmark's answer and grading protocol.",
+      "zh": "分数是在 benchmark 的答案和评分 protocol 下答对题目的比例。"
+    },
+    "metric_name": "Accuracy"
+  },
+  "source": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+  "summary": {
+    "en": "Humanity's Last Exam is a difficult, multi-domain academic question set designed to probe the frontier of model knowledge and reasoning.",
+    "zh": "Humanity's Last Exam 是一个覆盖多个学科的高难度 academic question set，用来测试模型知识和推理能力的 frontier。"
+  },
+  "tags": [
+    "academic",
+    "multimodal",
+    "expert"
+  ],
+  "task_format": {
+    "en": "Each item is a text or multimodal academic question. The model returns an answer, and some items require a short explanation or structured response.",
+    "zh": "每个 task 是文字或多模态 academic question。模型需要给出答案，有些题目还要求简短解释或结构化回答。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Coding",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "bigcodebench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "bigcodebench",
+  "input_unit": "fraction",
+  "metric_id": "bigcodebench-metric-v1",
+  "name": "BigCodeBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "BigCodeBench Complete fixed release with calibrated greedy Pass@1. BigCodeBench Instruct and BigCodeBench-Hard are not merged.",
+  "protocol_id": "bigcodebench-source-export-v1",
+  "registry_order": 68,
+  "release": "2024-06-18",
+  "score": "Complete Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Calibrated Pass@1 measures the share of tasks passed after the benchmark's prescribed completion calibration. Complete and Instruct are separate measurement variants; this series uses Complete.",
+      "zh": "Calibrated Pass@1 是按照 benchmark 规定的 completion calibration 后通过的 task 占比。Complete 和 Instruct 是不同 measurement variant；本序列使用 Complete。"
+    },
+    "metric_name": "Calibrated Pass@1"
+  },
+  "source": "https://huggingface.co/blog/leaderboard-bigcodebench",
+  "summary": {
+    "en": "BigCodeBench evaluates practical code generation with complex instructions, multiple function calls, and diverse libraries.",
+    "zh": "BigCodeBench 通过复杂指令、多次 function call 和多种 library，评估更贴近实际的 code generation。"
+  },
+  "tags": [
+    "libraries",
+    "function calls",
+    "calibrated Pass@1"
+  ],
+  "task_format": {
+    "en": "In the Complete setting, the model fills in a function implementation from a detailed docstring and is evaluated on curated executable tests across 139 libraries.",
+    "zh": "在 Complete setting 中，模型根据详细 docstring 补全 function implementation，再通过覆盖 139 个 library 的可执行测试评估。"
+  }
+}

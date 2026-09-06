@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "Software engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "swe_bench_verified.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "swe-bench-verified",
+  "input_unit": "fraction",
+  "metric_id": "swe-bench-verified-metric-v1",
+  "name": "SWE-bench Verified",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "swe-bench-verified-source-export-v1",
+  "registry_order": 4,
+  "release": "2024-08-13",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "A task counts as solved when the submitted patch passes the task's required tests. The score is the percentage of issues resolved.",
+      "zh": "如果提交的 patch 通过这个 task 要求的测试，这个 task 才算解决。分数就是解决 issue 占全部 issue 的比例。"
+    },
+    "metric_name": "Issue resolution rate"
+  },
+  "source": "https://openai.com/index/introducing-swe-bench-verified/",
+  "summary": {
+    "en": "SWE-bench Verified tests whether a coding agent can resolve real GitHub issues in a repository.",
+    "zh": "SWE-bench Verified 测试 coding agent 能不能在真实代码仓库里修复 GitHub issue。"
+  },
+  "tags": [
+    "repository",
+    "test-based"
+  ],
+  "task_format": {
+    "en": "The agent receives a repository and issue description, edits files in an environment, and submits a patch. This is not a one-shot answer task.",
+    "zh": "agent 会收到一个代码仓库和 issue 描述，在环境里修改文件并提交 patch。这不是只回答一次文本的问题。"
+  }
+}

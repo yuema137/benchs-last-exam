@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Abstract reasoning",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "arc_agi_3_gpt6.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "arc-agi-3",
+  "input_unit": "fraction",
+  "metric_id": "arc-agi-3-metric-v1",
+  "name": "ARC-AGI-3",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "arc-agi-3-source-export-v1",
+  "registry_order": 43,
+  "release": "2026-03-25",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "The score measures task success and action efficiency relative to a human action baseline; the official release reports humans at 100%.",
+      "zh": "分数根据 task 是否成功以及行动效率相对 human action baseline 的表现计算；官方发布中 human score 是 100%。"
+    },
+    "metric_name": "Human-normalized action-efficiency score"
+  },
+  "source": "https://arcprize.org/blog/arc-agi-3-launch",
+  "summary": {
+    "en": "ARC-AGI-3 tests whether an agent can explore unfamiliar interactive environments, infer goals, and adapt its actions.",
+    "zh": "ARC-AGI-3 测试 agent 能不能探索陌生的 interactive environment，自己理解目标并调整行动。"
+  },
+  "tags": [
+    "interactive",
+    "novel reasoning",
+    "adaptation"
+  ],
+  "task_format": {
+    "en": "The agent interacts with turn-based game-like environments without explicit instructions or stated goals, learning from feedback across levels.",
+    "zh": "agent 会在没有明确说明和目标的回合制游戏式环境中行动，并根据反馈在不同 level 中学习。"
+  }
+}

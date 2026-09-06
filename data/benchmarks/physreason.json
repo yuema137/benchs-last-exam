@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "physreason_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "physreason",
+  "input_unit": "fraction",
+  "metric_id": "physreason-metric-v1",
+  "name": "PhysReason",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PhysReason full 1,200-item benchmark, zero-shot chain-of-thought, PSAS-A answer-level weighted average. Q+image and Q+image-caption input conditions are preserved in observation notes and are not treated as interchangeable hidden metadata.",
+  "protocol_id": "physreason-source-export-v1",
+  "registry_order": 79,
+  "release": "2025-02-17",
+  "score": "PSAS-A",
+  "scoring": {
+    "explanation": {
+      "en": "PSAS-A extracts and verifies each sub-answer, weights sub-questions by reference-solution length, and averages the resulting answer-level scores. This card uses the official full-set PSAS-A result for each model's published input condition.",
+      "zh": "PSAS-A 会提取并核验每个 sub-answer，按标准解答长度给 sub-question 加权，再汇总为 answer-level score。本卡使用官方 full-set PSAS-A，并保留各模型公开的 input condition。"
+    },
+    "metric_name": "PSAS-A answer score"
+  },
+  "source": "https://github.com/zhang-xinyu-1204/PhysReason",
+  "summary": {
+    "en": "PhysReason evaluates multimodal physics reasoning on 1,200 problems spanning knowledge, easy, medium, and hard levels.",
+    "zh": "PhysReason 使用 1,200 道覆盖 knowledge、easy、medium 和 hard level 的题目评估多模态物理推理能力。"
+  },
+  "tags": [
+    "physics",
+    "multimodal",
+    "reasoning",
+    "PSAS"
+  ],
+  "task_format": {
+    "en": "The model receives a physics problem with an image or image-derived caption and produces a worked answer across one or more sub-questions.",
+    "zh": "模型会收到一道带图片或图片文字描述的物理题，并针对一个或多个 sub-question 给出完整解答。"
+  }
+}

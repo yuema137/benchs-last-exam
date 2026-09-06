@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "agents_last_exam_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "agents-last-exam",
+  "input_unit": "fraction",
+  "metric_id": "agents-last-exam-metric-v1",
+  "name": "Agents' Last Exam (ALE-V1)",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "agents-last-exam-source-export-v1",
+  "registry_order": 44,
+  "release": "2026-06-03",
+  "score": "Pass Rate",
+  "scoring": {
+    "explanation": {
+      "en": "Pass rate is the share of task runs that earn a perfect score. The leaderboard also reports an average partial-credit score separately.",
+      "zh": "Pass rate 是拿到满分的 task run 占比。leaderboard 还会单独报告包含部分得分的平均 score。"
+    },
+    "metric_name": "Pass rate"
+  },
+  "source": "https://agents-last-exam.org/leaderboard",
+  "summary": {
+    "en": "Agents' Last Exam evaluates agents on long-horizon, economically valuable professional workflows with verifiable outcomes.",
+    "zh": "Agents' Last Exam 评估 agent 能不能完成有明确验证结果、耗时较长且贴近真实工作的专业任务。"
+  },
+  "tags": [
+    "long-horizon",
+    "professional work",
+    "verifiable"
+  ],
+  "task_format": {
+    "en": "An agent works through a real digital-work task using the required tools and environment, then submits an outcome that can be checked.",
+    "zh": "agent 会在指定工具和环境中完成真实的数字工作任务，最后提交一个可以被验证的结果。"
+  }
+}

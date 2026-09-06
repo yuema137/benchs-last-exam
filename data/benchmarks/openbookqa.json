@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "open_book_qa_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "openbookqa",
+  "input_unit": "fraction",
+  "metric_id": "openbookqa-metric-v1",
+  "name": "OpenBookQA",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "OpenBookQA fixed 4-choice test set; open-book facts and commonsense knowledge are part of the task definition. Retrieval-augmented and closed-book variants are not silently merged.",
+  "protocol_id": "openbookqa-source-export-v1",
+  "registry_order": 77,
+  "release": "2018-09-07",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of questions where the selected choice matches the answer key. Four choices make 25% the random-choice reference floor.",
+      "zh": "分数是选项和答案 key 一致的问题占比。因为每题有四个选项，25% 是随机选择的参考 floor。"
+    },
+    "metric_name": "Exact-match accuracy"
+  },
+  "source": "https://aclanthology.org/D18-1260/",
+  "summary": {
+    "en": "OpenBookQA tests whether a model can combine a small set of elementary science facts with commonsense reasoning.",
+    "zh": "OpenBookQA 测试模型能不能把一组基础科学事实和 commonsense reasoning 结合起来回答问题。"
+  },
+  "tags": [
+    "elementary science",
+    "multiple-choice",
+    "commonsense"
+  ],
+  "task_format": {
+    "en": "The model receives a four-choice elementary-science question and a small open-book fact set, then selects the answer.",
+    "zh": "模型会收到一道四选一的基础科学问题和一组 open-book facts，然后选出答案。"
+  }
+}

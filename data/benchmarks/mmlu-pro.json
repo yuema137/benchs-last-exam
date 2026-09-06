@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mmlu_pro_external.csv",
+  "floor": 0.1,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mmlu-pro",
+  "input_unit": "fraction",
+  "metric_id": "mmlu-pro-metric-v1",
+  "name": "MMLU-Pro",
+  "progress_baseline": 0.1,
+  "progress_target": 1.0,
+  "protocol": "MMLU-Pro official repository mini-leaderboard overall accuracy; prompt and CoT settings remain source context and are not merged when materially different.",
+  "protocol_id": "mmlu-pro-source-export-v1",
+  "registry_order": 11,
+  "release": "2024-06-03",
+  "score": "Average Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of questions for which the selected answer is correct. The benchmark has ten choices per question, so 10% is the random-choice reference point.",
+      "zh": "分数就是选项正确的题目占全部题目的比例。每题有十个选项，所以 10% 是随机选择的参考 floor。"
+    },
+    "metric_name": "Overall accuracy"
+  },
+  "source": "https://arxiv.org/abs/2406.01574",
+  "summary": {
+    "en": "MMLU-Pro is a harder, reasoning-focused successor to MMLU across academic and professional subjects.",
+    "zh": "MMLU-Pro 是 MMLU 的 harder successor，覆盖多个学术和专业领域，更强调 reasoning。"
+  },
+  "tags": [
+    "multiple-choice",
+    "reasoning",
+    "ten-choice"
+  ],
+  "task_format": {
+    "en": "Each item is a ten-choice multiple-choice question. The model selects one answer, usually after producing a reasoning trace under the chosen prompt.",
+    "zh": "每个 task 都是十选一问题。模型需要选出一个答案，通常会按照指定 prompt 先进行 reasoning。"
+  }
+}

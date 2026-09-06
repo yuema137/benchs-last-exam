@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Biomedical Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "mediconfusion_v2_mc_external.csv",
+  "floor": 0.25,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "mediconfusion-v2-mc",
+  "input_unit": "fraction",
+  "metric_id": "mediconfusion-v2-mc-metric-v1",
+  "name": "MediConfusion v2 — MC Set Accuracy",
+  "progress_baseline": 0.25,
+  "progress_target": 1.0,
+  "protocol": "MediConfusion v2 fixed 176-pair multiple-choice protocol; set accuracy only. Free-form, prefix, confusion, and individual-answer metrics are excluded.",
+  "protocol_id": "mediconfusion-v2-mc-source-export-v1",
+  "registry_order": 119,
+  "release": "2024-09-23",
+  "score": "Set accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A pair is correct only when both binary answers are correct; chance pair accuracy is 25%.",
+      "zh": "只有一组中的两个二元答案都正确，该组才计分；随机组准确率为 25%。"
+    },
+    "metric_name": "Pair-level MC set accuracy"
+  },
+  "source": "https://github.com/mshahabsepehri/mediconfusion",
+  "summary": {
+    "en": "MediConfusion tests whether multimodal models distinguish deliberately confusing pairs of medical images.",
+    "zh": "MediConfusion 测试多模态模型能否区分刻意构造的易混淆医学影像对。"
+  },
+  "tags": [
+    "radiology",
+    "multimodal",
+    "reliability"
+  ],
+  "task_format": {
+    "en": "The model answers the same binary question on both images in each of 176 pairs with opposite correct answers.",
+    "zh": "模型对 176 组影像中的两张图回答同一道二选一问题，而两张图的正确答案相反。"
+  }
+}

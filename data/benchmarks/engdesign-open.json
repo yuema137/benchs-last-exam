@@ -1,0 +1,43 @@
+{
+  "ceiling": 1.0,
+  "domain": "Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "engdesign_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "engdesign-open",
+  "input_unit": "fraction",
+  "metric_id": "engdesign-open-metric-v1",
+  "name": "EngDesign-Open",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "EngDesign-Open fixed 67-task subset; each task is evaluated over three independent trials and headline Average Score is kept separate from iterative-design Average Pass Rate.",
+  "protocol_id": "engdesign-open-source-export-v1",
+  "registry_order": 38,
+  "release": "2025-07-01",
+  "score": "Average Score",
+  "scoring": {
+    "explanation": {
+      "en": "Average Score is the numerical score averaged over the fixed EngDesign-Open tasks. The paper's iterative Average Pass Rate is a separate protocol and is not merged.",
+      "zh": "Average Score 是固定 EngDesign-Open task 上的数值分数平均值。论文中的 iterative Average Pass Rate 属于独立 protocol，不会合并。"
+    },
+    "metric_name": "Average Score"
+  },
+  "source": "https://openreview.net/pdf/7bb9d9e3eab17e0fc815f8ee8ea8b11c983eef7d.pdf",
+  "summary": {
+    "en": "EngDesign-Open evaluates practical engineering design across 67 open tasks using simulation-backed, rubric-based grading.",
+    "zh": "EngDesign-Open 使用基于 simulation 和 rubric 的评分，评估模型完成 67 个开放 engineering design task 的能力。"
+  },
+  "tags": [
+    "engineering design",
+    "simulation",
+    "rubric",
+    "multi-domain"
+  ],
+  "task_format": {
+    "en": "The model proposes structured engineering designs across nine domains; executable domain-specific simulations and rubrics assess the resulting artifacts.",
+    "zh": "模型需要在九个 engineering domain 中提出结构化设计，随后由 domain-specific simulation 和 rubric 评估生成的 artifact。"
+  }
+}

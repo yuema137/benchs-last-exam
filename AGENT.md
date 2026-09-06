@@ -83,7 +83,7 @@ The style applies to conversational explanations and explicitly selected explana
 - Do not add a composite health score to the MVP.
 - Do not assign lifecycle thresholds before inspecting empirical distributions.
 - Preserve right-censored benchmarks for later survival analysis.
-- Every benchmark addition must satisfy the Benchmark Integration Contract in `docs/BENCHMARK_INTEGRATION.md` and pass `python3 scripts/validate_benchmark_integration.py` before it is considered complete. This applies to partial-core benchmarks with truthful `Unknown`, `N/A`, or `—` values as well as fully measured benchmarks.
+- Every benchmark addition must be one complete typed record under `data/benchmarks/<benchmark-id>.json`, satisfy the Benchmark Integration Contract in `docs/BENCHMARK_INTEGRATION.md`, and pass `python3 scripts/validate_benchmark_integration.py` before it is considered complete. The per-benchmark registry is the only active-card registry; never add benchmark definitions or card copy directly to the build script or frontend. This applies to partial-core benchmarks with truthful `Unknown`, `N/A`, or `—` values as well as fully measured benchmarks.
 - Every benchmark or observation update must regenerate and validate all four lifecycle story views together: `Test of Time`, `Still Frontier`, `Fastest Solved`, and `Recently Saturated`. Their membership is generated from canonical lifecycle metrics in one build; never maintain or update one tab independently.
 
 ## Card-update synchronization invariant

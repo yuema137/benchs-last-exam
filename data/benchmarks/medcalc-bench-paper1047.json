@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Biomedical Engineering",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "medcalc_bench_paper1047_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "medcalc-bench-paper1047",
+  "input_unit": "fraction",
+  "metric_id": "medcalc-bench-paper1047-metric-v1",
+  "name": "MedCalc-Bench Paper-1047",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "MedCalc-Bench paper 1,047-case set, one-shot chain-of-thought, one curated calculator-specific exemplar, final-answer scoring.",
+  "protocol_id": "medcalc-bench-paper1047-source-export-v1",
+  "registry_order": 118,
+  "release": "2024-06-17",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is accuracy over the paper's 1,047 cases using exact or published 5%-tolerance checks.",
+      "zh": "分数是在论文固定 1,047 个病例上，按精确匹配或规定的 5% 容差计算的正确率。"
+    },
+    "metric_name": "Micro accuracy"
+  },
+  "source": "https://github.com/ncbi-nlp/MedCalc-Bench",
+  "summary": {
+    "en": "MedCalc-Bench tests calculation-grounded clinical decision support across 55 medical calculators.",
+    "zh": "MedCalc-Bench 使用 55 类医学计算器测试以计算为基础的临床决策支持能力。"
+  },
+  "tags": [
+    "clinical calculation",
+    "numeric",
+    "decision support"
+  ],
+  "task_format": {
+    "en": "Given a patient note and request, the model extracts variables and returns a numeric, date, risk, severity, or diagnostic result.",
+    "zh": "模型根据患者记录和请求抽取变量，并输出数值、日期、风险、严重度或诊断结果。"
+  }
+}

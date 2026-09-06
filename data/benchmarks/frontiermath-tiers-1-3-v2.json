@@ -1,0 +1,41 @@
+{
+  "ceiling": 1.0,
+  "domain": "Mathematics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "frontiermath_tiers_1_3_v2.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "frontiermath-tiers-1-3-v2",
+  "input_unit": "fraction",
+  "metric_id": "frontiermath-tiers-1-3-v2-metric-v1",
+  "name": "FrontierMath Tiers 1–3 (v2)",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "frontiermath-tiers-1-3-v2-source-export-v1",
+  "registry_order": 13,
+  "release": "2026-06-12",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "A task counts as correct when the submitted answer passes the benchmark's verifier. The score is the fraction of verified tasks solved.",
+      "zh": "提交的答案通过 benchmark verifier，这道题才算正确。分数就是通过验证的 task 占全部 task 的比例。"
+    },
+    "metric_name": "Verified task accuracy"
+  },
+  "source": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3",
+  "summary": {
+    "en": "FrontierMath Tiers 1–3 tests advanced mathematics problems written by experts and checked by executable verifiers.",
+    "zh": "FrontierMath Tiers 1–3 测试专家编写、由可执行 verifier 检查的高难度数学题。"
+  },
+  "tags": [
+    "expert",
+    "verifiable"
+  ],
+  "task_format": {
+    "en": "The model writes a Python answer function for each mathematics problem and can use an isolated Python tool while solving.",
+    "zh": "模型需要为每道数学题编写 Python answer function，解题时可以使用隔离的 Python 工具。"
+  }
+}

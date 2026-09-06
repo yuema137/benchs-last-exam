@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Electrical Engineering",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Model",
+  "file": "picbench_v1_baseline_pass1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "picbench-v1-baseline-functional-pass1",
+  "input_unit": "fraction",
+  "metric_id": "picbench-v1-baseline-functional-pass1-metric-v1",
+  "name": "PICBench — Baseline Functional Pass@1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PICBench v1 fixed 24 tasks, baseline API prompt, zero feedback, five samples, functional Pass@1; restrictions, feedback, syntax-only and Pass@5 are excluded.",
+  "protocol_id": "picbench-v1-baseline-functional-pass1-source-export-v1",
+  "registry_order": 131,
+  "release": "2025-02-05",
+  "score": "Pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "A sample passes only when it executes in SAX and its frequency response agrees with the expert golden design; Pass@1 uses five samples per task.",
+      "zh": "只有 netlist 在 SAX 中可执行且频率响应与专家 golden design 一致时才通过；Pass@1 使用每题五次样本估计。"
+    },
+    "metric_name": "Baseline functional Pass@1"
+  },
+  "source": "https://github.com/PICDA/PICBench",
+  "summary": {
+    "en": "PICBench evaluates simulation-ready photonic integrated-circuit netlist generation.",
+    "zh": "PICBench 评估模型生成可仿真的光子集成电路 netlist 的能力。"
+  },
+  "tags": [
+    "photonics",
+    "netlist",
+    "simulation"
+  ],
+  "task_format": {
+    "en": "Given a PIC specification and SAX API, the model generates a JSON netlist of components, parameters, ports, and connections.",
+    "zh": "模型根据 PIC 规格和 SAX API，生成包含器件、参数、端口和连接的 JSON netlist。"
+  }
+}

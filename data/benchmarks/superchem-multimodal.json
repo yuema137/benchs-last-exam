@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "superchem_multimodal_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "superchem-multimodal",
+  "input_unit": "fraction",
+  "metric_id": "superchem-multimodal-metric-v1",
+  "name": "SUPERChem (Multimodal)",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "SUPERChem-500 multimodal input, Pass@1 final-answer accuracy. Text-only results and Reasoning Path Fidelity are not merged.",
+  "protocol_id": "superchem-multimodal-source-export-v1",
+  "registry_order": 82,
+  "release": "2025-12-01",
+  "score": "Pass@1 accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "A problem is correct when one response yields the accepted final answer. Reasoning Path Fidelity and text-only results are separate measurements and are excluded from this frontier.",
+      "zh": "一次 response 得到被接受的最终答案时，该题才算正确。Reasoning Path Fidelity 和 text-only 结果属于其他 measurement，不纳入本 frontier。"
+    },
+    "metric_name": "Pass@1 final-answer accuracy"
+  },
+  "source": "https://github.com/catalystforyou/SUPERChem_eval",
+  "summary": {
+    "en": "SUPERChem tests deep chemical reasoning on 500 expert-curated multimodal problems with expert-authored solution paths.",
+    "zh": "SUPERChem 使用 500 道专家编写的多模态问题测试深层化学推理，并为题目提供专家 solution path。"
+  },
+  "tags": [
+    "multimodal",
+    "expert",
+    "reasoning"
+  ],
+  "task_format": {
+    "en": "The model receives the multimodal version of an expert chemistry problem and produces a reasoned final answer.",
+    "zh": "模型会收到 expert chemistry problem 的 multimodal 版本，并给出带推理的最终答案。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Physics",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "olympiadbench_physics_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "olympiadbench-physics",
+  "input_unit": "fraction",
+  "metric_id": "olympiadbench-physics-metric-v1",
+  "name": "OlympiadBench Physics",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "OlympiadBench full multimodal benchmark, Physics slice only, official answer extraction and exact-answer evaluation. Text-only-problem experiments are excluded.",
+  "protocol_id": "olympiadbench-physics-source-export-v1",
+  "registry_order": 80,
+  "release": "2024-02-16",
+  "score": "Physics accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "The score is exact-answer accuracy on the Physics portion of the full multimodal OlympiadBench evaluation. Text-only results are a separate protocol and are excluded.",
+      "zh": "分数是在完整 multimodal OlympiadBench evaluation 的 Physics 部分上的 exact-answer accuracy。text-only 结果属于另一 protocol，不纳入本序列。"
+    },
+    "metric_name": "Physics accuracy"
+  },
+  "source": "https://github.com/OpenBMB/OlympiadBench",
+  "summary": {
+    "en": "OlympiadBench Physics evaluates bilingual, multimodal olympiad-level physics problem solving.",
+    "zh": "OlympiadBench Physics 评估模型解决双语、多模态 olympiad-level 物理题的能力。"
+  },
+  "tags": [
+    "olympiad",
+    "multimodal",
+    "bilingual"
+  ],
+  "task_format": {
+    "en": "The model receives an open-ended competition physics problem, often with a diagram, and must produce the final answer in the benchmark's prescribed format.",
+    "zh": "模型会收到一道开放式竞赛物理题，通常包含示意图，并需要按照 benchmark 规定的格式给出最终答案。"
+  }
+}

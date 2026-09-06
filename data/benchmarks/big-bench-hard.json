@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "bbh_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "big-bench-hard",
+  "input_unit": "fraction",
+  "metric_id": "big-bench-hard-metric-v1",
+  "name": "BIG-Bench Hard",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "big-bench-hard-source-export-v1",
+  "registry_order": 18,
+  "release": "2022-10-17",
+  "score": "Average",
+  "scoring": {
+    "explanation": {
+      "en": "Each task is scored against its reference answer. The headline score averages accuracy across the 23 tasks.",
+      "zh": "每道 task 都和标准答案比较。headline score 是 23 类 task accuracy 的平均值。"
+    },
+    "metric_name": "Task accuracy"
+  },
+  "source": "https://arxiv.org/abs/2210.09261",
+  "summary": {
+    "en": "BIG-Bench Hard tests difficult reasoning patterns across 23 tasks that are challenging for language models.",
+    "zh": "BIG-Bench Hard 测试 23 类对语言模型更难的推理任务，覆盖多种需要组合思考的题型。"
+  },
+  "tags": [
+    "reasoning",
+    "multi-task",
+    "few-shot"
+  ],
+  "task_format": {
+    "en": "The model receives a short text prompt and produces an answer for one of 23 task types, such as logical reasoning, tracking, or classification.",
+    "zh": "模型会收到简短的文字 prompt，并完成 23 类 task 中的一类，例如逻辑推理、状态跟踪或分类。"
+  }
+}

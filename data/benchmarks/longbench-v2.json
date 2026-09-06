@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Long context",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "longbench_v2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "longbench-v2",
+  "input_unit": "fraction",
+  "metric_id": "longbench-v2-metric-v1",
+  "name": "LongBench v2",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "LongBench-v2 fixed 503-task test split; zero-shot multiple-choice accuracy. It is kept separate from the original LongBench object.",
+  "protocol_id": "longbench-v2-source-export-v1",
+  "registry_order": 8,
+  "release": "2024-12-26",
+  "score": "Score",
+  "scoring": {
+    "explanation": {
+      "en": "A task is correct when the submitted A/B/C/D choice exactly matches the reference answer. The score is the fraction of the 503 tasks solved.",
+      "zh": "提交的 A/B/C/D 选项和标准答案完全一致时，这个 task 才算答对。分数就是答对 503 个 task 的比例。"
+    },
+    "metric_name": "Exact-match accuracy"
+  },
+  "source": "https://github.com/EnvCommons/LongBench-v2/blob/main/README.md",
+  "summary": {
+    "en": "LongBench v2 tests deep reasoning over long documents, from roughly 8K to 2M words, across several task domains.",
+    "zh": "LongBench v2 测试模型对超长文档的理解和推理能力，文档长度大约从 8K 到 2M words，覆盖多个 task domain。"
+  },
+  "tags": [
+    "long documents",
+    "multiple-choice",
+    "reasoning"
+  ],
+  "task_format": {
+    "en": "The model receives a long document and a multiple-choice question, then submits one of four answer choices. The fixed test split has 503 tasks.",
+    "zh": "模型会收到一篇长文档和一道选择题，然后提交四个选项中的一个。固定 test split 有 503 个 task。"
+  }
+}

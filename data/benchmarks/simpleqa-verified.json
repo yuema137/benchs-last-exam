@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "General knowledge & reasoning",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "simpleqa_verified.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "simpleqa-verified",
+  "input_unit": "fraction",
+  "metric_id": "simpleqa-verified-metric-v1",
+  "name": "SimpleQA Verified",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "SimpleQA Verified fixed 1,000-question protocol; scores from the curated standardized evaluation export are kept together and are not merged with the original 4,326-question SimpleQA object.",
+  "protocol_id": "simpleqa-verified-source-export-v1",
+  "registry_order": 12,
+  "release": "2025-09-09",
+  "score": "Best score (across scorers)",
+  "scoring": {
+    "explanation": {
+      "en": "A grader labels the answer correct, incorrect, or not attempted. The reported score is the benchmark's graded accuracy under the fixed evaluation protocol.",
+      "zh": "grader 会把答案标为正确、错误或未作答。报告分数是在固定评测 protocol 下的 factuality accuracy。"
+    },
+    "metric_name": "Graded factuality accuracy"
+  },
+  "source": "https://arxiv.org/abs/2509.07968",
+  "summary": {
+    "en": "SimpleQA Verified tests whether a model can answer short, fact-seeking questions with reliable, verifiable answers.",
+    "zh": "SimpleQA Verified 测试模型能不能回答简短、事实导向且可以核验的问题。"
+  },
+  "tags": [
+    "factuality",
+    "short-answer",
+    "grader"
+  ],
+  "task_format": {
+    "en": "Each item is a short fact-seeking question with a single target answer. The model produces a concise answer without browsing.",
+    "zh": "每个 task 都是一道简短的事实问题，有一个目标答案。模型需要在不浏览网页的情况下给出简洁回答。"
+  }
+}

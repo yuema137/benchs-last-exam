@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "chemiq_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chemiq",
+  "input_unit": "fraction",
+  "metric_id": "chemiq-metric-v1",
+  "name": "ChemIQ",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "ChemIQ final 816-question release, micro-average success rate. The original 796-question preprint set is not merged; parser-assisted and raw-parser variants remain explicit.",
+  "protocol_id": "chemiq-source-export-v1",
+  "registry_order": 81,
+  "release": "2025-05-12",
+  "score": "Success rate",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the micro-average fraction of the final 816 questions solved. Parser-sensitive post-processing is preserved in observation notes because it can materially affect some reasoning-model scores.",
+      "zh": "分数是 final 816-question set 上答对题目的 micro-average 比例。对于会显著影响部分 reasoning model 分数的 parser post-processing，会在 observation notes 中保留。"
+    },
+    "metric_name": "Micro-average success rate"
+  },
+  "source": "https://github.com/oxpig/ChemIQ",
+  "summary": {
+    "en": "ChemIQ evaluates chemical reasoning across nomenclature, reactions, spectroscopy, and related expert tasks.",
+    "zh": "ChemIQ 评估模型在命名、反应、光谱等 expert chemistry task 上的化学推理能力。"
+  },
+  "tags": [
+    "chemical reasoning",
+    "spectroscopy",
+    "nomenclature"
+  ],
+  "task_format": {
+    "en": "The model solves expert-written chemistry problems and returns a final answer that is parsed and checked by the benchmark evaluator.",
+    "zh": "模型需要解决专家编写的化学问题，并提交由 benchmark evaluator 解析和核验的最终答案。"
+  }
+}

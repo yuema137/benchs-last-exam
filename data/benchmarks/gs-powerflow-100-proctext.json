@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Energy & Infrastructure",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "gs_powerflow_100_proctext_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gs-powerflow-100-proctext",
+  "input_unit": "fraction",
+  "metric_id": "gs-powerflow-100-proctext-metric-v1",
+  "name": "GS-PowerFlow-100 — Procedural Text",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "GS-PowerFlow fixed 100-case replication, procedural-text prompt, no tools, one run per case, strict <5% relative-error success.",
+  "protocol_id": "gs-powerflow-100-proctext-source-export-v1",
+  "registry_order": 126,
+  "release": "2026-05-18",
+  "score": "Within 5%",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the fraction of 100 cases whose first parsed requested power value has relative error below 5%.",
+      "zh": "分数是 100 个案例中，首次解析出的目标功率值相对误差低于 5% 的比例。"
+    },
+    "metric_name": "Cases below 5% relative error"
+  },
+  "source": "https://arxiv.org/html/2605.18642",
+  "summary": {
+    "en": "GS-PowerFlow-100 tests manual numerical power-flow reasoning on three-bus AC systems.",
+    "zh": "GS-PowerFlow-100 测试模型在三节点交流系统上手工进行数值潮流计算的能力。"
+  },
+  "tags": [
+    "power systems",
+    "Gauss-Seidel",
+    "numerical reasoning"
+  ],
+  "task_format": {
+    "en": "Without tools, the model follows a Gauss–Seidel procedure and reports converged slack-bus real or reactive power for 100 cases.",
+    "zh": "模型不使用工具，按 Gauss–Seidel 过程求解 100 个案例，并输出收敛后的平衡节点有功或无功功率。"
+  }
+}

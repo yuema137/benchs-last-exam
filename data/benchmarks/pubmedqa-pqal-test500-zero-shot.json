@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Life Science",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "pubmedqa_pqal_test500_external.csv",
+  "floor": 0.333,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "pubmedqa-pqal-test500-zero-shot",
+  "input_unit": "fraction",
+  "metric_id": "pubmedqa-pqal-test500-zero-shot-metric-v1",
+  "name": "PubMedQA — PQA-L Test 500",
+  "progress_baseline": 0.333,
+  "progress_target": 1.0,
+  "protocol": "PQA-L expert-labelled 500-question test split, Inspect AI zero-shot direct choice, ten runs; other PubMedQA splits and fine-tuned results excluded.",
+  "protocol_id": "pubmedqa-pqal-test500-zero-shot-source-export-v1",
+  "registry_order": 132,
+  "release": "2019-09-13",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Exact accuracy on the fixed 500-question PQA-L test split, averaged across ten zero-shot runs.",
+      "zh": "固定 500 题 PQA-L test split 的精确选择准确率，取十次 zero-shot 运行均值。"
+    },
+    "metric_name": "Mean exact-choice accuracy"
+  },
+  "source": "https://github.com/pubmedqa/pubmedqa",
+  "summary": {
+    "en": "PubMedQA measures biomedical evidence reasoning over expert-labelled PubMed questions.",
+    "zh": "PubMedQA 使用专家标注的 PubMed 问题评估生物医学证据推理。"
+  },
+  "tags": [
+    "biomedicine",
+    "multiple-choice",
+    "evidence"
+  ],
+  "task_format": {
+    "en": "Given a research question and abstract without its conclusion, select yes, no, or maybe.",
+    "zh": "给定研究问题及去掉结论的摘要，选择 yes、no 或 maybe。"
+  }
+}

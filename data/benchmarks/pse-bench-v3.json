@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Chemistry",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Model",
+  "file": "pse_bench_v3_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "pse-bench-v3",
+  "input_unit": "fraction",
+  "metric_id": "pse-bench-v3-metric-v1",
+  "name": "PSE-Bench v3",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "PSE-Bench v3 fixed 200-question set, zero-shot responses, released five-judge rubric evaluator and weighted 0.15/0.15/0.20/0.50 composite. Earlier evaluator versions are excluded.",
+  "protocol_id": "pse-bench-v3-source-export-v1",
+  "registry_order": 99,
+  "release": "2026-02-23",
+  "score": "Overall",
+  "scoring": {
+    "explanation": {
+      "en": "The overall score combines ROUGE-1, ROUGE-L, embedding similarity, and five-judge rubric-element coverage, with coverage carrying half the weight.",
+      "zh": "总分结合 ROUGE-1、ROUGE-L、embedding similarity 和五个 judge 的 rubric element coverage，其中 coverage 占一半权重。"
+    },
+    "metric_name": "Weighted v3 composite"
+  },
+  "source": "https://github.com/sombsuk/PSE-Bench",
+  "summary": {
+    "en": "PSE-Bench evaluates technical completeness in open-ended chemical process modeling, optimization, machine learning, and design answers.",
+    "zh": "PSE-Bench 评估模型回答化工过程建模、优化、机器学习和系统设计开放题时的技术正确性与要点完整度。"
+  },
+  "tags": [
+    "chemical engineering",
+    "process systems",
+    "rubric"
+  ],
+  "task_format": {
+    "en": "The model gives one zero-shot open-ended answer to each of 200 process-systems engineering questions.",
+    "zh": "模型对 200 道 process-systems engineering 开放题分别给出一次 zero-shot 答案。"
+  }
+}

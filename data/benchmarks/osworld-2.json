@@ -1,0 +1,42 @@
+{
+  "ceiling": 1.0,
+  "domain": "Computer use",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "osworld_2_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "osworld-2",
+  "input_unit": "fraction",
+  "metric_id": "osworld-2-metric-v1",
+  "name": "OSWorld 2.0",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "OSWorld 2.0 partial-score series. The source export's Partial score is used; binary accuracy is preserved in the raw CSV but is not mixed into this headline frontier.",
+  "protocol_id": "osworld-2-source-export-v1",
+  "registry_order": 16,
+  "release": "2026-06-26",
+  "score": "Partial score",
+  "scoring": {
+    "explanation": {
+      "en": "The benchmark assigns partial credit for progress toward the requested computer-use outcome. The score is the average partial credit across tasks; it is distinct from binary task success.",
+      "zh": "benchmark 会根据 computer-use task 的完成进度给部分分数。最终分数是所有 task 的平均 partial credit，和 binary task success 不是同一个指标。"
+    },
+    "metric_name": "Partial task score"
+  },
+  "source": "https://os-world.github.io/",
+  "summary": {
+    "en": "OSWorld 2.0 tests whether a computer-use agent can complete tasks in real desktop and web applications.",
+    "zh": "OSWorld 2.0 测试 computer-use agent 能不能在真实桌面和网页应用中完成任务。"
+  },
+  "tags": [
+    "desktop",
+    "web",
+    "environment"
+  ],
+  "task_format": {
+    "en": "The agent operates a computer through tools under a task and step budget, then receives credit for completing the requested outcome.",
+    "zh": "agent 通过工具操作电脑，在规定的 task 和步数预算内完成目标，最后根据结果计分。"
+  }
+}
