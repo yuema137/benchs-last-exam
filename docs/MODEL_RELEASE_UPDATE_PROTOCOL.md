@@ -75,9 +75,17 @@ It must include or resolve to:
 - model/system and model family;
 - score and metric;
 - protocol or evaluation setting;
-- model release date for the capability timeline;
+- evaluation/run date, model release date, and every known score-publication
+  date needed to derive the earliest observation date;
 - evaluation and result-public dates when known;
 - one or more canonical resource IDs.
+
+When arXiv, Hugging Face, OpenReview, or another source publishes the same
+measurement, preserve every resource and use the earliest dated version that
+actually contains the score. Do not backdate a score to an earlier source
+revision that did not contain it. Plotting and lifecycle thresholds clip the
+selected observation date at benchmark release, while provenance retains the
+unclipped dates.
 
 The frontend never receives a chart-only score. Frontier points are derived
 from canonical observations and retain their observation ID and source

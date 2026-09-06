@@ -83,10 +83,11 @@ was represented as one late frontier event. Both T50 and T90 consequently
 became 46.8 months. That number described the collapsed evaluation timeline,
 not the time from benchmark release to publicly observed historical events.
 
-The corrected snapshot uses model release dates for the primary capability
-frontier and keeps the standardized observations as retrospective provenance.
-It does not claim that those scores were publicly known on the model release
-date.
+The current snapshot keeps these standardized observations as retrospective
+provenance and applies the repository-wide observation-time rule: choose the
+earliest available evaluation/run, model-release, or score-publication date,
+then clip the plotted date at benchmark release. It does not claim that the
+score was publicly known at that selected date.
 
 ## Other four pilot benchmarks
 
@@ -95,10 +96,10 @@ does not silently rewrite their metric outputs:
 
 | Benchmark | Current source pattern | Current date used by snapshot | Historical lifecycle status |
 |---|---|---|---|
-| MMLU | Mostly Stanford HELM/aggregator links | Model `Release date` for capability timeline | Capability metrics are provisional until protocol groups are audited; not a first-public timeline |
-| GSM8K | Mostly Stanford HELM/aggregator links | Model `Release date` for capability timeline | Capability metrics are provisional until protocol groups are audited; not a first-public timeline |
-| GPQA Diamond | Epoch evaluation logs | Model `Release date` for capability timeline | Capability metrics are provisional standardized capability evidence; not a first-public timeline |
-| SWE-bench Verified | Epoch evaluation logs | Model `Release date` for capability timeline | Capability metrics are provisional standardized capability evidence; not a first-public timeline |
+| MMLU | Mostly Stanford HELM/aggregator links | Earliest available observation evidence, clipped at release | Capability metrics are provisional until protocol groups are audited; not a first-public timeline |
+| GSM8K | Mostly Stanford HELM/aggregator links | Earliest available observation evidence, clipped at release | Capability metrics are provisional until protocol groups are audited; not a first-public timeline |
+| GPQA Diamond | Epoch evaluation logs | Earliest available observation evidence, clipped at release | Capability metrics are provisional standardized capability evidence; not a first-public timeline |
+| SWE-bench Verified | Epoch evaluation logs | Earliest available observation evidence, clipped at release | Capability metrics are provisional standardized capability evidence; not a first-public timeline |
 
 Their current T50/T90 values are capability-lifetime statistics, not
 publication-timeline lifetimes. A later follow-up should audit protocol groups

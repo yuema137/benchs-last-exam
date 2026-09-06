@@ -22,4 +22,4 @@ The following public benchmark names appear on the page but are not yet added as
 
 Internal Design Tasks, Data Science Tasks, Database Migration Tasks, MedChemBench, internal cybersecurity evaluations, internal alignment evaluations, and other explicitly marked internal evaluations are excluded.
 
-All imported GPT-6 Astra observations use the official release page as their score resource and the model release date (`2026-09-03`) for the capability timeline. The result-publication date remains provenance metadata.
+All imported GPT-6 Astra observations use the official release page as their score resource. Its `2026-09-03` release date is also the date on which that page published the scores, so it participates in the shared earliest-observation-date rule as both model-release and score-publication evidence.

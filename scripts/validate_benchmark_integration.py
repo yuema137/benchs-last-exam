@@ -125,6 +125,21 @@ def validate_benchmark(benchmark, resources, models):
         for source_id in observation.get("source_ids", []):
             if source_id not in resources:
                 errors.append(f"{observation_id}: unresolved source {source_id}")
+        date_candidates = [
+            observation.get("evaluation_date"),
+            observation.get("model_release_date"),
+            observation.get("result_public_date"),
+        ]
+        expected_observation_date = min((value for value in date_candidates if value), default=None)
+        if observation.get("observation_date") != expected_observation_date:
+            errors.append(f"{observation_id}: observation_date is not the earliest available candidate")
+        if observation.get("capability_date") != expected_observation_date:
+            errors.append(f"{observation_id}: capability_date does not match observation_date")
+        if expected_observation_date and not observation.get("observation_date_sources"):
+            errors.append(f"{observation_id}: observation_date has no date-source lineage")
+        for date_source_id in observation.get("observation_date_source_ids", []):
+            if date_source_id not in resources:
+                errors.append(f"{observation_id}: unresolved observation-date source {date_source_id}")
     for point in benchmark.get("frontier", []):
         if point.get("observation_id") not in observation_ids:
             errors.append(f"{benchmark['id']}: frontier point is not canonical")
@@ -133,6 +148,9 @@ def validate_benchmark(benchmark, resources, models):
         observation = observations_by_id.get(point.get("observation_id"), {})
         if observation.get("score_role") != "canonical":
             errors.append(f"{benchmark['id']}: auxiliary observation entered canonical frontier")
+        expected_plot_date = max(benchmark["release"], observation.get("observation_date", ""))
+        if point.get("plot_date") != expected_plot_date:
+            errors.append(f"{benchmark['id']}: frontier point is not clipped to benchmark release")
     auxiliary_ids = set()
     for series in benchmark.get("auxiliary_score_series", []):
         if series.get("role") != "auxiliary" or series.get("lifecycle_eligible") is not False:
@@ -150,6 +168,9 @@ def validate_benchmark(benchmark, resources, models):
     for observation in benchmark.get("observations", []):
         if observation.get("score_role") == "auxiliary" and observation.get("score_series_id") not in auxiliary_ids:
             errors.append(f"{observation.get('observation_id')}: auxiliary observation has no series definition")
+    for label, threshold in benchmark.get("threshold_days", {}).items():
+        if threshold.get("days") is not None and threshold["days"] < 0:
+            errors.append(f"{benchmark['id']}: {label} lifecycle duration is negative")
     return errors
 
 

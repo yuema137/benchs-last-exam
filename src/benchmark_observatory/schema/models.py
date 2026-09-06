@@ -203,6 +203,8 @@ class Resource:
     active: bool = True
     watch: bool = False
     last_checked_at: Optional[date] = None
+    published_at: Optional[date] = None
+    version_label: Optional[str] = None
     notes: Optional[str] = None
 
     def __post_init__(self) -> None:
@@ -232,6 +234,9 @@ class ScoreObservation:
     date_precision: Optional[str] = None
     date_notes: Optional[str] = None
     contemporaneous: Optional[bool] = None
+    observation_date: Optional[date] = None
+    observation_date_precision: Optional[str] = None
+    observation_date_source_ids: tuple[str, ...] = field(default_factory=tuple)
     validity_status: ValidityStatus = ValidityStatus.UNVERIFIED
     reported_uncertainty: Optional[tuple[Optional[float], Optional[float], str]] = None
     setting: Optional[str] = None

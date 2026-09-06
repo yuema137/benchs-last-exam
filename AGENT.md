@@ -90,6 +90,8 @@ The style applies to conversational explanations and explicitly selected explana
 
 Any change to a benchmark/card is also a lifecycle-impacting change unless proven otherwise. This includes changes to observations, scores, model release dates, benchmark release/version metadata, protocol eligibility, frontier events, coverage, or cost.
 
+Lifecycle dates use one uniform observation-time rule. For the same canonical measurement, collect every available evaluation/run date, model release date, and score-publication date, then use the earliest candidate as `observation_date`. When several publication resources contain the same score, use the earliest source version that actually contains that score, not merely the first version of the paper or page. The lifecycle `plot_date` is `max(benchmark_release_date, observation_date)`, and T50/T80/T90 are clipped at zero and displayed as `At release`; original pre-release dates remain unchanged in provenance. Never emit a negative lifecycle duration.
+
 After any such change, the agent must:
 
 1. rebuild the canonical snapshot;
