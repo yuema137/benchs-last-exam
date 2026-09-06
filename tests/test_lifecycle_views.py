@@ -67,6 +67,12 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn("storyDescription.hidden=true", app)
         self.assertIn("[hidden] { display:none !important; }", styles)
 
+    def test_selecting_text_does_not_trigger_container_navigation(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("function shouldIgnoreContainerNavigation", app)
+        self.assertIn("selection&&!selection.isCollapsed&&selection.toString().trim()", app)
+        self.assertIn("if(!shouldIgnoreContainerNavigation(event))routeToDetail", app)
+
     def test_still_frontier_members_and_cards_use_normalized_progress(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
         by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}
