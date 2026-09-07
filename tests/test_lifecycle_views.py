@@ -73,6 +73,23 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn("selection&&!selection.isCollapsed&&selection.toString().trim()", app)
         self.assertIn("if(!shouldIgnoreContainerNavigation(event))routeToDetail", app)
 
+    def test_search_button_and_enter_apply_the_current_filters(self):
+        html = Path("site/index.html").read_text(encoding="utf-8")
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn('id="search-button"', html)
+        self.assertIn('I18N.en.search_action = "Search"', app)
+        self.assertIn('I18N.zh.search_action = "搜索"', app)
+        self.assertIn('$("search-button").addEventListener("click",applyLeaderboardFilters)', app)
+        self.assertIn('event.key==="Enter"', app)
+        self.assertIn('state.sort="current";state.direction=1;renderTable()', app)
+
+    def test_search_is_tokenized_and_tolerates_punctuation_and_plural_names(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("function normalizeSearch", app)
+        self.assertIn("function matchesSearch", app)
+        self.assertIn("terms.every(term=>haystack.includes(term))", app)
+        self.assertIn("matchesSearch(b,query)", app)
+
     def test_still_frontier_members_and_cards_use_normalized_progress(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
         by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}
