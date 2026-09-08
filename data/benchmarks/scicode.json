@@ -38,5 +38,13 @@
   "task_format": {
     "en": "The model solves scientific programming subproblems and submits code that is checked against scientist-authored solutions and tests.",
     "zh": "模型需要解决科学编程 subproblem，提交的代码会和科学家编写的 solution 及测试进行核验。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

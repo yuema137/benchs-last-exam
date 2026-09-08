@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model follows an atomic-structure editing instruction and returns a modified CIF crystal structure.",
     "zh": "模型需要遵循原子结构编辑指令，并返回修改后的 CIF 晶体结构。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "spatial-reasoning",
+    "design-optimization"
+  ]
 }

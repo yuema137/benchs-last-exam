@@ -39,5 +39,16 @@
   "task_format": {
     "en": "The agent explores biological data, writes and executes Python, R, or Bash analysis code in a notebook environment, and submits answers to research questions.",
     "zh": "agent 需要在 notebook environment 中探索生物数据、编写并执行 Python、R 或 Bash 分析代码，再回答 research question。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "mechanistic-reasoning",
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

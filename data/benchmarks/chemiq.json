@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model solves expert-written chemistry problems and returns a final answer that is parsed and checked by the benchmark evaluator.",
     "zh": "模型需要解决专家编写的化学问题，并提交由 benchmark evaluator 解析和核验的最终答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

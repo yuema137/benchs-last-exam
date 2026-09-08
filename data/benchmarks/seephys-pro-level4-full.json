@@ -39,5 +39,10 @@
   "task_format": {
     "en": "Read a single image containing the statement, formulas, variables, and diagram, then return the final answer.",
     "zh": "读取一张包含题干、公式、变量和示意图的图片，再返回最终答案。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

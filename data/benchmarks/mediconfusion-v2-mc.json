@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers the same binary question on both images in each of 176 pairs with opposite correct answers.",
     "zh": "模型对 176 组影像中的两张图回答同一道二选一问题，而两张图的正确答案相反。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

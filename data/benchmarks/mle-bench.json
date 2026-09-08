@@ -38,5 +38,13 @@
   "task_format": {
     "en": "The agent prepares data, trains models, runs experiments, and submits a solution for one of 75 curated ML competitions.",
     "zh": "agent 需要准备数据、训练模型、运行实验，并为 75 个精选 ML 竞赛之一提交解决方案。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging",
+    "experimental-design"
+  ]
 }

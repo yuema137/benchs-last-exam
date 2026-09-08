@@ -37,5 +37,9 @@
   "task_format": {
     "en": "The model receives a question and may use an associated evidence document to produce a short answer.",
     "zh": "模型会收到问题以及相关证据文档，并需要给出简短答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "information-retrieval"
+  ]
 }

@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent works inside a container, runs commands, and must leave the environment in a state accepted by task-specific verification tests.",
     "zh": "agent 会在容器里运行命令，最后必须让环境达到 task 专用 verification tests 接受的状态。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

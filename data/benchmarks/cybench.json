@@ -56,5 +56,11 @@
   "task_format": {
     "en": "The agent works in a cybersecurity environment, using available tools to investigate a challenge and produce a successful solution.",
     "zh": "agent 会在网络安全环境中使用工具调查 challenge，并完成可验证的解决方案。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-execution-debugging"
+  ]
 }

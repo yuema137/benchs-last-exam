@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent interacts with turn-based game-like environments without explicit instructions or stated goals, learning from feedback across levels.",
     "zh": "agent 会在没有明确说明和目标的回合制游戏式环境中行动，并根据反馈在不同 level 中学习。"
-  }
+  },
+  "labels": [
+    "rule-induction-abstraction",
+    "planning",
+    "environment-interaction",
+    "state-tracking",
+    "error-recovery"
+  ]
 }

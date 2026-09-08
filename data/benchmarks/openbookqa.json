@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a four-choice elementary-science question and a small open-book fact set, then selects the answer.",
     "zh": "模型会收到一道四选一的基础科学问题和一组 open-book facts，然后选出答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "commonsense-inference"
+  ]
 }

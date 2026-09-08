@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model solves 293 property, component, and cycle-analysis problems without tools.",
     "zh": "模型在不使用工具的情况下解决 293 道物性、部件和循环分析问题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

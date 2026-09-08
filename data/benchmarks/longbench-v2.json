@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a long document and a multiple-choice question, then submits one of four answer choices. The fixed test split has 503 tasks.",
     "zh": "模型会收到一篇长文档和一道选择题，然后提交四个选项中的一个。固定 test split 有 503 个 task。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "long-context-integration"
+  ]
 }

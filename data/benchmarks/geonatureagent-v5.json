@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The agent solves 93 tasks with 16 pinned tools under a ten-turn limit.",
     "zh": "agent 使用 16 个固定工具，在最多十轮内完成 93 个 task。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

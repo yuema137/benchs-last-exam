@@ -39,5 +39,9 @@
   "task_format": {
     "en": "Given a video and one physical prior, estimate object size, velocity, or acceleration with units.",
     "zh": "给定视频和一个已知物理量，估算物体尺寸、速度或加速度并附单位。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

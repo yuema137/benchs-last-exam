@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a medical image and a variable-choice single-answer question, then returns one option without demonstrations.",
     "zh": "模型会收到一张医学图像和一道选项数量不固定的 single-answer question，并在无 demonstration 的条件下返回一个选项。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

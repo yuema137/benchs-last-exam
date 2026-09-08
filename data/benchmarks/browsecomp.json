@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The agent receives a short fact-seeking question and must search the web, combine evidence, and submit a concise answer.",
     "zh": "agent 会收到一个简短的事实问题，需要搜索网页、组合证据，再提交简短答案。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

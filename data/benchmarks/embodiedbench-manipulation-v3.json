@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent observes 500x500 simulator images and issues up to 15 seven-dimensional Franka-arm actions to complete one of 228 tasks.",
     "zh": "agent 观察 500×500 simulator 图像，并发出最多 15 个七维 Franka 机械臂动作来完成 228 个 task 之一。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "planning",
+    "environment-interaction",
+    "error-recovery"
+  ]
 }

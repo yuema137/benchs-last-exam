@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {"id": "knowledge-recall", "name": {"en": "Knowledge recall", "zh": "知识调用"}, "description": {"en": "Retrieving learned facts, concepts, or domain knowledge without external search.", "zh": "在不进行外部搜索的情况下调用已学习的事实、概念或领域知识。"}},
+    {"id": "information-retrieval", "name": {"en": "Information retrieval", "zh": "信息检索"}, "description": {"en": "Finding and selecting relevant evidence from documents, databases, or the web.", "zh": "从文档、数据库或网页中查找并选择相关证据。"}},
+    {"id": "formal-deductive-reasoning", "name": {"en": "Formal & deductive reasoning", "zh": "形式与演绎推理"}, "description": {"en": "Deriving necessary conclusions from explicit premises, rules, constraints, or a formal system.", "zh": "根据明确前提、规则、约束或形式系统推出必然结论。"}},
+    {"id": "rule-induction-abstraction", "name": {"en": "Rule induction & abstraction", "zh": "规则归纳与抽象"}, "description": {"en": "Inferring latent rules or representations from examples and applying them to new cases.", "zh": "从示例中归纳隐藏规则或表示，并将其应用到新案例。"}},
+    {"id": "commonsense-inference", "name": {"en": "Commonsense inference", "zh": "常识推断"}, "description": {"en": "Inferring plausible causes, outcomes, or actions from implicit everyday and physical-world knowledge.", "zh": "利用隐含的日常与物理世界知识推断合理的原因、结果或行动。"}},
+    {"id": "mechanistic-reasoning", "name": {"en": "Mechanistic reasoning", "zh": "机理推理"}, "description": {"en": "Explaining or predicting a system by applying causal structure, scientific principles, or an operational model.", "zh": "运用因果结构、科学原理或运行模型解释和预测系统行为。"}},
+    {"id": "quantitative-reasoning", "name": {"en": "Quantitative reasoning", "zh": "定量推理"}, "description": {"en": "Using mathematics, numerical relationships, or formal quantitative models.", "zh": "使用数学、数值关系或形式化定量模型解决问题。"}},
+    {"id": "spatial-reasoning", "name": {"en": "Spatial reasoning", "zh": "空间推理"}, "description": {"en": "Reasoning about geometry, layout, physical structure, or spatial transformations.", "zh": "对几何、布局、物理结构或空间变换进行推理。"}},
+    {"id": "multimodal-perception", "name": {"en": "Multimodal perception", "zh": "多模态感知"}, "description": {"en": "Extracting task-relevant information from images, video, diagrams, or other non-text inputs.", "zh": "从图像、视频、图表或其他非文本输入中提取任务相关信息。"}},
+    {"id": "long-context-integration", "name": {"en": "Long-context integration", "zh": "长上下文整合"}, "description": {"en": "Maintaining and combining evidence distributed across long documents, codebases, or trajectories.", "zh": "整合分布在长文档、代码库或长轨迹中的信息。"}},
+    {"id": "instruction-following", "name": {"en": "Instruction following", "zh": "指令遵循"}, "description": {"en": "Satisfying explicit constraints, formats, policies, or interface contracts.", "zh": "满足明确的约束、格式、政策或接口契约。"}},
+    {"id": "planning", "name": {"en": "Planning", "zh": "规划"}, "description": {"en": "Choosing and sequencing multiple actions toward a delayed objective.", "zh": "为实现延迟目标选择并安排多步行动。"}},
+    {"id": "tool-use", "name": {"en": "Tool use", "zh": "工具使用"}, "description": {"en": "Selecting and invoking APIs, software, browsers, terminals, or specialized tools.", "zh": "选择并调用 API、软件、浏览器、终端或专业工具。"}},
+    {"id": "environment-interaction", "name": {"en": "Environment interaction", "zh": "环境交互"}, "description": {"en": "Acting in an external environment and using its observed state or outcomes.", "zh": "在外部环境中行动，并利用观察到的状态或结果继续任务。"}},
+    {"id": "state-tracking", "name": {"en": "State tracking", "zh": "状态追踪"}, "description": {"en": "Maintaining relevant task and environment state across turns or actions.", "zh": "在多轮交互或多步行动中持续维护任务与环境状态。"}},
+    {"id": "error-recovery", "name": {"en": "Error recovery", "zh": "错误恢复"}, "description": {"en": "Diagnosing failed attempts and adapting subsequent actions or outputs.", "zh": "诊断失败尝试，并调整后续行动或输出。"}},
+    {"id": "code-generation", "name": {"en": "Code generation", "zh": "代码生成"}, "description": {"en": "Producing executable programs, patches, formal code, or hardware descriptions.", "zh": "生成可执行程序、代码补丁、形式化代码或硬件描述。"}},
+    {"id": "code-execution-debugging", "name": {"en": "Code execution & debugging", "zh": "代码执行与调试"}, "description": {"en": "Running, testing, diagnosing, and repairing code or computational workflows.", "zh": "运行、测试、诊断并修复代码或计算工作流。"}},
+    {"id": "experimental-design", "name": {"en": "Experimental design", "zh": "实验设计"}, "description": {"en": "Designing experiments or interventions that distinguish hypotheses or produce evidence.", "zh": "设计能够区分假设或产生证据的实验与干预。"}},
+    {"id": "design-optimization", "name": {"en": "Design & optimization", "zh": "设计与优化"}, "description": {"en": "Constructing or improving an artifact under functional objectives and constraints.", "zh": "在功能目标和约束下构造或改进工件、系统或方案。"}}
+  ]
+}

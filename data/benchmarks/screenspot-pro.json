@@ -38,5 +38,11 @@
   "task_format": {
     "en": "Each item provides a screenshot and an instruction. The system predicts a point or bounding-box location for the requested icon or text element; the benchmark uses static screenshots rather than a full interactive desktop environment.",
     "zh": "每个 task 会提供一张截图和一条指令。系统需要预测指定 icon 或文字元素的位置；这个 benchmark 使用静态截图，不是完整的可交互桌面环境。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "instruction-following",
+    "state-tracking"
+  ]
 }

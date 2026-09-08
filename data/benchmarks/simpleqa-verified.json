@@ -38,5 +38,8 @@
   "task_format": {
     "en": "Each item is a short fact-seeking question with a single target answer. The model produces a concise answer without browsing.",
     "zh": "每个 task 都是一道简短的事实问题，有一个目标答案。模型需要在不浏览网页的情况下给出简洁回答。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

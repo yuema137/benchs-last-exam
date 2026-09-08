@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent completes 300 retrieval, documentation, ordering, and conditional-action tasks using nine FHIR functions in at most eight rounds.",
     "zh": "agent 使用九个 FHIR function，在最多八轮内完成 300 个检索、记录、医嘱和条件操作 task。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

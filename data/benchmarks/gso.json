@@ -39,5 +39,14 @@
   "task_format": {
     "en": "The agent receives a codebase and performance tests, then must produce a patch that improves runtime efficiency while preserving functional correctness.",
     "zh": "agent 会收到一个 codebase 和 performance tests，需要提交提升运行效率、同时保持功能正确的 patch。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging",
+    "design-optimization"
+  ]
 }

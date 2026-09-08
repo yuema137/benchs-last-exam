@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers the fixed 250-item Earth-Silver four-choice set.",
     "zh": "模型回答固定的 250 道 Earth-Silver 四选一题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

@@ -38,5 +38,11 @@
   "task_format": {
     "en": "Given symbolic state, goal, actions, and rules, generate a complete action sequence for 338 instructions.",
     "zh": "给定符号状态、目标、动作和规则，为 338 条指令生成完整动作序列。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "spatial-reasoning",
+    "planning",
+    "state-tracking"
+  ]
 }

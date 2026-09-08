@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The model receives four rendered views of a part and must produce a CadQuery program. The program is executed to create a solid and compared with the reference geometry.",
     "zh": "模型会收到一个零件的四张渲染视图，需要生成 CadQuery 程序。程序会被执行生成实体，再和标准几何结果比较。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "code-generation",
+    "code-execution-debugging",
+    "design-optimization"
+  ]
 }

@@ -39,5 +39,10 @@
   "task_format": {
     "en": "The model proposes structured engineering designs across nine domains; executable domain-specific simulations and rubrics assess the resulting artifacts.",
     "zh": "模型需要在九个 engineering domain 中提出结构化设计，随后由 domain-specific simulation 和 rubric 评估生成的 artifact。"
-  }
+  },
+  "labels": [
+    "planning",
+    "environment-interaction",
+    "design-optimization"
+  ]
 }

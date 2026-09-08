@@ -38,5 +38,8 @@
   "task_format": {
     "en": "Each item is a ten-choice multiple-choice question. The model selects one answer, usually after producing a reasoning trace under the chosen prompt.",
     "zh": "每个 task 都是十选一问题。模型需要选出一个答案，通常会按照指定 prompt 先进行 reasoning。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

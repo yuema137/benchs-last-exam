@@ -38,5 +38,15 @@
   "task_format": {
     "en": "The agent works in a terminal environment on a scientific workflow and produces an analysis, simulation, proof, code, or data artifact.",
     "zh": "agent 会在 terminal 环境中完成科学工作流，产出分析、simulation、证明、代码或数据结果。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "mechanistic-reasoning",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging",
+    "design-optimization"
+  ]
 }

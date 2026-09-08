@@ -39,5 +39,10 @@
   "task_format": {
     "en": "Each task exposes a controlled set of real MCP servers and distractor tools. The agent must call tools, recover from errors, and synthesize a correct final answer.",
     "zh": "每个 task 会提供一组受控的真实 MCP server 和干扰工具。agent 需要调用工具、处理错误，并综合出正确的最终答案。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

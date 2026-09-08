@@ -39,5 +39,13 @@
   "task_format": {
     "en": "The agent receives a real-world question, sometimes with an attached file, and must research, reason, use tools, and submit one final answer. The benchmark has three difficulty levels and separate public validation and private test sets.",
     "zh": "agent 会收到一个真实世界问题，有时还会附带文件，需要检索、推理、使用工具，并提交一个最终答案。benchmark 分为三个难度等级，并有公开 validation set 和答案保密的 test set。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "multimodal-perception",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

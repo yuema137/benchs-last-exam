@@ -38,5 +38,10 @@
   "task_format": {
     "en": "In the Complete setting, the model fills in a function implementation from a detailed docstring and is evaluated on curated executable tests across 139 libraries.",
     "zh": "在 Complete setting 中，模型根据详细 docstring 补全 function implementation，再通过覆盖 139 个 library 的可执行测试评估。"
-  }
+  },
+  "labels": [
+    "instruction-following",
+    "code-generation",
+    "design-optimization"
+  ]
 }

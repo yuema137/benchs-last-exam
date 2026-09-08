@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model reasons about a difficult mathematics problem and submits a Python answer function that is checked by an executable verifier.",
     "zh": "模型需要解决高难度数学题，并提交由可执行 verifier 检查的 Python answer function。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "quantitative-reasoning"
+  ]
 }

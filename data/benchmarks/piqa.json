@@ -37,5 +37,9 @@
   "task_format": {
     "en": "Each item describes a goal and offers two possible solutions. The model chooses the more plausible one.",
     "zh": "每道题会描述一个目标，并给出两个解决办法。模型需要选择更合理的一个。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "commonsense-inference"
+  ]
 }

@@ -38,5 +38,13 @@
   "task_format": {
     "en": "The agent reads a paper, builds a codebase, executes experiments in a fresh environment, and is graded against a paper-specific rubric.",
     "zh": "agent 需要阅读论文、构建 codebase、在全新环境中运行实验，再按照每篇论文专属 rubric 评分。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "experimental-design"
+  ]
 }

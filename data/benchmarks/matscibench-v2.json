@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers text-only materials-science questions directly or with a basic chain of thought, without retrieval, tools, or self-correction.",
     "zh": "模型回答 text-only 材料科学问题，可以直接作答或使用基础 chain of thought，但不使用 retrieval、tool 或 self-correction。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

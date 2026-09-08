@@ -39,5 +39,9 @@
   "task_format": {
     "en": "The model solves composite research-level physics challenges and submits numerical, symbolic, or structured answers checked by a customized grader.",
     "zh": "模型需要解决 research-level 的综合物理 challenge，并提交由定制 grader 检查的数值、符号或结构化答案。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

@@ -15,6 +15,7 @@ PUBLIC_DETAILS = ROOT / "site" / "data" / "benchmarks"
 PUBLIC_RESOURCES = ROOT / "site" / "data" / "resources.json"
 APP = ROOT / "site" / "app.js"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
+CAPABILITY_LABEL_REGISTRY = ROOT / "data" / "capability_labels.json"
 EVIDENCE = ROOT / "data" / "evidence.jsonl"
 BENCHMARK_REGISTRY = ROOT / "data" / "benchmarks"
 RAW = ROOT / "data" / "raw"
@@ -151,6 +152,8 @@ def validate_public_bundles(payload):
         errors.append("public index snapshot is stale")
     if index.get("reference_organizations") != payload.get("reference_organizations"):
         errors.append("public index reference organization panel is stale")
+    if index.get("capability_labels") != payload.get("capability_labels"):
+        errors.append("public index capability label registry is stale")
     if index.get("lifecycle_views") != payload.get("lifecycle_views"):
         errors.append("public index lifecycle views are stale")
     full_by_id = {item["id"]: item for item in payload.get("benchmarks", [])}
@@ -209,9 +212,9 @@ def validate_public_bundles(payload):
     return errors
 
 
-def validate_benchmark(benchmark, resources, models):
+def validate_benchmark(benchmark, resources, models, allowed_labels=None):
     errors = []
-    required = ("id", "name", "benchmark_version_id", "release", "evaluation_type", "domain",
+    required = ("id", "name", "benchmark_version_id", "release", "evaluation_type", "domain", "labels",
                 "summary", "task_format", "scoring", "evaluation_target", "observations",
                 "frontier", "resource_ids", "coverage", "canonical_score",
                 "lifecycle_eligibility")
@@ -223,6 +226,11 @@ def validate_benchmark(benchmark, resources, models):
         for lang in ("en", "zh"):
             if not value.get(lang):
                 errors.append(f"{benchmark.get('id')}: missing {field}.{lang}")
+    labels = benchmark.get("labels", [])
+    if not isinstance(labels, list) or not labels or len(labels) != len(set(labels)):
+        errors.append(f"{benchmark.get('id')}: labels must be a non-empty unique list")
+    if allowed_labels is not None and not set(labels).issubset(allowed_labels):
+        errors.append(f"{benchmark.get('id')}: unresolved capability labels {sorted(set(labels)-allowed_labels)}")
     if not isinstance(benchmark.get("auxiliary_score_series"), list):
         errors.append(f"{benchmark.get('id')}: auxiliary_score_series must be a list")
     for resource_id in benchmark.get("resource_ids", []):
@@ -338,6 +346,9 @@ def validate_benchmark(benchmark, resources, models):
 def main():
     registry_specs = load_benchmark_specs(BENCHMARK_REGISTRY, RAW)
     payload = json.loads(SNAPSHOT.read_text())
+    label_payload = json.loads(CAPABILITY_LABEL_REGISTRY.read_text())
+    label_records = label_payload["labels"]
+    allowed_labels = {item["id"] for item in label_records}
     evidence_records = [json.loads(line) for line in EVIDENCE.read_text().splitlines() if line]
     organizations, organization_aliases, organization_errors = load_reference_organizations()
     benchmarks = payload.get("benchmarks", [])
@@ -367,12 +378,14 @@ def main():
             errors.append(f"{resource.get('id')}: resource ID is not derived from canonical URL")
     if payload.get("reference_organizations") != organizations:
         errors.append("generated reference organization panel is stale")
+    if payload.get("capability_labels") != label_records:
+        errors.append("generated capability label registry is stale")
     ids = [item.get("id") for item in benchmarks]
     if len(ids) != len(set(ids)):
         errors.append("duplicate active benchmark IDs")
     errors.extend(validate_registry_alignment(registry_specs, benchmarks))
     for benchmark in benchmarks:
-        errors.extend(validate_benchmark(benchmark, resources, models))
+        errors.extend(validate_benchmark(benchmark, resources, models, allowed_labels))
         expected_organizations = represented_reference_organizations(
             benchmark.get("observations", []), organizations, organization_aliases
         )

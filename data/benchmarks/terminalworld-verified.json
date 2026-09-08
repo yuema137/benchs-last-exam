@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent operates inside an isolated Docker terminal environment and must reach the task's required final system state.",
     "zh": "agent 会在隔离的 Docker terminal 环境中操作，必须让系统达到 task 要求的最终状态。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

@@ -37,5 +37,12 @@
   "task_format": {
     "en": "The agent receives a task in a containerized terminal environment and can use shell tools before submitting the final environment state.",
     "zh": "agent 会在容器化 terminal 环境中收到 task，可以使用 shell 工具，最后提交环境状态。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

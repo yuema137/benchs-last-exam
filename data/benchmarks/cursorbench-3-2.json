@@ -39,5 +39,13 @@
   "task_format": {
     "en": "The agent receives a multi-file coding task and uses an editing environment and tools to modify the codebase.",
     "zh": "agent 会收到一个涉及多个文件的 coding task，并使用编辑环境和工具修改 codebase。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "design-optimization"
+  ]
 }

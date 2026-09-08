@@ -38,5 +38,8 @@
   "task_format": {
     "en": "Each prompt includes one or more constraints, such as an exact format, word limit, or required phrase. The model writes a response that must satisfy those constraints.",
     "zh": "每个 prompt 都带有一个或多个约束，比如固定格式、字数限制或必须出现某个短语。模型需要写出满足这些约束的回答。"
-  }
+  },
+  "labels": [
+    "instruction-following"
+  ]
 }

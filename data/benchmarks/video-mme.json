@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Each item provides a video and a multiple-choice question. The model answers questions that may require visual, audio, subtitle, and temporal understanding; this card uses the no-subtitles overall score.",
     "zh": "每个 task 会提供一段视频和一道选择题。模型需要结合视觉、音频、字幕和时间信息回答问题；本卡使用 no-subtitles overall score。"
-  }
+  },
+  "labels": [
+    "multimodal-perception",
+    "state-tracking"
+  ]
 }

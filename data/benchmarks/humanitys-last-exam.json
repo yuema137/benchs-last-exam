@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Each item is a text or multimodal academic question. The model returns an answer, and some items require a short explanation or structured response.",
     "zh": "每个 task 是文字或多模态 academic question。模型需要给出答案，有些题目还要求简短解释或结构化回答。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

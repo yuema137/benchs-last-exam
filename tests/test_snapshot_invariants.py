@@ -31,6 +31,32 @@ class SnapshotInvariantTests(unittest.TestCase):
             self.assertIn(benchmark["evaluation_type"], allowed_types)
             self.assertTrue(benchmark["domain"])
 
+    def test_capability_labels_are_controlled_many_to_many_metadata(self):
+        records = self.payload["capability_labels"]
+        allowed = {item["id"] for item in records}
+        self.assertEqual(len(allowed), len(records))
+        self.assertTrue(all(set(item["name"]) == {"en", "zh"} for item in records))
+        self.assertTrue(all(set(item["description"]) == {"en", "zh"} for item in records))
+        self.assertTrue(all(benchmark["labels"] for benchmark in self.benchmarks))
+        self.assertTrue(all(set(benchmark["labels"]).issubset(allowed) for benchmark in self.benchmarks))
+        self.assertTrue(any(len(benchmark["labels"]) > 1 for benchmark in self.benchmarks))
+
+    def test_reasoning_labels_are_mechanism_specific(self):
+        labels = {item["id"] for item in self.payload["capability_labels"]}
+        self.assertNotIn("deductive-reasoning", labels)
+        self.assertTrue({
+            "formal-deductive-reasoning",
+            "rule-induction-abstraction",
+            "commonsense-inference",
+            "mechanistic-reasoning",
+        }.issubset(labels))
+        by_id = {benchmark["id"]: benchmark for benchmark in self.benchmarks}
+        self.assertIn("formal-deductive-reasoning", by_id["proofbench-v1-1"]["labels"])
+        self.assertIn("rule-induction-abstraction", by_id["arc-agi-2"]["labels"])
+        self.assertIn("commonsense-inference", by_id["hellaswag"]["labels"])
+        self.assertIn("mechanistic-reasoning", by_id["critpt"]["labels"])
+        self.assertNotIn("formal-deductive-reasoning", by_id["gaia"]["labels"])
+
     def test_higher_thresholds_never_precede_lower_thresholds(self):
         for benchmark in self.benchmarks:
             thresholds = benchmark["threshold_days"]

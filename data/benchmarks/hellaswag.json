@@ -37,5 +37,9 @@
   "task_format": {
     "en": "The model reads a short situation and chooses one continuation from several candidates.",
     "zh": "模型会读到一段简短场景，并从多个候选后续中选出一个。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "commonsense-inference"
+  ]
 }

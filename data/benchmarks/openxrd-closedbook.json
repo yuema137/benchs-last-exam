@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers all 217 expert-reviewed XRD multiple-choice questions using only each question and its choices.",
     "zh": "模型仅根据题目和选项回答全部 217 道经专家审核的 XRD 选择题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

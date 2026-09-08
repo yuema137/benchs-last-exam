@@ -38,5 +38,12 @@
   "task_format": {
     "en": "Diagnose cockpit state and use twelve tools to complete 73 emergency or abnormal procedures.",
     "zh": "诊断驾驶舱状态并使用 12 类工具完成 73 个紧急或异常程序。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

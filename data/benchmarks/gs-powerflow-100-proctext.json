@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Without tools, the model follows a Gauss–Seidel procedure and reports converged slack-bus real or reactive power for 100 cases.",
     "zh": "模型不使用工具，按 Gauss–Seidel 过程求解 100 个案例，并输出收敛后的平衡节点有功或无功功率。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

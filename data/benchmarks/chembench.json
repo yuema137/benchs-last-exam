@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers chemistry questions spanning analytical, inorganic, organic, physical, materials, and safety topics under the benchmark's evaluation interface.",
     "zh": "模型需要按照 benchmark evaluation interface 回答涵盖分析、无机、有机、物理、材料和安全等主题的化学问题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

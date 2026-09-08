@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model reads a modified biological protocol and experimental failure, then selects the corrective action from four choices plus abstention.",
     "zh": "模型阅读被修改的生物实验 protocol 和实验失败现象，再从四个修复选项及 abstention 中选择答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

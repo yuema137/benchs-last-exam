@@ -38,5 +38,8 @@
   "task_format": {
     "en": "The model watches a 4–8 second industrial clip and selects the correct action from 16 options.",
     "zh": "模型观看 4–8 秒工业视频，并从 16 个选项中选择正确动作。"
-  }
+  },
+  "labels": [
+    "multimodal-perception"
+  ]
 }

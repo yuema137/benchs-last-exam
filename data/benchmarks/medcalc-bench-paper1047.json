@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Given a patient note and request, the model extracts variables and returns a numeric, date, risk, severity, or diagnostic result.",
     "zh": "模型根据患者记录和请求抽取变量，并输出数值、日期、风险、严重度或诊断结果。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "formal-deductive-reasoning",
+    "quantitative-reasoning"
+  ]
 }

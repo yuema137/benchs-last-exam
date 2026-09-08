@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model completes 536 public questions spanning multiple choice, short answer, rationale, open answer, and ranking formats.",
     "zh": "模型完成 536 道公开题目，题型包括选择、短答、理由说明、开放回答和排序。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "planning"
+  ]
 }

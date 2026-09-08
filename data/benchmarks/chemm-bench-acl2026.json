@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model receives a 2D molecule diagram or up to five spectroscopy panels and returns a structured final answer.",
     "zh": "模型会收到二维分子图或最多五个光谱 panel，并返回结构化最终答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

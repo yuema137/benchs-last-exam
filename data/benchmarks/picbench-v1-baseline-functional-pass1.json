@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Given a PIC specification and SAX API, the model generates a JSON netlist of components, parameters, ports, and connections.",
     "zh": "模型根据 PIC 规格和 SAX API，生成包含器件、参数、端口和连接的 JSON netlist。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "spatial-reasoning",
+    "design-optimization"
+  ]
 }

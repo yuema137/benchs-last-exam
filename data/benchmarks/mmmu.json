@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model receives a question with text and an image such as a chart, diagram, map, or chemical structure, then selects or produces the answer.",
     "zh": "模型会收到带文字和图片的问题，图片可能是图表、示意图、地图或化学结构，然后选择或生成答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

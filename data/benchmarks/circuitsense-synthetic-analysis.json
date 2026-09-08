@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The model receives one of 5,020 generated circuit or block diagrams and returns a symbolic nodal equation or transfer function.",
     "zh": "模型会收到 5,020 个生成电路图或系统框图中的一个，并返回符号节点方程或传递函数。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

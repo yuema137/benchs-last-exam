@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Given a project description and reference Arduino code, the model generates a structured physical breadboard circuit for Wokwi execution.",
     "zh": "模型根据项目描述和参考 Arduino code，生成用于 Wokwi 执行的结构化物理面包板电路。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "spatial-reasoning"
+  ]
 }

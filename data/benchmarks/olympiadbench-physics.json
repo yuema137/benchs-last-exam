@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The model receives an open-ended competition physics problem, often with a diagram, and must produce the final answer in the benchmark's prescribed format.",
     "zh": "模型会收到一道开放式竞赛物理题，通常包含示意图，并需要按照 benchmark 规定的格式给出最终答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

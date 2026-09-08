@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The model receives one of 147 undergraduate control-engineering problems and produces a zero-shot worked solution for expert review.",
     "zh": "模型会收到 147 道本科控制工程题中的一道，并生成由领域专家审核的 zero-shot 完整解答。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception",
+    "design-optimization"
+  ]
 }

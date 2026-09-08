@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Select every correct statement from four to ten candidates for 101 text-only questions.",
     "zh": "在 101 道纯文本题中，从 4–10 个候选陈述里选出全部正确项。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

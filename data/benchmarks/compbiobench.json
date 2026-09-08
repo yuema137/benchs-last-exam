@@ -39,5 +39,13 @@
   "task_format": {
     "en": "The agent works through 100 computational-biology tasks, using analysis tools and executable code before submitting a result.",
     "zh": "agent 需要完成 100 个 computational biology task，使用分析工具并执行代码后提交结果。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

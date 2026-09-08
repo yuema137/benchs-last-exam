@@ -40,6 +40,8 @@ Every reference model panel is versioned and time-dependent. Historical health a
 - Each benchmark version has one benchmark-centric card or detail view.
 - Cards document the benchmark and its current longitudinal evidence.
 - Cross-benchmark questions belong in comparison and research views, not in individual factual fields.
+- `domain` is one mutually exclusive primary subject/task domain. `labels` is a non-empty, many-to-many set of controlled capability demands from `data/capability_labels.json`; free-form `tags` remain descriptive search metadata. Labels must be explicit in canonical benchmark records, reviewed as central task demands, and never inferred at runtime from domain names or prose. See `docs/CAPABILITY_LABELS.md`.
+- Reasoning labels must identify a concrete mechanism. Do not use a generic reasoning label, and do not infer formal deduction merely from task difficulty, multi-step behavior, planning, or the word "reasoning" in prose.
 - Activity/adoption, provenance quality, validity, and measurement health must remain separate dimensions.
 - Use `N/A` when a metric is not scientifically applicable; use `?` or an explicit verification status when the required evidence is not yet known.
 

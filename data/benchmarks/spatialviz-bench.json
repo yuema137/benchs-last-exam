@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives visual-spatial questions and selects or predicts the answer under the benchmark's visual reasoning protocol.",
     "zh": "模型会收到视觉空间问题，并按照 benchmark 的视觉推理 protocol 选择或预测答案。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

@@ -39,5 +39,11 @@
   "task_format": {
     "en": "The agent works through realistic files and software applications over a multi-step professional task, then is graded against task-specific rubrics and gold outputs.",
     "zh": "agent 需要在真实的文件和软件应用中完成多步专业 task，再按照 task 专属 rubric 和 gold output 评分。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

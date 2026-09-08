@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The model inspects a circuit problem and diagram, then returns a numerical answer to six decimal places.",
     "zh": "模型阅读电路题和电路图，再给出保留六位小数的数值答案。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

@@ -38,5 +38,8 @@
   "task_format": {
     "en": "Answer 1,273 four-choice questions on virology, biological agents, laboratory methods, and precursor knowledge.",
     "zh": "回答 1,273 道涉及病毒学、生物因子、实验方法和前置知识的四选一题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

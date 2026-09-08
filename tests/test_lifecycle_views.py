@@ -90,6 +90,17 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn("terms.every(term=>haystack.includes(term))", app)
         self.assertIn("matchesSearch(b,query)", app)
 
+    def test_capability_label_filter_is_multi_select_and_uses_and_semantics(self):
+        html = Path("site/index.html").read_text(encoding="utf-8")
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn('id="label-options"', html)
+        self.assertNotIn('id="label-filter"', html)
+        self.assertIn('class="label-panel"', html)
+        self.assertIn("function selectedLabels", app)
+        self.assertIn("labels.every(label=>(b.labels||[]).includes(label))", app)
+        self.assertIn("item.name[state.lang]", app)
+        self.assertIn("labelChips(b.labels,3)", app)
+
     def test_still_frontier_members_and_cards_use_normalized_progress(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
         by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}

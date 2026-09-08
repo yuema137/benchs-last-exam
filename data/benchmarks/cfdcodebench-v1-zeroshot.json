@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Given a structured PDE specification, the model writes a complete Python solver for each of 24 tasks.",
     "zh": "模型根据结构化 PDE 规格，为 24 个 task 分别生成完整 Python solver。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "code-generation",
+    "design-optimization"
+  ]
 }

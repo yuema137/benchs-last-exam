@@ -40,5 +40,9 @@
   "task_format": {
     "en": "The model receives an open-ended engineering scenario and develops a mathematical model, assumptions, analysis, and recommendation.",
     "zh": "模型会收到一个开放式工程场景，需要建立数学模型、说明假设、完成分析并给出建议。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "design-optimization"
+  ]
 }

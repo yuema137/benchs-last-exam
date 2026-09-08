@@ -38,5 +38,8 @@
   "task_format": {
     "en": "The model receives a naturally occurring question and a passage, then answers yes or no.",
     "zh": "模型会收到一个自然产生的问题和一段 passage，然后回答 yes 或 no。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

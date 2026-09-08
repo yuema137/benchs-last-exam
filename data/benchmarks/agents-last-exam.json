@@ -38,5 +38,11 @@
   "task_format": {
     "en": "An agent works through a real digital-work task using the required tools and environment, then submits an outcome that can be checked.",
     "zh": "agent 会在指定工具和环境中完成真实的数字工作任务，最后提交一个可以被验证的结果。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

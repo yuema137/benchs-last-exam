@@ -39,5 +39,13 @@
   "task_format": {
     "en": "The agent receives a question and the complete source PDF, may use web-search and code-execution tools, and submits one answer.",
     "zh": "agent 会收到问题和完整 source PDF，可以使用 web-search 与 code-execution tool，并提交一个答案。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-execution-debugging"
+  ]
 }

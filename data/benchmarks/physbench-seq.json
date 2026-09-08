@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives text plus images or sequentially sampled video frames and selects one of four answers on the fixed full test set.",
     "zh": "模型会收到文本与图像或按顺序采样的视频帧，并在固定 full test set 上回答四选一问题。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

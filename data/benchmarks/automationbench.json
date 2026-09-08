@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent uses APIs or tool calls across simulated CRM, inbox, calendar, and other business applications, then must leave the correct final state.",
     "zh": "agent 会通过 API 或 tool calls 操作模拟的 CRM、收件箱、日历和其他 business application，最后必须留下正确的最终状态。"
-  }
+  },
+  "labels": [
+    "instruction-following",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

@@ -37,5 +37,13 @@
   "task_format": {
     "en": "The system works on software-engineering tasks and submits code changes evaluated with tests and rubric-based checks.",
     "zh": "系统需要完成 software-engineering task 并提交代码修改，结果会通过测试和 rubric 检查。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "error-recovery",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

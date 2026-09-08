@@ -77,6 +77,7 @@ class BenchmarkSpec(Mapping[str, Any]):
     domain: str
     evaluation_type: str
     tags: tuple[str, ...]
+    labels: tuple[str, ...]
     file: str
     score: str
     release: str
@@ -109,7 +110,7 @@ class BenchmarkSpec(Mapping[str, Any]):
         if not isinstance(value, dict):
             raise ValueError(f"{path}: benchmark specification must be an object")
         required = {
-            "id", "name", "domain", "evaluation_type", "tags", "file", "score",
+            "id", "name", "domain", "evaluation_type", "tags", "labels", "file", "score",
             "release", "floor", "ceiling", "source", "summary", "task_format",
             "scoring", "evaluation_target", "protocol", "metric_id", "protocol_id",
             "input_unit", "hard_min", "hard_max", "progress_baseline", "progress_target",
@@ -159,6 +160,13 @@ class BenchmarkSpec(Mapping[str, Any]):
             isinstance(tag, str) and tag.strip() for tag in tags
         ):
             raise ValueError(f"{path}: tags must be a non-empty text array")
+        labels = value["labels"]
+        if not isinstance(labels, list) or not labels or not all(
+            isinstance(label, str) and label.strip() for label in labels
+        ):
+            raise ValueError(f"{path}: labels must be a non-empty text array")
+        if len(set(labels)) != len(labels):
+            raise ValueError(f"{path}: labels must not contain duplicates")
 
         numeric_fields = (
             "floor", "ceiling", "hard_min", "hard_max", "progress_baseline",
@@ -185,6 +193,7 @@ class BenchmarkSpec(Mapping[str, Any]):
             domain=text("domain"),
             evaluation_type=evaluation_type,
             tags=tuple(tag.strip() for tag in tags),
+            labels=tuple(label.strip() for label in labels),
             file=text("file"),
             score=text("score"),
             release=text("release"),
@@ -220,6 +229,7 @@ class BenchmarkSpec(Mapping[str, Any]):
             "domain": self.domain,
             "evaluation_type": self.evaluation_type,
             "tags": list(self.tags),
+            "labels": list(self.labels),
             "file": self.file,
             "score": self.score,
             "release": self.release,
@@ -287,6 +297,34 @@ def load_benchmark_specs(registry_dir: Path, raw_dir: Path) -> list[BenchmarkSpe
         seen_ids.add(spec.id)
         seen_identity.add(identity)
         specs.append(spec)
+    label_registry_path = registry_dir.parent / "capability_labels.json"
+    try:
+        label_payload = json.loads(label_registry_path.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(f"Cannot read capability label registry: {error}") from error
+    label_records = label_payload.get("labels") if isinstance(label_payload, dict) else None
+    if not isinstance(label_records, list) or not label_records:
+        raise ValueError("capability label registry must contain a non-empty labels array")
+    label_ids = [item.get("id") for item in label_records if isinstance(item, dict)]
+    if len(label_ids) != len(label_records) or any(not isinstance(item, str) or not item for item in label_ids):
+        raise ValueError("every capability label must have a non-empty id")
+    if len(set(label_ids)) != len(label_ids):
+        raise ValueError("capability label ids must be unique")
+    required_localized = {"en", "zh"}
+    for item in label_records:
+        if set(item) != {"id", "name", "description"}:
+            raise ValueError(f"invalid capability label fields for {item.get('id', '<unknown>')}")
+        for key in ("name", "description"):
+            localized = item[key]
+            if not isinstance(localized, dict) or set(localized) != required_localized or not all(
+                isinstance(localized[lang], str) and localized[lang].strip() for lang in required_localized
+            ):
+                raise ValueError(f"capability label {item['id']}: {key} must contain en and zh")
+    allowed_labels = set(label_ids)
+    for spec in specs:
+        unknown_labels = set(spec.labels) - allowed_labels
+        if unknown_labels:
+            raise ValueError(f"{spec.id}: unknown capability labels {sorted(unknown_labels)}")
     orders = [spec.registry_order for spec in specs]
     if len(set(orders)) != len(orders):
         raise ValueError("benchmark registry_order values must be unique")

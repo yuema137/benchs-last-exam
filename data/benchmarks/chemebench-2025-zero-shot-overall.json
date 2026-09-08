@@ -39,5 +39,8 @@
   "task_format": {
     "en": "Solve heterogeneous knowledge, molecular, equipment, reactor, separation, safety, simulation, and economics tasks.",
     "zh": "完成知识、分子、设备、反应器、分离、安全、模拟和经济等多类任务。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

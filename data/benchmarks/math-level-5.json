@@ -36,5 +36,9 @@
   "task_format": {
     "en": "The model receives a competition-style math problem and must produce a solution and final answer.",
     "zh": "模型会收到一道竞赛数学题，需要给出解答和最后答案。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "quantitative-reasoning"
+  ]
 }

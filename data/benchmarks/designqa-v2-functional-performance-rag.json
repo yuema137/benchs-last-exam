@@ -38,5 +38,11 @@
   "task_format": {
     "en": "Use retrieved rulebook context and visual evidence to make 16 binary functional-compliance decisions.",
     "zh": "结合检索到的规则文本和视觉证据，完成 16 道二元功能合规判断。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "quantitative-reasoning",
+    "multimodal-perception",
+    "design-optimization"
+  ]
 }
