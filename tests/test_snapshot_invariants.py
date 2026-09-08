@@ -37,6 +37,8 @@ class SnapshotInvariantTests(unittest.TestCase):
         self.assertEqual(len(allowed), len(records))
         self.assertTrue(all(set(item["name"]) == {"en", "zh"} for item in records))
         self.assertTrue(all(set(item["description"]) == {"en", "zh"} for item in records))
+        self.assertTrue(all(set(item["coverage_statement"]) == {"en", "zh"} for item in records))
+        self.assertTrue(all(all(item["coverage_statement"][lang].strip() for lang in ("en", "zh")) for item in records))
         self.assertTrue(all(benchmark["labels"] for benchmark in self.benchmarks))
         self.assertTrue(all(set(benchmark["labels"]).issubset(allowed) for benchmark in self.benchmarks))
         self.assertTrue(any(len(benchmark["labels"]) > 1 for benchmark in self.benchmarks))

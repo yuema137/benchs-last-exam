@@ -167,6 +167,11 @@ h1 {
 .capability-labels { display:flex; flex-wrap:wrap; gap:4px; margin-top:6px; white-space:normal; }
 .capability-label { display:inline-flex; align-items:center; min-height:19px; padding:2px 6px; border:1px solid color-mix(in srgb,var(--accent) 28%,var(--line)); border-radius:999px; color:color-mix(in srgb,var(--accent) 82%,var(--text)); background:color-mix(in srgb,var(--accent) 7%,transparent); font-size:9px; font-weight:650; line-height:1.2; text-transform:none; letter-spacing:0; }
 .capability-label.more { color:var(--muted); border-color:var(--line); background:transparent; }
+.capability-explanations { display:grid; gap:8px; margin-top:8px; }
+.capability-explanation { display:grid; grid-template-columns:minmax(128px,auto) 1fr; align-items:start; gap:12px; padding:11px 12px; border:1px solid var(--line); border-radius:10px; background:color-mix(in srgb,var(--panel-solid) 72%,transparent); }
+.capability-explanation .capability-label { justify-self:start; margin-top:1px; }
+.capability-explanation p { margin:0; color:var(--muted); font-size:12px; line-height:1.5; }
+@media (max-width:600px) { .capability-explanation { grid-template-columns:1fr; gap:7px; } }
 input, select {
   background:color-mix(in srgb,var(--panel-solid) 88%, transparent);
   border-color:var(--line-strong);

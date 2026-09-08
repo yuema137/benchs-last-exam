@@ -8,7 +8,9 @@ BLE separates three kinds of metadata:
 
 Free-form `tags` remain available for protocol, format, population, implementation, and search metadata. A tag is not automatically a capability label.
 
-The controlled bilingual vocabulary lives in `data/capability_labels.json`. Every active benchmark must reference at least one valid label ID. The typed registry loader and integration validator reject missing, duplicate, or unknown labels.
+The controlled bilingual vocabulary lives in `data/capability_labels.json`. Each record contains a short name, a taxonomy definition, and a one-sentence `coverage_statement` explaining how that capability appears in a task. Every active benchmark must reference at least one valid label ID. The typed registry loader and integration validator reject missing, duplicate, or unknown labels.
+
+Detail pages render the coverage statement under every assigned label. The frontend resolves this copy from the controlled registry; it must not maintain separate label explanations in HTML or JavaScript. Keep the statement concrete, short, and focused on what the evaluated system must actually do.
 
 ## Curation rule
 
