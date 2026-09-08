@@ -312,9 +312,9 @@ def load_benchmark_specs(registry_dir: Path, raw_dir: Path) -> list[BenchmarkSpe
         raise ValueError("capability label ids must be unique")
     required_localized = {"en", "zh"}
     for item in label_records:
-        if set(item) != {"id", "name", "description"}:
+        if set(item) != {"id", "name", "description", "coverage_statement"}:
             raise ValueError(f"invalid capability label fields for {item.get('id', '<unknown>')}")
-        for key in ("name", "description"):
+        for key in ("name", "description", "coverage_statement"):
             localized = item[key]
             if not isinstance(localized, dict) or set(localized) != required_localized or not all(
                 isinstance(localized[lang], str) and localized[lang].strip() for lang in required_localized

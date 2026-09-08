@@ -101,6 +101,13 @@ class LifecycleViewRuleTests(unittest.TestCase):
         self.assertIn("item.name[state.lang]", app)
         self.assertIn("labelChips(b.labels,3)", app)
 
+    def test_detail_capability_labels_explain_how_each_capability_is_tested(self):
+        app = Path("site/app.js").read_text(encoding="utf-8")
+        self.assertIn("function labelCoverageStatement", app)
+        self.assertIn("function capabilityExplanationMarkup", app)
+        self.assertIn("capabilityExplanationMarkup(b)", app)
+        self.assertIn("coverage_statement", app)
+
     def test_still_frontier_members_and_cards_use_normalized_progress(self):
         payload = json.loads(Path("site/data/benchmarks.json").read_text(encoding="utf-8"))
         by_id = {benchmark["id"]: benchmark for benchmark in payload["benchmarks"]}
