@@ -39,5 +39,10 @@
   "task_format": {
     "en": "Answer 34,604 four-choice questions derived from pymatgen documentation without tools or RAG.",
     "zh": "不使用工具或 RAG，回答 34,604 道由 pymatgen 文档生成的四选一问题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "information-retrieval",
+    "instruction-following"
+  ]
 }

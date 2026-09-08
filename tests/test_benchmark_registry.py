@@ -34,6 +34,12 @@ class BenchmarkRegistryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown"):
             BenchmarkSpec.from_mapping(payload, path=Path("mmlu.json"))
 
+    def test_missing_capability_labels_are_rejected(self):
+        payload = json.loads((REGISTRY / "mmlu.json").read_text())
+        del payload["labels"]
+        with self.assertRaisesRegex(ValueError, "labels"):
+            BenchmarkSpec.from_mapping(payload, path=Path("mmlu.json"))
+
     def test_missing_raw_evidence_file_is_rejected(self):
         payload = json.loads((REGISTRY / "mmlu.json").read_text())
         payload["file"] = "missing.csv"

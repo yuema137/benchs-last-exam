@@ -39,5 +39,11 @@
   "task_format": {
     "en": "The agent observes a game environment, chooses actions over many steps, and must make progress toward the environment's goal while adapting to feedback.",
     "zh": "agent 会观察游戏环境，在很多 step 中持续选择动作，并根据反馈适应，逐步完成环境目标。"
-  }
+  },
+  "labels": [
+    "multimodal-perception",
+    "planning",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

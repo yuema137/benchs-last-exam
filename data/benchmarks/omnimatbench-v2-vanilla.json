@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The model answers open materials questions and structured formula-heavy calculations using text with optional images or CSV inputs.",
     "zh": "模型使用文本及可选图像或 CSV 输入，回答开放材料问题和带固定格式的公式计算题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

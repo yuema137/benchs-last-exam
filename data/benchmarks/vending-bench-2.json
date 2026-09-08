@@ -39,5 +39,10 @@
   "task_format": {
     "en": "The agent makes repeated decisions in a simulated vending-business environment and is evaluated on the resulting business outcome.",
     "zh": "agent 会在模拟 vending business 环境中持续做决策，最后根据 business outcome 评分。"
-  }
+  },
+  "labels": [
+    "planning",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

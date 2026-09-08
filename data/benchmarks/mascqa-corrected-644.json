@@ -39,5 +39,10 @@
   "task_format": {
     "en": "Solve matching, multiple-choice, multi-select or numerical-choice, and numerical problems.",
     "zh": "解决匹配、单选、多选或数值选项以及数值计算题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

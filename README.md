@@ -28,6 +28,8 @@ The runtime loads a small `site/data/index.json` for the leaderboard and story
 views. Complete benchmark dossiers are split under
 `site/data/benchmarks/<benchmark-id>.json` and fetched only when opened.
 
+Homepage filtering distinguishes one mutually exclusive `domain` from controlled, many-to-many capability `labels`. Label definitions are bilingual and canonical; selecting multiple labels requires all selected capabilities to match.
+
 Each active benchmark/version is maintained independently in
 `data/benchmarks/<benchmark-id>.json`; its source observations live in the
 referenced `data/raw/*.csv` file. The typed registry loader discovers these

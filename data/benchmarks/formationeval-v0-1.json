@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers all 505 English four-choice questions zero-shot and returns one final option letter.",
     "zh": "模型以 zero-shot 方式回答全部 505 道英文四选一题，并返回一个最终选项字母。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "quantitative-reasoning"
+  ]
 }

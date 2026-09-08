@@ -4,6 +4,7 @@
 import csv
 import hashlib
 import json
+import os
 import re
 import sys
 from datetime import date, datetime
@@ -21,6 +22,16 @@ OBSERVATION_OUT = ROOT / "data" / "observations.jsonl"
 EVIDENCE_OUT = ROOT / "data" / "evidence.jsonl"
 MODEL_OUT = ROOT / "data" / "models.json"
 ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
+CAPABILITY_LABEL_REGISTRY = ROOT / "data" / "capability_labels.json"
+
+
+def build_date():
+    """Return today's date, or a deterministic date supplied by the build."""
+    override = os.environ.get("BLE_SNAPSHOT_DATE")
+    return date.fromisoformat(override) if override else date.today()
+
+
+BUILD_DATE = build_date()
 
 BENCHMARK_REGISTRY = ROOT / "data" / "benchmarks"
 sys.path.insert(0, str(ROOT / "src"))
@@ -31,13 +42,14 @@ from benchmark_observatory.registry import load_benchmark_specs
 BENCHMARKS = load_benchmark_specs(BENCHMARK_REGISTRY, RAW)
 
 INDEX_BENCHMARK_FIELDS = (
-    "id", "name", "domain", "release", "evaluation_type", "tags",
+    "id", "name", "domain", "release", "evaluation_type", "tags", "labels",
     "score_format", "score_decimals", "capability_frontier_value",
     "normalized_progress", "normalized_headroom", "threshold_days",
     "velocity_180d", "coverage", "cost_per_task", "lifecycle_eligibility",
 )
 
 _organization_payload = json.loads(ORGANIZATION_REGISTRY.read_text())
+CAPABILITY_LABELS = json.loads(CAPABILITY_LABEL_REGISTRY.read_text())["labels"]
 REFERENCE_ORGANIZATIONS = tuple(_organization_payload["reference_organizations"])
 REFERENCE_ORGANIZATION_NAMES = tuple(item["name"] for item in REFERENCE_ORGANIZATIONS)
 REFERENCE_ORGANIZATION_ALIASES = {
@@ -202,6 +214,7 @@ def write_public_data_bundles(payload):
         "snapshot_id": payload["snapshot_id"],
         "source": payload["source"],
         "reference_organizations": payload["reference_organizations"],
+        "capability_labels": payload["capability_labels"],
         "benchmarks": index_benchmarks,
         "lifecycle_views": payload["lifecycle_views"],
     }
@@ -766,7 +779,7 @@ def build_benchmark(spec, resources, models, evidence_records):
                 }),
                 "evaluation_date_sources": dates["evaluation_date_sources"],
                 "score_publication_date_sources": dates["score_publication_date_sources"],
-                "ingested_at": datetime.now().date().isoformat(),
+                "ingested_at": BUILD_DATE.isoformat(),
                 "date_precision": dates["observation_date_precision"],
                 "date_notes": None if result_public_date else "A score-publication date is not present in the source export.",
                 "date": observation_date,
@@ -811,7 +824,7 @@ def build_benchmark(spec, resources, models, evidence_records):
         progress = (current["score"] - progress_baseline) / (progress_target - progress_baseline)
         progress = max(0.0, min(1.0, progress))
     release = date.fromisoformat(spec["release"])
-    snapshot_date = date.today()
+    snapshot_date = BUILD_DATE
     threshold_days = threshold_metrics(capability_frontier, release, progress_baseline, progress_target, snapshot_date)
     reported_threshold_days = threshold_metrics(reported_frontier, release, progress_baseline, progress_target, snapshot_date)
     velocity_180d = frontier_velocity(capability_frontier)
@@ -872,6 +885,7 @@ def build_benchmark(spec, resources, models, evidence_records):
         "input_unit": spec["input_unit"],
         "evaluation_type": spec["evaluation_type"],
         "tags": spec["tags"],
+        "labels": spec["labels"],
         "metric": spec["score"],
         "score_format": spec.get("score_format", "ratio"),
         "score_decimals": spec.get("score_decimals"),
@@ -957,12 +971,13 @@ def main():
             model["roles"].append(panel_model["role"])
         if release_resource_id and release_resource_id not in model["resource_ids"]:
             model["resource_ids"].append(release_resource_id)
-    snapshot_date = date.today()
+    snapshot_date = BUILD_DATE
     payload = {
         "schema_version": 2,
-        "snapshot_id": datetime.now().strftime("%Y-%m-%d"),
+        "snapshot_id": BUILD_DATE.isoformat(),
         "source": "Curated benchmark exports; see resource registry for source lineage",
         "reference_organizations": list(REFERENCE_ORGANIZATIONS),
+        "capability_labels": CAPABILITY_LABELS,
         "resources": sorted(resources.values(), key=lambda item: item["id"]),
         "models": sorted(models.values(), key=lambda item: item["id"]),
         "benchmarks": benchmarks,

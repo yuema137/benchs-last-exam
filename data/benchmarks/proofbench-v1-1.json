@@ -39,5 +39,9 @@
   "task_format": {
     "en": "The model receives a natural-language theorem paired with a Lean 4 formalization and must generate a proof accepted by the Lean kernel.",
     "zh": "模型会收到自然语言 theorem 及其 Lean 4 formalization，需要生成一个被 Lean kernel 接受的 proof。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "quantitative-reasoning"
+  ]
 }

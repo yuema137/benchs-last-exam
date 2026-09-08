@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Generate a SMILES string for the uniquely specified molecular structure in each of 200 prompts.",
     "zh": "为 200 条无歧义描述中的唯一分子结构生成 SMILES。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "spatial-reasoning",
+    "design-optimization"
+  ]
 }

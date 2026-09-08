@@ -14,7 +14,7 @@ There is exactly one source record per active benchmark/version. The filename mu
 
 A complete addition provides:
 
-1. canonical identity, version, release date, Evaluation Type, and Domain;
+1. canonical identity, version, release date, Evaluation Type, mutually exclusive Domain, and reviewed capability labels;
 2. concise English and Chinese summary, task format, scoring explanation, and evaluation target;
 3. benchmark resources and source-linked canonical observations;
 4. resolvable models, dates, protocols, and capability-frontier lineage;
@@ -90,6 +90,8 @@ Selection evidence such as citation counts belongs in curation documentation, wi
 4. Run the acceptance sequence above. The build discovers every registry file, produces its leaderboard/detail representation, and derives all story views from canonical metrics.
 
 The typed loader rejects missing EN/ZH copy, unsupported types/units, unknown fields, duplicate IDs or measurement identities, missing raw files, non-HTTP sources, and non-contiguous registry order. The integration validator requires the generated benchmark IDs to match the registry IDs in the same deterministic order.
+
+Every benchmark also has one or more explicit `labels` drawn from `data/capability_labels.json`. Domain is mutually exclusive; labels are many-to-many and describe capabilities centrally demanded by the task. Free-form `tags` may describe protocols, formats, populations, or subjects and must not substitute for controlled labels. Follow [CAPABILITY_LABELS.md](CAPABILITY_LABELS.md) when adding or changing a card.
 
 ## Generated runtime boundary
 

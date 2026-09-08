@@ -25,6 +25,7 @@ class PublicDataBundleTests(unittest.TestCase):
         cls.index = json.loads(INDEX.read_text())
 
     def test_index_contains_every_benchmark_without_detail_payloads(self):
+        self.assertEqual(self.index["capability_labels"], self.snapshot["capability_labels"])
         self.assertEqual(
             [item["id"] for item in self.index["benchmarks"]],
             [item["id"] for item in self.snapshot["benchmarks"]],

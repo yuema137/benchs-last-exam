@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model solves 123 text-only Physics questions and returns single-choice, multiple-choice, integer, or numeric answers.",
     "zh": "模型解决 123 道纯文本 Physics 题，并返回单选、多选、整数或数值答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

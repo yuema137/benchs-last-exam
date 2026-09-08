@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model receives a Python function signature and docstring, then generates an implementation that is run against hidden tests.",
     "zh": "模型会收到 Python function signature 和 docstring，然后生成实现并通过隐藏测试运行。"
-  }
+  },
+  "labels": [
+    "code-generation",
+    "code-execution-debugging",
+    "design-optimization"
+  ]
 }

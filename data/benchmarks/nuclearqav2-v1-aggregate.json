@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model answers 1,239 Boolean, numerical, and short verbal nuclear-engineering questions.",
     "zh": "模型回答 1,239 道核工程判断、数值和简短概念题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

@@ -39,5 +39,11 @@
   "task_format": {
     "en": "The agent receives a real-world question and must browse across websites, gather evidence, reason over it, and submit a final answer.",
     "zh": "agent 会收到一个真实世界问题，需要跨网站浏览、收集证据、进行推理，并提交最终答案。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

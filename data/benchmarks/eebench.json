@@ -41,5 +41,12 @@
   "task_format": {
     "en": "The agent works through an electrical-engineering task using the benchmark's supported coding and engineering-tool setup, then submits an artifact evaluated against task-specific checks.",
     "zh": "agent 需要在 benchmark 支持的 coding 和 engineering-tool setup 中完成 electrical-engineering task，再提交由 task-specific checks 检查的 artifact。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "design-optimization"
+  ]
 }

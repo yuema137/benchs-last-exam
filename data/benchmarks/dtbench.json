@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers 407 handcrafted multiple-choice questions about decision-theoretic situations, including prediction and interaction with near-copies.",
     "zh": "模型需要回答 407 道人工设计的 multiple-choice decision theory 问题，内容包括行为预测以及和近似副本互动。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "formal-deductive-reasoning"
+  ]
 }

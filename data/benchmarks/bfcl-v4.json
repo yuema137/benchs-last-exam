@@ -38,5 +38,13 @@
   "task_format": {
     "en": "The model receives a user request and function definitions, then must emit valid calls and arguments; V4 adds multi-turn state, error recovery, and agentic formats.",
     "zh": "模型会收到用户请求和 function 定义，需要输出有效的调用及参数；V4 增加了 multi-turn state、错误恢复和 agentic format。"
-  }
+  },
+  "labels": [
+    "instruction-following",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "error-recovery"
+  ]
 }

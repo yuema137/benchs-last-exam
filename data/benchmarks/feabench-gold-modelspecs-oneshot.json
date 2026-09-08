@@ -38,5 +38,10 @@
   "task_format": {
     "en": "For 15 verified problems, the model receives complete model specifications and one example, then writes COMSOL Java API calls.",
     "zh": "对 15 个验证任务，模型获得完整建模规格和一个示例，再生成 COMSOL Java API 调用。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "code-generation",
+    "design-optimization"
+  ]
 }

@@ -39,5 +39,13 @@
   "task_format": {
     "en": "An agent works across browser, office, communication, and coding tools to complete a workplace task; success is checked against the resulting state and deliverable.",
     "zh": "agent 需要跨浏览器、办公、沟通和 coding 工具完成 workplace task，结果通过最终状态和交付物检查。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-generation"
+  ]
 }

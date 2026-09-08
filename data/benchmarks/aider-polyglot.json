@@ -40,5 +40,10 @@
   "task_format": {
     "en": "The model receives an Exercism coding exercise and must make the requested repository edit using Aider's editing format.",
     "zh": "模型会收到一个 Exercism 编程题，需要用 Aider 要求的编辑格式修改代码仓库。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "code-generation",
+    "design-optimization"
+  ]
 }

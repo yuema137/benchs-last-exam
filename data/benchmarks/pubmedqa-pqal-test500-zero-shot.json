@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Given a research question and abstract without its conclusion, select yes, no, or maybe.",
     "zh": "给定研究问题及去掉结论的摘要，选择 yes、no 或 maybe。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "information-retrieval"
+  ]
 }

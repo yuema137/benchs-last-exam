@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model selects one of four answers for 245 validated Base, Reasoning, and Hypothetical climate questions.",
     "zh": "模型回答 245 道通过验证的四选一气候题，覆盖 Base、Reasoning 和 Hypothetical。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

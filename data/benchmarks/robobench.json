@@ -39,5 +39,10 @@
   "task_format": {
     "en": "The model receives visual and task context for robotics scenarios and answers under the benchmark's multimodal reasoning protocol.",
     "zh": "模型会收到 robotics 场景中的视觉和 task context，并按照 benchmark 的 multimodal reasoning protocol 作答。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "planning"
+  ]
 }

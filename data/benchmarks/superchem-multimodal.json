@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model receives the multimodal version of an expert chemistry problem and produces a reasoned final answer.",
     "zh": "模型会收到 expert chemistry problem 的 multimodal 版本，并给出带推理的最终答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "multimodal-perception"
+  ]
 }

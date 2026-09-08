@@ -40,5 +40,12 @@
   "task_format": {
     "en": "The agent attempts a suite of software and research tasks whose human-equivalent completion times vary substantially, using a standardized evaluation scaffold.",
     "zh": "agent 会在标准化 evaluation scaffold 下完成一组 software 和 research task，这些 task 对人类而言所需的等效完成时间差异很大。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking"
+  ]
 }

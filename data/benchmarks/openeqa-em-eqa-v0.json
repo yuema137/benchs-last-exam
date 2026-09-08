@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model receives an open-ended embodied question and sampled frames from a prerecorded egocentric environment history.",
     "zh": "模型会收到一道开放式具身问题，以及从预录第一人称环境历史中采样的图像帧。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "state-tracking"
+  ]
 }

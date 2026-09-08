@@ -37,5 +37,8 @@
   "task_format": {
     "en": "Each item is a four-choice multiple-choice question. The model selects one answer.",
     "zh": "每个 task 都是四选一问题，模型需要选出一个答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The model answers multiple-choice or numerical questions paired with scientific plots, spectra, apparatus images, tables, and structures.",
     "zh": "模型回答与科研图表、光谱、实验装置图、数据表和结构图配套的选择题或数值题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "quantitative-reasoning",
+    "multimodal-perception",
+    "state-tracking"
+  ]
 }

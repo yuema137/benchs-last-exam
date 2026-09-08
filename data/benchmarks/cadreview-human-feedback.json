@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The model sees correct reference renders, an erroneous block-labeled OpenSCAD program, and its render, then identifies the error block and class.",
     "zh": "模型会看到正确参考渲染、带 block label 的错误 OpenSCAD 程序及其渲染图，然后定位错误 block 并判断错误类型。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "spatial-reasoning",
+    "multimodal-perception",
+    "code-execution-debugging",
+    "design-optimization"
+  ]
 }

@@ -39,5 +39,10 @@
   "task_format": {
     "en": "The system uses shell and web access in an agentic loop to produce documents, slides, diagrams, spreadsheets, or other work products.",
     "zh": "系统会在 agentic loop 中使用 shell 和 web 工具，产出文档、slides、图表、表格或其他工作成果。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "environment-interaction"
+  ]
 }

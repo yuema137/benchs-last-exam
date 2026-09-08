@@ -38,5 +38,10 @@
   "task_format": {
     "en": "The model completes one numerical function for each of 33 FEM and structural-analysis tasks.",
     "zh": "模型为 33 个有限元与结构分析 task 分别补全一个数值函数。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "code-generation"
+  ]
 }

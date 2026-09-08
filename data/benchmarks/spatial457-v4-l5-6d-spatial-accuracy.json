@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Answer 1,837 five-choice questions grounded in 1,000 synthetic 3D scenes.",
     "zh": "回答基于 1,000 个合成三维场景的 1,837 道五选一问题。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

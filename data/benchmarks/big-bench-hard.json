@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a short text prompt and produces an answer for one of 23 task types, such as logical reasoning, tracking, or classification.",
     "zh": "模型会收到简短的文字 prompt，并完成 23 类 task 中的一类，例如逻辑推理、状态跟踪或分类。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "formal-deductive-reasoning"
+  ]
 }

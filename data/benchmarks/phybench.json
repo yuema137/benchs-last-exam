@@ -39,5 +39,9 @@
   "task_format": {
     "en": "The model solves a fixed set of 500 original physics problems and submits answers checked by the benchmark's verification procedure.",
     "zh": "模型需要解决固定的 500 道原创物理题，并提交由 benchmark verification procedure 检查的答案。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

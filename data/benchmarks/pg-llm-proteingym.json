@@ -41,5 +41,8 @@
   "task_format": {
     "en": "For each assay, the model receives the wild-type sequence and assay context, then returns a JSON ranking of 50 shuffled full-length mutant sequences.",
     "zh": "对于每个 assay，模型会收到 wild-type sequence 和 assay context，再以 JSON 返回 50 个打乱顺序的 full-length mutant sequence 排名。"
-  }
+  },
+  "labels": [
+    "knowledge-recall"
+  ]
 }

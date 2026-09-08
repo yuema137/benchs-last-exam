@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Each item is a four-choice science question. The model selects one answer, usually without access to external tools in the reported score.",
     "zh": "每个 task 都是四选一科学问题，模型需要选一个答案；公开分数通常不包含外部工具使用。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

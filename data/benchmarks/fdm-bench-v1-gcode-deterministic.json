@@ -38,5 +38,8 @@
   "task_format": {
     "en": "Given a G-code file and printer context, the model chooses normal, under-extrusion, over-extrusion, or spaghetti failure.",
     "zh": "模型根据 G-code 文件和打印机 context，在正常、挤出不足、挤出过量或意大利面式失败中选择一个标签。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning"
+  ]
 }

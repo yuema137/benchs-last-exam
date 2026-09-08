@@ -39,5 +39,9 @@
   "task_format": {
     "en": "The model answers a fixed 113-question multiple-choice subset covering undergraduate materials science. ScienceEval's comparable panel samples eight responses per question for pass@1 estimation.",
     "zh": "模型回答固定的 113 道本科材料科学 multiple-choice question。ScienceEval 的可比 panel 对每道题采样八次，用于估计 pass@1。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

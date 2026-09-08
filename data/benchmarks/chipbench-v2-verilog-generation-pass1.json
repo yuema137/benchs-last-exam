@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Given a hardware specification and supplied interfaces, the model writes a complete implementation for one of 44 modules.",
     "zh": "模型根据硬件规格和提供的接口，为 44 个模块之一生成完整实现。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "code-generation",
+    "design-optimization"
+  ]
 }

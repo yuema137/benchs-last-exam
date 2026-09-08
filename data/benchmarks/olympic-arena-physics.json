@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The model solves English or Chinese olympiad physics questions with original visual inputs and returns an answer in the prescribed type-specific format.",
     "zh": "模型解决带原始视觉输入的中英文奥赛物理题，并按答案类型规定的格式返回结果。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

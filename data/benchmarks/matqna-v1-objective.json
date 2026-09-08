@@ -39,5 +39,9 @@
   "task_format": {
     "en": "Answer 2,219 objective questions about characterization methods, results, and applications.",
     "zh": "回答 2,219 道关于表征方法、实验结果和应用的客观题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

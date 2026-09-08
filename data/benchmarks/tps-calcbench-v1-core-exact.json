@@ -38,5 +38,8 @@
   "task_format": {
     "en": "The model solves 420 core engineering problems, shows calculation steps, and returns a final numerical answer with units.",
     "zh": "模型解决 420 道核心工程计算题，展示计算步骤，并给出带单位的最终数值答案。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning"
+  ]
 }

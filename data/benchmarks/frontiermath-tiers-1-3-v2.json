@@ -37,5 +37,9 @@
   "task_format": {
     "en": "The model writes a Python answer function for each mathematics problem and can use an isolated Python tool while solving.",
     "zh": "模型需要为每道数学题编写 Python answer function，解题时可以使用隔离的 Python 工具。"
-  }
+  },
+  "labels": [
+    "formal-deductive-reasoning",
+    "quantitative-reasoning"
+  ]
 }

@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers 299 progressive open-ended astrodynamics questions; earlier solved questions and solutions become context for later questions in a set.",
     "zh": "模型回答 299 道递进式开放轨道动力学题；同一题组中已经答对的问题及解答会成为后续问题的 context。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "quantitative-reasoning"
+  ]
 }

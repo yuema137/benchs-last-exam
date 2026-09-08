@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers 726 Chinese four-choice test questions without examples under the OpenCompass protocol.",
     "zh": "模型按照 OpenCompass protocol，在无示例条件下回答 726 道中文四选一测试题。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "quantitative-reasoning"
+  ]
 }

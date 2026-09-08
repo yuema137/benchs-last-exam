@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a multi-turn conversation between a person and a health assistant, then writes the best response to the user's last message.",
     "zh": "模型会收到一段用户和 health assistant 的多轮对话，然后回答用户最后一条消息。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "state-tracking"
+  ]
 }

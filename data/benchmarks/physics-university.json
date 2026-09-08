@@ -38,5 +38,8 @@
   "task_format": {
     "en": "The model answers a fixed 1,297-problem university-physics set spanning six domains, using the benchmark's automatic answer verification.",
     "zh": "模型回答固定的 1,297 道大学物理题，覆盖六个领域，并使用 benchmark 的自动答案验证。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning"
+  ]
 }

@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model solves the same broad academic task style under Standard-10 and Vision formats; the Vision format embeds the question and options in the image.",
     "zh": "模型在 Standard-10 和 Vision 两种格式下完成 academic task；Vision 格式会把问题和选项直接放进图片。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "multimodal-perception"
+  ]
 }

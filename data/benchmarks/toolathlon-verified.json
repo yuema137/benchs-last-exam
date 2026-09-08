@@ -39,5 +39,13 @@
   "task_format": {
     "en": "The system receives a task and access to a fixed set of MCP servers or local toolkits, then must complete the requested workflow through tool calls.",
     "zh": "系统会收到一个 task，并获得固定 MCP server 或 local toolkit 的访问权限，然后需要通过 tool calls 完成指定 workflow。"
-  }
+  },
+  "labels": [
+    "instruction-following",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

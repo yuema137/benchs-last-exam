@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives a natural-language hardware specification and port interface, then generates one complete SystemVerilog TopModule.",
     "zh": "模型会收到自然语言硬件规格和端口接口，再生成一个完整的 SystemVerilog TopModule。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "code-generation"
+  ]
 }

@@ -39,5 +39,14 @@
   "task_format": {
     "en": "The agent works on repository-level engineering tasks and submits changes evaluated across implementation correctness, performance, and research-oriented quality criteria.",
     "zh": "agent 需要完成 repository-level engineering task 并提交修改，结果会从实现正确性、性能和 research quality 等维度评估。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

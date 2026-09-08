@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Generate molecular structures satisfying natural-language requirements across nine fixed subtasks.",
     "zh": "在九个固定子任务中生成满足自然语言要求的分子结构。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "design-optimization"
+  ]
 }

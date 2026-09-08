@@ -39,5 +39,14 @@
   "task_format": {
     "en": "The agent edits repository-level scientific software in an execution environment and must pass the benchmark's software and scientific correctness checks.",
     "zh": "agent 需要在 execution environment 中修改 repository-level scientific software，并通过 software 和 scientific correctness checks。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "error-recovery",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

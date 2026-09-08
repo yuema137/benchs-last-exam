@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model receives an engineering question with text and, when needed, a technical diagram, then returns a concise final answer.",
     "zh": "模型会收到带文字并可能包含技术图表的工程问题，然后给出简洁的最终答案。"
-  }
+  },
+  "labels": [
+    "mechanistic-reasoning",
+    "multimodal-perception"
+  ]
 }

@@ -38,5 +38,9 @@
   "task_format": {
     "en": "Answer five-choice questions spanning eight subtasks using synchronized multiview robot images.",
     "zh": "使用同步多视角机器人图像回答覆盖八个子任务的五选一问题。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception"
+  ]
 }

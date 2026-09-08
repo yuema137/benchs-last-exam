@@ -37,5 +37,9 @@
   "task_format": {
     "en": "Each task shows example input-output grids. The system must produce exactly two candidate outputs for the test input.",
     "zh": "每个 task 会给出输入和输出网格示例，系统需要为测试输入生成恰好两个候选输出。"
-  }
+  },
+  "labels": [
+    "rule-induction-abstraction",
+    "multimodal-perception"
+  ]
 }

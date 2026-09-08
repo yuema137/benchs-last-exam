@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model answers one of ten options for each text-only medical question under the official zero-shot chain-of-thought prompt, without retrieval or tools.",
     "zh": "模型按照官方 zero-shot chain-of-thought prompt 回答 text-only 医学十选一题，不使用 retrieval 或 tool。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

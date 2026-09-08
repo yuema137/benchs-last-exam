@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The model gives one zero-shot open-ended answer to each of 200 process-systems engineering questions.",
     "zh": "模型对 200 道 process-systems engineering 开放题分别给出一次 zero-shot 答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "design-optimization"
+  ]
 }

@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Each item is a multiple-choice science question with a short context that may include an image or diagram. The model selects an answer.",
     "zh": "每道题都是科学选择题，题目可能附带图片或示意图。模型需要选出答案。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "multimodal-perception"
+  ]
 }

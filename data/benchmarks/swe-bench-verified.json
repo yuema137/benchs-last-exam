@@ -37,5 +37,13 @@
   "task_format": {
     "en": "The agent receives a repository and issue description, edits files in an environment, and submits a patch. This is not a one-shot answer task.",
     "zh": "agent 会收到一个代码仓库和 issue 描述，在环境里修改文件并提交 patch。这不是只回答一次文本的问题。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }

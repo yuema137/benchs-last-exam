@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The agent receives a research question, searches for evidence, and produces a long-form report with supporting citations.",
     "zh": "agent 会收到研究问题，检索证据，并提交带有引用的长篇报告。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

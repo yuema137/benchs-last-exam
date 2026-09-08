@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent must produce a self-contained Python program that analyzes scientific data and generates the required result in a reproducible environment.",
     "zh": "agent 需要生成一个 self-contained Python program，在可复现环境中分析科学数据并产出要求的结果。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "experimental-design"
+  ]
 }

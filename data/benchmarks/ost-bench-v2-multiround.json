@@ -38,5 +38,10 @@
   "task_format": {
     "en": "Each dialogue round appends four or five chronological egocentric frames, and the model answers a question about the scene state at that time.",
     "zh": "每轮对话追加四到五张按时间排列的第一人称图像，模型需要回答该时刻场景状态相关的问题。"
-  }
+  },
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "state-tracking"
+  ]
 }

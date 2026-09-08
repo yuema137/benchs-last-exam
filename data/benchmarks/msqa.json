@@ -38,5 +38,9 @@
   "task_format": {
     "en": "The benchmark contains graduate-level materials questions in long-answer and binary-answer formats; this card uses the fixed overall accuracy series reported by the unified ScienceEval panel.",
     "zh": "benchmark 包含 graduate-level materials question，分为 long-answer 和 binary-answer format；本卡使用统一 ScienceEval panel 报告的 fixed overall accuracy series。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning"
+  ]
 }

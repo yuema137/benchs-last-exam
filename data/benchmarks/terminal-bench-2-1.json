@@ -38,5 +38,12 @@
   "task_format": {
     "en": "The agent receives an instruction and a containerized terminal task with tests, then must leave the environment in a passing state.",
     "zh": "agent 会收到指令和带测试的容器化 terminal task，最后必须让环境通过检查。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-execution-debugging"
+  ]
 }

@@ -38,5 +38,11 @@
   "task_format": {
     "en": "The agent operates a computer through tools under a task and step budget, then receives credit for completing the requested outcome.",
     "zh": "agent 通过工具操作电脑，在规定的 task 和步数预算内完成目标，最后根据结果计分。"
-  }
+  },
+  "labels": [
+    "information-retrieval",
+    "planning",
+    "tool-use",
+    "environment-interaction"
+  ]
 }

@@ -39,5 +39,11 @@
   "task_format": {
     "en": "The model receives a physics problem with an image or image-derived caption and produces a worked answer across one or more sub-questions.",
     "zh": "模型会收到一道带图片或图片文字描述的物理题，并针对一个或多个 sub-question 给出完整解答。"
-  }
+  },
+  "labels": [
+    "knowledge-recall",
+    "mechanistic-reasoning",
+    "quantitative-reasoning",
+    "multimodal-perception"
+  ]
 }

@@ -38,5 +38,11 @@
   "task_format": {
     "en": "Generate a Blender Python script for each of 200 natural-language modeling requests.",
     "zh": "为 200 条自然语言建模需求生成 Blender Python 脚本。"
-  }
+  },
+  "labels": [
+    "quantitative-reasoning",
+    "spatial-reasoning",
+    "code-generation",
+    "design-optimization"
+  ]
 }

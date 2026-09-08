@@ -38,5 +38,13 @@
   "task_format": {
     "en": "Using a stateful Python REPL and fixed API, the agent builds automatic factories for 24 products under a 128-interaction horizon.",
     "zh": "agent 通过有状态 Python REPL 和固定 API，在 128 次 interaction 内为 24 种产品建设自动工厂。"
-  }
+  },
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-generation",
+    "design-optimization"
+  ]
 }

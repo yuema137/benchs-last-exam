@@ -39,5 +39,14 @@
   "task_format": {
     "en": "The agent inspects a repository, plans and edits multiple files, runs tests, and submits a patch for an issue-level task.",
     "zh": "agent 需要检查代码仓库、规划并修改多个文件、运行测试，然后为 issue-level task 提交 patch。"
-  }
+  },
+  "labels": [
+    "long-context-integration",
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "state-tracking",
+    "code-generation",
+    "code-execution-debugging"
+  ]
 }
