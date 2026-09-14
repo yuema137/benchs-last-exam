@@ -3950,7 +3950,7 @@
     "configuration_id": "claude-opus-4-7",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-opus-4-7",
-    "release_date": "2026-04-10",
+    "release_date": "2026-04-16",
     "organization": "Anthropic",
     "resource_ids": [
       "resource-https-robo-bench-github-io-587e0991eb7fd54d",
@@ -4276,7 +4276,7 @@
     "configuration_id": "Claude Opus 4.8",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-opus-4-8",
-    "release_date": "2026-05-14",
+    "release_date": "2026-05-28",
     "organization": "Anthropic",
     "resource_ids": [
       "resource-https-agents-last-exam-org-leaderboard-28aa05e4c40dc8ca",
@@ -11414,7 +11414,7 @@
     "configuration_id": "Gemini 3.5 Flash",
     "identity_organization": "google",
     "family_id": "google-gemini-3-5-flash",
-    "release_date": "2025-11-20",
+    "release_date": "2026-05-19",
     "organization": "Google",
     "resource_ids": [
       "resource-https-github-com-zapier-automationbench-45f05783897a22a1",
@@ -13482,7 +13482,7 @@
     "configuration_id": "GLM 5.1",
     "identity_organization": "z-ai",
     "family_id": "z-ai-glm-5-1",
-    "release_date": "2026-03-15",
+    "release_date": "2026-04-07",
     "organization": "Z.ai",
     "resource_ids": [
       "resource-https-terminalworld-ai-leaderboard-db563da404f5df77",
@@ -22655,7 +22655,7 @@
     "configuration_id": "kimi-k2.6",
     "identity_organization": "moonshot",
     "family_id": "moonshot-kimi-k2-6",
-    "release_date": "2026-03-01",
+    "release_date": "2026-04-20",
     "organization": "Moonshot",
     "resource_ids": [
       "resource-https-epoch-benchmarks-production-public-s3-us-e-7fcda6e1799392c9",
