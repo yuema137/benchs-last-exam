@@ -967,7 +967,7 @@ def build_benchmark(spec, resources, models, evidence_records):
         "reported_velocity_180d": reported_velocity_180d,
         "cost_per_task": cost,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATION_NAMES), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
-        "unavailable": ["T80: not included in the first vertical slice"],
+        "unavailable": [],
         "resource_ids": [benchmark_resource_id],
         "date_policy": "Primary lifecycle time uses the earliest available date among evaluation/run time, model release time, and the earliest recorded score-publication time for the same observation. Plot dates and T50/T80/T90 are clipped at benchmark release, so lifecycle durations are never negative; original dates remain preserved for provenance.",
         "historical_frontier_status": "unknown_public_dates" if not reported_frontier else "available",
