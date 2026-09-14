@@ -246,6 +246,38 @@ class SnapshotInvariantTests(unittest.TestCase):
             for view_ids in payload["lifecycle_views"].values():
                 self.assertIsInstance(benchmark_id in view_ids, bool)
 
+    def test_snapshot_id_is_pinned_to_the_latest_evidence_date(self):
+        # The snapshot must be dated "as of" the most recent dated evidence in
+        # the raw exports, not the wall-clock build day, so a rebuild is stable.
+        import csv as _csv
+        import datetime as _dt
+
+        repo = SNAPSHOT.parents[2]
+        raw = repo / "data" / "raw"
+        columns = (
+            "Started at", "Evaluation date", "Date of evaluation", "Run date",
+            "Release date", "Result public date", "Source publication date",
+            "Date added", "Last updated",
+        )
+        latest = None
+        for spec_path in (repo / "data" / "benchmarks").glob("*.json"):
+            spec = json.loads(spec_path.read_text())
+            with (raw / spec["file"]).open(newline="") as handle:
+                for row in _csv.DictReader(handle):
+                    for column in columns:
+                        value = (row.get(column) or "").strip()[:10]
+                        for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%Y-%m"):
+                            try:
+                                iso = _dt.datetime.strptime(value, fmt).date().isoformat()
+                            except ValueError:
+                                continue
+                            if latest is None or iso > latest:
+                                latest = iso
+                            break
+        self.assertIsNotNone(latest)
+        payload = json.loads(SNAPSHOT.read_text())
+        self.assertEqual(payload["snapshot_id"], latest)
+
     def test_new_story_membership_is_recomputed_from_metrics(self):
         payload = json.loads(SNAPSHOT.read_text())
         views = payload["lifecycle_views"]

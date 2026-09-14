@@ -25,14 +25,6 @@ ORGANIZATION_REGISTRY = ROOT / "data" / "organizations.json"
 CAPABILITY_LABEL_REGISTRY = ROOT / "data" / "capability_labels.json"
 
 
-def build_date():
-    """Return today's date, or a deterministic date supplied by the build."""
-    override = os.environ.get("BLE_SNAPSHOT_DATE")
-    return date.fromisoformat(override) if override else date.today()
-
-
-BUILD_DATE = build_date()
-
 BENCHMARK_REGISTRY = ROOT / "data" / "benchmarks"
 sys.path.insert(0, str(ROOT / "src"))
 
@@ -356,6 +348,47 @@ def normalize_date(value):
         except ValueError:
             pass
     raise ValueError(f"Unsupported date value {value!r}")
+
+
+# Every column in the raw exports that can carry a dated piece of evidence.
+SNAPSHOT_DATE_COLUMNS = (
+    "Started at", "Evaluation date", "Date of evaluation", "Run date",
+    "Release date", "Result public date", "Source publication date",
+    "Date added", "Last updated",
+)
+
+
+def latest_evidence_date():
+    """Return the most recent dated evidence across every raw export.
+
+    The snapshot is defined "as of" this date rather than the wall-clock day it
+    is built, so rebuilding from the same committed inputs is byte-stable. This
+    scans only actual benchmark observations; reference-panel release anchors
+    without results do not move the date.
+    """
+    latest = None
+    for spec in BENCHMARKS:
+        with (RAW / spec["file"]).open(newline="") as handle:
+            for row in csv.DictReader(handle):
+                for column in SNAPSHOT_DATE_COLUMNS:
+                    value, _ = normalize_date(row.get(column))
+                    if value and (latest is None or value > latest):
+                        latest = value
+    if latest is None:
+        raise ValueError("No dated evidence found; cannot determine a snapshot date.")
+    return date.fromisoformat(latest)
+
+
+def build_date():
+    """The snapshot "as of" date: an explicit override, else the latest evidence.
+
+    Never today's wall-clock date, so the generated snapshot stays reproducible.
+    """
+    override = os.environ.get("BLE_SNAPSHOT_DATE")
+    return date.fromisoformat(override) if override else latest_evidence_date()
+
+
+BUILD_DATE = build_date()
 
 
 def earliest_row_date(row, columns):

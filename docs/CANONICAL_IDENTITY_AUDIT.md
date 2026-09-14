@@ -1,6 +1,6 @@
 # Canonical Identity Audit
 
-Snapshot: `2026-09-14` · schema version `2`
+Snapshot: `2026-09-04` · schema version `2`
 
 A source row is preserved as evidence. Exact duplicate measurements may share one canonical observation; model/display setting, protocol, task set, score series, and score must all match.
 
