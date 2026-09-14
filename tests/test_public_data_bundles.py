@@ -64,9 +64,23 @@ class PublicDataBundleTests(unittest.TestCase):
         self.assertEqual(resources["resources"], self.snapshot["resources"])
 
     def test_public_data_generation_is_reproducible(self):
+        # Rebuilding overwrites tracked snapshot files. Restore their exact bytes
+        # afterwards so running the suite never leaves the working tree dirty.
+        tracked = [
+            SNAPSHOT,
+            ROOT / "data" / "observations.jsonl",
+            ROOT / "data" / "evidence.jsonl",
+            ROOT / "data" / "models.json",
+            ROOT / "data" / "resources.json",
+        ]
+        saved = {path: path.read_bytes() for path in tracked if path.exists()}
         before = public_hashes()
-        subprocess.run(["python3", "scripts/build_snapshot.py"], cwd=ROOT, check=True)
-        self.assertEqual(public_hashes(), before)
+        try:
+            subprocess.run(["python3", "scripts/build_snapshot.py"], cwd=ROOT, check=True)
+            self.assertEqual(public_hashes(), before)
+        finally:
+            for path, data in saved.items():
+                path.write_bytes(data)
 
 
 if __name__ == "__main__":
