@@ -1,6 +1,6 @@
 # Adversarial Score-Semantics Audit
 
-Snapshot: `2026-09-14`
+Snapshot: `2026-09-04`
 Benchmarks: 158
 
 ## Gate result

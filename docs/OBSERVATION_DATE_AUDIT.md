@@ -1,6 +1,6 @@
 # Observation Date Audit
 
-Snapshot: `2026-09-14`
+Snapshot: `2026-09-04`
 
 The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.
 
