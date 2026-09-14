@@ -1,27 +1,27 @@
 # Observation Date Audit
 
-Snapshot: `2026-09-05`
+Snapshot: `2026-09-14`
 
 The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.
 
-- Canonical measurements: **4090**
-- Source evidence records: **4231**
+- Canonical measurements: **4208**
+- Source evidence records: **4349**
 - Exact duplicate evidence rows merged: **141**
 - Observations without any candidate date: **354**
-- Observations selected before benchmark release and plotted as `At release`: **1110**
+- Observations selected before benchmark release and plotted as `At release`: **1213**
 
 ## Selected earliest-date evidence
 
 | Selected source kind(s) | Observations |
 |---|---:|
-| `model_release_date` | 3547 |
+| `model_release_date` | 3661 |
 | `unknown` | 354 |
 | `evaluation_date+model_release_date` | 83 |
 | `model_release_date+model_release_date` | 67 |
 | `evaluation_date` | 21 |
 | `model_release_date+model_release_date+model_release_date` | 13 |
+| `score_publication_date` | 5 |
 | `model_release_date+model_release_date+model_release_date+model_release_date` | 4 |
-| `score_publication_date` | 1 |
 
 ## Benchmark coverage
 
@@ -52,6 +52,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | ChemEBench 2025 — Zero-shot Overall | 7 | 7 | 7 | 1 |
 | ChemIQ | 5 | 5 | 4 | 1 |
 | CheMM-Bench ACL 2026 | 7 | 7 | 7 | 1 |
+| CHI-Bench | 30 | 30 | 30 | 1 |
 | ChipBench v2 — Verilog Pass@1 | 13 | 13 | 13 | 1 |
 | CIRCUIT — Zero-shot Global | 3 | 3 | 3 | 1 |
 | CircuitSense — Synthetic Analysis | 4 | 4 | 4 | 1 |
@@ -75,16 +76,19 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | EngiBench v2 — Level 3 | 6 | 6 | 6 | 1 |
 | EnviroExam — Zero-shot | 4 | 4 | 4 | 1 |
 | ExploitBench | 10 | 10 | 10 | 1 |
+| ExploitGym v1 | 7 | 7 | 7 | 1 |
 | Factorio Learning Environment — Planning | 6 | 6 | 6 | 1 |
 | FDM-Bench — G-code Detection | 4 | 4 | 4 | 1 |
 | FEABench Gold — Executability | 6 | 6 | 6 | 1 |
 | FEM-Bench 2025 — First Run | 10 | 10 | 10 | 1 |
 | FormationEval v0.1 | 7 | 7 | 7 | 1 |
+| FrontierChallenge | 11 | 11 | 11 | 1 |
 | FrontierCode 1.1 | 34 | 29 | 0 | 6 |
 | FrontierMath Tier 4 (v2) | 61 | 61 | 32 | 3 |
 | FrontierMath Tiers 1–3 (v2) | 104 | 104 | 76 | 3 |
 | FrontierSWE V2 | 9 | 9 | 0 | 2 |
 | GAIA | 6 | 6 | 0 | 5 |
+| GDP.pdf | 17 | 17 | 4 | 5 |
 | GDPval-AA v2 | 8 | 8 | 0 | 3 |
 | GeoNatureAgent v5 | 6 | 6 | 6 | 1 |
 | GMAI-MMBench v7 Test | 5 | 5 | 5 | 1 |
@@ -104,6 +108,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | LLM-MSE-MCQs | 5 | 5 | 0 | 1 |
 | LongBench v2 | 9 | 9 | 5 | 3 |
 | MaCBench v1 | 4 | 4 | 4 | 1 |
+| MADQA | 14 | 14 | 12 | 1 |
 | MaScQA — Corrected 644 | 9 | 9 | 3 | 5 |
 | MatCha v1 — Zero-shot | 5 | 5 | 5 | 1 |
 | MATH Level 5 | 108 | 108 | 0 | 12 |
@@ -125,6 +130,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | MolLangBench v1 — Generation | 10 | 10 | 10 | 1 |
 | MSQA | 6 | 6 | 5 | 1 |
 | MV-RoboBench v2 — Zero-shot Average | 7 | 7 | 7 | 1 |
+| NatureBench | 12 | 12 | 12 | 1 |
 | NuclearQAv2 — Aggregate | 6 | 6 | 6 | 1 |
 | OlympiadBench Physics | 5 | 5 | 3 | 2 |
 | OlympicArena Physics | 4 | 4 | 3 | 2 |
@@ -149,12 +155,14 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | QCalEval — April 2026 Zero-shot | 4 | 4 | 4 | 1 |
 | QuantiPhy — Overall MRA | 5 | 5 | 5 | 1 |
 | RoboBench | 7 | 7 | 3 | 2 |
+| SandboxEscapeBench | 9 | 9 | 9 | 1 |
 | SciCode | 159 | 155 | 0 | 14 |
 | ScienceAgentBench | 9 | 9 | 0 | 4 |
 | ScienceQA | 104 | 26 | 2 | 5 |
 | ScreenSpot-Pro | 5 | 5 | 3 | 3 |
 | SeePhys Pro — Level 4 Full | 5 | 5 | 5 | 1 |
 | SimpleQA Verified | 78 | 78 | 15 | 4 |
+| SkillsBench v1.1 | 18 | 18 | 18 | 1 |
 | Spatial457 v4 — L5 6D Spatial | 4 | 4 | 4 | 1 |
 | SpatialViz-Bench | 8 | 8 | 1 | 3 |
 | SUPERChem (Multimodal) | 2 | 2 | 2 | 1 |

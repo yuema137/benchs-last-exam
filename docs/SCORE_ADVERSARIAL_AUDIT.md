@@ -1,12 +1,12 @@
 # Adversarial Score-Semantics Audit
 
-Snapshot: `2026-09-05`
-Benchmarks: 150
+Snapshot: `2026-09-14`
+Benchmarks: 158
 
 ## Gate result
 
 - Ratio observations outside `[0, 1]`: **0**
-- Ratio observations below `1%`: **118**
+- Ratio observations below `1%`: **121**
 - Observations below a normalization/reference floor: **28**
 - Unbounded numeric observations above `100`: **79**
 
@@ -19,7 +19,9 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - **arc-agi-2** — 33 observations. ARC Prize reports pure LLMs near zero and public reasoning systems in single digits under pass@2.
 - **browsecomp** — 2 observations. OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.
 - **chemm-bench-acl2026** — 2 observations. The pinned ACL table reports zero/near-zero exact molecular-structure task performance.
+- **chi-bench** — 1 observations. The official Table 2 reports 0.4% overall pass@1 for Grok 4.3 under the OpenClaw harness on the policy-heavy healthcare workflows.
 - **critpt** — 62 observations. The official 70-challenge, five-run leaderboard reports several 0–0.9% accuracies.
+- **exploitgym-v1** — 2 observations. The official Table 3 reports single-digit successes out of 898 instances for several models (e.g. 4/898 and 7/898), i.e. genuine sub-1% exploit success rates.
 - **frontiermath-tier-4-v2** — 3 observations. The research-level Tier 4 set explicitly contains zero-score model runs.
 - **frontiermath-tiers-1-3-v2** — 4 observations. The fixed hard-math set permits zero and one/few-item successes.
 - **gsm8k** — 8 observations. HELM exact-match results for early models genuinely include zero and sub-1% accuracy.
@@ -90,7 +92,7 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - critpt / Claude 4 Sonnet (Reasoning) / 0.00285714
 - critpt / Qwen3 32B (Reasoning) / 0.00285714
 - critpt / Magistral Medium 1.2 / 0.00285714
-- …and 58 more canonical low-score observations.
+- …and 61 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
 

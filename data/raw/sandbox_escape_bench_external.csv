@@ -1,0 +1,10 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id
+claude-opus-4-5,0.52,2025-11-24,Anthropic,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-00
+gpt-5,0.49,2025-08-07,OpenAI,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-01
+claude-sonnet-4-5,0.4,2025-09-29,Anthropic,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-02
+gpt-5-mini,0.28,2025-08-07,OpenAI,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-03
+gpt-5.2,0.27,2025-12-11,OpenAI,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-04
+claude-haiku-4-5,0.18,2025-10-15,Anthropic,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-05
+deepseek-r1-0528,0.16,2025-05-28,DeepSeek,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-06
+gpt-oss-120b,0.16,2025-08-05,OpenAI,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-07
+gpt-5-nano,0.1,2025-08-07,OpenAI,2026-08-01,SandboxEscapeBench v3 Table 12(c),https://arxiv.org/html/2603.02277v3,sandbox-escape-bench-08

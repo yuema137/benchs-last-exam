@@ -1,0 +1,19 @@
+Name,Curated-Skills pass rate,Release date,Organization,Result public date,Source,Source link,id
+GPT-5.5 + OpenHands,0.673,2026-04-23,OpenAI,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-00
+GPT-5.5 + Codex CLI,0.665,2026-04-23,OpenAI,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-01
+Claude Opus 4.7 + Claude Code,0.612,2026-04-16,Anthropic,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-02
+Gemini 3.1 Pro + Gemini CLI,0.608,2026-02-19,Google DeepMind,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-03
+GLM 5.1 + OpenHands,0.584,2026-04-07,Z.ai,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-04
+Claude Opus 4.8 + OpenHands,0.541,2026-05-28,Anthropic,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-05
+Kimi K2.6 + OpenHands,0.54,2026-04-20,Moonshot,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-06
+Claude Opus 4.7 + OpenHands,0.531,2026-04-16,Anthropic,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-07
+MiniMax M3 + OpenHands,0.53,2026-06-01,MiniMax,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-08
+Gemini 3.1 Pro + OpenHands,0.528,2026-02-19,Google DeepMind,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-09
+DeepSeek V4 Pro + OpenHands,0.501,2026-04-24,DeepSeek,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-10
+Gemini 3.5 Flash + OpenHands,0.482,2026-05-19,Google DeepMind,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-11
+Claude Sonnet 4.6 + OpenHands,0.472,2026-02-17,Anthropic,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-12
+DeepSeek V4 Flash + OpenHands,0.447,2026-04-24,DeepSeek,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-13
+Grok 4.3 + OpenHands,0.417,2026-04-17,xAI,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-14
+GPT-5.4 Mini + OpenHands,0.414,2026-03-17,OpenAI,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-15
+MiniMax M2.7 + OpenHands,0.349,2026-03-18,MiniMax,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-16
+Gemini 3.1 Flash Lite + OpenHands,0.201,2026-03-03,Google DeepMind,2026-06-11,SkillsBench Table 2,https://arxiv.org/html/2602.12670v4,skillsbench-v1-1-17

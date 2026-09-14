@@ -2210,6 +2210,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-fable-5-adaptive-max-bb5b45055d31a98d",
+    "canonical_name": "Claude Fable 5 (Adaptive Max)",
+    "aliases": [],
+    "configuration_id": "Claude Fable 5 (Adaptive Max)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-fable-5",
+    "release_date": "2026-06-09",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-fable-5-claude-code-24828e7c882d633d",
     "canonical_name": "Claude Fable 5 + Claude Code",
     "aliases": [],
@@ -2442,6 +2466,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-haiku-4-5-2025-10-6a090f2b31b88649",
+    "canonical_name": "Claude Haiku 4.5 (2025-10)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 4.5 (2025-10)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-4-5",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-haiku-4-5-20251001-16k-3671d94568e83142",
     "canonical_name": "Claude Haiku 4.5 (Thinking 16K)",
     "aliases": [],
@@ -2651,7 +2699,8 @@
     "id": "model-claude-haiku-4-5-976811a5f0cceb54",
     "canonical_name": "Claude Haiku 4.5",
     "aliases": [
-      "Claude-Haiku-4.5"
+      "Claude-Haiku-4.5",
+      "claude-haiku-4-5"
     ],
     "configuration_id": "claude-haiku-4-5",
     "identity_organization": "anthropic",
@@ -2662,7 +2711,8 @@
       "resource-https-exploitbench-ai-71933587de093421",
       "resource-https-arxiv-org-abs-2512-20732-f8af8b2907a8404b",
       "resource-https-arxiv-org-abs-2604-17966-cdeec3a6b1b058cd",
-      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca"
+      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -2676,6 +2726,30 @@
     "evaluation_types": [
       "Agent",
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-4-5-claude-code-1701138b46076652",
+    "canonical_name": "Claude Haiku 4.5 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 4.5 (Claude Code)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-4-5",
+    "release_date": "2025-10-15",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -2731,6 +2805,30 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-mythos-preview-claude-code-aa11db2d0af6d0a4",
+    "canonical_name": "Claude Mythos Preview (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Claude Mythos Preview (Claude Code)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-mythos-preview",
+    "release_date": "2026-04-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -3414,7 +3512,9 @@
   {
     "id": "model-claude-opus-4-5-eb206cfae35041a3",
     "canonical_name": "Claude-Opus-4.5",
-    "aliases": [],
+    "aliases": [
+      "claude-opus-4-5"
+    ],
     "configuration_id": "Claude-Opus-4.5",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-opus-4-5",
@@ -3424,7 +3524,8 @@
       "resource-https-arxiv-org-abs-2601-02158-d69be4e56366477f",
       "resource-https-arxiv-org-abs-2512-20732-f8af8b2907a8404b",
       "resource-https-arxiv-org-abs-2604-17966-cdeec3a6b1b058cd",
-      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca"
+      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3433,10 +3534,12 @@
       "Energy & Infrastructure",
       "Computational Engineering",
       "Mechanical & Aerospace Engineering",
-      "Electrical Engineering"
+      "Electrical Engineering",
+      "Cybersecurity"
     ],
     "evaluation_types": [
-      "Model"
+      "Model",
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -3565,20 +3668,50 @@
   {
     "id": "model-claude-opus-4-6-claude-code-63b6f2efd7abb550",
     "canonical_name": "Claude Opus 4.6 + Claude Code",
-    "aliases": [],
+    "aliases": [
+      "Claude Opus 4.6 (Claude Code)"
+    ],
     "configuration_id": "Claude Opus 4.6 + Claude Code",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-opus-4-6-claude-code",
-    "release_date": "2026-03-12",
+    "release_date": "2026-02-05",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1"
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1",
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312",
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Terminal / OS"
+      "Terminal / OS",
+      "Science / research",
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-6-claude-code-max-818310e189d54633",
+    "canonical_name": "Claude Opus 4.6 (Claude Code max)",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.6 (Claude Code max)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-6",
+    "release_date": "2026-02-05",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent"
@@ -3784,6 +3917,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-7-adaptive-max-371353dd9043af11",
+    "canonical_name": "Claude Opus 4.7 (Adaptive Max)",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.7 (Adaptive Max)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-7",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-7-bf3d188ffeabc598",
     "canonical_name": "Claude Opus 4.7",
     "aliases": [
@@ -3822,6 +3979,60 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-7-claude-code-1310066d20cedc10",
+    "canonical_name": "Claude Opus 4.7 + Claude Code",
+    "aliases": [
+      "Claude Opus 4.7 (Claude Code)"
+    ],
+    "configuration_id": "Claude Opus 4.7 + Claude Code",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-7-claude-code",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d",
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312",
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research",
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-7-claude-code-xhigh-870d677da09b46b2",
+    "canonical_name": "Claude Opus 4.7 (Claude Code xhigh)",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.7 (Claude Code xhigh)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-7",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -3955,6 +4166,54 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-7-openclaw-b1923696fd31f17e",
+    "canonical_name": "Claude Opus 4.7 (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.7 (OpenClaw)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-7",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-7-openhands-ed10bb93549b80c7",
+    "canonical_name": "Claude Opus 4.7 + OpenHands",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.7 + OpenHands",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-7-openhands",
+    "release_date": "2026-04-16",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-7-unknown-4601db89afcd9030",
     "canonical_name": "Claude Opus 4.7",
     "aliases": [],
@@ -4037,6 +4296,30 @@
     ],
     "evaluation_types": [
       "Agent",
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-4-8-adaptive-max-0765e1e7f8e034c2",
+    "canonical_name": "Claude Opus 4.8 (Adaptive Max)",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.8 (Adaptive Max)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-8",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
       "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -4240,6 +4523,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-4-8-openhands-2bf206ab3d926b3c",
+    "canonical_name": "Claude Opus 4.8 + OpenHands",
+    "aliases": [],
+    "configuration_id": "Claude Opus 4.8 + OpenHands",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-4-8-openhands",
+    "release_date": "2026-05-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-4-8-unknown-6770c002f95368a7",
     "canonical_name": "Claude Opus 4.8 - High",
     "aliases": [
@@ -4333,7 +4640,9 @@
   {
     "id": "model-claude-opus-5-claude-code-c49fe73ec0a14691",
     "canonical_name": "Claude Opus 5 + Claude Code",
-    "aliases": [],
+    "aliases": [
+      "Claude Opus 5 (Claude Code)"
+    ],
     "configuration_id": "Claude Opus 5 + Claude Code",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-opus-5-claude-code",
@@ -4341,7 +4650,8 @@
     "organization": "Anthropic",
     "resource_ids": [
       "resource-https-www-terminal-bench-science-ai-7bb77b99c4108862",
-      "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0-ab90abfa52b25ac3"
+      "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0-ab90abfa52b25ac3",
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4877,7 +5187,8 @@
     "canonical_name": "Claude Sonnet 4.5",
     "aliases": [
       "Claude Sonnet 4.5 (FC)",
-      "Claude-Sonnet-4.5"
+      "Claude-Sonnet-4.5",
+      "claude-sonnet-4-5"
     ],
     "configuration_id": "claude-sonnet-4-5",
     "identity_organization": "anthropic",
@@ -4891,7 +5202,8 @@
       "resource-https-arxiv-org-abs-2605-18642-cf3acde8f571d024",
       "resource-https-arxiv-org-abs-2604-17966-cdeec3a6b1b058cd",
       "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
-      "resource-https-arxiv-org-abs-2512-19526-b80775383eece730"
+      "resource-https-arxiv-org-abs-2512-19526-b80775383eece730",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -4903,11 +5215,36 @@
       "Energy & Infrastructure",
       "Mechanical & Aerospace Engineering",
       "Electrical Engineering",
-      "Physics"
+      "Physics",
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent",
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-5-2025-09-a6e55d5db1b8dbff",
+    "canonical_name": "Claude Sonnet 4.5 (2025-09)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 4.5 (2025-09)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-4-5",
+    "release_date": "2025-09-29",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -5237,6 +5574,54 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-sonnet-4-6-adaptive-max-8dcda5c5189ec2f2",
+    "canonical_name": "Claude Sonnet 4.6 (Adaptive Max)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 4.6 (Adaptive Max)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-4-6",
+    "release_date": "2026-02-17",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-6-claude-code-183c2351d75fb8b9",
+    "canonical_name": "Claude Sonnet 4.6 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 4.6 (Claude Code)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-4-6",
+    "release_date": "2026-02-17",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-sonnet-4-6-high-7624b0a1664718e7",
     "canonical_name": "claude-sonnet-4-6_high",
     "aliases": [
@@ -5363,6 +5748,30 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-4-6-openhands-1aa4f6689f393710",
+    "canonical_name": "Claude Sonnet 4.6 + OpenHands",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 4.6 + OpenHands",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-4-6-openhands",
+    "release_date": "2026-02-17",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -6950,7 +7359,8 @@
     "canonical_name": "DeepSeek-R1-0528",
     "aliases": [
       "Deepseek R1 (05/28)",
-      "DeepSeek R1 0528"
+      "DeepSeek R1 0528",
+      "deepseek-r1-0528"
     ],
     "configuration_id": "DeepSeek-R1-0528",
     "identity_organization": "deepseek",
@@ -6965,7 +7375,8 @@
       "resource-https-github-com-scienceone-ai-scienceeval-30a3eac3043e06f0",
       "resource-https-drb-futuresearch-ai-abc6acfd5ff24854",
       "resource-https-metr-org-blog-2025-03-19-measuring-ai-abil-915c332cd0aefa16",
-      "resource-https-github-com-oxpig-chemiq-9ee25481b8eee713"
+      "resource-https-github-com-oxpig-chemiq-9ee25481b8eee713",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -6979,7 +7390,8 @@
       "General agent tasks",
       "Physics",
       "Science / research",
-      "Chemistry"
+      "Chemistry",
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Model",
@@ -7637,6 +8049,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v4-flash-0731-claude-code-664859616000fbe4",
+    "canonical_name": "DeepSeek V4 Flash-0731 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Flash-0731 (Claude Code)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-flash-0731",
+    "release_date": "2026-07-31",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v4-flash-0731-high-839b82b8306515a5",
     "canonical_name": "DeepSeek V4 Flash 0731 (High)",
     "aliases": [],
@@ -7860,6 +8296,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v4-flash-openhands-abf75d2689ff9111",
+    "canonical_name": "DeepSeek V4 Flash + OpenHands",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Flash + OpenHands",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-flash-openhands",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v4-pro-0813-0ea3b5475f26228d",
     "canonical_name": "DeepSeek-V4-Pro-0813",
     "aliases": [],
@@ -7882,6 +8342,31 @@
     ],
     "inclusion_reason": "Included as a current frontier reference-panel release anchor; benchmark scores are added only when authoritative results are available.",
     "provenance_note": "Official release/model resource is preserved even when no score is yet available in the curated benchmark set."
+  },
+  {
+    "id": "model-deepseek-v4-pro-0813-claude-code-ea4623e3487d4d42",
+    "canonical_name": "DeepSeek V4 Pro-0813 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro-0813 (Claude Code)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro-0813",
+    "release_date": "2026-08-13",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3",
+      "resource-https-api-docs-deepseek-com-news-news260813-fe54be560bf95e2c"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
     "id": "model-deepseek-v4-pro-0813-high-acd76a11354db357",
@@ -8029,6 +8514,78 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v4-pro-claude-code-48f9d2f32839eb9b",
+    "canonical_name": "DeepSeek-V4-Pro (Claude Code)",
+    "aliases": [],
+    "configuration_id": "DeepSeek-V4-Pro (Claude Code)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-deepagents-090f46f770bb5ac7",
+    "canonical_name": "DeepSeek V4 Pro (DeepAgents)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro (DeepAgents)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-hermes-850f92834f41948e",
+    "canonical_name": "DeepSeek V4 Pro (Hermes)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro (Hermes)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v4-pro-high-7c6870d57735b3aa",
     "canonical_name": "deepseek-v4-pro_high",
     "aliases": [
@@ -8123,6 +8680,78 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-oai-agents-641d74ed603f3cf8",
+    "canonical_name": "DeepSeek V4 Pro (OAI Agents)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro (OAI Agents)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-openclaw-d78bb3296f5f4b0b",
+    "canonical_name": "DeepSeek V4 Pro (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro (OpenClaw)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-pro-openhands-0f074375187df56e",
+    "canonical_name": "DeepSeek V4 Pro + OpenHands",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4 Pro + OpenHands",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-pro-openhands",
+    "release_date": "2026-04-24",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -9724,7 +10353,8 @@
       "resource-https-github-com-sombsuk-pse-bench-blob-main-pse-87b9e9212651dda4",
       "resource-https-aclanthology-org-2026-findings-acl-1341-pd-f3b5082b47d79ef4",
       "resource-https-arxiv-org-abs-2509-20374-18f6681a1eb1df7b",
-      "resource-https-arxiv-org-abs-2509-11335-191461dec82f6fa6"
+      "resource-https-arxiv-org-abs-2509-11335-191461dec82f6fa6",
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
     ],
     "roles": [
       "contemporary_frontier"
@@ -9739,7 +10369,8 @@
       "Engineering",
       "Chemistry",
       "Computational Engineering",
-      "Materials Science"
+      "Materials Science",
+      "Tool use"
     ],
     "evaluation_types": [
       "Model",
@@ -10465,6 +11096,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-1-flash-lite-openhands-7438a27027d55d66",
+    "canonical_name": "Gemini 3.1 Flash Lite + OpenHands",
+    "aliases": [],
+    "configuration_id": "Gemini 3.1 Flash Lite + OpenHands",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-1-flash-lite-openhands",
+    "release_date": "2026-03-03",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-1-pro-4768a082b6c248b2",
     "canonical_name": "Gemini 3.1 Pro",
     "aliases": [
@@ -10486,7 +11141,8 @@
       "resource-https-github-com-theafish-atomworldbench-43c5f86385a4a23f",
       "resource-https-arxiv-org-abs-2605-29833v2-1e1479994ec18e4a",
       "resource-https-github-com-olivenet-iot-thermoqa-423ab9c839f69d5d",
-      "resource-https-arxiv-org-abs-2604-25884-acd312af1da82bec"
+      "resource-https-arxiv-org-abs-2604-25884-acd312af1da82bec",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10511,20 +11167,74 @@
   {
     "id": "model-gemini-3-1-pro-gemini-cli-06f467b03848c364",
     "canonical_name": "Gemini 3.1 Pro + Gemini CLI",
-    "aliases": [],
+    "aliases": [
+      "Gemini 3.1 Pro (Gemini CLI)"
+    ],
     "configuration_id": "Gemini 3.1 Pro + Gemini CLI",
     "identity_organization": "google",
     "family_id": "google-gemini-3-1-pro-gemini-cli",
     "release_date": "2026-02-19",
     "organization": "Google",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1"
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1",
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d",
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Terminal / OS"
+      "Terminal / OS",
+      "General agent tasks",
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-1-pro-gemini-cli-high-30de5707dc6177ad",
+    "canonical_name": "Gemini 3.1 Pro (Gemini CLI high)",
+    "aliases": [],
+    "configuration_id": "Gemini 3.1 Pro (Gemini CLI high)",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-1-pro",
+    "release_date": "2026-02-19",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-1-pro-openhands-52da408bcb9ae0b5",
+    "canonical_name": "Gemini 3.1 Pro + OpenHands",
+    "aliases": [],
+    "configuration_id": "Gemini 3.1 Pro + OpenHands",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-1-pro-openhands",
+    "release_date": "2026-02-19",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Agent"
@@ -10711,7 +11421,8 @@
       "resource-https-toolathlon-xyz-docs-leaderboard-929cc5cdff51f3c0",
       "resource-https-www-vals-ai-benchmarks-proof-bench-24e77983004d7c92",
       "resource-https-www-proteingymllm-com-benchmark-77b933918636dec9",
-      "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7"
+      "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
@@ -10721,11 +11432,36 @@
       "Tool use",
       "Mathematics",
       "Life Science",
-      "Mechanical & Aerospace Engineering"
+      "Mechanical & Aerospace Engineering",
+      "Multimodal"
     ],
     "evaluation_types": [
       "Agent",
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-5-flash-gemini-cli-9f931f60a21b1575",
+    "canonical_name": "Gemini 3.5 Flash (Gemini CLI)",
+    "aliases": [],
+    "configuration_id": "Gemini 3.5 Flash (Gemini CLI)",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-5-flash",
+    "release_date": "2026-05-19",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -10993,6 +11729,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gemini-3-5-flash-openhands-c0d48bc83916df37",
+    "canonical_name": "Gemini 3.5 Flash + OpenHands",
+    "aliases": [],
+    "configuration_id": "Gemini 3.5 Flash + OpenHands",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-5-flash-openhands",
+    "release_date": "2026-05-19",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gemini-3-5-flash-unknown-d529360b6eab1157",
     "canonical_name": "Gemini 3.5 Flash",
     "aliases": [],
@@ -11157,6 +11917,30 @@
     ],
     "domains": [
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-7-flash-claude-code-0250c4c49a60c71d",
+    "canonical_name": "Gemini 3.7 Flash (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Gemini 3.7 Flash (Claude Code)",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-7-flash",
+    "release_date": "2026-08-13",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -11451,23 +12235,51 @@
   {
     "id": "model-gemini-3-flash-1b8511e8298853b3",
     "canonical_name": "Gemini-3-Flash",
-    "aliases": [],
+    "aliases": [
+      "Gemini 3 Flash"
+    ],
     "configuration_id": "Gemini-3-Flash",
     "identity_organization": "google",
     "family_id": "google-gemini-3-flash",
     "release_date": "2025-12-17",
     "organization": "Google",
     "resource_ids": [
-      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca"
+      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Electrical Engineering"
+      "Electrical Engineering",
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-flash-gemini-cli-be543d063b5f38a6",
+    "canonical_name": "Gemini 3 Flash (Gemini CLI)",
+    "aliases": [],
+    "configuration_id": "Gemini 3 Flash (Gemini CLI)",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-flash",
+    "release_date": "2025-12-17",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -11605,7 +12417,8 @@
     "id": "model-gemini-3-pro-ebaa316d834e71b0",
     "canonical_name": "Gemini 3 Pro Preview (Prompt)",
     "aliases": [
-      "Gemini-3-Pro"
+      "Gemini-3-Pro",
+      "Gemini 3 Pro"
     ],
     "configuration_id": "gemini-3-pro",
     "identity_organization": "google",
@@ -11614,7 +12427,8 @@
     "organization": "Google DeepMind",
     "resource_ids": [
       "resource-https-gorilla-cs-berkeley-edu-leaderboard-html-c62226dacccbe98a",
-      "resource-https-seephyspro-github-io-71a62ff223e3dbfa"
+      "resource-https-seephyspro-github-io-71a62ff223e3dbfa",
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
     ],
     "roles": [
       "contemporary_frontier"
@@ -12526,6 +13340,54 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-glm-4-6v-15fdaa4dbad2e9dc",
+    "canonical_name": "GLM-4.6V",
+    "aliases": [],
+    "configuration_id": "GLM-4.6V",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-4-6v",
+    "release_date": null,
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-4-6v-flash-5f73a982cde77725",
+    "canonical_name": "GLM-4.6V Flash",
+    "aliases": [],
+    "configuration_id": "GLM-4.6V Flash",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-4-6v-flash",
+    "release_date": null,
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-glm-4-7-e197373ce6ff6f5c",
     "canonical_name": "glm-4.7",
     "aliases": [
@@ -12680,6 +13542,102 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-glm-5-1-claude-code-auto-30b14251bc9a075c",
+    "canonical_name": "GLM-5.1 (Claude Code auto)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (Claude Code auto)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-claude-code-f9913c2c5eccdafd",
+    "canonical_name": "GLM-5.1 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (Claude Code)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-deepagents-b3fc23a124644056",
+    "canonical_name": "GLM-5.1 (DeepAgents)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (DeepAgents)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-hermes-86c6623b079f967d",
+    "canonical_name": "GLM-5.1 (Hermes)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (Hermes)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-glm-5-1-none-5e94a8a1b5442e6e",
     "canonical_name": "glm-5.1_none",
     "aliases": [],
@@ -12699,6 +13657,78 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-oai-agents-8038801ee6dfe089",
+    "canonical_name": "GLM-5.1 (OAI Agents)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (OAI Agents)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-openclaw-371c46e4ab0c84f3",
+    "canonical_name": "GLM-5.1 (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "GLM-5.1 (OpenClaw)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-1-openhands-157497612a531af1",
+    "canonical_name": "GLM 5.1 + OpenHands",
+    "aliases": [],
+    "configuration_id": "GLM 5.1 + OpenHands",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-1-openhands",
+    "release_date": "2026-04-07",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -12724,6 +13754,31 @@
     "domains": [
       "Engineering",
       "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-2-claude-code-79ea9d1e8cd3cf46",
+    "canonical_name": "GLM-5.2 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "GLM-5.2 (Claude Code)",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-2",
+    "release_date": "2026-06-17",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3",
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -13536,6 +14591,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-4-1-2025-04-7f3fab44f0f552f5",
+    "canonical_name": "GPT-4.1 (2025-04)",
+    "aliases": [],
+    "configuration_id": "GPT-4.1 (2025-04)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-4-1",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-4-1-2a78dbfa263e7293",
     "canonical_name": "GPT-4.1",
     "aliases": [],
@@ -13672,6 +14751,30 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-4-1-nano-2025-04-9fb99700ce6da320",
+    "canonical_name": "GPT-4.1 Nano (2025-04)",
+    "aliases": [],
+    "configuration_id": "GPT-4.1 Nano (2025-04)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-4-1-nano",
+    "release_date": "2025-04-14",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -14990,9 +16093,35 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-2-2025-12-ba8c36c22ebc0089",
+    "canonical_name": "GPT-5.2 (2025-12)",
+    "aliases": [],
+    "configuration_id": "GPT-5.2 (2025-12)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-2",
+    "release_date": "2025-12-11",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-2-8af9dc0bd1f19a37",
     "canonical_name": "GPT-5.2",
-    "aliases": [],
+    "aliases": [
+      "gpt-5.2"
+    ],
     "configuration_id": "gpt-5-2",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5-2",
@@ -15003,7 +16132,8 @@
       "resource-https-github-com-edisonscientific-labbench2-dcec6f81a2760018",
       "resource-https-arxiv-org-abs-2606-27047-043cc0fe3e833f7c",
       "resource-https-arxiv-org-abs-2604-17966-cdeec3a6b1b058cd",
-      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca"
+      "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -15013,7 +16143,8 @@
       "Life Science",
       "Nuclear Engineering",
       "Mechanical & Aerospace Engineering",
-      "Electrical Engineering"
+      "Electrical Engineering",
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Model",
@@ -15340,6 +16471,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-2025-08-49803e7e16fb75c8",
+    "canonical_name": "GPT-5 (2025-08)",
+    "aliases": [],
+    "configuration_id": "GPT-5 (2025-08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-3-codex-b4d8c68a86c74002",
     "canonical_name": "GPT-5.3-Codex",
     "aliases": [
@@ -15644,20 +16799,72 @@
   {
     "id": "model-gpt-5-4-codex-cli-764cef1ed1bfbdc1",
     "canonical_name": "GPT-5.4 + Codex CLI",
-    "aliases": [],
+    "aliases": [
+      "GPT-5.4 (Codex CLI)"
+    ],
     "configuration_id": "GPT-5.4 + Codex CLI",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5-4-codex-cli",
-    "release_date": "2026-03-24",
+    "release_date": "2026-03-05",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1"
+      "resource-https-www-tbench-ai-news-terminal-bench-2-1-dbd0851f1b6067c1",
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Terminal / OS"
+      "Terminal / OS",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-codex-cli-xhigh-84a598354ca91877",
+    "canonical_name": "GPT-5.4 (Codex CLI xhigh)",
+    "aliases": [],
+    "configuration_id": "GPT-5.4 (Codex CLI xhigh)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-4",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-codex-e922e3b4605bee44",
+    "canonical_name": "GPT-5.4 (Codex)",
+    "aliases": [],
+    "configuration_id": "GPT-5.4 (Codex)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-4",
+    "release_date": "2026-03-05",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
     ],
     "evaluation_types": [
       "Agent"
@@ -15885,6 +17092,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-4-mini-codex-4ed88eb2334d2380",
+    "canonical_name": "GPT-5.4 Mini (Codex)",
+    "aliases": [],
+    "configuration_id": "GPT-5.4 Mini (Codex)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-4-mini",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-4-mini-codex-cli-3fb7ab0e8debc341",
     "canonical_name": "GPT-5.4 mini + Codex CLI",
     "aliases": [],
@@ -15901,6 +17132,30 @@
     ],
     "domains": [
       "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-4-mini-openhands-8c00c7a7ce543ea1",
+    "canonical_name": "GPT-5.4 Mini + OpenHands",
+    "aliases": [],
+    "configuration_id": "GPT-5.4 Mini + OpenHands",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-4-mini-openhands",
+    "release_date": "2026-03-17",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Agent"
@@ -16184,14 +17439,70 @@
   {
     "id": "model-gpt-5-5-codex-9386616f419ca41d",
     "canonical_name": "GPT 5.5 (Codex)",
-    "aliases": [],
+    "aliases": [
+      "GPT-5.5 (Codex)"
+    ],
     "configuration_id": "gpt-5-5-codex",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5-5",
     "release_date": "2026-04-23",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-exploitbench-ai-71933587de093421"
+      "resource-https-exploitbench-ai-71933587de093421",
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity",
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-codex-cli-c57b5c859abc46ff",
+    "canonical_name": "GPT-5.5 + Codex CLI",
+    "aliases": [
+      "GPT-5.5 (Codex CLI)"
+    ],
+    "configuration_id": "GPT-5.5 + Codex CLI",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-5-codex-cli",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d",
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-codex-cli-xhigh-4d2091ba089c6b7d",
+    "canonical_name": "GPT-5.5 (Codex CLI xhigh)",
+    "aliases": [],
+    "configuration_id": "GPT-5.5 (Codex CLI xhigh)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-5",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b"
     ],
     "roles": [
       "contemporary_frontier"
@@ -16378,6 +17689,30 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-5-openhands-0de750d921b83910",
+    "canonical_name": "GPT-5.5 + OpenHands",
+    "aliases": [],
+    "configuration_id": "GPT-5.5 + OpenHands",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-5-openhands",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -16573,6 +17908,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-5-xhigh-reasoning-36eb4239771b6d13",
+    "canonical_name": "GPT-5.5 (xHigh reasoning)",
+    "aliases": [],
+    "configuration_id": "GPT-5.5 (xHigh reasoning)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-5",
+    "release_date": "2026-04-23",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-6-luna-codex-310f17e05aa69775",
     "canonical_name": "GPT-5.6 Luna + Codex",
     "aliases": [],
@@ -16611,14 +17970,16 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-agents-last-exam-org-leaderboard-28aa05e4c40dc8ca",
-      "resource-https-www-vals-ai-benchmarks-proof-bench-24e77983004d7c92"
+      "resource-https-www-vals-ai-benchmarks-proof-bench-24e77983004d7c92",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
       "General agent tasks",
-      "Mathematics"
+      "Mathematics",
+      "Multimodal"
     ],
     "evaluation_types": [
       "Agent",
@@ -16892,7 +18253,8 @@
       "resource-https-github-com-zapier-automationbench-45f05783897a22a1",
       "resource-https-www-vals-ai-benchmarks-proof-bench-24e77983004d7c92",
       "resource-https-www-proteingymllm-com-benchmark-77b933918636dec9",
-      "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7"
+      "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
@@ -16902,7 +18264,8 @@
       "General agent tasks",
       "Mathematics",
       "Life Science",
-      "Mechanical & Aerospace Engineering"
+      "Mechanical & Aerospace Engineering",
+      "Multimodal"
     ],
     "evaluation_types": [
       "Agent",
@@ -16914,7 +18277,9 @@
   {
     "id": "model-gpt-5-6-sol-codex-963229d6fd1e5bc4",
     "canonical_name": "GPT-5.6 Sol + Codex",
-    "aliases": [],
+    "aliases": [
+      "GPT-5.6 Sol (Codex)"
+    ],
     "configuration_id": "GPT-5.6 Sol + Codex",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5-6-sol-codex",
@@ -16922,7 +18287,8 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-www-terminal-bench-science-ai-7bb77b99c4108862",
-      "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0-ab90abfa52b25ac3"
+      "resource-https-snorkel-ai-leaderboard-terminal-bench-4-0-ab90abfa52b25ac3",
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
     ],
     "roles": [
       "contemporary_frontier"
@@ -17237,16 +18603,19 @@
     "organization": "OpenAI",
     "resource_ids": [
       "resource-https-agents-last-exam-org-leaderboard-28aa05e4c40dc8ca",
-      "resource-https-github-com-zapier-automationbench-45f05783897a22a1"
+      "resource-https-github-com-zapier-automationbench-45f05783897a22a1",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General agent tasks"
+      "General agent tasks",
+      "Multimodal"
     ],
     "evaluation_types": [
-      "Agent"
+      "Agent",
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -17343,6 +18712,30 @@
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-6-terra-max-codex-611fc99b6b7e29da",
+    "canonical_name": "GPT-5.6 Terra (max) (Codex)",
+    "aliases": [],
+    "configuration_id": "GPT-5.6 Terra (max) (Codex)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-6-terra",
+    "release_date": "2026-07-09",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -17521,7 +18914,9 @@
   {
     "id": "model-gpt-5-cdd3b6d6cb9421c1",
     "canonical_name": "GPT-5",
-    "aliases": [],
+    "aliases": [
+      "gpt-5"
+    ],
     "configuration_id": "gpt-5",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5",
@@ -17538,7 +18933,8 @@
       "resource-https-arxiv-org-abs-2601-21448-a47d65600c1d1eca",
       "resource-https-arxiv-org-abs-2510-19400v2-748f04fbc5bb6f0c",
       "resource-https-arxiv-org-abs-2512-19526-b80775383eece730",
-      "resource-https-seephyspro-github-io-71a62ff223e3dbfa"
+      "resource-https-seephyspro-github-io-71a62ff223e3dbfa",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -17551,10 +18947,12 @@
       "Energy & Infrastructure",
       "Computational Engineering",
       "Electrical Engineering",
-      "Robotics"
+      "Robotics",
+      "Cybersecurity"
     ],
     "evaluation_types": [
-      "Model"
+      "Model",
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -17825,25 +19223,54 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-5-mini-2025-08-7db09d773958d7e8",
+    "canonical_name": "GPT-5 Mini (2025-08)",
+    "aliases": [],
+    "configuration_id": "GPT-5 Mini (2025-08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-mini",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-5-mini-2183e20b34f522ee",
     "canonical_name": "GPT-5-Mini",
-    "aliases": [],
+    "aliases": [
+      "gpt-5-mini"
+    ],
     "configuration_id": "GPT-5-Mini",
     "identity_organization": "openai",
     "family_id": "openai-gpt-5-mini",
     "release_date": "2025-08-07",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-arxiv-org-abs-2512-20732-f8af8b2907a8404b"
+      "resource-https-arxiv-org-abs-2512-20732-f8af8b2907a8404b",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Computational Engineering"
+      "Computational Engineering",
+      "Cybersecurity"
     ],
     "evaluation_types": [
-      "Model"
+      "Model",
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -17995,6 +19422,54 @@
     ],
     "domains": [
       "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano-2025-08-ce86547c0b70f4f8",
+    "canonical_name": "GPT-5 Nano (2025-08)",
+    "aliases": [],
+    "configuration_id": "GPT-5 Nano (2025-08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-nano",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-5-nano-521b760ef99c0071",
+    "canonical_name": "gpt-5-nano",
+    "aliases": [],
+    "configuration_id": "gpt-5-nano",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-5-nano",
+    "release_date": "2025-08-07",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent"
@@ -18411,7 +19886,8 @@
       "resource-https-metr-org-blog-2025-03-19-measuring-ai-abil-915c332cd0aefa16",
       "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da",
       "resource-https-arxiv-org-abs-2606-12821v1-04db930b115df29d",
-      "resource-https-arxiv-org-abs-2606-27047-043cc0fe3e833f7c"
+      "resource-https-arxiv-org-abs-2606-27047-043cc0fe3e833f7c",
+      "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2"
     ],
     "roles": [
       "contemporary_frontier"
@@ -18421,7 +19897,8 @@
       "General agent tasks",
       "Science / research",
       "Earth Science",
-      "Nuclear Engineering"
+      "Nuclear Engineering",
+      "Cybersecurity"
     ],
     "evaluation_types": [
       "Agent",
@@ -19178,6 +20655,54 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-grok-4-3-deepagents-335c8991ccd9403d",
+    "canonical_name": "Grok 4.3 (DeepAgents)",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 (DeepAgents)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-3-hermes-22bf58c5d715b091",
+    "canonical_name": "Grok 4.3 (Hermes)",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 (Hermes)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-3-high-c8efa9be51af7030",
     "canonical_name": "grok-4.3_high",
     "aliases": [
@@ -19216,6 +20741,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-grok-4-3-high-reasoning-86d6bbb71d608c95",
+    "canonical_name": "Grok 4.3 (High reasoning)",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 (High reasoning)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-3-none-dc24fa904579fc30",
     "canonical_name": "Grok 4.3 (Non-reasoning)",
     "aliases": [],
@@ -19235,6 +20784,78 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-3-oai-agents-2c326b6740ee702d",
+    "canonical_name": "Grok 4.3 (OAI Agents)",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 (OAI Agents)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-3-openclaw-ef15c51d36e2bc11",
+    "canonical_name": "Grok 4.3 (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 (OpenClaw)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-3-openhands-fe5b1c1c6802f638",
+    "canonical_name": "Grok 4.3 + OpenHands",
+    "aliases": [],
+    "configuration_id": "Grok 4.3 + OpenHands",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-3-openhands",
+    "release_date": "2026-04-17",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -19340,6 +20961,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-grok-4-5-high-reasoning-cfd2e7af88028afc",
+    "canonical_name": "Grok 4.5 (High reasoning)",
+    "aliases": [],
+    "configuration_id": "Grok 4.5 (High reasoning)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-5",
+    "release_date": "2026-07-08",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-grok-4-5-low-85562bbfec2ae574",
     "canonical_name": "Grok 4.5 (Low)",
     "aliases": [],
@@ -19407,6 +21052,31 @@
     "domains": [
       "General agent tasks",
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-6-claude-code-81d4057aceaab0f8",
+    "canonical_name": "Grok 4.6 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Grok 4.6 (Claude Code)",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-6",
+    "release_date": "2026-08-12",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3",
+      "resource-https-x-ai-news-grok-4-6-66321e57ae7a5067"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -21000,7 +22670,8 @@
       "resource-https-terminalworld-ai-leaderboard-db563da404f5df77",
       "resource-https-exploitbench-ai-71933587de093421",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
-      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da",
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
     ],
     "roles": [
       "contemporary_frontier"
@@ -21015,10 +22686,155 @@
       "Science / research",
       "General agent tasks",
       "Terminal / OS",
-      "Cybersecurity"
+      "Cybersecurity",
+      "Multimodal"
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-claude-code-804bb11a2f15dca5",
+    "canonical_name": "Kimi K2.6 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 (Claude Code)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-deepagents-110199edaa9e562e",
+    "canonical_name": "Kimi K2.6 (DeepAgents)",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 (DeepAgents)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-hermes-89f2f41f4af3c4c8",
+    "canonical_name": "Kimi K2.6 (Hermes)",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 (Hermes)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-oai-agents-6b4c9f06f75e3a3c",
+    "canonical_name": "Kimi K2.6 (OAI Agents)",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 (OAI Agents)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-openclaw-eb7cb33fc29d6370",
+    "canonical_name": "Kimi K2.6 (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 (OpenClaw)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k2-6-openhands-8b2a76d84288ff25",
+    "canonical_name": "Kimi K2.6 + OpenHands",
+    "aliases": [],
+    "configuration_id": "Kimi K2.6 + OpenHands",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k2-6-openhands",
+    "release_date": "2026-04-20",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -21211,14 +23027,17 @@
   {
     "id": "model-kimi-k3-claude-code-e54b169d31dcbe07",
     "canonical_name": "Kimi K3 + Claude Code",
-    "aliases": [],
+    "aliases": [
+      "Kimi K3 (Claude Code)"
+    ],
     "configuration_id": "Kimi K3 + Claude Code",
     "identity_organization": "moonshot",
     "family_id": "moonshot-kimi-k3-claude-code",
     "release_date": "2026-07-16",
     "organization": "Moonshot",
     "resource_ids": [
-      "resource-https-www-terminal-bench-science-ai-7bb77b99c4108862"
+      "resource-https-www-terminal-bench-science-ai-7bb77b99c4108862",
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
     ],
     "roles": [
       "contemporary_frontier"
@@ -24265,6 +26084,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-minimax-m2-7-claude-code-ccff31e5566a4609",
+    "canonical_name": "MiniMax-M2.7 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "MiniMax-M2.7 (Claude Code)",
+    "identity_organization": "minimax",
+    "family_id": "minimax-minimax-m2-7",
+    "release_date": "2026-03-18",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-minimax-m2-7-faa9f10a9425bfdd",
     "canonical_name": "MiniMax M2.7",
     "aliases": [
@@ -24295,6 +26138,30 @@
     "evaluation_types": [
       "Agent",
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m2-7-openhands-90df79e1bff8991c",
+    "canonical_name": "MiniMax M2.7 + OpenHands",
+    "aliases": [],
+    "configuration_id": "MiniMax M2.7 + OpenHands",
+    "identity_organization": "minimax",
+    "family_id": "minimax-minimax-m2-7-openhands",
+    "release_date": "2026-03-18",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -24370,6 +26237,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-minimax-m3-claude-code-5a8c08113d62b09e",
+    "canonical_name": "MiniMax-M3 (Claude Code)",
+    "aliases": [],
+    "configuration_id": "MiniMax-M3 (Claude Code)",
+    "identity_organization": "minimax",
+    "family_id": "minimax-minimax-m3",
+    "release_date": "2026-06-01",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-minimax-m3-none-a8c6232ba2a2fc56",
     "canonical_name": "MiniMax-M3_none",
     "aliases": [],
@@ -24389,6 +26280,30 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-minimax-m3-openhands-552450de6e43f167",
+    "canonical_name": "MiniMax M3 + OpenHands",
+    "aliases": [],
+    "configuration_id": "MiniMax M3 + OpenHands",
+    "identity_organization": "minimax",
+    "family_id": "minimax-minimax-m3-openhands",
+    "release_date": "2026-06-01",
+    "organization": "MiniMax",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -24688,6 +26603,30 @@
     "evaluation_types": [
       "Model",
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-large-3-200098d872e1b4b9",
+    "canonical_name": "Mistral Large 3",
+    "aliases": [],
+    "configuration_id": "Mistral Large 3",
+    "identity_organization": "mistral-ai",
+    "family_id": "mistral-ai-mistral-large-3",
+    "release_date": "2025-12-02",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -25767,6 +27706,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-nemotron-3-nano-omni-cad2f45dc1e77b53",
+    "canonical_name": "Nemotron 3 Nano Omni",
+    "aliases": [],
+    "configuration_id": "Nemotron 3 Nano Omni",
+    "identity_organization": "nvidia",
+    "family_id": "nvidia-nemotron-3-nano-omni",
+    "release_date": null,
+    "organization": "NVIDIA",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-nemotron-3-super-12128fa765375f90",
     "canonical_name": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)",
     "aliases": [],
@@ -25932,6 +27895,30 @@
     "evaluation_types": [
       "Model",
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-nova-2-pro-cbbf1e40648bc16b",
+    "canonical_name": "Nova 2 Pro",
+    "aliases": [],
+    "configuration_id": "Nova 2 Pro",
+    "identity_organization": "amazon",
+    "family_id": "amazon-nova-2-pro",
+    "release_date": null,
+    "organization": "Amazon",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -28578,6 +30565,126 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-qwen-3-6-max-deepagents-c5fde1a9f3812cfc",
+    "canonical_name": "Qwen 3.6 Max (DeepAgents)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.6 Max (DeepAgents)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-6-max",
+    "release_date": "2026-04-20",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-6-max-hermes-e154ae7a0c412af0",
+    "canonical_name": "Qwen 3.6 Max (Hermes)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.6 Max (Hermes)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-6-max",
+    "release_date": "2026-04-20",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-6-max-oai-agents-ead51d7efe7de320",
+    "canonical_name": "Qwen 3.6 Max (OAI Agents)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.6 Max (OAI Agents)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-6-max",
+    "release_date": "2026-04-20",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-6-max-openclaw-9ca0db95f5f6f777",
+    "canonical_name": "Qwen 3.6 Max (OpenClaw)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.6 Max (OpenClaw)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-6-max",
+    "release_date": "2026-04-20",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Health"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-7-max-claude-code-af15b97f0a446071",
+    "canonical_name": "Qwen 3.7 Max (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.7 Max (Claude Code)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-7-max",
+    "release_date": "2026-05-19",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-qwen-3-7-plus-3ddcf841c5799b0c",
     "canonical_name": "Qwen 3.7 Plus",
     "aliases": [],
@@ -28618,6 +30725,30 @@
     ],
     "domains": [
       "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen-3-8-max-claude-code-73eb304d7fb4446b",
+    "canonical_name": "Qwen 3.8 Max (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Qwen 3.8 Max (Claude Code)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen-3-8-max",
+    "release_date": "2026-08-03",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
     ],
     "evaluation_types": [
       "Agent"
@@ -30654,6 +32785,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-qwen3-5-397b-a17b-claude-code-098f67c2b319f081",
+    "canonical_name": "Qwen3.5-397B-A17B (Claude Code)",
+    "aliases": [],
+    "configuration_id": "Qwen3.5-397B-A17B (Claude Code)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen3-5-397b-a17b",
+    "release_date": "2026-02-13",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-qwen3-5-397b-a17b-none-e6626b5e5556694d",
     "canonical_name": "qwen3.5-397b-a17b_none",
     "aliases": [],
@@ -31704,6 +33859,54 @@
     ],
     "evaluation_types": [
       "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-vl-235b-a22b-thinking-7a5f9bb9198bfd51",
+    "canonical_name": "Qwen3-VL (235B-A22B-Thinking)",
+    "aliases": [],
+    "configuration_id": "Qwen3-VL (235B-A22B-Thinking)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen3-vl",
+    "release_date": "2025-09-23",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-vl-8b-thinking-214585722335cf15",
+    "canonical_name": "Qwen3-VL (8B-Thinking)",
+    "aliases": [],
+    "configuration_id": "Qwen3-VL (8B-Thinking)",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen3-vl",
+    "release_date": "2025-10-15",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Tool use"
+    ],
+    "evaluation_types": [
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."

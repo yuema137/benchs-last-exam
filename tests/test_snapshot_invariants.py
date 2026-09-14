@@ -226,6 +226,26 @@ class SnapshotInvariantTests(unittest.TestCase):
             for view_ids in payload["lifecycle_views"].values():
                 self.assertIsInstance(benchmark_id in view_ids, bool)
 
+    def test_recent_frontier_benchmark_batch_is_fully_integrated(self):
+        payload = json.loads(SNAPSHOT.read_text())
+        by_id = {item["id"]: item for item in payload["benchmarks"]}
+        expected = {
+            "skillsbench-v1-1", "frontierchallenge-97", "naturebench-surpass-sota",
+            "gdp-pdf", "chi-bench", "exploitgym-v1", "madqa", "sandbox-escape-bench",
+        }
+        self.assertTrue(expected.issubset(by_id))
+        for benchmark_id in expected:
+            benchmark = by_id[benchmark_id]
+            self.assertGreaterEqual(
+                len(benchmark["coverage"]["represented_organizations"]), 2, benchmark_id
+            )
+            self.assertTrue(benchmark["observations"], benchmark_id)
+            self.assertTrue(benchmark["frontier_events"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["en"], benchmark_id)
+            self.assertTrue(benchmark["summary"]["zh"], benchmark_id)
+            for view_ids in payload["lifecycle_views"].values():
+                self.assertIsInstance(benchmark_id in view_ids, bool)
+
     def test_new_story_membership_is_recomputed_from_metrics(self):
         payload = json.loads(SNAPSHOT.read_text())
         views = payload["lifecycle_views"]

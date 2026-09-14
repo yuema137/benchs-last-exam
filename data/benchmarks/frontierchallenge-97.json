@@ -1,0 +1,49 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "frontierchallenge_97_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "frontierchallenge-97",
+  "input_unit": "percentage_points",
+  "metric_id": "frontierchallenge-97-metric-v1",
+  "name": "FrontierChallenge",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "frontierchallenge-97-source-export-v1",
+  "registry_order": 151,
+  "release": "2026-08-25",
+  "score": "Pass Rate",
+  "scoring": {
+    "explanation": {
+      "en": "A task passes only when its grader score reaches 99.9, i.e. the full task contract is met; the score is the fraction of the 97 released tasks passed.",
+      "zh": "只有当任务的 grader 分数达到 99.9、即完全满足任务契约时才算通过；分数是通过的任务占 97 个公开任务的比例。"
+    },
+    "metric_name": "Task pass rate"
+  },
+  "source": "https://arxiv.org/abs/2608.24979",
+  "summary": {
+    "en": "FrontierChallenge tests agents on end-to-end scientific-computing workflows that must deliver a complete, contract-checked artifact bundle.",
+    "zh": "FrontierChallenge 评估 agent 完成端到端科学计算工作流的能力，要求交付一套通过任务契约检查的完整产物。"
+  },
+  "tags": [
+    "scientific computing",
+    "released-97",
+    "versioned"
+  ],
+  "task_format": {
+    "en": "The agent drives domain software such as ORCA, CP2K, LAMMPS or AmberTools to complete one of 97 released scientific tasks and deliver the required artifacts.",
+    "zh": "agent 调用 ORCA、CP2K、LAMMPS、AmberTools 等领域软件，完成 97 个公开科学任务之一，并交付要求的产物。"
+  },
+  "labels": [
+    "tool-use",
+    "code-generation",
+    "code-execution-debugging",
+    "environment-interaction",
+    "quantitative-reasoning"
+  ]
+}

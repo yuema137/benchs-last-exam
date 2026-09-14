@@ -1,0 +1,48 @@
+{
+  "ceiling": 1.0,
+  "domain": "Science / research",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "naturebench_surpass_sota_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "naturebench-surpass-sota",
+  "input_unit": "percentage_points",
+  "metric_id": "naturebench-surpass-sota-metric-v1",
+  "name": "NatureBench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "naturebench-surpass-sota-source-export-v1",
+  "registry_order": 152,
+  "release": "2026-06-23",
+  "score": "Surpass-SOTA rate",
+  "scoring": {
+    "explanation": {
+      "en": "The score is the percentage of the 90 tasks on which the agent's method beats the published state of the art by a normalized margin above 0.1.",
+      "zh": "分数是 agent 的方法在归一化差距大于 0.1 的意义上超过论文已发表 SOTA 的任务占 90 个任务的百分比。"
+    },
+    "metric_name": "Surpass-SOTA rate"
+  },
+  "source": "https://arxiv.org/abs/2606.24530",
+  "summary": {
+    "en": "NatureBench tests research agents on containerized tasks drawn from Nature-family papers, requiring a method that surpasses the published state of the art.",
+    "zh": "NatureBench 用取自 Nature 系列论文的容器化任务评估 research agent，要求给出超过已发表 SOTA 的方法。"
+  },
+  "tags": [
+    "research replication",
+    "gpu tasks",
+    "versioned"
+  ],
+  "task_format": {
+    "en": "With web search disabled and a matched GPU, the agent develops and runs a method for one of 90 tasks and is scored on whether it exceeds the published state of the art.",
+    "zh": "在关闭联网搜索、配备匹配 GPU 的条件下，agent 为 90 个任务之一开发并运行方法，按是否超过已发表 SOTA 评分。"
+  },
+  "labels": [
+    "code-generation",
+    "code-execution-debugging",
+    "experimental-design",
+    "design-optimization"
+  ]
+}

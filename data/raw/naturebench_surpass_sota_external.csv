@@ -1,0 +1,13 @@
+Name,Surpass-SOTA rate,Release date,Organization,Result public date,Source,Source link,id
+Claude Opus 4.7 (Claude Code),17.8,2026-04-16,Anthropic,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-00
+GLM-5.2 (Claude Code),15.6,2026-06-17,Z.ai,2026-07-06,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-01
+Gemini 3.5 Flash (Gemini CLI),15.6,2026-05-19,Google DeepMind,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-02
+GPT-5.5 (Codex CLI),14.4,2026-04-23,OpenAI,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-03
+Claude Opus 4.6 (Claude Code),12.2,2026-02-05,Anthropic,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-04
+MiniMax-M3 (Claude Code),11.1,2026-06-01,MiniMax,2026-07-06,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-05
+Qwen 3.7 Max (Claude Code),10.0,2026-05-19,Alibaba,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-06
+Kimi K2.6 (Claude Code),8.9,2026-04-20,Moonshot,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-07
+GPT-5.4 (Codex CLI),8.9,2026-03-05,OpenAI,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-08
+GLM-5.1 (Claude Code),7.8,2026-04-07,Z.ai,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-09
+DeepSeek-V4-Pro (Claude Code),4.4,2026-04-24,DeepSeek,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-10
+MiniMax-M2.7 (Claude Code),1.1,2026-03-18,MiniMax,2026-06-23,NatureBench Table 4,https://arxiv.org/html/2606.24530v2,naturebench-surpass-sota-11

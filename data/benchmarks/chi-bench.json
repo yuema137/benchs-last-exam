@@ -1,0 +1,48 @@
+{
+  "ceiling": 1.0,
+  "domain": "Health",
+  "evaluation_target": "process_and_output",
+  "evaluation_type": "Agent",
+  "file": "chi_bench_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "chi-bench",
+  "input_unit": "percentage_points",
+  "metric_id": "chi-bench-metric-v1",
+  "name": "CHI-Bench",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "chi-bench-source-export-v1",
+  "registry_order": 154,
+  "release": "2026-05-15",
+  "score": "Overall pass@1",
+  "scoring": {
+    "explanation": {
+      "en": "Each of 75 policy-heavy healthcare tasks is run 3 times; a rubric judged by Claude Opus 4.7 (majority of 3 votes) decides pass or fail, and the score is the overall pass@1 across the 225 trials.",
+      "zh": "75 个政策密集的医疗任务各跑 3 次；由 Claude Opus 4.7 评判的 rubric（3 票多数）判定通过与否，分数是 225 次 trial 的整体 pass@1。"
+    },
+    "metric_name": "Overall pass@1"
+  },
+  "source": "https://arxiv.org/abs/2605.16679",
+  "summary": {
+    "en": "CHI-Bench tests agents on long-horizon, policy-driven healthcare workflows such as prior authorization and utilization management in a simulated environment.",
+    "zh": "CHI-Bench 在模拟环境中评估 agent 完成事前授权、使用管理等长流程、政策驱动的医疗工作流的能力。"
+  },
+  "tags": [
+    "healthcare",
+    "policy workflow",
+    "versioned"
+  ],
+  "task_format": {
+    "en": "Inside a simulated healthcare environment, the agent carries case state through a multi-step, policy-constrained workflow and is judged against a rubric.",
+    "zh": "在模拟医疗环境中，agent 在多步、受政策约束的工作流中维护病例状态，并按 rubric 评判。"
+  },
+  "labels": [
+    "tool-use",
+    "instruction-following",
+    "planning",
+    "state-tracking"
+  ]
+}

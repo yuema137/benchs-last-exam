@@ -92,3 +92,11 @@ data/raw/*
 !data/raw/scicode_external.csv
 !data/raw/spatialviz_bench_external.csv
 !data/raw/vending_bench_2_external.csv
+!data/raw/skillsbench_v1_1_external.csv
+!data/raw/frontierchallenge_97_external.csv
+!data/raw/naturebench_surpass_sota_external.csv
+!data/raw/gdp_pdf_external.csv
+!data/raw/chi_bench_external.csv
+!data/raw/exploitgym_v1_external.csv
+!data/raw/madqa_external.csv
+!data/raw/sandbox_escape_bench_external.csv

@@ -1,0 +1,18 @@
+Name,Strict pass rate,Release date,Organization,Result public date,Source,Source link,id
+GPT-5.6 Sol,30.7,2026-07-09,OpenAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-00
+Claude Fable 5 (Adaptive Max),29.8,2026-06-09,Anthropic,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-01
+GPT-5.5 (xHigh reasoning),26,2026-04-23,OpenAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-02
+GPT-5.6 Terra,24.7,2026-07-09,OpenAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-03
+Claude Opus 4.8 (Adaptive Max),24,2026-05-28,Anthropic,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-04
+GPT-5.6 Luna,22.7,2026-07-09,OpenAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-05
+Claude Opus 4.7 (Adaptive Max),21,2026-04-16,Anthropic,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-06
+Claude Sonnet 4.6 (Adaptive Max),18,2026-02-17,Anthropic,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-07
+Gemini 3.1 Pro,17,2026-02-19,Google DeepMind,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-08
+Gemini 3.5 Flash,14,2026-05-19,Google DeepMind,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-09
+Grok 4.5 (High reasoning),14,2026-07-08,xAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-10
+Kimi K2.6,12,2026-04-20,Moonshot,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-11
+Gemini 3 Flash,10,2025-12-17,Google DeepMind,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-12
+Grok 4.3 (High reasoning),8,2026-04-17,xAI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-13
+Mistral Large 3,2,2025-12-02,Mistral AI,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-14
+Nova 2 Pro,2,,Amazon,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-15
+Nemotron 3 Nano Omni,2,,NVIDIA,2026-07-15,GDP.pdf v3 Table 6,https://arxiv.org/html/2607.11192v3,gdp-pdf-16

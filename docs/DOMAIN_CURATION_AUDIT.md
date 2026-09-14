@@ -117,3 +117,27 @@ This batch adds exactly three fixed measurement objects in each of seven science
 | Materials Science | MaScQA Corrected 644; MatQnA Objective; MatTools pymatgen Doc QA | 2–4/7 |
 
 The two sub-1% observations in TOMG-Bench and MolLangBench were checked against their primary tables and added to the permanent adversarial-score gate. AeroCopilotBench excludes model labels whose release dates could not be independently pinned. All story-view membership remains derived from the rebuilt canonical metrics.
+
+## Recent-frontier benchmark batch — 2026-09-14
+
+This batch adds eight recent, well-attended benchmarks surfaced from arXiv, Hugging Face and ICML 2026 (May–September 2026). Every canonical row was read from the cited primary table and re-verified row by row; only rows with a verified score and a pinned protocol are included. Coverage counts the seven reference organizations, not model snapshots. Model release dates use the official launch date, which for several models differs from an existing conflicting entry in `data/models.json` (that registry is left unchanged in this batch).
+
+| Benchmark | Type / domain | Canonical measurement | Coverage | Decision | Main caveat |
+|---|---|---|---:|---|---|
+| SkillsBench v1.1 | Agent / General agent tasks | 87-task curated-Skills task-macro pass rate, 3 trials | 5/7 | ADD | Scores are model+harness configurations; the no-Skills and self-generated conditions are excluded. |
+| FrontierChallenge | Agent / Science / research | Released-97 task pass rate (grader ≥ 99.9) | 6/7 | ADD | Single run per configuration; the judge is an OpenAI model; 203 tasks are held out. |
+| NatureBench | Agent / Science / research | Surpass-SOTA rate over 90 tasks | 5/7 | ADD | Table 4 lists models only; harness labels come from the setup text. Match-SOTA is a separate metric. |
+| GDP.pdf | Model / Multimodal | v3 strict pass rate, five-run mean | 4/7 | ADD | Pinned to arXiv v3 Table 6; v1/v2 print a different pilot table; the live leaderboard drifts. |
+| CHI-Bench | Agent / Health | Overall pass@1, 75 tasks × 3 trials | 6/7 | ADD | Seven harnesses appear as separate configurations; Grok 4.3 on OpenClaw is a reviewed sub-1% score. |
+| ExploitGym v1 | Agent / Cybersecurity | Success rate over 898 instances | 3/7 | ADD | Successes/898; several reviewed sub-1% scores; some runs disabled safety filters or used adjusted prompting (footnoted in the source). |
+| MADQA | Agent / Tool use | BM25 Agent accuracy on the 500-question test set | 4/7 | ADD | LLM-judged; pinned to the BM25 Agent harness; managed-RAG/RLM/Semtools rows are excluded. |
+| SandboxEscapeBench | Agent / Cybersecurity | Overall success rate, 18 scenarios × 5 epochs, 2.5M-token budget | 3/7 | ADD | Pinned to the v3 2.5M-token cohort; the four newer 100M-token runs are excluded as non-comparable; AISI holds a private set. |
+
+### Deferred this pass
+
+- **OmniaBench** — 5/7 coverage but very low external attention; revisit if adoption grows.
+- **Long-Horizon-Terminal-Bench** — the maintainers document reward hacking (agents reading the grader) in the pre-hardening results, and the paper and README scores disagree. Revisit after a hardened, versioned rerun.
+- **K-BrowseComp** — Korean-context web browsing; no frontier Anthropic/Gemini-Pro rows and too close to the BrowseComp family.
+- **SWE-Bench ProMax** — the model set is old relative to release and the paper names no canonical scaffold (mini-SWE-agent vs OpenHands).
+- **WildClawBench** — first released before the window; the live leaderboard keeps changing. Revisit only with a pinned dated snapshot.
+- **ResearchClawBench** — the RADS score is a 0–100 LLM rubric where 50 means "matches the reference paper", with no defensible ceiling.

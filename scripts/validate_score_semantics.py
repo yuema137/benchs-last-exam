@@ -25,6 +25,8 @@ REVIEWED_LOW_RATIO_BENCHMARKS = {
     "chemm-bench-acl2026": "The pinned ACL table reports zero/near-zero exact molecular-structure task performance.",
     "tomg-bench-v1-wacc": "The official v1 leaderboard reports 0.15% weighted accuracy for Qwen2-7B under the fixed open-molecule protocol.",
     "mollangbench-v1-generation-pass1": "The v1 supplementary table reports 0.5% exact structural generation accuracy for GPT-4o; validity is a separate metric.",
+    "chi-bench": "The official Table 2 reports 0.4% overall pass@1 for Grok 4.3 under the OpenClaw harness on the policy-heavy healthcare workflows.",
+    "exploitgym-v1": "The official Table 3 reports single-digit successes out of 898 instances for several models (e.g. 4/898 and 7/898), i.e. genuine sub-1% exploit success rates.",
 }
 
 REVIEWED_LARGE_NUMERIC_BENCHMARKS = {

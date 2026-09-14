@@ -1,0 +1,31 @@
+Name,Overall pass@1,Release date,Organization,Result public date,Source,Source link,id
+GPT-5.5 (Codex),20.9,2026-04-23,OpenAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-00
+GPT-5.4 (Codex),16.0,2026-03-05,OpenAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-01
+GPT-5.4 Mini (Codex),8.4,2026-03-17,OpenAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-02
+Claude Opus 4.7 (Claude Code),24.4,2026-04-16,Anthropic,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-03
+Claude Opus 4.6 (Claude Code),28.0,2026-02-05,Anthropic,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-04
+Claude Sonnet 4.6 (Claude Code),26.2,2026-02-17,Anthropic,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-05
+Claude Haiku 4.5 (Claude Code),6.2,2025-10-15,Anthropic,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-06
+Gemini 3.1 Pro (Gemini CLI),7.1,2026-02-19,Google DeepMind,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-07
+Gemini 3 Flash (Gemini CLI),12.4,2025-12-17,Google DeepMind,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-08
+Claude Opus 4.7 (OpenClaw),17.3,2026-04-16,Anthropic,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-09
+DeepSeek V4 Pro (OpenClaw),11.1,2026-04-24,DeepSeek,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-10
+DeepSeek V4 Pro (OAI Agents),14.2,2026-04-24,DeepSeek,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-11
+DeepSeek V4 Pro (Hermes),13.8,2026-04-24,DeepSeek,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-12
+DeepSeek V4 Pro (DeepAgents),10.7,2026-04-24,DeepSeek,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-13
+Qwen 3.6 Max (OpenClaw),4.9,2026-04-20,Alibaba,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-14
+Qwen 3.6 Max (OAI Agents),15.6,2026-04-20,Alibaba,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-15
+Qwen 3.6 Max (Hermes),16.4,2026-04-20,Alibaba,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-16
+Qwen 3.6 Max (DeepAgents),9.3,2026-04-20,Alibaba,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-17
+Grok 4.3 (OpenClaw),0.4,2026-04-17,xAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-18
+Grok 4.3 (OAI Agents),5.8,2026-04-17,xAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-19
+Grok 4.3 (Hermes),4.4,2026-04-17,xAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-20
+Grok 4.3 (DeepAgents),2.2,2026-04-17,xAI,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-21
+Kimi K2.6 (OpenClaw),10.2,2026-04-20,Moonshot,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-22
+Kimi K2.6 (OAI Agents),15.1,2026-04-20,Moonshot,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-23
+Kimi K2.6 (Hermes),15.6,2026-04-20,Moonshot,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-24
+Kimi K2.6 (DeepAgents),3.1,2026-04-20,Moonshot,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-25
+GLM-5.1 (OpenClaw),16.9,2026-04-07,Z.ai,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-26
+GLM-5.1 (OAI Agents),18.7,2026-04-07,Z.ai,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-27
+GLM-5.1 (Hermes),18.7,2026-04-07,Z.ai,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-28
+GLM-5.1 (DeepAgents),11.1,2026-04-07,Z.ai,2026-05-15,CHI-Bench Table 2,https://arxiv.org/html/2605.16679v1,chi-bench-29

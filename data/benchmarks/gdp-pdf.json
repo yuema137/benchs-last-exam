@@ -1,0 +1,47 @@
+{
+  "ceiling": 1.0,
+  "domain": "Multimodal",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Model",
+  "file": "gdp_pdf_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "gdp-pdf",
+  "input_unit": "percentage_points",
+  "metric_id": "gdp-pdf-metric-v1",
+  "name": "GDP.pdf",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "gdp-pdf-source-export-v1",
+  "registry_order": 153,
+  "release": "2026-04-14",
+  "score": "Strict pass rate",
+  "scoring": {
+    "explanation": {
+      "en": "A question passes only when every rubric criterion is met; the score is the mean over five runs, judged by Gemini 3.5 Flash, on the 100-item set.",
+      "zh": "只有满足全部 rubric 标准时该题才算通过；分数是在 100 题上、由 Gemini 3.5 Flash 评分、五次运行的平均。"
+    },
+    "metric_name": "Strict pass rate"
+  },
+  "source": "https://arxiv.org/abs/2607.11192",
+  "summary": {
+    "en": "GDP.pdf tests models on expert questions about real professional PDF documents, supplied as images, with strict rubric grading.",
+    "zh": "GDP.pdf 用真实专业 PDF 文档（以图像提供）上的专家问题评估模型，采用严格 rubric 评分。"
+  },
+  "tags": [
+    "document understanding",
+    "professional pdf",
+    "rubric"
+  ],
+  "task_format": {
+    "en": "The model reads one real professional PDF supplied as base64 images and answers an expert question that is graded against a full set of atomic rubric criteria.",
+    "zh": "模型阅读一份以 base64 图像提供的真实专业 PDF，回答一个专家问题，并按一整套原子 rubric 标准评分。"
+  },
+  "labels": [
+    "multimodal-perception",
+    "long-context-integration",
+    "information-retrieval"
+  ]
+}

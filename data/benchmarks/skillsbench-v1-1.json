@@ -1,0 +1,49 @@
+{
+  "ceiling": 1.0,
+  "domain": "General agent tasks",
+  "evaluation_target": "environment_outcome",
+  "evaluation_type": "Agent",
+  "file": "skillsbench_v1_1_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "skillsbench-v1-1",
+  "input_unit": "fraction",
+  "metric_id": "skillsbench-v1-1-metric-v1",
+  "name": "SkillsBench v1.1",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "skillsbench-v1-1-source-export-v1",
+  "registry_order": 150,
+  "release": "2026-06-14",
+  "score": "Curated-Skills pass rate",
+  "scoring": {
+    "explanation": {
+      "en": "A trial passes only if every deterministic pytest assertion succeeds; with curated Agent Skills provided, results are averaged over three trials per task, then across the 87 v1.1 tasks.",
+      "zh": "只有 verifier 的全部确定性 pytest 断言都通过，trial 才算通过；在提供精选 Agent Skills 的条件下，先对每题 3 次 trial 取平均，再对 v1.1 的 87 题取平均。"
+    },
+    "metric_name": "Curated-Skills pass rate"
+  },
+  "source": "https://arxiv.org/abs/2602.12670",
+  "summary": {
+    "en": "SkillsBench measures how well agents complete expert workflows in containers when given curated Agent Skills.",
+    "zh": "SkillsBench 评估 agent 在容器中借助精选 Agent Skills 完成专业工作流的能力。"
+  },
+  "tags": [
+    "agent skills",
+    "container",
+    "versioned"
+  ],
+  "task_format": {
+    "en": "In a Docker container with a skills folder, the agent completes one of 87 tasks across 8 domains and leaves outputs for a deterministic pytest verifier.",
+    "zh": "agent 在带有 skills 目录的 Docker 容器中完成 8 个领域共 87 个任务之一，并留下供确定性 pytest verifier 检查的输出。"
+  },
+  "labels": [
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging",
+    "instruction-following"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "ceiling": 1.0,
+  "domain": "Tool use",
+  "evaluation_target": "final_output",
+  "evaluation_type": "Agent",
+  "file": "madqa_external.csv",
+  "floor": 0.0,
+  "hard_max": 1.0,
+  "hard_min": 0.0,
+  "id": "madqa",
+  "input_unit": "percentage_points",
+  "metric_id": "madqa-metric-v1",
+  "name": "MADQA",
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "protocol": "Source export protocol; row-level protocol details are preserved when available.",
+  "protocol_id": "madqa-source-export-v1",
+  "registry_order": 156,
+  "release": "2026-03-12",
+  "score": "Accuracy",
+  "scoring": {
+    "explanation": {
+      "en": "Using the fixed BM25 search-agent harness, the model answers questions over a collection of PDFs; an LLM judge (Cohen's kappa 0.88 vs humans) scores accuracy on the 500-question test set.",
+      "zh": "在固定的 BM25 检索 agent harness 下，模型回答一批 PDF 文档上的问题；由 LLM judge（与人类的 Cohen kappa 为 0.88）在 500 题测试集上评分。"
+    },
+    "metric_name": "BM25 Agent accuracy"
+  },
+  "source": "https://arxiv.org/abs/2603.12180",
+  "summary": {
+    "en": "MADQA tests agents on answering expert questions over large collections of real PDF documents by retrieving and citing the supporting pages.",
+    "zh": "MADQA 评估 agent 在大量真实 PDF 文档上检索并引用相关页面、回答专家问题的能力。"
+  },
+  "tags": [
+    "document qa",
+    "retrieval",
+    "leaderboard"
+  ],
+  "task_format": {
+    "en": "With a BM25 search tool over a collection of 800 PDFs, the agent finds evidence and returns an extractive answer with the pages it cites.",
+    "zh": "agent 在 800 份 PDF 组成的文档集上使用 BM25 检索工具，找出证据并给出带引用页码的抽取式答案。"
+  },
+  "labels": [
+    "information-retrieval",
+    "multimodal-perception",
+    "tool-use",
+    "planning"
+  ]
+}

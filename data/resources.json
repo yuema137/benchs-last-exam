@@ -1724,6 +1724,105 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2602-12670-1743f5a55252375a",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SkillsBench v1.1 primary source",
+    "url": "https://arxiv.org/abs/2602.12670",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2602-12670v4-5e2cff25114ace9d",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "SkillsBench Table 2",
+    "url": "https://arxiv.org/abs/2602.12670v4",
+    "publisher": "SkillsBench Table 2",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2603-02277-ad8c646423a3802d",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "SandboxEscapeBench primary source",
+    "url": "https://arxiv.org/abs/2603.02277",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2603-02277v3-27fee8d40e677bf2",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "SandboxEscapeBench v3 Table 12(c)",
+    "url": "https://arxiv.org/abs/2603.02277v3",
+    "publisher": "SandboxEscapeBench v3 Table 12(c)",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2603-12180-229f293cd47faa38",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "MADQA primary source",
+    "url": "https://arxiv.org/abs/2603.12180",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2603-12180v2-4a9edacc4ccad010",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "MADQA Table 3",
+    "url": "https://arxiv.org/abs/2603.12180v2",
+    "publisher": "MADQA Table 3",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2604-17966-cdeec3a6b1b058cd",
     "resource_scope": [
       "benchmark"
@@ -1750,6 +1849,72 @@
     "title": "QCalEval Table 3 zero-shot",
     "url": "https://arxiv.org/abs/2604.25884",
     "publisher": "QCalEval Table 3 zero-shot",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2605-11086-bbddedc6f1561b7f",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ExploitGym v1 primary source",
+    "url": "https://arxiv.org/abs/2605.11086",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2605-11086v1-a85e64387b9eb28b",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "ExploitGym Table 3",
+    "url": "https://arxiv.org/abs/2605.11086v1",
+    "publisher": "ExploitGym Table 3",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2605-16679-237cc96219748eed",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CHI-Bench primary source",
+    "url": "https://arxiv.org/abs/2605.16679",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2605-16679v1-a1977b5dde282c6f",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "CHI-Bench Table 2",
+    "url": "https://arxiv.org/abs/2605.16679v1",
+    "publisher": "CHI-Bench Table 2",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -1805,6 +1970,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2606-24530-05925b81d4da2ef8",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "NatureBench primary source",
+    "url": "https://arxiv.org/abs/2606.24530",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2606-24530v2-0d2139f4dda76312",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "NatureBench Table 4",
+    "url": "https://arxiv.org/abs/2606.24530v2",
+    "publisher": "NatureBench Table 4",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2606-27047-043cc0fe3e833f7c",
     "resource_scope": [
       "benchmark"
@@ -1821,6 +2019,39 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2607-11192-c04b7dca9656f41c",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "GDP.pdf primary source",
+    "url": "https://arxiv.org/abs/2607.11192",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2607-11192v3-5faf12c463aa250a",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GDP.pdf v3 Table 6",
+    "url": "https://arxiv.org/abs/2607.11192v3",
+    "publisher": "GDP.pdf v3 Table 6",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7",
     "resource_scope": [
       "benchmark"
@@ -1831,6 +2062,39 @@
     "url": "https://arxiv.org/abs/2608.16349",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2608-24979-b96afb470941cdd0",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierChallenge primary source",
+    "url": "https://arxiv.org/abs/2608.24979",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2608-24979v1-ed17201a2aadf8e3",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "FrontierChallenge Table 2",
+    "url": "https://arxiv.org/abs/2608.24979v1",
+    "publisher": "FrontierChallenge Table 2",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,

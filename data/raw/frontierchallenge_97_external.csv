@@ -1,0 +1,12 @@
+Name,Pass Rate,Release date,Organization,Result public date,Source,Source link,id
+GPT-5.6 Sol (Codex),20.6,2026-07-09,OpenAI,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-00
+Grok 4.6 (Claude Code),20.6,2026-08-12,xAI,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-01
+Kimi K3 (Claude Code),17.5,2026-07-16,Moonshot,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-02
+Claude Opus 5 (Claude Code),17.5,2026-07-24,Anthropic,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-03
+GPT-5.6 Terra (max) (Codex),15.5,2026-07-09,OpenAI,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-04
+Qwen 3.8 Max (Claude Code),15.5,2026-08-03,Alibaba,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-05
+DeepSeek V4 Pro-0813 (Claude Code),13.4,2026-08-13,DeepSeek,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-06
+DeepSeek V4 Flash-0731 (Claude Code),12.4,2026-07-31,DeepSeek,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-07
+Gemini 3.7 Flash (Claude Code),10.3,2026-08-13,Google DeepMind,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-08
+Qwen3.5-397B-A17B (Claude Code),4.1,2026-02-13,Alibaba,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-09
+GLM-5.2 (Claude Code),3.1,2026-06-17,Z.ai,2026-08-25,FrontierChallenge Table 2,https://arxiv.org/html/2608.24979v1,frontierchallenge-97-10
