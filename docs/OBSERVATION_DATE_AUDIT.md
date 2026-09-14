@@ -8,7 +8,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 - Source evidence records: **4349**
 - Exact duplicate evidence rows merged: **141**
 - Observations without any candidate date: **354**
-- Observations selected before benchmark release and plotted as `At release`: **1213**
+- Observations selected before benchmark release and plotted as `At release`: **1214**
 
 ## Selected earliest-date evidence
 
@@ -36,7 +36,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | ARC-AGI-3 | 1 | 1 | 0 | 1 |
 | AssistantBench | 8 | 8 | 0 | 4 |
 | AtomWorld v4 | 3 | 3 | 3 | 1 |
-| AutomationBench | 8 | 8 | 1 | 4 |
+| AutomationBench | 8 | 8 | 0 | 3 |
 | BALROG | 36 | 36 | 17 | 5 |
 | BenchCAD · Vision2Code | 8 | 8 | 6 | 1 |
 | BFCL V4 | 3 | 3 | 1 | 2 |
@@ -177,7 +177,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | TheAgentCompany | 16 | 16 | 6 | 6 |
 | ThermoQA v0.4 — Composite | 5 | 5 | 5 | 1 |
 | TOMG-Bench v1 — wAcc | 9 | 9 | 9 | 1 |
-| Toolathlon-Verified | 5 | 5 | 0 | 2 |
+| Toolathlon-Verified | 5 | 5 | 2 | 2 |
 | TPS-CalcBench — Core Exact | 7 | 7 | 7 | 1 |
 | TriviaQA | 106 | 104 | 0 | 7 |
 | Vending-Bench 2 | 59 | 59 | 0 | 6 |
