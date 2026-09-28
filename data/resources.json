@@ -163,6 +163,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-akitaonrails-github-io-en-2026-09-15-new-l-dca7469483597fd1",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Akita coding benchmark v4 \u00b7 Vigilance primary source",
+    "url": "https://akitaonrails.github.io/en/2026/09/15/new-llm-benchmark-v4-retesting-39-llms-part-2",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-alignment-anthropic-com-2026-conceptual-re-c2a971b100a9b52c",
     "resource_scope": [
       "benchmark"
@@ -1400,7 +1416,7 @@
     "resource_type": "official_leaderboard",
     "title": "HealthBench source",
     "url": "https://arxiv.org/abs/2505.08775",
-    "publisher": null,
+    "publisher": "",
     "authority": "trusted_secondary",
     "active": true,
     "watch": false,
@@ -2052,6 +2068,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2608-10677-2d8f2b97fe6cec44",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "Chartography v1 \u00b7 No tools primary source",
+    "url": "https://arxiv.org/abs/2608.10677",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-arxiv-org-abs-2608-16349-9a8bfb74a7fb48d7",
     "resource_scope": [
       "benchmark"
@@ -2095,6 +2127,70 @@
     "url": "https://arxiv.org/abs/2608.24979v1",
     "publisher": "FrontierChallenge Table 2",
     "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2609-16251v1-20d4354677c7e858",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CADWorld v1 primary source",
+    "url": "https://arxiv.org/abs/2609.16251v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2609-16305v1-1c49e1d253b9ae7b",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "BLINDSPOT v1 \u00b7 Safety calibration primary source",
+    "url": "https://arxiv.org/abs/2609.16305v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2609-17885v1-5a5966d3886050fb",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ERPBench (state-grounded) v1 \u00b7 T1 primary source",
+    "url": "https://arxiv.org/abs/2609.17885v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-arxiv-org-abs-2609-27490v1-ddcb4cfb6c175b64",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "WhatWorkedBench v1 \u00b7 Four-factor B=8 primary source",
+    "url": "https://arxiv.org/abs/2609.27490v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -2315,6 +2411,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-cursor-com-cursorbench-28e7d62747c5444e",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "CursorBench 4.0 primary source",
+    "url": "https://cursor.com/cursorbench",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-cybench-github-io-6f82df1df4ae0c1b",
     "resource_scope": [
       "benchmark"
@@ -2408,6 +2520,23 @@
     "url": "https://deepswe.datacurve.ai/",
     "publisher": "Benchmark authors",
     "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-deploymentsafety-openai-com-gpt-6-astra-d170283db76935da",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
     "active": true,
     "watch": false,
     "last_checked_at": null,
@@ -13200,6 +13329,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-github-com-bracketthq-showandtell-arena-tr-15106161d6562a3a",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "ShowAndTell v1 \u00b7 Comprehension (AEI) primary source",
+    "url": "https://github.com/bracketthq/showAndTell-arena/tree/cd70351a3244bb3d433ffd72bc46406741b1bf2a",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-github-com-catalystforyou-superchem-eval-7e2ce5fca04d84fc",
     "resource_scope": [
       "benchmark"
@@ -14173,6 +14318,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-huggingface-co-xiaomimimo-mimo-v2-6-pro-rl-28584ca695de3349",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-inflection-ai-blog-inflection-1-508242ee25a0e3fa",
     "resource_scope": [
       "benchmark",
@@ -14401,6 +14563,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-openai-com-index-introducing-swe-bench-ver-10b59b402b80208a",
@@ -14650,6 +14829,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-raw-githubusercontent-com-bracketthq-showa-e135178417345fbf",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://raw.githubusercontent.com/bracketthq/showAndTell-arena/cd70351a3244bb3d433ffd72bc46406741b1bf2a/site/data/results.json",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-robo-bench-github-io-587e0991eb7fd54d",
     "resource_scope": [
       "benchmark"
@@ -14892,6 +15088,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-www-anthropic-com-claude-opus-5-5-0dd3bed5c7dd1c27",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-anthropic-com-claude-opus-5-5-system-c-b473df8343ee1414",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://www.anthropic.com/claude-opus-5-5-system-card",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-www-anthropic-com-news-claude-3-family-a2cf0d0271acb097",
@@ -15269,5 +15499,22 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Official release/model resource for the current frontier model panel."
+  },
+  {
+    "id": "resource-https-x-ai-news-grok-4-7-39b901174b543376",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "September 2026 source review",
+    "url": "https://x.ai/news/grok-4-7",
+    "publisher": "September 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   }
 ]

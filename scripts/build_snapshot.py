@@ -665,12 +665,28 @@ def lifecycle_view_ids(benchmarks, snapshot_date):
     return views
 
 
+def auxiliary_metadata(row, spec):
+    """Explicitly quarantine incompatible source protocols from lifecycle data."""
+    columns = ("Auxiliary protocol", "Auxiliary task set", "Auxiliary label",
+               "Auxiliary explanation en", "Auxiliary explanation zh")
+    values = [(row.get(column) or "").strip() for column in columns]
+    if not any(values):
+        return None
+    if not all(values) or values[0] == spec["protocol_id"]:
+        raise ValueError(f"{spec['id']}: auxiliary rows require a distinct protocol, task set, label and EN/ZH explanations")
+    return {
+        "protocol_id": values[0], "task_set_id": values[1], "label": values[2],
+        "explanation": {"en": values[3], "zh": values[4]},
+    }
+
+
 def build_benchmark(spec, resources, models, evidence_records):
     benchmark_resource_id = register_resource(
         resources, spec["source"], f"{spec['name']} primary source", resource_type="paper",
         publisher="Benchmark authors", authority="primary", scope=("benchmark",),
     )
     rows = []
+    auxiliary_protocols = {}
     with (RAW / spec["file"]).open(newline="") as handle:
         for row_number, row in enumerate(csv.DictReader(handle), start=1):
             try:
@@ -753,6 +769,14 @@ def build_benchmark(spec, resources, models, evidence_records):
             if spec["id"] == "cybench" and not capability_eligible:
                 task_set_id = "cybench-subset-or-unverified"
                 protocol_id = "cybench-noncanonical-subset-or-unverified"
+            auxiliary = auxiliary_metadata(row, spec)
+            if auxiliary:
+                protocol_id = auxiliary["protocol_id"]
+                task_set_id = auxiliary["task_set_id"]
+                capability_eligible = False
+                previous = auxiliary_protocols.setdefault(protocol_id, auxiliary)
+                if previous != auxiliary:
+                    raise ValueError(f"{spec['id']}: inconsistent auxiliary metadata for {protocol_id}")
             score_role = "canonical" if protocol_id == spec["protocol_id"] else "auxiliary"
             score_series_id = (f"{spec['id']}-canonical-score" if score_role == "canonical"
                                else f"{spec['id']}-auxiliary-{slug(protocol_id)}")
@@ -797,7 +821,8 @@ def build_benchmark(spec, resources, models, evidence_records):
                 "metric": spec["score"],
                 "score_role": score_role,
                 "score_series_id": score_series_id,
-                "evaluation_protocol": spec["protocol"],
+                "evaluation_protocol": auxiliary["explanation"]["en"] if auxiliary else spec["protocol"],
+                **({"auxiliary_metadata": auxiliary} if auxiliary else {}),
                 "model_release_date": model_release_date,
                 "evaluation_date": evaluation_date,
                 "result_public_date": result_public_date,
@@ -826,6 +851,8 @@ def build_benchmark(spec, resources, models, evidence_records):
                 "capability_frontier_eligible": capability_eligible,
                 "historical_frontier_eligible": bool(result_public_date),
                 "eligibility_reason": (
+                    "Auxiliary protocol: excluded from canonical frontiers and lifecycle metrics."
+                    if auxiliary else
                     "Excluded from the canonical CyBench frontier because the source uses a 35/37-task subset or does not pin the task set."
                     if spec["id"] == "cybench" and not capability_eligible else
                     "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date."
@@ -865,6 +892,8 @@ def build_benchmark(spec, resources, models, evidence_records):
     cost_values = []
     if spec.get("cost_column"):
         for row in rows:
+            if row["score_role"] != "canonical":
+                continue
             try:
                 cost = float(row.get("reported_cost_per_task", ""))
             except (TypeError, ValueError):
@@ -880,7 +909,8 @@ def build_benchmark(spec, resources, models, evidence_records):
         cost = {"value": sorted(cost_values)[len(cost_values) // 2] / divisor, "currency": "USD", "per_task": True, "method": method, "source_ids": sorted({source_id for row in rows for source_id in row["source_ids"]}), "notes": "Cost varies by model, harness, and inference settings."}
     coverage_orgs = [
         name for name in REFERENCE_ORGANIZATION_NAMES
-        if any(name in canonical_reference_organizations(row["organization"]) for row in rows)
+        if any(name in canonical_reference_organizations(row["organization"])
+               for row in rows if row["score_role"] == "canonical")
     ]
     coverage = len(coverage_orgs) / len(REFERENCE_ORGANIZATION_NAMES)
     auxiliary_score_series = []
@@ -907,6 +937,11 @@ def build_benchmark(spec, resources, models, evidence_records):
             "observation_ids": [row["observation_id"] for row in series_rows],
             "frontier_events": series_frontier,
         })
+        metadata = series_rows[0].get("auxiliary_metadata")
+        if metadata:
+            if any(row.get("auxiliary_metadata") != metadata for row in series_rows):
+                raise ValueError(f"{series_id}: inconsistent auxiliary metadata")
+            auxiliary_score_series[-1].update(metadata)
     return {
         **{key: spec[key] for key in ("id", "name", "domain", "release", "source")},
         "floor": progress_baseline,
@@ -967,7 +1002,13 @@ def build_benchmark(spec, resources, models, evidence_records):
         "reported_velocity_180d": reported_velocity_180d,
         "cost_per_task": cost,
         "coverage": {"value": coverage, "represented_organizations": coverage_orgs, "panel_size": len(REFERENCE_ORGANIZATION_NAMES), "status": "high" if coverage >= 0.7 else "medium" if coverage >= 0.4 else "low"},
-        "unavailable": [],
+        "unavailable": [] if current else [{
+            "field": "canonical_frontier",
+            "reason": {
+                "en": "No dated, eligible canonical observation is available. Auxiliary results do not establish a canonical frontier.",
+                "zh": "暂无有日期且符合主协议的观测。辅助成绩不能确定主序列的 frontier。",
+            },
+        }],
         "resource_ids": [benchmark_resource_id],
         "date_policy": "Primary lifecycle time uses the earliest available date among evaluation/run time, model release time, and the earliest recorded score-publication time for the same observation. Plot dates and T50/T80/T90 are clipped at benchmark release, so lifecycle durations are never negative; original dates remain preserved for provenance.",
         "historical_frontier_status": "unknown_public_dates" if not reported_frontier else "available",

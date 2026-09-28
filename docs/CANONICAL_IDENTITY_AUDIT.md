@@ -1,15 +1,15 @@
 # Canonical Identity Audit
 
-Snapshot: `2026-09-04` · schema version `2`
+Snapshot: `2026-09-23` · schema version `2`
 
 A source row is preserved as evidence. Exact duplicate measurements may share one canonical observation; model/display setting, protocol, task set, score series, and score must all match.
 
-- Source evidence records: **4349**
-- Canonical measurements: **4208**
+- Source evidence records: **4587**
+- Canonical measurements: **4446**
 - Measurements with multiple evidence records: **119**
 - Duplicate evidence rows reconciled: **141**
-- Canonical models: **1280**
-- Canonical resources: **908**
+- Canonical models: **1414**
+- Canonical resources: **923**
 
 ## Reconciliation by benchmark
 

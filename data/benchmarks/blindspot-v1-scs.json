@@ -1,0 +1,45 @@
+{
+  "id": "blindspot-v1-scs",
+  "name": "BLINDSPOT v1 · Safety calibration",
+  "registry_order": 159,
+  "release": "2026-09-14",
+  "domain": "General agent tasks",
+  "evaluation_type": "Agent",
+  "evaluation_target": "process_and_output",
+  "file": "blindspot_v1_scs_external.csv",
+  "score": "Safety calibration score",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "blindspot-v1-scs-metric-v1",
+  "protocol_id": "blindspot-v1-scs-protocol-v1",
+  "protocol": "arXiv v1 Table 3, SCS only; other safety metrics are not interchangeable.",
+  "source": "https://arxiv.org/abs/2609.16305v1",
+  "labels": [
+    "instruction-following",
+    "tool-use",
+    "state-tracking"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Measures safety and usefulness over stateful, adversarial tool-use trajectories.",
+    "zh": "衡量有状态、受对抗干扰的工具使用轨迹中的安全性与实用性。"
+  },
+  "task_format": {
+    "en": "v1 covers 35 scenarios and 22 attack families; outcomes include safe completion, refusal and unsafe action.",
+    "zh": "v1 覆盖 35 个场景、22 类攻击，区分安全完成、拒绝与不安全操作等结果。"
+  },
+  "scoring": {
+    "metric_name": "Safety calibration score",
+    "explanation": {
+      "en": "Published SCS = sqrt(BCR × (1 − UCR)), using benign completion and unsafe completion rates. It is a safety–utility score, not task accuracy.",
+      "zh": "论文的 SCS = sqrt(BCR × (1 − UCR))，结合良性任务完成率和不安全完成率；它不是任务正确率。"
+    }
+  }
+}

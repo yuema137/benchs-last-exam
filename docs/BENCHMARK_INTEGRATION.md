@@ -40,6 +40,15 @@ Any additional score belongs in `auxiliary_score_series`, even when it shares th
 
 The generated snapshot, integration validator, frontend defensive selector, and regression tests all enforce this boundary. A benchmark with no auxiliary data still emits an empty `auxiliary_score_series` list so the contract is explicit.
 
+For a protocol/task-set variant using the card's existing metric and input unit,
+CSV rows may declare `Auxiliary protocol`, `Auxiliary task set`, `Auxiliary label`,
+`Auxiliary explanation en`, and `Auxiliary explanation zh`. Supply all five;
+the protocol must differ from the canonical protocol. Rows sharing an auxiliary
+protocol must have identical metadata. These rows retain evidence and observation
+lineage and appear in the detail view, but do not contribute to canonical
+frontiers, organization coverage, cost summaries, or lifecycle selectors.
+This mechanism does not convert a different metric or unit into the card's metric.
+
 ## Evidence and canonical measurement identity
 
 One imported source row is an immutable evidence record, not automatically a

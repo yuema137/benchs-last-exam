@@ -1,0 +1,46 @@
+{
+  "id": "showandtell-v1-comprehension",
+  "name": "ShowAndTell v1 · Comprehension (AEI)",
+  "registry_order": 165,
+  "release": "2026-09-15",
+  "domain": "General agent tasks",
+  "evaluation_type": "Agent",
+  "evaluation_target": "final_output",
+  "file": "showandtell_v1_comprehension_external.csv",
+  "score": "Comprehension score",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "showandtell-v1-comprehension-metric-v1",
+  "protocol_id": "showandtell-v1-comprehension-protocol-v1",
+  "protocol": "Official v1 quiz protocol; excludes preliminary non-canonical workbook grades and does not represent full AEI learning or execution.",
+  "source": "https://github.com/bracketthq/showAndTell-arena/tree/cd70351a3244bb3d433ffd72bc46406741b1bf2a",
+  "labels": [
+    "multimodal-perception",
+    "knowledge-recall",
+    "instruction-following",
+    "state-tracking"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests understanding of a business workflow after a demonstration; not the full Agent Effectiveness Index.",
+    "zh": "测试看过演示后对业务流程的理解，不代表完整 Agent Effectiveness Index。"
+  },
+  "task_format": {
+    "en": "Teach by demonstration, then answer questions about the learned workflow. Current public evidence is a preliminary 24-shared-case workbook snapshot.",
+    "zh": "通过演示教学，再回答关于所学流程的问题。目前公开证据是包含 24 个共同案例的初步工作簿快照。"
+  },
+  "scoring": {
+    "metric_name": "Comprehension score",
+    "explanation": {
+      "en": "Canonical quiz scoring averages question scores. Published shared-case workbook grades mix manual and model-assisted grading, so they are auxiliary only; incomplete attempts count zero, untested cells are excluded, cases receive equal weight.",
+      "zh": "主协议按题目分数取平均。公开共同案例成绩混用人工和模型评分，因此仅作辅助证据；未完成运行得零分，未测试项不计入，各案例等权。"
+    }
+  }
+}

@@ -1,9 +1,11 @@
-Name,Accuracy mean,Release date,Organization,Source,Source Link,Notes
-GPT-5.3-Codex + Codex CLI,0.791,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-GPT-5.4 + Codex CLI,0.773,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-Gemini 3.1 Pro + Terminus 2,0.707,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-Claude Opus 4.6 + Claude Code,0.701,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-GPT-5.3-Codex + Terminus 2,0.685,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-Gemini 3.1 Pro + Gemini CLI,0.671,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-GPT-5.4 mini + Codex CLI,0.661,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
-Claude Opus 4.6 + Terminus 2,0.638,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+Result public date,Source link,id,Name,Accuracy mean,Release date,Organization,Source,Source Link,Notes
+,,,GPT-5.3-Codex + Codex CLI,0.791,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,GPT-5.4 + Codex CLI,0.773,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,Gemini 3.1 Pro + Terminus 2,0.707,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,Claude Opus 4.6 + Claude Code,0.701,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,GPT-5.3-Codex + Terminus 2,0.685,2026-03-10,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,Gemini 3.1 Pro + Gemini CLI,0.671,2026-02-19,Google,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,GPT-5.4 mini + Codex CLI,0.661,2026-03-24,OpenAI,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+,,,Claude Opus 4.6 + Terminus 2,0.638,2026-03-12,Anthropic,Terminal-Bench 2.1 official comparison,https://www.tbench.ai/news/terminal-bench-2-1,Representative agent-model pair
+2026-09-21,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md,sep2026-terminal-bench-2-1-mimo-v2-6-pro-rl-model-card-settings,MiMo-V2.6-Pro-RL (model-card settings),0.899,,Xiaomi,September 2026 source review,,Original model-card commit c165b4c7 published September 21; model release date left unpinned.
+2026-09-21,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md,sep2026-terminal-bench-2-1-mimo-v2-6-flash-rl-model-card-settings,MiMo-V2.6-Flash-RL (model-card settings),0.876,,Xiaomi,September 2026 source review,,Original model-card commit c165b4c7 published September 21; model release date left unpinned.

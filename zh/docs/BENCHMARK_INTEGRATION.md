@@ -40,6 +40,13 @@ Lifecycle 同步是一条 build invariant。每次 build 都会从同一份 cano
 
 生成的 snapshot、接入 validator、前端防御性选择器和回归测试都会强制这条边界。即使某个 benchmark 没有 auxiliary 数据，也要输出一个空的 `auxiliary_score_series` 列表，让契约保持显式。
 
+如果变体沿用卡片现有的 metric 和输入单位，但评测协议或题集不同，CSV 行可以声明
+`Auxiliary protocol`、`Auxiliary task set`、`Auxiliary label`、
+`Auxiliary explanation en` 和 `Auxiliary explanation zh`。五列必须全部填写，
+且协议必须不同于主协议。使用同一辅助协议的行必须具有一致的元数据。
+这些行保留证据与观测谱系，并显示在详情页，但不参与主序列的 frontier、
+机构覆盖率、成本汇总或生命周期选择器。这一机制不会把其他 metric 或单位转换成卡片的 metric。
+
 ## 证据与 canonical 测量身份
 
 一条导入的源数据行是一条不可变的证据记录，并不自动成为一次新的科学测量。Evidence ID 在存在源行 ID 时基于该 ID，否则基于规范化后的行内容；CSV 中的位置永远不是身份。

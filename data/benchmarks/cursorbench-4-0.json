@@ -1,0 +1,46 @@
+{
+  "id": "cursorbench-4-0",
+  "name": "CursorBench 4.0",
+  "registry_order": 163,
+  "release": "2026-09-10",
+  "domain": "Software engineering",
+  "evaluation_type": "Agent",
+  "evaluation_target": "environment_outcome",
+  "file": "cursorbench_4_0_external.csv",
+  "score": "Task score",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "cursorbench-4-0-metric-v1",
+  "protocol_id": "cursorbench-4-0-protocol-v1",
+  "protocol": "CursorBench 4.0, Cursor production agent harness; official September 10 changelog.",
+  "source": "https://cursor.com/cursorbench",
+  "labels": [
+    "code-generation",
+    "code-execution-debugging",
+    "planning",
+    "instruction-following"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Evaluates coding agents on tasks drawn from Cursor usage.",
+    "zh": "评估 coding agent 完成源于 Cursor 实际使用任务的能力。"
+  },
+  "task_format": {
+    "en": "Version 4.0 adds longer editing, refactoring, investigation and design-following workflows in Cursor’s production harness.",
+    "zh": "4.0 在 Cursor 生产 harness 中加入更长的编辑、重构、调查和遵循设计要求的工作流程。"
+  },
+  "scoring": {
+    "metric_name": "Task score",
+    "explanation": {
+      "en": "Reported task score under Cursor’s grading; version 4.0 is separate from 3.2. Effort settings remain separate observations.",
+      "zh": "采用 Cursor 评分协议报告的任务分数；4.0 与 3.2 分开，不同推理档位保留为独立观测。"
+    }
+  }
+}

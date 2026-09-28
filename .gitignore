@@ -100,3 +100,11 @@ data/raw/*
 !data/raw/exploitgym_v1_external.csv
 !data/raw/madqa_external.csv
 !data/raw/sandbox_escape_bench_external.csv
+!data/raw/cadworld_v1_external.csv
+!data/raw/blindspot_v1_scs_external.csv
+!data/raw/whatworkedbench_v1_b8_external.csv
+!data/raw/erpbench_state_v1_t1_external.csv
+!data/raw/akita_v4_vigilance_external.csv
+!data/raw/cursorbench_4_0_external.csv
+!data/raw/chartography_v1_no_tools_external.csv
+!data/raw/showandtell_v1_comprehension_external.csv

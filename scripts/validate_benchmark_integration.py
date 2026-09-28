@@ -216,11 +216,24 @@ def validate_benchmark(benchmark, resources, models, allowed_labels=None):
     errors = []
     required = ("id", "name", "benchmark_version_id", "release", "evaluation_type", "domain", "labels",
                 "summary", "task_format", "scoring", "evaluation_target", "observations",
-                "frontier", "resource_ids", "coverage", "canonical_score",
+                "resource_ids", "coverage", "canonical_score",
                 "lifecycle_eligibility")
     for field in required:
         if field not in benchmark or benchmark[field] in (None, "", []):
             errors.append(f"{benchmark.get('id', '<unknown>')}: missing {field}")
+    if not isinstance(benchmark.get("frontier"), list):
+        errors.append(f"{benchmark.get('id')}: frontier must be a list")
+    elif not benchmark["frontier"]:
+        reasons = [item.get("reason", {}) for item in benchmark.get("unavailable", [])
+                   if item.get("field") == "canonical_frontier"]
+        if not any(reason.get("en") and reason.get("zh") for reason in reasons):
+            errors.append(f"{benchmark.get('id')}: empty canonical frontier requires an EN/ZH unavailable reason")
+        if any(row.get("score_role") == "canonical" and row.get("capability_frontier_eligible")
+               for row in benchmark.get("observations", [])):
+            errors.append(f"{benchmark.get('id')}: eligible canonical observations are missing from frontier")
+        for field in ("capability_frontier_value", "normalized_progress", "normalized_headroom"):
+            if benchmark.get(field) is not None:
+                errors.append(f"{benchmark.get('id')}: {field} must be unknown without a canonical frontier")
     for field in ("summary", "task_format"):
         value = benchmark.get(field, {})
         for lang in ("en", "zh"):
@@ -387,7 +400,8 @@ def main():
     for benchmark in benchmarks:
         errors.extend(validate_benchmark(benchmark, resources, models, allowed_labels))
         expected_organizations = represented_reference_organizations(
-            benchmark.get("observations", []), organizations, organization_aliases
+            [row for row in benchmark.get("observations", []) if row.get("score_role") == "canonical"],
+            organizations, organization_aliases
         )
         coverage = benchmark.get("coverage", {})
         if coverage.get("represented_organizations") != expected_organizations:

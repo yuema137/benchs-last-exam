@@ -1,10 +1,12 @@
-Name,Accuracy,Release date,Organization,Source,Source Link,Notes
-Gemini 3.1 Pro Preview,0.4644,2026-02-19,Google,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-GPT-5.4 Pro,0.4432,2026-03-05,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-GPT-6 Astra,0.572,2026-09-03,OpenAI,GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,Public result; with tools
-Muse Spark,0.4056,2026-07-09,Meta,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-Gemini 3 Pro Preview,0.3752,2025-11-18,Google,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-GPT-5.4,0.3624,2026-03-05,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-Claude Opus 4.7,0.3620,2026-04-16,Anthropic,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-Claude Opus 4.6,0.3444,2026-02-05,Anthropic,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
-GPT-5,0.2532,2025-08-07,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+Result public date,Source link,id,Auxiliary protocol,Auxiliary task set,Auxiliary label,Auxiliary explanation en,Auxiliary explanation zh,Name,Accuracy,Release date,Organization,Source,Source Link,Notes
+,,,,,,,,Gemini 3.1 Pro Preview,0.4644,2026-02-19,Google,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,GPT-5.4 Pro,0.4432,2026-03-05,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,GPT-6 Astra,0.572,2026-09-03,OpenAI,GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,Public result; with tools
+,,,,,,,,Muse Spark,0.4056,2026-07-09,Meta,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,Gemini 3 Pro Preview,0.3752,2025-11-18,Google,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,GPT-5.4,0.3624,2026-03-05,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,Claude Opus 4.7,0.3620,2026-04-16,Anthropic,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,Claude Opus 4.6,0.3444,2026-02-05,Anthropic,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+,,,,,,,,GPT-5,0.2532,2025-08-07,OpenAI,Scale AI HLE leaderboard,https://labs.scale.com/leaderboard/humanitys_last_exam,HLE finalized 2,500-question set
+2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-humanitys-last-exam-claude-opus-5-5-max-tools-safeguards-fallbacks,,,,,,"Claude Opus 5.5 (max, tools, safeguards/fallbacks)",0.677,2026-09-22,Anthropic,September 2026 source review,,
+2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-humanitys-last-exam-claude-opus-5-5-max-no-tools,hle-no-tools-anthropic-sep22,hle-no-tools-anthropic-sep22,No tools / Anthropic grader,No-tools HLE score; isolated from the existing tool-enabled observations.,无工具 HLE 成绩，与已有使用工具的观测隔离。,"Claude Opus 5.5 (max, no tools)",0.644,2026-09-22,Anthropic,September 2026 source review,,

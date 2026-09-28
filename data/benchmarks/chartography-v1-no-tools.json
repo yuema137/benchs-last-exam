@@ -1,0 +1,44 @@
+{
+  "id": "chartography-v1-no-tools",
+  "name": "Chartography v1 · No tools",
+  "registry_order": 164,
+  "release": "2026-08-11",
+  "domain": "Multimodal",
+  "evaluation_type": "Model",
+  "evaluation_target": "final_output",
+  "file": "chartography_v1_no_tools_external.csv",
+  "score": "Pass@1",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "chartography-v1-no-tools-metric-v1",
+  "protocol_id": "chartography-v1-no-tools-protocol-v1",
+  "protocol": "100 tasks; no tools; Gemini 3.5 Flash grading, five trials for Anthropic September 22 results.",
+  "source": "https://arxiv.org/abs/2608.10677",
+  "labels": [
+    "multimodal-perception",
+    "quantitative-reasoning"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests understanding of specialized charts used in professional work.",
+    "zh": "测试理解专业工作中特殊图表的能力。"
+  },
+  "task_format": {
+    "en": "100 expert-authored chart questions; canonical observations use no tools and the Gemini 3.5 Flash judge.",
+    "zh": "100 道专家编写的图表题；主序列采用无工具条件和 Gemini 3.5 Flash 评分器。"
+  },
+  "scoring": {
+    "metric_name": "Pass@1",
+    "explanation": {
+      "en": "Mean pass@1 against expert answer tolerances. Tool-assisted and older judge configurations must remain separate.",
+      "zh": "依据专家设定的答案容差计算平均 pass@1。有工具结果和旧评分器配置分开记录。"
+    }
+  }
+}

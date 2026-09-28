@@ -1,0 +1,822 @@
+{
+  "audit_date": "2026-09-27",
+  "window_start": "2026-09-14",
+  "window_end": "2026-09-27",
+  "scope": "Bounded review of named model releases and public new-benchmark discovery; not exhaustive literature surveillance.",
+  "source_hashes": [
+    {
+      "url": "https://www.anthropic.com/claude-opus-5-5/",
+      "sha256": "59fce6de26dc551f29ebcb0430b60d66f55603e626285929e334636d70bf3dab"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "sha256": "7311c9c6bbb16d012f1c12c7418b05949fcf7ae3e30d2c40f22050074b2a7378"
+    },
+    {
+      "url": "https://x.ai/news/grok-4-7",
+      "sha256": "537da3f16f795fc9cf187a8d5675575310f4e0a276cd55d8e79e875a0e1f1e19"
+    },
+    {
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "sha256": "c7710278e8755958dc7193058f0c01d3e1208d9a0058bfbef1515009c0709759"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bracketthq/showAndTell-arena/cd70351a3244bb3d433ffd72bc46406741b1bf2a/site/data/results.json",
+      "sha256": "0785b9f2dfdd4114be0b43308b5caa40508000a9f2caf5d8775f5696aafc5c57"
+    }
+  ],
+  "inventory": [
+    {
+      "source": "https://akitaonrails.github.io/en/2026/09/15/new-llm-benchmark-v4-retesting-39-llms-part-2/",
+      "benchmark": "akita-v4-vigilance",
+      "status": "UPDATED",
+      "observations": 39,
+      "roles": {
+        "canonical": 39
+      }
+    },
+    {
+      "source": "https://arxiv.org/html/2609.16251v1#S4.T3",
+      "benchmark": "cadworld-v1",
+      "status": "UPDATED",
+      "observations": 7,
+      "roles": {
+        "canonical": 7
+      }
+    },
+    {
+      "source": "https://arxiv.org/html/2609.16305v1#S3.T3",
+      "benchmark": "blindspot-v1-scs",
+      "status": "UPDATED",
+      "observations": 13,
+      "roles": {
+        "canonical": 13
+      }
+    },
+    {
+      "source": "https://arxiv.org/html/2609.17885v1#S4.T2",
+      "benchmark": "erpbench-state-v1-t1",
+      "status": "UPDATED",
+      "observations": 6,
+      "roles": {
+        "canonical": 6
+      }
+    },
+    {
+      "source": "https://arxiv.org/html/2609.27490v1#S6.T2",
+      "benchmark": "whatworkedbench-v1-b8",
+      "status": "UPDATED",
+      "observations": 4,
+      "roles": {
+        "canonical": 4
+      }
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "exploitgym-v1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "healthbench",
+      "status": "UPDATED",
+      "observations": 3,
+      "roles": {
+        "auxiliary": 3
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "agents-last-exam",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "automationbench",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "exploitgym-v1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "gdpval-aa-v2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "terminal-bench-2-1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 2
+      }
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "toolathlon-verified",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "agents-last-exam",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "automationbench",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 2
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "osworld-2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://raw.githubusercontent.com/bracketthq/showAndTell-arena/cd70351a3244bb3d433ffd72bc46406741b1bf2a/site/data/results.json",
+      "benchmark": "showandtell-v1-comprehension",
+      "status": "UPDATED",
+      "observations": 3,
+      "roles": {
+        "auxiliary": 3
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "benchcad-vision2code",
+      "status": "UPDATED",
+      "observations": 3,
+      "roles": {
+        "auxiliary": 3
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "observations": 6,
+      "roles": {
+        "canonical": 3,
+        "auxiliary": 3
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "exploitgym-v1",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "frontierswe-v2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "healthbench",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 1,
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "osworld-2",
+      "status": "UPDATED",
+      "observations": 3,
+      "roles": {
+        "auxiliary": 3
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "toolathlon-verified",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5/",
+      "benchmark": "automationbench",
+      "status": "UPDATED",
+      "observations": 20,
+      "roles": {
+        "auxiliary": 20
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5/",
+      "benchmark": "cursorbench-4-0",
+      "status": "UPDATED",
+      "observations": 20,
+      "roles": {
+        "canonical": 20
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5/",
+      "benchmark": "frontiercode-1-1",
+      "status": "UPDATED",
+      "observations": 25,
+      "roles": {
+        "canonical": 25
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5/",
+      "benchmark": "gdpval-aa-v2",
+      "status": "UPDATED",
+      "observations": 25,
+      "roles": {
+        "auxiliary": 25
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5/",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 25,
+      "roles": {
+        "canonical": 25
+      }
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "cursorbench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "eebench",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "gdpval-aa-v2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "SWE-bench Pro",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "SWE-bench Multilingual",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "SWE-bench Multimodal",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "FrontierCode Extended",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "ArXivMath",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "ProgramBench",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "DRACO",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "WANDR",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "OfficeQA",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "OfficeQA Pro",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Harvey LAB",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "AA-Briefcase v1.1",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "HealthBench Professional",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "GMMLU",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "MILU",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "BioMysteryBench",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "LatchBio Bioinformatics",
+      "status": "NOT TRACKED",
+      "reason": "Not an existing registry measurement object; no verified first release in the September 14–27 window. Do not substitute related tracked benchmarks."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Multi-agent ProgramBench",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Multi-agent DRACO",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Morphology",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Medicinal chemistry",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Protein design",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "De novo binder design",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Biomedical image analysis",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Protocols",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "CyScenarioBench",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "Binary exploitation tasks",
+      "status": "NOT TRACKED",
+      "reason": "Distinct internal or specialized capability evaluation; no matching public canonical card in this bounded update."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-opus-5-5-system-card/",
+      "benchmark": "ExploitBench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "System-card flags captured / capped success and safeguards-off configurations do not pin the registry base-harness Mean capability measurement. No guessed normalization."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "FrontierCode 1.1 Main (Sol/Luna effort curves)",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Official readable page exposes prose but not numeric chart arrays. Direct HTML fetch returned HTTP 403 and no browser surface was available. Exact prose values were imported; no pixel estimates or values inferred from competitor comparisons."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "Agents’ Last Exam (remaining effort points)",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Official readable page exposes prose but not numeric chart arrays. Direct HTML fetch returned HTTP 403 and no browser surface was available. Exact prose values were imported; no pixel estimates or values inferred from competitor comparisons."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "AutomationBench (remaining effort points)",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Official readable page exposes prose but not numeric chart arrays. Direct HTML fetch returned HTTP 403 and no browser surface was available. Exact prose values were imported; no pixel estimates or values inferred from competitor comparisons."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "DeepSWE (remaining effort points)",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Official readable page exposes prose but not numeric chart arrays. Direct HTML fetch returned HTTP 403 and no browser surface was available. Exact prose values were imported; no pixel estimates or values inferred from competitor comparisons."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "benchmark": "OSWorld 2.0 (remaining effort points)",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Official readable page exposes prose but not numeric chart arrays. Direct HTML fetch returned HTTP 403 and no browser surface was available. Exact prose values were imported; no pixel estimates or values inferred from competitor comparisons."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "HealthBench Professional",
+      "status": "NOT TRACKED",
+      "reason": "Separate task sets or metric definitions; not interchangeable with tracked overall HealthBench / existing cyber cards."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "HealthBench Hard",
+      "status": "NOT TRACKED",
+      "reason": "Separate task sets or metric definitions; not interchangeable with tracked overall HealthBench / existing cyber cards."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "HealthBench Consensus",
+      "status": "NOT TRACKED",
+      "reason": "Separate task sets or metric definitions; not interchangeable with tracked overall HealthBench / existing cyber cards."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "SEC-Bench Pro",
+      "status": "NOT TRACKED",
+      "reason": "Separate task sets or metric definitions; not interchangeable with tracked overall HealthBench / existing cyber cards."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "ExploitBench Internal Port",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "June–August 2026 CVEs are a distinct private task set, not the tracked May public base-harness measurement."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "Internal factuality",
+      "status": "NOT TRACKED",
+      "reason": "Internal evaluation suites and safety metrics lack matching public canonical cards; source reviewed for tracked capability intersections."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "Safe completions / jailbreaks / prompt injection",
+      "status": "NOT TRACKED",
+      "reason": "Internal evaluation suites and safety metrics lack matching public canonical cards; source reviewed for tracked capability intersections."
+    },
+    {
+      "source": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "benchmark": "Alignment / monitorability / biology / AI self-improvement internal evaluations",
+      "status": "NOT TRACKED",
+      "reason": "Internal evaluation suites and safety metrics lack matching public canonical cards; source reviewed for tracked capability intersections."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "AA-Briefcase",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; these are not substitute scores for GDPval, overall HealthBench or other cyber evaluations."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "Harvey LAB",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; these are not substitute scores for GDPval, overall HealthBench or other cyber evaluations."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "HealthBench Professional",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; these are not substitute scores for GDPval, overall HealthBench or other cyber evaluations."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "LatchBio Bioinformatics",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; these are not substitute scores for GDPval, overall HealthBench or other cyber evaluations."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "HackerBench v0.3",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; these are not substitute scores for GDPval, overall HealthBench or other cyber evaluations."
+    },
+    {
+      "source": "https://x.ai/news/grok-4-7",
+      "benchmark": "Claude Fable 5.1 comparison on Terminal-Bench 4.0",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Different reported comparison configuration than Anthropic release. This audit imports the released Grok measurement and Anthropic-pinned comparison settings; no silent replacement of historical comparisons."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "ProgramBench",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "MiMoCodeBench",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "OSWorld-Verified",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "JobBench",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "CyberGym",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "MiMoCyberBench",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "SEC-Bench Pro",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "MiMoVisualBench",
+      "status": "NOT TRACKED",
+      "reason": "No matching active canonical card; OSWorld-Verified is not OSWorld 2.0."
+    },
+    {
+      "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md",
+      "benchmark": "ExploitBench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Model card does not establish equivalence to the public base-harness Mean capability metric; percentages not imported into that series."
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.16251v1",
+      "benchmark": "cadworld-v1",
+      "status": "UPDATED",
+      "reason": "Full 200-task success; seven model runs; expert reference excluded.",
+      "release": "2026-09-14",
+      "discovery_window": true
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.16305v1",
+      "benchmark": "blindspot-v1-scs",
+      "status": "UPDATED",
+      "reason": "SCS safety–utility composite, not plain accuracy; all 13 model rows.",
+      "release": "2026-09-14",
+      "discovery_window": true
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.17885v1",
+      "benchmark": "erpbench-state-v1-t1",
+      "status": "UPDATED",
+      "reason": "T1 only, six systems. Distinct from the GAIR ERPBench market-simulation paper.",
+      "release": "2026-09-15",
+      "discovery_window": true
+    },
+    {
+      "source": "https://akitaonrails.github.io/en/2026/09/15/new-llm-benchmark-v4-retesting-39-llms-part-2/",
+      "benchmark": "akita-v4-vigilance",
+      "status": "UPDATED",
+      "reason": "39 author-audited model/harness rows. Single application and single-run results, including author-marked harness/artifact caveats.",
+      "release": "2026-09-15",
+      "discovery_window": true
+    },
+    {
+      "source": "https://github.com/bracketthq/showAndTell-arena/tree/cd70351a3244bb3d433ffd72bc46406741b1bf2a",
+      "benchmark": "showandtell-v1-comprehension",
+      "status": "UPDATED",
+      "reason": "Official initial commit September 15; press announcement September 16. Only preliminary workbook grades exist: all three system scores auxiliary; canonical frontier Unknown.",
+      "release": "2026-09-15",
+      "discovery_window": true
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.27490v1",
+      "benchmark": "whatworkedbench-v1-b8",
+      "status": "UPDATED",
+      "reason": "Table 2, d=4 B=8 family-macro recovery; four model/cohort rows. B=4, six-factor and post-hoc estimator results excluded from this card.",
+      "release": "2026-09-23",
+      "discovery_window": true
+    },
+    {
+      "source": "https://cursor.com/cursorbench",
+      "benchmark": "cursorbench-4-0",
+      "status": "UPDATED",
+      "reason": "Outside discovery window; added to separate new model results from CursorBench 3.2.",
+      "release": "2026-09-10",
+      "discovery_window": false
+    },
+    {
+      "source": "https://arxiv.org/abs/2608.10677",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "reason": "Outside discovery window; supplemental release-score coverage. No-tools canonical; tools auxiliary; judge explicitly pinned.",
+      "release": "2026-08-11",
+      "discovery_window": false
+    },
+    {
+      "source": "https://rle-bench.github.io/blog/",
+      "benchmark": "RLE-Bench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Project material dated September 9, before the window. Diverse workflow metrics require a separate measurement definition review."
+    },
+    {
+      "source": "https://arxiv.org/abs/2609.11117",
+      "benchmark": "AgentActionBench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "First arXiv version September 10, before the window."
+    },
+    {
+      "source": "https://realswe.withspecific.com/",
+      "benchmark": "Real-SWE",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Official page has scores but exact first public release day was not pinned; dated launch reports conflict around the window boundary. Not asserted to be a new last-two-weeks release."
+    },
+    {
+      "source": "https://mlcommons.org/",
+      "benchmark": "MLPerf Training v6.1 / Inference v6.1",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Hardware time-to-quality / throughput releases, outside the repository model-capability measurement scope."
+    },
+    {
+      "source": "https://www.latticeflow.ai/",
+      "benchmark": "Political-bias evaluation announcement",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "No verified monotone capability score/version suitable for this registry; a political preference distribution is not a capability frontier."
+    }
+  ]
+}

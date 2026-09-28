@@ -1,0 +1,46 @@
+{
+  "id": "whatworkedbench-v1-b8",
+  "name": "WhatWorkedBench v1 · Four-factor B=8",
+  "registry_order": 160,
+  "release": "2026-09-23",
+  "domain": "Science / research",
+  "evaluation_type": "Agent",
+  "evaluation_target": "final_output",
+  "file": "whatworkedbench_v1_b8_external.csv",
+  "score": "Effect recovery",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "whatworkedbench-v1-b8-metric-v1",
+  "protocol_id": "whatworkedbench-v1-b8-protocol-v1",
+  "protocol": "arXiv v1 Table 2; six original workflow families, d=4, B=8, delivered agent predictions, high reasoning. Dated API aliases, not inferred model snapshots.",
+  "source": "https://arxiv.org/abs/2609.27490v1",
+  "labels": [
+    "experimental-design",
+    "quantitative-reasoning",
+    "code-execution-debugging",
+    "tool-use"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests whether experimentation helps agents predict the effects of component changes.",
+    "zh": "测试 agent 能否通过实验预测组件变化带来的影响。"
+  },
+  "task_format": {
+    "en": "Predict all configurations after eight new measurements on six matched four-factor sources; original and additional execution cohorts stay labeled.",
+    "zh": "在六个匹配的四因素数据源上，进行八次新测量后预测所有配置；保留原始与追加运行批次标签。"
+  },
+  "scoring": {
+    "metric_name": "Effect recovery",
+    "explanation": {
+      "en": "Family-macro conditional-effect recovery from Table 2; missing submissions receive zero. Other budgets and post-hoc estimators are excluded.",
+      "zh": "采用表 2 按工作流程类别宏平均的条件效应恢复分数；未提交得零分。不混入其他预算或事后估计器。"
+    }
+  }
+}

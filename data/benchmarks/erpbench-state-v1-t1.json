@@ -1,0 +1,46 @@
+{
+  "id": "erpbench-state-v1-t1",
+  "name": "ERPBench (state-grounded) v1 · T1",
+  "registry_order": 161,
+  "release": "2026-09-15",
+  "domain": "Computer use",
+  "evaluation_type": "Agent",
+  "evaluation_target": "environment_outcome",
+  "file": "erpbench_state_v1_t1_external.csv",
+  "score": "T1 success rate",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "erpbench-state-v1-t1-metric-v1",
+  "protocol_id": "erpbench-state-v1-t1-protocol-v1",
+  "protocol": "arXiv v1 Table 2 T1; screenshot-only 1280x720 ERPNext harness, automatic approval. Distinct from GAIR ERPBench market simulation.",
+  "source": "https://arxiv.org/abs/2609.17885v1",
+  "labels": [
+    "multimodal-perception",
+    "environment-interaction",
+    "state-tracking",
+    "instruction-following"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests whether screenshot-driven agents correctly persist business records in ERPNext.",
+    "zh": "测试只依靠截图的 agent 能否在 ERPNext 中正确保存业务记录。"
+  },
+  "task_format": {
+    "en": "T1 single-field tasks, five runs each, 100 runs per model; no DOM or accessibility tree.",
+    "zh": "T1 单字段任务，每题运行五次，每模型共 100 次；不提供 DOM 或无障碍树。"
+  },
+  "scoring": {
+    "metric_name": "T1 success rate",
+    "explanation": {
+      "en": "Table 2 T1 success: every target database field must match. T2/T3 and stage-level partial credit are separate.",
+      "zh": "采用表 2 的 T1 成功率：所有目标数据库字段都必须正确。T2/T3 和阶段部分分数另计。"
+    }
+  }
+}

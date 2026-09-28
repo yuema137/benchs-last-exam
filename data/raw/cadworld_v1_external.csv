@@ -1,0 +1,8 @@
+Name,Success rate,Release date,Organization,Result public date,Source,Source link,id,Notes
+GPT-5.4 CUA,0.175,,OpenAI,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-gpt-5-4-cua,
+Claude Opus 4.8 CUA,0.16,,Anthropic,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-claude-opus-4-8-cua,
+Kimi K2.6,0.075,,Moonshot AI,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-kimi-k2-6,
+OpenCUA,0.015,,Unknown,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-opencua,
+Holo 3.1,0.005,,H Company,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-holo-3-1,
+Qwen3.6,0,,Alibaba,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-qwen3-6,
+MiniMax M3,0,,MiniMax,2026-09-14,September 2026 source review,https://arxiv.org/html/2609.16251v1#S4.T3,sep2026-cadworld-v1-minimax-m3,

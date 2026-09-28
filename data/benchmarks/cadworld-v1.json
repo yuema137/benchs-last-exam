@@ -1,0 +1,47 @@
+{
+  "id": "cadworld-v1",
+  "name": "CADWorld v1",
+  "registry_order": 158,
+  "release": "2026-09-14",
+  "domain": "Mechanical & Aerospace Engineering",
+  "evaluation_type": "Agent",
+  "evaluation_target": "environment_outcome",
+  "file": "cadworld_v1_external.csv",
+  "score": "Success rate",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "cadworld-v1-metric-v1",
+  "protocol_id": "cadworld-v1-protocol-v1",
+  "protocol": "arXiv v1 Table 3; full 200 tasks, shared FreeCAD Ubuntu VM runner; binary success.",
+  "source": "https://arxiv.org/abs/2609.16251v1",
+  "labels": [
+    "spatial-reasoning",
+    "multimodal-perception",
+    "planning",
+    "environment-interaction",
+    "state-tracking"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests completion of engineering workflows through the FreeCAD GUI.",
+    "zh": "测试通过 FreeCAD 图形界面完成工程工作流程的能力。"
+  },
+  "task_format": {
+    "en": "200 tasks across 11 CAD workflows; agents use screenshots and GUI actions to save native artifacts.",
+    "zh": "200 项任务覆盖 11 类 CAD 工作流程；agent 通过截图和界面操作保存原生工程文件。"
+  },
+  "scoring": {
+    "metric_name": "Success rate",
+    "explanation": {
+      "en": "Fraction passing every executable artifact check. Diagnostic partial results and the 87% expert reference are not the model score or ceiling.",
+      "zh": "所有文件检查均通过的任务比例。诊断性部分分数和 87% 专家参考成绩不作为模型分数或上限。"
+    }
+  }
+}

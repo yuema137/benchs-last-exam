@@ -1,0 +1,7 @@
+Name,T1 success rate,Release date,Organization,Result public date,Source,Source link,id,Notes
+Claude Sonnet 4.6,0.94,,Anthropic,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-claude-sonnet-4-6,
+Holo3-35B-A3B,0.34,,H Company,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-holo3-35b-a3b,
+Qwen3-VL-32B + OmniParser,0.32,,Alibaba,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-qwen3-vl-32b-omniparser,
+OpenCUA-32B,0.23,,Unknown,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-opencua-32b,
+UI-TARS-7B,0.09,,ByteDance,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-ui-tars-7b,
+OpenCUA-7B,0,,Unknown,2026-09-15,September 2026 source review,https://arxiv.org/html/2609.17885v1#S4.T2,sep2026-erpbench-state-v1-t1-opencua-7b,

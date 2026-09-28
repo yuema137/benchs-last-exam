@@ -1,9 +1,12 @@
-Model version,IoU-score,Release date,Organization,Name,Source,Notes
-GPT-4o,0.1823,2024-05-13,OpenAI,GPT-4o,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-OpenAI o3,0.1218,2025-04-16,OpenAI,OpenAI o3,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-Claude Sonnet 4.6,0.2220,2026-02-17,Anthropic,Claude Sonnet 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-Gemini 3.1 Pro,0.2890,2026-02-19,Google,Gemini 3.1 Pro,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-Claude Opus 4.7,0.2692,2026-04-16,Anthropic,Claude Opus 4.7,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-GPT-5.5,0.4440,2026-04-23,OpenAI,GPT-5.5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-Claude Opus 5,0.3660,2026-07-24,Anthropic,Claude Opus 5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
-Grok 4.6,0.3638,2026-08-12,xAI,Grok 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+Result public date,Source link,id,Auxiliary protocol,Auxiliary task set,Auxiliary label,Auxiliary explanation en,Auxiliary explanation zh,Model version,IoU-score,Release date,Organization,Name,Source,Notes
+,,,,,,,,GPT-4o,0.1823,2024-05-13,OpenAI,GPT-4o,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,OpenAI o3,0.1218,2025-04-16,OpenAI,OpenAI o3,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,Claude Sonnet 4.6,0.2220,2026-02-17,Anthropic,Claude Sonnet 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,Gemini 3.1 Pro,0.2890,2026-02-19,Google,Gemini 3.1 Pro,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,Claude Opus 4.7,0.2692,2026-04-16,Anthropic,Claude Opus 4.7,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,GPT-5.5,0.4440,2026-04-23,OpenAI,GPT-5.5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,Claude Opus 5,0.3660,2026-07-24,Anthropic,Claude Opus 5,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+,,,,,,,,Grok 4.6,0.3638,2026-08-12,xAI,Grok 4.6,https://benchcad.com/leaderboard,Public BenchCAD Vision2Code leaderboard row; non-tool IoU-score.
+2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-benchcad-vision2code-claude-opus-5-5-max-no-tools,benchcad-1000-256px-no-tools,benchcad-1000-256px-no-tools,1000-file subset / 256px / no tools,"Anthropic random 1000-file Vision2Code subset, 256px views, five trials, no tools. Not the full public leaderboard; corrects earlier 128px evaluations.",Anthropic 随机 1000 文件 Vision2Code 子集，256px 视图，五次运行，无工具。不是完整公开榜单；修正了此前 128px 评测。,,0.73,2026-09-22,Anthropic,"Claude Opus 5.5 (max, no tools)",September 2026 source review,
+2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-benchcad-vision2code-claude-fable-5-1-max-no-tools,benchcad-1000-256px-no-tools,benchcad-1000-256px-no-tools,1000-file subset / 256px / no tools,"Anthropic random 1000-file Vision2Code subset, 256px views, five trials, no tools. Not the full public leaderboard; corrects earlier 128px evaluations.",Anthropic 随机 1000 文件 Vision2Code 子集，256px 视图，五次运行，无工具。不是完整公开榜单；修正了此前 128px 评测。,,0.606,2026-09-01,Anthropic,"Claude Fable 5.1 (max, no tools)",September 2026 source review,
+2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-benchcad-vision2code-claude-opus-5-max-no-tools,benchcad-1000-256px-no-tools,benchcad-1000-256px-no-tools,1000-file subset / 256px / no tools,"Anthropic random 1000-file Vision2Code subset, 256px views, five trials, no tools. Not the full public leaderboard; corrects earlier 128px evaluations.",Anthropic 随机 1000 文件 Vision2Code 子集，256px 视图，五次运行，无工具。不是完整公开榜单；修正了此前 128px 评测。,,0.497,2026-07-24,Anthropic,"Claude Opus 5 (max, no tools)",September 2026 source review,

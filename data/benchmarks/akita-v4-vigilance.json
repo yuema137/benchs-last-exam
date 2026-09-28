@@ -1,0 +1,46 @@
+{
+  "id": "akita-v4-vigilance",
+  "name": "Akita coding benchmark v4 · Vigilance",
+  "registry_order": 162,
+  "release": "2026-09-15",
+  "domain": "Software engineering",
+  "evaluation_type": "Agent",
+  "evaluation_target": "environment_outcome",
+  "file": "akita_v4_vigilance_external.csv",
+  "score": "Vigilance score",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "akita-v4-vigilance-metric-v1",
+  "protocol_id": "akita-v4-vigilance-protocol-v1",
+  "protocol": "v4 September 15 audited results; native harness per model; excludes cost/time from score.",
+  "source": "https://akitaonrails.github.io/en/2026/09/15/new-llm-benchmark-v4-retesting-39-llms-part-2/",
+  "labels": [
+    "code-generation",
+    "code-execution-debugging",
+    "error-recovery",
+    "long-context-integration"
+  ],
+  "tags": [
+    "September 2026 curation"
+  ],
+  "summary": {
+    "en": "Tests whether coding agents find and repair injected defects while developing an application.",
+    "zh": "测试 coding agent 在开发应用时发现并修复植入缺陷的能力。"
+  },
+  "task_format": {
+    "en": "One Rails application evolves across seven sprints with fourteen injected defects; model and harness are evaluated together.",
+    "zh": "一个 Rails 应用经过七轮迭代并植入十四项缺陷，模型与 harness 一起接受评测。"
+  },
+  "scoring": {
+    "metric_name": "Vigilance score",
+    "explanation": {
+      "en": "Severity-weighted repair score: unprompted fixes get full credit, fixes after disclosure get 40%, unfixed defects get zero. Single-run evidence; no confidence interval.",
+      "zh": "按严重程度加权：主动修复得满分，提示后修复得 40%，未修复得零分。属于单次运行证据，没有置信区间。"
+    }
+  }
+}

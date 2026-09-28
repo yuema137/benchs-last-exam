@@ -1,14 +1,14 @@
 # Adversarial Score-Semantics Audit
 
-Snapshot: `2026-09-04`
-Benchmarks: 158
+Snapshot: `2026-09-23`
+Benchmarks: 166
 
 ## Gate result
 
 - Ratio observations outside `[0, 1]`: **0**
-- Ratio observations below `1%`: **121**
+- Ratio observations below `1%`: **125**
 - Observations below a normalization/reference floor: **28**
-- Unbounded numeric observations above `100`: **79**
+- Unbounded numeric observations above `100`: **106**
 
 `progress_baseline` is treated as a chance/reference baseline for normalized progress, not as a hard observation bound. Accordingly, a model may score below the floor without the canonical observation being invalid.
 
@@ -18,9 +18,11 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 
 - **arc-agi-2** — 33 observations. ARC Prize reports pure LLMs near zero and public reasoning systems in single digits under pass@2.
 - **browsecomp** — 2 observations. OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.
+- **cadworld-v1** — 3 observations. CADWorld arXiv v1 Table 3 reports 0.5% for Holo 3.1 and zero for Qwen3.6 and MiniMax M3 on the full 200-task binary-success evaluation.
 - **chemm-bench-acl2026** — 2 observations. The pinned ACL table reports zero/near-zero exact molecular-structure task performance.
 - **chi-bench** — 1 observations. The official Table 2 reports 0.4% overall pass@1 for Grok 4.3 under the OpenClaw harness on the policy-heavy healthcare workflows.
 - **critpt** — 62 observations. The official 70-challenge, five-run leaderboard reports several 0–0.9% accuracies.
+- **erpbench-state-v1-t1** — 1 observations. State-grounded ERPBench arXiv v1 Table 2 reports zero T1 success for OpenCUA-7B across 100 runs.
 - **exploitgym-v1** — 2 observations. The official Table 3 reports single-digit successes out of 898 instances for several models (e.g. 4/898 and 7/898), i.e. genuine sub-1% exploit success rates.
 - **frontiermath-tier-4-v2** — 3 observations. The research-level Tier 4 set explicitly contains zero-score model runs.
 - **frontiermath-tiers-1-3-v2** — 4 observations. The fixed hard-math set permits zero and one/few-item successes.
@@ -92,11 +94,11 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - critpt / Claude 4 Sonnet (Reasoning) / 0.00285714
 - critpt / Qwen3 32B (Reasoning) / 0.00285714
 - critpt / Magistral Medium 1.2 / 0.00285714
-- …and 61 more canonical low-score observations.
+- …and 65 more canonical low-score observations.
 
 ## Large unbounded numeric observations (>100)
 
-- **gdpval-aa-v2** — 8 observations. Unbounded Elo-like rating, not percent.
+- **gdpval-aa-v2** — 35 observations. Unbounded Elo-like rating, not percent.
 - **metr-time-horizon-1-1** — 19 observations. Human-equivalent task duration in minutes, not percent.
 - **vending-bench-2** — 52 observations. Simulated business outcome denominated in dollars, not percent.
 
@@ -132,7 +134,7 @@ Values above 100 are accepted only for `score_format: number`; examples include 
 - vending-bench-2 / Claude Fable 5 - None / 4529.94
 - vending-bench-2 / GLM-5 / 4432.12
 - vending-bench-2 / Claude Fable 5 - Medium / 4339.81
-- …and 49 more numeric observations.
+- …and 76 more numeric observations.
 
 ## Interpretation
 

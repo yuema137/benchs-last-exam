@@ -1,10 +1,13 @@
-Name,Pass Rate,Release date,Organization,Source,Source Link,Notes
-gpt-5-6-sol,0.306,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-GPT-6 Astra,0.593,2026-09-03,OpenAI,GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,Public result; computer-use evaluation
-gpt-5-6-luna,0.296,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-Kimi K3,0.283,2026-07-16,Moonshot,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-gpt-5-6-terra,0.280,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-qwen-3-8,0.270,2026-04-22,Alibaba,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-Grok 4.5,0.270,2026-07-08,xAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-Claude Opus 4.8,0.270,2026-05-28,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
-Claude Fable 5,0.257,2026-06-09,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+Result public date,Source link,id,Auxiliary protocol,Auxiliary task set,Auxiliary label,Auxiliary explanation en,Auxiliary explanation zh,Name,Pass Rate,Release date,Organization,Source,Source Link,Notes
+,,,,,,,,gpt-5-6-sol,0.306,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,GPT-6 Astra,0.593,2026-09-03,OpenAI,GPT-6 Astra system card,https://openai.com/index/gpt-6-astra/,Public result; computer-use evaluation
+,,,,,,,,gpt-5-6-luna,0.296,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,Kimi K3,0.283,2026-07-16,Moonshot,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,gpt-5-6-terra,0.280,2026-07-09,OpenAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,qwen-3-8,0.270,2026-04-22,Alibaba,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,Grok 4.5,0.270,2026-07-08,xAI,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,Claude Opus 4.8,0.270,2026-05-28,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+,,,,,,,,Claude Fable 5,0.257,2026-06-09,Anthropic,Agents' Last Exam leaderboard,https://agents-last-exam.org/leaderboard,ALE-V1 Overall best-per-task pass rate
+2026-09-22,https://openai.com/index/introducing-gpt-6-sol-and-luna/,sep2026-agents-last-exam-gpt-6-sol-max,,,,,,GPT-6 Sol (max),0.564,2026-09-22,OpenAI,September 2026 source review,,
+2026-09-21,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md,sep2026-agents-last-exam-mimo-v2-6-pro-rl-model-card-settings,ale-mimo-sep21,ale-mimo-sep21,MiMo model-card task set unpinned,MiMo reports Agents’ Last Exam without pinning the registry task set and harness.,MiMo 报告 Agents’ Last Exam，但未固定本库主序列的题集和 harness。,MiMo-V2.6-Pro-RL (model-card settings),0.316,,Xiaomi,September 2026 source review,,
+2026-09-21,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/c165b4c7d1936ec55425c029597f414f84bd5d34/README.md,sep2026-agents-last-exam-mimo-v2-6-flash-rl-model-card-settings,ale-mimo-sep21,ale-mimo-sep21,MiMo model-card task set unpinned,MiMo reports Agents’ Last Exam without pinning the registry task set and harness.,MiMo 报告 Agents’ Last Exam，但未固定本库主序列的题集和 harness。,MiMo-V2.6-Flash-RL (model-card settings),0.276,,Xiaomi,September 2026 source review,,

@@ -14,6 +14,8 @@ REPORT = ROOT / "docs" / "SCORE_ADVERSARIAL_AUDIT.md"
 # explicitly reviewed here; otherwise the acceptance gate fails instead of
 # normalizing the anomaly away.
 REVIEWED_LOW_RATIO_BENCHMARKS = {
+    "cadworld-v1": "CADWorld arXiv v1 Table 3 reports 0.5% for Holo 3.1 and zero for Qwen3.6 and MiniMax M3 on the full 200-task binary-success evaluation.",
+    "erpbench-state-v1-t1": "State-grounded ERPBench arXiv v1 Table 2 reports zero T1 success for OpenCUA-7B across 100 runs.",
     "gsm8k": "HELM exact-match results for early models genuinely include zero and sub-1% accuracy.",
     "browsecomp": "OpenAI reports 0.6% for GPT-4o and 0.9% for GPT-4.5 without browsing.",
     "frontiermath-tiers-1-3-v2": "The fixed hard-math set permits zero and one/few-item successes.",
