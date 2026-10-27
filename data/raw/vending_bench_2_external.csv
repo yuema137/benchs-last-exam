@@ -82,3 +82,16 @@ They also do post training similar to o3, which we assume adds at least 10% as m
 ",GPT-OSS-120b,recnj9dBUFHBxMRTC
 MiniMax-M2.5,-23.15999999999999,2026-02-12,MiniMax,China,,,MiniMax-M2.5,recRGKGULrMrYYJr0
 gpt-5-mini-2025-08-07_unknown,-31.18399999999995,2025-08-07,OpenAI,United States of America,,,GPT-5 mini,recrSY56pcQ9ZdRxY
+gpt-6-astra_unknown,15514.701666666668,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra,recIHrj7IZwngZzmG
+gpt-6-sol_unknown,14427.848333333333,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,recOsfANgIuve4p8J
+gemini-4-argon_unknown,13718.158333333333,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,recnHKJey4BfNPh1f
+claude-sonnet-5-5_unknown,11165.27833333333,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,recuISzHM54q0s0VU
+grok-4.7_unknown,10536.831666666667,2026-09-21,xAI,United States of America,,,Grok 4.7,recqlIgpcwFxxpDZ8
+muse-wonder-1.0_unknown,9432.18,2026-10-12,Meta AI,United States of America,,,Muse Wonder,recmNq9KpI3nIDTWU
+claude-opus-5-5_unknown,9235.248333333331,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,recBWEIN3JLagof2u
+claude-fable-5-1_unknown,5421.556666666666,2026-09-01,Anthropic,United States of America,,,Claude Fable 5.1,rec8LApQjhWHbouha
+gemini-3.8-flash_unknown,5093.793333333332,2026-09-02,Google DeepMind,United States of America,,,Gemini 3.8 Flash,recMM8D3w2MMvKJ7p
+claude-haiku-5-5_unknown,3602.4633333333345,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,recsGf5Dytd9fKaBg

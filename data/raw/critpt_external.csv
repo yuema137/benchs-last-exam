@@ -273,3 +273,85 @@ grok-4.3_none,0.0,2026-04-17,xAI,United States of America,,,Grok 4.3 (Non-reason
 qwen3-8b,0.0,2025-04-28,Alibaba,China,1.7712e+24,6 FLOP / parameter / token * 36 * 10^12 tokens * 8.2  * 10^9 parameters = 1.7712e+24 FLOP,Qwen3 8B (Reasoning),,recb788jTlPfrMXig
 qwen3-14b,0.0,2025-04-29,Alibaba,China,3.1968e+24,6 FLOP / parameter / token * 36 * 10^12 tokens * 14.8  * 10^9 parameters = 3.1968e+24 FLOP,Qwen3 14B (Reasoning),,reccUsj3yqYhvgvUC
 qwen3.6-35b-a3b_none,0.0,2026-04-14,Alibaba,China,,,Qwen3.6 35B A3B (Non-reasoning),,rectaMSlhWPQdKvlu
+gpt-6-astra_max,0.317142857142857,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Max),,recchwRSFo4NJR8y2
+claude-opus-5-5_max,0.317142857142857,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",,recCMhoGESWuXr0FY
+claude-opus-5-5_xhigh,0.317142857142857,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",,rec3ntl7wmky8zgSD
+gpt-6.1-sol_max,0.317142857142857,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Max),,rec2iiVrG9dijlo97
+gpt-6.1-sol_xhigh,0.317142857142857,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Xhigh),,recuC1By9ytTjuaq8
+gpt-6-astra_xhigh,0.314285714285714,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Xhigh),,recONBqYxzUiCO8Iy
+claude-sonnet-5-5_max,0.314285714285714,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",,recIMNF7yjEmzEOf3
+claude-sonnet-5-5_xhigh,0.311428571428571,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",,recYZxN3FPdlvh4L3
+gpt-6-sol_max,0.308571428571429,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Max),,recryI0wi0k0mknzo
+claude-opus-5-5_high,0.308571428571429,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (High, Default Fallback)",,recKCd0FGhGShnckc
+gpt-6.1-sol_high,0.3,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (High),,recQzne2TYYeL4phc
+gpt-6-astra_medium,0.291428571428571,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Medium),,recnhCs1Rmx6NBPl6
+gpt-6-astra_high,0.288571428571429,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (High),,rechVO3SVbWWqQQjo
+muse-wonder-1.0_max,0.282857142857143,2026-10-12,Meta AI,United States of America,,,Muse Wonder (Max),,recq3eztuBfhsowDH
+gpt-6-sol_xhigh,0.28,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Xhigh),,rec0MPvJkpAnRaw41
+gpt-6.1-sol_medium,0.277142857142857,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Medium),,recAlv9eC6ITOjyIn
+claude-opus-5-5_medium,0.277142857142857,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Medium, Default Fallback)",,recBDknvezsLl5kHO
+gemini-4-argon_high,0.271428571428571,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon (High),,recpQOevVr4QIAPTK
+mimo-v2.6-pro,0.265714285714286,2026-09-21,Xiaomi Corp,China,,,MiMo-V2.6-Pro,,recU4tvMX9uI4D6rE
+gpt-6-astra_low,0.262857142857143,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Low),,recwsQ3t9s5hZ7bEI
+muse-spark-1.3_xhigh,0.26,2026-09-02,Meta AI,United States of America,,,Muse Spark 1.3 (Xhigh),,recnpxvLc3yRjYTCS
+gpt-6-sol_high,0.254285714285714,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (High),,recwmk2GM9CClCJWE
+muse-spark-1.3_max,0.248571428571429,2026-09-02,Meta AI,United States of America,,,Muse Spark 1.3 (Max),,recWjWRh1an30zEd3
+gpt-6.1-sol_low,0.248571428571429,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol (Low),,reccnVv4LeJz0hsUh
+claude-sonnet-5-5_high,0.245714285714286,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",,recvQbjd5oXpVCYX7
+gpt-6-sol_medium,0.245714285714286,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Medium),,recTlQ7nNgZFAwB8s
+claude-haiku-5-5_xhigh,0.225714285714286,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Xhigh),,recBvV1GipGKHNyKH
+step-5-preview_unknown,0.20857142857142902,2026-09-18,StepFun,China,,,Step 5 Preview,,recBlAKrqitdTBlYA
+gpt-6-astra_none,0.197142857142857,2026-09-03,OpenAI,United States of America,9.4e+26,"per OpenAI and affiliates (e.g. Nvidia), 6 Astra was trained on at least 100,000 GB200s in Abilene, Texas (so 100,000 in ""Hardware quantity"" is a lower bound/underestimate).
+
+This suggests around 9e26 FLOP (corresponding to ~100k GB200s over 90 days at 25% FP8 MFU). See more detailed estimate in this notebook, yielding a CI of ~[5e26, 2e27] FLOP.
+https://colab.research.google.com/drive/1DRlugIQs-_zoV66AJT1gQg6I1-NX7NqN ",GPT-6 Astra (Non-reasoning),,recFv6W9bqROZOfW9
+gpt-6-luna_max,0.19428571428571403,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Max),,recKcBHXINlji9VSJ
+claude-haiku-5-5_max,0.188571428571429,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Max),,recW9LZskaNg7hjRz
+claude-haiku-5-5_high,0.18571428571428603,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (High),,rec0BoOLNB0KlFYZ7
+grok-4.7_high,0.18,2026-09-21,xAI,United States of America,,,Grok 4.7 (High),,rec308gC8B3oEudLd
+qwen3.8-max-0902_unknown,0.177142857142857,2026-09-01,Alibaba,China,,,Qwen3.8 Max (0902),,recFmHGKzOkLYr23L
+grok-4.7_xhigh,0.177142857142857,2026-09-21,xAI,United States of America,,,Grok 4.7 (Xhigh),,recOgLdIJweeu6Ha0
+claude-opus-5-5_low,0.177142857142857,2026-09-22,Anthropic,United States of America,,,"Claude Opus 5.5 (Low, Default Fallback)",,recVdUMQOOxAmGoKj
+gpt-6-luna_xhigh,0.174285714285714,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Xhigh),,recbxqWS7BcKj9AEN
+claude-sonnet-5-5_medium,0.168571428571429,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",,recw20wmrUkfYehBO
+gpt-6-sol_low,0.162857142857143,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Low),,recP8qQjotNOrlO7W
+gpt-6-luna_high,0.154285714285714,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (High),,recWQBMbwTm6vLW0h
+claude-sonnet-5_xhigh,0.154285714285714,2026-06-30,Anthropic,United States of America,,,"Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)",,recj6KALtFlQIwjyc
+muse-spark-1.1_xhigh,0.151428571428571,2026-07-09,Meta AI,United States of America,,,Muse Spark 1.1 (Xhigh),,rec6dA1Ulc6YPFHdT
+Muse-Spark-Open-816B-A42B_xhigh,0.148571428571429,2026-10-15,Meta AI,United States of America,,,Muse Spark Open (Xhigh),,reco5BBRVh218jtrZ
+glm-5.3_low,0.145714285714286,2026-08-14,Z.ai (Zhipu AI),China,,,GLM-5.3 (Low),,recL8ApuHU4h00JJU
+deepseek-v4.1-flash_max,0.142857142857143,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+","DeepSeek V4.1 Flash (Reasoning, Max Effort)",,recWbpaQ6RRJBEsbG
+grok-4.7_low,0.134285714285714,2026-09-21,xAI,United States of America,,,Grok 4.7 (Low),,recUDw9uLW6OUC9te
+claude-haiku-5-5_medium,0.128571428571429,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Medium),,recHXjcWMBz3J0e4Y
+mimo-v2.6-flash,0.12,2026-09-21,Xiaomi Corp,China,,,MiMo-V2.6-Flash,,rec4ROM8oWxvqp8kz
+claude-sonnet-5-5_low,0.114285714285714,2026-09-28,Anthropic,United States of America,,,"Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",,recpvVdkoBS6FSh1L
+gpt-6-luna_medium,0.105714285714286,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Medium),,recbhkUf2Yx4RkpD7
+mistral-large-4-0_unknown,0.105714285714286,2026-10-06,Mistral AI,France,,,Mistral Large 4 Preview,,recq4PLydfJLH3soL
+claude-haiku-5-5_low,0.0914285714285714,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5 (Low),,recP0jtGizZ0j0yJj
+claude-sonnet-5_medium,0.0857142857142857,2026-06-30,Anthropic,United States of America,,,"Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",,recshOK4pTnH31VBX
+claude-sonnet-5_low,0.0457142857142857,2026-06-30,Anthropic,United States of America,,,"Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",,recnrPRrF9HlsmJIB
+gpt-6-sol_none,0.04,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol (Non-reasoning),,reclrdB6fUm8KdvHz
+gpt-6-luna_low,0.0257142857142857,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Low),,recLsRbGgaw2H9hK6
+muse-glimmer_high,0.0257142857142857,2026-08-10,Meta AI,United States of America,,,Muse Glimmer (High),,recmnikgUh8UV8r5D
+gpt-6-luna_none,0.0114285714285714,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna (Non-reasoning),,rec7PuqFcyNaY0M0K
+deepseek-v4.1-flash_none,0.00285714285714286,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",DeepSeek V4.1 Flash (Non-reasoning),,recZEah5EFMAlM9BJ
+gpt-5-mini-2025-08-07_high,0.0,2025-08-07,OpenAI,United States of America,,,GPT-5 mini (High),,recEJeMZnvjXpLM9g
+mercury-2.5_unknown,0.0,2026-09-08,Inception Labs,United States of America,,,Mercury 2.5,,recVvxSpw8dmPufkZ
+deepseek-v4-pro-0813_none,0.0,2026-08-13,DeepSeek,China,9.702e+24,From https://api-docs.deepseek.com/news/news260813/: built on the DeepSeek-V4-Pro (Preview) model structure with a DSpark speculative-decoding module; agent-focused post-training upgrades. Pre-training compute carried over from DeepSeek-V4-Pro (6 * 49e9 active parameters * 33e12 tokens = 9.702E24).,DeepSeek V4 Pro 0813 (Non-reasoning),,recs2UizzIXPf4Ams

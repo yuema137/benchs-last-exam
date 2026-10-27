@@ -1,0 +1,51 @@
+{
+  "id": "frontiercs-2",
+  "name": "FrontierCS 2",
+  "registry_order": 166,
+  "release": "2026-10-21",
+  "domain": "Software engineering",
+  "evaluation_type": "Agent",
+  "evaluation_target": "environment_outcome",
+  "file": "frontiercs_2_external.csv",
+  "score": "Pass rate",
+  "input_unit": "fraction",
+  "floor": 0.0,
+  "ceiling": 1.0,
+  "hard_min": 0.0,
+  "hard_max": 1.0,
+  "progress_baseline": 0.0,
+  "progress_target": 1.0,
+  "metric_id": "frontiercs-2-metric-v1",
+  "protocol_id": "frontiercs-2-protocol-v1",
+  "protocol": "Official FrontierCS 2 leaderboard; 48 public tasks, one five-hour run per task, each agent in its own vendor harness; pass rate is passing runs divided by 48.",
+  "source": "https://arxiv.org/abs/2610.29932v1",
+  "labels": [
+    "planning",
+    "tool-use",
+    "environment-interaction",
+    "code-generation",
+    "code-execution-debugging",
+    "design-optimization"
+  ],
+  "tags": [
+    "October 2026 curation",
+    "repository",
+    "research engineering",
+    "long-horizon"
+  ],
+  "summary": {
+    "en": "Tests whether coding agents can deliver open-ended computer-science R&D results inside a real research repository.",
+    "zh": "测试 coding agent 能否在真实研究代码仓库中完成开放式计算机科学研发任务。"
+  },
+  "task_format": {
+    "en": "48 public tasks across 13 domains such as ML systems, HPC, databases, security and robotics; the agent inherits a working repository, works for up to five hours, and submits a patch.",
+    "zh": "48 个公开任务覆盖 ML 系统、HPC、数据库、安全和机器人等 13 个领域；agent 接手一个可运行的代码仓库，最多工作五小时，然后提交补丁。"
+  },
+  "scoring": {
+    "metric_name": "Pass rate",
+    "explanation": {
+      "en": "Share of the 48 task runs whose final submission passes the hidden-reference judge. The FCI capability index on the leaderboard is a separate IRT scale and is not used here.",
+      "zh": "48 个任务运行中，最终提交通过隐藏参考答案评审的比例。榜单上的 FCI 能力指数是另一种 IRT 量表，这里不使用。"
+    }
+  }
+}

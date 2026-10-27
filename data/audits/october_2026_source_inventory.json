@@ -1,0 +1,775 @@
+{
+  "audit_date": "2026-10-27",
+  "window_start": "2026-09-24",
+  "window_end": "2026-10-27",
+  "scope": "Bounded review of named model releases (DeepSeek-V4.1-Flash-1017, Kimi K3.1 Pro, GPT-6.1 Sol, GPT-6.1 Terra, Claude Sonnet 5.5, Claude Haiku 5.5), the Epoch AI benchmark export, and new-benchmark discovery; not exhaustive literature surveillance.",
+  "source_hashes": [
+    {
+      "url": "https://epoch.ai/data/benchmark_data.zip",
+      "sha256": "a4e7a48d11be5d74be791551fb6b86cf3999c68b342e9007932ce311437a3fd3"
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/raw/main/README.md",
+      "sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a"
+    },
+    {
+      "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "sha256": "7783f9d60edd63e0b03c11b386aaf17c41ec8edd5c5d0b9efe3c87d5fd59a649"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
+      "sha256": "22109b01df107770764fb129b232e99b0ad67b3f368e689fb8b254922d836f55"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+      "sha256": "ccc807402a5798f2d5cca238e632dd0ae4d7a93b4277831c03f1e324f0d660e6"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "sha256": "89cfd6a6d3aa6148eaf23f4a53006950ee7746009f381237c62920c720725785"
+    },
+    {
+      "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "sha256": "d5dbaab6996c02ad6ff28b032ce5a9c7582e59af09b5d1bc0975cf0235535da9"
+    },
+    {
+      "url": "https://frontier-cs.org/assets/js/fcs2-data.js",
+      "sha256": "67ae31d4a83ff3dba156486a8833acfa54c57f5972fbf63e208d97d98e6a4378"
+    }
+  ],
+  "extraction_methods": {
+    "openai.com": "Rendered launch pages; chart point aria-labels (direct fetch returns HTTP 403). Re-verified 2026-10-27: every imported value matches the one-decimal 'Score: x%' aria-label strings; the system-card addenda (https://deploymentsafety.openai.com/gpt-6-1-sol, https://deploymentsafety.openai.com/gpt-6-1-terra) do not report these evaluations, so no text or table source exists. Values also stated or arithmetically implied by page text are noted per row.",
+    "www.kimi.com": "Embedded benchmark table data in the page HTML. Re-fetched 2026-10-27 (page hash now 6023faf44bed02498acb6e194416cdfc101a6919995f32adfc51daeb0df2e73c because the Next.js payload is dynamic); the BrowseComp 92.1 table entry and its footnote are unchanged.",
+    "anthropic system cards": "pdftotext of the served PDF.",
+    "epoch.ai": "benchmark_data.zip CSV export, appended without modification.",
+    "anthropic launch posts": "Launch-post values (Sonnet 5.5 Terminal-Bench 4.0, Chartography no tools, HLE; Haiku 5.5 Chartography no tools, HLE) were re-checked on 2026-10-27 against system-card text (section text and Table 8.1.A via pdftotext) and added as extra evidence rows citing the system cards."
+  },
+  "inventory": [
+    {
+      "source": "https://balrogai.com/",
+      "benchmark": "balrog",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "apex-agents",
+      "status": "UPDATED",
+      "observations": 10,
+      "roles": {
+        "canonical": 10
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "arc-agi-2",
+      "status": "UPDATED",
+      "observations": 53,
+      "roles": {
+        "canonical": 53
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "critpt",
+      "status": "UPDATED",
+      "observations": 62,
+      "roles": {
+        "canonical": 62
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "dtbench",
+      "status": "UPDATED",
+      "observations": 24,
+      "roles": {
+        "canonical": 24
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "frontiercode-1-1",
+      "status": "UPDATED",
+      "observations": 8,
+      "roles": {
+        "canonical": 8
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "frontiermath-tier-4-v2",
+      "status": "UPDATED",
+      "observations": 18,
+      "roles": {
+        "canonical": 18
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "frontiermath-tiers-1-3-v2",
+      "status": "UPDATED",
+      "observations": 18,
+      "roles": {
+        "canonical": 18
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "gpqa-diamond",
+      "status": "UPDATED",
+      "observations": 15,
+      "roles": {
+        "canonical": 15
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "gso",
+      "status": "UPDATED",
+      "observations": 4,
+      "roles": {
+        "canonical": 4
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "scicode",
+      "status": "UPDATED",
+      "observations": 36,
+      "roles": {
+        "canonical": 36
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "simpleqa-verified",
+      "status": "UPDATED",
+      "observations": 15,
+      "roles": {
+        "canonical": 15
+      }
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "vending-bench-2",
+      "status": "UPDATED",
+      "observations": 10,
+      "roles": {
+        "canonical": 10
+      }
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "agents-last-exam",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "canonical": 2
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "automationbench",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "auxiliary": 5
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "osworld-2",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "agents-last-exam",
+      "status": "UPDATED",
+      "observations": 10,
+      "roles": {
+        "canonical": 10
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 5,
+      "roles": {
+        "canonical": 5
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "frontierswe-v2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "cursorbench-4-0",
+      "status": "UPDATED",
+      "observations": 4,
+      "roles": {
+        "canonical": 4
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "frontierswe-v2",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 3,
+      "roles": {
+        "canonical": 1,
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "agents-last-exam",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "browsecomp",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "auxiliary": 1
+      },
+      "reason": "Single self-reported vendor row; kept as an auxiliary series so it does not drive the canonical frontier or Recently Saturated (2026-10-27 verification)."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "deepswe-v1-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "gpqa-diamond",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "humanitys-last-exam",
+      "status": "UPDATED",
+      "observations": 2,
+      "roles": {
+        "auxiliary": 2
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "terminal-bench-4-0",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "terminal-bench-science-0-1",
+      "status": "UPDATED",
+      "observations": 1,
+      "roles": {
+        "canonical": 1
+      }
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "gdp-pdf",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Chart metric is labelled 'Score'; not established to be the tracked strict pass rate."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "healthbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "System-card HealthBench values need a raw-versus-length-adjusted protocol decision; deferred."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "exploitbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "System-card cyber evaluation; scoring and task set not matched to the canonical series."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "exploitgym-v1",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Per-attempt success on an unpinned task set; not the canonical 898-task paper series."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "benchmark": "internal factual error eval",
+      "status": "NOT TRACKED",
+      "reason": "Internal evaluation; lower is better."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "mmmu-pro",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Chart reports the MMMU-Pro Vision subset only; the canonical score averages Standard-10 and Vision."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "osworld-2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "OSWorld 2.1 offline set; the tracked card is OSWorld 2.0 offline partial reward."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "healthbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Raw-versus-length-adjusted protocol decision deferred."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "agents-last-exam",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Older models on the same chart (GPT-6 Astra, GPT-6 Luna, GPT-5.6 Terra, Claude Opus 5.5) were not imported; only models released since the previous snapshot were added."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "osworld-2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "OSWorld 2.1 (full and offline subsets); version differs from the tracked OSWorld 2.0 card."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "gdpval-aa-v2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "GDPval-AA v2.1 Elo; Sonnet 5.5 value reported as 1844 on Sep 28 and 1840 on Oct 7; deferred until the v2.1 series is reconciled."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "benchcad-vision2code",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "1,000-file subset; does not update the canonical full leaderboard."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "toolathlon-verified",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Not imported in this pass; the Opus 5.5 precedent for Anthropic-run Toolathlon is auxiliary and the harness was not re-reviewed."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "automationbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Not imported in this pass; split and fallback policy were not re-reviewed against the existing auxiliary series."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "healthbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Raw-versus-length-adjusted protocol decision deferred."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "frontiercode-1-1",
+      "status": "ALREADY CURRENT",
+      "reason": "Epoch export carries the Sonnet 5.5 xhigh FrontierCode row (0.5209); the launch-post 52.1%/46.2% values were not duplicated."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "frontiercode-1-1",
+      "status": "ALREADY CURRENT",
+      "reason": "Epoch export carries the Haiku 5.5 max row (0.4636)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "osworld-2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "OSWorld 2.1 offline subset; version differs."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "gdpval-aa-v2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "GDPval-AA v2.1 Elo; deferred."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "benchcad-vision2code",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "1,000-file subset."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "healthbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Raw-versus-length-adjusted protocol decision deferred."
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "automationbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Automation-Bench v1.0.6 score with unpinned split and fallback policy."
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "apex-agents",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "'Apex Bench v1.1' is not established to be APEX-Agents."
+    },
+    {
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "With-tools score only, from a vendor harness."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "mmmu-pro",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "'Official protocol' 84.1 not established to be the Standard-10/Vision average used by the card."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "gdp-pdf",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Vendor run; strict pass rate 34.6 not matched to the leaderboard protocol in this pass."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "apex-agents",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Vendor-cited value not reconciled with the leaderboard series used by this card."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "benchcad-vision2code",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "1,000-case subset."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "osworld-2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "OSWorld V2.1; version differs."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "gdpval-aa-v2",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "GDPval-AA v2.1 Elo; deferred until the v2.1 series is reconciled."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "exploitbench",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "pass@5 max capability score; metric differs from mean capability."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "exploitgym-v1",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Vendor harness and six-hour budget; task set not pinned."
+    },
+    {
+      "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+      "benchmark": "mcp-atlas",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Footnote describes an MCP Atlas setup but no score is present in the page data."
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "gdp-pdf",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Epoch export renamed the metric column and re-keyed rows; requires a separate reconciliation."
+    },
+    {
+      "source": "https://epoch.ai/data/benchmark_data.zip",
+      "benchmark": "proofbench-v1-1",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Epoch export columns differ from the tracked file; requires reconciliation."
+    },
+    {
+      "source": "https://arcprize.org/media/data/evaluations.json",
+      "benchmark": "arc-agi-2",
+      "status": "EXTRACTION_FAILED",
+      "reason": "Possible DeepSeek-V4.1-Flash-1017 ARC-AGI-2 rows on arcprize.org were not independently extracted; the Epoch export used for this card has none."
+    },
+    {
+      "source": "https://www.tbench.ai/leaderboard",
+      "benchmark": "terminal-bench-4-0",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "Official leaderboard rows were not independently extracted in this pass; the card continues to use vendor-reported rows."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "terminal-bench-4-0",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.5 text states 70.6%; added as a second evidence row for the launch-post value (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "humanitys-last-exam",
+      "status": "ALREADY CURRENT",
+      "reason": "Table 8.1.A gives 64.5 (tools) and 56.9 (no tools); added as evidence rows. The no-tools value was previously cited only from the 2026-10-07 Haiku launch post with a 2026-09-28 public date; that row now carries 2026-10-07 and the system card supplies the 2026-09-28 publication."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "humanitys-last-exam",
+      "status": "ALREADY CURRENT",
+      "reason": "Table 8.1.A gives 57.4 (tools) and 45.9 (no tools); added as evidence rows (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.13.1 text states 61.6% without tools; added as an evidence row (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.9.1 text states 46.4% without tools; added as an evidence row (2026-10-27)."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "terminal-bench-4-0",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "GPT-6.1 Sol points on the Terra Terminal-Bench 4.0 chart (47.1-55.9%) were not imported in the original pass; noted during the 2026-10-27 verification and left for a separate import decision."
+    }
+  ],
+  "verification_2026_10_27": {
+    "access_date": "2026-10-27",
+    "browsecomp": {
+      "decision": "Kimi K3.1 Pro 92.1% demoted to auxiliary series browsecomp-vendor-reported-kimi-harness; BrowseComp leaves Recently Saturated.",
+      "evidence": [
+        {
+          "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+          "finding": "92.1 (max) in the embedded benchmark table; same table cites GPT-6 Astra 91.5 and Claude Opus 5.5 90.8 (with fallback)."
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "finding": "Text table (2026-09-03): BrowseComp GPT-6 Astra 91.5%, GPT-5.6 Sol 90.4%, Claude Fable 5 87.4%, Claude Opus 5 90.8%."
+        },
+        {
+          "url": "https://www.vals.ai/models/kimi_kimi-k3.1-pro",
+          "finding": "Independent evaluator page lists no BrowseComp result for Kimi K3.1 Pro."
+        }
+      ],
+      "rationale": "The card held one self-reported row at or above 90%. Vendor-reported scores at or above 90% for GPT-5.6 Sol (released 2026-07-09) and Claude Opus 5 (2026-07-24) appear in OpenAI text published 2026-09-03, so under the earliest-date rule a 90% crossing would predate the three-month Recently Saturated window; the Kimi row alone would misdate it. Importing the vendor-reported BrowseComp series is queued in CURATION_QUEUE.md."
+    },
+    "openai_chart_values": {
+      "decision": "All 40 GPT-6.1 Sol/Terra values unchanged; each matches the rendered chart aria-label exactly. No text/table source exists.",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "https://deploymentsafety.openai.com/gpt-6-1-sol",
+        "https://deploymentsafety.openai.com/gpt-6-1-terra"
+      ]
+    },
+    "kimi_k3_1_pro_release_date": {
+      "date": "2026-10-23",
+      "basis": "Official Kimi Forum announcement created 2026-10-23T20:12:59Z (https://forum.moonshot.ai/t/kimi-k3-1-pro-has-launched-start-exploring-now/629); official X post https://x.com/Kimi_Moonshot/status/2113680701770068067 (status ID timestamp 2026-10-23 17:15 UTC). The blog JSON-LD only gives dateModified 2026-10-24 (Beijing date); Moonshot platform changelog has no October entry yet."
+    },
+    "gemini_4_argon_release_date": {
+      "public_release": "2026-10-13",
+      "announcement": "2026-09-30",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+        "https://ai.google.dev/gemini-api/docs/changelog",
+        "https://deepmind.google/models/model-cards/gemini-4-argon/"
+      ],
+      "repo_rule": "Repository-authored rows (FrontierCS 2) use the 2026-10-13 general-availability date. Epoch export rows keep their 2026-09-30 value unmodified (raw-observation immutability); 2026-09-30 is Google's own announcement date with access limited to Fairwind Program cyber defenders."
+    },
+    "qwen_frontiercs_2": {
+      "evaluated_model": "Qwen/Qwen3.8-Max-VL-Thinking (alias qwen3.8-max-vl-thinking, effort high)",
+      "source": "https://github.com/FrontierCS/FrontierCS-2/blob/a56a2afa0e/candidates/qwen-code/README.md",
+      "release_date": null,
+      "reason": "Identifier not found in Alibaba Cloud Model Studio documentation (https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max lists qwen3.8-max and qwen3.8-max-0902 only) or as a public Hugging Face model; row stays undated."
+    },
+    "deepseek_v4_1_flash_1017": "Model-card text table; not re-researched."
+  }
+}

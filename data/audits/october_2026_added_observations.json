@@ -1,0 +1,2556 @@
+[
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (Max)",
+    "score": 0.9500000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6.1 Sol (Max)",
+    "score": 0.9416666666666668,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (XHigh)",
+    "score": 0.9333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Opus 5.5 (High)",
+    "score": 0.9333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Opus 5.5 (XHigh)",
+    "score": 0.925,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (High)",
+    "score": 0.9208333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (Medium)",
+    "score": 0.9208333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Opus 5.5 (Max)",
+    "score": 0.9166666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6.1 Sol (XHigh)",
+    "score": 0.9166666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6.1 Sol (High)",
+    "score": 0.9166666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 4 Argon (High)",
+    "score": 0.9125,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (Max)",
+    "score": 0.8958333333333335,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 3.8 Flash (High)",
+    "score": 0.8916666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Opus 5.5 (Medium)",
+    "score": 0.875,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 4 Argon (Medium)",
+    "score": 0.8708333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6.1 Sol (Medium)",
+    "score": 0.8666666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (Low)",
+    "score": 0.8541666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 3.8 Flash (Medium)",
+    "score": 0.8291666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (XHigh)",
+    "score": 0.7805555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 3.8 Flash (Low)",
+    "score": 0.775,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6.1 Sol (Low)",
+    "score": 0.7666666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "DeepSeek V4.1 Flash (Max)",
+    "score": 0.7291666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Opus 5.5 (Low)",
+    "score": 0.7013888888888891,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (High)",
+    "score": 0.6888888888888888,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "DeepSeek V4.1 Flash (High)",
+    "score": 0.675,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GLM-5.3-Flash (Max)",
+    "score": 0.6583333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Grok 4.7 (XHigh)",
+    "score": 0.6138888888888888,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Haiku 5.5 (XHigh)",
+    "score": 0.6125,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "DeepSeek V4.1 Flash (Low)",
+    "score": 0.6055555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Astra (None)",
+    "score": 0.5958333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (Max)",
+    "score": 0.5930555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Grok 4.7 (Medium)",
+    "score": 0.5875,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Grok 4.7 (High)",
+    "score": 0.5833333333333334,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (Medium)",
+    "score": 0.5777777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GLM-5.3-Flash (High)",
+    "score": 0.5013888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Qwen3.8-27B (XHigh)",
+    "score": 0.4236111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Gemini 4 Argon (Low)",
+    "score": 0.4208333333333334,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (XHigh)",
+    "score": 0.41944444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (Low)",
+    "score": 0.3152777777777777,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (High)",
+    "score": 0.3138888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Haiku 5.5 (High)",
+    "score": 0.3069444444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GLM-5.3-Flash (Low)",
+    "score": 0.2791666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Qwen3.8-27B (Low)",
+    "score": 0.2277777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (Medium)",
+    "score": 0.18055555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Grok 4.7 (Low)",
+    "score": 0.16666666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Qwen3.8-27B (Medium)",
+    "score": 0.13194444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Haiku 5.5 (Medium)",
+    "score": 0.09444444444444443,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (Low)",
+    "score": 0.04583333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Claude Haiku 5.5 (Low)",
+    "score": 0.027777777777777776,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Sol (None)",
+    "score": 0.016666666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "Qwen3.8-27B (None)",
+    "score": 0.015277777777777777,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "DeepSeek V4.1 Flash (None)",
+    "score": 0.0125,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "arc-agi-2",
+    "model": "GPT-6 Luna (None)",
+    "score": 0.0,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "balrog",
+    "model": "gpt-6-astra_max",
+    "score": 0.6829999999999999,
+    "source": "https://balrogai.com/",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "balrog",
+    "model": "claude-opus-5_max",
+    "score": 0.634,
+    "source": "https://balrogai.com/",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "balrog",
+    "model": "gpt-5.6-sol_max",
+    "score": 0.6,
+    "source": "https://balrogai.com/",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "balrog",
+    "model": "gpt-5.6-terra_max",
+    "score": 0.532,
+    "source": "https://balrogai.com/",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "balrog",
+    "model": "gpt-5.6-luna_max",
+    "score": 0.456,
+    "source": "https://balrogai.com/",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (Max)",
+    "score": 0.317142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+    "score": 0.317142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "score": 0.317142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6.1 Sol (Max)",
+    "score": 0.317142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6.1 Sol (Xhigh)",
+    "score": 0.317142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (Xhigh)",
+    "score": 0.314285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+    "score": 0.314285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "score": 0.311428571428571,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (Max)",
+    "score": 0.308571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Opus 5.5 (High, Default Fallback)",
+    "score": 0.308571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6.1 Sol (High)",
+    "score": 0.3,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (Medium)",
+    "score": 0.291428571428571,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (High)",
+    "score": 0.288571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Wonder (Max)",
+    "score": 0.282857142857143,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (Xhigh)",
+    "score": 0.28,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6.1 Sol (Medium)",
+    "score": 0.277142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Opus 5.5 (Medium, Default Fallback)",
+    "score": 0.277142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Gemini 4 Argon (High)",
+    "score": 0.271428571428571,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "MiMo-V2.6-Pro",
+    "score": 0.265714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (Low)",
+    "score": 0.262857142857143,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Spark 1.3 (Xhigh)",
+    "score": 0.26,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (High)",
+    "score": 0.254285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Spark 1.3 (Max)",
+    "score": 0.248571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6.1 Sol (Low)",
+    "score": 0.248571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+    "score": 0.245714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (Medium)",
+    "score": 0.245714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Haiku 5.5 (Xhigh)",
+    "score": 0.225714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Step 5 Preview",
+    "score": 0.20857142857142902,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Astra (Non-reasoning)",
+    "score": 0.197142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (Max)",
+    "score": 0.19428571428571403,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Haiku 5.5 (Max)",
+    "score": 0.188571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Haiku 5.5 (High)",
+    "score": 0.18571428571428603,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Grok 4.7 (High)",
+    "score": 0.18,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Qwen3.8 Max (0902)",
+    "score": 0.177142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Grok 4.7 (Xhigh)",
+    "score": 0.177142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Opus 5.5 (Low, Default Fallback)",
+    "score": 0.177142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (Xhigh)",
+    "score": 0.174285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    "score": 0.168571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (Low)",
+    "score": 0.162857142857143,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (High)",
+    "score": 0.154285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)",
+    "score": 0.154285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Spark 1.1 (Xhigh)",
+    "score": 0.151428571428571,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Spark Open (Xhigh)",
+    "score": 0.148571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GLM-5.3 (Low)",
+    "score": 0.145714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+    "score": 0.142857142857143,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Grok 4.7 (Low)",
+    "score": 0.134285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Haiku 5.5 (Medium)",
+    "score": 0.128571428571429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "MiMo-V2.6-Flash",
+    "score": 0.12,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+    "score": 0.114285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (Medium)",
+    "score": 0.105714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Mistral Large 4 Preview",
+    "score": 0.105714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Haiku 5.5 (Low)",
+    "score": 0.0914285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",
+    "score": 0.0857142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",
+    "score": 0.0457142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Sol (Non-reasoning)",
+    "score": 0.04,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (Low)",
+    "score": 0.0257142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Muse Glimmer (High)",
+    "score": 0.0257142857142857,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-6 Luna (Non-reasoning)",
+    "score": 0.0114285714285714,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "DeepSeek V4.1 Flash (Non-reasoning)",
+    "score": 0.00285714285714286,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "GPT-5 mini (High)",
+    "score": 0.0,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "Mercury 2.5",
+    "score": 0.0,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "critpt",
+    "model": "DeepSeek V4 Pro 0813 (Non-reasoning)",
+    "score": 0.0,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gpt-6.1-terra_max",
+    "score": 0.926829268292683,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "deepseek-v4.1-flash-1017_max",
+    "score": 0.4634146341463415,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "Muse-Spark-Open-816B-A42B_xhigh",
+    "score": 0.3170731707317073,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gemini-4-argon_high",
+    "score": 0.7804878048780488,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "mistral-large-4-0_high",
+    "score": 0.2682926829268293,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "muse-wonder-1.0_max",
+    "score": 0.7073170731707317,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "deepseek-v4.1-flash_max",
+    "score": 0.2682926829268293,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "claude-haiku-5-5_max",
+    "score": 0.4634146341463415,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gpt-6.1-sol_max",
+    "score": 1.0,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "claude-sonnet-5-5_max",
+    "score": 0.8048780487804879,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gpt-6-luna_max",
+    "score": 0.5609756097560976,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "grok-4.7_xhigh",
+    "score": 0.17073170731707318,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gpt-6-sol_max",
+    "score": 0.9,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "claude-opus-5-5_max",
+    "score": 0.95,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "muse-spark-1.3_max",
+    "score": 0.4634146341463415,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "muse-spark-1.3_xhigh",
+    "score": 0.4146341463414634,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "qwen3.8-max-0902_xhigh",
+    "score": 0.34146341463414637,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tier-4-v2",
+    "model": "gemini-3.8-flash_high",
+    "score": 0.21951219512195122,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gpt-6.1-terra_max",
+    "score": 0.9087719298245615,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "deepseek-v4.1-flash-1017_max",
+    "score": 0.712280701754386,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "Muse-Spark-Open-816B-A42B_xhigh",
+    "score": 0.6982456140350877,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gemini-4-argon_high",
+    "score": 0.8596491228070176,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "mistral-large-4-0_high",
+    "score": 0.5859649122807018,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "muse-wonder-1.0_max",
+    "score": 0.8210526315789474,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "deepseek-v4.1-flash_max",
+    "score": 0.6736842105263158,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "claude-haiku-5-5_max",
+    "score": 0.7508771929824561,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gpt-6.1-sol_max",
+    "score": 0.9368421052631579,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "claude-sonnet-5-5_max",
+    "score": 0.887719298245614,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gpt-6-luna_max",
+    "score": 0.7894736842105263,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "grok-4.7_xhigh",
+    "score": 0.5298245614035088,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gpt-6-sol_max",
+    "score": 0.8982456140350877,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "claude-opus-5-5_max",
+    "score": 0.9122807017543859,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "muse-spark-1.3_max",
+    "score": 0.7403508771929824,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "muse-spark-1.3_xhigh",
+    "score": 0.743859649122807,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "qwen3.8-max-0902_xhigh",
+    "score": 0.656140350877193,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiermath-tiers-1-3-v2",
+    "model": "gemini-3.8-flash_high",
+    "score": 0.6842105263157895,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gpt-6.1-terra_max",
+    "score": 0.9431818181818182,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "deepseek-v4.1-flash-1017_max",
+    "score": 0.9318181818181818,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "Muse-Spark-Open-816B-A42B_xhigh",
+    "score": 0.8857323232323232,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gemini-4-argon_high",
+    "score": 0.9640151515151515,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "mistral-large-4-0_high",
+    "score": 0.8806818181818182,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "deepseek-v4.1-flash_max",
+    "score": 0.8983585858585859,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "claude-haiku-5-5_max",
+    "score": 0.8964646464646465,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gpt-6.1-sol_max",
+    "score": 0.9539141414141414,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "claude-sonnet-5-5_max",
+    "score": 0.9558080808080808,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gpt-6-luna_max",
+    "score": 0.9046717171717171,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "grok-4.7_xhigh",
+    "score": 0.92739898989899,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gpt-6-sol_max",
+    "score": 0.9431818181818182,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "claude-opus-5-5_max",
+    "score": 0.9059343434343434,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "qwen3.8-max-0902_xhigh",
+    "score": 0.922979797979798,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "gemini-3.8-flash_high",
+    "score": 0.9539141414141414,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gso",
+    "model": "claude-fable-5-1_unknown",
+    "score": 0.8824,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gso",
+    "model": "gpt-6-astra_unknown",
+    "score": 0.7941,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gso",
+    "model": "claude-fable-5_unknown",
+    "score": 0.7843000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "gso",
+    "model": "gpt-5.6-sol_unknown",
+    "score": 0.7647,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gpt-6.1-terra_max",
+    "score": 0.573,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "deepseek-v4.1-flash-1017_max",
+    "score": 0.425,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "Muse-Spark-Open-816B-A42B_xhigh",
+    "score": 0.566,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gemini-4-argon_high",
+    "score": 0.76,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "deepseek-v4.1-flash_max",
+    "score": 0.429,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "claude-haiku-5-5_max",
+    "score": 0.238,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "mistral-large-4-0_high",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gpt-6.1-sol_max",
+    "score": 0.739,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "claude-sonnet-5-5_max",
+    "score": 0.465,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gpt-6-luna_max",
+    "score": 0.414,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "grok-4.7_xhigh",
+    "score": 0.56,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gpt-6-sol_max",
+    "score": 0.607,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "claude-opus-5-5_max",
+    "score": 0.722,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "qwen3.8-max-0902_xhigh",
+    "score": 0.473,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "simpleqa-verified",
+    "model": "gemini-3.8-flash_high",
+    "score": 0.697,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "GPT-6 Astra",
+    "score": 15514.701666666668,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "GPT-6 Sol",
+    "score": 14427.848333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Gemini 4 Argon",
+    "score": 13718.158333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Claude Sonnet 5.5",
+    "score": 11165.27833333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Grok 4.7",
+    "score": 10536.831666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Muse Wonder",
+    "score": 9432.18,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Claude Opus 5.5",
+    "score": 9235.248333333331,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Claude Fable 5.1",
+    "score": 5421.556666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Gemini 3.8 Flash",
+    "score": 5093.793333333332,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "vending-bench-2",
+    "model": "Claude Haiku 5.5",
+    "score": 3602.4633333333345,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Gemini 4 Argon",
+    "score": 0.8240000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Sonnet 5.5 [claude-sonnet-5-5]",
+    "score": 0.755,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Opus 5.5 [claude-opus-5-5]",
+    "score": 0.735,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "GPT-6.1 Sol",
+    "score": 0.6,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Haiku 5.5",
+    "score": 0.561,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "GPT-6 Sol",
+    "score": 0.543,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Opus 5.5 [opus-5.5]",
+    "score": 0.525,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Sonnet 5.5 (Medium)",
+    "score": 0.446,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "GPT-6 Luna",
+    "score": 0.443,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "apex-agents",
+    "model": "Muse Spark Open",
+    "score": 0.334,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+    "score": 0.668981481481482,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "score": 0.650462962962963,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+    "score": 0.609953703703704,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "score": 0.572916666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+    "score": 0.537037037037037,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    "score": 0.528935185185185,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+    "score": 0.490740740740741,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (Max)",
+    "score": 0.576388888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6.1 Sol (High)",
+    "score": 0.55787037037037,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6.1 Sol (Xhigh)",
+    "score": 0.556712962962963,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (Xhigh)",
+    "score": 0.550925925925926,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (High)",
+    "score": 0.548611111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (Max)",
+    "score": 0.546296296296296,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6.1 Sol (Max)",
+    "score": 0.541666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (Medium)",
+    "score": 0.538194444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6.1 Sol (Medium)",
+    "score": 0.532407407407407,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6.1 Sol (Low)",
+    "score": 0.532407407407407,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (Xhigh)",
+    "score": 0.517361111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (Medium)",
+    "score": 0.509259259259259,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (High)",
+    "score": 0.503472222222222,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (Low)",
+    "score": 0.502314814814815,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Sol (Non-reasoning)",
+    "score": 0.47337962962963,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (Low)",
+    "score": 0.46875,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "GPT-6 Luna (Non-reasoning)",
+    "score": 0.430555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Opus 5.5 (High, Default Fallback)",
+    "score": 0.604166666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Opus 5.5 (Medium, Default Fallback)",
+    "score": 0.592592592592593,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Opus 5.5 (Low, Default Fallback)",
+    "score": 0.585648148148148,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Gemini 4 Argon (High)",
+    "score": 0.618055555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Muse Wonder (Max)",
+    "score": 0.603009259259259,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Haiku 5.5 (Max)",
+    "score": 0.549768518518518,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Mistral Large 4 Preview",
+    "score": 0.541666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Haiku 5.5 (Xhigh)",
+    "score": 0.517361111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Haiku 5.5 (Low)",
+    "score": 0.491898148148148,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Haiku 5.5 (Medium)",
+    "score": 0.48958333333333304,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Claude Haiku 5.5 (High)",
+    "score": 0.487268518518519,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "scicode",
+    "model": "Muse Spark Open (Xhigh)",
+    "score": 0.584490740740741,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Opus 5.5",
+    "score": 0.9893000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "GPT-6 Sol",
+    "score": 0.9733,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "GPT-6 Luna",
+    "score": 0.9013,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Sonnet 5.5",
+    "score": 0.9733,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Opus 5.5 (high)",
+    "score": 0.9653,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Opus 5.5 (xhigh)",
+    "score": 0.9733,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Sonnet 5.5 (xhigh)",
+    "score": 0.96,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Opus 5.5 (medium)",
+    "score": 0.9653,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Opus 5.5 (low)",
+    "score": 0.9547,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Sonnet 5.5 (medium)",
+    "score": 0.9387000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Sonnet 5.5 (high)",
+    "score": 0.9413,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Sonnet 5.5 (low)",
+    "score": 0.9333,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "GPT-6.1 Sol",
+    "score": 0.9653,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Gemini 4 Argon (low)",
+    "score": 0.976,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Gemini 4 Argon",
+    "score": 0.9733,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Gemini 4 Argon (medium)",
+    "score": 0.9733,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Muse Wonder",
+    "score": 0.9520000000000001,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5",
+    "score": 0.9499,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5 (xhigh)",
+    "score": 0.872,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5 (high)",
+    "score": 0.8667,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5 (medium)",
+    "score": 0.8427,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5 (low)",
+    "score": 0.8107,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Mistral Large 4",
+    "score": 0.8824,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "dtbench",
+    "model": "Claude Haiku 5.5 (off)",
+    "score": 0.752,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "Claude Opus 5.5",
+    "score": 0.5464,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "Claude Sonnet 5.5",
+    "score": 0.5209,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "GPT-6.1 Sol",
+    "score": 0.5023,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "GPT-6 Sol",
+    "score": 0.4927,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "Gemini 4 Argon",
+    "score": 0.4755,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "Claude Haiku 5.5",
+    "score": 0.4636,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "GPT-6 Luna",
+    "score": 0.4242,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontiercode-1-1",
+    "model": "Mistral Large 4 (Preview)",
+    "score": 0.3943,
+    "source": "https://epoch.ai/data/benchmark_data.zip",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "Claude Sonnet 5.5 (max, safeguards enabled)",
+    "score": 0.706,
+    "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "Claude Haiku 5.5 (max, safeguards, no fallback)",
+    "score": 0.392,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "GPT-6.1 Terra (low)",
+    "score": 0.248,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "GPT-6.1 Terra (medium)",
+    "score": 0.358,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "GPT-6.1 Terra (high)",
+    "score": 0.418,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "GPT-6.1 Terra (xhigh)",
+    "score": 0.464,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "GPT-6.1 Terra (max)",
+    "score": 0.503,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "Kimi K3.1 Pro (max, Claude Code)",
+    "score": 0.657,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "DeepSeek-V4.1-Flash-1017 (model-card settings, Claude Code)",
+    "score": 0.423,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "Claude Sonnet 5.5 (max, Claude Code bare, safeguards)",
+    "score": 0.599,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "Claude Haiku 5.5 (max, Claude Code bare, safeguards)",
+    "score": 0.206,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Sol (low)",
+    "score": 0.437,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Sol (medium)",
+    "score": 0.476,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Sol (high)",
+    "score": 0.511,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Sol (xhigh)",
+    "score": 0.537,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Sol (max)",
+    "score": 0.57,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Terra (low)",
+    "score": 0.243,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Terra (medium)",
+    "score": 0.343,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Terra (high)",
+    "score": 0.397,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Terra (xhigh)",
+    "score": 0.434,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "GPT-6.1 Terra (max)",
+    "score": 0.583,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "terminal-bench-science-0-1",
+    "model": "Kimi K3.1 Pro (max, Claude Code)",
+    "score": 0.381,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "Claude Sonnet 5.5 (max, five trials)",
+    "score": 0.71,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "GPT-6.1 Sol (low)",
+    "score": 0.644,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "GPT-6.1 Sol (medium)",
+    "score": 0.73,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "GPT-6.1 Sol (high)",
+    "score": 0.752,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "GPT-6.1 Sol (xhigh)",
+    "score": 0.719,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "GPT-6.1 Sol (max)",
+    "score": 0.719,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "DeepSeek-V4.1-Flash-1017 (model-card settings)",
+    "score": 0.77,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "deepswe-v1-1",
+    "model": "Kimi K3.1 Pro (max, Claude Code)",
+    "score": 0.755,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontierswe-v2",
+    "model": "Claude Sonnet 5.5 (max, Proximal harness, five trials)",
+    "score": 0.619,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "frontierswe-v2",
+    "model": "Claude Haiku 5.5 (max, Proximal harness)",
+    "score": 0.438,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "cursorbench-4-0",
+    "model": "Claude Sonnet 5.5 (medium, Cursor harness)",
+    "score": 0.392,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "cursorbench-4-0",
+    "model": "Claude Sonnet 5.5 (high, Cursor harness)",
+    "score": 0.478,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "cursorbench-4-0",
+    "model": "Claude Sonnet 5.5 (xhigh, Cursor harness)",
+    "score": 0.531,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "cursorbench-4-0",
+    "model": "Claude Sonnet 5.5 (max, Cursor harness)",
+    "score": 0.555,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Terra (low)",
+    "score": 0.559,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Terra (medium)",
+    "score": 0.576,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Terra (high)",
+    "score": 0.572,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Terra (xhigh)",
+    "score": 0.585,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Terra (max)",
+    "score": 0.6,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Sol (low)",
+    "score": 0.524,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Sol (medium)",
+    "score": 0.538,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Sol (high)",
+    "score": 0.553,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Sol (xhigh)",
+    "score": 0.565,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "GPT-6.1 Sol (max)",
+    "score": 0.586,
+    "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "Kimi K3.1 Pro (max, Kimi Code, ALE v1.1)",
+    "score": 0.432,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "agents-last-exam",
+    "model": "DeepSeek-V4.1-Flash-1017 (model-card settings)",
+    "score": 0.354,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.616,
+    "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.464,
+    "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Sonnet 5.5 (max, tools)",
+    "score": 0.902,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Haiku 5.5 (max, tools)",
+    "score": 0.862,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, tools)",
+    "score": 0.645,
+    "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, tools)",
+    "score": 0.574,
+    "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.569,
+    "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.459,
+    "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Kimi K3.1 Pro (max, no tools)",
+    "score": 0.511,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "DeepSeek-V4.1-Flash-1017 (no tools)",
+    "score": 0.426,
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Kimi K3.1 Pro (max, tools)",
+    "score": 0.7,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "auxiliary"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (xhigh)",
+    "score": 0.4612,
+    "source": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5",
+    "score": 0.3012,
+    "source": "https://labs.scale.com/leaderboard/humanitys_last_exam",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "osworld-2",
+    "model": "GPT-6.1 Sol (low, offline 2026.08.08)",
+    "score": 0.59,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "osworld-2",
+    "model": "GPT-6.1 Sol (medium, offline 2026.08.08)",
+    "score": 0.668,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "osworld-2",
+    "model": "GPT-6.1 Sol (high, offline 2026.08.08)",
+    "score": 0.696,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "osworld-2",
+    "model": "GPT-6.1 Sol (xhigh, offline 2026.08.08)",
+    "score": 0.694,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "osworld-2",
+    "model": "GPT-6.1 Sol (max, offline 2026.08.08)",
+    "score": 0.714,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "automationbench",
+    "model": "GPT-6.1 Sol (low, Zapier private)",
+    "score": 0.247,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "automationbench",
+    "model": "GPT-6.1 Sol (medium, Zapier private)",
+    "score": 0.317,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "automationbench",
+    "model": "GPT-6.1 Sol (high, Zapier private)",
+    "score": 0.332,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "automationbench",
+    "model": "GPT-6.1 Sol (xhigh, Zapier private)",
+    "score": 0.355,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "automationbench",
+    "model": "GPT-6.1 Sol (max, Zapier private)",
+    "score": 0.361,
+    "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
+  },
+  {
+    "benchmark": "gpqa-diamond",
+    "model": "kimi-k3.1-pro_max",
+    "score": 0.942,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "canonical"
+  },
+  {
+    "benchmark": "browsecomp",
+    "model": "Kimi K3.1 Pro (max)",
+    "score": 0.921,
+    "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "role": "auxiliary",
+    "note": "Demoted from canonical on 2026-10-27: single self-reported vendor row; see docs/OCTOBER_2026_BENCHMARK_AUDIT.md."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "Claude Sonnet 5.5 (max, safeguards enabled)",
+    "score": 0.706,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.616,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.464,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, tools)",
+    "score": 0.645,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, tools)",
+    "score": 0.574,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.569,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "auxiliary",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.459,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "auxiliary",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  }
+]

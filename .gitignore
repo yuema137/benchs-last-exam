@@ -78,6 +78,7 @@ data/raw/*
 !data/raw/seephys_pro_l4_external.csv
 !data/raw/qcaleval_2026_04_zeroshot_external.csv
 !data/raw/mascqa_corrected_644_external.csv
+!data/raw/frontiercs_2_external.csv
 !data/raw/matqna_v1_objective_external.csv
 !data/raw/mattools_v1_pymatgen_doc_external.csv
 !data/raw/tps_calcbench_v1_core_exact_external.csv

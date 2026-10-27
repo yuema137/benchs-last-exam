@@ -1,45 +1,47 @@
 # Observation Date Audit
 
-Snapshot: `2026-09-23`
+Snapshot: `2026-10-27`
 
 The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.
 
-- Canonical measurements: **4446**
-- Source evidence records: **4587**
-- Exact duplicate evidence rows merged: **141**
+- Canonical measurements: **4813**
+- Source evidence records: **4961**
+- Exact duplicate evidence rows merged: **148**
 - Observations without any candidate date: **354**
-- Observations selected before benchmark release and plotted as `At release`: **1243**
+- Observations selected before benchmark release and plotted as `At release`: **1257**
 
 ## Selected earliest-date evidence
 
 | Selected source kind(s) | Observations |
 |---|---:|
-| `model_release_date` | 3760 |
+| `model_release_date` | 4030 |
 | `unknown` | 354 |
-| `score_publication_date` | 90 |
-| `evaluation_date+model_release_date` | 83 |
+| `evaluation_date+model_release_date` | 115 |
+| `model_release_date+score_publication_date` | 109 |
+| `score_publication_date` | 91 |
 | `model_release_date+model_release_date` | 67 |
-| `model_release_date+score_publication_date` | 52 |
 | `evaluation_date` | 23 |
 | `model_release_date+model_release_date+model_release_date` | 13 |
+| `model_release_date+score_publication_date+model_release_date+score_publication_date` | 6 |
 | `model_release_date+model_release_date+model_release_date+model_release_date` | 4 |
+| `model_release_date+score_publication_date+model_release_date` | 1 |
 
 ## Benchmark coverage
 
 | Benchmark | Observations | Dated | Pre-release | Frontier events |
 |---|---:|---:|---:|---:|
 | AeroCopilotBench Tier 2 | 4 | 4 | 4 | 1 |
-| Agents' Last Exam (ALE-V1) | 12 | 12 | 2 | 3 |
+| Agents' Last Exam (ALE-V1) | 24 | 24 | 2 | 4 |
 | Aider Polyglot | 77 | 72 | 14 | 7 |
 | Akita coding benchmark v4 · Vigilance | 39 | 39 | 0 | 1 |
 | APBench-γ | 6 | 6 | 6 | 1 |
-| APEX-Agents | 64 | 64 | 29 | 6 |
-| ARC-AGI-2 | 210 | 210 | 14 | 13 |
+| APEX-Agents | 74 | 74 | 29 | 9 |
+| ARC-AGI-2 | 263 | 263 | 14 | 14 |
 | ARC-AGI-3 | 1 | 1 | 0 | 1 |
 | AssistantBench | 8 | 8 | 0 | 4 |
 | AtomWorld v4 | 3 | 3 | 3 | 1 |
-| AutomationBench | 31 | 31 | 0 | 3 |
-| BALROG | 36 | 36 | 17 | 5 |
+| AutomationBench | 36 | 36 | 0 | 3 |
+| BALROG | 41 | 41 | 17 | 8 |
 | BenchCAD · Vision2Code | 11 | 11 | 6 | 1 |
 | BFCL V4 | 3 | 3 | 1 | 2 |
 | BIG-Bench Hard | 79 | 75 | 0 | 4 |
@@ -47,12 +49,12 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | BixBench | 2 | 2 | 2 | 1 |
 | BLINDSPOT v1 · Safety calibration | 13 | 13 | 0 | 1 |
 | BoolQ | 186 | 107 | 0 | 6 |
-| BrowseComp | 5 | 5 | 4 | 1 |
+| BrowseComp | 6 | 6 | 4 | 1 |
 | CADBench-Wild — Criteria Score | 9 | 9 | 8 | 1 |
 | CADReview — Human Feedback | 4 | 4 | 4 | 1 |
 | CADWorld v1 | 7 | 7 | 0 | 1 |
 | CFDCodeBench — Zero-shot | 6 | 6 | 6 | 1 |
-| Chartography v1 · No tools | 6 | 6 | 2 | 3 |
+| Chartography v1 · No tools | 10 | 10 | 2 | 3 |
 | ChemBench | 3 | 3 | 0 | 3 |
 | ChemEBench 2025 — Zero-shot Overall | 7 | 7 | 7 | 1 |
 | ChemIQ | 5 | 5 | 4 | 1 |
@@ -65,14 +67,14 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | ClimaQA-Gold — Default MCQ | 6 | 6 | 6 | 1 |
 | CompBioBench v1 | 3 | 3 | 3 | 1 |
 | ControlBench | 3 | 3 | 3 | 1 |
-| CritPt | 171 | 167 | 46 | 5 |
+| CritPt | 233 | 229 | 47 | 5 |
 | CursorBench 3.2 | 8 | 8 | 1 | 3 |
-| CursorBench 4.0 | 21 | 21 | 15 | 2 |
+| CursorBench 4.0 | 25 | 25 | 15 | 2 |
 | CyBench | 24 | 24 | 6 | 2 |
 | DeepResearch Bench | 41 | 41 | 6 | 7 |
-| DeepSWE v1.1 | 70 | 70 | 3 | 7 |
+| DeepSWE v1.1 | 78 | 78 | 3 | 9 |
 | DesignQA v2 — Functional Performance RAG | 4 | 4 | 3 | 1 |
-| DTBench | 161 | 159 | 157 | 1 |
+| DTBench | 185 | 183 | 157 | 2 |
 | EarthSE — Earth-Silver MC | 7 | 7 | 7 | 1 |
 | EEBench | 6 | 6 | 3 | 2 |
 | EEE-Bench v2 | 4 | 4 | 4 | 1 |
@@ -90,23 +92,24 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | FEM-Bench 2025 — First Run | 10 | 10 | 10 | 1 |
 | FormationEval v0.1 | 7 | 7 | 7 | 1 |
 | FrontierChallenge | 11 | 11 | 11 | 1 |
-| FrontierCode 1.1 | 59 | 54 | 0 | 7 |
-| FrontierMath Tier 4 (v2) | 61 | 61 | 32 | 3 |
-| FrontierMath Tiers 1–3 (v2) | 104 | 104 | 76 | 3 |
-| FrontierSWE V2 | 10 | 10 | 0 | 3 |
+| FrontierCode 1.1 | 67 | 62 | 0 | 7 |
+| FrontierCS 2 | 16 | 16 | 13 | 1 |
+| FrontierMath Tier 4 (v2) | 79 | 79 | 32 | 4 |
+| FrontierMath Tiers 1–3 (v2) | 122 | 122 | 76 | 3 |
+| FrontierSWE V2 | 12 | 12 | 0 | 3 |
 | GAIA | 6 | 6 | 0 | 5 |
 | GDP.pdf | 17 | 17 | 4 | 5 |
 | GDPval-AA v2 | 35 | 35 | 0 | 3 |
 | GeoNatureAgent v5 | 6 | 6 | 6 | 1 |
 | GMAI-MMBench v7 Test | 5 | 5 | 5 | 1 |
-| GPQA Diamond | 312 | 312 | 7 | 19 |
+| GPQA Diamond | 328 | 328 | 7 | 20 |
 | GS-PowerFlow-100 — Procedural Text | 3 | 3 | 3 | 1 |
 | GSM8K | 215 | 142 | 1 | 5 |
-| GSO | 38 | 38 | 12 | 8 |
+| GSO | 42 | 42 | 12 | 10 |
 | HealthBench | 7 | 7 | 3 | 1 |
 | HellaSwag | 129 | 101 | 0 | 7 |
 | HumanEval | 5 | 5 | 1 | 5 |
-| Humanity's Last Exam | 11 | 11 | 0 | 5 |
+| Humanity's Last Exam | 20 | 20 | 0 | 5 |
 | IFEval | 4 | 4 | 0 | 3 |
 | iSafetyBench — Single Accuracy | 2 | 2 | 2 | 1 |
 | JEEBench Physics | 3 | 3 | 3 | 1 |
@@ -146,7 +149,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | OpenEQA EM-EQA v0 | 3 | 3 | 3 | 1 |
 | OPENXRD — Closed Book | 7 | 7 | 7 | 1 |
 | OST-Bench v2 — Multi-round | 6 | 6 | 6 | 1 |
-| OSWorld 2.0 | 21 | 21 | 10 | 4 |
+| OSWorld 2.0 | 26 | 26 | 10 | 4 |
 | PaperBench | 5 | 5 | 5 | 1 |
 | PCEval — Physical Circuit | 5 | 5 | 5 | 1 |
 | PG-LLM — ProteinGym | 5 | 5 | 5 | 1 |
@@ -163,13 +166,13 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | QuantiPhy — Overall MRA | 5 | 5 | 5 | 1 |
 | RoboBench | 7 | 7 | 3 | 2 |
 | SandboxEscapeBench | 9 | 9 | 9 | 1 |
-| SciCode | 159 | 155 | 0 | 14 |
+| SciCode | 195 | 191 | 0 | 15 |
 | ScienceAgentBench | 9 | 9 | 0 | 4 |
 | ScienceQA | 104 | 26 | 2 | 5 |
 | ScreenSpot-Pro | 5 | 5 | 3 | 3 |
 | SeePhys Pro — Level 4 Full | 5 | 5 | 5 | 1 |
 | ShowAndTell v1 · Comprehension (AEI) | 3 | 3 | 0 | 0 |
-| SimpleQA Verified | 78 | 78 | 15 | 4 |
+| SimpleQA Verified | 93 | 93 | 15 | 5 |
 | SkillsBench v1.1 | 18 | 18 | 18 | 1 |
 | Spatial457 v4 — L5 6D Spatial | 4 | 4 | 4 | 1 |
 | SpatialViz-Bench | 8 | 8 | 1 | 3 |
@@ -179,8 +182,8 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | SWE-bench Verified | 35 | 35 | 0 | 9 |
 | Terminal-Bench 2.0 | 183 | 183 | 96 | 7 |
 | Terminal-Bench 2.1 | 10 | 10 | 8 | 2 |
-| Terminal-Bench 4.0 | 37 | 37 | 18 | 4 |
-| Terminal-Bench-Science 0.1 | 11 | 11 | 0 | 5 |
+| Terminal-Bench 4.0 | 46 | 46 | 18 | 5 |
+| Terminal-Bench-Science 0.1 | 24 | 24 | 0 | 5 |
 | TerminalWorld Verified | 8 | 8 | 8 | 1 |
 | TheAgentCompany | 16 | 16 | 6 | 6 |
 | ThermoQA v0.4 — Composite | 5 | 5 | 5 | 1 |
@@ -188,7 +191,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | Toolathlon-Verified | 8 | 8 | 2 | 2 |
 | TPS-CalcBench — Core Exact | 7 | 7 | 7 | 1 |
 | TriviaQA | 106 | 104 | 0 | 7 |
-| Vending-Bench 2 | 59 | 59 | 0 | 6 |
+| Vending-Bench 2 | 69 | 69 | 0 | 7 |
 | VerilogEval v2 — Spec-to-RTL | 11 | 11 | 11 | 1 |
 | Video-MME | 50 | 50 | 15 | 2 |
 | Virology Capabilities Test v2 — Text 101 | 8 | 8 | 8 | 1 |

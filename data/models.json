@@ -2352,22 +2352,28 @@
   },
   {
     "id": "model-claude-fable-5-1-unknown-40ef79038c858d7d",
-    "canonical_name": "Fable 5.1 [claude-fable-5.1]",
-    "aliases": [],
+    "canonical_name": "Claude Fable 5.1",
+    "aliases": [
+      "claude-fable-5-1_unknown",
+      "Fable 5.1 [claude-fable-5.1]"
+    ],
     "configuration_id": "claude-fable-5-1_unknown",
     "identity_organization": "anthropic",
-    "family_id": "anthropic-fable-5-1-claude-fable-5-1",
+    "family_id": "anthropic-claude-fable-5-1",
     "release_date": "2026-09-01",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da",
-      "resource-https-www-anthropic-com-claude-fable-e0f1ebb59adf2f6c"
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
+      "resource-https-www-anthropic-com-claude-fable-e0f1ebb59adf2f6c",
+      "resource-https-gso-bench-github-io-index-html-c5270e053b8d0f3c",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General agent tasks"
+      "General agent tasks",
+      "Software engineering"
     ],
     "evaluation_types": [
       "Agent"
@@ -2695,14 +2701,17 @@
   {
     "id": "model-claude-fable-5-unknown-70e23b6bc66a541f",
     "canonical_name": "Claude Fable 5",
-    "aliases": [],
+    "aliases": [
+      "claude-fable-5_unknown"
+    ],
     "configuration_id": "claude-fable-5_unknown",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-fable-5",
     "release_date": "2026-06-09",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-cognition-com-frontiercode-8e26d954ad88675f"
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-gso-bench-github-io-index-html-c5270e053b8d0f3c"
     ],
     "roles": [
       "contemporary_frontier"
@@ -3034,6 +3043,378 @@
       "Health"
     ],
     "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-b5478bb6fe5e8156",
+    "canonical_name": "Claude Haiku 5.5",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-high-df745a4ae25c035a",
+    "canonical_name": "Claude Haiku 5.5 (High)",
+    "aliases": [
+      "Claude Haiku 5.5 (high)"
+    ],
+    "configuration_id": "claude-haiku-5-5_high",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-low-e4ed1767ea035e51",
+    "canonical_name": "Claude Haiku 5.5 (Low)",
+    "aliases": [
+      "Claude Haiku 5.5 (low)"
+    ],
+    "configuration_id": "claude-haiku-5-5_low",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-4bf3a4ae6fe7f1d5",
+    "canonical_name": "claude-haiku-5-5_max",
+    "aliases": [
+      "Claude Haiku 5.5 (Max)",
+      "Claude Haiku 5.5",
+      "Haiku 5.5"
+    ],
+    "configuration_id": "claude-haiku-5-5_max",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5-max",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-claude-code-bare-safeguards-3d1ec7e2438d53b6",
+    "canonical_name": "Claude Haiku 5.5 (max, Claude Code bare, safeguards)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5 (max, Claude Code bare, safeguards)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-no-tools-c59972cdc0133e75",
+    "canonical_name": "Claude Haiku 5.5 (max, no tools)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5 (max, no tools)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning",
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-proximal-harness-9badeadb61cbda81",
+    "canonical_name": "Claude Haiku 5.5 (max, Proximal harness)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5 (max, Proximal harness)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-safeguards-no-fallback-ad7efddb2f6392ad",
+    "canonical_name": "Claude Haiku 5.5 (max, safeguards, no fallback)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5 (max, safeguards, no fallback)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-max-tools-fd9737bb7c3c3375",
+    "canonical_name": "Claude Haiku 5.5 (max, tools)",
+    "aliases": [],
+    "configuration_id": "Claude Haiku 5.5 (max, tools)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning",
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-medium-f7308d1f98a0cda8",
+    "canonical_name": "Claude Haiku 5.5 (Medium)",
+    "aliases": [
+      "Claude Haiku 5.5 (medium)"
+    ],
+    "configuration_id": "claude-haiku-5-5_medium",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-none-4206c2776c6cf86e",
+    "canonical_name": "Claude Haiku 5.5 (off)",
+    "aliases": [],
+    "configuration_id": "claude-haiku-5-5_none",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-unknown-f9d8b49b37fad7f9",
+    "canonical_name": "Claude Haiku 5.5",
+    "aliases": [],
+    "configuration_id": "claude-haiku-5-5_unknown",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-haiku-5-5-xhigh-b2c8ddc6a965dc8c",
+    "canonical_name": "Claude Haiku 5.5 (XHigh)",
+    "aliases": [
+      "Claude Haiku 5.5 (Xhigh)",
+      "Claude Haiku 5.5 (xhigh)"
+    ],
+    "configuration_id": "claude-haiku-5-5_xhigh",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-haiku-5-5",
+    "release_date": "2026-10-07",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -5008,6 +5389,64 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-5-5-claude-code-950e88e1982c93e2",
+    "canonical_name": "Claude Opus 5.5 / Claude Code",
+    "aliases": [],
+    "configuration_id": "Claude Opus 5.5 / Claude Code",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5-claude-code",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2610-29932v1-fda32b0867d2e848"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-5-high-0dec505f9f14dc4b",
+    "canonical_name": "Claude Opus 5.5 (High)",
+    "aliases": [
+      "Claude Opus 5.5 (High, Default Fallback)",
+      "Claude Opus 5.5 (high)"
+    ],
+    "configuration_id": "claude-opus-5-5_high",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-5-5-high-safeguards-and-disclosed-fa-4cfbfe804bf0a563",
     "canonical_name": "Claude Opus 5.5 (high, safeguards and disclosed fallbacks)",
     "aliases": [],
@@ -5058,6 +5497,40 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-5-5-low-968fcc8fea20181b",
+    "canonical_name": "Claude Opus 5.5 (Low)",
+    "aliases": [
+      "Claude Opus 5.5 (Low, Default Fallback)",
+      "Claude Opus 5.5 (low)"
+    ],
+    "configuration_id": "claude-opus-5-5_low",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-5-5-low-safeguards-and-disclosed-fal-f8505f4120b89e76",
     "canonical_name": "Claude Opus 5.5 (low, safeguards and disclosed fallbacks)",
     "aliases": [],
@@ -5102,6 +5575,50 @@
       "General agent tasks"
     ],
     "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-5-max-7bf5368e46450f3d",
+    "canonical_name": "claude-opus-5-5_max",
+    "aliases": [
+      "Claude Opus 5.5 (Max)",
+      "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "Claude Opus 5.5",
+      "Opus 5.5 [claude-opus-5-5]"
+    ],
+    "configuration_id": "claude-opus-5-5_max",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5-max",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -5375,6 +5892,46 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-opus-5-5-medium-d0f71cb1e969e600",
+    "canonical_name": "Claude Opus 5.5 (Medium)",
+    "aliases": [
+      "Claude Opus 5.5 (Medium, Default Fallback)",
+      "Claude Opus 5.5",
+      "Claude Opus 5.5 (medium)",
+      "Opus 5.5 [opus-5.5]"
+    ],
+    "configuration_id": "claude-opus-5-5_medium",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General knowledge & reasoning",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-opus-5-5-medium-safeguards-and-disclosed--0ee71a56c5202729",
     "canonical_name": "Claude Opus 5.5 (medium, safeguards and disclosed fallbacks)",
     "aliases": [],
@@ -5419,6 +5976,64 @@
       "General agent tasks"
     ],
     "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-5-unknown-623c513bba201f3c",
+    "canonical_name": "Claude Opus 5.5",
+    "aliases": [],
+    "configuration_id": "claude-opus-5-5_unknown",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-opus-5-5-xhigh-ef078d9e66e638a0",
+    "canonical_name": "Claude Opus 5.5 (XHigh)",
+    "aliases": [
+      "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "Claude Opus 5.5 (xhigh)"
+    ],
+    "configuration_id": "claude-opus-5-5_xhigh",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-opus-5-5",
+    "release_date": "2026-09-22",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -5772,6 +6387,7 @@
       "resource-https-cursor-com-cn-cursorbench-9196d23ebe76478e",
       "resource-https-artificialanalysis-ai-evaluations-gdpval-a-5d24e844043c2d59",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262",
+      "resource-https-balrogai-com-42791baa73c06848",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
       "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
     ],
@@ -7105,6 +7721,448 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-claude-sonnet-5-5-high-129473d477cdae6e",
+    "canonical_name": "Claude Sonnet 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+    "aliases": [
+      "Claude Sonnet 5.5 (high)"
+    ],
+    "configuration_id": "claude-sonnet-5-5_high",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-high-cursor-harness-03b9d4f0635fca7c",
+    "canonical_name": "Claude Sonnet 5.5 (high, Cursor harness)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (high, Cursor harness)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-low-3ef12679fef8b536",
+    "canonical_name": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
+    "aliases": [
+      "Claude Sonnet 5.5 (low)"
+    ],
+    "configuration_id": "claude-sonnet-5-5_low",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-c09eca27fd24ed24",
+    "canonical_name": "claude-sonnet-5-5_max",
+    "aliases": [
+      "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "Claude Sonnet 5.5",
+      "Sonnet 5.5 [claude-sonnet-5-5]"
+    ],
+    "configuration_id": "claude-sonnet-5-5_max",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5-max",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Physics",
+      "Science / research",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-claude-code-bare-safeguard-f9d5cf8417604804",
+    "canonical_name": "Claude Sonnet 5.5 (max, Claude Code bare, safeguards)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, Claude Code bare, safeguards)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-cursor-harness-d25c8db878c83565",
+    "canonical_name": "Claude Sonnet 5.5 (max, Cursor harness)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, Cursor harness)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-five-trials-42ff1490579bb8e2",
+    "canonical_name": "Claude Sonnet 5.5 (max, five trials)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, five trials)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-no-tools-39459ffb3698d5c5",
+    "canonical_name": "Claude Sonnet 5.5 (max, no tools)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, no tools)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
+      "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning",
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-proximal-harness-five-tria-e7637fc30872cb61",
+    "canonical_name": "Claude Sonnet 5.5 (max, Proximal harness, five trials)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, Proximal harness, five trials)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-safeguards-enabled-7c0e142b9f2c0d34",
+    "canonical_name": "Claude Sonnet 5.5 (max, safeguards enabled)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, safeguards enabled)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d",
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-max-tools-25b08321afb3f736",
+    "canonical_name": "Claude Sonnet 5.5 (max, tools)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (max, tools)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d",
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning",
+      "Multimodal"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-medium-9f7e80464833267c",
+    "canonical_name": "Claude Sonnet 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+    "aliases": [
+      "Claude Sonnet 5.5 (medium)",
+      "Sonnet 5.5 (Medium)"
+    ],
+    "configuration_id": "claude-sonnet-5-5_medium",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-medium-cursor-harness-49da6ab067232068",
+    "canonical_name": "Claude Sonnet 5.5 (medium, Cursor harness)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (medium, Cursor harness)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-unknown-e2445c94303f8cfb",
+    "canonical_name": "Claude Sonnet 5.5",
+    "aliases": [],
+    "configuration_id": "claude-sonnet-5-5_unknown",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-xhigh-cursor-harness-3de8244758d9822b",
+    "canonical_name": "Claude Sonnet 5.5 (xhigh, Cursor harness)",
+    "aliases": [],
+    "configuration_id": "Claude Sonnet 5.5 (xhigh, Cursor harness)",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-claude-sonnet-5-5-xhigh-f39ec91b21728086",
+    "canonical_name": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+    "aliases": [
+      "Claude Sonnet 5.5",
+      "Claude Sonnet 5.5 (xhigh)"
+    ],
+    "configuration_id": "claude-sonnet-5-5_xhigh",
+    "identity_organization": "anthropic",
+    "family_id": "anthropic-claude-sonnet-5-5",
+    "release_date": "2026-09-28",
+    "organization": "Anthropic",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-claude-sonnet-5-claude-bcdf66420407ee13",
     "canonical_name": "Claude Sonnet 5 / claude",
     "aliases": [],
@@ -7161,23 +8219,28 @@
   },
   {
     "id": "model-claude-sonnet-5-low-415c6bb35fab40c9",
-    "canonical_name": "claude-sonnet-5 (low)",
-    "aliases": [],
+    "canonical_name": "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",
+    "aliases": [
+      "claude-sonnet-5 (low)"
+    ],
     "configuration_id": "claude-sonnet-5_low",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-sonnet-5",
     "release_date": "2026-06-30",
     "organization": "Anthropic",
     "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Physics",
       "Software engineering"
     ],
     "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -7226,23 +8289,28 @@
   },
   {
     "id": "model-claude-sonnet-5-medium-f3c788c4dab2ab7f",
-    "canonical_name": "claude-sonnet-5 (medium)",
-    "aliases": [],
+    "canonical_name": "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",
+    "aliases": [
+      "claude-sonnet-5 (medium)"
+    ],
     "configuration_id": "claude-sonnet-5_medium",
     "identity_organization": "anthropic",
     "family_id": "anthropic-claude-sonnet-5",
     "release_date": "2026-06-30",
     "organization": "Anthropic",
     "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Physics",
       "Software engineering"
     ],
     "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -7283,6 +8351,7 @@
     "id": "model-claude-sonnet-5-xhigh-7af3212d2a0e5d2e",
     "canonical_name": "claude-sonnet-5_xhigh",
     "aliases": [
+      "Claude Sonnet 5 (Adaptive Reasoning, Xhigh Effort)",
       "claude-sonnet-5 (xhigh)"
     ],
     "configuration_id": "claude-sonnet-5_xhigh",
@@ -7293,6 +8362,7 @@
     "resource_ids": [
       "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
       "resource-https-epoch-benchmarks-production-public-s3-us-e-93b53289449371ac",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
     "roles": [
@@ -7301,6 +8371,7 @@
     "domains": [
       "Science",
       "General knowledge & reasoning",
+      "Physics",
       "Software engineering"
     ],
     "evaluation_types": [
@@ -9367,6 +10438,268 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-deepseek-v4-1-flash-1017-deepseek-harness-3f8250a0c197b69e",
+    "canonical_name": "DeepSeek V4.1 Flash 1017 / DeepSeek Harness",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4.1 Flash 1017 / DeepSeek Harness",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-1017-deepseek-harness",
+    "release_date": "2026-10-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-1017-max-549d7cef051efa48",
+    "canonical_name": "deepseek-v4.1-flash-1017_max",
+    "aliases": [],
+    "configuration_id": "deepseek-v4.1-flash-1017_max",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-1017-max",
+    "release_date": "2026-10-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-1017-model-card-settings-cla-7bec08e6c1bd0584",
+    "canonical_name": "DeepSeek-V4.1-Flash-1017 (model-card settings, Claude Code)",
+    "aliases": [],
+    "configuration_id": "DeepSeek-V4.1-Flash-1017 (model-card settings, Claude Code)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-1017",
+    "release_date": "2026-10-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-huggingface-co-deepseek-ai-deepseek-v4-1-f-cac24968e5aa0d5b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-1017-model-card-settings-d5b3e8ed8d8a00d2",
+    "canonical_name": "DeepSeek-V4.1-Flash-1017 (model-card settings)",
+    "aliases": [],
+    "configuration_id": "DeepSeek-V4.1-Flash-1017 (model-card settings)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-1017",
+    "release_date": "2026-10-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-huggingface-co-deepseek-ai-deepseek-v4-1-f-cac24968e5aa0d5b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-1017-no-tools-32b06a820d9a7ed1",
+    "canonical_name": "DeepSeek-V4.1-Flash-1017 (no tools)",
+    "aliases": [],
+    "configuration_id": "DeepSeek-V4.1-Flash-1017 (no tools)",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-1017",
+    "release_date": "2026-10-17",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-huggingface-co-deepseek-ai-deepseek-v4-1-f-cac24968e5aa0d5b"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-deepseek-harness-d6eaccb1337fe99d",
+    "canonical_name": "DeepSeek V4.1 Flash / DeepSeek Harness",
+    "aliases": [],
+    "configuration_id": "DeepSeek V4.1 Flash / DeepSeek Harness",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-deepseek-harness",
+    "release_date": "2026-09-09",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-high-ca3cbaa0ebf5a16b",
+    "canonical_name": "DeepSeek V4.1 Flash (High)",
+    "aliases": [],
+    "configuration_id": "deepseek-v4.1-flash_high",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash",
+    "release_date": "2026-09-09",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-low-703e064ca1b22555",
+    "canonical_name": "DeepSeek V4.1 Flash (Low)",
+    "aliases": [],
+    "configuration_id": "deepseek-v4.1-flash_low",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash",
+    "release_date": "2026-09-09",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-max-90f227e3869485cd",
+    "canonical_name": "deepseek-v4.1-flash_max",
+    "aliases": [
+      "DeepSeek V4.1 Flash (Max)",
+      "DeepSeek V4.1 Flash (Reasoning, Max Effort)"
+    ],
+    "configuration_id": "deepseek-v4.1-flash_max",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash-max",
+    "release_date": "2026-09-09",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-deepseek-v4-1-flash-none-98d241b5c78ddaee",
+    "canonical_name": "DeepSeek V4.1 Flash (None)",
+    "aliases": [
+      "DeepSeek V4.1 Flash (Non-reasoning)"
+    ],
+    "configuration_id": "deepseek-v4.1-flash_none",
+    "identity_organization": "deepseek",
+    "family_id": "deepseek-deepseek-v4-1-flash",
+    "release_date": "2026-09-09",
+    "organization": "DeepSeek",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-deepseek-v4-1-flash-opencode-7d005c3886f92232",
     "canonical_name": "DeepSeek V4.1 Flash / opencode",
     "aliases": [],
@@ -9899,7 +11232,9 @@
   {
     "id": "model-deepseek-v4-pro-0813-none-31b6fd819445b15c",
     "canonical_name": "DeepSeek V4 Pro 0813 (None)",
-    "aliases": [],
+    "aliases": [
+      "DeepSeek V4 Pro 0813 (Non-reasoning)"
+    ],
     "configuration_id": "deepseek-v4-pro-0813_none",
     "identity_organization": "deepseek",
     "family_id": "deepseek-deepseek-v4-pro-0813",
@@ -9907,13 +11242,15 @@
     "organization": "DeepSeek",
     "resource_ids": [
       "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
-      "resource-https-api-docs-deepseek-com-news-news260813-fe54be560bf95e2c"
+      "resource-https-api-docs-deepseek-com-news-news260813-fe54be560bf95e2c",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Abstract reasoning"
+      "Abstract reasoning",
+      "Physics"
     ],
     "evaluation_types": [
       "Model"
@@ -13720,20 +15057,27 @@
   },
   {
     "id": "model-gemini-3-8-flash-high-92406615928e7be8",
-    "canonical_name": "Gemini 3.8 Flash (high)",
+    "canonical_name": "gemini-3.8-flash_high",
     "aliases": [
+      "Gemini 3.8 Flash (High)",
+      "Gemini 3.8 Flash (high)",
       "Gemini 3.8 Flash High",
       "gemini-3-8-flash (high)"
     ],
     "configuration_id": "gemini-3.8-flash_high",
     "identity_organization": "google",
-    "family_id": "google-deepmind-gemini-3-8-flash",
+    "family_id": "google-deepmind-gemini-3-8-flash-high",
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
       "resource-https-deepmind-google-models-model-cards-gemini--1867674ae3462202",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
       "resource-https-cursor-com-cn-cursorbench-9196d23ebe76478e",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
@@ -13741,6 +15085,10 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
       "Physics",
       "Science / research",
       "Software engineering"
@@ -13779,22 +15127,26 @@
   },
   {
     "id": "model-gemini-3-8-flash-low-0cbe739533423874",
-    "canonical_name": "Gemini 3.8 Flash (low)",
-    "aliases": [],
+    "canonical_name": "Gemini 3.8 Flash (Low)",
+    "aliases": [
+      "Gemini 3.8 Flash (low)"
+    ],
     "configuration_id": "gemini-3.8-flash_low",
     "identity_organization": "google",
     "family_id": "google-deepmind-gemini-3-8-flash",
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-deepmind-google-models-model-cards-gemini--1867674ae3462202",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research"
     ],
@@ -13807,8 +15159,9 @@
   },
   {
     "id": "model-gemini-3-8-flash-medium-aa5bec5bcf05fea5",
-    "canonical_name": "Gemini 3.8 Flash (medium)",
+    "canonical_name": "Gemini 3.8 Flash (Medium)",
     "aliases": [
+      "Gemini 3.8 Flash (medium)",
       "gemini-3-8-flash (medium)"
     ],
     "configuration_id": "gemini-3.8-flash_medium",
@@ -13817,8 +15170,9 @@
     "release_date": "2026-09-02",
     "organization": "Google DeepMind",
     "resource_ids": [
-      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-deepmind-google-models-model-cards-gemini--1867674ae3462202",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
@@ -13826,12 +15180,38 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research",
       "Software engineering"
     ],
     "evaluation_types": [
       "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-3-8-flash-unknown-5b5a198b8b9b8e7d",
+    "canonical_name": "Gemini 3.8 Flash",
+    "aliases": [],
+    "configuration_id": "gemini-3.8-flash_unknown",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-3-8-flash",
+    "release_date": "2026-09-02",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
+      "resource-https-deepmind-google-models-model-cards-gemini--1867674ae3462202"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -14144,6 +15524,179 @@
     "organization": "Google DeepMind",
     "resource_ids": [
       "resource-https-evals-futuresearch-ai-c31bbfd4f9ec0850"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-antigravity-60fc806d18290695",
+    "canonical_name": "Gemini 4 Argon / Antigravity",
+    "aliases": [],
+    "configuration_id": "Gemini 4 Argon / Antigravity",
+    "identity_organization": "google",
+    "family_id": "google-gemini-4-argon-antigravity",
+    "release_date": "2026-10-13",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-high-e70571521992e4a8",
+    "canonical_name": "gemini-4-argon_high",
+    "aliases": [
+      "Gemini 4 Argon (High)",
+      "Gemini 4 Argon"
+    ],
+    "configuration_id": "gemini-4-argon_high",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-4-argon-high",
+    "release_date": "2026-09-30",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-low-2ed444c92dab4f98",
+    "canonical_name": "Gemini 4 Argon (Low)",
+    "aliases": [
+      "Gemini 4 Argon (low)"
+    ],
+    "configuration_id": "gemini-4-argon_low",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-4-argon",
+    "release_date": "2026-09-30",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-medium-ad5e6178921fac0d",
+    "canonical_name": "Gemini 4 Argon (Medium)",
+    "aliases": [
+      "Gemini 4 Argon",
+      "Gemini 4 Argon (medium)"
+    ],
+    "configuration_id": "gemini-4-argon_medium",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-4-argon",
+    "release_date": "2026-09-30",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Software engineering",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-pi-65294df0402e115e",
+    "canonical_name": "Gemini 4 Argon / Pi",
+    "aliases": [],
+    "configuration_id": "Gemini 4 Argon / Pi",
+    "identity_organization": "google",
+    "family_id": "google-gemini-4-argon-pi",
+    "release_date": "2026-10-13",
+    "organization": "Google",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gemini-4-argon-unknown-e8519a7e870e6a4f",
+    "canonical_name": "Gemini 4 Argon",
+    "aliases": [],
+    "configuration_id": "gemini-4-argon_unknown",
+    "identity_organization": "google",
+    "family_id": "google-deepmind-gemini-4-argon",
+    "release_date": "2026-09-30",
+    "organization": "Google DeepMind",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
     ],
     "roles": [
       "contemporary_frontier"
@@ -15725,9 +17278,58 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-glm-5-3-flash-high-53427e3d96255352",
+    "canonical_name": "GLM-5.3-Flash (High)",
+    "aliases": [],
+    "configuration_id": "glm-5.3-flash_high",
+    "identity_organization": "z-ai-zhipu-ai",
+    "family_id": "z-ai-zhipu-ai-glm-5-3-flash",
+    "release_date": "2026-08-20",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-3-flash-low-cd10cad84bd2ab3e",
+    "canonical_name": "GLM-5.3-Flash (Low)",
+    "aliases": [],
+    "configuration_id": "glm-5.3-flash_low",
+    "identity_organization": "z-ai-zhipu-ai",
+    "family_id": "z-ai-zhipu-ai-glm-5-3-flash",
+    "release_date": "2026-08-20",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-glm-5-3-flash-max-ef18c1833cf2a2a9",
     "canonical_name": "glm-5.3-flash_max",
     "aliases": [
+      "GLM-5.3-Flash (Max)",
       "glm-5-3-flash (max)"
     ],
     "configuration_id": "glm-5.3-flash_max",
@@ -15738,6 +17340,7 @@
     "resource_ids": [
       "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
       "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262"
     ],
@@ -15747,6 +17350,7 @@
     "domains": [
       "Science",
       "Mathematics",
+      "Abstract reasoning",
       "Software engineering"
     ],
     "evaluation_types": [
@@ -15784,6 +17388,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-glm-5-3-flash-zcode-7e480f5aeca9f5e7",
+    "canonical_name": "GLM 5.3 Flash / ZCode",
+    "aliases": [],
+    "configuration_id": "GLM 5.3 Flash / ZCode",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-3-flash-zcode",
+    "release_date": "2026-08-20",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-glm-5-3-flash-zcode-zcode-5b01b523f41b0047",
     "canonical_name": "GLM 5.3 Flash (zcode) / zcode",
     "aliases": [],
@@ -15803,6 +17431,30 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-3-low-b43b6d5ef53a6520",
+    "canonical_name": "GLM-5.3 (Low)",
+    "aliases": [],
+    "configuration_id": "glm-5.3_low",
+    "identity_organization": "z-ai-zhipu-ai",
+    "family_id": "z-ai-zhipu-ai-glm-5-3",
+    "release_date": "2026-08-14",
+    "organization": "Z.ai (Zhipu AI)",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -15891,6 +17543,30 @@
     ],
     "domains": [
       "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-glm-5-3-zcode-7f7e7824314f7c2a",
+    "canonical_name": "GLM 5.3 / ZCode",
+    "aliases": [],
+    "configuration_id": "GLM 5.3 / ZCode",
+    "identity_organization": "z-ai",
+    "family_id": "z-ai-glm-5-3-zcode",
+    "release_date": "2026-08-14",
+    "organization": "Z.ai",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
     ],
     "evaluation_types": [
       "Agent"
@@ -19900,6 +21576,7 @@
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
       "resource-https-epoch-benchmarks-staging-private-s3-us-eas-8fd67bc4ce97c85b",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262",
+      "resource-https-balrogai-com-42791baa73c06848",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
     ],
     "roles": [
@@ -19912,7 +21589,8 @@
       "Abstract reasoning",
       "Physics",
       "Science / research",
-      "Software engineering"
+      "Software engineering",
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Model",
@@ -20323,6 +22001,7 @@
       "resource-https-cursor-com-cn-cursorbench-9196d23ebe76478e",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262",
       "resource-https-www-frontierswe-com-595e7d6ffd585872",
+      "resource-https-balrogai-com-42791baa73c06848",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
       "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
     ],
@@ -20548,6 +22227,7 @@
     "id": "model-gpt-5-6-sol-unknown-f4aab06618d1a922",
     "canonical_name": "GPT-5.6 Sol",
     "aliases": [
+      "gpt-5.6-sol_unknown",
       "GPT 5.6 Sol (xHigh)"
     ],
     "configuration_id": "gpt-5.6-sol_unknown",
@@ -20558,6 +22238,7 @@
     "resource_ids": [
       "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
       "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-gso-bench-github-io-index-html-c5270e053b8d0f3c",
       "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
     ],
     "roles": [
@@ -20839,6 +22520,7 @@
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
       "resource-https-epoch-benchmarks-staging-private-s3-us-eas-44da993b5653a98a",
       "resource-https-deepswe-datacurve-ai-d404253d104c9262",
+      "resource-https-balrogai-com-42791baa73c06848",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
     ],
     "roles": [
@@ -20851,7 +22533,8 @@
       "Abstract reasoning",
       "Physics",
       "Science / research",
-      "Software engineering"
+      "Software engineering",
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Model",
@@ -21138,6 +22821,7 @@
     "canonical_name": "gpt-5-mini-2025-08-07_high",
     "aliases": [
       "GPT-5 Mini (High)",
+      "GPT-5 mini (High)",
       "GPT-5 mini"
     ],
     "configuration_id": "gpt-5-mini-2025-08-07_high",
@@ -21151,6 +22835,7 @@
       "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
       "resource-https-epoch-benchmarks-staging-private-s3-us-eas-8428d51d1b2a7c89",
       "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-epoch-benchmarks-staging-private-s3-us-eas-eae61c110fe7eaf3",
       "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
     ],
@@ -21161,7 +22846,8 @@
       "Mathematics",
       "Science",
       "General knowledge & reasoning",
-      "Abstract reasoning"
+      "Abstract reasoning",
+      "Physics"
     ],
     "evaluation_types": [
       "Model"
@@ -21602,6 +23288,623 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-6-1-sol-codex-cli-b2e9314305bfd184",
+    "canonical_name": "GPT-6.1 Sol / Codex CLI",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol / Codex CLI",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol-codex-cli",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-high-378a98e234a99dc3",
+    "canonical_name": "GPT-6.1 Sol (High)",
+    "aliases": [
+      "GPT-6.1 Sol (high)"
+    ],
+    "configuration_id": "gpt-6.1-sol_high",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-high-offline-2026-08-08-a991927f6f26c0e8",
+    "canonical_name": "GPT-6.1 Sol (high, offline 2026.08.08)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (high, offline 2026.08.08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-high-zapier-private-e0176b476667b14a",
+    "canonical_name": "GPT-6.1 Sol (high, Zapier private)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (high, Zapier private)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-low-b7c3d9a5f6823764",
+    "canonical_name": "GPT-6.1 Sol (Low)",
+    "aliases": [
+      "GPT-6.1 Sol (low)"
+    ],
+    "configuration_id": "gpt-6.1-sol_low",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-low-offline-2026-08-08-8afd6422baf13047",
+    "canonical_name": "GPT-6.1 Sol (low, offline 2026.08.08)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (low, offline 2026.08.08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-low-zapier-private-0506abf4ae503607",
+    "canonical_name": "GPT-6.1 Sol (low, Zapier private)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (low, Zapier private)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-max-fc944f7472a7d64e",
+    "canonical_name": "gpt-6.1-sol_max",
+    "aliases": [
+      "GPT-6.1 Sol (Max)",
+      "GPT-6.1 Sol (max)",
+      "GPT-6.1 Sol"
+    ],
+    "configuration_id": "gpt-6.1-sol_max",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol-max",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-max-offline-2026-08-08-12fdb513b96ac70d",
+    "canonical_name": "GPT-6.1 Sol (max, offline 2026.08.08)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (max, offline 2026.08.08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-max-zapier-private-3446418f04d829b7",
+    "canonical_name": "GPT-6.1 Sol (max, Zapier private)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (max, Zapier private)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-medium-e972b4917e224df0",
+    "canonical_name": "GPT-6.1 Sol (Medium)",
+    "aliases": [
+      "GPT-6.1 Sol",
+      "GPT-6.1 Sol (medium)"
+    ],
+    "configuration_id": "gpt-6.1-sol_medium",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-medium-offline-2026-08-08-828b081f07861053",
+    "canonical_name": "GPT-6.1 Sol (medium, offline 2026.08.08)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (medium, offline 2026.08.08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-medium-zapier-private-22d3d8c3da5c5d7d",
+    "canonical_name": "GPT-6.1 Sol (medium, Zapier private)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (medium, Zapier private)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-xhigh-ae7e1494b18ce653",
+    "canonical_name": "GPT-6.1 Sol (XHigh)",
+    "aliases": [
+      "GPT-6.1 Sol (Xhigh)",
+      "GPT-6.1 Sol (xhigh)"
+    ],
+    "configuration_id": "gpt-6.1-sol_xhigh",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-xhigh-offline-2026-08-08-11fc819aeac00c2f",
+    "canonical_name": "GPT-6.1 Sol (xhigh, offline 2026.08.08)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (xhigh, offline 2026.08.08)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Computer use"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-sol-xhigh-zapier-private-a54b39a9cc7827fb",
+    "canonical_name": "GPT-6.1 Sol (xhigh, Zapier private)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Sol (xhigh, Zapier private)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-sol",
+    "release_date": "2026-09-29",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-codex-cli-cec10ee0f215bb03",
+    "canonical_name": "GPT-6.1 Terra / Codex CLI",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Terra / Codex CLI",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra-codex-cli",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-high-faa308242d540d7f",
+    "canonical_name": "GPT-6.1 Terra (high)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Terra (high)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research",
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-low-0f37dab0d5a67250",
+    "canonical_name": "GPT-6.1 Terra (low)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Terra (low)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research",
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-max-e404824a37bb32e1",
+    "canonical_name": "gpt-6.1-terra_max",
+    "aliases": [
+      "GPT-6.1 Terra (max)"
+    ],
+    "configuration_id": "gpt-6.1-terra_max",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra-max",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "General agent tasks",
+      "Science / research",
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-medium-6893cf6e2848bf28",
+    "canonical_name": "GPT-6.1 Terra (medium)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Terra (medium)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research",
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-1-terra-xhigh-b5b8bde3591e7dfe",
+    "canonical_name": "GPT-6.1 Terra (xhigh)",
+    "aliases": [],
+    "configuration_id": "GPT-6.1 Terra (xhigh)",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-1-terra",
+    "release_date": "2026-10-26",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Science / research",
+      "Terminal / OS"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-6-astra-c94798ba994c2800",
     "canonical_name": "GPT-6 Astra",
     "aliases": [],
@@ -21660,22 +23963,53 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
-    "id": "model-gpt-6-astra-high-19d0dcbdcaedcb7a",
-    "canonical_name": "gpt-6-astra_high",
+    "id": "model-gpt-6-astra-codex-cli-cac65219393ab78b",
+    "canonical_name": "GPT-6 Astra / Codex CLI",
     "aliases": [],
-    "configuration_id": "gpt-6-astra_high",
+    "configuration_id": "GPT-6 Astra / Codex CLI",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-astra-high",
+    "family_id": "openai-gpt-6-astra-codex-cli",
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7",
       "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-astra-high-19d0dcbdcaedcb7a",
+    "canonical_name": "GPT-6 Astra (High)",
+    "aliases": [
+      "gpt-6-astra_high"
+    ],
+    "configuration_id": "gpt-6-astra_high",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-astra",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Mathematics"
     ],
     "evaluation_types": [
@@ -21738,21 +24072,27 @@
   },
   {
     "id": "model-gpt-6-astra-low-120d5c43be5e49a7",
-    "canonical_name": "gpt-6-astra_low",
-    "aliases": [],
+    "canonical_name": "GPT-6 Astra (Low)",
+    "aliases": [
+      "gpt-6-astra_low"
+    ],
     "configuration_id": "gpt-6-astra_low",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-astra-low",
+    "family_id": "openai-gpt-6-astra",
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
-      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Mathematics"
     ],
     "evaluation_types": [
@@ -21816,7 +24156,9 @@
   {
     "id": "model-gpt-6-astra-max-2eae924907093898",
     "canonical_name": "gpt-6-astra_max",
-    "aliases": [],
+    "aliases": [
+      "GPT-6 Astra (Max)"
+    ],
     "configuration_id": "gpt-6-astra_max",
     "identity_organization": "openai",
     "family_id": "openai-gpt-6-astra-max",
@@ -21828,7 +24170,10 @@
       "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
       "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
       "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-balrogai-com-42791baa73c06848"
     ],
     "roles": [
       "contemporary_frontier"
@@ -21836,10 +24181,14 @@
     "domains": [
       "Science",
       "General knowledge & reasoning",
-      "Mathematics"
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "General agent tasks"
     ],
     "evaluation_types": [
-      "Model"
+      "Model",
+      "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -21898,21 +24247,27 @@
   },
   {
     "id": "model-gpt-6-astra-medium-54fbc132917df3b5",
-    "canonical_name": "gpt-6-astra_medium",
-    "aliases": [],
+    "canonical_name": "GPT-6 Astra (Medium)",
+    "aliases": [
+      "gpt-6-astra_medium"
+    ],
     "configuration_id": "gpt-6-astra_medium",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-astra-medium",
+    "family_id": "openai-gpt-6-astra",
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
-      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Mathematics"
     ],
     "evaluation_types": [
@@ -21975,21 +24330,28 @@
   },
   {
     "id": "model-gpt-6-astra-none-3106590ab44c0dcb",
-    "canonical_name": "gpt-6-astra_none",
-    "aliases": [],
+    "canonical_name": "GPT-6 Astra (None)",
+    "aliases": [
+      "GPT-6 Astra (Non-reasoning)",
+      "gpt-6-astra_none"
+    ],
     "configuration_id": "gpt-6-astra_none",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-astra-none",
+    "family_id": "openai-gpt-6-astra",
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
-      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Mathematics"
     ],
     "evaluation_types": [
@@ -22024,6 +24386,35 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-gpt-6-astra-unknown-ae91507b9adb8569",
+    "canonical_name": "GPT-6 Astra",
+    "aliases": [
+      "gpt-6-astra_unknown"
+    ],
+    "configuration_id": "gpt-6-astra_unknown",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-astra",
+    "release_date": "2026-09-03",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-gso-bench-github-io-index-html-c5270e053b8d0f3c"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-gpt-6-astra-xhigh-anthropic-release-settings-ac69327431f489b8",
     "canonical_name": "GPT-6 Astra (xhigh, Anthropic release settings)",
     "aliases": [],
@@ -22052,21 +24443,28 @@
   },
   {
     "id": "model-gpt-6-astra-xhigh-f06af43bc8ab22b9",
-    "canonical_name": "gpt-6-astra_xhigh",
-    "aliases": [],
+    "canonical_name": "GPT-6 Astra (XHigh)",
+    "aliases": [
+      "GPT-6 Astra (Xhigh)",
+      "gpt-6-astra_xhigh"
+    ],
     "configuration_id": "gpt-6-astra_xhigh",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-astra-xhigh",
+    "family_id": "openai-gpt-6-astra",
     "release_date": "2026-09-03",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
-      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-developers-openai-com-api-docs-models-gpt--67b4ce9b4e6ab350",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Mathematics"
     ],
     "evaluation_types": [
@@ -22101,24 +24499,164 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
-    "id": "model-gpt-6-luna-max-d2fcdb5997f7509d",
-    "canonical_name": "GPT-6 Luna (max)",
+    "id": "model-gpt-6-luna-high-cd8e7937cadbd90b",
+    "canonical_name": "GPT-6 Luna (High)",
     "aliases": [],
-    "configuration_id": "GPT-6 Luna (max)",
+    "configuration_id": "gpt-6-luna_high",
     "identity_organization": "openai",
     "family_id": "openai-gpt-6-luna",
     "release_date": "2026-09-22",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "Software engineering"
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
     ],
     "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-luna-low-0706f33e70256064",
+    "canonical_name": "GPT-6 Luna (Low)",
+    "aliases": [],
+    "configuration_id": "gpt-6-luna_low",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-luna",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-luna-max-d2fcdb5997f7509d",
+    "canonical_name": "gpt-6-luna_max",
+    "aliases": [
+      "GPT-6 Luna (Max)",
+      "GPT-6 Luna",
+      "GPT-6 Luna (max)"
+    ],
+    "configuration_id": "gpt-6-luna_max",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-luna-max",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-luna-medium-01126cd2431140e1",
+    "canonical_name": "GPT-6 Luna (Medium)",
+    "aliases": [],
+    "configuration_id": "gpt-6-luna_medium",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-luna",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-luna-none-c0ecbc4ff4503438",
+    "canonical_name": "GPT-6 Luna (None)",
+    "aliases": [
+      "GPT-6 Luna (Non-reasoning)"
+    ],
+    "configuration_id": "gpt-6-luna_none",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-luna",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -22173,25 +24711,195 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
-    "id": "model-gpt-6-sol-max-e6ef7da7ad687ffd",
-    "canonical_name": "GPT-6 Sol (max)",
-    "aliases": [],
-    "configuration_id": "GPT-6 Sol (max)",
+    "id": "model-gpt-6-luna-xhigh-052808d6c6195d97",
+    "canonical_name": "GPT-6 Luna (XHigh)",
+    "aliases": [
+      "GPT-6 Luna (Xhigh)"
+    ],
+    "configuration_id": "gpt-6-luna_xhigh",
     "identity_organization": "openai",
-    "family_id": "openai-gpt-6-sol",
+    "family_id": "openai-gpt-6-luna",
     "release_date": "2026-09-22",
     "organization": "OpenAI",
     "resource_ids": [
-      "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93"
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
-      "General agent tasks",
-      "Software engineering"
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
     ],
     "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-high-0f9d0c599f1c85d1",
+    "canonical_name": "GPT-6 Sol (High)",
+    "aliases": [],
+    "configuration_id": "gpt-6-sol_high",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-low-b2402175f2be5ecf",
+    "canonical_name": "GPT-6 Sol (Low)",
+    "aliases": [],
+    "configuration_id": "gpt-6-sol_low",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-max-e6ef7da7ad687ffd",
+    "canonical_name": "gpt-6-sol_max",
+    "aliases": [
+      "GPT-6 Sol (Max)",
+      "GPT-6 Sol",
+      "GPT-6 Sol (max)"
+    ],
+    "configuration_id": "gpt-6-sol_max",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol-max",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3",
+      "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54",
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
+      "Science / research",
+      "Software engineering",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-medium-2659ec9cb02c7208",
+    "canonical_name": "GPT-6 Sol (Medium)",
+    "aliases": [],
+    "configuration_id": "gpt-6-sol_medium",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-none-02e63c3c321ab6e7",
+    "canonical_name": "GPT-6 Sol (None)",
+    "aliases": [
+      "GPT-6 Sol (Non-reasoning)"
+    ],
+    "configuration_id": "gpt-6-sol_none",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -22240,6 +24948,61 @@
       "Cybersecurity"
     ],
     "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-unknown-b056ad8ec965a9f0",
+    "canonical_name": "GPT-6 Sol",
+    "aliases": [],
+    "configuration_id": "gpt-6-sol_unknown",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-gpt-6-sol-xhigh-071664695c33e459",
+    "canonical_name": "GPT-6 Sol (XHigh)",
+    "aliases": [
+      "GPT-6 Sol (Xhigh)"
+    ],
+    "configuration_id": "gpt-6-sol_xhigh",
+    "identity_organization": "openai",
+    "family_id": "openai-gpt-6-sol",
+    "release_date": "2026-09-22",
+    "organization": "OpenAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -23981,21 +26744,102 @@
   },
   {
     "id": "model-grok-4-7-high-57ddf0cc3e52500a",
-    "canonical_name": "Grok 4.7 (high)",
-    "aliases": [],
-    "configuration_id": "Grok 4.7 (high)",
+    "canonical_name": "Grok 4.7 (High)",
+    "aliases": [
+      "Grok 4.7 (high)"
+    ],
+    "configuration_id": "grok-4.7_high",
     "identity_organization": "xai",
     "family_id": "xai-grok-4-7",
     "release_date": "2026-09-21",
     "organization": "xAI",
     "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-x-ai-news-grok-4-7-39b901174b543376"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
+      "Physics",
       "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-7-low-de0ceb01b29f186f",
+    "canonical_name": "Grok 4.7 (Low)",
+    "aliases": [],
+    "configuration_id": "grok-4.7_low",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-7",
+    "release_date": "2026-09-21",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning",
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-7-medium-d6b5ba16da11ee7a",
+    "canonical_name": "Grok 4.7 (Medium)",
+    "aliases": [],
+    "configuration_id": "grok-4.7_medium",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-7",
+    "release_date": "2026-09-21",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Abstract reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-grok-4-7-unknown-db9c3dd902c613a7",
+    "canonical_name": "Grok 4.7",
+    "aliases": [],
+    "configuration_id": "grok-4.7_unknown",
+    "identity_organization": "xai",
+    "family_id": "xai-grok-4-7",
+    "release_date": "2026-09-21",
+    "organization": "xAI",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
     ],
     "evaluation_types": [
       "Agent"
@@ -24005,25 +26849,41 @@
   },
   {
     "id": "model-grok-4-7-xhigh-284218343a0aaca6",
-    "canonical_name": "Grok 4.7 (xhigh)",
-    "aliases": [],
-    "configuration_id": "Grok 4.7 (xhigh)",
+    "canonical_name": "grok-4.7_xhigh",
+    "aliases": [
+      "Grok 4.7 (XHigh)",
+      "Grok 4.7 (Xhigh)",
+      "Grok 4.7 (xhigh)"
+    ],
+    "configuration_id": "grok-4.7_xhigh",
     "identity_organization": "xai",
-    "family_id": "xai-grok-4-7",
+    "family_id": "xai-grok-4-7-xhigh",
     "release_date": "2026-09-21",
     "organization": "xAI",
     "resource_ids": [
-      "resource-https-x-ai-news-grok-4-7-39b901174b543376"
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-x-ai-news-grok-4-7-39b901174b543376",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
     ],
     "roles": [
       "contemporary_frontier"
     ],
     "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Abstract reasoning",
+      "Physics",
       "Engineering",
       "Terminal / OS",
       "Software engineering"
     ],
     "evaluation_types": [
+      "Model",
       "Agent"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
@@ -25769,6 +28629,156 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-kimi-k3-1-pro-kimi-code-5417ac0efc051bfd",
+    "canonical_name": "Kimi K3.1 Pro / Kimi Code",
+    "aliases": [],
+    "configuration_id": "Kimi K3.1 Pro / Kimi Code",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro-kimi-code",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
+    "canonical_name": "kimi-k3.1-pro_max",
+    "aliases": [
+      "Kimi K3.1 Pro (max)"
+    ],
+    "configuration_id": "kimi-k3.1-pro_max",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro-max",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-1-pro-max-claude-code-89a81ae909d59ad2",
+    "canonical_name": "Kimi K3.1 Pro (max, Claude Code)",
+    "aliases": [],
+    "configuration_id": "Kimi K3.1 Pro (max, Claude Code)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science / research",
+      "Terminal / OS",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-1-pro-max-kimi-code-ale-v1-1-b03cfae2c6c3882c",
+    "canonical_name": "Kimi K3.1 Pro (max, Kimi Code, ALE v1.1)",
+    "aliases": [],
+    "configuration_id": "Kimi K3.1 Pro (max, Kimi Code, ALE v1.1)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-1-pro-max-no-tools-84a8ee867fbabe3c",
+    "canonical_name": "Kimi K3.1 Pro (max, no tools)",
+    "aliases": [],
+    "configuration_id": "Kimi K3.1 Pro (max, no tools)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-1-pro-max-tools-f3fbeab09c933902",
+    "canonical_name": "Kimi K3.1 Pro (max, tools)",
+    "aliases": [],
+    "configuration_id": "Kimi K3.1 Pro (max, tools)",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-1-pro",
+    "release_date": "2026-10-23",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-kimi-k3-9c92fcdee2157869",
     "canonical_name": "Kimi K3 (max)",
     "aliases": [],
@@ -25887,6 +28897,30 @@
     "organization": "Moonshot AI",
     "resource_ids": [
       "resource-https-akitaonrails-github-io-en-2026-09-15-new-l-dca7469483597fd1"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-kimi-k3-kimi-code-13d5b555f95e3975",
+    "canonical_name": "Kimi K3 / Kimi Code",
+    "aliases": [],
+    "configuration_id": "Kimi K3 / Kimi Code",
+    "identity_organization": "moonshot",
+    "family_id": "moonshot-kimi-k3-kimi-code",
+    "release_date": "2026-07-16",
+    "organization": "Moonshot",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
     ],
     "roles": [
       "contemporary_frontier"
@@ -28494,6 +31528,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-mercury-2-5-unknown-ee76a00cd5db4751",
+    "canonical_name": "Mercury 2.5",
+    "aliases": [],
+    "configuration_id": "mercury-2.5_unknown",
+    "identity_organization": "inception-labs",
+    "family_id": "inception-labs-mercury-2-5",
+    "release_date": "2026-09-08",
+    "organization": "Inception Labs",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-meta-llama-3-70b-instruct-adb67a47049b509a",
     "canonical_name": "Llama 3 (70B)",
     "aliases": [
@@ -28676,6 +31734,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-mimo-v2-6-flash-3acd0842e30fd690",
+    "canonical_name": "MiMo-V2.6-Flash",
+    "aliases": [],
+    "configuration_id": "mimo-v2.6-flash",
+    "identity_organization": "xiaomi-corp",
+    "family_id": "xiaomi-corp-mimo-v2-6-flash",
+    "release_date": "2026-09-21",
+    "organization": "Xiaomi Corp",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-mimo-v2-6-flash-rl-model-card-cyber-evaluation-ebc9dee2961de224",
     "canonical_name": "MiMo-V2.6-Flash-RL (model-card cyber evaluation)",
     "aliases": [],
@@ -28722,6 +31804,30 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-mimo-v2-6-pro-ad0d72fdda523939",
+    "canonical_name": "MiMo-V2.6-Pro",
+    "aliases": [],
+    "configuration_id": "mimo-v2.6-pro",
+    "identity_organization": "xiaomi-corp",
+    "family_id": "xiaomi-corp-mimo-v2-6-pro",
+    "release_date": "2026-09-21",
+    "organization": "Xiaomi Corp",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -29655,6 +32761,71 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-mistral-large-4-0-high-849204fe5381b01b",
+    "canonical_name": "mistral-large-4-0_high",
+    "aliases": [
+      "Mistral Large 4 (Preview)"
+    ],
+    "configuration_id": "mistral-large-4-0_high",
+    "identity_organization": "mistral-ai",
+    "family_id": "mistral-ai-mistral-large-4-0-high",
+    "release_date": "2026-10-06",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-cognition-com-frontiercode-8e26d954ad88675f",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-mistral-large-4-0-unknown-4ca1aa83746d1d7e",
+    "canonical_name": "Mistral Large 4 Preview",
+    "aliases": [
+      "Mistral Large 4"
+    ],
+    "configuration_id": "mistral-large-4-0_unknown",
+    "identity_organization": "mistral-ai",
+    "family_id": "mistral-ai-mistral-large-4-preview",
+    "release_date": "2026-10-06",
+    "organization": "Mistral AI",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics",
+      "Science / research",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-mistral-medium-2312-80af46d9f2ec1067",
     "canonical_name": "Mistral Medium (Dec '23)",
     "aliases": [],
@@ -30549,6 +33720,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-muse-glimmer-high-49cdfe79327d2881",
+    "canonical_name": "Muse Glimmer (High)",
+    "aliases": [],
+    "configuration_id": "muse-glimmer_high",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-glimmer",
+    "release_date": "2026-08-10",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-muse-spark-1-1-9cffee14e4032372",
     "canonical_name": "muse-spark-1.1",
     "aliases": [
@@ -30611,6 +33806,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-muse-spark-1-1-xhigh-04469b36db2310b4",
+    "canonical_name": "Muse Spark 1.1 (Xhigh)",
+    "aliases": [],
+    "configuration_id": "muse-spark-1.1_xhigh",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-spark-1-1",
+    "release_date": "2026-07-09",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-muse-spark-1-2-xhigh-ff82c1592e6c19b6",
     "canonical_name": "muse-spark-1.2_xhigh",
     "aliases": [
@@ -30648,6 +33867,59 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-muse-spark-1-3-max-f3eac1b0aae49748",
+    "canonical_name": "muse-spark-1.3_max",
+    "aliases": [
+      "Muse Spark 1.3 (Max)"
+    ],
+    "configuration_id": "muse-spark-1.3_max",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-spark-1-3-max",
+    "release_date": "2026-09-02",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics",
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-1-3-muse-code-d94f166cae723514",
+    "canonical_name": "Muse Spark 1.3 / Muse Code",
+    "aliases": [],
+    "configuration_id": "Muse Spark 1.3 / Muse Code",
+    "identity_organization": "meta",
+    "family_id": "meta-muse-spark-1-3-muse-code",
+    "release_date": "2026-09-02",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-muse-spark-1-3-opencode-7485177c91f506a2",
     "canonical_name": "Muse Spark 1.3 / opencode",
     "aliases": [],
@@ -30667,6 +33939,35 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-1-3-xhigh-535c3441ec8ca4cb",
+    "canonical_name": "muse-spark-1.3_xhigh",
+    "aliases": [
+      "Muse Spark 1.3 (Xhigh)"
+    ],
+    "configuration_id": "muse-spark-1.3_xhigh",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-spark-1-3-xhigh",
+    "release_date": "2026-09-02",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics",
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -30700,6 +34001,149 @@
     "evaluation_types": [
       "Model",
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-open-816b-a42b-unknown-1f3c03964621e38b",
+    "canonical_name": "Muse Spark Open",
+    "aliases": [],
+    "configuration_id": "Muse-Spark-Open-816B-A42B_unknown",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-spark-open",
+    "release_date": "2026-10-15",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-spark-open-816b-a42b-xhigh-09952b0824b6aa0c",
+    "canonical_name": "Muse-Spark-Open-816B-A42B_xhigh",
+    "aliases": [
+      "Muse Spark Open (Xhigh)"
+    ],
+    "configuration_id": "Muse-Spark-Open-816B-A42B_xhigh",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-spark-open-816b-a42b-xhigh",
+    "release_date": "2026-10-15",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-wonder-1-0-max-49d03ffceff2f0d3",
+    "canonical_name": "muse-wonder-1.0_max",
+    "aliases": [
+      "Muse Wonder (Max)"
+    ],
+    "configuration_id": "muse-wonder-1.0_max",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-wonder-1-0-max",
+    "release_date": "2026-10-12",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Mathematics",
+      "Physics",
+      "Science / research"
+    ],
+    "evaluation_types": [
+      "Model",
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-wonder-1-0-muse-code-fcfa894d80c92d9e",
+    "canonical_name": "Muse Wonder 1.0 / Muse Code",
+    "aliases": [],
+    "configuration_id": "Muse Wonder 1.0 / Muse Code",
+    "identity_organization": "meta",
+    "family_id": "meta-muse-wonder-1-0-muse-code",
+    "release_date": "2026-10-12",
+    "organization": "Meta",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-muse-wonder-1-0-unknown-8710cbac434cf35d",
+    "canonical_name": "Muse Wonder",
+    "aliases": [],
+    "configuration_id": "muse-wonder-1.0_unknown",
+    "identity_organization": "meta",
+    "family_id": "meta-ai-muse-wonder",
+    "release_date": "2026-10-12",
+    "organization": "Meta AI",
+    "resource_ids": [
+      "resource-https-andonlabs-com-evals-vending-bench-2-ebcec333cce22556",
+      "resource-https-conceptualreasoning-ai-dtbench-89c665beba6c0b54"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "General agent tasks",
+      "General knowledge & reasoning"
+    ],
+    "evaluation_types": [
+      "Agent",
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -33948,6 +37392,30 @@
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
   },
   {
+    "id": "model-qwen-3-8-max-qwen-code-a0427a3d238a7f8e",
+    "canonical_name": "Qwen 3.8 Max / Qwen Code",
+    "aliases": [],
+    "configuration_id": "Qwen 3.8 Max / Qwen Code",
+    "identity_organization": "qwen",
+    "family_id": "qwen-qwen-3-8-max-qwen-code",
+    "release_date": null,
+    "organization": "Qwen",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
     "id": "model-qwen-7b-2e9a26f33647ba15",
     "canonical_name": "Qwen 7B",
     "aliases": [
@@ -36660,14 +40128,17 @@
   },
   {
     "id": "model-qwen3-8-27b-low-a9452ab2ec6a8d6c",
-    "canonical_name": "Qwen3.8 27B (low)",
-    "aliases": [],
+    "canonical_name": "Qwen3.8-27B (Low)",
+    "aliases": [
+      "Qwen3.8 27B (low)"
+    ],
     "configuration_id": "qwen3.8-27b_low",
     "identity_organization": "qwen",
     "family_id": "alibaba-qwen3-8-27b",
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
@@ -36675,6 +40146,7 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research"
     ],
@@ -36687,14 +40159,17 @@
   },
   {
     "id": "model-qwen3-8-27b-medium-09a7e8dfbfcd50ca",
-    "canonical_name": "Qwen3.8 27B (medium)",
-    "aliases": [],
+    "canonical_name": "Qwen3.8-27B (Medium)",
+    "aliases": [
+      "Qwen3.8 27B (medium)"
+    ],
     "configuration_id": "qwen3.8-27b_medium",
     "identity_organization": "qwen",
     "family_id": "alibaba-qwen3-8-27b",
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
@@ -36702,6 +40177,7 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research"
     ],
@@ -36714,14 +40190,17 @@
   },
   {
     "id": "model-qwen3-8-27b-none-dfcf2021f4961010",
-    "canonical_name": "Qwen3.8 27B (Non-reasoning)",
-    "aliases": [],
+    "canonical_name": "Qwen3.8-27B (None)",
+    "aliases": [
+      "Qwen3.8 27B (Non-reasoning)"
+    ],
     "configuration_id": "qwen3.8-27b_none",
     "identity_organization": "qwen",
     "family_id": "alibaba-qwen3-8-27b",
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
@@ -36729,6 +40208,7 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research"
     ],
@@ -36741,14 +40221,17 @@
   },
   {
     "id": "model-qwen3-8-27b-xhigh-1e1224d89ee61037",
-    "canonical_name": "Qwen3.8 27B (xhigh)",
-    "aliases": [],
+    "canonical_name": "Qwen3.8-27B (XHigh)",
+    "aliases": [
+      "Qwen3.8 27B (xhigh)"
+    ],
     "configuration_id": "qwen3.8-27b_xhigh",
     "identity_organization": "qwen",
     "family_id": "alibaba-qwen3-8-27b",
     "release_date": "2026-08-14",
     "organization": "Alibaba",
     "resource_ids": [
+      "resource-https-arcprize-org-blog-announcing-arc-agi-2-and-7356d75bb19b78a4",
       "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
       "resource-https-artificialanalysis-ai-evaluations-scicode-09468382cfbc05b5"
     ],
@@ -36756,6 +40239,7 @@
       "contemporary_frontier"
     ],
     "domains": [
+      "Abstract reasoning",
       "Physics",
       "Science / research"
     ],
@@ -36786,6 +40270,61 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-8-max-0902-unknown-25d82aa9d566e1a8",
+    "canonical_name": "Qwen3.8 Max (0902)",
+    "aliases": [],
+    "configuration_id": "qwen3.8-max-0902_unknown",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen3-8-max",
+    "release_date": "2026-09-01",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63",
+      "resource-https-docs-modelstudio-console-alibabacloud-com--6742ad46468fc647"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-qwen3-8-max-0902-xhigh-2b9c1f1ad67a8cdc",
+    "canonical_name": "qwen3.8-max-0902_xhigh",
+    "aliases": [],
+    "configuration_id": "qwen3.8-max-0902_xhigh",
+    "identity_organization": "qwen",
+    "family_id": "alibaba-qwen3-8-max-0902-xhigh",
+    "release_date": "2026-09-01",
+    "organization": "Alibaba",
+    "resource_ids": [
+      "resource-https-arxiv-org-abs-2311-12022-ae53acd076cd8923",
+      "resource-https-docs-modelstudio-console-alibabacloud-com--6742ad46468fc647",
+      "resource-https-arxiv-org-abs-2509-07968-c858f3b30c1f53e7",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tiers-1-3-80b576bff806c4e8",
+      "resource-https-epoch-ai-benchmarks-frontiermath-tier-4-v2-9558ff2f298a68f3"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Science",
+      "General knowledge & reasoning",
+      "Mathematics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
@@ -37819,6 +41358,54 @@
     ],
     "evaluation_types": [
       "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-step-5-preview-step-code-d25bbac3ecc4efc3",
+    "canonical_name": "Step 5 Preview / Step Code",
+    "aliases": [],
+    "configuration_id": "Step 5 Preview / Step Code",
+    "identity_organization": "stepfun",
+    "family_id": "stepfun-step-5-preview-step-code",
+    "release_date": "2026-09-18",
+    "organization": "StepFun",
+    "resource_ids": [
+      "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Software engineering"
+    ],
+    "evaluation_types": [
+      "Agent"
+    ],
+    "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
+    "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."
+  },
+  {
+    "id": "model-step-5-preview-unknown-16f9421c642b040d",
+    "canonical_name": "Step 5 Preview",
+    "aliases": [],
+    "configuration_id": "step-5-preview_unknown",
+    "identity_organization": "stepfun",
+    "family_id": "stepfun-step-5-preview",
+    "release_date": "2026-09-18",
+    "organization": "StepFun",
+    "resource_ids": [
+      "resource-https-github-com-critpt-benchmark-critpt-6408b8ccc4822f63"
+    ],
+    "roles": [
+      "contemporary_frontier"
+    ],
+    "domains": [
+      "Physics"
+    ],
+    "evaluation_types": [
+      "Model"
     ],
     "inclusion_reason": "Included as a representative observation in the curated pilot dataset.",
     "provenance_note": "The current export provides evaluation evidence but not always a model-specific official resource."

@@ -45,6 +45,6 @@ Known evidence gaps:
 - obs-0-784-cab0e6b0e2e3f106: result_public_date is unknown
 - obs-0-871-fbc47607bf56c39a: result_public_date is unknown
 
-...and 3656 more.
+...and 3933 more.
 
 These gaps are preserved as unknown values; no source or date is fabricated.

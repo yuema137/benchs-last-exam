@@ -1,6 +1,7 @@
 import hashlib
 import json
 import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -11,6 +12,9 @@ SNAPSHOT = DATA / "benchmarks.json"
 INDEX = DATA / "index.json"
 DETAILS = DATA / "benchmarks"
 RESOURCES = DATA / "resources.json"
+sys.path.insert(0, str(ROOT / "src"))
+
+from benchmark_observatory.public_bundle import PUBLIC_DETAIL_OMITTED_FIELDS, public_detail_benchmark
 
 
 def public_hashes():
@@ -41,7 +45,24 @@ class PublicDataBundleTests(unittest.TestCase):
         for benchmark_id, benchmark in full.items():
             detail = json.loads((DETAILS / f"{benchmark_id}.json").read_text())
             self.assertEqual(detail["bundle_kind"], "benchmark_detail")
-            self.assertEqual(detail["benchmark"], benchmark)
+            self.assertEqual(detail["benchmark"], public_detail_benchmark(benchmark))
+            self.assertFalse(set(PUBLIC_DETAIL_OMITTED_FIELDS) & set(detail["benchmark"]), benchmark_id)
+
+    def test_omitted_detail_fields_are_redundant_or_unused(self):
+        # Public detail files drop only fields that duplicate a kept field or that
+        # the frontend never reads; the canonical snapshot still carries them.
+        app = (ROOT / "site" / "app.js").read_text()
+        self.assertNotIn("retrospective_observations", app)
+        self.assertNotIn("historical_frontier", app)
+        for benchmark in self.snapshot["benchmarks"]:
+            self.assertEqual(benchmark["frontier"], benchmark["capability_frontier"], benchmark["id"])
+            self.assertEqual(benchmark["frontier_events"], benchmark["capability_frontier"], benchmark["id"])
+            self.assertEqual(benchmark["historical_frontier"], benchmark["reported_frontier"], benchmark["id"])
+            self.assertEqual(
+                benchmark["retrospective_observations"],
+                [row for row in benchmark["observations"] if row["retrospective"]],
+                benchmark["id"],
+            )
 
     def test_frontend_loads_index_then_one_detail_on_demand(self):
         app = (ROOT / "site" / "app.js").read_text()

@@ -117,4 +117,4 @@ active registry IDs
 = per-benchmark detail filenames and embedded IDs
 ```
 
-It also rejects heavy observations/frontiers/prose leaking into the index, stale lifecycle lists, incomplete resource lineage, extra detail files, and detail records that differ from the canonical build. The public bundle keeps a small `data/benchmarks.json` alias of the index temporarily for destination-workflow compatibility; it never contains or replaces the full detail records.
+It also rejects heavy observations/frontiers/prose leaking into the index, stale lifecycle lists, incomplete resource lineage, extra detail files, and detail records that differ from the canonical build (after removing the redundant fields listed in `src/benchmark_observatory/public_bundle.py`). The public bundle keeps a small `data/benchmarks.json` alias of the index temporarily for destination-workflow compatibility; it never contains or replaces the full detail records.
