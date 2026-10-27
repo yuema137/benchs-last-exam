@@ -22,6 +22,7 @@ RAW = ROOT / "data" / "raw"
 sys.path.insert(0, str(ROOT / "src"))
 
 from benchmark_observatory.registry import load_benchmark_specs
+from benchmark_observatory.public_bundle import public_detail_benchmark
 
 REQUIRED_STORY_VIEWS = ("test-of-time", "still-frontier", "fastest-solved", "recently-saturated")
 MONTH_DAYS = 30.44
@@ -201,7 +202,7 @@ def validate_public_bundles(payload):
             continue
         if detail.get("bundle_kind") != "benchmark_detail":
             errors.append(f"{benchmark_id}: detail has the wrong bundle_kind")
-        if detail.get("benchmark") != benchmark:
+        if detail.get("benchmark") != public_detail_benchmark(benchmark):
             errors.append(f"{benchmark_id}: lazy detail differs from canonical benchmark record")
         expected_resource_ids = collect_resource_ids(benchmark)
         expected_resource_ids &= set(full_resources)

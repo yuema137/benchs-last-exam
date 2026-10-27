@@ -31,3 +31,20 @@ Its initial request loads `data/index.json`; a benchmark click loads only
 small `data/benchmarks.json` compatibility alias currently mirrors the index so
 the destination repository's existing deterministic boundary check remains
 backward compatible.
+
+Each public detail file omits fields of the canonical validation snapshot that
+duplicate a published field or that the frontend never reads (`frontier`,
+`frontier_events`, `historical_frontier`, `retrospective_observations`; see
+`src/benchmark_observatory/public_bundle.py`). The canonical snapshot keeps them.
+
+Cache busting is derived from content, never maintained by hand. Source files
+carry `?v=dev` tokens; `scripts/build_pages_snapshot.py` replaces them with short
+SHA-256 hashes of the published data files (all data requests), `styles.css`,
+and the final `app.js`, and records them as `asset_versions` in `manifest.json`.
+Any data, style, or code change therefore produces new URLs, while an unchanged
+rebuild keeps the same ones.
+
+`index.html` declares a self-only Content-Security-Policy (scripts, styles, and
+fetches from the same origin; no inline script or style attributes) and a
+canonical URL of `https://yuema137.github.io/ble/`. Data-derived text is
+HTML-escaped in `app.js`, and only `http`/`https` URLs become link targets.

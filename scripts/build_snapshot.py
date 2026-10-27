@@ -29,6 +29,7 @@ BENCHMARK_REGISTRY = ROOT / "data" / "benchmarks"
 sys.path.insert(0, str(ROOT / "src"))
 
 from benchmark_observatory.registry import load_benchmark_specs
+from benchmark_observatory.public_bundle import public_detail_benchmark
 
 
 BENCHMARKS = load_benchmark_specs(BENCHMARK_REGISTRY, RAW)
@@ -190,7 +191,7 @@ def write_public_data_bundles(payload):
             "bundle_kind": "benchmark_detail",
             "snapshot_id": payload["snapshot_id"],
             "reference_organizations": payload["reference_organizations"],
-            "benchmark": benchmark,
+            "benchmark": public_detail_benchmark(benchmark),
         }
         path = DETAIL_OUT / f"{benchmark['id']}.json"
         path.write_text(json.dumps(detail_payload, indent=2) + "\n")

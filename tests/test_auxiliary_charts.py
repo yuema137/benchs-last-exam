@@ -8,7 +8,8 @@ class AuxiliaryChartTests(unittest.TestCase):
         result = subprocess.run(['node', '-e', r'''
 const fs=require('fs'), vm=require('vm'), assert=require('assert');
 const source=fs.readFileSync('site/app.js','utf8');
-const chartCode=source.slice(source.indexOf('function chart(b)'),source.indexOf('function showLeaderboard'));
+const escapeCode=source.slice(source.indexOf('const ESCAPES'),source.indexOf('const safeUrl'));
+const chartCode=escapeCode+source.slice(source.indexOf('function chart(b)'),source.indexOf('function showLeaderboard'));
 const data=JSON.parse(fs.readFileSync('site/data/benchmarks.json','utf8'));
 const context={state:{detailTimeline:'capability',detailY:'raw',detailX:'calendar',data},
   progress:(b,v)=>b.floor==null||b.ceiling==null?null:(v-b.floor)/(b.ceiling-b.floor),

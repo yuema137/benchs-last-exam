@@ -108,4 +108,4 @@ active registry IDs
 = per-benchmark detail filenames and embedded IDs
 ```
 
-它还会拒绝：沉重的 observations/frontiers/prose 泄漏进 index、过期的 lifecycle 列表、不完整的资源谱系、多余的 detail 文件，以及与 canonical build 不一致的 detail 记录。公开 bundle 会临时保留一个小的 `data/benchmarks.json` 作为 index 的别名，用于兼容目标工作流；它从不包含或替代完整的 detail 记录。
+它还会拒绝：沉重的 observations/frontiers/prose 泄漏进 index、过期的 lifecycle 列表、不完整的资源谱系、多余的 detail 文件，以及与 canonical build 不一致的 detail 记录（比较前先去掉 `src/benchmark_observatory/public_bundle.py` 中列出的冗余字段）。公开 bundle 会临时保留一个小的 `data/benchmarks.json` 作为 index 的别名，用于兼容目标工作流；它从不包含或替代完整的 detail 记录。
