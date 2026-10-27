@@ -1,0 +1,66 @@
+Leaderboard of Benchmarks (BLE)
+https://github.com/yuema137/benchs-last-exam
+https://yuema137.github.io/ble/
+
+Copyright (c) 2026 Yue Ma
+
+Code (site, scripts, pipeline, tests) is licensed under the MIT License; see
+LICENSE.
+
+BLE's own data and writing (scores, rankings, frontiers, lifecycle metrics and
+classifications that BLE computes, benchmark cards, documentation) are licensed
+under the Creative Commons Attribution-ShareAlike 4.0 International License
+(CC BY-SA 4.0); see LICENSE-DATA and
+https://creativecommons.org/licenses/by-sa/4.0/.
+
+THIRD-PARTY MATERIAL
+--------------------
+
+Third-party results and materials keep their original terms. This includes the
+source rows in data/raw/, the raw_fields in data/evidence.jsonl, and every
+paper, leaderboard, evaluation log and vendor release that BLE links to. The
+MIT License and CC BY-SA 4.0 do not apply to them. Benchmark questions and
+answers belong to their respective creators. Each observation cites its source;
+see data/resources.json and docs/DATA_PROVENANCE_POLICY.md.
+
+Epoch AI
+  Data from the Epoch AI Benchmarking Hub (evaluation logs and exported
+  benchmark results).
+  Attribution: Epoch AI, 'Capabilities & benchmarking'. Published online at
+  epoch.ai. Retrieved from 'https://epoch.ai/benchmarks/use-this-data'
+  [online resource]. Accessed 27 Oct 2026.
+  License: Creative Commons Attribution 4.0 International (CC BY 4.0),
+  https://creativecommons.org/licenses/by/4.0/
+  Changes: BLE selected rows, normalized scores and model identities, merged
+  identical measurements, and computed frontiers and lifecycle metrics from
+  them. Verbatim Epoch AI rows remain under CC BY 4.0. Rows that the hub
+  sourced from external projects keep their original licensing, as Epoch AI
+  states.
+
+Official leaderboards and benchmark repositories
+  Results read from benchmark leaderboards and repositories (including Stanford
+  HELM, Aider, Terminal-Bench, ScienceQA and Video-MME) remain under the terms
+  of those projects. See section 5 of docs/DATA_PROVENANCE_POLICY.md for the
+  terms found for each.
+
+Artificial Analysis
+  SciCode and GDPval-AA v2 observations cite pages on
+  https://artificialanalysis.ai/. That material is subject to the Artificial
+  Analysis Website Terms of Use
+  (https://artificialanalysis.ai/docs/legal/Terms-of-Use.pdf) and is not
+  licensed by BLE. This is an open licensing item; see section 6 of
+  docs/DATA_PROVENANCE_POLICY.md.
+
+ACKNOWLEDGEMENT
+---------------
+
+BLE thanks benchmark-radar by Koutian Wu, which tracks where AI benchmark and
+evaluation results are reported. We use it only as a reference for discovering
+sources: every number in BLE is re-read from the original paper, leaderboard or
+vendor release and cited there, and no benchmark-radar content is copied or
+redistributed.
+
+benchmark-radar: https://github.com/ktwu01/benchmark-radar
+(https://benchmark-radar.org/). Its software is MIT-licensed and its curated
+content is licensed under CC BY-NC-SA 4.0 with additional conditions stated in
+its LICENSE-CONTENT.md. BLE includes none of that content.

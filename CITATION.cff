@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use BLE's data or findings, please cite it as below."
+type: dataset
+title: "Leaderboard of Benchmarks (BLE)"
+abstract: >-
+  BLE evaluates AI benchmarks themselves rather than the models they rank. It
+  follows a deliberately small set of classic, widely followed benchmarks and
+  tracks discriminative power, headroom and saturation speed, coverage and
+  freshness, protocol comparability, cost and contamination resistance.
+authors:
+  - given-names: Yue
+    family-names: Ma
+repository-code: "https://github.com/yuema137/benchs-last-exam"
+url: "https://yuema137.github.io/ble/"
+license: CC-BY-SA-4.0
+keywords:
+  - benchmarks
+  - evaluation
+  - large language models
+  - leaderboard

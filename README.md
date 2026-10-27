@@ -2,6 +2,31 @@
 
 Benchmark Observatory is a lightweight **Leaderboard of Benchmarks**.
 
+**BLE evaluates benchmarks themselves, not where their results are reported.**
+It examines each benchmark along dimensions such as discriminative power,
+headroom and saturation speed, coverage and freshness, protocol comparability,
+cost and contamination resistance. BLE is deliberately selective: it includes
+only classic, widely followed benchmarks and aims to show frontier progress
+with relatively little information, not comprehensive coverage. See the
+[inclusion criteria](CONTRIBUTING.md#inclusion-criteria-initial-policy).
+
+### Acknowledgement
+
+BLE thanks [benchmark-radar](https://github.com/ktwu01/benchmark-radar) by
+Koutian Wu, which tracks where AI benchmark and evaluation results are
+reported. We use it only as a reference for discovering sources: every number
+in BLE is re-read from the original paper, leaderboard or vendor release and
+cited there, and no benchmark-radar content is copied or redistributed.
+
+The two projects answer different questions. benchmark-radar helps you find
+benchmarks and the places their results appear, across a very large
+collection. BLE is deliberately selective: it follows a small set of classic,
+widely followed benchmarks and evaluates the benchmarks themselves, along
+dimensions such as discriminative power, headroom and saturation speed,
+coverage and freshness, protocol comparability, cost and contamination
+resistance, so you can judge what a benchmark still tells you about frontier
+models.
+
 ## View the website
 
 **[Open the live Benchmark Observatory →](https://yuema137.github.io/ble/)**
@@ -41,11 +66,28 @@ Run the complete integration gate after changing any benchmark or observation:
 ```bash
 python3 scripts/build_snapshot.py
 python3 scripts/validate_score_semantics.py
+python3 scripts/validate_provenance.py
 python3 scripts/validate_benchmark_integration.py
 python3 scripts/audit_observation_dates.py
 python3 scripts/audit_canonical_identity.py
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
+
+## Licensing
+
+- **Code** (site, scripts, pipeline, tests): [MIT](LICENSE).
+- **BLE's own data and writing** (the scores, rankings, frontiers, lifecycle
+  metrics and classifications BLE computes; benchmark cards; documentation):
+  [CC BY-SA 4.0](LICENSE-DATA).
+- **Third-party results and materials** (source rows in `data/raw/`, linked
+  papers, leaderboards, evaluation logs and vendor releases) stay under their
+  original terms. Attribution for Epoch AI data and other bulk sources is in
+  [`NOTICE`](NOTICE).
+
+Copyright 2026 Yue Ma. See the
+[Data Provenance and Licensing Policy](docs/DATA_PROVENANCE_POLICY.md) for the
+third-party terms BLE found and the open licensing items. To cite BLE, use
+[`CITATION.cff`](CITATION.cff).
 
 ## Documentation
 
@@ -53,5 +95,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 - [Vertical slice plan](docs/vertical-slice-plan.md)
 - [Repository constitution](AGENT.md)
 - [Benchmark integration contract](docs/BENCHMARK_INTEGRATION.md)
+- [Data provenance and licensing policy](docs/DATA_PROVENANCE_POLICY.md)
+- [Contributing and inclusion criteria](CONTRIBUTING.md)
 - [Explanation style](EXPLANATION_STYLE.md)
 - [Chinese design mirror](zh/docs/design-synthesis.md)

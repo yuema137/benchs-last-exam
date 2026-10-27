@@ -24,6 +24,10 @@ python3 scripts/build_snapshot.py
 python3 scripts/validate_provenance.py
 ```
 
+## 来源与许可政策
+
+哪些来源可以支撑一个数字、benchmark-radar 可以以什么方式出现，以及哪种许可覆盖哪些数据，由 [`DATA_PROVENANCE_POLICY.md`](DATA_PROVENANCE_POLICY.md) 规定。`scripts/validate_provenance.py` 强制执行其中关于 benchmark-radar 的规则。
+
 ## 日期语义
 
 observation 会把 benchmark release date、model release date、evaluation date、result-public date、source-publication date 和 ingestion date 作为独立字段分别保留。对同一条 canonical measurement，`observation_date` 取最早可得的 evaluation/run date、model release date 或 score-publication date。只有当某个 source version 确实包含该 score 时，它的 publication date 才有资格参与。即使只有最早的日期驱动时间线，多个 source 仍然全部挂在该 observation 上。
