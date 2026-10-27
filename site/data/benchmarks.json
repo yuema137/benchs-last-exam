@@ -19268,7 +19268,8 @@
       "release_date": "2026-10-07",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
+        "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+        "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
       ],
       "roles": [
         "contemporary_frontier"
@@ -23982,6 +23983,7 @@
       "organization": "Anthropic",
       "resource_ids": [
         "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+        "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
         "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
       ],
       "roles": [
@@ -24031,7 +24033,8 @@
       "release_date": "2026-09-28",
       "organization": "Anthropic",
       "resource_ids": [
-        "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
+        "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d",
+        "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
       ],
       "roles": [
         "contemporary_frontier"
@@ -31594,7 +31597,7 @@
       "configuration_id": "Gemini 4 Argon / Antigravity",
       "identity_organization": "google",
       "family_id": "google-gemini-4-argon-antigravity",
-      "release_date": "2026-09-30",
+      "release_date": "2026-10-13",
       "organization": "Google",
       "resource_ids": [
         "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
@@ -31718,7 +31721,7 @@
       "configuration_id": "Gemini 4 Argon / Pi",
       "identity_organization": "google",
       "family_id": "google-gemini-4-argon-pi",
-      "release_date": "2026-09-30",
+      "release_date": "2026-10-13",
       "organization": "Google",
       "resource_ids": [
         "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
@@ -182132,7 +182135,113 @@
         "progress_target": 1.0,
         "lifecycle_eligible": true
       },
-      "auxiliary_score_series": [],
+      "auxiliary_score_series": [
+        {
+          "series_id": "browsecomp-auxiliary-browsecomp-vendor-reported-kimi-harness",
+          "role": "auxiliary",
+          "label": "Vendor-reported / Kimi browsing harness",
+          "metric_id": "browsecomp-metric-v1",
+          "metric_name": "Score",
+          "protocol_id": "browsecomp-vendor-reported-kimi-harness",
+          "task_set_id": "browsecomp-1266-vendor-harness",
+          "lifecycle_eligible": false,
+          "explanation": {
+            "en": "Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",
+            "zh": "Moonshot \u7528\u81ea\u5bb6 browsing agent \u81ea\u884c\u62a5\u544a\u7684\u6210\u7ee9\uff08200K token \u65f6\u538b\u7f29\u4e0a\u4e0b\u6587\uff0c\u6700\u591a 500 \u6b65\uff09\u3002\u622a\u81f3 2026-10-27 \u6ca1\u6709\u627e\u5230 Kimi K3.1 Pro \u7684\u72ec\u7acb BrowseComp \u7ed3\u679c\uff0c\u800c\u4e14\u5176\u4ed6\u6a21\u578b\u5728\u6b64\u4e4b\u524d\u5df2\u6709 90% \u4ee5\u4e0a\u7684\u540c\u7c7b\u5382\u5546\u81ea\u62a5\u6210\u7ee9\uff0c\u6240\u4ee5\u8fd9\u4e00\u884c\u53ea\u4f5c\u4e3a\u8f85\u52a9\u8bc1\u636e\u5c55\u793a\uff0c\u4e0d\u51b3\u5b9a\u4e3b\u5e8f\u5217\u524d\u6cbf\uff0c\u4e5f\u4e0d\u51b3\u5b9a\u9971\u548c\u65f6\u95f4\u3002"
+          },
+          "observation_ids": [
+            "obs-0-921-f13334386e674039"
+          ],
+          "frontier_events": [
+            {
+              "observation_id": "obs-0-921-f13334386e674039",
+              "benchmark_id": "browsecomp",
+              "benchmark_version_id": "browsecomp-canonical",
+              "model_id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
+              "model_configuration": "kimi-k3.1-pro_max",
+              "model_identity_organization": "moonshot",
+              "model_label_id": "kimi-k3-1-pro-max",
+              "model_family_id": "moonshot-kimi-k3-1-pro",
+              "model": "Kimi K3.1 Pro (max)",
+              "organization": "Moonshot",
+              "score": 0.921,
+              "input_score": 0.921,
+              "input_unit": "fraction",
+              "reported_cost_per_task": null,
+              "metric_id": "browsecomp-metric-v1",
+              "protocol_id": "browsecomp-vendor-reported-kimi-harness",
+              "task_set_id": "browsecomp-1266-vendor-harness",
+              "metric": "Score",
+              "score_role": "auxiliary",
+              "score_series_id": "browsecomp-auxiliary-browsecomp-vendor-reported-kimi-harness",
+              "evaluation_protocol": "Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",
+              "auxiliary_metadata": {
+                "protocol_id": "browsecomp-vendor-reported-kimi-harness",
+                "task_set_id": "browsecomp-1266-vendor-harness",
+                "label": "Vendor-reported / Kimi browsing harness",
+                "explanation": {
+                  "en": "Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",
+                  "zh": "Moonshot \u7528\u81ea\u5bb6 browsing agent \u81ea\u884c\u62a5\u544a\u7684\u6210\u7ee9\uff08200K token \u65f6\u538b\u7f29\u4e0a\u4e0b\u6587\uff0c\u6700\u591a 500 \u6b65\uff09\u3002\u622a\u81f3 2026-10-27 \u6ca1\u6709\u627e\u5230 Kimi K3.1 Pro \u7684\u72ec\u7acb BrowseComp \u7ed3\u679c\uff0c\u800c\u4e14\u5176\u4ed6\u6a21\u578b\u5728\u6b64\u4e4b\u524d\u5df2\u6709 90% \u4ee5\u4e0a\u7684\u540c\u7c7b\u5382\u5546\u81ea\u62a5\u6210\u7ee9\uff0c\u6240\u4ee5\u8fd9\u4e00\u884c\u53ea\u4f5c\u4e3a\u8f85\u52a9\u8bc1\u636e\u5c55\u793a\uff0c\u4e0d\u51b3\u5b9a\u4e3b\u5e8f\u5217\u524d\u6cbf\uff0c\u4e5f\u4e0d\u51b3\u5b9a\u9971\u548c\u65f6\u95f4\u3002"
+                }
+              },
+              "model_release_date": "2026-10-23",
+              "evaluation_date": null,
+              "result_public_date": null,
+              "source_publication_date": null,
+              "observation_date": "2026-10-23",
+              "observation_date_precision": "day",
+              "observation_date_sources": [
+                {
+                  "date": "2026-10-23",
+                  "kind": "model_release_date",
+                  "precision": "day",
+                  "resource_ids": [
+                    "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+                  ]
+                }
+              ],
+              "observation_date_source_ids": [
+                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+              ],
+              "evaluation_date_sources": [],
+              "score_publication_date_sources": [],
+              "ingested_at": "2026-10-27",
+              "date_precision": "day",
+              "date_notes": "A score-publication date is not present in the source export.",
+              "date": "2026-10-23",
+              "date_kind": "earliest_observation_evidence_date",
+              "capability_date": "2026-10-23",
+              "capability_date_meaning": "earliest_observation_evidence_date",
+              "reported_date_meaning": "result_public_date",
+              "historical_frontier_date": null,
+              "temporal_class": "historical_or_unknown",
+              "retrospective": false,
+              "capability_frontier_eligible": false,
+              "historical_frontier_eligible": false,
+              "eligibility_reason": "Auxiliary protocol: excluded from canonical frontiers and lifecycle metrics.",
+              "contemporaneous": true,
+              "source_ids": [
+                "resource-https-openai-com-index-browsecomp-13a8c4bf46a315c2",
+                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+              ],
+              "score_source_ids": [
+                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
+              ],
+              "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
+              "notes": "Operational evaluation timeline only; not a historical public-result date.",
+              "evidence_ids": [
+                "evidence-auxiliary-explanation-en-self-reported-by-moonsh-f52776b8ea0bf631"
+              ],
+              "evidence_count": 1,
+              "source_row_ids": [],
+              "plot_date": "2026-10-23",
+              "frontier_observation_ids": [
+                "obs-0-921-f13334386e674039"
+              ]
+            }
+          ]
+        }
+      ],
       "benchmark_version_id": "browsecomp-canonical",
       "summary": {
         "en": "BrowseComp tests whether a browsing agent can find hard-to-locate facts that require persistent, multi-step web research.",
@@ -182514,7 +182623,7 @@
           "source_row_ids": []
         },
         {
-          "observation_id": "obs-0-921-44bd368e7bfd7f27",
+          "observation_id": "obs-0-921-f13334386e674039",
           "benchmark_id": "browsecomp",
           "benchmark_version_id": "browsecomp-canonical",
           "model_id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
@@ -182529,12 +182638,21 @@
           "input_unit": "fraction",
           "reported_cost_per_task": null,
           "metric_id": "browsecomp-metric-v1",
-          "protocol_id": "browsecomp-source-export-v1",
-          "task_set_id": "browsecomp-canonical",
+          "protocol_id": "browsecomp-vendor-reported-kimi-harness",
+          "task_set_id": "browsecomp-1266-vendor-harness",
           "metric": "Score",
-          "score_role": "canonical",
-          "score_series_id": "browsecomp-canonical-score",
-          "evaluation_protocol": "BrowseComp official 1,266-task benchmark; browsing availability and agent scaffold remain part of each observation's setup.",
+          "score_role": "auxiliary",
+          "score_series_id": "browsecomp-auxiliary-browsecomp-vendor-reported-kimi-harness",
+          "evaluation_protocol": "Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",
+          "auxiliary_metadata": {
+            "protocol_id": "browsecomp-vendor-reported-kimi-harness",
+            "task_set_id": "browsecomp-1266-vendor-harness",
+            "label": "Vendor-reported / Kimi browsing harness",
+            "explanation": {
+              "en": "Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",
+              "zh": "Moonshot \u7528\u81ea\u5bb6 browsing agent \u81ea\u884c\u62a5\u544a\u7684\u6210\u7ee9\uff08200K token \u65f6\u538b\u7f29\u4e0a\u4e0b\u6587\uff0c\u6700\u591a 500 \u6b65\uff09\u3002\u622a\u81f3 2026-10-27 \u6ca1\u6709\u627e\u5230 Kimi K3.1 Pro \u7684\u72ec\u7acb BrowseComp \u7ed3\u679c\uff0c\u800c\u4e14\u5176\u4ed6\u6a21\u578b\u5728\u6b64\u4e4b\u524d\u5df2\u6709 90% \u4ee5\u4e0a\u7684\u540c\u7c7b\u5382\u5546\u81ea\u62a5\u6210\u7ee9\uff0c\u6240\u4ee5\u8fd9\u4e00\u884c\u53ea\u4f5c\u4e3a\u8f85\u52a9\u8bc1\u636e\u5c55\u793a\uff0c\u4e0d\u51b3\u5b9a\u4e3b\u5e8f\u5217\u524d\u6cbf\uff0c\u4e5f\u4e0d\u51b3\u5b9a\u9971\u548c\u65f6\u95f4\u3002"
+            }
+          },
           "model_release_date": "2026-10-23",
           "evaluation_date": null,
           "result_public_date": null,
@@ -182567,9 +182685,9 @@
           "historical_frontier_date": null,
           "temporal_class": "historical_or_unknown",
           "retrospective": false,
-          "capability_frontier_eligible": true,
+          "capability_frontier_eligible": false,
           "historical_frontier_eligible": false,
-          "eligibility_reason": "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date.",
+          "eligibility_reason": "Auxiliary protocol: excluded from canonical frontiers and lifecycle metrics.",
           "contemporaneous": true,
           "source_ids": [
             "resource-https-openai-com-index-browsecomp-13a8c4bf46a315c2",
@@ -182581,7 +182699,7 @@
           "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-model-version-kimi-k3-1-pro-max-name-kimi-k3-1-p-c91d8fc940206a4e"
+            "evidence-auxiliary-explanation-en-self-reported-by-moonsh-f52776b8ea0bf631"
           ],
           "evidence_count": 1,
           "source_row_ids": []
@@ -182667,83 +182785,6 @@
             "obs-0-099-ff6613f0edf58b38",
             "obs-0-515-8a42965b7def7019"
           ]
-        },
-        {
-          "observation_id": "obs-0-921-44bd368e7bfd7f27",
-          "benchmark_id": "browsecomp",
-          "benchmark_version_id": "browsecomp-canonical",
-          "model_id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
-          "model_configuration": "kimi-k3.1-pro_max",
-          "model_identity_organization": "moonshot",
-          "model_label_id": "kimi-k3-1-pro-max",
-          "model_family_id": "moonshot-kimi-k3-1-pro",
-          "model": "Kimi K3.1 Pro (max)",
-          "organization": "Moonshot",
-          "score": 0.921,
-          "input_score": 0.921,
-          "input_unit": "fraction",
-          "reported_cost_per_task": null,
-          "metric_id": "browsecomp-metric-v1",
-          "protocol_id": "browsecomp-source-export-v1",
-          "task_set_id": "browsecomp-canonical",
-          "metric": "Score",
-          "score_role": "canonical",
-          "score_series_id": "browsecomp-canonical-score",
-          "evaluation_protocol": "BrowseComp official 1,266-task benchmark; browsing availability and agent scaffold remain part of each observation's setup.",
-          "model_release_date": "2026-10-23",
-          "evaluation_date": null,
-          "result_public_date": null,
-          "source_publication_date": null,
-          "observation_date": "2026-10-23",
-          "observation_date_precision": "day",
-          "observation_date_sources": [
-            {
-              "date": "2026-10-23",
-              "kind": "model_release_date",
-              "precision": "day",
-              "resource_ids": [
-                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-              ]
-            }
-          ],
-          "observation_date_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "evaluation_date_sources": [],
-          "score_publication_date_sources": [],
-          "ingested_at": "2026-10-27",
-          "date_precision": "day",
-          "date_notes": "A score-publication date is not present in the source export.",
-          "date": "2026-10-23",
-          "date_kind": "earliest_observation_evidence_date",
-          "capability_date": "2026-10-23",
-          "capability_date_meaning": "earliest_observation_evidence_date",
-          "reported_date_meaning": "result_public_date",
-          "historical_frontier_date": null,
-          "temporal_class": "historical_or_unknown",
-          "retrospective": false,
-          "capability_frontier_eligible": true,
-          "historical_frontier_eligible": false,
-          "eligibility_reason": "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date.",
-          "contemporaneous": true,
-          "source_ids": [
-            "resource-https-openai-com-index-browsecomp-13a8c4bf46a315c2",
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "score_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
-          "notes": "Operational evaluation timeline only; not a historical public-result date.",
-          "evidence_ids": [
-            "evidence-model-version-kimi-k3-1-pro-max-name-kimi-k3-1-p-c91d8fc940206a4e"
-          ],
-          "evidence_count": 1,
-          "source_row_ids": [],
-          "plot_date": "2026-10-23",
-          "frontier_observation_ids": [
-            "obs-0-921-44bd368e7bfd7f27"
-          ]
         }
       ],
       "frontier_events": [
@@ -182825,83 +182866,6 @@
             "obs-0-019-3b6c9990d1b41086",
             "obs-0-099-ff6613f0edf58b38",
             "obs-0-515-8a42965b7def7019"
-          ]
-        },
-        {
-          "observation_id": "obs-0-921-44bd368e7bfd7f27",
-          "benchmark_id": "browsecomp",
-          "benchmark_version_id": "browsecomp-canonical",
-          "model_id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
-          "model_configuration": "kimi-k3.1-pro_max",
-          "model_identity_organization": "moonshot",
-          "model_label_id": "kimi-k3-1-pro-max",
-          "model_family_id": "moonshot-kimi-k3-1-pro",
-          "model": "Kimi K3.1 Pro (max)",
-          "organization": "Moonshot",
-          "score": 0.921,
-          "input_score": 0.921,
-          "input_unit": "fraction",
-          "reported_cost_per_task": null,
-          "metric_id": "browsecomp-metric-v1",
-          "protocol_id": "browsecomp-source-export-v1",
-          "task_set_id": "browsecomp-canonical",
-          "metric": "Score",
-          "score_role": "canonical",
-          "score_series_id": "browsecomp-canonical-score",
-          "evaluation_protocol": "BrowseComp official 1,266-task benchmark; browsing availability and agent scaffold remain part of each observation's setup.",
-          "model_release_date": "2026-10-23",
-          "evaluation_date": null,
-          "result_public_date": null,
-          "source_publication_date": null,
-          "observation_date": "2026-10-23",
-          "observation_date_precision": "day",
-          "observation_date_sources": [
-            {
-              "date": "2026-10-23",
-              "kind": "model_release_date",
-              "precision": "day",
-              "resource_ids": [
-                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-              ]
-            }
-          ],
-          "observation_date_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "evaluation_date_sources": [],
-          "score_publication_date_sources": [],
-          "ingested_at": "2026-10-27",
-          "date_precision": "day",
-          "date_notes": "A score-publication date is not present in the source export.",
-          "date": "2026-10-23",
-          "date_kind": "earliest_observation_evidence_date",
-          "capability_date": "2026-10-23",
-          "capability_date_meaning": "earliest_observation_evidence_date",
-          "reported_date_meaning": "result_public_date",
-          "historical_frontier_date": null,
-          "temporal_class": "historical_or_unknown",
-          "retrospective": false,
-          "capability_frontier_eligible": true,
-          "historical_frontier_eligible": false,
-          "eligibility_reason": "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date.",
-          "contemporaneous": true,
-          "source_ids": [
-            "resource-https-openai-com-index-browsecomp-13a8c4bf46a315c2",
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "score_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
-          "notes": "Operational evaluation timeline only; not a historical public-result date.",
-          "evidence_ids": [
-            "evidence-model-version-kimi-k3-1-pro-max-name-kimi-k3-1-p-c91d8fc940206a4e"
-          ],
-          "evidence_count": 1,
-          "source_row_ids": [],
-          "plot_date": "2026-10-23",
-          "frontier_observation_ids": [
-            "obs-0-921-44bd368e7bfd7f27"
           ]
         }
       ],
@@ -182985,94 +182949,17 @@
             "obs-0-099-ff6613f0edf58b38",
             "obs-0-515-8a42965b7def7019"
           ]
-        },
-        {
-          "observation_id": "obs-0-921-44bd368e7bfd7f27",
-          "benchmark_id": "browsecomp",
-          "benchmark_version_id": "browsecomp-canonical",
-          "model_id": "model-kimi-k3-1-pro-max-1e6dd7b5888524e4",
-          "model_configuration": "kimi-k3.1-pro_max",
-          "model_identity_organization": "moonshot",
-          "model_label_id": "kimi-k3-1-pro-max",
-          "model_family_id": "moonshot-kimi-k3-1-pro",
-          "model": "Kimi K3.1 Pro (max)",
-          "organization": "Moonshot",
-          "score": 0.921,
-          "input_score": 0.921,
-          "input_unit": "fraction",
-          "reported_cost_per_task": null,
-          "metric_id": "browsecomp-metric-v1",
-          "protocol_id": "browsecomp-source-export-v1",
-          "task_set_id": "browsecomp-canonical",
-          "metric": "Score",
-          "score_role": "canonical",
-          "score_series_id": "browsecomp-canonical-score",
-          "evaluation_protocol": "BrowseComp official 1,266-task benchmark; browsing availability and agent scaffold remain part of each observation's setup.",
-          "model_release_date": "2026-10-23",
-          "evaluation_date": null,
-          "result_public_date": null,
-          "source_publication_date": null,
-          "observation_date": "2026-10-23",
-          "observation_date_precision": "day",
-          "observation_date_sources": [
-            {
-              "date": "2026-10-23",
-              "kind": "model_release_date",
-              "precision": "day",
-              "resource_ids": [
-                "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-              ]
-            }
-          ],
-          "observation_date_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "evaluation_date_sources": [],
-          "score_publication_date_sources": [],
-          "ingested_at": "2026-10-27",
-          "date_precision": "day",
-          "date_notes": "A score-publication date is not present in the source export.",
-          "date": "2026-10-23",
-          "date_kind": "earliest_observation_evidence_date",
-          "capability_date": "2026-10-23",
-          "capability_date_meaning": "earliest_observation_evidence_date",
-          "reported_date_meaning": "result_public_date",
-          "historical_frontier_date": null,
-          "temporal_class": "historical_or_unknown",
-          "retrospective": false,
-          "capability_frontier_eligible": true,
-          "historical_frontier_eligible": false,
-          "eligibility_reason": "Capability eligibility uses the dated curated observation and canonical protocol; reported-result eligibility requires result_public_date.",
-          "contemporaneous": true,
-          "source_ids": [
-            "resource-https-openai-com-index-browsecomp-13a8c4bf46a315c2",
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "score_source_ids": [
-            "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec"
-          ],
-          "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
-          "notes": "Operational evaluation timeline only; not a historical public-result date.",
-          "evidence_ids": [
-            "evidence-model-version-kimi-k3-1-pro-max-name-kimi-k3-1-p-c91d8fc940206a4e"
-          ],
-          "evidence_count": 1,
-          "source_row_ids": [],
-          "plot_date": "2026-10-23",
-          "frontier_observation_ids": [
-            "obs-0-921-44bd368e7bfd7f27"
-          ]
         }
       ],
       "reported_frontier": [],
       "historical_frontier": [],
       "retrospective_observations": [],
-      "observed_frontier": 0.921,
-      "capability_frontier_value": 0.921,
+      "observed_frontier": 0.515,
+      "capability_frontier_value": 0.515,
       "reported_frontier_value": null,
-      "current_frontier": 0.921,
-      "normalized_progress": 0.921,
-      "normalized_headroom": 0.07899999999999996,
+      "current_frontier": 0.515,
+      "normalized_progress": 0.515,
+      "normalized_headroom": 0.485,
       "threshold_days": {
         "T50": {
           "status": "at_release",
@@ -183080,14 +182967,12 @@
           "qualifying_observation_date": "2025-04-10"
         },
         "T80": {
-          "status": "reached",
-          "days": 561,
-          "qualifying_observation_date": "2026-10-23"
+          "status": "right_censored",
+          "days": 565
         },
         "T90": {
-          "status": "reached",
-          "days": 561,
-          "qualifying_observation_date": "2026-10-23"
+          "status": "right_censored",
+          "days": 565
         }
       },
       "capability_threshold_days": {
@@ -183097,14 +182982,12 @@
           "qualifying_observation_date": "2025-04-10"
         },
         "T80": {
-          "status": "reached",
-          "days": 561,
-          "qualifying_observation_date": "2026-10-23"
+          "status": "right_censored",
+          "days": 565
         },
         "T90": {
-          "status": "reached",
-          "days": 561,
-          "qualifying_observation_date": "2026-10-23"
+          "status": "right_censored",
+          "days": 565
         }
       },
       "reported_threshold_days": {
@@ -183121,8 +183004,8 @@
           "reason": "No dated observations are available on this timeline."
         }
       },
-      "velocity_180d": 0.022029661319073086,
-      "capability_velocity_180d": 0.022029661319073086,
+      "velocity_180d": null,
+      "capability_velocity_180d": null,
       "reported_velocity_180d": null,
       "cost_per_task": null,
       "coverage": {
@@ -183154,7 +183037,7 @@
           "rule": "known reached T90 < 6 months"
         },
         "recently-saturated": {
-          "eligible": true,
+          "eligible": false,
           "rule": "T90 crossing within 3 months of snapshot"
         }
       }
@@ -444389,7 +444272,7 @@
       },
       "evaluation_target": "environment_outcome",
       "observation_count": 46,
-      "evidence_record_count": 46,
+      "evidence_record_count": 47,
       "observations": [
         {
           "observation_id": "obs-0-5182-8f4af8ecb1571db7",
@@ -447444,13 +447327,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -447474,19 +447379,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ]
         },
         {
@@ -448631,13 +448540,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -448661,19 +448592,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ],
           "plot_date": "2026-09-28",
           "frontier_observation_ids": [
@@ -449110,13 +449045,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -449140,19 +449097,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ],
           "plot_date": "2026-09-28",
           "frontier_observation_ids": [
@@ -449589,13 +449550,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -449619,19 +449602,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ],
           "plot_date": "2026-09-28",
           "frontier_observation_ids": [
@@ -449896,13 +449883,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -449926,19 +449935,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ],
           "plot_date": "2026-09-28",
           "frontier_observation_ids": [
@@ -450203,13 +450216,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -450233,19 +450268,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-github-com-harbor-framework-terminal-bench-aabde8704ab14964",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7"
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-aa3ee733cd8b05b7",
+            "evidence-oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-ac8d455937d667e9"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max"
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max",
+            "oct2026-terminal-bench-4-0-claude-sonnet-5-5-max-system-card"
           ],
           "plot_date": "2026-09-28",
           "frontier_observation_ids": [
@@ -450876,7 +450915,7 @@
       },
       "evaluation_target": "final_output",
       "observation_count": 20,
-      "evidence_record_count": 20,
+      "evidence_record_count": 24,
       "observations": [
         {
           "observation_id": "obs-0-4644-ce2e5dfd8a336c2a",
@@ -451761,13 +451800,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -451791,19 +451852,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-humanitys-last-exam-claude-sonnet-5-5-ma-77b89adba48f9e92"
+            "evidence-oct2026-humanitys-last-exam-claude-sonnet-5-5-ma-77b89adba48f9e92",
+            "evidence-oct2026-humanitys-last-exam-claude-sonnet-5-5-ma-e28332f776b67a46"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-tools"
+            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-tools",
+            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-tools-system-card"
           ]
         },
         {
@@ -451840,6 +451905,22 @@
               "kind": "model_release_date",
               "precision": "day",
               "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
               ]
             },
@@ -451853,10 +451934,16 @@
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-10-07",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-10-07",
               "kind": "Result public date",
@@ -451880,19 +451967,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba",
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
-          "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+          "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
+            "evidence-oct2026-humanitys-last-exam-claude-haiku-5-5-max-808f933ff5f5ee4f",
             "evidence-oct2026-humanitys-last-exam-claude-haiku-5-5-max-b856fa24ed9eaa7f"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-tools"
+            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-tools",
+            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-tools-system-card"
           ]
         },
         {
@@ -451938,7 +452029,7 @@
               "kind": "model_release_date",
               "precision": "day",
               "resource_ids": [
-                "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
               ]
             },
             {
@@ -451946,17 +452037,31 @@
               "kind": "score_publication_date",
               "precision": "day",
               "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
               ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
             {
               "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
+            {
+              "date": "2026-10-07",
               "kind": "Result public date",
               "precision": "day"
             }
@@ -451978,19 +452083,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
-          "source": "https://www.anthropic.com/news/claude-haiku-5-5",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
+            "evidence-oct2026-humanitys-last-exam-claude-sonnet-5-5-ma-8d9fe66a266fa7f8",
             "evidence-oct2026-humanitys-last-exam-claude-sonnet-5-5-ma-b2d332cc491f3be8"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-no-tools"
+            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-no-tools",
+            "oct2026-humanitys-last-exam-claude-sonnet-5-5-max-no-tools-system-card"
           ]
         },
         {
@@ -452046,13 +452155,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
               ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-10-07",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-10-07",
               "kind": "Result public date",
@@ -452076,19 +452207,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-labs-scale-com-leaderboard-humanitys-last--3a6f8adfaefbf7ba",
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "source": "https://www.anthropic.com/news/claude-haiku-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-humanitys-last-exam-claude-haiku-5-5-max-08bc7cfa63dafa40"
+            "evidence-oct2026-humanitys-last-exam-claude-haiku-5-5-max-08bc7cfa63dafa40",
+            "evidence-oct2026-humanitys-last-exam-claude-haiku-5-5-max-08dfd48073057df1"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-no-tools"
+            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-no-tools",
+            "oct2026-humanitys-last-exam-claude-haiku-5-5-max-no-tools-system-card"
           ]
         },
         {
@@ -674614,7 +674749,7 @@
       },
       "evaluation_target": "final_output",
       "observation_count": 10,
-      "evidence_record_count": 10,
+      "evidence_record_count": 12,
       "observations": [
         {
           "observation_id": "obs-0-644-d1660605ecb34711",
@@ -675195,13 +675330,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
               ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
+            },
+            {
+              "date": "2026-09-28",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-09-28",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-09-28",
               "kind": "Result public date",
@@ -675225,19 +675382,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-arxiv-org-abs-2608-10677-2d8f2b97fe6cec44",
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
             "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
           ],
           "source": "https://www.anthropic.com/news/claude-sonnet-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-chartography-v1-no-tools-claude-sonnet-5-3ed8319a2d12ddbc"
+            "evidence-oct2026-chartography-v1-no-tools-claude-sonnet-5-3ed8319a2d12ddbc",
+            "evidence-oct2026-chartography-v1-no-tools-claude-sonnet-5-b5f6160acf93ddfc"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-chartography-v1-no-tools-claude-sonnet-5-5-max-no-tools"
+            "oct2026-chartography-v1-no-tools-claude-sonnet-5-5-max-no-tools",
+            "oct2026-chartography-v1-no-tools-claude-sonnet-5-5-max-no-tools-system-card"
           ]
         },
         {
@@ -675284,13 +675445,35 @@
               "resource_ids": [
                 "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
               ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "model_release_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
+            },
+            {
+              "date": "2026-10-07",
+              "kind": "score_publication_date",
+              "precision": "day",
+              "resource_ids": [
+                "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
+              ]
             }
           ],
           "observation_date_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "evaluation_date_sources": [],
           "score_publication_date_sources": [
+            {
+              "date": "2026-10-07",
+              "kind": "Result public date",
+              "precision": "day"
+            },
             {
               "date": "2026-10-07",
               "kind": "Result public date",
@@ -675314,19 +675497,23 @@
           "contemporaneous": true,
           "source_ids": [
             "resource-https-arxiv-org-abs-2608-10677-2d8f2b97fe6cec44",
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "score_source_ids": [
+            "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
             "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
           ],
           "source": "https://www.anthropic.com/news/claude-haiku-5-5",
           "notes": "Operational evaluation timeline only; not a historical public-result date.",
           "evidence_ids": [
-            "evidence-oct2026-chartography-v1-no-tools-claude-haiku-5--b25457e5faafafc6"
+            "evidence-oct2026-chartography-v1-no-tools-claude-haiku-5--b25457e5faafafc6",
+            "evidence-oct2026-chartography-v1-no-tools-claude-haiku-5--c4fcf4e182537d87"
           ],
-          "evidence_count": 1,
+          "evidence_count": 2,
           "source_row_ids": [
-            "oct2026-chartography-v1-no-tools-claude-haiku-5-5-max-no-tools"
+            "oct2026-chartography-v1-no-tools-claude-haiku-5-5-max-no-tools",
+            "oct2026-chartography-v1-no-tools-claude-haiku-5-5-max-no-tools-system-card"
           ]
         },
         {
@@ -677334,15 +677521,15 @@
           "score_role": "canonical",
           "score_series_id": "frontiercs-2-canonical-score",
           "evaluation_protocol": "Official FrontierCS 2 leaderboard; 48 public tasks, one five-hour run per task, each agent in its own vendor harness; pass rate is passing runs divided by 48.",
-          "model_release_date": "2026-09-30",
+          "model_release_date": "2026-10-13",
           "evaluation_date": null,
           "result_public_date": "2026-10-27",
           "source_publication_date": "2026-10-27",
-          "observation_date": "2026-09-30",
+          "observation_date": "2026-10-13",
           "observation_date_precision": "day",
           "observation_date_sources": [
             {
-              "date": "2026-09-30",
+              "date": "2026-10-13",
               "kind": "model_release_date",
               "precision": "day",
               "resource_ids": [
@@ -677364,9 +677551,9 @@
           "ingested_at": "2026-10-27",
           "date_precision": "day",
           "date_notes": null,
-          "date": "2026-09-30",
+          "date": "2026-10-13",
           "date_kind": "earliest_observation_evidence_date",
-          "capability_date": "2026-09-30",
+          "capability_date": "2026-10-13",
           "capability_date_meaning": "earliest_observation_evidence_date",
           "reported_date_meaning": "result_public_date",
           "historical_frontier_date": "2026-10-27",
@@ -677499,15 +677686,15 @@
           "score_role": "canonical",
           "score_series_id": "frontiercs-2-canonical-score",
           "evaluation_protocol": "Official FrontierCS 2 leaderboard; 48 public tasks, one five-hour run per task, each agent in its own vendor harness; pass rate is passing runs divided by 48.",
-          "model_release_date": "2026-09-30",
+          "model_release_date": "2026-10-13",
           "evaluation_date": null,
           "result_public_date": "2026-10-27",
           "source_publication_date": "2026-10-27",
-          "observation_date": "2026-09-30",
+          "observation_date": "2026-10-13",
           "observation_date_precision": "day",
           "observation_date_sources": [
             {
-              "date": "2026-09-30",
+              "date": "2026-10-13",
               "kind": "model_release_date",
               "precision": "day",
               "resource_ids": [
@@ -677529,9 +677716,9 @@
           "ingested_at": "2026-10-27",
           "date_precision": "day",
           "date_notes": null,
-          "date": "2026-09-30",
+          "date": "2026-10-13",
           "date_kind": "earliest_observation_evidence_date",
-          "capability_date": "2026-09-30",
+          "capability_date": "2026-10-13",
           "capability_date_meaning": "earliest_observation_evidence_date",
           "reported_date_meaning": "result_public_date",
           "historical_frontier_date": "2026-10-27",
@@ -679213,7 +679400,6 @@
       "arc-agi-3"
     ],
     "recently-saturated": [
-      "browsecomp",
       "frontiermath-tiers-1-3-v2",
       "frontiermath-tier-4-v2",
       "arc-agi-3",

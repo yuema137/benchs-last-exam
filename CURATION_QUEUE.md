@@ -37,3 +37,7 @@ First-pass discovery notes; re-verify every figure against the paper before addi
 - **Doc2Harness** ([arXiv 2610.20344](https://arxiv.org/abs/2610.20344), 2026-10-14) — 328 test cases, mean of three builds, 5/7 organization coverage. Reasoning effort is not stated and no model release dates are given; pin the builder configuration before adding.
 - **SCI-AGENT-EXAM** ([arXiv 2610.32441](https://arxiv.org/abs/2610.32441), 2026-10-23) — 120 tasks, 5/7 coverage. Final score partly depends on an LLM judge and every model runs in Claude Code; review judge identity and harness neutrality first.
 - **E2E-SWE** ([arXiv 2609.38335](https://arxiv.org/abs/2609.38335), 2026-09-29) — 186 tasks, Pass@1 over four runs, 4/7 coverage; effort varies per row. Decide on a canonical effort rule before adding.
+
+## Existing-card follow-ups — 2026-10-27
+
+- **BrowseComp vendor-reported series** — the card's canonical series still holds only OpenAI's original paper results. Vendor-reported scores at or above 90% exist (for example the [GPT-6 Astra page](https://openai.com/index/gpt-6-astra/) text table: GPT-6 Astra 91.5%, GPT-5.6 Sol 90.4%, Claude Opus 5 90.8%) and would place a 90% crossing in July 2026. Kimi K3.1 Pro's 92.1% is auxiliary until a reviewed vendor-reported series, with per-row harness and fallback settings, is added from each vendor's original release page.

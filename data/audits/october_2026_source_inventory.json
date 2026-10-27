@@ -38,10 +38,11 @@
     }
   ],
   "extraction_methods": {
-    "openai.com": "Rendered launch pages; chart point aria-labels (direct fetch returns HTTP 403).",
-    "www.kimi.com": "Embedded benchmark table data in the page HTML.",
+    "openai.com": "Rendered launch pages; chart point aria-labels (direct fetch returns HTTP 403). Re-verified 2026-10-27: every imported value matches the one-decimal 'Score: x%' aria-label strings; the system-card addenda (https://deploymentsafety.openai.com/gpt-6-1-sol, https://deploymentsafety.openai.com/gpt-6-1-terra) do not report these evaluations, so no text or table source exists. Values also stated or arithmetically implied by page text are noted per row.",
+    "www.kimi.com": "Embedded benchmark table data in the page HTML. Re-fetched 2026-10-27 (page hash now 6023faf44bed02498acb6e194416cdfc101a6919995f32adfc51daeb0df2e73c because the Next.js payload is dynamic); the BrowseComp 92.1 table entry and its footnote are unchanged.",
     "anthropic system cards": "pdftotext of the served PDF.",
-    "epoch.ai": "benchmark_data.zip CSV export, appended without modification."
+    "epoch.ai": "benchmark_data.zip CSV export, appended without modification.",
+    "anthropic launch posts": "Launch-post values (Sonnet 5.5 Terminal-Bench 4.0, Chartography no tools, HLE; Haiku 5.5 Chartography no tools, HLE) were re-checked on 2026-10-27 against system-card text (section text and Table 8.1.A via pdftotext) and added as extra evidence rows citing the system cards."
   },
   "inventory": [
     {
@@ -411,8 +412,9 @@
       "status": "UPDATED",
       "observations": 1,
       "roles": {
-        "canonical": 1
-      }
+        "auxiliary": 1
+      },
+      "reason": "Single self-reported vendor row; kept as an auxiliary series so it does not drive the canonical frontier or Recently Saturated (2026-10-27 verification)."
     },
     {
       "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
@@ -680,6 +682,94 @@
       "benchmark": "terminal-bench-4-0",
       "status": "SKIPPED_WITH_REASON",
       "reason": "Official leaderboard rows were not independently extracted in this pass; the card continues to use vendor-reported rows."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "terminal-bench-4-0",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.5 text states 70.6%; added as a second evidence row for the launch-post value (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "humanitys-last-exam",
+      "status": "ALREADY CURRENT",
+      "reason": "Table 8.1.A gives 64.5 (tools) and 56.9 (no tools); added as evidence rows. The no-tools value was previously cited only from the 2026-10-07 Haiku launch post with a 2026-09-28 public date; that row now carries 2026-10-07 and the system card supplies the 2026-09-28 publication."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "humanitys-last-exam",
+      "status": "ALREADY CURRENT",
+      "reason": "Table 8.1.A gives 57.4 (tools) and 45.9 (no tools); added as evidence rows (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.13.1 text states 61.6% without tools; added as an evidence row (2026-10-27)."
+    },
+    {
+      "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "benchmark": "chartography-v1-no-tools",
+      "status": "ALREADY CURRENT",
+      "reason": "Section 8.9.1 text states 46.4% without tools; added as an evidence row (2026-10-27)."
+    },
+    {
+      "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "benchmark": "terminal-bench-4-0",
+      "status": "SKIPPED_WITH_REASON",
+      "reason": "GPT-6.1 Sol points on the Terra Terminal-Bench 4.0 chart (47.1-55.9%) were not imported in the original pass; noted during the 2026-10-27 verification and left for a separate import decision."
     }
-  ]
+  ],
+  "verification_2026_10_27": {
+    "access_date": "2026-10-27",
+    "browsecomp": {
+      "decision": "Kimi K3.1 Pro 92.1% demoted to auxiliary series browsecomp-vendor-reported-kimi-harness; BrowseComp leaves Recently Saturated.",
+      "evidence": [
+        {
+          "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+          "finding": "92.1 (max) in the embedded benchmark table; same table cites GPT-6 Astra 91.5 and Claude Opus 5.5 90.8 (with fallback)."
+        },
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "finding": "Text table (2026-09-03): BrowseComp GPT-6 Astra 91.5%, GPT-5.6 Sol 90.4%, Claude Fable 5 87.4%, Claude Opus 5 90.8%."
+        },
+        {
+          "url": "https://www.vals.ai/models/kimi_kimi-k3.1-pro",
+          "finding": "Independent evaluator page lists no BrowseComp result for Kimi K3.1 Pro."
+        }
+      ],
+      "rationale": "The card held one self-reported row at or above 90%. Vendor-reported scores at or above 90% for GPT-5.6 Sol (released 2026-07-09) and Claude Opus 5 (2026-07-24) appear in OpenAI text published 2026-09-03, so under the earliest-date rule a 90% crossing would predate the three-month Recently Saturated window; the Kimi row alone would misdate it. Importing the vendor-reported BrowseComp series is queued in CURATION_QUEUE.md."
+    },
+    "openai_chart_values": {
+      "decision": "All 40 GPT-6.1 Sol/Terra values unchanged; each matches the rendered chart aria-label exactly. No text/table source exists.",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "https://deploymentsafety.openai.com/gpt-6-1-sol",
+        "https://deploymentsafety.openai.com/gpt-6-1-terra"
+      ]
+    },
+    "kimi_k3_1_pro_release_date": {
+      "date": "2026-10-23",
+      "basis": "Official Kimi Forum announcement created 2026-10-23T20:12:59Z (https://forum.moonshot.ai/t/kimi-k3-1-pro-has-launched-start-exploring-now/629); official X post https://x.com/Kimi_Moonshot/status/2113680701770068067 (status ID timestamp 2026-10-23 17:15 UTC). The blog JSON-LD only gives dateModified 2026-10-24 (Beijing date); Moonshot platform changelog has no October entry yet."
+    },
+    "gemini_4_argon_release_date": {
+      "public_release": "2026-10-13",
+      "announcement": "2026-09-30",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+        "https://ai.google.dev/gemini-api/docs/changelog",
+        "https://deepmind.google/models/model-cards/gemini-4-argon/"
+      ],
+      "repo_rule": "Repository-authored rows (FrontierCS 2) use the 2026-10-13 general-availability date. Epoch export rows keep their 2026-09-30 value unmodified (raw-observation immutability); 2026-09-30 is Google's own announcement date with access limited to Fairwind Program cyber defenders."
+    },
+    "qwen_frontiercs_2": {
+      "evaluated_model": "Qwen/Qwen3.8-Max-VL-Thinking (alias qwen3.8-max-vl-thinking, effort high)",
+      "source": "https://github.com/FrontierCS/FrontierCS-2/blob/a56a2afa0e/candidates/qwen-code/README.md",
+      "release_date": null,
+      "reason": "Identifier not found in Alibaba Cloud Model Studio documentation (https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max lists qwen3.8-max and qwen3.8-max-0902 only) or as a public Hugging Face model; row stays undated."
+    },
+    "deepseek_v4_1_flash_1017": "Model-card text table; not re-researched."
+  }
 }

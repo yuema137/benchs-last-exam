@@ -1,7 +1,7 @@
-Model version,Score,Release date,Organization,Name,Source link,Notes
-gpt-4o-browsecomp,0.006,2024-05-13,OpenAI,GPT-4o (no browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
-gpt-4o-browsecomp-browsing,0.019,2024-05-13,OpenAI,GPT-4o (with browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; browsing enabled.
-gpt-4-5,0.009,2025-02-27,OpenAI,GPT-4.5,https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
-o1-medium,0.099,2024-09-12,OpenAI,o1 (medium),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.
-deep-research,0.515,2025-04-10,OpenAI,Deep Research,https://openai.com/index/browsecomp/,Official BrowseComp result; browsing agent.
-kimi-k3.1-pro_max,0.921,2026-10-23,Moonshot,Kimi K3.1 Pro (max),https://www.kimi.com/blog/kimi-k3-1-pro,"Kimi tech blog; browsing agent with context compaction at 200K tokens, up to 500 steps."
+Model version,Score,Release date,Organization,Name,Source link,Notes,Auxiliary protocol,Auxiliary task set,Auxiliary label,Auxiliary explanation en,Auxiliary explanation zh
+gpt-4o-browsecomp,0.006,2024-05-13,OpenAI,GPT-4o (no browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.,,,,,
+gpt-4o-browsecomp-browsing,0.019,2024-05-13,OpenAI,GPT-4o (with browsing),https://openai.com/index/browsecomp/,Official BrowseComp result; browsing enabled.,,,,,
+gpt-4-5,0.009,2025-02-27,OpenAI,GPT-4.5,https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.,,,,,
+o1-medium,0.099,2024-09-12,OpenAI,o1 (medium),https://openai.com/index/browsecomp/,Official BrowseComp result; no browsing.,,,,,
+deep-research,0.515,2025-04-10,OpenAI,Deep Research,https://openai.com/index/browsecomp/,Official BrowseComp result; browsing agent.,,,,,
+kimi-k3.1-pro_max,0.921,2026-10-23,Moonshot,Kimi K3.1 Pro (max),https://www.kimi.com/blog/kimi-k3-1-pro,"Kimi tech blog benchmark table (embedded page data), re-checked 2026-10-27; browsing agent with context compaction at 200K tokens, up to 500 steps. Release date 2026-10-23 (UTC) from the official Kimi X post and Kimi Forum announcement.",browsecomp-vendor-reported-kimi-harness,browsecomp-1266-vendor-harness,Vendor-reported / Kimi browsing harness,"Self-reported by Moonshot with its own browsing agent (context compaction at 200K tokens, up to 500 steps). No independent BrowseComp run of Kimi K3.1 Pro was found on 2026-10-27, and comparable vendor-reported scores at or above 90% for other models were published before this one, so this row is shown as supporting evidence and does not set the canonical frontier or saturation timing.",Moonshot 用自家 browsing agent 自行报告的成绩（200K token 时压缩上下文，最多 500 步）。截至 2026-10-27 没有找到 Kimi K3.1 Pro 的独立 BrowseComp 结果，而且其他模型在此之前已有 90% 以上的同类厂商自报成绩，所以这一行只作为辅助证据展示，不决定主序列前沿，也不决定饱和时间。

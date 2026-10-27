@@ -5,8 +5,8 @@ Snapshot: `2026-10-27`
 The lifecycle date for one observation is the earliest available evaluation/run date, model release date, or score-publication date. The plotted date is clipped to benchmark release; source dates are never overwritten.
 
 - Canonical measurements: **4813**
-- Source evidence records: **4954**
-- Exact duplicate evidence rows merged: **141**
+- Source evidence records: **4961**
+- Exact duplicate evidence rows merged: **148**
 - Observations without any candidate date: **354**
 - Observations selected before benchmark release and plotted as `At release`: **1257**
 
@@ -16,13 +16,15 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 |---|---:|
 | `model_release_date` | 4030 |
 | `unknown` | 354 |
-| `model_release_date+score_publication_date` | 116 |
 | `evaluation_date+model_release_date` | 115 |
+| `model_release_date+score_publication_date` | 109 |
 | `score_publication_date` | 91 |
 | `model_release_date+model_release_date` | 67 |
 | `evaluation_date` | 23 |
 | `model_release_date+model_release_date+model_release_date` | 13 |
+| `model_release_date+score_publication_date+model_release_date+score_publication_date` | 6 |
 | `model_release_date+model_release_date+model_release_date+model_release_date` | 4 |
+| `model_release_date+score_publication_date+model_release_date` | 1 |
 
 ## Benchmark coverage
 
@@ -47,7 +49,7 @@ The lifecycle date for one observation is the earliest available evaluation/run 
 | BixBench | 2 | 2 | 2 | 1 |
 | BLINDSPOT v1 · Safety calibration | 13 | 13 | 0 | 1 |
 | BoolQ | 186 | 107 | 0 | 6 |
-| BrowseComp | 6 | 6 | 4 | 2 |
+| BrowseComp | 6 | 6 | 4 | 1 |
 | CADBench-Wild — Criteria Score | 9 | 9 | 8 | 1 |
 | CADReview — Human Feedback | 4 | 4 | 4 | 1 |
 | CADWorld v1 | 7 | 7 | 0 | 1 |

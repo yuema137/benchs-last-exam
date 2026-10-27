@@ -3215,7 +3215,8 @@
     "release_date": "2026-10-07",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2"
+      "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+      "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02"
     ],
     "roles": [
       "contemporary_frontier"
@@ -7929,6 +7930,7 @@
     "organization": "Anthropic",
     "resource_ids": [
       "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
       "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
     ],
     "roles": [
@@ -7978,7 +7980,8 @@
     "release_date": "2026-09-28",
     "organization": "Anthropic",
     "resource_ids": [
-      "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d"
+      "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d",
+      "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6"
     ],
     "roles": [
       "contemporary_frontier"
@@ -15541,7 +15544,7 @@
     "configuration_id": "Gemini 4 Argon / Antigravity",
     "identity_organization": "google",
     "family_id": "google-gemini-4-argon-antigravity",
-    "release_date": "2026-09-30",
+    "release_date": "2026-10-13",
     "organization": "Google",
     "resource_ids": [
       "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"
@@ -15665,7 +15668,7 @@
     "configuration_id": "Gemini 4 Argon / Pi",
     "identity_organization": "google",
     "family_id": "google-gemini-4-argon-pi",
-    "release_date": "2026-09-30",
+    "release_date": "2026-10-13",
     "organization": "Google",
     "resource_ids": [
       "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7"

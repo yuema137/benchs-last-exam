@@ -1964,35 +1964,40 @@
     "model": "GPT-6.1 Terra (low)",
     "score": 0.248,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-4-0",
     "model": "GPT-6.1 Terra (medium)",
     "score": 0.358,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-4-0",
     "model": "GPT-6.1 Terra (high)",
     "score": 0.418,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-4-0",
     "model": "GPT-6.1 Terra (xhigh)",
     "score": 0.464,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-4-0",
     "model": "GPT-6.1 Terra (max)",
     "score": 0.503,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-4-0",
@@ -2027,70 +2032,80 @@
     "model": "GPT-6.1 Sol (low)",
     "score": 0.437,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Sol (medium)",
     "score": 0.476,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Sol (high)",
     "score": 0.511,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Sol (xhigh)",
     "score": 0.537,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Sol (max)",
     "score": 0.57,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Terra (low)",
     "score": 0.243,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Terra (medium)",
     "score": 0.343,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Terra (high)",
     "score": 0.397,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Terra (xhigh)",
     "score": 0.434,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
     "model": "GPT-6.1 Terra (max)",
     "score": 0.583,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "terminal-bench-science-0-1",
@@ -2111,35 +2126,40 @@
     "model": "GPT-6.1 Sol (low)",
     "score": 0.644,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "deepswe-v1-1",
     "model": "GPT-6.1 Sol (medium)",
     "score": 0.73,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "deepswe-v1-1",
     "model": "GPT-6.1 Sol (high)",
     "score": 0.752,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "deepswe-v1-1",
     "model": "GPT-6.1 Sol (xhigh)",
     "score": 0.719,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "deepswe-v1-1",
     "model": "GPT-6.1 Sol (max)",
     "score": 0.719,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "deepswe-v1-1",
@@ -2202,70 +2222,80 @@
     "model": "GPT-6.1 Terra (low)",
     "score": 0.559,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Terra (medium)",
     "score": 0.576,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Terra (high)",
     "score": 0.572,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Terra (xhigh)",
     "score": 0.585,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Terra (max)",
     "score": 0.6,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Sol (low)",
     "score": 0.524,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Sol (medium)",
     "score": 0.538,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Sol (high)",
     "score": 0.553,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Sol (xhigh)",
     "score": 0.565,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
     "model": "GPT-6.1 Sol (max)",
     "score": 0.586,
     "source": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "agents-last-exam",
@@ -2377,70 +2407,80 @@
     "model": "GPT-6.1 Sol (low, offline 2026.08.08)",
     "score": 0.59,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "osworld-2",
     "model": "GPT-6.1 Sol (medium, offline 2026.08.08)",
     "score": 0.668,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "osworld-2",
     "model": "GPT-6.1 Sol (high, offline 2026.08.08)",
     "score": 0.696,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "osworld-2",
     "model": "GPT-6.1 Sol (xhigh, offline 2026.08.08)",
     "score": 0.694,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "osworld-2",
     "model": "GPT-6.1 Sol (max, offline 2026.08.08)",
     "score": 0.714,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "canonical"
+    "role": "canonical",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "automationbench",
     "model": "GPT-6.1 Sol (low, Zapier private)",
     "score": 0.247,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "auxiliary"
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "automationbench",
     "model": "GPT-6.1 Sol (medium, Zapier private)",
     "score": 0.317,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "auxiliary"
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "automationbench",
     "model": "GPT-6.1 Sol (high, Zapier private)",
     "score": 0.332,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "auxiliary"
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "automationbench",
     "model": "GPT-6.1 Sol (xhigh, Zapier private)",
     "score": 0.355,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "auxiliary"
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "automationbench",
     "model": "GPT-6.1 Sol (max, Zapier private)",
     "score": 0.361,
     "source": "https://openai.com/index/introducing-gpt-6-1-sol/",
-    "role": "auxiliary"
+    "role": "auxiliary",
+    "extraction": "Chart point aria-label data in the rendered page, re-verified 2026-10-27; no text or table source exists."
   },
   {
     "benchmark": "gpqa-diamond",
@@ -2454,6 +2494,63 @@
     "model": "Kimi K3.1 Pro (max)",
     "score": 0.921,
     "source": "https://www.kimi.com/blog/kimi-k3-1-pro",
-    "role": "canonical"
+    "role": "auxiliary",
+    "note": "Demoted from canonical on 2026-10-27: single self-reported vendor row; see docs/OCTOBER_2026_BENCHMARK_AUDIT.md."
+  },
+  {
+    "benchmark": "terminal-bench-4-0",
+    "model": "Claude Sonnet 5.5 (max, safeguards enabled)",
+    "score": 0.706,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.616,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "chartography-v1-no-tools",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.464,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, tools)",
+    "score": 0.645,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, tools)",
+    "score": 0.574,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "canonical",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Sonnet 5.5 (max, no tools)",
+    "score": 0.569,
+    "source": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "role": "auxiliary",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
+  },
+  {
+    "benchmark": "humanitys-last-exam",
+    "model": "Claude Haiku 5.5 (max, no tools)",
+    "score": 0.459,
+    "source": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "role": "auxiliary",
+    "note": "Additional system-card text evidence for a launch-post value (added 2026-10-27); merges into the existing canonical measurement."
   }
 ]
