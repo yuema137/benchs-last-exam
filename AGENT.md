@@ -53,6 +53,7 @@ Every reference model panel is versioned and time-dependent. Historical health a
 - Preserve conflicting observations instead of silently overwriting them.
 - Record corrections, retractions, contamination findings, and protocol changes as validity/provenance events.
 - If a value cannot yet be verified, use `TODO(reference)` or an explicit unavailable reason.
+- Follow `docs/DATA_PROVENANCE_POLICY.md`: every observation cites its original source; benchmark-radar is a discovery reference only and may be named only in a `discovered_via` field; never bulk-import a curated third-party dataset whose terms forbid it. New benchmarks must meet the inclusion criteria in `CONTRIBUTING.md`, otherwise they go to `CURATION_QUEUE.md`.
 
 ## Bilingual documentation
 

@@ -2,6 +2,15 @@
 
 Benchmark Observatory 是一个轻量的 **Leaderboard of Benchmarks**。
 
+**BLE 评估的是 benchmark 本身，而不是它们的结果在哪里被报告。**
+它沿着区分力、剩余空间与饱和速度、覆盖度与新鲜度、协议可比性、成本以及抗 contamination 能力等维度来考察每个 benchmark。BLE 是刻意有所取舍的：它只收录经典、被广泛关注的 benchmark，目标是用相对少的信息展示 frontier 的进展，而不是全面覆盖。参见[收录标准](CONTRIBUTING.md#收录标准初始政策)。
+
+### 致谢
+
+BLE 感谢 Koutian Wu 开发的 [benchmark-radar](https://github.com/ktwu01/benchmark-radar)，它追踪 AI benchmark 与评测结果在哪里被报告。我们只把它作为发现来源的参考：BLE 中的每一个数字都从原始论文、leaderboard 或厂商发布中重新读取，并在那里引用；没有任何 benchmark-radar 内容被复制或再分发。
+
+两个项目回答的是不同的问题。benchmark-radar 在一个非常大的集合中，帮你找到 benchmark 以及它们的结果出现的地方。BLE 则刻意有所取舍：它只跟踪一小组经典、被广泛关注的 benchmark，并评估 benchmark 本身，维度包括区分力、剩余空间与饱和速度、覆盖度与新鲜度、协议可比性、成本以及抗 contamination 能力，让你能判断一个 benchmark 对 frontier 模型还能告诉你什么。
+
 ## 访问网站
 
 **[打开在线的 Benchmark Observatory →](https://yuema137.github.io/ble/)**
@@ -35,11 +44,20 @@ curated source data → Python metric scripts → generated JSON → static fron
 ```bash
 python3 scripts/build_snapshot.py
 python3 scripts/validate_score_semantics.py
+python3 scripts/validate_provenance.py
 python3 scripts/validate_benchmark_integration.py
 python3 scripts/audit_observation_dates.py
 python3 scripts/audit_canonical_identity.py
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
+
+## 许可
+
+- **代码**（站点、脚本、流水线、测试）：[MIT](../LICENSE)。
+- **BLE 自己的数据和文字**（BLE 计算出的分数、排名、frontier、lifecycle metric 与分类；benchmark 卡片；文档）：[CC BY-SA 4.0](../LICENSE-DATA)。
+- **第三方结果和材料**（`data/raw/` 中的源数据行，以及所链接的论文、leaderboard、评测日志和厂商发布）保留其原有条款。Epoch AI 数据及其他批量来源的署名见 [`NOTICE`](../NOTICE)。
+
+版权 2026 Yue Ma。BLE 找到的第三方条款以及未决的许可事项，见 [数据 Provenance 与许可政策](docs/DATA_PROVENANCE_POLICY.md)。引用 BLE 时请使用 [`CITATION.cff`](../CITATION.cff)。
 
 ## 文档
 
@@ -47,5 +65,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 - [Vertical slice plan](docs/vertical-slice-plan.md)
 - [Repository constitution](AGENT.md)
 - [Benchmark integration contract](docs/BENCHMARK_INTEGRATION.md)
+- [数据 Provenance 与许可政策](docs/DATA_PROVENANCE_POLICY.md)
+- [贡献指南与收录标准](CONTRIBUTING.md)
 - [Explanation style](EXPLANATION_STYLE.md)
 - [Chinese design mirror](zh/docs/design-synthesis.md)

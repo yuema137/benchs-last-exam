@@ -53,6 +53,7 @@ Benchmark health 和 evaluation coverage 是相互独立的维度。低覆盖或
 - 保留相互冲突的 observation，而不是无声地覆盖它们。
 - 把更正、撤稿、contamination 发现和协议变更记录为 validity/provenance 事件。
 - 如果某个值尚无法核实，使用 `TODO(reference)` 或一个显式的不可用理由。
+- 遵守 `docs/DATA_PROVENANCE_POLICY.md`：每条 observation 都引用其原始来源；benchmark-radar 只是发现来源的参考，只能出现在 `discovered_via` 字段中；绝不批量导入条款禁止批量导入的第三方整理数据集。新 benchmark 必须满足 `CONTRIBUTING.md` 中的收录标准，否则进入 `CURATION_QUEUE.md`。
 
 ## 双语文档
 

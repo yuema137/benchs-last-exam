@@ -29,6 +29,13 @@ python3 scripts/build_snapshot.py
 python3 scripts/validate_provenance.py
 ```
 
+## Source and licensing policy
+
+Which sources may back a number, how benchmark-radar may appear, and which
+license covers which data are defined in
+[`DATA_PROVENANCE_POLICY.md`](DATA_PROVENANCE_POLICY.md).
+`scripts/validate_provenance.py` enforces the benchmark-radar rule.
+
 ## Date semantics
 
 Observations preserve benchmark release date, model release date, evaluation

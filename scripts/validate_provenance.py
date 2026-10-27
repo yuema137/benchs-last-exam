@@ -1,12 +1,91 @@
 #!/usr/bin/env python3
 """Validate resource and observation lineage in the generated static snapshot."""
 
+import csv
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "site" / "data" / "benchmarks.json"
 REPORT = ROOT / "docs" / "PROVENANCE_GAPS.md"
+
+# Data provenance policy (docs/DATA_PROVENANCE_POLICY.md): benchmark-radar is a
+# discovery reference only. It may be named in an explicit discovery-source
+# field, never as a cited source and never anywhere else in the data.
+DISCOVERY_SOURCE_FIELDS = frozenset({"discovered_via"})
+BENCHMARK_RADAR_URL = re.compile(
+    r"(?:^|[/.@])benchmark-radar\.org(?:[/:?#]|$)"
+    r"|github\.com/ktwu01/benchmark-radar(?:[/?#.]|$)"
+    r"|ktwu01\.github\.io/benchmark-radar(?:[/?#]|$)"
+    r"|huggingface\.co/datasets/ktwu01/benchmark-radar(?:[/?#]|$)",
+    re.IGNORECASE,
+)
+BENCHMARK_RADAR_MENTION = re.compile(r"benchmark[-_ ]?radar|ktwu01", re.IGNORECASE)
+
+
+def is_benchmark_radar_url(value):
+    return bool(BENCHMARK_RADAR_URL.search(str(value or "")))
+
+
+def _is_discovery_field(key):
+    return re.sub(r"[\s-]+", "_", str(key).strip().lower()) in DISCOVERY_SOURCE_FIELDS
+
+
+def _radar_mentions(value, path="$"):
+    """Yield paths where benchmark-radar is named outside a discovery-source field."""
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if _is_discovery_field(key):
+                continue
+            if BENCHMARK_RADAR_MENTION.search(str(key)):
+                yield f"{path}.{key}"
+            yield from _radar_mentions(item, f"{path}.{key}")
+    elif isinstance(value, list):
+        for index, item in enumerate(value):
+            yield from _radar_mentions(item, f"{path}[{index}]")
+    elif isinstance(value, str) and (BENCHMARK_RADAR_MENTION.search(value) or is_benchmark_radar_url(value)):
+        yield path
+
+
+def benchmark_radar_violations(payload, label="snapshot"):
+    """Return policy errors for benchmark-radar use in a snapshot-shaped payload.
+
+    Fails when an observation's only cited sources are benchmark-radar resources,
+    and when benchmark-radar appears anywhere other than a discovery-source field.
+    """
+    errors = []
+    radar_resources = {
+        item.get("id") for item in payload.get("resources", [])
+        if is_benchmark_radar_url(item.get("url")) or any(
+            BENCHMARK_RADAR_MENTION.search(str(item.get(field) or "")) for field in ("url", "title", "publisher")
+        )
+    }
+    for benchmark in payload.get("benchmarks", []):
+        for observation in benchmark.get("observations", []):
+            source_ids = observation.get("source_ids") or []
+            if source_ids and all(source_id in radar_resources for source_id in source_ids):
+                errors.append(f"{label}: {observation.get('observation_id')}: only cited source is benchmark-radar; "
+                              "cite the original paper, leaderboard or vendor release")
+    errors.extend(f"{label}: benchmark-radar outside a discovery-source field at {path}"
+                  for path in _radar_mentions(payload))
+    return errors
+
+
+def benchmark_radar_input_violations(root=ROOT):
+    """Apply the same rule to curated inputs: raw CSV rows and benchmark records."""
+    errors = []
+    for path in sorted((root / "data" / "raw").glob("*.csv")):
+        with path.open(newline="", encoding="utf-8") as handle:
+            for row_number, row in enumerate(csv.DictReader(handle), start=1):
+                cleaned = {key: value for key, value in row.items() if key is not None}
+                errors.extend(f"{path.relative_to(root)} row {row_number}: benchmark-radar outside a "
+                              f"discovery-source field at {where}" for where in _radar_mentions(cleaned))
+    for path in sorted((root / "data" / "benchmarks").glob("*.json")):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        errors.extend(f"{path.relative_to(root)}: benchmark-radar outside a discovery-source field at {where}"
+                      for where in _radar_mentions(record))
+    return errors
 
 
 def main():
@@ -65,6 +144,8 @@ def main():
             frontier_ids.add(observation_id)
         if len(frontier_ids) != len(benchmark.get("frontier", [])):
             errors.append(f"{benchmark['id']}: duplicate frontier observation IDs")
+    errors.extend(benchmark_radar_violations(payload))
+    errors.extend(benchmark_radar_input_violations())
     REPORT.write_text("# Provenance Gaps\n\n" +
                       "The generated pilot snapshot passes structural lineage validation.\n\n" +
                       "Known evidence gaps:\n\n" +
