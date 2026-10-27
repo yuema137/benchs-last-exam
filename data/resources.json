@@ -2197,6 +2197,22 @@
     "notes": null
   },
   {
+    "id": "resource-https-arxiv-org-abs-2610-29932v1-fda32b0867d2e848",
+    "resource_scope": [
+      "benchmark"
+    ],
+    "entity_id": null,
+    "resource_type": "paper",
+    "title": "FrontierCS 2 primary source",
+    "url": "https://arxiv.org/abs/2610.29932v1",
+    "publisher": "Benchmark authors",
+    "authority": "primary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-assets-anthropic-com-m-64823ba7485345a7-cl-c5a73309c3caaf92",
     "resource_scope": [
       "benchmark",
@@ -13281,6 +13297,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-frontier-cs-org-assets-js-fcs2-data-js-8fffb109181c7fe7",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://frontier-cs.org/assets/js/fcs2-data.js",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-gair-nlp-github-io-olympicarena-67a2f17cc7c80910",
     "resource_scope": [
       "benchmark"
@@ -14302,6 +14335,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-huggingface-co-deepseek-ai-deepseek-v4-1-f-cac24968e5aa0d5b",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-huggingface-co-spaces-gaia-benchmark-leade-7648cf23dac6526b",
     "resource_scope": [
       "benchmark"
@@ -14563,6 +14613,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-openai-com-index-introducing-gpt-6-1-sol-d6b9f5e651b1891e",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-openai-com-index-introducing-gpt-6-1-terra-35e334c198740f74",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-openai-com-index-introducing-gpt-6-sol-and-73461b3e97af0d93",
@@ -15090,6 +15174,23 @@
     "notes": "Official release/model resource for the current frontier model panel."
   },
   {
+    "id": "resource-https-www-anthropic-com-claude-haiku-5-5-system--64f682d56dcdee02",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-anthropic-com-claude-opus-5-5-0dd3bed5c7dd1c27",
     "resource_scope": [
       "benchmark",
@@ -15124,6 +15225,23 @@
     "notes": null
   },
   {
+    "id": "resource-https-www-anthropic-com-claude-sonnet-5-5-system-add74e2fa0d003e6",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
     "id": "resource-https-www-anthropic-com-news-claude-3-family-a2cf0d0271acb097",
     "resource_scope": [
       "benchmark",
@@ -15139,6 +15257,40 @@
     "watch": false,
     "last_checked_at": null,
     "notes": "Shared evidence resource; the export does not provide a model-specific source record."
+  },
+  {
+    "id": "resource-https-www-anthropic-com-news-claude-haiku-5-5-98206229e61a13c2",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://www.anthropic.com/news/claude-haiku-5-5",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
+  },
+  {
+    "id": "resource-https-www-anthropic-com-news-claude-sonnet-5-5-96828b99e24f336d",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "October 2026 source review",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5-5",
+    "publisher": "October 2026 source review",
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": null
   },
   {
     "id": "resource-https-www-anthropic-com-news-releasing-claude-in-9023d5a56ff8771f",
@@ -15287,6 +15439,23 @@
     "watch": false,
     "last_checked_at": null,
     "notes": null
+  },
+  {
+    "id": "resource-https-www-kimi-com-blog-kimi-k3-1-pro-a39c44d95d805fec",
+    "resource_scope": [
+      "benchmark",
+      "model"
+    ],
+    "entity_id": null,
+    "resource_type": "official_leaderboard",
+    "title": "GPQA Diamond source",
+    "url": "https://www.kimi.com/blog/kimi-k3-1-pro",
+    "publisher": null,
+    "authority": "trusted_secondary",
+    "active": true,
+    "watch": false,
+    "last_checked_at": null,
+    "notes": "Shared evidence resource; the export does not provide a model-specific source record."
   },
   {
     "id": "resource-https-www-mercor-com-apex-apex-agents-leaderboar-133647a36421d0da",

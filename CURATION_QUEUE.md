@@ -29,3 +29,11 @@ Sparse T50/T90 data alone is not a reason to defer. The queue is for unresolved 
 - **TUA-Bench** — official 120-task terminal-use benchmark with promising current rows, but the public release date is only month-level in the available source; do not invent a day for the capability timeline.
 - **LAB-Bench** — important biology-research benchmark, but the available official materials do not yet provide a clean, source-linked longitudinal overall-score export for this snapshot.
 - **WebArena / τ²-bench** — canonical agent environments, but this pass did not establish a sufficiently clean fixed-version, multi-generation score series with defensible model release dates.
+
+## October 2026 candidates
+
+First-pass discovery notes; re-verify every figure against the paper before adding a card.
+
+- **Doc2Harness** ([arXiv 2610.20344](https://arxiv.org/abs/2610.20344), 2026-10-14) — 328 test cases, mean of three builds, 5/7 organization coverage. Reasoning effort is not stated and no model release dates are given; pin the builder configuration before adding.
+- **SCI-AGENT-EXAM** ([arXiv 2610.32441](https://arxiv.org/abs/2610.32441), 2026-10-23) — 120 tasks, 5/7 coverage. Final score partly depends on an LLM judge and every model runs in Claude Code; review judge identity and harness neutrality first.
+- **E2E-SWE** ([arXiv 2609.38335](https://arxiv.org/abs/2609.38335), 2026-09-29) — 186 tasks, Pass@1 over four runs, 4/7 coverage; effort varies per row. Decide on a canonical effort rule before adding.

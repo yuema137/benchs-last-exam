@@ -117,3 +117,22 @@ kimi-k2.6,0.5719298245614035,0.5719298245614035,2026-04-20,Moonshot,China,,,0.02
 gemini-3.5-flash_high,0.6280701754385964,0.6280701754385964,2026-05-19,Google DeepMind,United States of America,,,0.028679753751074618,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2F72DQVwbYiQW5pjhshjBaGU.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/72DQVwbYiQW5pjhshjBaGU.eval,2026-06-10T17:32:38.000Z,72DQVwbYiQW5pjhshjBaGU
 claude-opus-4-8_max,0.8,0.8,2026-05-28,Anthropic,United States of America,,,0.023735633163877067,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FGVmgtgKMwEqc54f3jA7auP.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/GVmgtgKMwEqc54f3jA7auP.eval,2026-06-10T15:25:15.000Z,GVmgtgKMwEqc54f3jA7auP
 claude-fable-5_max,0.8701754385964913,0.8701754385964913,2026-06-09,Anthropic,United States of America,,,0.019944477920133024,https://logs.epoch.ai/inspect-viewer/36231d6d/viewer.html?log_file=https%3A%2F%2Flogs.epoch.ai%2Finspect_ai_logs%2FE28uZiJvrPgKtawbJpoZQ8.eval,https://epoch-benchmarks-staging-private.s3.us-east-2.amazonaws.com/inspect_ai_logs/E28uZiJvrPgKtawbJpoZQ8.eval,2026-06-09T18:12:35.000Z,E28uZiJvrPgKtawbJpoZQ8
+gpt-6.1-terra_max,0.9087719298245615,0.9087719298245615,2026-10-26,OpenAI,United States of America,,,0.017085690144166794,,,2026-10-26T20:00:37.000Z,KkEoE6hBF8RB4ff43Xv63e
+deepseek-v4.1-flash-1017_max,0.712280701754386,0.712280701754386,2026-10-17,DeepSeek,China,,,0.02686277751301251,,,2026-10-19T22:39:00.000Z,UnaMiD4Yy8W4WzyeSRwybr
+Muse-Spark-Open-816B-A42B_xhigh,0.6982456140350877,0.6982456140350877,2026-10-15,Meta AI,United States of America,,,0.027237781633151586,,,2026-10-15T18:52:04.000Z,e3e3h9r7Fouu4wsAeVzTnV
+gemini-4-argon_high,0.8596491228070176,0.8596491228070176,2026-09-30,Google DeepMind,United States of America,,,0.020611471958164294,,,2026-10-13T17:14:57.000Z,N8daAyKM6Sah39YBcPRi4W
+mistral-large-4-0_high,0.5859649122807018,0.5859649122807018,2026-10-06,Mistral AI,France,,,0.02922773823944577,,,2026-10-12T21:38:35.000Z,CAstp8hQG6Aehvtw85bMDX
+muse-wonder-1.0_max,0.8210526315789474,0.8210526315789474,2026-10-12,Meta AI,United States of America,,,0.02274515950332741,,,2026-10-12T19:00:20.000Z,hwVgELmPofPY3Vqm7BRLxs
+deepseek-v4.1-flash_max,0.6736842105263158,0.6736842105263158,2026-09-09,DeepSeek,China,4.32e+24,"(Pre-training) - 6 * 16e9 active parameters * 45e12 tokens = 4.32e+24 FLOP
+",0.027821981570324446,,,2026-10-08T19:02:32.000Z,b6dXtaGSwvfRYADKYnj9Ci
+claude-haiku-5-5_max,0.7508771929824561,0.7508771929824561,2026-10-07,Anthropic,United States of America,,,0.02566445410232946,,,2026-10-07T20:42:31.000Z,2QAt4ptgGkLtcbVL3hdAvL
+gpt-6.1-sol_max,0.9368421052631579,0.9368421052631579,2026-09-29,OpenAI,United States of America,,,0.014434038295343787,,,2026-09-29T22:00:34.000Z,aBoQLaqnXsLPrsbN8wYgUp
+claude-sonnet-5-5_max,0.887719298245614,0.887719298245614,2026-09-28,Anthropic,United States of America,,,0.018734030360524248,,,2026-09-29T15:15:14.000Z,4tZWwV9tqEgsCaKeSuSoG4
+gpt-6-luna_max,0.7894736842105263,0.7894736842105263,2026-09-22,OpenAI,United States of America,,,0.024191503146153773,,,2026-09-22T22:14:05.000Z,iBQxysYR7zPxB6hxvJyTLc
+grok-4.7_xhigh,0.5298245614035088,0.5298245614035088,2026-09-21,xAI,United States of America,,,0.029616712041900365,,,2026-09-22T21:49:22.000Z,F4unBbW5M4VJogzCq4vGAb
+gpt-6-sol_max,0.8982456140350877,0.8982456140350877,2026-09-22,OpenAI,United States of America,,,0.01793969072128637,,,2026-09-22T19:59:24.000Z,RHjHEPHEsWZqFuMjBTeC6r
+claude-opus-5-5_max,0.9122807017543859,0.9122807017543859,2026-09-22,Anthropic,United States of America,,,0.016786209858442095,,,2026-09-22T18:27:39.000Z,LPxhvBNEn7S3xkRZUgcvc9
+muse-spark-1.3_max,0.7403508771929824,0.7403508771929824,2026-09-02,Meta AI,United States of America,,,0.026016750822385526,,,2026-09-18T16:34:54.000Z,6735DShGR4Zu5KZ2U6n4pC
+muse-spark-1.3_xhigh,0.743859649122807,0.743859649122807,2026-09-02,Meta AI,United States of America,,,0.025901524747773286,,,2026-09-16T22:00:25.000Z,JeYksd3f2RkegmxCcZyBMQ
+qwen3.8-max-0902_xhigh,0.656140350877193,0.656140350877193,2026-09-01,Alibaba,China,,,0.02818576398907258,,,2026-09-02T18:04:58.000Z,FpQf5xBwJPb4ZEo6SgdKWq
+gemini-3.8-flash_high,0.6842105263157895,0.6842105263157895,2026-09-02,Google DeepMind,United States of America,,,0.027582557383453006,,,2026-09-02T17:15:36.000Z,Utgs6DuaQDDdi98ZWH22qL

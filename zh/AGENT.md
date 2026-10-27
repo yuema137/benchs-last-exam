@@ -58,7 +58,7 @@ Benchmark health 和 evaluation coverage 是相互独立的维度。低覆盖或
 
 英文树始终是 canonical。中文在 `zh/` 下镜像相同的结构。
 
-镜像要求覆盖的是活跃的、手工撰写的文档。它**不**覆盖由脚本生成的文件（审计报告 `docs/CANONICAL_IDENTITY_AUDIT.md`、`docs/OBSERVATION_DATE_AUDIT.md`、`docs/SCORE_ADVERSARIAL_AUDIT.md`、`MATH_LEVEL5_TIME_AUDIT.md` 和 `docs/PROVENANCE_GAPS.md`），也不覆盖那些记录某个带日期的发现、而非一条长期规则的一次性审计快照（`MATH_LEVEL5_HISTORICAL_RECONSTRUCTION.md`、`docs/DOMAIN_CURATION_AUDIT.md`、`docs/FRONTIER_MODEL_CARD_AUDIT.md` 和 `docs/GPT6_PUBLIC_BENCHMARK_AUDIT.md`）。这些文件只保留英文。
+镜像要求覆盖的是活跃的、手工撰写的文档。它**不**覆盖由脚本生成的文件（审计报告 `docs/CANONICAL_IDENTITY_AUDIT.md`、`docs/OBSERVATION_DATE_AUDIT.md`、`docs/SCORE_ADVERSARIAL_AUDIT.md`、`MATH_LEVEL5_TIME_AUDIT.md` 和 `docs/PROVENANCE_GAPS.md`），也不覆盖那些记录某个带日期的发现、而非一条长期规则的一次性审计快照（`MATH_LEVEL5_HISTORICAL_RECONSTRUCTION.md`、`docs/DOMAIN_CURATION_AUDIT.md`、`docs/FRONTIER_MODEL_CARD_AUDIT.md`、`docs/GPT6_PUBLIC_BENCHMARK_AUDIT.md`、`docs/SEPTEMBER_2026_BENCHMARK_AUDIT.md` 和 `docs/OCTOBER_2026_BENCHMARK_AUDIT.md`）。这些文件只保留英文。
 
 工作循环：
 

@@ -9,3 +9,5 @@ Result public date,Source link,id,Model version,Score,Release date,Organization,
 ,,,muse-spark-1.2_xhigh,0.11970256,2026-08-05,Meta AI,Muse Spark 1.2,https://www.frontierswe.com/,27.81,Mean@5 across 34 tasks with the proximus harness.
 ,,,inkling_xhigh,0.04118886,2026-07-15,Thinking Machines,Inkling,https://www.frontierswe.com/,9.15,Mean@5 across 34 tasks with the proximus harness.
 2026-09-22,https://www.anthropic.com/claude-opus-5-5-system-card/,sep2026-frontierswe-v2-claude-opus-5-5-max-proximal-harness-five-trials,,0.623,2026-09-22,Anthropic,"Claude Opus 5.5 (max, Proximal harness, five trials)",September 2026 source review,,
+2026-09-28,https://www.anthropic.com/claude-sonnet-5-5-system-card,oct2026-frontierswe-v2-claude-sonnet-5-5-max,,0.619,2026-09-28,Anthropic,"Claude Sonnet 5.5 (max, Proximal harness, five trials)",October 2026 source review,,
+2026-10-07,https://www.anthropic.com/claude-haiku-5-5-system-card,oct2026-frontierswe-v2-claude-haiku-5-5-max,,0.438,2026-10-07,Anthropic,"Claude Haiku 5.5 (max, Proximal harness)",October 2026 source review,,

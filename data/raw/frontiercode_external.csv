@@ -62,3 +62,11 @@ K3 was likely pretrained on over 1e25 FLOP. Speculatively, K3's relatively large
 2026-09-22,https://www.anthropic.com/claude-opus-5-5/,sep2026-frontiercode-1-1-gpt-6-astra-high-anthropic-release-settings,2.847,,0.5094,,,2026-09-03,OpenAI,,,,"GPT-6 Astra (high, Anthropic release settings)",,September 2026 source review,Embedded chart CSV; exact chart precision retained; prices are source-reported estimates.
 2026-09-22,https://www.anthropic.com/claude-opus-5-5/,sep2026-frontiercode-1-1-gpt-6-astra-xhigh-anthropic-release-settings,3.0961,,0.5062,,,2026-09-03,OpenAI,,,,"GPT-6 Astra (xhigh, Anthropic release settings)",,September 2026 source review,Embedded chart CSV; exact chart precision retained; prices are source-reported estimates.
 2026-09-22,https://www.anthropic.com/claude-opus-5-5/,sep2026-frontiercode-1-1-gpt-6-astra-max-anthropic-release-settings,4.3632,,0.5326,,,2026-09-03,OpenAI,,,,"GPT-6 Astra (max, Anthropic release settings)",,September 2026 source review,Embedded chart CSV; exact chart precision retained; prices are source-reported estimates.
+,,,,claude-opus-5-5_medium,0.5464,claude-code,medium,2026-09-22,Anthropic,United States of America,,,Claude Opus 5.5,Mean@5,https://cognition.com/frontiercode,
+,,,,claude-sonnet-5-5_xhigh,0.5209,claude-code,xhigh,2026-09-28,Anthropic,United States of America,,,Claude Sonnet 5.5,Mean@5,https://cognition.com/frontiercode,
+,,,,gpt-6.1-sol_medium,0.5023,codex,medium,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,Mean@5,https://cognition.com/frontiercode,
+,,,,gpt-6-sol_max,0.4927,codex,max,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,Mean@5,https://cognition.com/frontiercode,
+,,,,gemini-4-argon_medium,0.4755,chisel,medium,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,Mean@5,https://cognition.com/frontiercode,
+,,,,claude-haiku-5-5_max,0.4636,claude-code,max,2026-10-07,Anthropic,United States of America,,,Claude Haiku 5.5,Mean@5,https://cognition.com/frontiercode,
+,,,,gpt-6-luna_max,0.4242,codex,max,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,Mean@5,https://cognition.com/frontiercode,
+,,,,mistral-large-4-0_high,0.3943,chisel,high,2026-10-06,Mistral AI,France,,,Mistral Large 4 (Preview),Mean@5,https://cognition.com/frontiercode,

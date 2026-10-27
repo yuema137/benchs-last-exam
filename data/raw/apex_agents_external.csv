@@ -102,3 +102,13 @@ Full estimate here: https://docs.google.com/document/d/1MIUFviULJ3YI_XjyzL8cwG0c
 gemini-2.5-flash,0.018000000000000002,2025-06-17,Google DeepMind,United States of America,,,Gemini 2.5 Flash (On),0.6,0.064,1.1,,recHX5BTnN0mCFmRG
 o1-2024-12-17_high,0.011000000000000001,2024-12-17,OpenAI,United States of America,,,o1,0.7,0.055,1.2,,recShvtcJbIXTfDCo
 gpt-4o-2024-11-20,0.011000000000000001,2024-11-20,OpenAI,United States of America,,Training compute estimated to be 3.8e25 FLOP from benchmark scores. https://colab.research.google.com/drive/1r3pUMhB7Kh0Gls9eG-v_XefWrye9fVQR?usp=sharing,GPT 4o,0.7,0.054000000000000006,1.1,,recydtjNCJyVm2BlI
+gemini-4-argon_unknown,0.8240000000000001,2026-09-30,Google DeepMind,United States of America,,,Gemini 4 Argon,4.3,0.8740000000000001,3.3,,recythOL2ifqR8nCk
+claude-sonnet-5-5_max,0.755,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 [claude-sonnet-5-5],4.7,0.8370000000000001,3.6,,recwsmBXqLEgJjkrE
+claude-opus-5-5_max,0.735,2026-09-22,Anthropic,United States of America,,,Opus 5.5 [claude-opus-5-5],4.9,0.813,4.0,,rec6TErVzXnuNRUoV
+gpt-6.1-sol_max,0.6,2026-09-29,OpenAI,United States of America,,,GPT-6.1 Sol,5.6,0.7320000000000001,4.6,,reciOAOiuYHbbtCcU
+claude-haiku-5-5_max,0.561,2026-10-07,Anthropic,United States of America,,,Haiku 5.5,5.2,0.6829999999999999,4.4,,recuIVFmW80Eh5kgM
+gpt-6-sol_max,0.543,2026-09-22,OpenAI,United States of America,,,GPT-6 Sol,5.6,0.687,4.7,,recLBjIuBBmwMbz6o
+claude-opus-5-5_medium,0.525,2026-09-22,Anthropic,United States of America,,,Opus 5.5 [opus-5.5],5.6,0.657,4.9,,recjdN7zdajrdYE2h
+claude-sonnet-5-5_medium,0.446,2026-09-28,Anthropic,United States of America,,,Sonnet 5.5 (Medium),5.6,0.594,4.9,,recWY8vFxRRaVvJK3
+gpt-6-luna_max,0.443,2026-09-22,OpenAI,United States of America,,,GPT-6 Luna,5.5,0.59,4.9,,rec1U23OkfwoEOepV
+Muse-Spark-Open-816B-A42B_unknown,0.334,2026-10-15,Meta AI,United States of America,,,Muse Spark Open,5.3,0.48700000000000004,5.1,,recMOZJL02wkyStrJ

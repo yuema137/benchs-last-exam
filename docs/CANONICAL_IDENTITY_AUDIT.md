@@ -1,21 +1,21 @@
 # Canonical Identity Audit
 
-Snapshot: `2026-09-23` · schema version `2`
+Snapshot: `2026-10-27` · schema version `2`
 
 A source row is preserved as evidence. Exact duplicate measurements may share one canonical observation; model/display setting, protocol, task set, score series, and score must all match.
 
-- Source evidence records: **4587**
-- Canonical measurements: **4446**
+- Source evidence records: **4954**
+- Canonical measurements: **4813**
 - Measurements with multiple evidence records: **119**
 - Duplicate evidence rows reconciled: **141**
-- Canonical models: **1414**
-- Canonical resources: **923**
+- Canonical models: **1537**
+- Canonical resources: **933**
 
 ## Reconciliation by benchmark
 
 | Benchmark | Evidence | Measurements | Merged rows |
 |---|---:|---:|---:|
-| ARC-AGI-2 | 221 | 210 | 11 |
+| ARC-AGI-2 | 274 | 263 | 11 |
 | BIG-Bench Hard | 92 | 79 | 13 |
 | BoolQ | 206 | 186 | 20 |
 | GSM8K | 235 | 215 | 20 |
@@ -23,6 +23,6 @@ A source row is preserved as evidence. Exact duplicate measurements may share on
 | MMLU | 249 | 237 | 12 |
 | OpenBookQA | 71 | 69 | 2 |
 | PIQA | 140 | 116 | 24 |
-| SciCode | 162 | 159 | 3 |
+| SciCode | 198 | 195 | 3 |
 | Terminal-Bench 2.0 | 204 | 183 | 21 |
 | TriviaQA | 115 | 106 | 9 |

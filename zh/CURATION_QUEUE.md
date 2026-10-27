@@ -14,3 +14,11 @@
 | SWE-bench original vs Verified | 两者都有历史价值 | 相关版本不应自动做成两个 homepage objects | Verified 保持 core，original 放入 version lineage |
 
 Tier C 不维护完整 rejected list：obscure、来源弱、minor variant、历史几乎为空或只增加噪声的 benchmark 暂不纳入。
+
+## 2026 年 10 月候选
+
+以下为初步发现记录；新增卡片前需对照论文重新核对所有数字。
+
+- **Doc2Harness**（[arXiv 2610.20344](https://arxiv.org/abs/2610.20344)，2026-10-14）—— 328 个测试用例，三次构建取平均，覆盖 5/7 参考组织。未说明 reasoning effort，也没有模型发布日期；纳入前需先固定 builder 配置。
+- **SCI-AGENT-EXAM**（[arXiv 2610.32441](https://arxiv.org/abs/2610.32441)，2026-10-23）—— 120 个任务，覆盖 5/7。最终分数部分依赖 LLM 评审，且所有模型都在 Claude Code 中运行；需先审查评审模型和 harness 的中立性。
+- **E2E-SWE**（[arXiv 2609.38335](https://arxiv.org/abs/2609.38335)，2026-09-29）—— 186 个任务，四次运行的 Pass@1，覆盖 4/7；各行 effort 不同。纳入前需先确定 canonical effort 规则。
